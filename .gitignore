@@ -1,0 +1,11 @@
+app/node_modules/
+blocks/*/*/backups/
+blocks/*/*/.objects-*.tmp
+evidence/registration/.camera-placements.json.tmp
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+local_config.json
+**/local_config.json

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Altanfeethi camera registration workspace for mapping camera snapshots onto the supplied floor plans."
+    />
+    <title>Altanfeethi · Camera Registration</title>
+    <link rel="stylesheet" href="styles.css?rev=metadata-save-2" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-lockup">
+          <div class="brand-mark" aria-hidden="true">A</div>
+          <div>
+            <p class="eyebrow">Altanfeethi spatial twin</p>
+            <h1>Camera registration</h1>
+          </div>
+        </div>
+
+        <div class="project-status" aria-label="Project status">
+          <span class="pulse"></span>
+          <span><strong id="placed-count">1</strong> of <strong id="camera-count">186</strong> positioned</span>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="button button-quiet" id="import-button" type="button">Import JSON</button>
+          <button class="button button-primary save-button" id="save-json-button" type="button">Save JSON</button>
+          <button class="button button-quiet mobile-detail-button" id="show-inspector" type="button">Camera details</button>
+          <button class="button button-quiet" id="export-image-button" type="button">Download reference</button>
+          <input id="import-input" type="file" accept="application/json,.json" hidden />
+        </div>
+      </header>
+
+      <main class="workspace">
+        <aside class="camera-panel panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Source library</p>
+              <h2>Camera snapshots</h2>
+            </div>
+            <span class="count-pill" id="filtered-count">186</span>
+          </div>
+
+          <label class="search-field">
+            <span class="sr-only">Search cameras</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" /></svg>
+            <input id="camera-search" type="search" placeholder="Find B1, entrance…" autocomplete="off" />
+          </label>
+
+          <div class="filter-row" role="group" aria-label="Camera status filter">
+            <button class="filter-chip is-active" data-filter="all" type="button">All</button>
+            <button class="filter-chip" data-filter="placed" type="button">Placed</button>
+            <button class="filter-chip" data-filter="unplaced" type="button">Unplaced</button>
+          </div>
+
+          <div class="camera-list" id="camera-list" role="listbox" aria-label="Cameras"></div>
+        </aside>
+
+        <section class="map-stage" aria-label="Floor map registration workspace">
+          <div class="stage-toolbar">
+            <div class="floor-tabs" role="tablist" aria-label="Floor selection">
+              <button class="floor-tab is-active" data-floor="ground" role="tab" aria-selected="true" type="button">
+                Ground floor
+                <span id="ground-floor-count">1</span>
+              </button>
+              <button class="floor-tab" data-floor="first" role="tab" aria-selected="false" type="button">
+                First floor
+                <span id="first-floor-count">0</span>
+              </button>
+            </div>
+
+            <div class="map-tools" role="group" aria-label="Map controls">
+              <button class="map-source-pill" id="show-map-info" type="button" title="Show map replacement guidance">
+                <span>Map</span>
+                <strong id="map-source-name">ground-floor.png</strong>
+              </button>
+              <button class="icon-button" id="zoom-out" type="button" aria-label="Zoom out">−</button>
+              <span id="zoom-label">100%</span>
+              <button class="icon-button" id="zoom-in" type="button" aria-label="Zoom in">+</button>
+              <button class="button button-quiet compact" id="fit-map" type="button">Fit map</button>
+            </div>
+          </div>
+
+          <div class="canvas-wrap" id="canvas-wrap">
+            <canvas id="map-canvas" aria-label="Interactive floor map"></canvas>
+            <div class="empty-state" id="map-loading">
+              <span class="spinner"></span>
+              Loading high-resolution map…
+            </div>
+            <div class="placement-banner" id="placement-banner" hidden>
+              <span>Click the exact mount point for <strong id="placement-camera">B1</strong></span>
+              <button id="cancel-placement" type="button">Cancel</button>
+            </div>
+            <div class="map-legend">
+              <span><i class="legend-dot approximate"></i> Approximate</span>
+              <span><i class="legend-dot verified"></i> Verified</span>
+              <span class="legend-help">Wheel to zoom · drag to pan</span>
+            </div>
+          </div>
+        </section>
+
+        <aside class="inspector-panel panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Selected camera</p>
+              <h2 id="selected-camera-title">B1</h2>
+            </div>
+            <div class="inspector-heading-actions">
+              <span class="status-badge approximate" id="selected-status-badge">Approximate</span>
+              <button class="icon-button mobile-inspector-close" id="close-inspector" type="button" aria-label="Close camera details">×</button>
+            </div>
+          </div>
+
+          <figure class="snapshot-frame">
+            <img id="snapshot-image" src="camera_snapshot/B1.jpg" alt="Snapshot from camera B1" />
+            <figcaption id="snapshot-caption">camera_snapshot/B1.jpg</figcaption>
+          </figure>
+
+          <section class="inspector-section">
+            <div class="section-title-row">
+              <h3>Position</h3>
+              <button class="text-button" id="locate-marker" type="button">Locate on map</button>
+            </div>
+            <div class="coordinate-grid">
+              <label>X <input id="position-x" inputmode="decimal" aria-label="X coordinate in source-image pixels" /></label>
+              <label>Y <input id="position-y" inputmode="decimal" aria-label="Y coordinate in source-image pixels" /></label>
+            </div>
+            <p class="field-note" id="coordinate-note">Source-image pixels on the ground-floor plan.</p>
+            <button class="button button-primary full-width" id="place-camera" type="button">Reposition on map</button>
+          </section>
+
+          <section class="inspector-section">
+            <h3>View direction</h3>
+            <div class="range-row">
+              <input id="heading-range" type="range" min="0" max="359" value="0" aria-label="Camera heading in degrees" />
+              <label><input id="heading-value" type="number" min="0" max="359" value="0" />°</label>
+            </div>
+            <p class="field-note">0° points toward the top of the plan.</p>
+          </section>
+
+          <section class="inspector-section">
+            <h3>Verification</h3>
+            <div class="segmented-control" role="group" aria-label="Verification status">
+              <button data-status="approximate" class="is-active" type="button">Approximate</button>
+              <button data-status="verified" type="button">Verified</button>
+            </div>
+            <label class="select-field">
+              Floor
+              <select id="camera-floor">
+                <option value="ground">Ground floor</option>
+                <option value="first">First floor</option>
+              </select>
+            </label>
+            <div class="metadata-grid">
+              <label>
+                Zone <span>(optional)</span>
+                <input id="camera-zone" autocomplete="off" />
+              </label>
+              <label>
+                Group <span>(optional)</span>
+                <input id="camera-group" autocomplete="off" />
+              </label>
+            </div>
+            <p class="field-note">Zone defaults to the first character of the camera name. Group is loaded from <code>local_config.json</code> when available.</p>
+            <label class="notes-field">
+              Evidence / notes
+              <textarea id="camera-notes" rows="4"></textarea>
+            </label>
+          </section>
+
+          <section class="evidence-card" id="evidence-card">
+            <div class="evidence-icon" aria-hidden="true">◎</div>
+            <div>
+              <strong>Transferred from two references</strong>
+              <p>B1 was registered from camera-marking images 1 and 2. Confirm the physical mount before marking it verified.</p>
+              <button class="text-button" id="show-evidence" type="button">View source marking</button>
+            </div>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <dialog id="evidence-dialog">
+      <form method="dialog" class="dialog-card">
+        <div class="dialog-heading">
+          <div>
+            <p class="eyebrow">Approximate source evidence</p>
+            <h2>Existing camera markings</h2>
+          </div>
+          <button class="icon-button" aria-label="Close" value="close">×</button>
+        </div>
+        <p>These screenshots are reference evidence only. They are not treated as survey-grade coordinates.</p>
+        <div class="evidence-grid">
+          <img src="camera_marking/image%20(1).png" alt="Existing camera marking screenshot 1" />
+          <img src="camera_marking/image%20(2).png" alt="Existing camera marking screenshot 2" />
+          <img src="camera_marking/image%20(3).png" alt="Existing camera marking screenshot 3" />
+          <img src="camera_marking/image%20(4).png" alt="Existing camera marking screenshot 4" />
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="map-info-dialog">
+      <form method="dialog" class="dialog-card map-info-card">
+        <div class="dialog-heading">
+          <div>
+            <p class="eyebrow">Active map source</p>
+            <h2 id="map-info-title">ground-floor.png</h2>
+          </div>
+          <button class="icon-button" aria-label="Close" value="close">×</button>
+        </div>
+        <div class="map-guidance">
+          <div class="guidance-row">
+            <span class="guidance-number">1</span>
+            <div><strong>Replace the PNG</strong><p>For a revised ground plan, replace <code>evidence/maps/ground-floor.png</code>. The dashboard does not render the PDF.</p></div>
+          </div>
+          <div class="guidance-row">
+            <span class="guidance-number">2</span>
+            <div><strong>Keep the canvas aligned</strong><p>For the best result, keep the same 14,761 × 8,610 pixel size, crop, and map orientation. Existing camera coordinates will remain unchanged.</p></div>
+          </div>
+          <div class="guidance-row">
+            <span class="guidance-number">3</span>
+            <div><strong>Review small offsets</strong><p>Furniture changes are safe. If the drawing itself shifts, resize/crop changes, or the building moves inside the canvas, use the registration tool to adjust affected cameras manually.</p></div>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="save-setup-dialog">
+      <div class="dialog-card save-setup-card">
+        <div class="dialog-heading">
+          <div>
+            <p class="eyebrow">One-time save setup</p>
+            <h2>Choose the project folder</h2>
+          </div>
+          <button class="icon-button" id="close-save-setup" aria-label="Close" type="button">×</button>
+        </div>
+        <p>The direct-save service is not available in this browser tab. Choose the <code>altanfeethi-3d-map</code> folder once, and the dashboard will update <code>evidence/registration/camera-placements.json</code> directly.</p>
+        <div class="dialog-actions">
+          <button class="button button-primary" id="choose-project-folder" type="button">Choose project folder</button>
+          <button class="button button-quiet" id="cancel-save-setup" type="button">Cancel</button>
+        </div>
+        <p class="field-note" id="save-setup-note"></p>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="camera-groups.js?rev=metadata-save-2"></script>
+    <script src="app.js?rev=metadata-save-3"></script>
+  </body>
+</html>

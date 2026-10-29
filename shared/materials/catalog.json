@@ -1,0 +1,11 @@
+{
+  "format": "altanfeethi-material-catalog",
+  "version": 1,
+  "materials": {
+    "dark-stone-floor": {"color": "#424747", "roughness": 0.35},
+    "beige-upholstery": {"color": "#bcb6a7", "roughness": 0.65},
+    "blue-upholstery": {"color": "#526e78", "roughness": 0.65},
+    "pale-stone-table": {"color": "#e5e1d5", "roughness": 0.28},
+    "brass-screen": {"color": "#ab9564", "roughness": 0.35, "metalness": 0.6}
+  }
+}

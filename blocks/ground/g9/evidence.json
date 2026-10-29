@@ -1,0 +1,16 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-seating-001",
+  "cameras": ["B1", "B3"],
+  "snapshots": {
+    "B1": "evidence/camera-snapshots/B1.jpg",
+    "B3": "evidence/camera-snapshots/B3.jpg"
+  },
+  "notes": [
+    "Local arrangement inferred from opposing snapshots; all dimensions are estimates, not measurements.",
+    "One shared table inferred from Table_B1 correspondence. Seat identities on each furniture side require human confirmation.",
+    "Floor extent is a working crop, not a surveyed room boundary. No enclosing walls inferred.",
+    "Privacy screen simplified from photographs. Global map transform, camera calibration, and exact glass/column boundaries remain unresolved."
+  ]
+}

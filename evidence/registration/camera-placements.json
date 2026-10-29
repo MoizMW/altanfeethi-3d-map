@@ -1,0 +1,2689 @@
+{
+  "format": "altanfeethi-camera-registration",
+  "version": 1,
+  "coordinateSpace": "source-image-pixels",
+  "updatedAt": "2026-10-29T05:38:50.669Z",
+  "floors": {
+    "ground": {
+      "label": "Ground floor",
+      "src": "map/ground-floor.png",
+      "filename": "ground-floor.png",
+      "width": 14761,
+      "height": 8610
+    },
+    "first": {
+      "label": "First floor",
+      "src": "map/first-floor.png",
+      "filename": "first-floor.png",
+      "width": 7076,
+      "height": 4086
+    }
+  },
+  "cameras": [
+    {
+      "id": "B1",
+      "file": "B1.jpg",
+      "zone": "B",
+      "group_id": "g9",
+      "floor": "ground",
+      "position": {
+        "x": 4245,
+        "y": 3934
+      },
+      "heading": 65,
+      "status": "verified",
+      "notes": "Transferred from the overlapping camera-marking screenshots. Exact physical mount point and heading still require confirmation.",
+      "provenance": {
+        "type": "registered-reference",
+        "sources": [
+          "camera_marking/image (1).png",
+          "camera_marking/image (2).png"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "B2",
+      "file": "B2.jpg",
+      "zone": "B",
+      "group_id": "g3",
+      "floor": "ground",
+      "position": {
+        "x": 5030,
+        "y": 3399
+      },
+      "heading": 67,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B3",
+      "file": "B3.jpg",
+      "zone": "B",
+      "group_id": "g9",
+      "floor": "ground",
+      "position": {
+        "x": 4599,
+        "y": 3776
+      },
+      "heading": 237,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B4",
+      "file": "B4.jpg",
+      "zone": "B",
+      "group_id": "g10",
+      "floor": "ground",
+      "position": {
+        "x": 4728,
+        "y": 4257
+      },
+      "heading": 77,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B5",
+      "file": "B5.jpg",
+      "zone": "B",
+      "group_id": "g10",
+      "floor": "ground",
+      "position": {
+        "x": 5225,
+        "y": 4539
+      },
+      "heading": 20,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B6",
+      "file": "B6.jpg",
+      "zone": "B",
+      "group_id": "g10",
+      "floor": "ground",
+      "position": {
+        "x": 5301,
+        "y": 4188
+      },
+      "heading": 233,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B7",
+      "file": "B7.jpg",
+      "zone": "B",
+      "group_id": "g24",
+      "floor": "ground",
+      "position": {
+        "x": 5267,
+        "y": 3476
+      },
+      "heading": 113,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B8",
+      "file": "B8.jpg",
+      "zone": "B",
+      "group_id": "g24",
+      "floor": "ground",
+      "position": {
+        "x": 5625,
+        "y": 3258
+      },
+      "heading": 118,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B9",
+      "file": "B9.jpg",
+      "zone": "B",
+      "group_id": "g24",
+      "floor": "ground",
+      "position": {
+        "x": 5916,
+        "y": 3079
+      },
+      "heading": 128,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B10",
+      "file": "B10.jpg",
+      "zone": "B",
+      "group_id": "g25",
+      "floor": "ground",
+      "position": {
+        "x": 6021,
+        "y": 3987
+      },
+      "heading": 317,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B11",
+      "file": "B11.jpg",
+      "zone": "B",
+      "group_id": "g25",
+      "floor": "ground",
+      "position": {
+        "x": 6347,
+        "y": 3773
+      },
+      "heading": 306,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B12",
+      "file": "B12.jpg",
+      "zone": "B",
+      "group_id": "g25",
+      "floor": "ground",
+      "position": {
+        "x": 6673,
+        "y": 3565
+      },
+      "heading": 303,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B13",
+      "file": "B13.jpg",
+      "zone": "B",
+      "group_id": "g24",
+      "floor": "ground",
+      "position": {
+        "x": 6238,
+        "y": 2888
+      },
+      "heading": 126,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "B14",
+      "file": "B14.jpg",
+      "zone": "B",
+      "group_id": "g25",
+      "floor": "ground",
+      "position": {
+        "x": 7009,
+        "y": 3357
+      },
+      "heading": 308,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C1",
+      "file": "C1.jpg",
+      "zone": "C",
+      "group_id": "g11",
+      "floor": "ground",
+      "position": {
+        "x": 5401,
+        "y": 4604
+      },
+      "heading": 77,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C2",
+      "file": "C2.jpg",
+      "zone": "C",
+      "group_id": "g11",
+      "floor": "ground",
+      "position": {
+        "x": 5951,
+        "y": 4891
+      },
+      "heading": 16,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C3",
+      "file": "C3.jpg",
+      "zone": "C",
+      "group_id": "g11",
+      "floor": "ground",
+      "position": {
+        "x": 5954,
+        "y": 4553
+      },
+      "heading": 235,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C8",
+      "file": "C8.jpg",
+      "zone": "C",
+      "group_id": "g15",
+      "floor": "ground",
+      "position": {
+        "x": 6913,
+        "y": 4773
+      },
+      "heading": 61,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C10",
+      "file": "C10.jpg",
+      "zone": "C",
+      "group_id": "g26",
+      "floor": "ground",
+      "position": {
+        "x": 8167,
+        "y": 3886
+      },
+      "heading": 78,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C11",
+      "file": "C11.jpg",
+      "zone": "C",
+      "group_id": "g3",
+      "floor": "ground",
+      "position": {
+        "x": 5576,
+        "y": 3247
+      },
+      "heading": 239,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C12",
+      "file": "C12.jpg",
+      "zone": "C",
+      "group_id": "g12",
+      "floor": "ground",
+      "position": {
+        "x": 7206,
+        "y": 5207
+      },
+      "heading": 262,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C13",
+      "file": "C13.jpg",
+      "zone": "C",
+      "group_id": "g13",
+      "floor": "ground",
+      "position": {
+        "x": 8118,
+        "y": 4150
+      },
+      "heading": 126,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C14",
+      "file": "C14.jpg",
+      "zone": "C",
+      "group_id": "g3",
+      "floor": "ground",
+      "position": {
+        "x": 6038,
+        "y": 3835
+      },
+      "heading": 246,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C15",
+      "file": "C15.jpg",
+      "zone": "C",
+      "group_id": "g15",
+      "floor": "ground",
+      "position": {
+        "x": 7453,
+        "y": 4170
+      },
+      "heading": 251,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C16",
+      "file": "C16.jpg",
+      "zone": "C",
+      "group_id": "g15",
+      "floor": "ground",
+      "position": {
+        "x": 7769,
+        "y": 4445
+      },
+      "heading": 222,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C17",
+      "file": "C17.jpg",
+      "zone": "C",
+      "group_id": "g13",
+      "floor": "ground",
+      "position": {
+        "x": 8505,
+        "y": 4501
+      },
+      "heading": 312,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C18",
+      "file": "C18.jpg",
+      "zone": "C",
+      "group_id": "g13",
+      "floor": "ground",
+      "position": {
+        "x": 8609,
+        "y": 3916
+      },
+      "heading": 137,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C21",
+      "file": "C21.jpg",
+      "zone": "C",
+      "group_id": "g13",
+      "floor": "ground",
+      "position": {
+        "x": 8918,
+        "y": 4246
+      },
+      "heading": 312,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C22",
+      "file": "C22.jpg",
+      "zone": "C",
+      "group_id": "g12",
+      "floor": "ground",
+      "position": {
+        "x": 6785,
+        "y": 5237
+      },
+      "heading": 126,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C23",
+      "file": "C23.jpg",
+      "zone": "C",
+      "group_id": "g14",
+      "floor": "ground",
+      "position": {
+        "x": 7026,
+        "y": 5450
+      },
+      "heading": 131,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C24",
+      "file": "C24.jpg",
+      "zone": "C",
+      "group_id": "g14",
+      "floor": "ground",
+      "position": {
+        "x": 7264,
+        "y": 5639
+      },
+      "heading": 293,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C25",
+      "file": "C25.jpg",
+      "zone": "C",
+      "group_id": "g12",
+      "floor": "ground",
+      "position": {
+        "x": 7412,
+        "y": 5315
+      },
+      "heading": 195,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C26",
+      "file": "C26.jpg",
+      "zone": "C",
+      "group_id": "g14",
+      "floor": "ground",
+      "position": {
+        "x": 7690,
+        "y": 5477
+      },
+      "heading": 175,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "C27",
+      "file": "C27.jpg",
+      "zone": "",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "D2",
+      "file": "D2.jpg",
+      "zone": "",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "E1",
+      "file": "E1.jpg",
+      "zone": "E",
+      "group_id": "g17",
+      "floor": "ground",
+      "position": {
+        "x": 8310,
+        "y": 6003
+      },
+      "heading": 128,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "E2",
+      "file": "E2.jpg",
+      "zone": "E",
+      "group_id": "g17",
+      "floor": "ground",
+      "position": {
+        "x": 8186,
+        "y": 5967
+      },
+      "heading": 299,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "E3",
+      "file": "E3.jpg",
+      "zone": "C",
+      "group_id": "g14",
+      "floor": "ground",
+      "position": {
+        "x": 7949,
+        "y": 5650
+      },
+      "heading": 275,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "E4",
+      "file": "E4.jpg",
+      "zone": "E",
+      "group_id": "g17",
+      "floor": "ground",
+      "position": {
+        "x": 8307,
+        "y": 5943
+      },
+      "heading": 233,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "E5",
+      "file": "E5.jpg",
+      "zone": "E",
+      "group_id": "g19",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "E6",
+      "file": "E6.jpg",
+      "zone": "E",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "E8",
+      "file": "E8.jpg",
+      "zone": "E",
+      "group_id": "g19",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "E11",
+      "file": "E11.jpg",
+      "zone": "E",
+      "group_id": "g23",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "E13",
+      "file": "E13.jpg",
+      "zone": "E",
+      "group_id": "g2",
+      "floor": "ground",
+      "position": {
+        "x": 5591,
+        "y": 5751
+      },
+      "heading": 35,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "E14",
+      "file": "E14.jpg",
+      "zone": "E",
+      "group_id": "g23",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "Egate1",
+      "file": "Egate1.jpg",
+      "zone": "E",
+      "group_id": "g31",
+      "floor": "ground",
+      "position": {
+        "x": 3513,
+        "y": 3005
+      },
+      "heading": 299,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "ENTRANCE",
+      "file": "ENTRANCE.jpg",
+      "zone": "E",
+      "group_id": "g1",
+      "floor": "ground",
+      "position": {
+        "x": 2689,
+        "y": 2705
+      },
+      "heading": 237,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "EXIT",
+      "file": "EXIT.jpg",
+      "zone": "E",
+      "group_id": "g2",
+      "floor": "ground",
+      "position": {
+        "x": 3058,
+        "y": 3776
+      },
+      "heading": 56,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "F1",
+      "file": "F1.jpg",
+      "zone": "F",
+      "group_id": "g19",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F2",
+      "file": "F2.jpg",
+      "zone": "F",
+      "group_id": "g19",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F3",
+      "file": "F3.jpg",
+      "zone": "F",
+      "group_id": "g23",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F4",
+      "file": "F4.jpg",
+      "zone": "F",
+      "group_id": "g43",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F5",
+      "file": "F5.jpg",
+      "zone": "F",
+      "group_id": "g43",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F6",
+      "file": "F6.jpg",
+      "zone": "F",
+      "group_id": "g43",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F7",
+      "file": "F7.jpg",
+      "zone": "F",
+      "group_id": "g43",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F8",
+      "file": "F8.jpg",
+      "zone": "F",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F9",
+      "file": "F9.jpg",
+      "zone": "F",
+      "group_id": "g33",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F10",
+      "file": "F10.jpg",
+      "zone": "F",
+      "group_id": "g44",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F11",
+      "file": "F11.jpg",
+      "zone": "F",
+      "group_id": "g33",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F12",
+      "file": "F12.jpg",
+      "zone": "F",
+      "group_id": "g44",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F13",
+      "file": "F13.jpg",
+      "zone": "F",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F14",
+      "file": "F14.jpg",
+      "zone": "F",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F15",
+      "file": "F15.jpg",
+      "zone": "F",
+      "group_id": "g34",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F15S",
+      "file": "F15S.jpg",
+      "zone": "F",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F16",
+      "file": "F16.jpg",
+      "zone": "F",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F17",
+      "file": "F17.jpg",
+      "zone": "F",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "F18",
+      "file": "F18.jpg",
+      "zone": "C",
+      "group_id": "g12",
+      "floor": "ground",
+      "position": {
+        "x": 7605,
+        "y": 5441
+      },
+      "heading": 264,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G1",
+      "file": "G1.jpg",
+      "zone": "G",
+      "group_id": "g21",
+      "floor": "ground",
+      "position": {
+        "x": 6533,
+        "y": 5701
+      },
+      "heading": 233,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G2",
+      "file": "G2.jpg",
+      "zone": "G",
+      "group_id": "g21",
+      "floor": "ground",
+      "position": {
+        "x": 6667,
+        "y": 5946
+      },
+      "heading": 299,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G4",
+      "file": "G4.jpg",
+      "zone": "G",
+      "group_id": "g21",
+      "floor": "ground",
+      "position": {
+        "x": 6074,
+        "y": 5646
+      },
+      "heading": 131,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G5",
+      "file": "G5.jpg",
+      "zone": "G",
+      "group_id": "g21",
+      "floor": "ground",
+      "position": {
+        "x": 6248,
+        "y": 5879
+      },
+      "heading": 62,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G6",
+      "file": "G6.jpg",
+      "zone": "G",
+      "group_id": "g27",
+      "floor": "ground",
+      "position": {
+        "x": 7427,
+        "y": 6421
+      },
+      "heading": 124,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G7",
+      "file": "G7.jpg",
+      "zone": "G",
+      "group_id": "g22",
+      "floor": "ground",
+      "position": {
+        "x": 7186,
+        "y": 6069
+      },
+      "heading": 230,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G8",
+      "file": "G8.jpg",
+      "zone": "G",
+      "group_id": "g22",
+      "floor": "ground",
+      "position": {
+        "x": 6778,
+        "y": 6014
+      },
+      "heading": 126,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G9",
+      "file": "G9.jpg",
+      "zone": "G",
+      "group_id": "g22",
+      "floor": "ground",
+      "position": {
+        "x": 7324,
+        "y": 6366
+      },
+      "heading": 308,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G10",
+      "file": "G10.jpg",
+      "zone": "G",
+      "group_id": "g22",
+      "floor": "ground",
+      "position": {
+        "x": 6889,
+        "y": 6267
+      },
+      "heading": 47,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G11",
+      "file": "G11.jpg",
+      "zone": "G",
+      "group_id": "g28",
+      "floor": "ground",
+      "position": {
+        "x": 8131,
+        "y": 6817
+      },
+      "heading": 128,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G12",
+      "file": "G12.jpg",
+      "zone": "G",
+      "group_id": "g27",
+      "floor": "ground",
+      "position": {
+        "x": 7890,
+        "y": 6651
+      },
+      "heading": 306,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G13",
+      "file": "G13.jpg",
+      "zone": "G",
+      "group_id": "g27",
+      "floor": "ground",
+      "position": {
+        "x": 7557,
+        "y": 6694
+      },
+      "heading": 53,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G14",
+      "file": "G14.jpg",
+      "zone": "G",
+      "group_id": "g27",
+      "floor": "ground",
+      "position": {
+        "x": 7957,
+        "y": 6500
+      },
+      "heading": 233,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G15",
+      "file": "G15.jpg",
+      "zone": "G",
+      "group_id": "g28",
+      "floor": "ground",
+      "position": {
+        "x": 8234,
+        "y": 7082
+      },
+      "heading": 49,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G16",
+      "file": "G16.jpg",
+      "zone": "G",
+      "group_id": "g29",
+      "floor": "ground",
+      "position": {
+        "x": 9136,
+        "y": 7078
+      },
+      "heading": 184,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G17",
+      "file": "G17.jpg",
+      "zone": "G",
+      "group_id": "g29",
+      "floor": "ground",
+      "position": {
+        "x": 8701,
+        "y": 7331
+      },
+      "heading": 95,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G18",
+      "file": "G18.jpg",
+      "zone": "G",
+      "group_id": "g28",
+      "floor": "ground",
+      "position": {
+        "x": 8740,
+        "y": 7133
+      },
+      "heading": 304,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G19",
+      "file": "G19.jpg",
+      "zone": "G",
+      "group_id": "g28",
+      "floor": "ground",
+      "position": {
+        "x": 8594,
+        "y": 6872
+      },
+      "heading": 228,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G20",
+      "file": "G20.jpg",
+      "zone": "G",
+      "group_id": "g16",
+      "floor": "ground",
+      "position": {
+        "x": 3744,
+        "y": 4182
+      },
+      "heading": 188,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G21",
+      "file": "G21.jpg",
+      "zone": "G",
+      "group_id": "g20",
+      "floor": "ground",
+      "position": {
+        "x": 5345,
+        "y": 5022
+      },
+      "heading": 230,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G22",
+      "file": "G22.jpg",
+      "zone": "G",
+      "group_id": "g20",
+      "floor": "ground",
+      "position": {
+        "x": 5103,
+        "y": 5178
+      },
+      "heading": 55,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G23",
+      "file": "G23.jpg",
+      "zone": "G",
+      "group_id": "g16",
+      "floor": "ground",
+      "position": {
+        "x": 4207,
+        "y": 4380
+      },
+      "heading": 272,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G24",
+      "file": "G24.jpg",
+      "zone": "G",
+      "group_id": "g18",
+      "floor": "ground",
+      "position": {
+        "x": 4299,
+        "y": 4524
+      },
+      "heading": 129,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G25",
+      "file": "G25.jpg",
+      "zone": "G",
+      "group_id": "g18",
+      "floor": "ground",
+      "position": {
+        "x": 4735,
+        "y": 4807
+      },
+      "heading": 301,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G26",
+      "file": "G26.jpg",
+      "zone": "G",
+      "group_id": "g20",
+      "floor": "ground",
+      "position": {
+        "x": 5434,
+        "y": 5223
+      },
+      "heading": 299,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G27",
+      "file": "G27.jpg",
+      "zone": "G",
+      "group_id": "g20",
+      "floor": "ground",
+      "position": {
+        "x": 4882,
+        "y": 4951
+      },
+      "heading": 124,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G28",
+      "file": "G28.jpg",
+      "zone": "G",
+      "group_id": "g18",
+      "floor": "ground",
+      "position": {
+        "x": 4378,
+        "y": 4795
+      },
+      "heading": 55,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "G29",
+      "file": "G29.jpg",
+      "zone": "G",
+      "group_id": "g18",
+      "floor": "ground",
+      "position": {
+        "x": 4649,
+        "y": 4612
+      },
+      "heading": 230,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H1",
+      "file": "H1.jpg",
+      "zone": "H",
+      "group_id": "g35",
+      "floor": "first",
+      "position": {
+        "x": 6951,
+        "y": 2841
+      },
+      "heading": 273,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H2",
+      "file": "H2.jpg",
+      "zone": "H",
+      "group_id": "g35",
+      "floor": "first",
+      "position": {
+        "x": 6349,
+        "y": 2830
+      },
+      "heading": 104,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H3",
+      "file": "H3.jpg",
+      "zone": "H",
+      "group_id": "g36",
+      "floor": "first",
+      "position": {
+        "x": 5991,
+        "y": 2585
+      },
+      "heading": 87,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H4",
+      "file": "H4.jpg",
+      "zone": "H",
+      "group_id": "g37",
+      "floor": "first",
+      "position": {
+        "x": 6173,
+        "y": 2375
+      },
+      "heading": 275,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H5",
+      "file": "H5.jpg",
+      "zone": "H",
+      "group_id": "g37",
+      "floor": "first",
+      "position": {
+        "x": 5577,
+        "y": 2341
+      },
+      "heading": 86,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H6",
+      "file": "H6.jpg",
+      "zone": "H",
+      "group_id": "g38",
+      "floor": "first",
+      "position": {
+        "x": 5747,
+        "y": 2165
+      },
+      "heading": 281,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H7",
+      "file": "H7.jpg",
+      "zone": "H",
+      "group_id": "g38",
+      "floor": "first",
+      "position": {
+        "x": 5139,
+        "y": 2142
+      },
+      "heading": 95,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H8",
+      "file": "H8.jpg",
+      "zone": "H",
+      "group_id": "g36",
+      "floor": "first",
+      "position": {
+        "x": 6582,
+        "y": 2648
+      },
+      "heading": 284,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H9",
+      "file": "H9.jpg",
+      "zone": "H",
+      "group_id": "",
+      "floor": "first",
+      "position": {
+        "x": 5219,
+        "y": 2557
+      },
+      "heading": 126,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H11",
+      "file": "H11.jpg",
+      "zone": "H",
+      "group_id": "g40",
+      "floor": "first",
+      "position": {
+        "x": 4931,
+        "y": 1711
+      },
+      "heading": 270,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H12",
+      "file": "H12.jpg",
+      "zone": "H",
+      "group_id": "g41",
+      "floor": "first",
+      "position": {
+        "x": 5249,
+        "y": 1914
+      },
+      "heading": 261,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H13",
+      "file": "H13.jpg",
+      "zone": "H",
+      "group_id": "g39",
+      "floor": "first",
+      "position": {
+        "x": 4567,
+        "y": 1496
+      },
+      "heading": 262,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H14",
+      "file": "H14.jpg",
+      "zone": "H",
+      "group_id": "g41",
+      "floor": "first",
+      "position": {
+        "x": 4935,
+        "y": 2133
+      },
+      "heading": 22,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H15",
+      "file": "H15.jpg",
+      "zone": "H",
+      "group_id": "g45",
+      "floor": "first",
+      "position": {
+        "x": 3785,
+        "y": 2516
+      },
+      "heading": 275,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H16",
+      "file": "H16.jpg",
+      "zone": "H",
+      "group_id": "g45",
+      "floor": "first",
+      "position": {
+        "x": 3091,
+        "y": 2585
+      },
+      "heading": 71,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H17",
+      "file": "H17.jpg",
+      "zone": "H",
+      "group_id": "",
+      "floor": "first",
+      "position": {
+        "x": 3371,
+        "y": 2957
+      },
+      "heading": 306,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H18",
+      "file": "H18.jpg",
+      "zone": "H",
+      "group_id": "g42",
+      "floor": "first",
+      "position": {
+        "x": 5628,
+        "y": 3244
+      },
+      "heading": 304,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H19",
+      "file": "H19.jpg",
+      "zone": "H",
+      "group_id": "g42",
+      "floor": "first",
+      "position": {
+        "x": 4946,
+        "y": 2801
+      },
+      "heading": 124,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H20",
+      "file": "H20.jpg",
+      "zone": "H",
+      "group_id": "g40",
+      "floor": "first",
+      "position": {
+        "x": 4598,
+        "y": 1887
+      },
+      "heading": 31,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H21",
+      "file": "H21.jpg",
+      "zone": "H",
+      "group_id": "",
+      "floor": "first",
+      "position": {
+        "x": 642,
+        "y": 1058
+      },
+      "heading": 93,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H22",
+      "file": "H22.jpg",
+      "zone": "H",
+      "group_id": "g52",
+      "floor": "first",
+      "position": {
+        "x": 625,
+        "y": 1097
+      },
+      "heading": 111,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H23",
+      "file": "H23.jpg",
+      "zone": "H",
+      "group_id": "g50",
+      "floor": "first",
+      "position": {
+        "x": 801,
+        "y": 1194
+      },
+      "heading": 272,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H24",
+      "file": "H24.jpg",
+      "zone": "H",
+      "group_id": "g54",
+      "floor": "first",
+      "position": {
+        "x": 1471,
+        "y": 1523
+      },
+      "heading": 335,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H25",
+      "file": "H25.jpg",
+      "zone": "H",
+      "group_id": "g50",
+      "floor": "first",
+      "position": {
+        "x": 1488,
+        "y": 1592
+      },
+      "heading": 275,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H26",
+      "file": "H26.jpg",
+      "zone": "H",
+      "group_id": "g50",
+      "floor": "first",
+      "position": {
+        "x": 1456,
+        "y": 1596
+      },
+      "heading": 231,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H27",
+      "file": "H27.jpg",
+      "zone": "H",
+      "group_id": "g51",
+      "floor": "first",
+      "position": {
+        "x": 1684,
+        "y": 1727
+      },
+      "heading": 175,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H28",
+      "file": "H28.jpg",
+      "zone": "H",
+      "group_id": "",
+      "floor": "first",
+      "position": {
+        "x": 1778,
+        "y": 1745
+      },
+      "heading": 312,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H29",
+      "file": "H29.jpg",
+      "zone": "H",
+      "group_id": "g55",
+      "floor": "first",
+      "position": {
+        "x": 2028,
+        "y": 1848
+      },
+      "heading": 315,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H30",
+      "file": "H30.jpg",
+      "zone": "H",
+      "group_id": "g51",
+      "floor": "first",
+      "position": {
+        "x": 1996,
+        "y": 1906
+      },
+      "heading": 277,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H31",
+      "file": "H31.jpg",
+      "zone": "H",
+      "group_id": "g56",
+      "floor": "first",
+      "position": {
+        "x": 2073,
+        "y": 1878
+      },
+      "heading": 122,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H32",
+      "file": "H32.jpg",
+      "zone": "H",
+      "group_id": "g52",
+      "floor": "first",
+      "position": {
+        "x": 1146,
+        "y": 746
+      },
+      "heading": 149,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H33",
+      "file": "H33.jpg",
+      "zone": "H",
+      "group_id": "",
+      "floor": "first",
+      "position": {
+        "x": 1346,
+        "y": 862
+      },
+      "heading": 122,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H34",
+      "file": "H34.jpg",
+      "zone": "H",
+      "group_id": "g53",
+      "floor": "first",
+      "position": {
+        "x": 1759,
+        "y": 1398
+      },
+      "heading": 348,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H35",
+      "file": "H35.jpg",
+      "zone": "H",
+      "group_id": "",
+      "floor": "first",
+      "position": {
+        "x": 2152,
+        "y": 1328
+      },
+      "heading": 15,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H36",
+      "file": "H36.jpg",
+      "zone": "H",
+      "group_id": "g49",
+      "floor": "first",
+      "position": {
+        "x": 1604,
+        "y": 1006
+      },
+      "heading": 0,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H37",
+      "file": "H37.jpg",
+      "zone": "H",
+      "group_id": "g52",
+      "floor": "first",
+      "position": {
+        "x": 1194,
+        "y": 1102
+      },
+      "heading": 310,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H38",
+      "file": "H38.jpg",
+      "zone": "H",
+      "group_id": "g53",
+      "floor": "first",
+      "position": {
+        "x": 1443,
+        "y": 1140
+      },
+      "heading": 106,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H39",
+      "file": "H39.jpg",
+      "zone": "H",
+      "group_id": "g54",
+      "floor": "first",
+      "position": {
+        "x": 1409,
+        "y": 1232
+      },
+      "heading": 155,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H40",
+      "file": "H40.jpg",
+      "zone": "H",
+      "group_id": "",
+      "floor": "first",
+      "position": {
+        "x": 1681,
+        "y": 1385
+      },
+      "heading": 273,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H41",
+      "file": "H41.jpg",
+      "zone": "H",
+      "group_id": "g55",
+      "floor": "first",
+      "position": {
+        "x": 2003,
+        "y": 1500
+      },
+      "heading": 131,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H43",
+      "file": "H43.jpg",
+      "zone": "H",
+      "group_id": "",
+      "floor": "first",
+      "position": {
+        "x": 2501,
+        "y": 1531
+      },
+      "heading": 304,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H44",
+      "file": "H44.jpg",
+      "zone": "H",
+      "group_id": "g55",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "H45",
+      "file": "H45.jpg",
+      "zone": "H",
+      "group_id": "g45",
+      "floor": "first",
+      "position": {
+        "x": 3367,
+        "y": 795
+      },
+      "heading": 151,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H46",
+      "file": "H46.jpg",
+      "zone": "H",
+      "group_id": "g46",
+      "floor": "first",
+      "position": {
+        "x": 2926,
+        "y": 1420
+      },
+      "heading": 279,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H47",
+      "file": "H47.jpg",
+      "zone": "H",
+      "group_id": "",
+      "floor": "first",
+      "position": {
+        "x": 2470,
+        "y": 1167
+      },
+      "heading": 275,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H48",
+      "file": "H48.jpg",
+      "zone": "H",
+      "group_id": "g47",
+      "floor": "first",
+      "position": {
+        "x": 2091,
+        "y": 929
+      },
+      "heading": 277,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H49",
+      "file": "H49.jpg",
+      "zone": "H",
+      "group_id": "g48",
+      "floor": "first",
+      "position": {
+        "x": 3130,
+        "y": 948
+      },
+      "heading": 0,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H50",
+      "file": "H50.jpg",
+      "zone": "H",
+      "group_id": "g47",
+      "floor": "first",
+      "position": {
+        "x": 1861,
+        "y": 803
+      },
+      "heading": 159,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H51",
+      "file": "H51.jpg",
+      "zone": "H",
+      "group_id": "g48",
+      "floor": "first",
+      "position": {
+        "x": 2689,
+        "y": 653
+      },
+      "heading": 95,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H52",
+      "file": "H52.jpg",
+      "zone": "H",
+      "group_id": "",
+      "floor": "first",
+      "position": {
+        "x": 1688,
+        "y": 691
+      },
+      "heading": 266,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H53",
+      "file": "H53.jpg",
+      "zone": "H",
+      "group_id": "g49",
+      "floor": "first",
+      "position": {
+        "x": 1397,
+        "y": 630
+      },
+      "heading": 129,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H54",
+      "file": "H54.jpg",
+      "zone": "H",
+      "group_id": "g47",
+      "floor": "first",
+      "position": {
+        "x": 2459,
+        "y": 1243
+      },
+      "heading": 304,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H55",
+      "file": "H55.jpg",
+      "zone": "H",
+      "group_id": "g46",
+      "floor": "first",
+      "position": {
+        "x": 2616,
+        "y": 1209
+      },
+      "heading": 159,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "H56",
+      "file": "H56.jpg",
+      "zone": "H",
+      "group_id": "g50",
+      "floor": "first",
+      "position": {
+        "x": 377,
+        "y": 1151
+      },
+      "heading": 133,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I13",
+      "file": "I13.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 7640,
+        "y": 3006
+      },
+      "heading": 308,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I14",
+      "file": "I14.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 7068,
+        "y": 2147
+      },
+      "heading": 266,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I15",
+      "file": "I15.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 7448,
+        "y": 2382
+      },
+      "heading": 293,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I16",
+      "file": "I16.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 6670,
+        "y": 2036
+      },
+      "heading": 244,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I17",
+      "file": "I17.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 6995,
+        "y": 2626
+      },
+      "heading": 304,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I18",
+      "file": "I18.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 7085,
+        "y": 2630
+      },
+      "heading": 126,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I22",
+      "file": "I22.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 7273,
+        "y": 2797
+      },
+      "heading": 301,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I24",
+      "file": "I24.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 7401,
+        "y": 2831
+      },
+      "heading": 128,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I25",
+      "file": "I25.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 7866,
+        "y": 2613
+      },
+      "heading": 286,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I26",
+      "file": "I26.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 6760,
+        "y": 2459
+      },
+      "heading": 124,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I27",
+      "file": "I27.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 8161,
+        "y": 2809
+      },
+      "heading": 299,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I28",
+      "file": "I28.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 8533,
+        "y": 3049
+      },
+      "heading": 275,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "I29",
+      "file": "I29.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I30",
+      "file": "I30.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I31",
+      "file": "I31.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I32",
+      "file": "I32.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I33",
+      "file": "I33.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I34",
+      "file": "I34.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I35",
+      "file": "I35.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I37",
+      "file": "I37.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I39",
+      "file": "I39.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I40",
+      "file": "I40.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I41",
+      "file": "I41.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I42",
+      "file": "I42.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I43",
+      "file": "I43.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I44",
+      "file": "I44.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I45",
+      "file": "I45.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I46",
+      "file": "I46.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I47",
+      "file": "I47.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "I48",
+      "file": "I48.jpg",
+      "zone": "I",
+      "group_id": "",
+      "floor": null,
+      "position": null,
+      "heading": 0,
+      "status": "unplaced",
+      "notes": "",
+      "provenance": null
+    },
+    {
+      "id": "ReceptionCam1",
+      "file": "ReceptionCam1.jpg",
+      "zone": "Departure_Reception",
+      "group_id": "g30",
+      "floor": "ground",
+      "position": {
+        "x": 2969,
+        "y": 2274
+      },
+      "heading": 151,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "ReceptionCam2",
+      "file": "ReceptionCam2.jpg",
+      "zone": "Departure_Reception",
+      "group_id": "g30",
+      "floor": "ground",
+      "position": {
+        "x": 3383,
+        "y": 2526
+      },
+      "heading": 273,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "ReceptionCam3",
+      "file": "ReceptionCam3.jpg",
+      "zone": "Departure_Reception",
+      "group_id": "g30",
+      "floor": "ground",
+      "position": {
+        "x": 2535,
+        "y": 2542
+      },
+      "heading": 69,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "SGSCam1",
+      "file": "SGSCam1.jpg",
+      "zone": "Sgs",
+      "group_id": "g32",
+      "floor": "ground",
+      "position": {
+        "x": 2433,
+        "y": 2185
+      },
+      "heading": 304,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "SGSCam2",
+      "file": "SGSCam2.jpg",
+      "zone": "Sgs",
+      "group_id": "g32",
+      "floor": "ground",
+      "position": {
+        "x": 2178,
+        "y": 1856
+      },
+      "heading": 202,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "SGSCam3",
+      "file": "SGSCam3.jpg",
+      "zone": "Sgs",
+      "group_id": "g32",
+      "floor": "ground",
+      "position": {
+        "x": 1877,
+        "y": 2489
+      },
+      "heading": 308,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "SGSCam4",
+      "file": "SGSCam4.jpg",
+      "zone": "Sgs",
+      "group_id": "g32",
+      "floor": "ground",
+      "position": {
+        "x": 1317,
+        "y": 2364
+      },
+      "heading": 78,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    }
+  ]
+}

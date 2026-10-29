@@ -1,0 +1,42 @@
+{
+  "format": "altanfeethi-camera-registration",
+  "version": 1,
+  "coordinateSpace": "source-image-pixels",
+  "floors": {
+    "ground": {
+      "image": "map/ground-floor.png",
+      "width": 14761,
+      "height": 8610
+    },
+    "first": {
+      "image": "map/first-floor.png",
+      "width": 7076,
+      "height": 4086
+    }
+  },
+  "cameras": [
+    {
+      "id": "B1",
+      "file": "B1.jpg",
+      "zone": "B",
+      "group_id": "g9",
+      "floor": "ground",
+      "position": {
+        "x": 4190,
+        "y": 4057
+      },
+      "heading": 0,
+      "headingStatus": "unknown-placeholder",
+      "status": "approximate",
+      "notes": "Transferred from the overlapping camera-marking screenshots. Exact physical mount point and heading still require confirmation.",
+      "provenance": {
+        "type": "registered-reference",
+        "sources": [
+          "camera_marking/image (1).png",
+          "camera_marking/image (2).png"
+        ],
+        "confidence": "medium"
+      }
+    }
+  ]
+}

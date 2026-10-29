@@ -1,0 +1,18 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-seating-001",
+  "slug": "g9",
+  "name": "G9 · Private seating",
+  "floor": "ground",
+  "groups": ["g9"],
+  "zone": "B",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

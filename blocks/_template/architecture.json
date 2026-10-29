@@ -1,0 +1,12 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "REPLACE_WITH_GLOBALLY_UNIQUE_ID",
+  "floorSize": [4, 4],
+  "ceilingHeight": 4.1,
+  "placement": {"status": "not-globally-calibrated", "map": "evidence/maps/ground-floor.png", "registrationRevision": null, "anchors": []},
+  "footprint": [],
+  "walls": [],
+  "openings": [],
+  "sharedBoundaries": []
+}

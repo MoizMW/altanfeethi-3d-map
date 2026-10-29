@@ -1,0 +1,11 @@
+{
+  "name": "altanfeethi-spatial-twin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:app": "npm ci --prefix app",
+    "start": "npm start --prefix app",
+    "test": "node scripts/validate-blocks.mjs && npm test --prefix app",
+    "camera-registration": "node tools/camera-registration/server.mjs"
+  }
+}

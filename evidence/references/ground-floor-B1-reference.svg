@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 14761 8610" role="img" aria-labelledby="title description">
+  <title id="title">Altanfeethi ground floor camera B1 reference</title>
+  <description id="description">The supplied ground-floor map with the approximate B1 camera position marked at source-image coordinate 4190, 4057.</description>
+  <image width="14761" height="8610" href="../maps/ground-floor.png" xlink:href="../maps/ground-floor.png" />
+  <g transform="translate(4190 4057)">
+    <circle r="118" fill="#0d141d" fill-opacity="0.32" />
+    <circle r="74" fill="#f1a734" stroke="#111821" stroke-width="26" />
+    <path d="M 108 -114 H 962 Q 1012 -114 1012 -64 V 64 Q 1012 114 962 114 H 108 Q 58 114 58 64 V -64 Q 58 -114 108 -114 Z" fill="#101720" fill-opacity="0.94" stroke="#f1a734" stroke-width="10" />
+    <text x="120" y="22" fill="#ffffff" font-family="Inter,Segoe UI,sans-serif" font-size="118" font-weight="750">B1 · APPROXIMATE</text>
+  </g>
+  <g transform="translate(520 7900)">
+    <rect width="5450" height="390" rx="78" fill="#101720" fill-opacity="0.94" stroke="#f1a734" stroke-width="9" />
+    <circle cx="205" cy="195" r="50" fill="#f1a734" />
+    <text x="330" y="167" fill="#ffffff" font-family="Inter,Segoe UI,sans-serif" font-size="116" font-weight="700">B1 source coordinate: 4190, 4057</text>
+    <text x="330" y="290" fill="#a7b3bf" font-family="Inter,Segoe UI,sans-serif" font-size="92">Transferred from marking images 1 and 2 · physical verification required</text>
+  </g>
+</svg>

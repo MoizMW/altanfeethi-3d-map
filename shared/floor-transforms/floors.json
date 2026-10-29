@@ -1,0 +1,9 @@
+{
+  "format": "altanfeethi-floor-transforms",
+  "version": 1,
+  "coordinateSystem": {"up": "Y", "horizontal": ["X", "Z"], "runtimeUnits": "provisional-meters"},
+  "floors": {
+    "ground": {"map": "evidence/maps/ground-floor.png", "status": "relative-unresolved", "transformVersion": null, "baseY": 0},
+    "first": {"map": "evidence/maps/first-floor.png", "status": "relative-unresolved", "transformVersion": null, "baseY": null}
+  }
+}

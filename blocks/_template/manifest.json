@@ -1,0 +1,14 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "REPLACE_WITH_GLOBALLY_UNIQUE_ID",
+  "slug": "REPLACE_WITH_BLOCK_SLUG",
+  "name": "REPLACE WITH BLOCK NAME",
+  "floor": "ground",
+  "groups": [],
+  "zone": "",
+  "status": "draft",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {"architecture": "architecture.json", "objects": "objects.json", "evidence": "evidence.json"}
+}
