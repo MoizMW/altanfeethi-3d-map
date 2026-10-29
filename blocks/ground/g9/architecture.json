@@ -2,19 +2,273 @@
   "format": "altanfeethi-block-architecture",
   "version": 1,
   "blockId": "ground-seating-001",
-  "floorSize": [4.8, 4.8],
+  "floorSize": [
+    7.2,
+    6
+  ],
   "ceilingHeight": 4.1,
   "placement": {
     "status": "not-globally-calibrated",
     "map": "evidence/maps/ground-floor.png",
     "registrationRevision": "2026-10-29T05:38:50.669Z",
     "anchors": [
-      {"camera": "B1", "pixel": [4245, 3934], "heading": 65},
-      {"camera": "B3", "pixel": [4599, 3776], "heading": 237}
+      {
+        "camera": "B1",
+        "pixel": [
+          4245,
+          3934
+        ],
+        "heading": 65
+      },
+      {
+        "camera": "B3",
+        "pixel": [
+          4599,
+          3776
+        ],
+        "heading": 237
+      }
     ]
   },
-  "footprint": [],
-  "walls": [],
-  "openings": [],
-  "sharedBoundaries": []
+  "footprint": [
+    [
+      -5.38,
+      -3
+    ],
+    [
+      1.82,
+      -3
+    ],
+    [
+      1.82,
+      3
+    ],
+    [
+      -5.38,
+      3
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g9-tv-wall",
+      "kind": "solid",
+      "start": [
+        1.82,
+        -3
+      ],
+      "end": [
+        1.82,
+        3
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#174d57",
+      "owner": "ground/g9",
+      "sources": [
+        "B1-wide",
+        "B3-wide",
+        "user-description"
+      ],
+      "confidence": "Topology from user and wide frames; dimensions estimated",
+      "finish": "teal-gold-panels",
+      "interiorSide": 1
+    },
+    {
+      "id": "g9-sofa-glazing",
+      "kind": "glass",
+      "start": [
+        -1.78,
+        -3
+      ],
+      "end": [
+        1.82,
+        -3
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "color": "#e2dfd5",
+      "owner": "ground/g9",
+      "sources": [
+        "B1-wide",
+        "B3-wide",
+        "user-description"
+      ],
+      "confidence": "Topology from user and wide frames; dimensions estimated"
+    },
+    {
+      "id": "g9-entrance-wall",
+      "kind": "solid",
+      "start": [
+        -1.78,
+        3
+      ],
+      "end": [
+        1.82,
+        3
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e2dfd5",
+      "owner": "ground/g9",
+      "sources": [
+        "B1-wide",
+        "B3-wide",
+        "user-description"
+      ],
+      "confidence": "Topology from user and wide frames; dimensions estimated"
+    },
+    {
+      "id": "g9-passage-entrance-wall",
+      "kind": "solid",
+      "start": [
+        -5.38,
+        3
+      ],
+      "end": [
+        -1.78,
+        3
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e2dfd5",
+      "owner": "ground/g9",
+      "sources": [
+        "B1-wide",
+        "B3-wide",
+        "user-description"
+      ],
+      "confidence": "Rounded surround on passage half confirmed by user; dimensions estimated"
+    },
+    {
+      "id": "g9-passage-outer-wall",
+      "kind": "solid",
+      "start": [
+        -5.38,
+        -3
+      ],
+      "end": [
+        -5.38,
+        3
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e2dfd5",
+      "owner": "ground/g9",
+      "sources": [
+        "B1-wide",
+        "B3-wide",
+        "user-description"
+      ],
+      "confidence": "Leftmost outer wall confirmed by user; finish/thickness estimated"
+    }
+  ],
+  "openings": [
+    {
+      "id": "g9-rounded-entrance",
+      "wallId": "g9-entrance-wall",
+      "kind": "rounded-passage",
+      "offset": 1.8,
+      "width": 2.55,
+      "springHeight": 1.85,
+      "height": 3.15,
+      "sources": [
+        "B1-wide",
+        "user-description"
+      ],
+      "confidence": "Rounded access confirmed; profile and dimensions estimated"
+    },
+    {
+      "id": "g9-passage-rounded-entrance",
+      "wallId": "g9-passage-entrance-wall",
+      "kind": "rounded-passage",
+      "offset": 1.8,
+      "width": 2.55,
+      "springHeight": 1.85,
+      "height": 3.15,
+      "sources": [
+        "B1-wide",
+        "user-description"
+      ],
+      "confidence": "Rounded passage-side surround confirmed by user; shape and dimensions estimated"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "g9-passage-g-zone",
+      "kind": "open-connection",
+      "neighbor": "G-zone block (unassigned)",
+      "status": "needs-global-alignment",
+      "ownsWall": false
+    }
+  ],
+  "floorCenter": [
+    -1.78,
+    0
+  ],
+  "ceiling": {
+    "height": 4.1,
+    "size": [
+      7.2,
+      6
+    ],
+    "center": [
+      -1.78,
+      0
+    ],
+    "defaultVisible": false,
+    "confidence": "Plain provisional ceiling; full overhead detail unavailable"
+  },
+  "circulation": {
+    "kind": "open-through-passage",
+    "destination": "G zone",
+    "polygon": [
+      [
+        -5.38,
+        -3
+      ],
+      [
+        -1.78,
+        -3
+      ],
+      [
+        -1.78,
+        3
+      ],
+      [
+        -5.38,
+        3
+      ]
+    ],
+    "openEdges": [
+      {
+        "id": "g9-passage-g-zone",
+        "start": [
+          -5.38,
+          -3
+        ],
+        "end": [
+          -1.78,
+          -3
+        ],
+        "destination": "G zone"
+      }
+    ],
+    "confidence": "Half-area circulation and G-zone destination confirmed by user; exact edge placement/width estimated",
+    "surfaceMaterial": "same-as-seating",
+    "connections": [
+      {
+        "id": "g9-passage-corridor",
+        "kind": "rounded-passage",
+        "openingId": "g9-passage-rounded-entrance",
+        "destination": "main corridor"
+      }
+    ]
+  },
+  "notes": [
+    "Full working area equals G11's provisional 43.2 m², using 7.2 × 6 m with local floor center [-1.78,0]. This relative equality is user-confirmed; meter dimensions remain estimated.",
+    "Seating half X [-1.78,1.82] and passage half X [-5.38,-1.78] share the same dark stone floor. The passage has an outer left wall and rounded corridor entrance; its G-zone end remains open.",
+    "B1-wide shows the rounded corridor entrance behind B1/B2. B3-wide shows glazing behind sofa, TV on the decorated side wall and the open adjacent half.",
+    "Existing furniture coordinates, scale and seat IDs retained. The previous freestanding-screen interpretation is updated to wall cladding at its saved position.",
+    "Owner correction: leftmost wall and passage-side rounded surround are present. TV wall has teal/gold decorative finish. Wall dimensions and global seam alignment remain estimated."
+  ]
 }

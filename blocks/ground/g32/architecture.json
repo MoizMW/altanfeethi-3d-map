@@ -1,0 +1,73 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-sgs-checkin-032",
+  "floorSize": [
+    13.4,
+    6.8
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-10-29T05:38:50.669Z",
+    "anchors": [
+      {
+        "camera": "SGSCam1",
+        "pixel": [
+          2433,
+          2185
+        ],
+        "heading": 304
+      },
+      {
+        "camera": "SGSCam2",
+        "pixel": [
+          2178,
+          1856
+        ],
+        "heading": 202
+      },
+      {
+        "camera": "SGSCam3",
+        "pixel": [
+          1877,
+          2489
+        ],
+        "heading": 308
+      },
+      {
+        "camera": "SGSCam4",
+        "pixel": [
+          1317,
+          2364
+        ],
+        "heading": 78
+      }
+    ],
+    "localAxes": {
+      "x": "Along the counter row, from the flynas end toward the single Saudia counter",
+      "z": "From rear wood panel toward the visitor aisle",
+      "y": "Up"
+    },
+    "mapReview": {
+      "regionPixels": [
+        1200,
+        1550,
+        2850,
+        2900
+      ],
+      "observation": "Four counter islands follow the outer SGS Check-in edge of the map; three double and one single workstation inferred from map symbols and overlapping photos.",
+      "metricTransform": null
+    }
+  },
+  "footprint": [],
+  "walls": [],
+  "openings": [],
+  "sharedBoundaries": [],
+  "notes": [
+    "Floor rectangle is a working area, not a traced room boundary. Rear wood cladding is the editable object g32-back-panel; structural wall thickness is unknown.",
+    "Ceiling estimate 12–15 ft (3.66–4.57 m); 4.1 m is used as a provisional visualization height. No ceiling mesh hides the workspace.",
+    "Global map orientation, scale, adjoining entrance/security boundaries and exact aisle width require review."
+  ]
+}

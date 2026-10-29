@@ -1,0 +1,42 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-sgs-checkin-032",
+  "cameras": [
+    "SGSCam1",
+    "SGSCam2",
+    "SGSCam3",
+    "SGSCam4"
+  ],
+  "snapshots": {
+    "SGSCam1": "evidence/camera-snapshots/SGSCam1.jpg",
+    "SGSCam2": "evidence/camera-snapshots/SGSCam2.jpg",
+    "SGSCam3": "evidence/camera-snapshots/SGSCam3.jpg",
+    "SGSCam4": "evidence/camera-snapshots/SGSCam4.jpg"
+  },
+  "rois": {
+    "SGSCam1": "evidence/rois/reception-rois/g32/SGSCam1.json",
+    "SGSCam2": "evidence/rois/reception-rois/g32/SGSCam2.json",
+    "SGSCam3": "evidence/rois/reception-rois/g32/SGSCam3.json",
+    "SGSCam4": "evidence/rois/reception-rois/g32/SGSCam4.json"
+  },
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "roiCoordinateStatus": "All four R1 polygons fit 1920×1080 bounds. They describe reception areas, not individual chair IDs; original authoring dimensions are unrecorded.",
+  "notes": [
+    "Three double counters and one single counter are inferred from four overlapping views. Seven staff chairs are provisional workstation positions.",
+    "All Seat_SGS_TMP_* IDs are local temporary IDs; no G32 chair/table ROI mapping was found. Review chair counts and IDs before telemetry integration.",
+    "Stone-and-teal counter fronts, wood worktops/back panels, dark office chairs and two end luggage scales are supported by the snapshots. Dimensions remain estimated.",
+    "SGSCam1 and SGSCam3 share the flyadeal display/counter; SGSCam2 and SGSCam4 show the staff side. Their repeated workstations are modeled once.",
+    "The far-side kiosks, doorway/glazing, security area and adjacent reception are outside this block pending boundary review.",
+    "Local axes follow the counter row. Full-floor alignment and camera calibration remain unresolved; registered camera coordinates were preserved."
+  ],
+  "reviewItems": [
+    "Confirm seven active workstations, chair positions, and the left-to-right bank order.",
+    "Replace temporary chair IDs with approved SGS identifiers if available.",
+    "Confirm counter dimensions, gaps, rear aisle clearance and scale positions.",
+    "Calibrate block-to-map placement and agree neighboring ownership before full-floor assembly."
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-c-lounge-011",
+  "floorSize": [
+    6,
+    7.2
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-10-29T05:38:50.669Z",
+    "anchors": [
+      {
+        "camera": "C1",
+        "pixel": [
+          5401,
+          4604
+        ],
+        "heading": 77
+      },
+      {
+        "camera": "C2",
+        "pixel": [
+          5951,
+          4891
+        ],
+        "heading": 16
+      },
+      {
+        "camera": "C3",
+        "pixel": [
+          5954,
+          4553
+        ],
+        "heading": 235
+      }
+    ],
+    "localAxes": {
+      "x": "Along the sofa backs and central shelf",
+      "z": "Across shelf from Table_C2 side toward Table_C1 side",
+      "y": "Up"
+    }
+  },
+  "footprint": [
+    [
+      -3,
+      -3.6
+    ],
+    [
+      3,
+      -3.6
+    ],
+    [
+      3,
+      3.6
+    ],
+    [
+      -3,
+      3.6
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g11-glass-front",
+      "kind": "glass",
+      "start": [
+        3,
+        -3.6
+      ],
+      "end": [
+        3,
+        3.6
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "color": "#9dbfc3",
+      "owner": "ground/g11",
+      "confidence": "Boundary type confirmed by user and wide captures; dimensions estimated",
+      "sources": [
+        "C1-wide",
+        "C2-wide",
+        "C3-wide",
+        "user-description"
+      ]
+    },
+    {
+      "id": "g11-side-c1",
+      "kind": "solid",
+      "start": [
+        -3,
+        3.6
+      ],
+      "end": [
+        3,
+        3.6
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#174d57",
+      "owner": "ground/g11",
+      "confidence": "Boundary type confirmed by user and wide captures; dimensions estimated",
+      "sources": [
+        "C1-wide",
+        "C2-wide",
+        "C3-wide",
+        "user-description"
+      ],
+      "finish": "teal-gold-panels",
+      "interiorSide": -1,
+      "pilaster": {
+        "offset": 5.55,
+        "width": 0.52,
+        "depth": 0.26
+      }
+    },
+    {
+      "id": "g11-side-c5",
+      "kind": "solid",
+      "start": [
+        -3,
+        -3.6
+      ],
+      "end": [
+        3,
+        -3.6
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#333a39",
+      "owner": "ground/g11",
+      "confidence": "Boundary type confirmed by user and wide captures; dimensions estimated",
+      "sources": [
+        "C1-wide",
+        "C2-wide",
+        "C3-wide",
+        "user-description"
+      ],
+      "finish": "dark-reflective-panels",
+      "interiorSide": 1
+    },
+    {
+      "id": "g11-access-wall",
+      "kind": "solid",
+      "start": [
+        -3,
+        -3.6
+      ],
+      "end": [
+        -3,
+        3.6
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g11",
+      "confidence": "Boundary type confirmed by user and wide captures; dimensions estimated",
+      "sources": [
+        "C1-wide",
+        "C2-wide",
+        "C3-wide",
+        "user-description"
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "id": "g11-access-c5",
+      "wallId": "g11-access-wall",
+      "kind": "rounded-passage",
+      "offset": 1.6,
+      "width": 2.15,
+      "springHeight": 1.85,
+      "height": 3.15,
+      "behindSeat": "Seat_C5",
+      "confidence": "Access confirmed by user; separate arch interpretation and dimensions estimated",
+      "sources": [
+        "C2-wide",
+        "user-description"
+      ]
+    },
+    {
+      "id": "g11-access-c1",
+      "wallId": "g11-access-wall",
+      "kind": "rounded-passage",
+      "offset": 5.6,
+      "width": 2.15,
+      "springHeight": 1.85,
+      "height": 3.15,
+      "behindSeat": "Seat_C1",
+      "confidence": "Access confirmed by user; separate arch interpretation and dimensions estimated",
+      "sources": [
+        "C1-wide",
+        "user-description"
+      ]
+    }
+  ],
+  "sharedBoundaries": [],
+  "notes": [
+    "Closed front glazing and two closed side boundaries follow user clarification and C3-wide. Solid means no passage; front glass remains a physical boundary.",
+    "Opposite access side is local -X behind the human-corrected Seat_C1 and Seat_C5. Two rounded passages around a central pier are an estimated interpretation of C1/C2 wide views.",
+    "The footprint, wall height, thickness, opening shape/width and glass panel divisions are provisional. Existing furniture edits are retained; floor-to-wall offsets require review.",
+    "Ceiling is a plain visualization plane, hidden by default. Captures do not establish exact ceiling profile or dimensions.",
+    "Side finishes refined from C3-wide: camera-left dark reflective paneling with metal trim; camera-right teal/gold geometric cladding and a projecting pale pier near front glazing. Relief depths and motif are approximations; no measured wall curvature is inferred."
+  ],
+  "ceiling": {
+    "height": 4.1,
+    "size": [
+      6,
+      7.2
+    ],
+    "defaultVisible": false,
+    "confidence": "Plain provisional ceiling using user's 12–15 ft estimate; actual profile and fixtures unresolved"
+  }
+}

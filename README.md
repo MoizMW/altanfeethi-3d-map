@@ -1,5 +1,7 @@
 # Altanfeethi spatial twin
 
+G11 C-zone lounge: `http://127.0.0.1:4209/?block=ground/g11` — [block evidence and review notes](blocks/ground/g11/README.md).
+
 Contributor visual standard: [MATERIAL_GUIDE.md](MATERIAL_GUIDE.md).
 
 This repository contains a shared Three.js block editor and independently owned spatial blocks. Contributors build one bounded area at a time; the complete building will be composed from those blocks later.

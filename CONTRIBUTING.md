@@ -63,6 +63,8 @@ Follow [MATERIAL_GUIDE.md](MATERIAL_GUIDE.md) for shared surface definitions, co
 
 ## 5. Shared boundaries
 
+Follow [ARCHITECTURE_GUIDE.md](ARCHITECTURE_GUIDE.md): record confirmed walls, glazing and open edges during block authoring, then resolve shared ownership and seams during merge. Ceiling height and uncertain extents remain explicit estimates.
+
 Exactly one block owns each shared wall, opening, or seam. The neighboring block records a reference in `sharedBoundaries`; it does not create a second overlapping wall. Ask the integrator to assign ownership when the boundary is unclear.
 
 `shared/floor-transforms/`, `shared/schema/`, asset types, and material definitions are integration contracts. Change them in a separate `shared/...` branch and pull request so all block owners can review the effect.

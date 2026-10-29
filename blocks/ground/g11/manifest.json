@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-c-lounge-011",
+  "slug": "g11",
+  "name": "G11 · C-zone lounge",
+  "floor": "ground",
+  "groups": [
+    "g11"
+  ],
+  "zone": "C",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

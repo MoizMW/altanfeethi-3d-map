@@ -1,0 +1,59 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-c-lounge-011",
+  "cameras": [
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "snapshots": {
+    "C1": "evidence/camera-snapshots/C1.jpg",
+    "C2": "evidence/camera-snapshots/C2.jpg",
+    "C3": "evidence/camera-snapshots/C3.jpg"
+  },
+  "rois": {
+    "C1": {
+      "chairs": "evidence/rois/chair-rois/g11/C1_to_g11.json",
+      "tables": "evidence/rois/table-rois/g11/C1_to_g11.json"
+    },
+    "C2": {
+      "chairs": "evidence/rois/chair-rois/g11/C2_to_g11.json",
+      "tables": "evidence/rois/table-rois/g11/C2_to_g11.json"
+    },
+    "C3": {
+      "chairs": "evidence/rois/chair-rois/g11/C3_to_g11.json",
+      "tables": "evidence/rois/table-rois/g11/C3_to_g11.json"
+    }
+  },
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "notes": [
+    "Architecture updated from three wide captures and user description. Opposite the access side is closed glazing, with closed side walls. Two rounded access passages behind Seat_C1/C5 are estimated around a central pier.",
+    "Two back-to-back two-seat sofas and four blue armchairs account for eight ROI seat labels; Table_C1 and Table_C2 are two physical coffee tables seen in all three views.",
+    "A single dark open-shelf divider is shared by the two clusters. Shelf ornaments, plants and round side tables are simplified context.",
+    "Reuse G9 lounge upholstery, pale stone table colors, shared dark stone floor and the same lighting. No camera-specific texture tint was introduced.",
+    "ROI authoring resolution is unrecorded; image-space labels support correspondence only. Dimensions, world yaw and block-to-map alignment are provisional.",
+    "Human-reviewed furniture positions and seat assignments in objects.json supersede initial ROI-side guesses. All current object records were preserved.",
+    "Front glass boundary is local +X behind Seat_C4/C8. Side walls are local +/-Z. Axis assignment follows the corrected chair positions, not camera image left/right.",
+    "C3-wide shows suspended lighting but does not establish the full ceiling geometry; fixture reconstruction is deferred."
+  ],
+  "reviewItems": [
+    "Confirm two separate rounded openings versus one continuous curved access boundary; verify central pier and wall extents.",
+    "Review estimated arch dimensions, glass framing, height and footprint clearances.",
+    "Review plant/shelf details and calibrate block-to-map alignment before assembly."
+  ],
+  "wideSnapshots": {
+    "C1": "evidence/wide capture snapshots/c1.jpg",
+    "C2": "evidence/wide capture snapshots/c2.jpg",
+    "C3": "evidence/wide capture snapshots/c3.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per user",
+    "zoom": "Wider than detection snapshots",
+    "roiUsage": "Detection ROIs apply only to original camera-snapshots; no wide-view ROI projection applied",
+    "capturedAt": null
+  }
+}

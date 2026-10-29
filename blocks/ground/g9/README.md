@@ -17,3 +17,14 @@ The block references B1/B3 images from `evidence/camera-snapshots/` and the map 
 Review: compare both photos, click an object in the scene or library, then use Move/Rotate/Scale handles or edit the precise position, size, scale, rotation, and material fields. Press W/E/R for the three handles and Q for selection. Width/height/depth edit the provisional physical size; scale applies an additional multiplier. A selected armchair exposes its Chair ID / seat ID. It can be renamed (for example `Seat_B17`), but the new ID must be unique in the block. The furniture object's stable `g9-...` ID stays unchanged. Apply adjustment, then Save block. The scene uses provisional meters with Y up; front of a seating asset is local +Z. Future floor integration should transform the block as a unit without changing stable object IDs.
 
 Run `npm test` from the repository root for schema, composition, identity, evidence access and stale-write checks. Orbit controls and rounded geometry use the official Three.js addons: https://threejs.org/docs/pages/OrbitControls.html and https://threejs.org/docs/pages/RoundedBoxGeometry.html.
+# Architecture update from B1/B3 wide captures
+
+Owner correction: the passage half has a leftmost outer wall and its own rounded corridor entrance surround, while the G-zone end stays open. Both halves share the dark stone floor. The full TV boundary carries teal/gold geometric cladding. These details supersede the earlier pale-floor/unmodeled outer-edge description below. Wall profiles, pattern scale and dimensions are still estimates.
+
+G9 uses the same provisional area as G11 (43.2 m²), with dimensions oriented as 7.2 × 6 m and an offset floor center of [-1.78, 0]. The owner confirms half is seating and half is open circulation toward G zone. Exact dimensions and block-to-map alignment remain estimated.
+
+The left half in the B3 description is an open through passage. It is shown with a pale floor surface; both ends remain open. The outer corridor side is unresolved. The TV wall and glazing behind the sofa enclose only the seating half. The rounded entrance behind the armchairs follows B1-wide, with estimated width, height and profile. The G-zone connection is recorded as an open seam for future alignment.
+
+Existing furniture transforms, sizes and human-corrected seat IDs are retained. The old screen's saved position now carries teal/gold wall-cladding geometry. TV, display console and floor lamp are additional editable objects. Neither reflected furniture nor reflected TV is duplicated. Detection ROIs still use only the original zoomed-in images.
+
+Use Walls / Low walls / Ceiling to inspect the shell, and B1 wide / B3 wide for references. Structural geometry is maintained in architecture.json; furniture editing saves only objects.json. These architecture notes supersede the original working-crop/no-shell assumptions.

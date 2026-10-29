@@ -2,15 +2,35 @@
   "format": "altanfeethi-block-evidence",
   "version": 1,
   "blockId": "ground-seating-001",
-  "cameras": ["B1", "B3"],
+  "cameras": [
+    "B1",
+    "B3"
+  ],
   "snapshots": {
     "B1": "evidence/camera-snapshots/B1.jpg",
     "B3": "evidence/camera-snapshots/B3.jpg"
   },
   "notes": [
-    "Local arrangement inferred from opposing snapshots; all dimensions are estimates, not measurements.",
-    "One shared table inferred from Table_B1 correspondence. Seat identities on each furniture side require human confirmation.",
-    "Floor extent is a working crop, not a surveyed room boundary. No enclosing walls inferred.",
-    "Privacy screen simplified from photographs. Global map transform, camera calibration, and exact glass/column boundaries remain unresolved."
+    "Owner correction: passage half has a rounded entrance surround and a leftmost outer wall, with the same floor finish as seating. TV wall is decorated. These details supersede the initial unbounded/pale-floor interpretation.",
+    "User confirms full G9 area equals G11, with half occupied by seating and half used as a passage toward G zone. Modeled floor area and halves are provisional relative proportions.",
+    "Rounded entrance from corridor is evidenced in B1-wide. B3-wide shows the sofa and TV-wall half, with adjoining open circulation. Glazing behind sofa is a closed boundary only across seating half.",
+    "Original furniture transforms and human-corrected Seat_B4/Seat_B3 sofa order are preserved. Screen geometry is reinterpreted as decorated wall cladding.",
+    "TV, passage-edge display console and sofa-side lamp are approximated from wide captures. Reflections do not create a second sofa or TV.",
+    "Existing ROIs remain attached to original detection snapshots. Images are not metrically calibrated; no raw ROI/pixel distances are treated as meters."
+  ],
+  "wideSnapshots": {
+    "B1": "evidence/wide capture snapshots/b1.jpg",
+    "B3": "evidence/wide capture snapshots/b3.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per user",
+    "zoom": "Wider architecture view",
+    "roiUsage": "Detection ROIs apply only to original zoomed-in snapshots",
+    "capturedAt": null
+  },
+  "reviewItems": [
+    "Confirm shell spacing against preserved seating and TV-wall cladding.",
+    "Review rounded opening dimensions and the display-console placement at the seating/corridor edge.",
+    "Align the open passage to the G-zone connection on the common floor map; outer corridor wall is owner-confirmed; dimensions remain estimated."
   ]
 }

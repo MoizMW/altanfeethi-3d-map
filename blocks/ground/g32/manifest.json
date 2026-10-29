@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-sgs-checkin-032",
+  "slug": "g32",
+  "name": "G32 · SGS check-in",
+  "floor": "ground",
+  "groups": [
+    "g32"
+  ],
+  "zone": "Sgs",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-c-lounge-011",
+  "objects": [
+    {
+      "id": "g11-sofa-01",
+      "type": "sofa",
+      "name": "Sofa · C2 / C3",
+      "position": [
+        0,
+        0,
+        0.72
+      ],
+      "yaw": 0,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_C2",
+        "Seat_C3"
+      ],
+      "cameras": [
+        "C1",
+        "C3"
+      ],
+      "confidence": "Appearance observed across overlapping snapshots; dimensions and local placement estimated"
+    },
+    {
+      "id": "g11-sofa-02",
+      "type": "sofa",
+      "name": "Sofa · C6 / C7",
+      "position": [
+        0,
+        0,
+        -0.72
+      ],
+      "yaw": 180,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_C6",
+        "Seat_C7"
+      ],
+      "cameras": [
+        "C2",
+        "C3"
+      ],
+      "confidence": "Appearance observed across overlapping snapshots; dimensions and local placement estimated"
+    },
+    {
+      "id": "g11-chair-1",
+      "type": "armchair",
+      "name": "Blue armchair · C1",
+      "position": [
+        -1.863562985594069,
+        0,
+        2.0045681270096933
+      ],
+      "yaw": 88.23881368621362,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1.1322850480538653,
+        1.0319372994812948,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C1"
+      ],
+      "cameras": [
+        "C1"
+      ],
+      "confidence": "Appearance observed across overlapping snapshots; dimensions and local placement estimated"
+    },
+    {
+      "id": "g11-chair-4",
+      "type": "armchair",
+      "name": "Blue armchair · C4",
+      "position": [
+        1.8083818044136386,
+        0,
+        2.03794904978452
+      ],
+      "yaw": -89.45443215293737,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C4"
+      ],
+      "cameras": [
+        "C3"
+      ],
+      "confidence": "Appearance observed across overlapping snapshots; dimensions and local placement estimated"
+    },
+    {
+      "id": "g11-chair-5",
+      "type": "armchair",
+      "name": "Blue armchair · C5",
+      "position": [
+        1.908,
+        0,
+        -1.901
+      ],
+      "yaw": -89.833,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C8"
+      ],
+      "cameras": [
+        "C2"
+      ],
+      "confidence": "Appearance observed across overlapping snapshots; dimensions and local placement estimated"
+    },
+    {
+      "id": "g11-chair-8",
+      "type": "armchair",
+      "name": "Blue armchair · C8",
+      "position": [
+        -1.831,
+        0,
+        -1.914
+      ],
+      "yaw": 89.597,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C5"
+      ],
+      "cameras": [
+        "C3"
+      ],
+      "confidence": "Appearance observed across overlapping snapshots; dimensions and local placement estimated"
+    },
+    {
+      "id": "g11-table-01",
+      "type": "table",
+      "name": "Coffee table · Table_C1",
+      "position": [
+        0,
+        0,
+        1.95
+      ],
+      "yaw": 0,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "confidence": "Appearance observed across overlapping snapshots; dimensions and local placement estimated",
+      "externalId": "Table_C1"
+    },
+    {
+      "id": "g11-table-02",
+      "type": "table",
+      "name": "Coffee table · Table_C2",
+      "position": [
+        0,
+        0,
+        -1.95
+      ],
+      "yaw": 0,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "confidence": "Appearance observed across overlapping snapshots; dimensions and local placement estimated",
+      "externalId": "Table_C2"
+    },
+    {
+      "id": "g11-divider-01",
+      "type": "screen",
+      "name": "Shared dark open shelving",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        2.55,
+        2.3,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#292d2b",
+      "seats": [],
+      "cameras": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "confidence": "One shared divider inferred behind both sofas; shelf details simplified",
+      "variant": "open-shelving"
+    },
+    {
+      "id": "g11-plant-01",
+      "type": "plant",
+      "name": "Central potted tree",
+      "position": [
+        1.95,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.7,
+        2.25,
+        0.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526b45",
+      "seats": [],
+      "cameras": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "confidence": "Tree visible in opposing views; simplified canopy and estimated position"
+    },
+    {
+      "id": "g11-plant-02",
+      "type": "plant",
+      "name": "Tall plant · C1 side",
+      "position": [
+        -2.214636797920884,
+        0,
+        0.20912788041429853
+      ],
+      "yaw": 0,
+      "size": [
+        0.48,
+        1.75,
+        0.48
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526b45",
+      "seats": [],
+      "cameras": [
+        "C1"
+      ],
+      "confidence": "Appearance observed across overlapping snapshots; dimensions and local placement estimated"
+    },
+    {
+      "id": "g11-side-table-01",
+      "type": "table",
+      "name": "Round side table · C1 side",
+      "position": [
+        1.6558778589131922,
+        0,
+        0.7617287248956929
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        0.47,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C3"
+      ],
+      "confidence": "Round side table observed; no external ROI table identity assigned",
+      "accessories": false
+    },
+    {
+      "id": "g11-side-table-02",
+      "type": "table",
+      "name": "Round side table · C2 side",
+      "position": [
+        1.6211100590196343,
+        0,
+        -0.9219175165819335
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        0.47,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C2",
+        "C3"
+      ],
+      "confidence": "Round side table observed; no external ROI table identity assigned",
+      "accessories": false
+    },
+    {
+      "id": "g11-lamp-c5",
+      "type": "floor-lamp",
+      "name": "Floor lamp · dark-panel side",
+      "position": [
+        2.42,
+        0,
+        -2.94
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "confidence": "Visible in wide C3 and corroborating C1/C2; dimensions and placement estimated; ornaments simplified"
+    },
+    {
+      "id": "g11-lamp-c1",
+      "type": "floor-lamp",
+      "name": "Floor lamp · teal-panel side",
+      "position": [
+        2.42,
+        0,
+        2.94
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "confidence": "Visible in wide C3 and corroborating C1/C2; dimensions and placement estimated; ornaments simplified"
+    },
+    {
+      "id": "g11-console-c5",
+      "type": "display-console",
+      "name": "Display console and ornaments · dark-panel side",
+      "position": [
+        -0.15,
+        0,
+        -3.23
+      ],
+      "yaw": 0,
+      "size": [
+        3.1,
+        0.9,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd7c8",
+      "seats": [],
+      "cameras": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "confidence": "Visible in wide C3 and corroborating C1/C2; dimensions and placement estimated; ornaments simplified"
+    },
+    {
+      "id": "g11-console-c1",
+      "type": "display-console",
+      "name": "Display console and ornaments · teal-panel side",
+      "position": [
+        -0.15,
+        0,
+        3.23
+      ],
+      "yaw": 180,
+      "size": [
+        3.1,
+        0.9,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd7c8",
+      "seats": [],
+      "cameras": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "confidence": "Visible in wide C3 and corroborating C1/C2; dimensions and placement estimated; ornaments simplified"
+    }
+  ]
+}

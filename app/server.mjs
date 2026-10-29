@@ -73,6 +73,11 @@ export const server=createServer(async(req,res)=>{
       const key=blockKey(url.searchParams.get('block')||undefined),id=decodeURIComponent(basename(url.pathname));
       if(!/^[A-Za-z0-9_-]{1,80}$/.test(id))return send(res,404,{error:'Not found'});
       const {block}=await loadBlock(key);if(!block.evidence.cameras.includes(id))return send(res,404,{error:'Camera is not evidence for this block'});
+      if(url.searchParams.get('wide')==='1'){
+        const path=block.evidence.wideSnapshots?.[id];if(!path)return send(res,404,{error:'No wide capture for this camera'});
+        const target=resolve(projectRoot,path);if(!target.startsWith(evidenceRoot+'/'))return send(res,403,{error:'Evidence path rejected'});
+        return send(res,200,await readFile(target),types['.jpg']);
+      }
       return send(res,200,await readFile(resolve(evidenceRoot,'camera-snapshots',`${id}.jpg`)),types['.jpg']);
     }
     if(url.pathname==='/api/evidence/map'&&req.method==='GET'){
@@ -82,7 +87,7 @@ export const server=createServer(async(req,res)=>{
     }
     if(req.method!=='GET')return send(res,405,{error:'Method not allowed'});
     const relative=decodeURIComponent(url.pathname).slice(1)||'index.html';let target;
-    if(['index.html','viewer.js','reception-objects.js','styles.css','editor.css'].includes(relative))target=resolve(appRoot,relative);
+    if(['index.html','viewer.js','architecture.js','reception-objects.js','styles.css','editor.css'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='shared/schema/block-schema.js')target=resolve(projectRoot,relative);
     else if(/^node_modules\/three\/(build|examples\/jsm)\/[\w/.-]+\.js$/.test(relative)&&!relative.includes('..'))target=resolve(appRoot,relative);
     else return send(res,404,{error:'Not found'});

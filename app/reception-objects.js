@@ -2,6 +2,8 @@ import * as THREE from 'three';
 
 // Local +Z is the visitor side of counters and the facing direction of chairs.
 export const receptionSizes = {
+  'floor-lamp': [.46,1.85,.46],
+  'display-console': [3.1,.9,.4],
   counter: [2.45, 1.18, .86],
   'office-chair': [.64, 1.22, .68],
   cabinet: [2.45, .78, .42],
@@ -13,7 +15,23 @@ export const receptionSizes = {
 export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
   const [w,h,d] = receptionSizes[o.type];
   const body=mat(o.color), wood=mat('#856746'), charcoal=mat('#242a2c'), metal=mat('#a7afb0',.3,.65);
-  if(o.type==='counter') {
+  if(o.type==='floor-lamp'){
+    box(g,[.3,.035,.3],[0,.025,0],mat('#ab9564',.35,.6),.008);
+    rod(g,[0,.04,0],[0,1.58,0],.018,mat('#ab9564',.35,.6));
+    const shade=mat('#f4ecd2',.85);shade.emissive=new THREE.Color('#e4d4a1');shade.emissiveIntensity=.18;
+    mesh(g,new THREE.CylinderGeometry(.23,.23,.36,32),shade,[0,1.67,0]);
+  }else if(o.type==='display-console'){
+    const brass=mat('#ab9564',.35,.6),stone=mat(o.color,.28);
+    box(g,[w,.045,d],[0,h-.022,0],stone,.008);
+    for(const x of [-w/2+.045,w/2-.045])for(const z of [-d/2+.035,d/2-.035])box(g,[.025,h-.045,.025],[x,(h-.045)/2,z],brass,.004);
+    for(const z of [-d/2+.035,d/2-.035])box(g,[w,.025,.025],[0,.12,z],brass,.004);
+    for(const x of [-w*.28,w*.28]){
+      mesh(g,new THREE.CylinderGeometry(.07,.12,.27,16),mat('#415466',.35),[x,h+.135,0]);
+      mesh(g,new THREE.CylinderGeometry(.035,.07,.2,16),mat('#415466',.35),[x,h+.37,0]);
+    }
+    box(g,[.28,.04,.16],[0,h+.02,0],charcoal,.004);
+    mesh(g,new THREE.TorusGeometry(.2,.025,10,36),mat('#a5a9a2',.35,.55),[0,h+.24,0]);
+  }else if(o.type==='counter') {
     // Open staff side, lower worktop, stone fascia and recessed teal panels.
     box(g,[w,.95,.14],[0,.54,d/2-.07],body,.012);
     box(g,[w,.09,.32],[0,h-.045,d/2-.16],body,.012);

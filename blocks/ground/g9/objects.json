@@ -25,8 +25,8 @@
       ],
       "color": "#bcb6a7",
       "seats": [
-        "Seat_B3",
-        "Seat_B4"
+        "Seat_B4",
+        "Seat_B3"
       ],
       "cameras": [
         "B3"
@@ -123,7 +123,7 @@
     {
       "id": "g9-screen-01",
       "type": "screen",
-      "name": "Decorative privacy screen",
+      "name": "TV-wall cladding · teal and gold",
       "position": [
         1.7842077292704717,
         0,
@@ -146,7 +146,8 @@
         "B1",
         "B3"
       ],
-      "confidence": "simplified; extent estimated"
+      "confidence": "simplified; extent estimated",
+      "variant": "teal-gold-panel"
     },
     {
       "id": "g9-plant-01",
@@ -174,6 +175,91 @@
         "B1"
       ],
       "confidence": "appearance observed; placement estimated"
+    },
+    {
+      "id": "g9-tv-01",
+      "type": "display",
+      "name": "TV · seating wall",
+      "position": [
+        1.68,
+        1.45,
+        0
+      ],
+      "yaw": -90,
+      "size": [
+        1.5,
+        0.92,
+        0.08
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#161f24",
+      "seats": [],
+      "cameras": [
+        "B1",
+        "B3"
+      ],
+      "confidence": "Appearance observed in wide frames; dimensions and local placement estimated",
+      "mount": "wall"
+    },
+    {
+      "id": "g9-console-01",
+      "type": "display-console",
+      "name": "Display console · passage edge",
+      "position": [
+        -1.52,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        2.5,
+        0.88,
+        0.38
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd7c8",
+      "seats": [],
+      "cameras": [
+        "B1",
+        "B3"
+      ],
+      "confidence": "Appearance observed in wide frames; dimensions and local placement estimated"
+    },
+    {
+      "id": "g9-lamp-01",
+      "type": "floor-lamp",
+      "name": "Floor lamp · beside sofa",
+      "position": [
+        1.28,
+        0,
+        -2.32
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "B1",
+        "B3"
+      ],
+      "confidence": "Appearance observed in wide frames; dimensions and local placement estimated"
     }
   ]
 }
