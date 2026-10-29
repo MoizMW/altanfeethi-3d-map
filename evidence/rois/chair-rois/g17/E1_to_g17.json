@@ -1,0 +1,32 @@
+{
+    "Seat_E1": {
+        "left": 112.0,
+        "top": 144.0,
+        "width": 332.0,
+        "height": 406.0
+    },
+    "Seat_E2": {
+        "left": 462.0,
+        "top": 128.0,
+        "width": 296.0,
+        "height": 424.0
+    },
+    "Seat_E3": {
+        "left": 770.0,
+        "top": 136.0,
+        "width": 366.0,
+        "height": 434.0
+    },
+    "Seat_E4": {
+        "left": 1086.0,
+        "top": 118.0,
+        "width": 400.0,
+        "height": 450.0
+    },
+    "Seat_E5": {
+        "left": 1514.0,
+        "top": 200.0,
+        "width": 378.0,
+        "height": 346.0
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "Seat_D2": {
+        "left": -6.0,
+        "top": 590.0,
+        "width": 228.0,
+        "height": 464.0
+    },
+    "Seat_D3": {
+        "left": 122.0,
+        "top": 420.0,
+        "width": 224.0,
+        "height": 430.0
+    },
+    "Seat_D4": {
+        "left": 218.0,
+        "top": 290.0,
+        "width": 276.0,
+        "height": 342.0
+    },
+    "Seat_D5": {
+        "left": 676.0,
+        "top": 288.0,
+        "width": 400.0,
+        "height": 336.0
+    },
+    "Seat_D6": {
+        "left": 1144.0,
+        "top": 250.0,
+        "width": 302.0,
+        "height": 342.0
+    },
+    "Seat_D7": {
+        "left": 1344.0,
+        "top": 474.0,
+        "width": 360.0,
+        "height": 430.0
+    }
+}

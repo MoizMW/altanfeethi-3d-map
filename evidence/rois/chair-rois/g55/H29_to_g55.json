@@ -1,0 +1,32 @@
+{
+    "Seat_H82": {
+        "left": 792.0,
+        "top": 306.0,
+        "width": 254.0,
+        "height": 190.0
+    },
+    "Seat_H87": {
+        "left": 1334.0,
+        "top": 690.0,
+        "width": 316.0,
+        "height": 382.0
+    },
+    "Seat_H95": {
+        "left": 246.0,
+        "top": 218.0,
+        "width": 136.0,
+        "height": 144.0
+    },
+    "Seat_H94": {
+        "left": 388.0,
+        "top": 218.0,
+        "width": 166.0,
+        "height": 162.0
+    },
+    "Seat_H90": {
+        "left": 28.0,
+        "top": 800.0,
+        "width": 272.0,
+        "height": 274.0
+    }
+}

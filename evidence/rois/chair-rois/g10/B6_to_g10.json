@@ -1,0 +1,38 @@
+{
+    "Seat_B11": {
+        "left": 1062.0,
+        "top": 584.0,
+        "width": 404.0,
+        "height": 334.0
+    },
+    "Seat_B12": {
+        "left": 1404.0,
+        "top": 372.0,
+        "width": 332.0,
+        "height": 392.0
+    },
+    "Seat_B15": {
+        "left": 354.0,
+        "top": 488.0,
+        "width": 408.0,
+        "height": 382.0
+    },
+    "Seat_B16": {
+        "left": 222.0,
+        "top": 230.0,
+        "width": 268.0,
+        "height": 424.0
+    },
+    "Seat_B14": {
+        "left": 200.0,
+        "top": 806.0,
+        "width": 534.0,
+        "height": 256.0
+    },
+    "Seat_B10": {
+        "left": 1026.0,
+        "top": 886.0,
+        "width": 480.0,
+        "height": 186.0
+    }
+}

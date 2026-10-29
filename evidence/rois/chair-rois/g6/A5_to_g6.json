@@ -1,0 +1,32 @@
+{
+    "Seat_A2": {
+        "left": 640.0,
+        "top": 230.0,
+        "width": 222.0,
+        "height": 278.0
+    },
+    "Seat_A6": {
+        "left": 0.0,
+        "top": 514.0,
+        "width": 210.0,
+        "height": 392.0
+    },
+    "Seat_A5": {
+        "left": 120.0,
+        "top": 638.0,
+        "width": 358.0,
+        "height": 404.0
+    },
+    "Seat_A1": {
+        "left": 818.0,
+        "top": 300.0,
+        "width": 240.0,
+        "height": 286.0
+    },
+    "Seat_A34": {
+        "left": 1164.0,
+        "top": 448.0,
+        "width": 284.0,
+        "height": 348.0
+    }
+}

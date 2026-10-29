@@ -56,6 +56,7 @@ Do not store generated Three.js meshes as the source of truth. The editor rebuil
 - Seat IDs must be unique in the composed project and must begin with `Seat_`.
 - Reference shared assets and materials instead of copying modified duplicates into each block.
 - Record estimates and uncertain correspondences in `evidence.json`.
+- Use `evidence/rois/chair-rois/` and `evidence/rois/table-rois/` to compare seat and table observations across cameras; ROI pixels are evidence and are not direct 3D coordinates.
 - Do not invent walls, camera calibration, or measured dimensions when the evidence does not support them.
 
 ## 5. Shared boundaries

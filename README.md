@@ -19,6 +19,7 @@ evidence/
   camera-snapshots/          source images
   maps/                      supplied PNG/PDF floor maps
   registration/              camera registration source of truth
+  rois/                      shareable chair/table ROI evidence
   references/                historical reference exports
 tools/camera-registration/   separate 2D camera registration dashboard
 ```

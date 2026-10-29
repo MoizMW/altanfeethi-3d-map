@@ -1,0 +1,44 @@
+{
+    "Seat_G15": {
+        "left": 1372.0,
+        "top": 352.0,
+        "width": 250.0,
+        "height": 376.0
+    },
+    "Seat_G14": {
+        "left": 1116.0,
+        "top": 346.0,
+        "width": 282.0,
+        "height": 368.0
+    },
+    "Seat_G16": {
+        "left": 1656.0,
+        "top": 454.0,
+        "width": 256.0,
+        "height": 404.0
+    },
+    "Seat_G12": {
+        "left": 568.0,
+        "top": 378.0,
+        "width": 228.0,
+        "height": 378.0
+    },
+    "Seat_G11": {
+        "left": 336.0,
+        "top": 406.0,
+        "width": 228.0,
+        "height": 360.0
+    },
+    "Seat_G10": {
+        "left": 46.0,
+        "top": 582.0,
+        "width": 364.0,
+        "height": 418.0
+    },
+    "Seat_G13": {
+        "left": 744.0,
+        "top": 546.0,
+        "width": 352.0,
+        "height": 426.0
+    }
+}

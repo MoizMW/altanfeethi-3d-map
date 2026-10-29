@@ -1,0 +1,44 @@
+{
+    "Table_G20": {
+        "left": 162.0,
+        "top": 534.0,
+        "width": 242.0,
+        "height": 266.0
+    },
+    "Table_G22": {
+        "left": 1180.0,
+        "top": 406.0,
+        "width": 286.0,
+        "height": 210.0
+    },
+    "Table_G21": {
+        "left": 1574.0,
+        "top": 932.0,
+        "width": 250.0,
+        "height": 144.0
+    },
+    "Table_G25": {
+        "left": 980.0,
+        "top": 90.0,
+        "width": 154.0,
+        "height": 92.0
+    },
+    "Table_G23": {
+        "left": 344.0,
+        "top": 162.0,
+        "width": 160.0,
+        "height": 116.0
+    },
+    "Table_G26": {
+        "left": 894.0,
+        "top": 2.0,
+        "width": 112.0,
+        "height": 66.0
+    },
+    "Table_G24": {
+        "left": 408.0,
+        "top": 22.0,
+        "width": 114.0,
+        "height": 24.0
+    }
+}

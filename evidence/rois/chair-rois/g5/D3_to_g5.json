@@ -1,0 +1,32 @@
+{
+    "Seat_D1": {
+        "left": 24.0,
+        "top": 388.0,
+        "width": 402.0,
+        "height": 490.0
+    },
+    "Seat_D2": {
+        "left": 700.0,
+        "top": 234.0,
+        "width": 324.0,
+        "height": 438.0
+    },
+    "Seat_D3": {
+        "left": 1030.0,
+        "top": 180.0,
+        "width": 254.0,
+        "height": 450.0
+    },
+    "Seat_D4": {
+        "left": 1252.0,
+        "top": 124.0,
+        "width": 216.0,
+        "height": 390.0
+    },
+    "Seat_D5": {
+        "left": 1648.0,
+        "top": 266.0,
+        "width": 264.0,
+        "height": 412.0
+    }
+}

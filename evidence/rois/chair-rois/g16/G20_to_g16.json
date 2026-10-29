@@ -1,0 +1,26 @@
+{
+    "Seat_G7": {
+        "left": 338.0,
+        "top": 342.0,
+        "width": 364.0,
+        "height": 404.0
+    },
+    "Seat_G6": {
+        "left": 750.0,
+        "top": 246.0,
+        "width": 398.0,
+        "height": 460.0
+    },
+    "Seat_G5": {
+        "left": 1040.0,
+        "top": 332.0,
+        "width": 442.0,
+        "height": 436.0
+    },
+    "Seat_G4": {
+        "left": 962.0,
+        "top": 722.0,
+        "width": 602.0,
+        "height": 358.0
+    }
+}

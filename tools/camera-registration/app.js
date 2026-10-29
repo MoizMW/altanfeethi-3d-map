@@ -87,7 +87,6 @@ const readSavedState = () => {
   }
 };
 
-const hadLocalState = Boolean(localStorage.getItem("altanfeethi-camera-registration"));
 let state = readSavedState();
 let selectedCameraId = "B1";
 let activeFloor = "ground";
@@ -695,9 +694,10 @@ async function loadWorkspaceJson() {
     const response = await fetch("/api/placements", { cache: "no-store" });
     if (!response.ok) return;
     const persisted = await response.json();
-    // Browser state may contain positions that have not reached the JSON file yet.
-    // Never replace it automatically; the server file is the starting point only for a fresh browser.
-    if (!hadLocalState) mergePersistedState(persisted);
+    // The workspace JSON is the shared source of truth. Browser storage is only a
+    // fallback for static/offline previews and must not hide teammates' saved work.
+    mergePersistedState(persisted);
+    saveState(false);
   } catch {
     // Static-file preview remains usable through local browser storage.
   }

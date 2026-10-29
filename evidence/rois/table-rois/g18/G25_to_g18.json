@@ -1,0 +1,32 @@
+{
+    "Table_G2": {
+        "left": 650.0,
+        "top": 138.0,
+        "width": 198.0,
+        "height": 116.0
+    },
+    "Table_G1": {
+        "left": 1084.0,
+        "top": 110.0,
+        "width": 248.0,
+        "height": 78.0
+    },
+    "Table_G3": {
+        "left": 1358.0,
+        "top": 570.0,
+        "width": 254.0,
+        "height": 234.0
+    },
+    "Table_G5": {
+        "left": 264.0,
+        "top": 508.0,
+        "width": 274.0,
+        "height": 238.0
+    },
+    "Table_G4": {
+        "left": 1542.0,
+        "top": 1056.0,
+        "width": 76.0,
+        "height": 24.0
+    }
+}

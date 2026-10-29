@@ -1,0 +1,44 @@
+{
+    "Seat_C25": {
+        "left": 58.0,
+        "top": 460.0,
+        "width": 236.0,
+        "height": 382.0
+    },
+    "Seat_C24": {
+        "left": 296.0,
+        "top": 436.0,
+        "width": 240.0,
+        "height": 416.0
+    },
+    "Seat_C23": {
+        "left": 312.0,
+        "top": 736.0,
+        "width": 388.0,
+        "height": 286.0
+    },
+    "Seat_C81": {
+        "left": 1068.0,
+        "top": 506.0,
+        "width": 312.0,
+        "height": 410.0
+    },
+    "Seat_C83": {
+        "left": 998.0,
+        "top": 100.0,
+        "width": 184.0,
+        "height": 220.0
+    },
+    "Seat_C28": {
+        "left": 468.0,
+        "top": 54.0,
+        "width": 142.0,
+        "height": 196.0
+    },
+    "Seat_C29": {
+        "left": 600.0,
+        "top": 54.0,
+        "width": 126.0,
+        "height": 188.0
+    }
+}
