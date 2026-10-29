@@ -6,6 +6,12 @@
     "beige-upholstery": {"color": "#bcb6a7", "roughness": 0.65},
     "blue-upholstery": {"color": "#526e78", "roughness": 0.65},
     "pale-stone-table": {"color": "#e5e1d5", "roughness": 0.28},
-    "brass-screen": {"color": "#ab9564", "roughness": 0.35, "metalness": 0.6}
+    "brass-screen": {"color": "#ab9564", "roughness": 0.35, "metalness": 0.6},
+    "counter-stone": {"color": "#cfbea0", "roughness": 0.4, "metalness": 0},
+    "teal-laminate": {"color": "#137580", "roughness": 0.4, "metalness": 0},
+    "warm-wood": {"color": "#856746", "roughness": 0.65, "metalness": 0},
+    "office-upholstery": {"color": "#292f31", "roughness": 0.8, "metalness": 0},
+    "dark-plastic": {"color": "#242a2c", "roughness": 0.65, "metalness": 0},
+    "brushed-metal": {"color": "#a7afb0", "roughness": 0.3, "metalness": 0.65}
   }
 }

@@ -47,6 +47,8 @@ http://127.0.0.1:4209/?block=ground/g10
 
 Do not store generated Three.js meshes as the source of truth. The editor rebuilds them from JSON.
 
+Follow [MATERIAL_GUIDE.md](MATERIAL_GUIDE.md) for shared surface definitions, component finishes, texture conventions and geometry quality checks. Reuse shared materials/builders across blocks and document evidence-supported local finish variants.
+
 ## 4. IDs, units and coordinates
 
 - Use Y up. X and Z are the floor plane.

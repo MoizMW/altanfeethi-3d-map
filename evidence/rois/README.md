@@ -6,6 +6,7 @@ This folder is a shareable snapshot of the computer-vision ROI definitions used 
 
 - `chair-rois/` — copied from `altanfeethi-cv/src/ChairOccupancy/Chair_ROIs`
 - `table-rois/` — copied from `altanfeethi-cv/src/TableOccupancy/Table_ROIs`
+- `reception-rois/g32/` — the four SGS reception-area polygons copied from `altanfeethi-cv/src/ReceptionOccupancy/Reception_ROIs/g32` for the G32 block. These are reception regions, not chair IDs.
 
 The group folders (`g9`, `g10`, and so on) and camera-based filenames are preserved exactly so they can be matched with camera registration data and spatial blocks.
 

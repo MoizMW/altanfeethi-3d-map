@@ -2,6 +2,8 @@
 
 ## Current phase
 
+G32 (SGS check-in) is now available in `blocks/ground/g32/`, using all four SGSCam snapshots and bundled reception-area ROIs. The editable draft contains four counter banks, seven provisional office-chair positions, seven monitors, seven wall displays, four rear storage units, two luggage scales and wood cladding. `Seat_SGS_TMP_*` are temporary IDs pending review, not CV chair identities. Global alignment remains unresolved. See `blocks/ground/g32/README.md`. The editor header switches between G9 and G32, and shared builders support reception furniture.
+
 The shared Three.js editor is implemented in `app/`; run `npm start` from the project root and open `http://127.0.0.1:4209/?block=ground/g9`. The first block is in `blocks/ground/g9/` and contains two armchairs, one two-seat sofa, four seat-slot IDs, one shared table, and simplified screen/plant context. Its local arrangement and dimensions are estimates; full-floor alignment remains unresolved. The block's four JSON files are authoritative, with direct object saving, backups, revision conflicts, JSON import/download, numeric position/rotation/material editing, and session undo. See `blocks/ground/g9/README.md` and `CONTRIBUTING.md` for handoff details. The camera registration tool remains separate in `tools/camera-registration/`.
 
 The G9 editor now supports selecting an object and using Move, Rotate, and Scale handles, as well as precise position, size, scale, rotation, and material fields. Armchairs expose an editable chair/seat ID with uniqueness validation. The persistent furniture object ID remains stable when its seat ID changes.

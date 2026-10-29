@@ -1,5 +1,7 @@
 # Altanfeethi spatial twin
 
+Contributor visual standard: [MATERIAL_GUIDE.md](MATERIAL_GUIDE.md).
+
 This repository contains a shared Three.js block editor and independently owned spatial blocks. Contributors build one bounded area at a time; the complete building will be composed from those blocks later.
 
 ## Directory map
@@ -32,6 +34,8 @@ npm start
 ```
 
 Open `http://127.0.0.1:4209/?block=ground/g9`. Change the query value to another `floor/block-slug` after that block exists.
+
+Available blocks: [G9 private seating](blocks/ground/g9/README.md) and [G32 SGS check-in](blocks/ground/g32/README.md). Use the header selector to switch blocks, or open `http://127.0.0.1:4209/?block=ground/g32` directly.
 
 Run `npm test` before sharing a branch. Run `npm run camera-registration` to open the camera tool at `http://127.0.0.1:4199`.
 

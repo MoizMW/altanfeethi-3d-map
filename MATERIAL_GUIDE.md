@@ -1,0 +1,64 @@
+# Shared materials and visual standard
+
+Every block uses one project-wide rendering style. Choose materials by the physical surface: the same stone, fabric or metal should have the same material definition wherever it appears. Different areas can have different furniture and finishes when the camera evidence supports them.
+
+## Source of truth
+
+Use `shared/materials/catalog.json` for material names, base colors, roughness and metalness. Shared object builders own the assignment of these materials to component parts. Contributors should reuse those builders so another block's version of the same chair has the same construction and surface treatment.
+
+The catalog currently serves as a contributor reference. Existing builders still contain their material parameters directly; automatic catalog-to-renderer binding remains a follow-up integration step. Match the catalog when changing these builders, and review shared changes centrally.
+
+An object's existing `color` field is an editable base-color override. It does not describe a texture image or make a surface a different physical material. Preserve manual color choices when updating the shared builders.
+
+## Choose by component, not camera
+
+| Surface | Shared material | Usage |
+| --- | --- | --- |
+| Common dark tiled floor | `dark-stone-floor` | Same finish across adjoining areas unless evidence shows a transition |
+| Beige lounge upholstery | `beige-upholstery` | G9 sofa |
+| Blue lounge upholstery | `blue-upholstery` | G9 armchairs |
+| Pale coffee-table stone | `pale-stone-table` | G9 coffee table |
+| Decorative brass | `brass-screen` | G9 screen frame |
+| Check-in counter stone | `counter-stone` | G32 counter shell |
+| Teal counter inserts | `teal-laminate` | G32 fascia |
+| Wood cabinetry/cladding | `warm-wood` | Worktops, rear cabinets and wall panel |
+| Dark office-chair upholstery | `office-upholstery` | SGS chair cushions and backrest |
+| Dark plastic | `dark-plastic` | Frames, armrests and monitor housings |
+| Brushed metal | `brushed-metal` | Chair base and luggage-scale metalwork |
+
+Camera exposure, white balance and reflections can make one material look different in two views. Compare overlapping views before adding a material variant. Record a genuine local finish change in the block's evidence file, including the supporting camera IDs.
+
+## Texture asset format for future detail
+
+Current blocks use procedural geometry and flat PBR colors; there are no photographic texture maps yet. Wood grooves, chair mesh lines and floor grids are geometry/detail, not a complete texture system.
+
+When adding texture images, keep each reusable set in `shared/materials/textures/<material-id>/` and extend that material's catalog entry with this proposed metadata:
+
+```json
+{
+  "color": "#897055",
+  "roughness": 0.65,
+  "metalness": 0,
+  "textures": {
+    "baseColor": "shared/materials/textures/warm-wood/basecolor.jpg",
+    "normal": "shared/materials/textures/warm-wood/normal.png",
+    "roughness": "shared/materials/textures/warm-wood/roughness.png"
+  },
+  "tileSizeMeters": [1, 1],
+  "grainDirection": "component-local-Y",
+  "source": "Source/license and evidence reference"
+}
+```
+
+This texture metadata is a future extension and is not currently loaded by the renderer. Implement its loader once in the shared renderer before using it in blocks. Base-color images use sRGB; normal/roughness maps use linear data. Start with 1024px reusable maps, no more than 2048px without a demonstrated need. Keep physical tile/grain size consistent across meshes and block seams. Do not bake camera shadows, reflections, perspective or people into a reusable surface.
+
+## Contributor review
+
+- Reuse an existing material ID before adding a new one; document any new variant.
+- Keep lighting, exposure, tone mapping and shadow setup shared across blocks.
+- Use the same model detail level: recognizable furniture with connected supports, restrained bevels and consistent proportions.
+- Inspect chair backrest/seat/base connections and support contact from the front, rear and top, including after resizing.
+- Compare neighboring floor finish, grid/tile spacing and grain direction before merging.
+- Keep exact dimensions and material identification marked as estimates until reviewed.
+
+G9 and G32 should share this visual language while retaining their observed lounge and check-in finishes. A floor transition requires evidence; a different camera angle alone does not.
