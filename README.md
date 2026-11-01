@@ -20,7 +20,8 @@ shared/
   materials/                 shared material definitions
   floor-transforms/          centrally owned floor coordinate transforms
 evidence/
-  camera-snapshots/          source images
+  camera-snapshots/          normal zoomed-in detection images; ROI reference views
+  wide capture snapshots/   wider views for architecture, paths and decorative details
   maps/                      supplied PNG/PDF floor maps
   registration/              camera registration source of truth
   rois/                      shareable chair/table ROI evidence
@@ -42,3 +43,5 @@ Available blocks: [G9 private seating](blocks/ground/g9/README.md) and [G32 SGS 
 Run `npm test` before sharing a branch. Run `npm run camera-registration` to open the camera tool at `http://127.0.0.1:4199`.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before creating or merging a block. Project evidence and reconstruction decisions are recorded in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
+
+Before building a block, check [wide capture snapshots](evidence/wide%20capture%20snapshots/README.md) for wider images of the same cameras. Existing ROIs apply to the normal detection images, not the wide captures.

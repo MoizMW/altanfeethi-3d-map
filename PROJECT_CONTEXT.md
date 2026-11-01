@@ -26,6 +26,9 @@ The installed cameras are ceiling-mounted Axis dome cameras. A registered point 
 
 ## Supplied evidence
 
+- `evidence/camera-snapshots/` contains the normal zoomed-in seat-detection views; existing chair/table/reception ROIs refer to these views.
+- `evidence/wide capture snapshots/` contains supplementary wider images of the same cameras from unchanged mounts, currently B1/B3/C1/C2/C3. Check this folder for every block before modeling walls, glass, entrances, corridors, paths and side decorative details. Pair IDs with actual filenames (normal `B1.jpg`, wide `b1.jpg`) and record `wideSnapshots` references in block evidence. Existing detection ROI coordinates must not be applied to wide images without a separately verified transform or annotation. See that folder's README and CONTRIBUTING.md for the workflow.
+
 - `evidence/maps/ground-floor.png` — 14,761 × 8,610 isometric layout image.
 - `evidence/maps/first-floor.png` — 7,076 × 4,086 isometric layout image.
 - Matching PDF versions of both maps.

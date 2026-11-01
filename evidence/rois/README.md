@@ -2,6 +2,8 @@
 
 This folder is a shareable snapshot of the computer-vision ROI definitions used to reconstruct seating and table relationships.
 
+**These ROIs are mapped to the normal zoomed-in detection views in `evidence/camera-snapshots/`.** Supplementary images in `evidence/wide capture snapshots/` show the same cameras with wider framing for architecture and surrounding details. Do not apply the normal ROI coordinates to those wide images; a separate verified mapping or annotation is required. See the [wide-capture guide](../wide%20capture%20snapshots/README.md).
+
 ## Contents
 
 - `chair-rois/` — copied from `altanfeethi-cv/src/ChairOccupancy/Chair_ROIs`

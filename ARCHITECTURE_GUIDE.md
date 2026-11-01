@@ -4,6 +4,8 @@ Record architectural evidence while authoring each block. Merge review resolves 
 
 ## Evidence and confidence
 
+Always check `evidence/wide capture snapshots/` for wider images of the block's cameras before tracing boundaries. Use them for walls, glass, entrances, corridors, walking paths and side furnishings/artifacts; compare the normal snapshots and map for correspondence. Existing ROIs remain tied to the normal zoomed-in detection views. See the [wide-capture guide](evidence/wide%20capture%20snapshots/README.md) for exact file pairing and evidence references.
+
 Use floor-map topology and overlapping camera views to identify walls, glazing, columns, doors and corridor edges. A camera view can establish a wall or opening even without a dedicated architecture photo. Hidden extents, thicknesses and heights remain estimates. Furniture and decorative dividers do not automatically imply a room wall. Leave unknown boundaries unresolved rather than closing every block rectangle.
 
 For each boundary, record a stable ID, type (solid wall, glazing, doorway, open corridor, or unknown), local floor endpoints, evidence-camera IDs, confidence, estimated height/thickness where applicable, owning block and neighboring reference. Keep this evidence with the block's architecture/evidence files. Source image landmarks should accompany derived positions for later calibration.

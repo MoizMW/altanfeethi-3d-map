@@ -49,6 +49,17 @@ Do not store generated Three.js meshes as the source of truth. The editor rebuil
 
 Follow [MATERIAL_GUIDE.md](MATERIAL_GUIDE.md) for shared surface definitions, component finishes, texture conventions and geometry quality checks. Reuse shared materials/builders across blocks and document evidence-supported local finish variants.
 
+### Check both camera views before building
+
+For every camera assigned to your block, inspect its normal detection image in `evidence/camera-snapshots/` and check `evidence/wide capture snapshots/` for an additional wide view of the same camera. See the [wide-capture guide](evidence/wide%20capture%20snapshots/README.md).
+
+- Normal zoomed-in views support seat/table recognition and the existing ROI labels.
+- Wide views support walls, glass, rounded entrances, corridors, walking paths, columns, lamps, display tables, decorative artifacts and details at the edges of the normal view. The currently supplied wide captures were taken from the same camera mounts, with wider zoom.
+- Existing chair, table and reception ROIs are mapped to the normal detection views. **Do not overlay or project those coordinates onto a wide capture.** A shared mount position does not make the two pixel coordinate systems equivalent. Wide-view ROI mapping requires its own verified transform or separate annotation.
+- Match cameras by ID while respecting actual filename case: for example `camera-snapshots/B1.jpg` pairs with `wide capture snapshots/b1.jpg`. Reference exact project-relative paths in `evidence.json`, using `snapshots` for normal views and `wideSnapshots` for wide views.
+- Reconcile objects seen in both images into one physical object. Preserve approved seat/table IDs and manual furniture corrections. Record supporting views, human descriptions and uncertainty for architecture and decorative details.
+- Wide captures are supplementary and are not available for every camera. If absent or occluded, record the unresolved detail; use available map and owner information without inventing hidden boundaries.
+
 ## 4. IDs, units and coordinates
 
 - Use Y up. X and Z are the floor plane.
@@ -84,6 +95,7 @@ Review the block from isometric and top views, compare every listed camera, save
 - architecture and furniture remain inside the agreed boundary;
 - neighboring seams are referenced and do not overlap;
 - source cameras, assumptions, confidence and construction exclusions are documented;
+- available normal and wide views were reviewed, with ROI references kept attached to the normal images;
 - `backups/`, credentials and dependency folders are absent from the commit.
 
 Commit only the assigned block and any explicitly approved evidence additions:
