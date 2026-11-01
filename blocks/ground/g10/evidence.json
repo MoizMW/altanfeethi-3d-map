@@ -1,0 +1,61 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-seating-002",
+  "cameras": [
+    "B4",
+    "B5",
+    "B6"
+  ],
+  "snapshots": {
+    "B4": "evidence/camera-snapshots/B4.jpg",
+    "B5": "evidence/camera-snapshots/B5.jpg",
+    "B6": "evidence/camera-snapshots/B6.jpg"
+  },
+  "roiFiles": [
+    "evidence/rois/chair-rois/g10/B4_to_g10.json",
+    "evidence/rois/chair-rois/g10/B5_to_g10.json",
+    "evidence/rois/chair-rois/g10/B6_to_g10.json",
+    "evidence/rois/table-rois/g10/B4_to_g10.json",
+    "evidence/rois/table-rois/g10/B5_to_g10.json",
+    "evidence/rois/table-rois/g10/B6_to_g10.json"
+  ],
+  "sourceRevision": "d30ab2d",
+  "seatMappings": {
+    "Seat_B10": "g10-sofa-01",
+    "Seat_B11": "g10-sofa-01",
+    "Seat_B14": "g10-sofa-02",
+    "Seat_B15": "g10-sofa-02",
+    "Seat_B9": "g10-chair-01",
+    "Seat_B12": "g10-chair-02",
+    "Seat_B13": "g10-chair-03",
+    "Seat_B16": "g10-chair-04"
+  },
+  "tableMappings": {
+    "Table_B4": "g10-table-01",
+    "Table_B5": "g10-table-02"
+  },
+  "notes": [
+    "Two opposed sofas separated by one shelving divider; four armchairs at the ends of the seating clusters. ROI labels support correspondence, not world coordinates.",
+    "B4 and B5 are opposite seating sides. B6 observes both sides. Seat order within each sofa remains provisional pending human review.",
+    "Local X is across the divider; local Z follows its length. Positive Z is the glazing side visible in B6. These axes are not registered to building coordinates.",
+    "Working floor extent 6.6 by 5.4 provisional meters is not a measured or traced room boundary. Map anchors identify the area only; no fitted map reprojection is claimed.",
+    "Plants, two lamps and two glass side tables are simplified visual context. Decorative vase shapes and cushion patterns are representative approximations.",
+    "Ceiling estimate 3.66–4.57 m; visualization midpoint 4.1 m. No ceiling, wall or camera calibration is inferred.",
+    "Final visual review, ROI overlay alignment, source-map footprint tracing and neighboring G9 seam alignment remain outstanding.",
+    "Integration review 2026-11-01: normal and wide B4/B5/B6 inspected. Wide views show glazing on the B6 end, rounded access surrounds at the opposite end, teal/gold side cladding and display consoles. Their geometry, wall endpoints and ownership remain pending; this push contains a furniture draft, not a completed shell.",
+    "Updated d30ab2d ROIs retain the eight seat identities and two table identities. Some duplicate observations were removed. Original map anchors predate the updated ground-floor image and require alignment review.",
+    "Rendering now reuses the current shared lounge, open-shelving screen, floor-lamp and table builders. Side-table glass/brass detail and custom upholstery detail from the original local implementation are simplified for compatibility."
+  ],
+  "wideSnapshots": {
+    "B4": "evidence/wide capture snapshots/B4.jpg",
+    "B5": "evidence/wide capture snapshots/B5.jpg",
+    "B6": "evidence/wide capture snapshots/B6.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per project owner",
+    "zoom": "Wider architectural view",
+    "roiUsage": "ROIs apply only to normal detection snapshots",
+    "capturedAt": null
+  }
+}

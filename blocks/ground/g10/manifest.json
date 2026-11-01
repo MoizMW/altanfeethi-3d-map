@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-seating-002",
+  "slug": "g10",
+  "name": "G10 · Divider seating",
+  "floor": "ground",
+  "groups": [
+    "g10"
+  ],
+  "zone": "B",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": "Mohammed-Shahri",
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

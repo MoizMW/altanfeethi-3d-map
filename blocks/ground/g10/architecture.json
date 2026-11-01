@@ -1,0 +1,45 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-seating-002",
+  "floorSize": [
+    6.6,
+    5.4
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-10-29T05:38:50.669Z",
+    "anchors": [
+      {
+        "camera": "B4",
+        "pixel": [
+          4728,
+          4257
+        ],
+        "heading": 77
+      },
+      {
+        "camera": "B5",
+        "pixel": [
+          5225,
+          4539
+        ],
+        "heading": 20
+      },
+      {
+        "camera": "B6",
+        "pixel": [
+          5301,
+          4188
+        ],
+        "heading": 233
+      }
+    ]
+  },
+  "footprint": [],
+  "walls": [],
+  "openings": [],
+  "sharedBoundaries": []
+}
