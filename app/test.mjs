@@ -55,6 +55,53 @@ test('duplicate IDs, duplicate seats and invalid dimensions are rejected',()=>{
   for(const mutate of [b=>b.objects[1].seats=['Seat_B3'],b=>b.objects[1].id=b.objects[0].id,b=>b.objects[0].position[0]=NaN,b=>b.objects[0].size[0]=-1]){const copy=structuredClone(block);mutate(copy);assert.throws(()=>validateBlock(copy));}
 });
 
+for(const slug of ['g18','g20'])test(`${slug.toUpperCase()} reconciles ROI identities and keeps furniture outside the through path`,async()=>{
+  const base=new URL(`../blocks/ground/${slug}/`,import.meta.url);
+  const [m,a,o,e]=await Promise.all(['manifest.json','architecture.json','objects.json','evidence.json'].map(async f=>JSON.parse(await readFile(new URL(f,base)))));
+  const draft=validateBlock({...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects});
+  const observedSeats=new Set(),observedTables=new Set();
+  for(const camera of e.cameras)for(const [kind,labels] of [['chairs',observedSeats],['tables',observedTables]]){
+    const roi=JSON.parse(await readFile(new URL(`../${e.rois[camera][kind]}`,import.meta.url)));
+    for(const label of Object.keys(roi))labels.add(label);
+  }
+  assert.deepEqual(draft.objects.flatMap(x=>x.seats).sort(),[...observedSeats].sort());
+  const localTables=draft.objects.filter(x=>x.externalId).map(x=>x.externalId);
+  const externalTables=(e.externalObservations||[]).map(x=>x.externalId);
+  assert.deepEqual([...localTables,...externalTables].sort(),[...observedTables].sort());
+  const context=draft.objects.filter(x=>x.ownershipStatus==='provisional-context-neighbor-unresolved');
+  assert.deepEqual(context.map(x=>x.externalId).sort(),slug==='g18'?['Table_G1','Table_G2']:[]);
+  const shell=buildArchitecture(a);shell.updateMatrixWorld(true);
+  const pathXs=a.circulation.polygon.map(p=>p[0]);
+  for(const x of [Math.min(...pathXs)+.05,0,Math.max(...pathXs)-.05]){
+    assert.equal(new THREE.Raycaster(new THREE.Vector3(x,.7,-7),new THREE.Vector3(0,0,1)).intersectObject(shell,true).length,0);
+  }
+  for(const object of draft.objects){
+    const angle=THREE.MathUtils.degToRad(object.yaw),[w,,d]=object.size;
+    const extentX=(Math.abs(Math.cos(angle))*w+Math.abs(Math.sin(angle))*d)/2;
+    assert.ok(object.position[0]+extentX<=Math.min(...pathXs)||object.position[0]-extentX>=Math.max(...pathXs),`${object.id} obstructs the central path`);
+  }
+});
+
+test('G20 background observations resolve to existing G18 objects and raised plants meet their supports',async()=>{
+  const [g18,g20,evidence]=await Promise.all(['g18/objects.json','g20/objects.json','g20/evidence.json'].map(async path=>JSON.parse(await readFile(new URL(`../blocks/ground/${path}`,import.meta.url)))));
+  const tableIds=[...g18.objects,...g20.objects].filter(o=>o.externalId).map(o=>o.externalId);
+  assert.equal(new Set(tableIds).size,tableIds.length,'Neighboring blocks must not own duplicate ROI tables');
+  for(const ref of evidence.externalObservations){
+    assert.equal(ref.ownerBlock,'ground/g18');
+    assert.equal(g18.objects.find(o=>o.id===ref.objectId)?.externalId,ref.externalId);
+    assert.ok(!g20.objects.some(o=>o.externalId===ref.externalId));
+    const roi=JSON.parse(await readFile(new URL(`../${ref.roiFile}`,import.meta.url)));
+    assert.ok(roi[ref.externalId]);
+  }
+  for(const plant of g20.objects.filter(o=>o.supportObjectId)){
+    const support=g20.objects.find(o=>o.id===plant.supportObjectId);
+    assert.ok(support,'Raised plants require a real support object');
+    assert.equal(plant.position[1],support.position[1]+support.size[1]);
+    assert.ok(Math.abs(plant.position[0]-support.position[0])+plant.size[0]/2<=support.size[0]/2);
+    assert.ok(Math.abs(plant.position[2]-support.position[2])+plant.size[2]/2<=support.size[2]/2);
+  }
+});
+
 test('sofa slots can be renamed and swapped; table identity is optional and unique',()=>{
   const copy=structuredClone(block),sofa=copy.objects.find(o=>o.type==='sofa'),physical=sofa.id;
   sofa.seats=[...sofa.seats].reverse();validateBlock(copy);assert.equal(sofa.id,physical);
@@ -76,6 +123,11 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     const jpg=Buffer.from(await(await fetch(`${origin}/api/evidence/camera/B1${query}`)).arrayBuffer());assert.equal(jpg[0],255);assert.equal(jpg[1],216);
     assert.equal((await fetch(`${origin}/shared/schema/block-schema.js`)).status,200);assert.equal((await fetch(`${origin}/server.mjs`)).status,404);assert.equal((await fetch(`${origin}/api/block?block=../../private`)).status,400);
     const g32=await(await fetch(`${origin}/api/block?block=ground/g32`)).json();validateBlock(g32.block);
+    for(const slug of ['g18','g20']){
+      assert.ok(listing.blocks.some(b=>b.key===`ground/${slug}`));
+      const data=await(await fetch(`${origin}/api/block?block=ground/${slug}`)).json();validateBlock(data.block);
+      for(const id of data.block.evidence.cameras)assert.equal((await fetch(`${origin}/api/evidence/camera/${id}?block=ground/${slug}`)).status,200);
+    }
     assert.equal(g32.block.objects.filter(o=>o.type==='counter').length,4);
     const staff=g32.block.objects.filter(o=>o.type==='office-chair');assert.equal(staff.length,7);
     staff[0].seats=['Seat_SGS_reviewed_01'];staff[0].yaw=30;staff[0].size=[.7,1.3,.75];validateBlock(g32.block);

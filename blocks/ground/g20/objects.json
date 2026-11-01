@@ -1,0 +1,721 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-g-lounge-020",
+  "objects": [
+    {
+      "id": "g20-sofa-01",
+      "type": "sofa",
+      "name": "Two-seat sofa · G26 / G25",
+      "position": [
+        -3.55,
+        0,
+        -1.5
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G26",
+        "Seat_G25"
+      ],
+      "cameras": [
+        "G22"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-sofa-02",
+      "type": "sofa",
+      "name": "Two-seat sofa · G29 / G28",
+      "position": [
+        -3.55,
+        0,
+        1.5
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G29",
+        "Seat_G28"
+      ],
+      "cameras": [
+        "G22",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-sofa-03",
+      "type": "sofa",
+      "name": "Two-seat sofa · G32 / G33",
+      "position": [
+        3.55,
+        0,
+        -1.5
+      ],
+      "yaw": 270,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G32",
+        "Seat_G33"
+      ],
+      "cameras": [
+        "G21",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-sofa-04",
+      "type": "sofa",
+      "name": "Two-seat sofa · G36 / G35",
+      "position": [
+        3.55,
+        0,
+        1.5
+      ],
+      "yaw": 270,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G36",
+        "Seat_G35"
+      ],
+      "cameras": [
+        "G21",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-chair-24",
+      "type": "armchair",
+      "name": "Teal armchair · G24",
+      "position": [
+        -2.6,
+        0,
+        -3.08
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G24"
+      ],
+      "cameras": [
+        "G22",
+        "G26"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-chair-27",
+      "type": "armchair",
+      "name": "Teal armchair · G27",
+      "position": [
+        -2.4,
+        0,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G27"
+      ],
+      "cameras": [
+        "G22",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-chair-30",
+      "type": "armchair",
+      "name": "Teal armchair · G30",
+      "position": [
+        -2.6,
+        0,
+        3.08
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G30"
+      ],
+      "cameras": [
+        "G22",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-chair-31",
+      "type": "armchair",
+      "name": "Teal armchair · G31",
+      "position": [
+        2.6,
+        0,
+        -3.08
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G31"
+      ],
+      "cameras": [
+        "G21",
+        "G26"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-chair-34",
+      "type": "armchair",
+      "name": "Teal armchair · G34",
+      "position": [
+        2.4,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G34"
+      ],
+      "cameras": [
+        "G21",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-chair-37",
+      "type": "armchair",
+      "name": "Teal armchair · G37",
+      "position": [
+        2.6,
+        0,
+        3.08
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G37"
+      ],
+      "cameras": [
+        "G21",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-coffee-table-7",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        -2.45,
+        0,
+        -1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G22",
+        "G26",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G7"
+    },
+    {
+      "id": "g20-coffee-table-8",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        -2.45,
+        0,
+        1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G22",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G8"
+    },
+    {
+      "id": "g20-coffee-table-9",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        2.45,
+        0,
+        -1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G21",
+        "G26",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G9"
+    },
+    {
+      "id": "g20-coffee-table-10",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        2.45,
+        0,
+        1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G21",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G10"
+    },
+    {
+      "id": "g20-side-table-01",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        -3.55,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G22",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "Schematic round top/supports; no external table ROI identity. Jewelry boxes and ring ornament are omitted."
+    },
+    {
+      "id": "g20-side-table-02",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        -3.55,
+        0,
+        3.12
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G22",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "Schematic round top/supports; no external table ROI identity. Jewelry boxes and ring ornament are omitted."
+    },
+    {
+      "id": "g20-side-table-03",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        3.55,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G21",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "Schematic round top/supports; no external table ROI identity. Jewelry boxes and ring ornament are omitted."
+    },
+    {
+      "id": "g20-side-table-04",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        3.55,
+        0,
+        3.12
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G21",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "Schematic round top/supports; no external table ROI identity. Jewelry boxes and ring ornament are omitted."
+    },
+    {
+      "id": "g20-floor-lamp-01",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        -3.75,
+        0,
+        3.42
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G22",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-floor-lamp-02",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        3.75,
+        0,
+        -3.35
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G21",
+        "G26"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-floor-lamp-03",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        3.75,
+        0,
+        3.42
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G21",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g20-plant-01",
+      "type": "plant",
+      "name": "Potted plant · on side table",
+      "position": [
+        -3.55,
+        0.62,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.5,
+        1.85,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "G22",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "notes": "Shared procedural plant approximates visible foliage; dimensions and species are estimates. Plant pot sits on the round table; base height follows its provisional tabletop.",
+      "supportObjectId": "g20-side-table-01"
+    },
+    {
+      "id": "g20-plant-02",
+      "type": "plant",
+      "name": "Potted plant · on side table",
+      "position": [
+        3.55,
+        0.62,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.5,
+        1.85,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "G21",
+        "G27"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "notes": "Shared procedural plant approximates visible foliage; dimensions and species are estimates. Plant pot sits on the round table; base height follows its provisional tabletop.",
+      "supportObjectId": "g20-side-table-03"
+    },
+    {
+      "id": "g20-plant-03",
+      "type": "plant",
+      "name": "Potted plant · floor standing",
+      "position": [
+        -3.7,
+        0,
+        -3.35
+      ],
+      "yaw": 0,
+      "size": [
+        0.5,
+        2.05,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "G22",
+        "G26"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "notes": "Shared procedural plant approximates visible foliage; dimensions and species are estimates."
+    }
+  ]
+}

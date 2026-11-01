@@ -1,0 +1,206 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-g-lounge-020",
+  "floorSize": [
+    8.4,
+    7.6
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-10-29T05:38:50.669Z",
+    "registrationSha256": "946614fa7f414bbe43488accf9e0ead7b646473813e83942ad343432c756da51",
+    "anchors": [
+      {
+        "camera": "G21",
+        "pixel": [
+          5345,
+          5022
+        ],
+        "heading": 230,
+        "status": "verified"
+      },
+      {
+        "camera": "G22",
+        "pixel": [
+          5103,
+          5178
+        ],
+        "heading": 55,
+        "status": "verified"
+      },
+      {
+        "camera": "G26",
+        "pixel": [
+          5434,
+          5223
+        ],
+        "heading": 299,
+        "status": "verified"
+      },
+      {
+        "camera": "G27",
+        "pixel": [
+          4882,
+          4951
+        ],
+        "heading": 124,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "Across the walkway, from reflective glazing (G22) toward curtains (G21)",
+      "z": "Along the walkway, from Seat_G24/G31 toward Seat_G30/G37",
+      "y": "Up"
+    },
+    "sourceMapCrop": [
+      4500,
+      4500,
+      6100,
+      5800
+    ],
+    "mapReview": "Registered anchors place two seating banks beside the passage near arrival reception. Photos establish current furniture count/finishes; illustrated furniture and decorative divider symbols are not copied literally."
+  },
+  "footprint": [
+    [
+      -4.2,
+      -3.8
+    ],
+    [
+      4.2,
+      -3.8
+    ],
+    [
+      4.2,
+      3.8
+    ],
+    [
+      -4.2,
+      3.8
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g20-reflective-glazing",
+      "kind": "glass",
+      "start": [
+        -4.15,
+        -3.7
+      ],
+      "end": [
+        -4.15,
+        3.7
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g20",
+      "sources": [
+        "G22",
+        "G26",
+        "G27"
+      ],
+      "confidence": "Visible backing; estimated span, height and generic frame spacing. Reflective panels with patterned lower strip.",
+      "notes": "Shared glazing builder is schematic. Reflections, patterned lower panel and curtain fabric are not reproduced."
+    },
+    {
+      "id": "g20-curtained-glazing",
+      "kind": "glass",
+      "start": [
+        4.15,
+        -3.7
+      ],
+      "end": [
+        4.15,
+        3.7
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g20",
+      "sources": [
+        "G21",
+        "G26",
+        "G27"
+      ],
+      "confidence": "Visible backing; estimated span, height and generic frame spacing. Curtained window boundary; glazing details inferred through curtains.",
+      "notes": "Shared glazing builder is schematic. Reflections, patterned lower panel and curtain fabric are not reproduced."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "circulation": {
+    "id": "g20-central-walkway",
+    "polygon": [
+      [
+        -1.4,
+        -3.8
+      ],
+      [
+        1.4,
+        -3.8
+      ],
+      [
+        1.4,
+        3.8
+      ],
+      [
+        -1.4,
+        3.8
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "sources": [
+      "G26",
+      "G27"
+    ],
+    "status": "visually-supported-width-estimated",
+    "notes": "Pale path contrasts with dark stone seating strips; keep both ends open."
+  },
+  "ceiling": {
+    "size": [
+      8.4,
+      7.6
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "boundaryReview": [
+    {
+      "id": "g20-walkway-negative-z",
+      "kind": "open-corridor",
+      "sources": [
+        "G26"
+      ],
+      "candidateNeighbor": "ground/g18",
+      "status": "visual-adjacency-seam-and-transform-unresolved"
+    },
+    {
+      "id": "g20-walkway-positive-z",
+      "kind": "open-corridor",
+      "sources": [
+        "G27"
+      ],
+      "status": "neighbor-and-seam-unresolved",
+      "notes": "Reception-side circulation visible; reception fixtures are excluded."
+    },
+    {
+      "id": "g20-arch-surrounds",
+      "kind": "unknown",
+      "sources": [
+        "G26",
+        "G27"
+      ],
+      "status": "partly-visible-not-modeled",
+      "notes": "Pale curved surrounds/pier returns are visible but their complete spans and profiles are unmeasured. No guessed wall closes the passage."
+    }
+  ]
+}
