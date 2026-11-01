@@ -1,14 +1,14 @@
 {
     "Seat_H5": {
-        "left": 508.0,
-        "top": 398.0,
-        "width": 300.0,
-        "height": 348.0
+        "left": 434.0,
+        "top": 362.0,
+        "width": 344.0,
+        "height": 434.0
     },
     "Seat_H6": {
         "left": 792.0,
         "top": 322.0,
-        "width": 296.0,
-        "height": 384.0
+        "width": 352.0,
+        "height": 450.0
     }
 }

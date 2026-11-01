@@ -1,14 +1,14 @@
 {
     "Seat_H9": {
-        "left": 524.0,
-        "top": 332.0,
-        "width": 316.0,
-        "height": 448.0
+        "left": 422.0,
+        "top": 348.0,
+        "width": 366.0,
+        "height": 544.0
     },
     "Seat_H10": {
         "left": 752.0,
         "top": 332.0,
-        "width": 324.0,
-        "height": 474.0
+        "width": 372.0,
+        "height": 552.0
     }
 }

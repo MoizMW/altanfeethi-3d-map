@@ -6,33 +6,15 @@
         "height": 316.0
     },
     "Table_G19": {
-        "left": 1270.0,
-        "top": 822.0,
+        "left": 1318.0,
+        "top": 826.0,
         "width": 376.0,
         "height": 254.0
     },
     "Table_G16": {
-        "left": 1246.0,
-        "top": 242.0,
+        "left": 1242.0,
+        "top": 218.0,
         "width": 216.0,
         "height": 162.0
-    },
-    "Table_G15": {
-        "left": 1264.0,
-        "top": 70.0,
-        "width": 206.0,
-        "height": 84.0
-    },
-    "Table_G18": {
-        "left": 448.0,
-        "top": 84.0,
-        "width": 174.0,
-        "height": 104.0
-    },
-    "Table_G17": {
-        "left": 530.0,
-        "top": -4.0,
-        "width": 272.0,
-        "height": 64.0
     }
 }

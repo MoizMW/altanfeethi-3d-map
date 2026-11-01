@@ -6,63 +6,45 @@
         "height": 160.0
     },
     "Table_B14": {
-        "left": 698.0,
+        "left": 686.0,
         "top": 876.0,
         "width": 566.0,
         "height": 200.0
     },
     "Table_B10": {
-        "left": 196.0,
-        "top": 470.0,
-        "width": 302.0,
-        "height": 122.0
+        "left": -8.0,
+        "top": 504.0,
+        "width": 226.0,
+        "height": 140.0
     },
     "Table_B9": {
-        "left": 558.0,
-        "top": 442.0,
-        "width": 294.0,
-        "height": 116.0
+        "left": 242.0,
+        "top": 474.0,
+        "width": 306.0,
+        "height": 128.0
     },
     "Table_B8": {
-        "left": 926.0,
-        "top": 408.0,
+        "left": 644.0,
+        "top": 444.0,
         "width": 302.0,
         "height": 120.0
     },
     "Table_B7": {
-        "left": 1284.0,
-        "top": 394.0,
-        "width": 278.0,
-        "height": 114.0
-    },
-    "Table_B20": {
-        "left": 0.0,
-        "top": 260.0,
-        "width": 168.0,
-        "height": 89.0
+        "left": 1000.0,
+        "top": 402.0,
+        "width": 306.0,
+        "height": 134.0
     },
     "Table_B6": {
-        "left": 1620.0,
-        "top": 346.0,
-        "width": 246.0,
+        "left": 1364.0,
+        "top": 390.0,
+        "width": 290.0,
         "height": 118.0
     },
     "Table_B13": {
-        "left": 1362.0,
-        "top": 812.0,
+        "left": 1332.0,
+        "top": 828.0,
         "width": 442.0,
         "height": 232.0
-    },
-    "Table_B12": {
-        "left": 1816.0,
-        "top": 780.0,
-        "width": 108.0,
-        "height": 164.0
-    },
-    "Table_B11": {
-        "left": -2.0,
-        "top": 502.0,
-        "width": 136.0,
-        "height": 106.0
     }
 }

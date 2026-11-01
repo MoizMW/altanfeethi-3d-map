@@ -1,27 +1,21 @@
 {
-    "Table_C22": {
-        "left": 1008.0,
-        "top": 922.0,
-        "width": 278.0,
-        "height": 156.0
-    },
     "Table_C25": {
-        "left": 1510.0,
-        "top": 832.0,
+        "left": 1528.0,
+        "top": 830.0,
         "width": 288.0,
         "height": 240.0
     },
     "Table_C26": {
-        "left": 1342.0,
-        "top": 330.0,
-        "width": 142.0,
-        "height": 118.0
+        "left": 1324.0,
+        "top": 320.0,
+        "width": 160.0,
+        "height": 128.0
     },
     "Table_C27": {
         "left": 1222.0,
-        "top": 134.0,
-        "width": 124.0,
-        "height": 52.0
+        "top": 120.0,
+        "width": 134.0,
+        "height": 66.0
     },
     "Table_C24": {
         "left": 876.0,

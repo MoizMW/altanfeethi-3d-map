@@ -1,20 +1,14 @@
 {
     "Table_H24": {
-        "left": 692.0,
-        "top": 578.0,
+        "left": 742.0,
+        "top": 572.0,
         "width": 354.0,
         "height": 230.0
     },
     "Table_H26": {
-        "left": 584.0,
-        "top": 166.0,
+        "left": 554.0,
+        "top": 138.0,
         "width": 172.0,
         "height": 148.0
-    },
-    "Table_H27": {
-        "left": 356.0,
-        "top": 90.0,
-        "width": 106.0,
-        "height": 74.0
     }
 }

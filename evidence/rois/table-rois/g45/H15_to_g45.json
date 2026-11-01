@@ -1,20 +1,20 @@
 {
     "Table_H14": {
-        "left": 350.0,
-        "top": 748.0,
+        "left": 320.0,
+        "top": 770.0,
         "width": 210.0,
         "height": 160.0
     },
     "Table_H13": {
-        "left": 692.0,
-        "top": 784.0,
-        "width": 280.0,
-        "height": 190.0
+        "left": 718.0,
+        "top": 782.0,
+        "width": 256.0,
+        "height": 256.0
     },
     "Table_H12": {
-        "left": 1202.0,
-        "top": 836.0,
-        "width": 332.0,
-        "height": 202.0
+        "left": 1218.0,
+        "top": 842.0,
+        "width": 328.0,
+        "height": 240.0
     }
 }

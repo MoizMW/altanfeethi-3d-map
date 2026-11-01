@@ -1,15 +1,9 @@
 {
-    "Seat_E1": {
-        "left": 112.0,
-        "top": 144.0,
-        "width": 332.0,
-        "height": 406.0
-    },
     "Seat_E2": {
-        "left": 462.0,
-        "top": 128.0,
-        "width": 296.0,
-        "height": 424.0
+        "left": 330.0,
+        "top": 108.0,
+        "width": 396.0,
+        "height": 480.0
     },
     "Seat_E3": {
         "left": 770.0,

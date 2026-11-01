@@ -1,26 +1,26 @@
 {
     "Seat_H79": {
-        "left": 1144.0,
-        "top": 316.0,
+        "left": 1192.0,
+        "top": 334.0,
         "width": 322.0,
         "height": 352.0
     },
     "Seat_H78": {
-        "left": 684.0,
+        "left": 718.0,
         "top": 376.0,
         "width": 412.0,
         "height": 416.0
     },
     "Seat_H81": {
-        "left": 1350.0,
-        "top": 604.0,
+        "left": 1348.0,
+        "top": 670.0,
         "width": 414.0,
         "height": 384.0
     },
     "Seat_H76": {
-        "left": 658.0,
-        "top": 4.0,
-        "width": 154.0,
-        "height": 136.0
+        "left": 632.0,
+        "top": 6.0,
+        "width": 222.0,
+        "height": 178.0
     }
 }

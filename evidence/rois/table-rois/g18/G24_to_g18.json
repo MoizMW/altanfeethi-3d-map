@@ -1,6 +1,6 @@
 {
     "Table_G3": {
-        "left": 398.0,
+        "left": 384.0,
         "top": 834.0,
         "width": 260.0,
         "height": 240.0
@@ -12,27 +12,15 @@
         "height": 284.0
     },
     "Table_G6": {
-        "left": 1436.0,
-        "top": 274.0,
+        "left": 1386.0,
+        "top": 256.0,
         "width": 200.0,
         "height": 218.0
     },
     "Table_G4": {
-        "left": 536.0,
-        "top": 310.0,
+        "left": 534.0,
+        "top": 298.0,
         "width": 210.0,
         "height": 230.0
-    },
-    "Table_G9": {
-        "left": 1220.0,
-        "top": 4.0,
-        "width": 144.0,
-        "height": 54.0
-    },
-    "Table_G7": {
-        "left": 660.0,
-        "top": 10.0,
-        "width": 160.0,
-        "height": 6.0
     }
 }

@@ -1,20 +1,20 @@
 {
     "Seat_B13": {
-        "left": 984.0,
-        "top": 330.0,
-        "width": 334.0,
-        "height": 400.0
+        "left": 1070.0,
+        "top": 274.0,
+        "width": 360.0,
+        "height": 548.0
     },
     "Seat_B14": {
-        "left": 600.0,
-        "top": 358.0,
-        "width": 356.0,
-        "height": 382.0
+        "left": 470.0,
+        "top": 312.0,
+        "width": 436.0,
+        "height": 486.0
     },
     "Seat_B15": {
-        "left": 348.0,
-        "top": 508.0,
-        "width": 426.0,
-        "height": 398.0
+        "left": 170.0,
+        "top": 476.0,
+        "width": 514.0,
+        "height": 530.0
     }
 }

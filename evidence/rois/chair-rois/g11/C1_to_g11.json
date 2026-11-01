@@ -1,20 +1,20 @@
 {
     "Seat_C1": {
-        "left": 210.0,
-        "top": 234.0,
-        "width": 382.0,
-        "height": 478.0
+        "left": 58.0,
+        "top": 216.0,
+        "width": 446.0,
+        "height": 586.0
     },
     "Seat_C2": {
-        "left": 626.0,
-        "top": 236.0,
-        "width": 430.0,
-        "height": 456.0
+        "left": 636.0,
+        "top": 238.0,
+        "width": 438.0,
+        "height": 474.0
     },
     "Seat_C3": {
-        "left": 876.0,
-        "top": 404.0,
-        "width": 462.0,
-        "height": 464.0
+        "left": 930.0,
+        "top": 398.0,
+        "width": 512.0,
+        "height": 546.0
     }
 }

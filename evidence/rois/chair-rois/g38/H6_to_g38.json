@@ -1,14 +1,14 @@
 {
     "Seat_H16": {
-        "left": 700.0,
-        "top": 358.0,
-        "width": 268.0,
-        "height": 396.0
+        "left": 632.0,
+        "top": 296.0,
+        "width": 354.0,
+        "height": 486.0
     },
     "Seat_H15": {
-        "left": 938.0,
-        "top": 356.0,
-        "width": 294.0,
-        "height": 426.0
+        "left": 962.0,
+        "top": 310.0,
+        "width": 302.0,
+        "height": 534.0
     }
 }

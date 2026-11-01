@@ -1,21 +1,21 @@
 {
     "Seat_G42": {
-        "left": 208.0,
-        "top": 190.0,
+        "left": 206.0,
+        "top": 146.0,
         "width": 256.0,
         "height": 340.0
     },
     "Seat_G48": {
-        "left": 1084.0,
-        "top": 230.0,
+        "left": 1076.0,
+        "top": 172.0,
         "width": 252.0,
         "height": 318.0
     },
     "Seat_G45": {
-        "left": 1306.0,
-        "top": 726.0,
-        "width": 376.0,
-        "height": 358.0
+        "left": 1322.0,
+        "top": 788.0,
+        "width": 410.0,
+        "height": 294.0
     },
     "Seat_G47": {
         "left": 1366.0,

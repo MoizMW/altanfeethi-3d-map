@@ -1,14 +1,14 @@
 {
     "Seat_B4": {
-        "left": 710.0,
-        "top": 66.0,
-        "width": 462.0,
-        "height": 606.0
+        "left": 572.0,
+        "top": 52.0,
+        "width": 498.0,
+        "height": 692.0
     },
     "Seat_B3": {
-        "left": 1170.0,
-        "top": 78.0,
-        "width": 386.0,
-        "height": 572.0
+        "left": 1056.0,
+        "top": 52.0,
+        "width": 474.0,
+        "height": 704.0
     }
 }

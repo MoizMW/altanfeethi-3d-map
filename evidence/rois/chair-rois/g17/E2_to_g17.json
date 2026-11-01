@@ -12,15 +12,9 @@
         "height": 474.0
     },
     "Seat_E11": {
-        "left": 1028.0,
-        "top": 184.0,
-        "width": 298.0,
-        "height": 474.0
-    },
-    "Seat_E12": {
-        "left": 1342.0,
+        "left": 1080.0,
         "top": 206.0,
-        "width": 294.0,
-        "height": 516.0
+        "width": 388.0,
+        "height": 536.0
     }
 }

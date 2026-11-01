@@ -1,32 +1,32 @@
 {
     "Table_H14": {
-        "left": 922.0,
-        "top": 884.0,
-        "width": 208.0,
-        "height": 180.0
+        "left": 1030.0,
+        "top": 764.0,
+        "width": 240.0,
+        "height": 236.0
     },
     "Table_H13": {
-        "left": 650.0,
-        "top": 700.0,
-        "width": 168.0,
-        "height": 134.0
+        "left": 766.0,
+        "top": 568.0,
+        "width": 182.0,
+        "height": 174.0
     },
     "Table_H12": {
-        "left": 466.0,
-        "top": 570.0,
+        "left": 582.0,
+        "top": 436.0,
         "width": 170.0,
-        "height": 114.0
+        "height": 140.0
     },
     "Table_H11": {
-        "left": 1304.0,
-        "top": 634.0,
-        "width": 192.0,
-        "height": 184.0
+        "left": 1424.0,
+        "top": 506.0,
+        "width": 238.0,
+        "height": 196.0
     },
     "Table_H10": {
-        "left": 828.0,
-        "top": 438.0,
-        "width": 176.0,
-        "height": 100.0
+        "left": 946.0,
+        "top": 290.0,
+        "width": 188.0,
+        "height": 140.0
     }
 }

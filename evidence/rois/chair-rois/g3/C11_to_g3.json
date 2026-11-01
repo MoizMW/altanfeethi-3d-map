@@ -5,22 +5,28 @@
         "width": 280.0,
         "height": 302.0
     },
-    "Seat_B48": {
-        "left": 260.0,
-        "top": 334.0,
-        "width": 272.0,
-        "height": 320.0
-    },
-    "Seat_B35": {
-        "left": 386.0,
-        "top": 580.0,
-        "width": 274.0,
+    "Seat_B36": {
+        "left": 302.0,
+        "top": 618.0,
+        "width": 268.0,
         "height": 328.0
     },
-    "Seat_B29": {
+    "Seat_B30": {
         "left": 4.0,
         "top": 560.0,
         "width": 240.0,
         "height": 346.0
+    },
+    "Seat_B29": {
+        "left": 112.0,
+        "top": 350.0,
+        "width": 262.0,
+        "height": 236.0
+    },
+    "Seat_B35": {
+        "left": 446.0,
+        "top": 348.0,
+        "width": 296.0,
+        "height": 272.0
     }
 }

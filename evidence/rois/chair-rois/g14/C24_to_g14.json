@@ -12,26 +12,26 @@
         "height": 422.0
     },
     "Seat_C22": {
-        "left": 1382.0,
-        "top": 514.0,
+        "left": 1296.0,
+        "top": 528.0,
         "width": 302.0,
         "height": 378.0
     },
     "Seat_C21": {
-        "left": 1640.0,
+        "left": 1618.0,
         "top": 490.0,
         "width": 272.0,
         "height": 364.0
     },
     "Seat_C19": {
-        "left": 1046.0,
-        "top": 102.0,
+        "left": 1084.0,
+        "top": 92.0,
         "width": 164.0,
         "height": 194.0
     },
     "Seat_C20": {
-        "left": 1220.0,
-        "top": 94.0,
+        "left": 1246.0,
+        "top": 88.0,
         "width": 166.0,
         "height": 192.0
     }
