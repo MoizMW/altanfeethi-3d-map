@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-g-lounge-018",
+  "slug": "g18",
+  "name": "G18 \u00b7 G-zone passage lounge",
+  "floor": "ground",
+  "groups": [
+    "g18"
+  ],
+  "zone": "G",
+  "status": "draft",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

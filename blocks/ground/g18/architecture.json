@@ -1,0 +1,214 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-g-lounge-018",
+  "floorSize": [
+    8.4,
+    10.4
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-10-29T05:38:50.669Z",
+    "anchors": [
+      {
+        "camera": "G24",
+        "pixel": [
+          4299,
+          4524
+        ],
+        "heading": 129,
+        "status": "verified"
+      },
+      {
+        "camera": "G25",
+        "pixel": [
+          4735,
+          4807
+        ],
+        "heading": 301,
+        "status": "verified"
+      },
+      {
+        "camera": "G28",
+        "pixel": [
+          4378,
+          4795
+        ],
+        "heading": 55,
+        "status": "verified"
+      },
+      {
+        "camera": "G29",
+        "pixel": [
+          4649,
+          4612
+        ],
+        "heading": 230,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "Across the walkway, from reflective glazing (G28) toward curtains (G29)",
+      "z": "Along the walkway, from Seat_G10/G17 toward Seat_G16/G23",
+      "y": "Up"
+    },
+    "sourceMapCrop": [
+      3800,
+      4000,
+      5250,
+      5250
+    ],
+    "mapReview": "Four anchors occupy opposite seating banks separated by a passage; photo furniture and finishes supersede the schematic orange map symbols."
+  },
+  "footprint": [
+    [
+      -4.2,
+      -6.6
+    ],
+    [
+      4.2,
+      -6.6
+    ],
+    [
+      4.2,
+      3.8
+    ],
+    [
+      -4.2,
+      3.8
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g18-reflective-glazing",
+      "kind": "glass",
+      "start": [
+        -4.15,
+        -3.7
+      ],
+      "end": [
+        -4.15,
+        3.7
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g18",
+      "confidence": "estimated span and height; reflective glazed backing visible",
+      "sources": [
+        "G24",
+        "G25",
+        "G28"
+      ],
+      "notes": "Shared glass builder is schematic; patterned lower panel and reflections are not reproduced. Reflected furniture is excluded."
+    },
+    {
+      "id": "g18-curtained-glazing",
+      "kind": "glass",
+      "start": [
+        4.15,
+        -3.7
+      ],
+      "end": [
+        4.15,
+        3.7
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g18",
+      "confidence": "estimated span and height; window backing inferred behind visible sheer curtains",
+      "sources": [
+        "G24",
+        "G25",
+        "G29"
+      ],
+      "notes": "Shared glass builder is schematic; curtain fabric is not reproduced; confirm underlying glazing and frame spacing."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "floorCenter": [
+    0,
+    -1.4
+  ],
+  "mainSeatingExtent": {
+    "x": [
+      -4.2,
+      4.2
+    ],
+    "z": [
+      -3.8,
+      3.8
+    ],
+    "status": "estimated-working-crop"
+  },
+  "circulation": {
+    "id": "g18-central-walkway",
+    "polygon": [
+      [
+        -1.4,
+        -6.6
+      ],
+      [
+        1.4,
+        -6.6
+      ],
+      [
+        1.4,
+        3.8
+      ],
+      [
+        -1.4,
+        3.8
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "status": "visually-supported-width-estimated",
+    "sources": [
+      "G24",
+      "G25"
+    ],
+    "notes": "Pale central path contrasts with dark stone seating strips. Both ends remain open; hidden geometry and arch profiles are unresolved."
+  },
+  "ceiling": {
+    "size": [
+      8.4,
+      10.4
+    ],
+    "center": [
+      0,
+      -1.4
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "boundaryReview": [
+    {
+      "id": "g18-walkway-negative-z",
+      "kind": "open-corridor",
+      "status": "neighbor-and-seam-unresolved",
+      "sources": [
+        "G25"
+      ]
+    },
+    {
+      "id": "g18-walkway-positive-z",
+      "kind": "open-corridor",
+      "status": "neighbor-and-seam-unresolved",
+      "sources": [
+        "G24"
+      ]
+    },
+    {
+      "id": "g18-arch-surrounds",
+      "kind": "unknown",
+      "status": "partly-visible-not-modeled",
+      "sources": [
+        "G24",
+        "G25"
+      ],
+      "notes": "Pale curved surrounds/pier returns are visible but their complete spans, ownership and profiles are not established."
+    }
+  ]
+}

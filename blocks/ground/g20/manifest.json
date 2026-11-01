@@ -1,0 +1,26 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-g-lounge-020",
+  "slug": "g20",
+  "name": "G20 \u00b7 G-zone passage lounge",
+  "floor": "ground",
+  "groups": [
+    "g20"
+  ],
+  "zone": "G",
+  "status": "draft",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  },
+  "dependencies": [
+    {
+      "block": "ground/g18",
+      "reason": "Background Table_G4 and Table_G6 observations in G26; evidence references only, no fitted scene transform."
+    }
+  ]
+}

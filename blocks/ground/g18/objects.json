@@ -1,0 +1,721 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-g-lounge-018",
+  "objects": [
+    {
+      "id": "g18-sofa-01",
+      "type": "sofa",
+      "name": "Two-seat sofa · G12 / G11",
+      "position": [
+        -3.55,
+        0,
+        -1.5
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G12",
+        "Seat_G11"
+      ],
+      "cameras": [
+        "G24",
+        "G25",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-sofa-02",
+      "type": "sofa",
+      "name": "Two-seat sofa · G15 / G14",
+      "position": [
+        -3.55,
+        0,
+        1.5
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G15",
+        "Seat_G14"
+      ],
+      "cameras": [
+        "G24",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-sofa-03",
+      "type": "sofa",
+      "name": "Two-seat sofa · G18 / G19",
+      "position": [
+        3.55,
+        0,
+        -1.5
+      ],
+      "yaw": 270,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G18",
+        "Seat_G19"
+      ],
+      "cameras": [
+        "G25",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-sofa-04",
+      "type": "sofa",
+      "name": "Two-seat sofa · G22 / G21",
+      "position": [
+        3.55,
+        0,
+        1.5
+      ],
+      "yaw": 270,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G22",
+        "Seat_G21"
+      ],
+      "cameras": [
+        "G24",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-chair-10",
+      "type": "armchair",
+      "name": "Teal armchair · G10",
+      "position": [
+        -2.6,
+        0,
+        -3.08
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G10"
+      ],
+      "cameras": [
+        "G25",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-chair-13",
+      "type": "armchair",
+      "name": "Teal armchair · G13",
+      "position": [
+        -2.4,
+        0,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G13"
+      ],
+      "cameras": [
+        "G24",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-chair-16",
+      "type": "armchair",
+      "name": "Teal armchair · G16",
+      "position": [
+        -2.6,
+        0,
+        3.08
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G16"
+      ],
+      "cameras": [
+        "G24",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-chair-17",
+      "type": "armchair",
+      "name": "Teal armchair · G17",
+      "position": [
+        2.6,
+        0,
+        -3.08
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G17"
+      ],
+      "cameras": [
+        "G25",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-chair-20",
+      "type": "armchair",
+      "name": "Teal armchair · G20",
+      "position": [
+        2.4,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G20"
+      ],
+      "cameras": [
+        "G24",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-chair-23",
+      "type": "armchair",
+      "name": "Teal armchair · G23",
+      "position": [
+        2.6,
+        0,
+        3.08
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3f5c59",
+      "seats": [
+        "Seat_G23"
+      ],
+      "cameras": [
+        "G24",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-coffee-table-3",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        -2.45,
+        0,
+        -1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G24",
+        "G25",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G3"
+    },
+    {
+      "id": "g18-coffee-table-4",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        -2.45,
+        0,
+        1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G24",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G4"
+    },
+    {
+      "id": "g18-coffee-table-5",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        2.45,
+        0,
+        -1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G24",
+        "G25",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G5"
+    },
+    {
+      "id": "g18-coffee-table-6",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        2.45,
+        0,
+        1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G24",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G6"
+    },
+    {
+      "id": "g18-context-table-1",
+      "type": "table",
+      "name": "Context table · boundary review",
+      "position": [
+        2.55,
+        0,
+        -5.25
+      ],
+      "yaw": 0,
+      "size": [
+        1.4,
+        0.42,
+        0.72
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G25"
+      ],
+      "confidence": "ROI identity visible in G25; placement relative to core estimated; not accepted block ownership",
+      "externalId": "Table_G1",
+      "ownershipStatus": "provisional-context-neighbor-unresolved",
+      "notes": "Beyond the main seating group. Context only; associated background seats have no G18 seat labels and are excluded. "
+    },
+    {
+      "id": "g18-context-table-2",
+      "type": "table",
+      "name": "Context table · boundary review",
+      "position": [
+        -2.55,
+        0,
+        -5.25
+      ],
+      "yaw": 90,
+      "size": [
+        1.4,
+        0.42,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G25"
+      ],
+      "confidence": "ROI identity visible in G25; placement relative to core estimated; not accepted block ownership",
+      "externalId": "Table_G2",
+      "ownershipStatus": "provisional-context-neighbor-unresolved",
+      "notes": "Beyond the main seating group. Context only; associated background seats have no G18 seat labels and are excluded. Actual rectangular top is approximated by the shared oval builder."
+    },
+    {
+      "id": "g18-side-table-01",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        -3.55,
+        0,
+        3.12
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G24",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "Simplified round top and supports. No external table identity; these are not additional ROI coffee tables. Ornaments and table lamp omitted."
+    },
+    {
+      "id": "g18-side-table-02",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        3.55,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G24",
+        "G25",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "Simplified round top and supports. No external table identity; these are not additional ROI coffee tables. Ornaments and table lamp omitted."
+    },
+    {
+      "id": "g18-side-table-03",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        3.55,
+        0,
+        3.18
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G24",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "Simplified round top and supports. No external table identity; these are not additional ROI coffee tables. Ornaments and table lamp omitted."
+    },
+    {
+      "id": "g18-floor-lamp-01",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        -3.75,
+        0,
+        -3.35
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G25",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-floor-lamp-02",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        -3.75,
+        0,
+        3.4
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G24",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-floor-lamp-03",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        3.75,
+        0,
+        -3.35
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G25",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-plant-01",
+      "type": "plant",
+      "name": "Tall potted plant",
+      "position": [
+        -3.6,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.5,
+        1.85,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "G24",
+        "G28"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g18-plant-02",
+      "type": "plant",
+      "name": "Tall potted plant",
+      "position": [
+        3.7,
+        0,
+        3.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.5,
+        1.85,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "G24",
+        "G29"
+      ],
+      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+    }
+  ]
+}

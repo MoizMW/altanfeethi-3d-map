@@ -1,0 +1,199 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-g-lounge-020",
+  "cameras": [
+    "G21",
+    "G22",
+    "G26",
+    "G27"
+  ],
+  "snapshots": {
+    "G21": "evidence/camera-snapshots/G21.jpg",
+    "G22": "evidence/camera-snapshots/G22.jpg",
+    "G26": "evidence/camera-snapshots/G26.jpg",
+    "G27": "evidence/camera-snapshots/G27.jpg"
+  },
+  "notes": [
+    "Four two-seat sofas and six teal armchairs reconcile Seat_G24\u2013Seat_G37 once across G21/G22/G26/G27. Four main coffee tables carry Table_G7\u2013Table_G10.",
+    "G26 also observes Table_G4 and Table_G6 beyond the core. They already belong to G18 and are linked as external observations instead of duplicated in G20. Their image-space positions do not supply a calibrated seam transform.",
+    "G22 establishes the reflective-patterned backing; G21 the curtained window side. G26/G27 show a pale central path with dark stone seating strips and partly visible curved surrounds.",
+    "Four round side tables, three floor lamps and three plants are simplified context. Two plants rest on side tables, preserving their raised pot positions. Reflected seats, reception fixtures and neighboring furniture are excluded.",
+    "All dimensions, slot order and local transforms are draft estimates. Curtain fabric, patterned panels, small white stand/bin, ornaments and hidden arch geometry are unresolved."
+  ],
+  "wideSnapshots": {},
+  "wideCaptureStatus": "Checked supplied wide-capture folder: no G21/G22/G26/G27 captures available.",
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "rois": {
+    "G21": {
+      "chairs": "evidence/rois/chair-rois/g20/G21_to_g20.json",
+      "tables": "evidence/rois/table-rois/g20/G21_to_g20.json"
+    },
+    "G22": {
+      "chairs": "evidence/rois/chair-rois/g20/G22_to_g20.json",
+      "tables": "evidence/rois/table-rois/g20/G22_to_g20.json"
+    },
+    "G26": {
+      "chairs": "evidence/rois/chair-rois/g20/G26_to_g20.json",
+      "tables": "evidence/rois/table-rois/g20/G26_to_g20.json"
+    },
+    "G27": {
+      "chairs": "evidence/rois/chair-rois/g20/G27_to_g20.json",
+      "tables": "evidence/rois/table-rois/g20/G27_to_g20.json"
+    }
+  },
+  "roiCoordinateStatus": "All four chair/table overlays reviewed against normal 1920x1080 snapshots. G22 Seat_G24 begins at x=-2; retain original unclamped annotation as partial-edge evidence. Historical authoring resolution is unrecorded. ROI coordinates were not converted to world coordinates.",
+  "externalObservations": [
+    {
+      "externalId": "Table_G4",
+      "ownerBlock": "ground/g18",
+      "objectId": "g18-coffee-table-4",
+      "camera": "G26",
+      "roiFile": "evidence/rois/table-rois/g20/G26_to_g20.json",
+      "status": "ROI-label-correspondence-needs-human-review",
+      "renderLocally": false
+    },
+    {
+      "externalId": "Table_G6",
+      "ownerBlock": "ground/g18",
+      "objectId": "g18-coffee-table-6",
+      "camera": "G26",
+      "roiFile": "evidence/rois/table-rois/g20/G26_to_g20.json",
+      "status": "ROI-label-correspondence-needs-human-review",
+      "renderLocally": false
+    }
+  ],
+  "seatCorrespondence": [
+    {
+      "objectId": "g20-sofa-01",
+      "seats": [
+        "Seat_G26",
+        "Seat_G25"
+      ],
+      "sources": [
+        "G22"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g20-sofa-02",
+      "seats": [
+        "Seat_G29",
+        "Seat_G28"
+      ],
+      "sources": [
+        "G22",
+        "G27"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g20-sofa-03",
+      "seats": [
+        "Seat_G32",
+        "Seat_G33"
+      ],
+      "sources": [
+        "G21",
+        "G27"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g20-sofa-04",
+      "seats": [
+        "Seat_G36",
+        "Seat_G35"
+      ],
+      "sources": [
+        "G21",
+        "G27"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g20-chair-24",
+      "seats": [
+        "Seat_G24"
+      ],
+      "sources": [
+        "G22",
+        "G26"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g20-chair-27",
+      "seats": [
+        "Seat_G27"
+      ],
+      "sources": [
+        "G22",
+        "G27"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g20-chair-30",
+      "seats": [
+        "Seat_G30"
+      ],
+      "sources": [
+        "G22",
+        "G27"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g20-chair-31",
+      "seats": [
+        "Seat_G31"
+      ],
+      "sources": [
+        "G21",
+        "G26"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g20-chair-34",
+      "seats": [
+        "Seat_G34"
+      ],
+      "sources": [
+        "G21",
+        "G27"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g20-chair-37",
+      "seats": [
+        "Seat_G37"
+      ],
+      "sources": [
+        "G21",
+        "G27"
+      ],
+      "status": "draft-needs-owner-review"
+    }
+  ],
+  "reviewItems": [
+    "Confirm sofa slot order and chair yaw against G21/G22; preserve physical IDs when correcting occupancy names.",
+    "Confirm the estimated 8.4 x 7.6 m working crop, 2.8 m path and 4.1 m visualization ceiling height.",
+    "Confirm G18 background table correspondence and negative-Z adjacency; resolve shared seam ownership and floor transform before composition.",
+    "Review curved surrounds, wall returns, glazing extents, curtain backing and frame spacing before extending architecture.",
+    "Review context object correspondence, elevated plant sizes and support heights; detailed foliage and glass/brass are schematic."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-overlapping-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-derived-needs-human-review",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

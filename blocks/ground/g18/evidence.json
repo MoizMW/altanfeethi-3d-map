@@ -1,0 +1,182 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-g-lounge-018",
+  "cameras": [
+    "G24",
+    "G25",
+    "G28",
+    "G29"
+  ],
+  "snapshots": {
+    "G24": "evidence/camera-snapshots/G24.jpg",
+    "G25": "evidence/camera-snapshots/G25.jpg",
+    "G28": "evidence/camera-snapshots/G28.jpg",
+    "G29": "evidence/camera-snapshots/G29.jpg"
+  },
+  "notes": [
+    "Four two-seat sofas and six teal armchairs resolve Seat_G10\u2013Seat_G23 once across the overlapping views. Four coffee tables, Table_G3\u2013Table_G6, belong to the main seating draft.",
+    "Table_G1 and Table_G2 are visible beyond the core in G25. They are editable context with unresolved neighboring ownership; background seating is excluded rather than assigned invented seat IDs.",
+    "G28 shows the reflective-glazing side; G29 shows the curtain side. G24/G25 establish opposing rows and a pale central path between dark stone seating strips. Reflections are not duplicate physical furniture.",
+    "Local sizes and shell extents are estimated. Registered map anchors are preserved without deriving world yaw or claiming global calibration.",
+    "Three round side tables, three floor lamps and two plants are simplified context. Curtains, patterned glazing, table lamp, artifacts and partly occluded arch surrounds are not reconstructed in this draft."
+  ],
+  "wideSnapshots": {},
+  "wideCaptureStatus": "Checked supplied wide-capture folder: no G24/G25/G28/G29 files available.",
+  "rois": {
+    "G24": {
+      "chairs": "evidence/rois/chair-rois/g18/G24_to_g18.json",
+      "tables": "evidence/rois/table-rois/g18/G24_to_g18.json"
+    },
+    "G25": {
+      "chairs": "evidence/rois/chair-rois/g18/G25_to_g18.json",
+      "tables": "evidence/rois/table-rois/g18/G25_to_g18.json"
+    },
+    "G28": {
+      "chairs": "evidence/rois/chair-rois/g18/G28_to_g18.json",
+      "tables": "evidence/rois/table-rois/g18/G28_to_g18.json"
+    },
+    "G29": {
+      "chairs": "evidence/rois/chair-rois/g18/G29_to_g18.json",
+      "tables": "evidence/rois/table-rois/g18/G29_to_g18.json"
+    }
+  },
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "roiCoordinateStatus": "All four overlays reviewed against 1920x1080 snapshots. G25 Seat_G19 starts at x=-4; retain the original unclamped ROI as partial edge evidence. Historical authoring resolution unrecorded. ROIs were not converted into world coordinates.",
+  "seatCorrespondence": [
+    {
+      "objectId": "g18-sofa-01",
+      "seats": [
+        "Seat_G12",
+        "Seat_G11"
+      ],
+      "sources": [
+        "G24",
+        "G25",
+        "G28"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g18-sofa-02",
+      "seats": [
+        "Seat_G15",
+        "Seat_G14"
+      ],
+      "sources": [
+        "G24",
+        "G28"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g18-sofa-03",
+      "seats": [
+        "Seat_G18",
+        "Seat_G19"
+      ],
+      "sources": [
+        "G25",
+        "G29"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g18-sofa-04",
+      "seats": [
+        "Seat_G22",
+        "Seat_G21"
+      ],
+      "sources": [
+        "G24",
+        "G29"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g18-chair-10",
+      "seats": [
+        "Seat_G10"
+      ],
+      "sources": [
+        "G25",
+        "G28"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g18-chair-13",
+      "seats": [
+        "Seat_G13"
+      ],
+      "sources": [
+        "G24",
+        "G28"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g18-chair-16",
+      "seats": [
+        "Seat_G16"
+      ],
+      "sources": [
+        "G24",
+        "G28"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g18-chair-17",
+      "seats": [
+        "Seat_G17"
+      ],
+      "sources": [
+        "G25",
+        "G29"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g18-chair-20",
+      "seats": [
+        "Seat_G20"
+      ],
+      "sources": [
+        "G24",
+        "G29"
+      ],
+      "status": "draft-needs-owner-review"
+    },
+    {
+      "objectId": "g18-chair-23",
+      "seats": [
+        "Seat_G23"
+      ],
+      "sources": [
+        "G24",
+        "G29"
+      ],
+      "status": "draft-needs-owner-review"
+    }
+  ],
+  "reviewItems": [
+    "Confirm sofa slot order and physical chair orientation against G28/G29; IDs are ROI-derived, not human-approved.",
+    "Confirm the footprint, walkway width, side-glazing heights, curtain backing, and curved surround/pier geometry.",
+    "Confirm whether Table_G1/G2 belong to G18 or a neighboring block; transfer their stable physical IDs if ownership changes.",
+    "Resolve main block endpoints and neighboring seams before composition.",
+    "Calibrate floor-map basis and scale before assigning a global transform.",
+    "Review contextual plants, side tables, lamps and their dimensions; decorative glass/brass remains schematic."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-overlapping-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-derived-needs-human-review",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}
