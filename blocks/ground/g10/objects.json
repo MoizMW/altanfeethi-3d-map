@@ -1,0 +1,443 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-seating-002",
+  "objects": [
+    {
+      "id": "g10-sofa-01",
+      "type": "sofa",
+      "name": "Beige sofa · B10 / B11",
+      "position": [
+        0.76,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_B10",
+        "Seat_B11"
+      ],
+      "cameras": [
+        "B4",
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-sofa-02",
+      "type": "sofa",
+      "name": "Beige sofa · B14 / B15",
+      "position": [
+        -0.76,
+        0,
+        0
+      ],
+      "yaw": -90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_B14",
+        "Seat_B15"
+      ],
+      "cameras": [
+        "B5",
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-chair-01",
+      "type": "armchair",
+      "name": "Blue lounge chair · B9",
+      "position": [
+        2,
+        0,
+        -1.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B9"
+      ],
+      "cameras": [
+        "B4"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-chair-02",
+      "type": "armchair",
+      "name": "Blue lounge chair · B12",
+      "position": [
+        2,
+        0,
+        1.65
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B12"
+      ],
+      "cameras": [
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-chair-03",
+      "type": "armchair",
+      "name": "Blue lounge chair · B13",
+      "position": [
+        -2,
+        0,
+        -1.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B13"
+      ],
+      "cameras": [
+        "B5"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-chair-04",
+      "type": "armchair",
+      "name": "Blue lounge chair · B16",
+      "position": [
+        -2,
+        0,
+        1.65
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B16"
+      ],
+      "cameras": [
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-table-01",
+      "type": "table",
+      "name": "Oval coffee table · Table_B4",
+      "position": [
+        2,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated",
+      "externalId": "Table_B4"
+    },
+    {
+      "id": "g10-table-02",
+      "type": "table",
+      "name": "Oval coffee table · Table_B5",
+      "position": [
+        -2,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated",
+      "externalId": "Table_B5"
+    },
+    {
+      "id": "g10-divider-01",
+      "type": "screen",
+      "name": "Dark timber display divider",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        2.65,
+        2.25,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#44362c",
+      "seats": [],
+      "cameras": [
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated",
+      "variant": "open-shelving"
+    },
+    {
+      "id": "g10-side-table-01",
+      "type": "table",
+      "name": "Brass and glass side table",
+      "position": [
+        1.15,
+        0,
+        1.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.48,
+        0.55,
+        0.48
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ad9863",
+      "seats": [],
+      "cameras": [
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated; glass and brass finish simplified by shared table builder",
+      "accessories": false
+    },
+    {
+      "id": "g10-lamp-01",
+      "type": "floor-lamp",
+      "name": "Warm floor lamp",
+      "position": [
+        2.3,
+        0,
+        2.3
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        1.85,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-side-table-02",
+      "type": "table",
+      "name": "Brass and glass side table",
+      "position": [
+        -1.15,
+        0,
+        1.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.48,
+        0.55,
+        0.48
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ad9863",
+      "seats": [],
+      "cameras": [
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated; glass and brass finish simplified by shared table builder",
+      "accessories": false
+    },
+    {
+      "id": "g10-lamp-02",
+      "type": "floor-lamp",
+      "name": "Warm floor lamp",
+      "position": [
+        -2.3,
+        0,
+        2.3
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        1.85,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-plant-01",
+      "type": "plant",
+      "name": "Potted ficus · estimated context",
+      "position": [
+        0,
+        0,
+        -2
+      ],
+      "yaw": 0,
+      "size": [
+        0.75,
+        2.1,
+        0.75
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4b6643",
+      "seats": [],
+      "cameras": [
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-plant-02",
+      "type": "plant",
+      "name": "Potted ficus · estimated context",
+      "position": [
+        0,
+        0,
+        2
+      ],
+      "yaw": 0,
+      "size": [
+        0.75,
+        2.1,
+        0.75
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4b6643",
+      "seats": [],
+      "cameras": [
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    }
+  ]
+}
