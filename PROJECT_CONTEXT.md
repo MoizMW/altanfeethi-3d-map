@@ -4,7 +4,7 @@
 
 G9 owner correction: passage-side corridor access also has a rounded surround; its far-left outer wall is present. Passage and seating share the same dark stone floor, and the TV wall has teal/gold geometric cladding. G-zone end stays open. This supersedes the earlier pale-floor/unbounded outer-corridor assumption. Structural dimensions remain estimates.
 
-G9 now includes a provisional 7.2 × 6 m footprint, equal in area to G11, offset to retain the owner's seating transforms. Owner confirms half seating / half open through circulation toward G zone. Architecture closes only the seating-side TV wall, sofa glazing and rounded entrance surround, leaving both passage ends open and its outer side unresolved. Wide evidence is `evidence/wide capture snapshots/b1.jpg` and `b3.jpg`. Saved furniture geometry/IDs are retained, prior screen interpretation becomes teal/gold cladding, and a TV, console and lamp are added. Global corridor direction and G-zone seam calibration remain unresolved.
+G9 now includes a provisional 7.2 × 6 m footprint, equal in area to G11, offset to retain the owner's seating transforms. Owner confirms half seating / half open through circulation toward G zone. Architecture closes only the seating-side TV wall, sofa glazing and rounded entrance surround, leaving both passage ends open and its outer side unresolved. Wide evidence is `evidence/wide capture snapshots/B1.jpg` and `B3.jpg`. Saved furniture geometry/IDs are retained, prior screen interpretation becomes teal/gold cladding, and a TV, console and lamp are added. Global corridor direction and G-zone seam calibration remain unresolved.
 
 G11's closed side boundaries now include approximate interior cladding and relief from C3-wide: dark reflective panels on the camera-left side, teal/gold patterned panels and a pale projecting pier on the camera-right. Two floor lamps and two display consoles with simplified artifacts were added as editable context objects. Existing furniture edits are retained; no accurate mirror reflections or measured wall profiles are claimed.
 
@@ -27,7 +27,7 @@ The installed cameras are ceiling-mounted Axis dome cameras. A registered point 
 ## Supplied evidence
 
 - `evidence/camera-snapshots/` contains the normal zoomed-in seat-detection views; existing chair/table/reception ROIs refer to these views.
-- `evidence/wide capture snapshots/` contains supplementary wider images of the same cameras from unchanged mounts, currently B1/B3/C1/C2/C3. Check this folder for every block before modeling walls, glass, entrances, corridors, paths and side decorative details. Pair IDs with actual filenames (normal `B1.jpg`, wide `b1.jpg`) and record `wideSnapshots` references in block evidence. Existing detection ROI coordinates must not be applied to wide images without a separately verified transform or annotation. See that folder's README and CONTRIBUTING.md for the workflow.
+- `evidence/wide capture snapshots/` contains supplementary wider images of the same cameras from unchanged mounts. Check this folder for every block before modeling walls, glass, entrances, corridors, paths and side decorative details. Filenames use the camera ID capitalization (for example, normal `B1.jpg`, wide `B1.jpg`); record the exact paths in `wideSnapshots`. Existing detection ROI coordinates must not be applied to wide images without a separately verified transform or annotation. See that folder's README and CONTRIBUTING.md for the workflow.
 
 - `evidence/maps/ground-floor.png` — 14,761 × 8,610 isometric layout image.
 - `evidence/maps/first-floor.png` — 7,076 × 4,086 isometric layout image.
@@ -129,6 +129,8 @@ Distributed-work rules:
 - Block completion requires reprojection into the original isometric map, inspection in rectified top view, cross-view review against relevant cameras, unique-object checks, and seam validation with adjacent blocks.
 
 ## Block-by-block workflow
+
+Optional supporting evidence: when the block's own cameras leave a nearby wall, entrance, corridor, path continuation or surrounding object unclear, consult the registered camera positions/headings in `evidence/registration/camera-placements.json` or the registration dashboard to select a nearby camera with a potentially useful view. A camera from another group/zone may help (for example an adjacent view while building G10). Inspect it only when needed to resolve a specific uncertainty; do not require neighboring-camera review for every block. Confirm visual overlap, check for a wide capture, and record the supporting camera/path and finding in the block evidence. Preserve existing camera group assignments, manual edits and neighboring ownership; do not duplicate objects. Detection ROIs remain specific to each camera's normal zoomed image.
 
 1. Select one high-evidence group/block with positioned cameras.
 2. Gather its map crop, every group camera view, and applicable chair/table ROIs.

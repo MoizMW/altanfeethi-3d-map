@@ -2,7 +2,7 @@
   "format": "altanfeethi-camera-registration",
   "version": 1,
   "coordinateSpace": "source-image-pixels",
-  "updatedAt": "2026-10-29T05:38:50.669Z",
+  "updatedAt": "2026-11-01T09:20:19.073Z",
   "floors": {
     "ground": {
       "label": "Ground floor",
@@ -684,7 +684,7 @@
     {
       "id": "Egate1",
       "file": "Egate1.jpg",
-      "zone": "E",
+      "zone": "Departure_Reception",
       "group_id": "g31",
       "floor": "ground",
       "position": {
@@ -699,7 +699,7 @@
     {
       "id": "ENTRANCE",
       "file": "ENTRANCE.jpg",
-      "zone": "E",
+      "zone": "Departure_Reception",
       "group_id": "g1",
       "floor": "ground",
       "position": {
@@ -2617,8 +2617,8 @@
       "group_id": "g30",
       "floor": "ground",
       "position": {
-        "x": 2535,
-        "y": 2542
+        "x": 2515,
+        "y": 2513
       },
       "heading": 69,
       "status": "verified",

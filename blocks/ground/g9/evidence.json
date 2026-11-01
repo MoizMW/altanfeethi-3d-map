@@ -19,8 +19,8 @@
     "Existing ROIs remain attached to original detection snapshots. Images are not metrically calibrated; no raw ROI/pixel distances are treated as meters."
   ],
   "wideSnapshots": {
-    "B1": "evidence/wide capture snapshots/b1.jpg",
-    "B3": "evidence/wide capture snapshots/b3.jpg"
+    "B1": "evidence/wide capture snapshots/B1.jpg",
+    "B3": "evidence/wide capture snapshots/B3.jpg"
   },
   "wideCaptureContext": {
     "mountPosition": "Unchanged per user",

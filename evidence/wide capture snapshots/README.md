@@ -6,13 +6,13 @@ These supplementary images show more of the surroundings of the normal seat-dete
 
 | Camera | Normal image / ROI reference | Wide architectural image |
 | --- | --- | --- |
-| B1 | `evidence/camera-snapshots/B1.jpg` | `evidence/wide capture snapshots/b1.jpg` |
-| B3 | `evidence/camera-snapshots/B3.jpg` | `evidence/wide capture snapshots/b3.jpg` |
-| C1 | `evidence/camera-snapshots/C1.jpg` | `evidence/wide capture snapshots/c1.jpg` |
-| C2 | `evidence/camera-snapshots/C2.jpg` | `evidence/wide capture snapshots/c2.jpg` |
-| C3 | `evidence/camera-snapshots/C3.jpg` | `evidence/wide capture snapshots/c3.jpg` |
+| B1 | `evidence/camera-snapshots/B1.jpg` | `evidence/wide capture snapshots/B1.jpg` |
+| B3 | `evidence/camera-snapshots/B3.jpg` | `evidence/wide capture snapshots/B3.jpg` |
+| C1 | `evidence/camera-snapshots/C1.jpg` | `evidence/wide capture snapshots/C1.jpg` |
+| C2 | `evidence/camera-snapshots/C2.jpg` | `evidence/wide capture snapshots/C2.jpg` |
+| C3 | `evidence/camera-snapshots/C3.jpg` | `evidence/wide capture snapshots/C3.jpg` |
 
-This inventory describes the current files; check the folder for additional camera IDs as evidence is added. Filenames are case-sensitive. Keep the original normal snapshots intact.
+This table highlights camera pairs already used by the G9 and G11 block evidence. The folder now also contains wide captures for many other camera IDs; check the folder for each block's available views. Filenames are case-sensitive and use the camera ID capitalization. Keep the original normal snapshots intact.
 
 ## ROI rule
 
@@ -28,7 +28,7 @@ Use canonical camera IDs as keys, and exact project-relative filenames as values
     "B1": "evidence/camera-snapshots/B1.jpg"
   },
   "wideSnapshots": {
-    "B1": "evidence/wide capture snapshots/b1.jpg"
+    "B1": "evidence/wide capture snapshots/B1.jpg"
   },
   "wideCaptureContext": {
     "mountPosition": "Unchanged per owner",

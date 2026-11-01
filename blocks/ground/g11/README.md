@@ -4,7 +4,7 @@ Side-wall detail update: C3-wide camera-left uses dark reflective paneling and m
 
 ## Architecture from wide captures and owner description
 
-The shell now uses `evidence/wide capture snapshots/c1.jpg`, `c2.jpg` and `c3.jpg`, captured from the same mounts with wider zoom. Front glass is local +X behind Seat_C4/C8, with closed side walls at ±Z. The access side is local -X behind the owner-corrected Seat_C1/C5. Two rounded passages around a central pier are an estimated interpretation of those views. Opening shape, pier/room extent, wall height/thickness and glass framing require review.
+The shell now uses `evidence/wide capture snapshots/C1.jpg`, `C2.jpg` and `C3.jpg`, captured from the same mounts with wider zoom. Front glass is local +X behind Seat_C4/C8, with closed side walls at ±Z. The access side is local -X behind the owner-corrected Seat_C1/C5. Two rounded passages around a central pier are an estimated interpretation of those views. Opening shape, pier/room extent, wall height/thickness and glass framing require review.
 
 Architecture is stored independently in `architecture.json`; furniture edits are retained. The viewer supports **Walls**, **Low walls** (default), and **Ceiling** (off by default). Full walls show rounded passage profiles; the estimated plain ceiling uses 4.1 m. Wall segments are maintained in architecture JSON, rather than the furniture transform controls. Wide camera buttons are architectural evidence; existing detection ROIs apply only to the original snapshots.
 
