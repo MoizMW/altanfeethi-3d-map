@@ -1,0 +1,18 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-g-lounge-029",
+  "slug": "g29",
+  "name": "G29 · G-zone window lounge",
+  "floor": "ground",
+  "groups": ["g29"],
+  "zone": "G",
+  "status": "draft",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}
