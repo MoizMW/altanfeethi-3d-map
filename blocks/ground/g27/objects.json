@@ -25,8 +25,8 @@
       ],
       "color": "#bcb6a7",
       "seats": [
-        "Seat_G70",
-        "Seat_G71"
+        "Seat_G74",
+        "Seat_G73"
       ],
       "cameras": [
         "G14"
@@ -55,8 +55,8 @@
       ],
       "color": "#bcb6a7",
       "seats": [
-        "Seat_G73",
-        "Seat_G74"
+        "Seat_G71",
+        "Seat_G70"
       ],
       "cameras": [
         "G6",
@@ -84,9 +84,9 @@
         1,
         1
       ],
-      "color": "#637d79",
+      "color": "#627d86",
       "seats": [
-        "Seat_G64"
+        "Seat_G67"
       ],
       "cameras": [
         "G13"
@@ -114,9 +114,9 @@
         1,
         1
       ],
-      "color": "#637d79",
+      "color": "#627d86",
       "seats": [
-        "Seat_G65"
+        "Seat_G66"
       ],
       "cameras": [
         "G13"
@@ -144,9 +144,9 @@
         1,
         1
       ],
-      "color": "#637d79",
+      "color": "#627d86",
       "seats": [
-        "Seat_G66"
+        "Seat_G65"
       ],
       "cameras": [
         "G13"
@@ -174,9 +174,9 @@
         1,
         1
       ],
-      "color": "#637d79",
+      "color": "#627d86",
       "seats": [
-        "Seat_G67"
+        "Seat_G64"
       ],
       "cameras": [
         "G13"
@@ -189,11 +189,11 @@
       "type": "armchair",
       "name": "Teal armchair · G63",
       "position": [
-        -2.3977869184656306,
+        -2.398,
         0,
         -3.8
       ],
-      "yaw": -0.22420914062819378,
+      "yaw": -0.224,
       "size": [
         0.88,
         0.9,
@@ -204,9 +204,9 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
-        "Seat_G63"
+        "Seat_G68"
       ],
       "cameras": [
         "G12",
@@ -219,11 +219,11 @@
       "type": "armchair",
       "name": "Teal armchair · G68",
       "position": [
-        -2.3798794971086474,
+        -2.38,
         0,
         3.8
       ],
-      "yaw": -0.32247879005868724,
+      "yaw": 180,
       "size": [
         0.88,
         0.9,
@@ -234,9 +234,9 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
-        "Seat_G68"
+        "Seat_G63"
       ],
       "cameras": [
         "G6",
@@ -264,9 +264,9 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
-        "Seat_G69"
+        "Seat_G75"
       ],
       "cameras": [
         "G12",
@@ -283,7 +283,7 @@
         0,
         0
       ],
-      "yaw": 0.6064934887256835,
+      "yaw": -0.7173141772342336,
       "size": [
         0.88,
         0.9,
@@ -294,7 +294,7 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
         "Seat_G72"
       ],
@@ -324,9 +324,9 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
-        "Seat_G75"
+        "Seat_G69"
       ],
       "cameras": [
         "G6",

@@ -1,0 +1,183 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "ground-g9-g10",
+  "name": "G9 + G10 + G11 \u00b7 Corridor connection",
+  "floor": "ground",
+  "status": "draft-needs-human-review",
+  "components": [
+    {
+      "block": "ground/g9",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g9-passage-outer-wall"
+      ]
+    },
+    {
+      "block": "ground/g10",
+      "position": [
+        -8.68,
+        0,
+        0
+      ],
+      "yaw": 180,
+      "excludeWalls": [
+        "g10-side-b5",
+        "g10-side-b4"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          6.6,
+          6
+        ],
+        "wallEndpoints": {
+          "g10-glass-front": {
+            "start": [
+              -3.3,
+              3.0000000000000004
+            ],
+            "end": [
+              3.3,
+              3.0000000000000004
+            ]
+          },
+          "g10-side-b5": {
+            "start": [
+              -3.3,
+              -3.0000000000000004
+            ],
+            "end": [
+              -3.3,
+              3.0000000000000004
+            ]
+          },
+          "g10-side-b4": {
+            "start": [
+              3.3,
+              -3.0000000000000004
+            ],
+            "end": [
+              3.3,
+              3.0000000000000004
+            ]
+          },
+          "g10-access-wall": {
+            "start": [
+              -3.3,
+              -3.0000000000000004
+            ],
+            "end": [
+              3.3,
+              -3.0000000000000004
+            ]
+          }
+        }
+      }
+    },
+    {
+      "block": "ground/g11",
+      "position": [
+        -15.58,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "excludeWalls": [
+        "g11-side-c1"
+      ]
+    }
+  ],
+  "floorSize": [
+    21,
+    8.6
+  ],
+  "floorCenter": [
+    -8.68,
+    1.3
+  ],
+  "corridor": {
+    "center": [
+      -8.68,
+      4.3
+    ],
+    "size": [
+      21,
+      2.6
+    ],
+    "color": "#dedbd2",
+    "openEnds": [
+      "left",
+      "right"
+    ],
+    "confidence": "Cor1 and owner establish continuous walking space; width/extent estimated"
+  },
+  "walls": [
+    {
+      "id": "g9-g10-shared-partition",
+      "kind": "glass",
+      "start": [
+        -5.38,
+        -3
+      ],
+      "end": [
+        -5.38,
+        3
+      ],
+      "height": 4.1,
+      "thickness": 0.025,
+      "color": "#74807c",
+      "owner": "layout/ground/g9-g10",
+      "sources": [
+        "Cor1",
+        "B6-wide",
+        "owner-correction"
+      ],
+      "confidence": "Owner confirms one shared mildly dark tinted patterned glass partition, visible from both sides; pattern, dimensions and tint approximated from Cor1/reference screenshot.",
+      "variant": "patterned-smoked"
+    },
+    {
+      "id": "g10-g11-shared-partition",
+      "kind": "solid",
+      "start": [
+        -11.98,
+        -3
+      ],
+      "end": [
+        -11.98,
+        3
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "finish": "teal-gold-panels",
+      "interiorSide": 1,
+      "finishSides": [
+        -1,
+        1
+      ],
+      "owner": "layout/ground/g9-g10",
+      "sources": [
+        "owner-description",
+        "B6-wide",
+        "C3-wide"
+      ],
+      "confidence": "Owner confirms G11 attaches to G10 left wall. Single solid partition with approximate teal/gold interior finishes from source shells; material continuity and trim need review."
+    }
+  ],
+  "evidenceCameras": [
+    "Cor1"
+  ],
+  "notes": [
+    "Three-block front-view order: G11, G10, G9 from LEFT to RIGHT. Owner attaches G11 to G10 left wall. G11 yaw 90 aligns local -X entrances with common corridor at global +Z; source furniture geometry and identities are preserved.",
+    "Owner correction supersedes earlier ordering: in the supplied front view G10 is LEFT of G9. Furniture orientations stay unchanged; whole blocks are translated, not mirrored.",
+    "Owner material correction: one shared mildly dark tinted glass partition with geometric etched/frosted band and brass edging, not white/black solid faces. Shared length 6 provisional meters. Pattern and transparency approximate the reference; no live mirror reflection is simulated.",
+    "G9 keeps yaw 0; G10 keeps the previous combined-view yaw 180 but moves to X=-8.68. Entrances align at Z=3 and rear boundaries at Z=-3. G10 shell depth is adjusted from 5.4 to 6 only in this layout to satisfy owner-confirmed equal wall length; furniture dimensions and positions inside each block are preserved.",
+    "Cor1 registration and block views support topology; corridor width 2.6 meters and global map calibration remain provisional. Corridor ends remain open.",
+    "G11 right boundary (local +Z) and G10 left boundary are replaced only in composition by one shared solid partition at X=-11.98, with teal/gold finishes on both faces. This new joint is not assumed to use the separate smoked glass material confirmed between G9/G10. Shared trim/material details await owner refinement."
+  ]
+}

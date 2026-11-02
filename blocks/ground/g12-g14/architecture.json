@@ -1,0 +1,480 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-c-lounge-012-014",
+  "floorSize": [
+    8.4,
+    13.2
+  ],
+  "floorCenter": [
+    0.8,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "registrationSha256": "998fa26f3524ab4deea8d01cc8e8e0ac3a2d79018bba642fbbd574c3af0e79a0",
+    "anchors": [
+      {
+        "camera": "C12",
+        "group": "g12",
+        "pixel": [
+          7206,
+          5207
+        ],
+        "heading": 262,
+        "status": "verified"
+      },
+      {
+        "camera": "C22",
+        "group": "g12",
+        "pixel": [
+          6785,
+          5237
+        ],
+        "heading": 126,
+        "status": "verified"
+      },
+      {
+        "camera": "C23",
+        "group": "g14",
+        "pixel": [
+          7026,
+          5450
+        ],
+        "heading": 131,
+        "status": "verified"
+      },
+      {
+        "camera": "C24",
+        "group": "g14",
+        "pixel": [
+          7264,
+          5639
+        ],
+        "heading": 293,
+        "status": "verified"
+      },
+      {
+        "camera": "C25",
+        "group": "g12",
+        "pixel": [
+          7412,
+          5315
+        ],
+        "heading": 195,
+        "status": "verified"
+      },
+      {
+        "camera": "C26",
+        "group": "g14",
+        "pixel": [
+          7690,
+          5477
+        ],
+        "heading": 175,
+        "status": "verified"
+      },
+      {
+        "camera": "E3",
+        "group": "g14",
+        "pixel": [
+          7949,
+          5650
+        ],
+        "heading": 275,
+        "status": "verified"
+      },
+      {
+        "camera": "F18",
+        "group": "g12",
+        "pixel": [
+          7605,
+          5441
+        ],
+        "heading": 264,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      6250,
+      4550,
+      8500,
+      6200
+    ],
+    "localAxes": {
+      "x": "From long glazing toward the arched corridor side",
+      "z": "Along the lounge from Seat_C19/C20 toward Seat_C28/C29",
+      "y": "Up"
+    },
+    "mapReview": "Map supports one elongated lounge beside a corridor and the neighboring G-zone row. Current photos supersede illustrated sofas/table shapes. Registration anchors retained as source pixels, not converted into metric mounts.",
+    "reviewProjection": {
+      "status": "approximate-topology-guide-only",
+      "originPixel": [
+        7330,
+        5540
+      ],
+      "xPixelVector": [
+        52,
+        -31
+      ],
+      "zPixelVector": [
+        82,
+        47
+      ],
+      "notes": "Provisional visual affine guide for map overlay only; not a calibrated floor transform or camera projection."
+    }
+  },
+  "footprint": [
+    [
+      -3.4,
+      -6.6
+    ],
+    [
+      5,
+      -6.6
+    ],
+    [
+      5,
+      6.6
+    ],
+    [
+      -3.4,
+      6.6
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g12-g14-glazing-1",
+      "kind": "glass",
+      "start": [
+        -3.4,
+        -6.6
+      ],
+      "end": [
+        -3.4,
+        -2.2
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g12-g14",
+      "sources": [
+        "C12",
+        "C22",
+        "C24",
+        "F18"
+      ],
+      "confidence": "Visible boundary; endpoints, height and profile estimated from overlapping wide views",
+      "notes": "Clear reflective glazing with generic framed lower band; reflections and etched pattern simplified."
+    },
+    {
+      "id": "g12-g14-glazing-2",
+      "kind": "glass",
+      "start": [
+        -3.4,
+        -2.2
+      ],
+      "end": [
+        -3.4,
+        2.2
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g12-g14",
+      "sources": [
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "F18"
+      ],
+      "confidence": "Visible boundary; endpoints, height and profile estimated from overlapping wide views",
+      "notes": "Clear reflective glazing with generic framed lower band; reflections and etched pattern simplified."
+    },
+    {
+      "id": "g12-g14-glazing-3",
+      "kind": "glass",
+      "start": [
+        -3.4,
+        2.2
+      ],
+      "end": [
+        -3.4,
+        6.6
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g12-g14",
+      "sources": [
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Visible boundary; endpoints, height and profile estimated from overlapping wide views",
+      "notes": "Clear reflective glazing with generic framed lower band; reflections and etched pattern simplified."
+    },
+    {
+      "id": "g12-g14-end-return-c19",
+      "kind": "solid",
+      "start": [
+        -3.4,
+        -6.6
+      ],
+      "end": [
+        -1.4,
+        -6.6
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "owner": "ground/g12-g14",
+      "sources": [
+        "C12",
+        "C24",
+        "F18"
+      ],
+      "confidence": "Visible boundary; endpoints, height and profile estimated from overlapping wide views",
+      "color": "#e7e3d9"
+    },
+    {
+      "id": "g12-g14-end-panel-c19",
+      "kind": "solid",
+      "start": [
+        -1.4,
+        -6.6
+      ],
+      "end": [
+        3.4,
+        -6.6
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "owner": "ground/g12-g14",
+      "sources": [
+        "C12",
+        "C24",
+        "F18"
+      ],
+      "confidence": "Visible boundary; endpoints, height and profile estimated from overlapping wide views",
+      "color": "#174d57",
+      "finish": "teal-gold-panels",
+      "interiorSide": 1,
+      "notes": "Teal/gold patterned end cladding supported by photos; motif and panel extent schematic."
+    },
+    {
+      "id": "g12-g14-end-return-c28",
+      "kind": "solid",
+      "start": [
+        -3.4,
+        6.6
+      ],
+      "end": [
+        -1.4,
+        6.6
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "owner": "ground/g12-g14",
+      "sources": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Visible boundary; endpoints, height and profile estimated from overlapping wide views",
+      "color": "#e7e3d9"
+    },
+    {
+      "id": "g12-g14-end-panel-c28",
+      "kind": "solid",
+      "start": [
+        -1.4,
+        6.6
+      ],
+      "end": [
+        3.4,
+        6.6
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "owner": "ground/g12-g14",
+      "sources": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Visible boundary; endpoints, height and profile estimated from overlapping wide views",
+      "color": "#174d57",
+      "finish": "teal-gold-panels",
+      "interiorSide": -1,
+      "notes": "Teal/gold patterned end cladding supported by photos; motif and panel extent schematic."
+    },
+    {
+      "id": "g12-g14-corridor-arches",
+      "kind": "solid",
+      "start": [
+        3.4,
+        -6.6
+      ],
+      "end": [
+        3.4,
+        6.6
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "owner": "ground/g12-g14",
+      "sources": [
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "E3",
+        "F18"
+      ],
+      "confidence": "Visible boundary; endpoints, height and profile estimated from overlapping wide views",
+      "color": "#e7e3d9",
+      "notes": "Three broad rounded accesses inferred across the continuous lounge; opening widths, spring and crown heights require owner review."
+    }
+  ],
+  "openings": [
+    {
+      "id": "g12-g14-access-1",
+      "wallId": "g12-g14-corridor-arches",
+      "kind": "rounded-passage",
+      "offset": 2.1999999999999993,
+      "width": 3.7,
+      "springHeight": 1.85,
+      "height": 3.35,
+      "sources": [
+        "C22",
+        "C23",
+        "C24",
+        "E3"
+      ],
+      "confidence": "Broad arched corridor access visible; three-bay correspondence and profile estimated"
+    },
+    {
+      "id": "g12-g14-access-2",
+      "wallId": "g12-g14-corridor-arches",
+      "kind": "rounded-passage",
+      "offset": 6.6,
+      "width": 3.7,
+      "springHeight": 1.85,
+      "height": 3.35,
+      "sources": [
+        "C22",
+        "C23",
+        "C24",
+        "E3"
+      ],
+      "confidence": "Broad arched corridor access visible; three-bay correspondence and profile estimated"
+    },
+    {
+      "id": "g12-g14-access-3",
+      "wallId": "g12-g14-corridor-arches",
+      "kind": "rounded-passage",
+      "offset": 11.0,
+      "width": 3.7,
+      "springHeight": 1.85,
+      "height": 3.35,
+      "sources": [
+        "C22",
+        "C23",
+        "C24",
+        "E3"
+      ],
+      "confidence": "Broad arched corridor access visible; three-bay correspondence and profile estimated"
+    }
+  ],
+  "sharedBoundaries": [],
+  "circulation": {
+    "id": "g12-g14-corridor",
+    "polygon": [
+      [
+        3.4,
+        -6.6
+      ],
+      [
+        5,
+        -6.6
+      ],
+      [
+        5,
+        6.6
+      ],
+      [
+        3.4,
+        6.6
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "sources": [
+      "C22",
+      "C23",
+      "C24",
+      "E3"
+    ],
+    "status": "visually-supported-width-and-endpoints-estimated",
+    "notes": "One corridor strip for both groups; both ends and the unobserved outer edge remain open. Exact adjacent-block connections await owner placement."
+  },
+  "interiorAisle": {
+    "polygon": [
+      [
+        -2.08,
+        -5.4
+      ],
+      [
+        -0.9,
+        -5.4
+      ],
+      [
+        -0.9,
+        5.4
+      ],
+      [
+        -2.08,
+        5.4
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "notes": "Unpainted dark-stone circulation between glazing chairs and inner seating; do not add a pale internal strip."
+  },
+  "boundaryReview": [
+    {
+      "id": "g12-g14-outer-corridor-edge",
+      "kind": "unknown",
+      "status": "open-in-draft-neighbor-unresolved"
+    },
+    {
+      "id": "g12-g14-group-overlap",
+      "kind": "continuous-space",
+      "status": "owner-confirmed",
+      "notes": "G12/G14 observations share this physical room. No group-boundary wall or duplicate corridor exists."
+    }
+  ],
+  "ceiling": {
+    "size": [
+      8.4,
+      13.2
+    ],
+    "center": [
+      0.8,
+      0
+    ],
+    "height": 4.1,
+    "defaultVisible": false,
+    "status": "estimated-plain-visualization-only"
+  },
+  "notes": [
+    "Owner requested G12/G14 together because they share one space. Both groups have one physical object registry and one structural shell.",
+    "Central sofas C21/C22 and C24/C25 face one another across ONE Table_C23. They are not separate rooms or duplicate table observations.",
+    "End pairs C17/C18 and C26/C27 are four individual armchairs, not sofas.",
+    "Seating floor stays dark stone; only the outer corridor is pale. Arches connect the bays to that common corridor.",
+    "Measured dimensions, exact arch profiles, decorative pendant lights, frosted glass motifs and adjacent block seams remain unresolved."
+  ]
+}

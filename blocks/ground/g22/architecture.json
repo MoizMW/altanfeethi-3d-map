@@ -91,11 +91,11 @@
       "kind": "glass",
       "start": [
         -4.45,
-        -3.65
+        -4.4
       ],
       "end": [
         -4.45,
-        3.65
+        4.4
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -112,11 +112,11 @@
       "kind": "glass",
       "start": [
         4.45,
-        -3.65
+        -4.4
       ],
       "end": [
         4.45,
-        3.65
+        4.4
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -127,10 +127,92 @@
         "G9"
       ],
       "confidence": "Window frame visible through curtains; span, height and framing estimated. Curtain fabric not rendered."
+    },
+    {
+      "id": "g22-arch-wall-negative-z",
+      "kind": "solid",
+      "start": [
+        -4.5,
+        -4.4
+      ],
+      "end": [
+        4.5,
+        -4.4
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g22",
+      "sources": [
+        "owner-merge-request",
+        "G8-wide",
+        "G9-wide"
+      ],
+      "confidence": "Owner-requested G18/G20 arch profile; 9 m shell span follows saved G22 footprint, opening width and profile estimated"
+    },
+    {
+      "id": "g22-arch-wall-positive-z",
+      "kind": "solid",
+      "start": [
+        -4.5,
+        4.4
+      ],
+      "end": [
+        4.5,
+        4.4
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g22",
+      "sources": [
+        "owner-merge-request",
+        "G8-wide",
+        "G9-wide"
+      ],
+      "confidence": "Owner-requested G18/G20 arch profile; 9 m shell span follows saved G22 footprint, opening width and profile estimated"
     }
   ],
-  "openings": [],
-  "sharedBoundaries": [],
+  "openings": [
+    {
+      "id": "g22-arch-negative-z",
+      "wallId": "g22-arch-wall-negative-z",
+      "kind": "rounded-passage",
+      "offset": 4.5,
+      "width": 7.9,
+      "springHeight": 1.6,
+      "height": 3.35,
+      "confidence": "Shared G18/G20 clear opening and rounded profile; wider piers retain existing 9 m shell"
+    },
+    {
+      "id": "g22-arch-positive-z",
+      "wallId": "g22-arch-wall-positive-z",
+      "kind": "rounded-passage",
+      "offset": 4.5,
+      "width": 7.9,
+      "springHeight": 1.6,
+      "height": 3.35,
+      "confidence": "Shared G18/G20 clear opening and rounded profile; wider piers retain existing 9 m shell"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "g22-arch-negative-z",
+      "owner": "ground/g22",
+      "ownsWall": true,
+      "neighbor": "ground/g21",
+      "status": "owner-confirmed-adjacency-relative-layout-authored",
+      "notes": "Negative-Z arch owns the G21/G22 seam once in combined layout; G21 preview arch is excluded in composition."
+    },
+    {
+      "id": "g22-arch-positive-z",
+      "owner": "ground/g22",
+      "ownsWall": true,
+      "neighbor": null,
+      "status": "outer-neighbor-unresolved",
+      "notes": "Negative-Z arch owns the G21/G22 seam once in combined layout; G21 preview arch is excluded in composition."
+    }
+  ],
   "circulation": {
     "id": "g22-central-walkway",
     "polygon": [
@@ -178,7 +260,8 @@
       "sources": [
         "G9"
       ],
-      "status": "neighbor-and-seam-unresolved"
+      "status": "owner-confirmed-relative-layout-authored",
+      "candidateNeighborGroup": "g21"
     },
     {
       "id": "g22-path-positive-z",
@@ -197,8 +280,11 @@
         "G9",
         "G10"
       ],
-      "status": "visible-surrounds-profile-and-extents-unresolved",
-      "notes": "Wide G7 shows both curved bay surrounds, wide G10 shows the adjacent curved pier/return. Record the evidence without spanning the central walkway with an invented wall. Arch ownership to be assigned during seam review."
+      "status": "owner-requested-standard-arches-modeled",
+      "notes": "Both end partitions now use G18/G20 profile. Detailed camera-derived curvature remains provisional."
     }
+  ],
+  "notes": [
+    "Owner requests G22 left of G21, with G2 right of G21 in supplied front view. Full-width end arches added; shell remains 9 m wide to retain saved furniture. The G21/G22 seam is owned by G22 once; G21 end-arch preview is excluded only in the combined layout."
   ]
 }

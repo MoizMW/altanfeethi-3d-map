@@ -36,10 +36,170 @@
         ],
         "heading": 233
       }
-    ]
+    ],
+    "localAxes": {
+      "x": "Across the divider toward the B4 seating side",
+      "z": "Along the divider toward the B6 glazing",
+      "y": "Up"
+    }
   },
-  "footprint": [],
-  "walls": [],
-  "openings": [],
-  "sharedBoundaries": []
+  "footprint": [
+    [
+      -3.3,
+      -2.7
+    ],
+    [
+      3.3,
+      -2.7
+    ],
+    [
+      3.3,
+      2.7
+    ],
+    [
+      -3.3,
+      2.7
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g10-glass-front",
+      "kind": "glass",
+      "start": [
+        -3.3,
+        2.7
+      ],
+      "end": [
+        3.3,
+        2.7
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "color": "#9dbfc3",
+      "owner": "ground/g10",
+      "confidence": "Interpreted from normal/wide B4-B6; extents and dimensions estimated",
+      "sources": [
+        "B4-wide",
+        "B5-wide",
+        "B6-wide"
+      ]
+    },
+    {
+      "id": "g10-side-b5",
+      "kind": "solid",
+      "start": [
+        -3.3,
+        -2.7
+      ],
+      "end": [
+        -3.3,
+        2.7
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#333a39",
+      "owner": "ground/g10",
+      "confidence": "Side finish confirmed by owner from B6 view; dimensions estimated",
+      "sources": [
+        "B4-wide",
+        "B5-wide",
+        "B6-wide",
+        "user-correction-B6-left-blue-right-black"
+      ],
+      "finish": "dark-reflective-panels",
+      "interiorSide": -1
+    },
+    {
+      "id": "g10-side-b4",
+      "kind": "solid",
+      "start": [
+        3.3,
+        -2.7
+      ],
+      "end": [
+        3.3,
+        2.7
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#174d57",
+      "owner": "ground/g10",
+      "confidence": "Side finish confirmed by owner from B6 view; dimensions estimated",
+      "sources": [
+        "B4-wide",
+        "B5-wide",
+        "B6-wide",
+        "user-correction-B6-left-blue-right-black"
+      ],
+      "finish": "teal-gold-panels",
+      "interiorSide": 1
+    },
+    {
+      "id": "g10-access-wall",
+      "kind": "solid",
+      "start": [
+        -3.3,
+        -2.7
+      ],
+      "end": [
+        3.3,
+        -2.7
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g10",
+      "confidence": "Interpreted from normal/wide B4-B6; extents and dimensions estimated",
+      "sources": [
+        "B4-wide",
+        "B5-wide",
+        "B6-wide"
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "id": "g10-access-b5",
+      "wallId": "g10-access-wall",
+      "kind": "rounded-passage",
+      "offset": 1.65,
+      "width": 2.35,
+      "springHeight": 1.85,
+      "height": 3.15,
+      "confidence": "Rounded corridor surround visible in B4/B5 wide; separate arches and dimensions estimated",
+      "sources": [
+        "B5-wide"
+      ]
+    },
+    {
+      "id": "g10-access-b4",
+      "wallId": "g10-access-wall",
+      "kind": "rounded-passage",
+      "offset": 4.95,
+      "width": 2.35,
+      "springHeight": 1.85,
+      "height": 3.15,
+      "confidence": "Rounded corridor surround visible in B4/B5 wide; separate arches and dimensions estimated",
+      "sources": [
+        "B4-wide"
+      ]
+    }
+  ],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "height": 4.1,
+    "size": [
+      6.6,
+      5.4
+    ],
+    "defaultVisible": false,
+    "confidence": "Plain provisional ceiling from owner 12\u201315 ft estimate; captured pendant and ceiling profile not reconstructed"
+  },
+  "notes": [
+    "Preserves the merged furniture layout and working 6.6 by 5.4 m floor; dimensions are not measured.",
+    "B6 shows closed glazing at +Z. B4/B5 show rounded access toward corridor at -Z. No corridor furniture is duplicated.",
+    "Owner correction from B6: camera-left blue/teal-gold TV wall is local +X; camera-right black reflective design wall is local -X. Reflections are not additional furniture. Wall dimensions remain estimated.",
+    "Rounded entrances, central pier, glass framing and motifs reuse G11 shared architecture; profiles and spacing remain approximations.",
+    "Global map alignment and neighboring G9 seams remain unresolved; side boundaries are locally owned until merge review."
+  ]
 }

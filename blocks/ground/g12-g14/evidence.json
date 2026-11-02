@@ -1,0 +1,267 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-c-lounge-012-014",
+  "cameras": [
+    "C12",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "E3",
+    "F18"
+  ],
+  "cameraGroups": {
+    "C12": "g12",
+    "C22": "g12",
+    "C23": "g14",
+    "C24": "g14",
+    "C25": "g12",
+    "C26": "g14",
+    "E3": "g14",
+    "F18": "g12"
+  },
+  "snapshots": {
+    "C12": "evidence/camera-snapshots/C12.jpg",
+    "C22": "evidence/camera-snapshots/C22.jpg",
+    "C23": "evidence/camera-snapshots/C23.jpg",
+    "C24": "evidence/camera-snapshots/C24.jpg",
+    "C25": "evidence/camera-snapshots/C25.jpg",
+    "C26": "evidence/camera-snapshots/C26.jpg",
+    "E3": "evidence/camera-snapshots/E3.jpg",
+    "F18": "evidence/camera-snapshots/F18.jpg"
+  },
+  "wideSnapshots": {
+    "C12": "evidence/wide capture snapshots/C12.jpg",
+    "C22": "evidence/wide capture snapshots/C22.jpg",
+    "C23": "evidence/wide capture snapshots/C23.jpg",
+    "C24": "evidence/wide capture snapshots/C24.jpg",
+    "C25": "evidence/wide capture snapshots/C25.jpg",
+    "C26": "evidence/wide capture snapshots/C26.jpg",
+    "E3": "evidence/wide capture snapshots/E3.jpg",
+    "F18": "evidence/wide capture snapshots/F18.jpg"
+  },
+  "rois": {
+    "C12": {
+      "chairs": "evidence/rois/chair-rois/g12/C12_to_g12.json",
+      "tables": "evidence/rois/table-rois/g12/C12_to_g12.json"
+    },
+    "C22": {
+      "chairs": "evidence/rois/chair-rois/g12/C22_to_g12.json",
+      "tables": "evidence/rois/table-rois/g12/C22_to_g12.json"
+    },
+    "C23": {
+      "chairs": "evidence/rois/chair-rois/g14/C23_to_g14.json",
+      "tables": "evidence/rois/table-rois/g14/C23_to_g14.json"
+    },
+    "C24": {
+      "chairs": "evidence/rois/chair-rois/g14/C24_to_g14.json",
+      "tables": "evidence/rois/table-rois/g14/C24_to_g14.json"
+    },
+    "C25": {
+      "chairs": "evidence/rois/chair-rois/g12/C25_to_g12.json",
+      "tables": "evidence/rois/table-rois/g12/C25_to_g12.json"
+    },
+    "C26": {
+      "chairs": "evidence/rois/chair-rois/g14/C26_to_g14.json",
+      "tables": "evidence/rois/table-rois/g14/C26_to_g14.json"
+    },
+    "E3": {
+      "chairs": "evidence/rois/chair-rois/g14/E3_to_g14.json",
+      "tables": "evidence/rois/table-rois/g14/E3_to_g14.json"
+    },
+    "F18": {
+      "chairs": "evidence/rois/chair-rois/g12/F18_to_g12.json",
+      "tables": "evidence/rois/table-rois/g12/F18_to_g12.json"
+    }
+  },
+  "seatMappings": {
+    "Seat_C19": "g12-g14-sofa-01",
+    "Seat_C20": "g12-g14-sofa-01",
+    "Seat_C22": "g12-g14-sofa-02",
+    "Seat_C21": "g12-g14-sofa-02",
+    "Seat_C25": "g12-g14-sofa-03",
+    "Seat_C24": "g12-g14-sofa-03",
+    "Seat_C28": "g12-g14-sofa-04",
+    "Seat_C29": "g12-g14-sofa-04",
+    "Seat_C17": "g12-g14-chair-17",
+    "Seat_C18": "g12-g14-chair-18",
+    "Seat_C76": "g12-g14-chair-76",
+    "Seat_C23": "g12-g14-chair-23",
+    "Seat_C26": "g12-g14-chair-26",
+    "Seat_C27": "g12-g14-chair-27",
+    "Seat_C77": "g12-g14-chair-77",
+    "Seat_C78": "g12-g14-chair-78",
+    "Seat_C79": "g12-g14-chair-79",
+    "Seat_C80": "g12-g14-chair-80",
+    "Seat_C81": "g12-g14-chair-81",
+    "Seat_C82": "g12-g14-chair-82",
+    "Seat_C83": "g12-g14-chair-83"
+  },
+  "tableMappings": {
+    "Table_C22": "g12-g14-table-22",
+    "Table_C23": "g12-g14-table-23",
+    "Table_C24": "g12-g14-table-24",
+    "Table_C25": "g12-g14-table-25",
+    "Table_C26": "g12-g14-table-26",
+    "Table_C27": "g12-g14-table-27"
+  },
+  "observations": {
+    "chairs": {
+      "Seat_C19": [
+        "C12",
+        "C24"
+      ],
+      "Seat_C20": [
+        "C12",
+        "C24"
+      ],
+      "Seat_C76": [
+        "C12"
+      ],
+      "Seat_C78": [
+        "C12",
+        "C24"
+      ],
+      "Seat_C17": [
+        "C22"
+      ],
+      "Seat_C18": [
+        "C22"
+      ],
+      "Seat_C24": [
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "Seat_C25": [
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "Seat_C79": [
+        "C22"
+      ],
+      "Seat_C81": [
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "Seat_C23": [
+        "C23",
+        "C25",
+        "F18"
+      ],
+      "Seat_C83": [
+        "C23",
+        "C25",
+        "C26"
+      ],
+      "Seat_C28": [
+        "C23",
+        "C26"
+      ],
+      "Seat_C29": [
+        "C23",
+        "C26"
+      ],
+      "Seat_C80": [
+        "C24",
+        "C25",
+        "F18"
+      ],
+      "Seat_C22": [
+        "C24",
+        "F18"
+      ],
+      "Seat_C21": [
+        "C24",
+        "F18"
+      ],
+      "Seat_C77": [
+        "C26",
+        "E3"
+      ],
+      "Seat_C27": [
+        "C26",
+        "E3"
+      ],
+      "Seat_C26": [
+        "E3"
+      ],
+      "Seat_C82": [
+        "E3"
+      ]
+    },
+    "tables": {
+      "Table_C22": [
+        "C12",
+        "C24",
+        "F18"
+      ],
+      "Table_C25": [
+        "C12",
+        "C22",
+        "C24",
+        "F18"
+      ],
+      "Table_C26": [
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "F18"
+      ],
+      "Table_C27": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "Table_C24": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "Table_C23": [
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "E3",
+        "F18"
+      ]
+    }
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per supplied wide-capture guide",
+    "roiUsage": "ROIs apply only to normal detection images; no wide-view ROI transfer",
+    "capturedAt": null
+  },
+  "ownerInstructions": [
+    "Create G12 and G14 simultaneously because both share the same space."
+  ],
+  "notes": [
+    "G12 and G14 share one editable block: 21 unique seat slots, four sofas, thirteen armchairs and six ROI coffee tables; repeated cross-group observations resolve once.",
+    "All eight normal images, eight wide captures, chair/table ROIs and registered ground-floor map anchors reviewed. All dimensions, local correspondence and global alignment remain provisional.",
+    "C21/C22 and C24/C25 are facing central sofas around the same Table_C23; C17/C18 and C26/C27 are individual chairs. Six glazing chairs C78–C83 form three pairs with Table_C25–C27.",
+    "Two end sofas have teal/gold backdrops, each with one brass glass table, a lamp and a plant. Four unlabelled pale side tables have no invented ROI ID.",
+    "Wide images show three arched accesses and a pale corridor opposite continuous reflective glazing. One common shell owns these elements; the groups have no physical dividing wall.",
+    "Ground-floor drawing establishes the elongated bay and neighboring circulation but differs from current furniture; photographs take priority for seating arrangement. Map review overlay is an approximate topology guide, not calibrated reprojection.",
+    "Ceiling uses the shared 4.1 m estimate. Chandelier fixtures, fine floral cushions, glass etching/reflections, exact side-table supports and end wall profiles are simplified or unresolved."
+  ],
+  "reviewItems": [
+    "Owner review of seat-slot order, all furniture transforms and relative bay proportions",
+    "Confirm three-arch correspondence, exact opening widths and pale corridor span",
+    "Confirm glazing/end wall ownership when adjoining blocks are placed",
+    "Calibrate the source-map guide and metric dimensions before treating this draft as floor-aligned"
+  ],
+  "reviewArtifacts": {
+    "mapOverlay": "blocks/ground/g12-g14/map-review.svg"
+  },
+  "externalObservations": []
+}

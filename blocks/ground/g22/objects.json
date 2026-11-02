@@ -25,8 +25,8 @@
       ],
       "color": "#d6cebd",
       "seats": [
-        "Seat_G51",
-        "Seat_G50"
+        "Seat_G54",
+        "Seat_G55"
       ],
       "cameras": [
         "G8",
@@ -57,8 +57,8 @@
       ],
       "color": "#d6cebd",
       "seats": [
-        "Seat_G55",
-        "Seat_G54"
+        "Seat_G50",
+        "Seat_G51"
       ],
       "cameras": [
         "G8",
@@ -88,7 +88,7 @@
       ],
       "color": "#526e78",
       "seats": [
-        "Seat_G49"
+        "Seat_G56"
       ],
       "cameras": [
         "G9",
@@ -101,11 +101,11 @@
       "type": "armchair",
       "name": "Teal armchair · G52",
       "position": [
-        -2.35,
+        -2.684766209859474,
         0,
         0
       ],
-      "yaw": 180,
+      "yaw": -0.46061364180908304,
       "size": [
         0.88,
         0.9,
@@ -148,7 +148,7 @@
       ],
       "color": "#526e78",
       "seats": [
-        "Seat_G56"
+        "Seat_G49"
       ],
       "cameras": [
         "G8",
@@ -178,7 +178,7 @@
       ],
       "color": "#526e78",
       "seats": [
-        "Seat_G57"
+        "Seat_G62"
       ],
       "cameras": [
         "G7",
@@ -208,7 +208,7 @@
       ],
       "color": "#526e78",
       "seats": [
-        "Seat_G58"
+        "Seat_G61"
       ],
       "cameras": [
         "G7"
@@ -237,7 +237,7 @@
       ],
       "color": "#526e78",
       "seats": [
-        "Seat_G59"
+        "Seat_G60"
       ],
       "cameras": [
         "G7"
@@ -266,7 +266,7 @@
       ],
       "color": "#526e78",
       "seats": [
-        "Seat_G60"
+        "Seat_G59"
       ],
       "cameras": [
         "G7"
@@ -295,7 +295,7 @@
       ],
       "color": "#526e78",
       "seats": [
-        "Seat_G61"
+        "Seat_G58"
       ],
       "cameras": [
         "G7"
@@ -324,7 +324,7 @@
       ],
       "color": "#526e78",
       "seats": [
-        "Seat_G62"
+        "Seat_G57"
       ],
       "cameras": [
         "G7",

@@ -25,7 +25,7 @@ The floor-map crop [6300, 5550, 7950, 6900] was reviewed around the four registe
 
 Local +X crosses the pale walkway from the reflective sofa bank toward the curtain armchair bank. Local +Z runs from Seat_G49/G57 toward Seat_G56/G62; Y is up. The 9 × 8.8 m working footprint, 2.8 m path and 4.1 m ceiling are estimates. Registration anchors/headings and a registration hash are retained without claiming a map transform or camera calibration.
 
-Both ends of the walkway remain open. Side glazing uses the shared schematic builder. Wide G7/G10 show curved surrounds/pier returns, but their full geometry and neighboring ownership remain unresolved. Curtains, patterned lower glazing, detailed ceiling features and adjacent seating beyond this bay are excluded. No shared seam is accepted yet.
+Both ends of the walkway remain open. Side glazing uses the shared schematic builder. Wide G7/G10 show curved surrounds/pier returns, but their full geometry and neighboring ownership remain unresolved. Curtains, patterned lower glazing, detailed ceiling features and adjacent seating beyond this bay are excluded. The owner-confirmed G21 seam is now composed provisionally; metric alignment still requires review.
 
 Furniture and finishes reuse the shared builders and `MATERIAL_GUIDE.md`. The square wood plant stand is approximated by a round support table, glass/brass side tables have simplified opaque tops, and the two tabletop lamp designs use scaled shared lamp geometry. Upholstery patterns, shelf artifacts and foliage are approximate. Reflections are not duplicated. Use Screen, Walls, Low walls and Ceiling to inspect the draft.
 
@@ -36,3 +36,7 @@ Review top/isometric views, the thirteen seat labels and their correspondence ag
 Run `npm test` and `node --test blocks/ground/g22/validate.test.mjs`. The contribution branch is `block/ground-g22`; architecture, correspondence and dimensions remain subject to owner review before acceptance.
 
 Local verification on 2026-11-02: isometric/top browser views inspected, G7 wide evidence loaded, a temporary G49 rotation saved and survived reload, then restored to 0 degrees and saved again. Automated ROI/path/bounds/support tests pass. This functional check does not replace owner acceptance of correspondence, dimensions and architecture.
+
+Owner merge update: full-width arches now close both end surrounds while preserving the clear central passage. The 9 m shell and saved furniture stay intact. In `/?layout=ground/b-g-lounges`, G22 sits left of G21, which sits left of G2. G22 owns the shared G21/G22 arch; G21’s local preview arch is suppressed there. A provisional 0.3 m width step at each side preserves G22’s furniture without scaling.
+
+Latest owner G22 correction: current Seat_G57/Seat_G49 end is local +Z and connects to G21. In B/G composition G22 yaw is now +90, center [-42.58,0,-7.2], and its positive-Z arch owns the seam at X=-38.18. Integration overrides align its shell to 8.4 m and glazing to ±4.15; each furniture bank shifts 0.3 m inward, retaining relative positions, object sizes and scales. G21 and all other layout components, plus standalone G22 data, are unchanged. Earlier opposite-end and 0.3 m edge-step descriptions are superseded.

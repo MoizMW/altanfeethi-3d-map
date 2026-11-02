@@ -1,5 +1,19 @@
 # Altanfeethi spatial twin
 
+G12 + G14 shared C-zone lounge: `http://127.0.0.1:4209/?block=ground/g12-g14` — [evidence and review notes](blocks/ground/g12-g14/README.md). One editable space for both groups, with 21 unique seat IDs.
+
+Zone C pods and approach: `http://127.0.0.1:4209/?block=ground/zone-c-pods`.
+
+G2 arrival reception/exit: `http://127.0.0.1:4209/?block=ground/g2` — [evidence and review notes](blocks/ground/g2/README.md).
+
+Combined B/C/G lounges: `http://127.0.0.1:4209/?layout=ground/b-g-lounges` — twelve areas including G27, G12/G14, G21/G22, G2 reception/exit and Zone C pods, with matched bay edges and connected walking routes.
+
+G16/G18/G20 arched lounges: `http://127.0.0.1:4209/?layout=ground/g16-g18`.
+
+G16 window lounge: `http://127.0.0.1:4209/?block=ground/g16` — [evidence and review notes](blocks/ground/g16/README.md).
+
+Combined G9/G10 preview: run `npm start`, then open `http://127.0.0.1:4209/?layout=ground/g9-g10`. It loads the source blocks with a shared partition and provisional corridor. See the [layout workflow](layouts/README.md). Edit furniture in its individual block; the combined view is for review.
+
 G11 C-zone lounge: `http://127.0.0.1:4209/?block=ground/g11` — [block evidence and review notes](blocks/ground/g11/README.md).
 
 Contributor visual standard: [MATERIAL_GUIDE.md](MATERIAL_GUIDE.md).

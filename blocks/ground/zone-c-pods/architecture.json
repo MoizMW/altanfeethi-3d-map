@@ -1,0 +1,278 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-zone-c-pods",
+  "floorSize": [
+    7.6,
+    6
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "anchors": [
+      {
+        "camera": "C2",
+        "pixel": [
+          5951,
+          4891
+        ],
+        "heading": 16,
+        "role": "context anchor, not a solved local camera pose"
+      },
+      {
+        "camera": "C22",
+        "pixel": [
+          6785,
+          5237
+        ],
+        "heading": 126,
+        "role": "context anchor, not a solved local camera pose"
+      },
+      {
+        "camera": "Cor2",
+        "pixel": [
+          7419,
+          5118
+        ],
+        "heading": 281,
+        "role": "context anchor, not a solved local camera pose"
+      },
+      {
+        "camera": "E13",
+        "pixel": [
+          5591,
+          5751
+        ],
+        "heading": 35,
+        "role": "context anchor, not a solved local camera pose"
+      }
+    ],
+    "localAxes": {
+      "x": "Owner-edited pods/dark strip at +X, white walking area at -X",
+      "z": "Arrival reception half-open edge at -Z; arched corridor side at +Z",
+      "y": "Up"
+    },
+    "mapReview": "Zone C label behind Arrival Reception is the requested pocket. Passport Office, Customs Check Point and surrounding lounge symbols are contextual landmarks, not modeled objects. Map gives topology, not measured scale."
+  },
+  "footprint": [
+    [
+      -3.8,
+      -3
+    ],
+    [
+      3.8,
+      -3
+    ],
+    [
+      3.8,
+      3
+    ],
+    [
+      -3.8,
+      3
+    ]
+  ],
+  "walls": [
+    {
+      "id": "zone-c-approach-arch-wall",
+      "kind": "solid",
+      "start": [
+        -3.8,
+        3
+      ],
+      "end": [
+        3.8,
+        3
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/zone-c-pods",
+      "sources": [
+        "Cor2",
+        "C2-wide",
+        "C22-wide"
+      ],
+      "confidence": "Broad arched corridor surround interpreted from views; exact ownership/profile requires merge review"
+    },
+    {
+      "id": "zone-c-behind-pods-glass",
+      "kind": "glass",
+      "variant": "patterned-smoked",
+      "start": [
+        3.8,
+        -3
+      ],
+      "end": [
+        3.8,
+        3
+      ],
+      "height": 4.1,
+      "thickness": 0.025,
+      "color": "#74807c",
+      "owner": "ground/zone-c-pods",
+      "sources": [
+        "Cor2",
+        "owner-gold-pattern-reference"
+      ],
+      "confidence": "Owner reference: smoked transparent glass with narrow geometric frosted band and brass frame, matching G2 reception backing; replaces prior finish."
+    },
+    {
+      "id": "zone-c-opposite-pods-glass",
+      "kind": "glass",
+      "variant": "blue-gold-geometric",
+      "start": [
+        -3.8,
+        -3
+      ],
+      "end": [
+        -3.8,
+        3
+      ],
+      "height": 4.1,
+      "thickness": 0.025,
+      "color": "#245968",
+      "owner": "ground/zone-c-pods",
+      "sources": [
+        "Cor2",
+        "owner-gold-pattern-reference"
+      ],
+      "confidence": "Owner confirms blueish glass/gold geometric pattern; tint, rosette spacing and height approximate reference"
+    },
+    {
+      "id": "zone-c-reception-half-glass",
+      "kind": "glass",
+      "start": [
+        0,
+        -3
+      ],
+      "end": [
+        3.8,
+        -3
+      ],
+      "height": 4.1,
+      "thickness": 0.025,
+      "color": "#74807c",
+      "owner": "ground/zone-c-pods",
+      "sources": [
+        "Cor2",
+        "owner-gold-pattern-reference"
+      ],
+      "confidence": "Owner reference: smoked transparent glass with narrow geometric frosted band and brass frame, matching G2 reception backing; replaces prior finish.",
+      "variant": "patterned-smoked"
+    }
+  ],
+  "openings": [
+    {
+      "id": "zone-c-approach-arch",
+      "wallId": "zone-c-approach-arch-wall",
+      "kind": "rounded-passage",
+      "offset": 3.8,
+      "width": 6.8,
+      "springHeight": 1.6,
+      "height": 3.35,
+      "confidence": "Elliptical approximation; not a measured profile"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "zone-c-to-g2",
+      "kind": "open-connection",
+      "neighbor": "ground/g2",
+      "neighborBoundary": "g2-inward-path",
+      "start": [
+        -3.8,
+        -3
+      ],
+      "end": [
+        0,
+        -3
+      ],
+      "ownsWall": false,
+      "status": "Owner confirms reception-side half glass/half open; global alignment pending"
+    },
+    {
+      "id": "zone-c-onward-route",
+      "kind": "open-connection",
+      "neighbor": "onward Zone C circulation",
+      "start": [
+        -3.4,
+        3
+      ],
+      "end": [
+        1.8,
+        3
+      ],
+      "ownsWall": false,
+      "status": "Onward route through retained arch; global alignment pending"
+    }
+  ],
+  "ceiling": {
+    "height": 4.1,
+    "size": [
+      7.6,
+      6
+    ],
+    "defaultVisible": false,
+    "confidence": "Plain provisional visualization ceiling from owner 12\u201315 ft estimate"
+  },
+  "circulation": {
+    "polygon": [
+      [
+        -3.8,
+        -3
+      ],
+      [
+        2,
+        -3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        -3.8,
+        3
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "route": {
+      "from": "onward Zone C circulation",
+      "to": "ground/g2 arrival reception approach",
+      "centerline": [
+        [
+          -1.5,
+          -3
+        ],
+        [
+          -1.5,
+          3
+        ]
+      ],
+      "status": "Owner-refined clear half beside pods; reception connection on half-open -Z boundary"
+    },
+    "connections": [
+      {
+        "id": "zone-c-to-g2",
+        "destination": "ground/g2 inward path",
+        "kind": "open-connection"
+      },
+      {
+        "id": "zone-c-onward-route",
+        "destination": "Zone C circulation",
+        "kind": "open-connection"
+      }
+    ]
+  },
+  "notes": [
+    "Owner requests the Zone C area behind arrival reception G2/E13: two pods and walking area, no lounge seating.",
+    "Working 7.6 by 6 m footprint is comparable to one lounge bay (G9/G10/G11), chosen provisionally because the map has no real dimensions. Owner should refine the extent if the intended Zone C strip is larger.",
+    "Pods occupy the dark side strip; pale approach stays open to their right and across the front. Unknown backing and side boundaries remain unclosed.",
+    "This standalone block is not yet merged into G2 or the B/G layout. Shared arch ownership and exact arrival-reception seam need review.",
+    "Owner moved/rotated/scaled pods and planters: preserve objects.json. Dark tiled strip is now X=2..3.8 under all pods/planters; remaining floor is white. Full blue/gold glass at X=\u00b13.8, reception-side half pane at Z=-3 over X=0..3.8; X=-3.8..0 stays open. Gold rosettes/lattice approximate supplied reference. Earlier pod-strip/route assumptions superseded.",
+    "Owner clarification: reception-side HALF pane uses clear standard transparent glass like G18, with no blue/gold pattern. Two full side panes retain blue/gold finish.",
+    "Latest owner finish correction: behind-pod pane and reception half-pane both use patterned-smoked glazing matching the supplied G2 glass reference. Opposite full pane retains blue/gold rosettes."
+  ]
+}

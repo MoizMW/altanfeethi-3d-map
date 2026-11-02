@@ -1,0 +1,419 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-g-lounge-016",
+  "objects": [
+    {
+      "id": "g16-sofa-01",
+      "type": "sofa",
+      "name": "Beige window sofa \u00b7 G6 / G5",
+      "position": [
+        0,
+        0,
+        -1.7
+      ],
+      "yaw": 0,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G6",
+        "Seat_G5"
+      ],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated"
+    },
+    {
+      "id": "g16-chair-07",
+      "type": "armchair",
+      "name": "Blue chair \u00b7 G7",
+      "position": [
+        -1.692524781780344,
+        0,
+        -0.4254509501983338
+      ],
+      "yaw": 89.68905309805359,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G7"
+      ],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated"
+    },
+    {
+      "id": "g16-chair-04",
+      "type": "armchair",
+      "name": "Blue chair \u00b7 G4",
+      "position": [
+        1.7,
+        0,
+        -0.4
+      ],
+      "yaw": -89.1902459190451,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G4"
+      ],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated"
+    },
+    {
+      "id": "g16-chair-01",
+      "type": "armchair",
+      "name": "Blue chair \u00b7 G1",
+      "position": [
+        0.7500374880544469,
+        0,
+        4.404537284946338
+      ],
+      "yaw": 178.3929766565208,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G1"
+      ],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated"
+    },
+    {
+      "id": "g16-chair-02",
+      "type": "armchair",
+      "name": "Blue chair \u00b7 G2",
+      "position": [
+        1.7,
+        0,
+        3.2552779568427757
+      ],
+      "yaw": -90,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G2"
+      ],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated"
+    },
+    {
+      "id": "g16-table-02",
+      "type": "table",
+      "name": "Square stone coffee table \u00b7 Table_G2",
+      "position": [
+        0,
+        0,
+        -0.2786551511778491
+      ],
+      "yaw": 0,
+      "size": [
+        1.25,
+        0.42,
+        1.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated",
+      "externalId": "Table_G2",
+      "variant": "square-stone"
+    },
+    {
+      "id": "g16-table-01",
+      "type": "table",
+      "name": "Small coffee table \u00b7 Table_G1",
+      "position": [
+        0.65,
+        0,
+        3.3
+      ],
+      "yaw": 0,
+      "size": [
+        0.95,
+        0.42,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated",
+      "externalId": "Table_G1"
+    },
+    {
+      "id": "g16-side-table-1",
+      "type": "table",
+      "name": "Brass and glass side table",
+      "position": [
+        -1.7,
+        0,
+        -1.5783976309082859
+      ],
+      "yaw": 0,
+      "size": [
+        0.6,
+        0.58,
+        0.6
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated",
+      "variant": "round-glass",
+      "accessories": false
+    },
+    {
+      "id": "g16-lamp-1",
+      "type": "floor-lamp",
+      "name": "Window floor lamp",
+      "position": [
+        -2.3670668818411227,
+        0,
+        -2.5
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated"
+    },
+    {
+      "id": "g16-side-table-2",
+      "type": "table",
+      "name": "Brass and glass side table",
+      "position": [
+        1.7,
+        0,
+        -1.5502494028562317
+      ],
+      "yaw": 0,
+      "size": [
+        0.6,
+        0.58,
+        0.6
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated",
+      "variant": "round-glass",
+      "accessories": false
+    },
+    {
+      "id": "g16-lamp-2",
+      "type": "floor-lamp",
+      "name": "Window floor lamp",
+      "position": [
+        2.262211729878206,
+        0,
+        -2.5
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated"
+    },
+    {
+      "id": "g16-plant-01",
+      "type": "plant",
+      "name": "Window-side potted plant",
+      "position": [
+        2.5,
+        0,
+        0.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        1.7,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4b6643",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated"
+    },
+    {
+      "id": "g16-console-01",
+      "type": "display-console",
+      "name": "Console and abstract ornaments",
+      "position": [
+        2.72,
+        0,
+        3.3
+      ],
+      "yaw": -90,
+      "size": [
+        1.7,
+        0.85,
+        0.38
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c7bea3",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated"
+    },
+    {
+      "id": "g16-art-01",
+      "type": "display",
+      "name": "Framed abstract artwork placeholder",
+      "position": [
+        2.86,
+        1.12,
+        3.3
+      ],
+      "yaw": -90,
+      "size": [
+        1.3,
+        1.15,
+        0.06
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c5b9",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated",
+      "mount": "wall",
+      "variant": "framed-art"
+    }
+  ]
+}

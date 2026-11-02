@@ -20,6 +20,8 @@ const cameraFiles = [
   ...range(1, 14).map((number) => `B${number}.jpg`),
   ...[1, 2, 3, 8, ...range(10, 18), ...range(21, 27)].map((number) => `C${number}.jpg`),
   "D2.jpg",
+  "Cor1.jpg",
+  "Cor2.jpg",
   ...[1, 2, 3, 4, 5, 6, 8, 11, 13, 14].map((number) => `E${number}.jpg`),
   ...range(1, 18).map((number) => `F${number}.jpg`),
   "F15S.jpg",
@@ -39,7 +41,7 @@ const defaultZoneForCamera = (cameraId) => cameraId.match(/[A-Za-z]/)?.[0]?.toUp
 const makeCamera = (file) => ({
   id: file.replace(/\.jpg$/i, ""),
   file,
-  zone: defaultZoneForCamera(file),
+  zone: /^Cor\d+\.jpg$/i.test(file) ? "" : defaultZoneForCamera(file),
   group_id: cameraGroups[file.replace(/\.jpg$/i, "")] || "",
   floor: null,
   position: null,

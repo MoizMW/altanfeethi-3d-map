@@ -15,8 +15,12 @@
     "G5": "evidence/camera-snapshots/G5.jpg"
   },
   "notes": [
+    "Owner requests G18/G20-style rounded partition walls. Added standard 8.4 m span / 7.9 m opening / 1.6 m spring / 3.35 m crown; these are provisional visualization dimensions. G2 owns the reception-side arch, so G21 adds only the opposite +Z partition.",
+    "Owner correction: the top/bottom bank swap must also place sofas/chairs against outer glazing facing inward, like G18/G20. Supersedes previous no-rotation translation: reflect original X positions and yaw, retaining Z, height, sizes, scales and seat identities. Map reviewed with G1/G2/G4/G5 and E13/EXIT registration: reception adjacency agrees with G2 left-lounge-arch. Owner front-view RIGHT is local -Z (G38/G43 end); exact composition transform is not yet assigned.",
+    "Owner merge-preparation correction: swap the complete top/bottom dark seating banks in the supplied view. Translate each furniture bank 5.6 provisional meters across X, retaining internal offsets, Z, height and all orientations. Four-chair/shelf bank is now +X; sofa/plant bank is now -X. Historical photo-side descriptions below do not override this owner placement. Outer boundary identities follow their banks; corridor stays centered.",
+    "Owner style correction: all eight G21 chairs use the standard G18/G20 armchair builder, size [0.88, 0.9, 0.92] and blue upholstery #627d86. This supersedes the earlier armless rendering for G38\u2013G41; positions, rotations, scales and identities are retained. Earlier photo descriptions remain evidence history.",
     "Asymmetric layout: four armless chairs plus one angled armchair by reflective backing; two two-seat sofas plus three armchairs by curtains. Eleven supplied Seat_G38\u2013Seat_G48 labels map once to physical furniture.",
-    "A second central armchair beside Seat_G45 is visible in G1 and G4 but has no supplied ROI identity. Seat_G21_TMP_01 is a temporary editor label, not an approved occupancy-system ID. Total draft: 12 seat slots, 11 ROI-mapped plus one unmapped.",
+    "A second central armchair beside Seat_G45 is visible in G1 and G4 but has no supplied ROI identity. Seat_TMP_01 is a temporary editor label, not an approved occupancy-system ID. Total draft: 12 seat slots, 11 ROI-mapped plus one unmapped.",
     "Four owned coffee tables are Table_G11\u2013Table_G14. G4 background Table_G15/G17 also appear in g22 ROI files; they are deferred observations, not G21-owned meshes or accepted block dependencies.",
     "Pale central path and dark seating strips follow G2/G4; side glazing follows G1/G5. Reflected furniture is not duplicated. Full arch profiles and neighboring seams remain unresolved.",
     "Tall display shelving, two round side tables, square plant stand, three floor lamps and two plants are simplified context. Ottoman, small stone stands, tabletop lamp, curtains and patterned backing are not reconstructed."
@@ -69,7 +73,7 @@
   "unmappedSeats": [
     {
       "objectId": "g21-chair-unmapped-01",
-      "temporarySeatId": "Seat_G21_TMP_01",
+      "temporarySeatId": "Seat_TMP_01",
       "cameras": [
         "G1",
         "G4"
@@ -193,7 +197,7 @@
     {
       "objectId": "g21-chair-unmapped-01",
       "seats": [
-        "Seat_G21_TMP_01"
+        "Seat_TMP_01"
       ],
       "sources": [
         "G1",
@@ -203,7 +207,7 @@
     }
   ],
   "reviewItems": [
-    "Assign an approved identity to the extra central armchair; temporary Seat_G21_TMP_01 must not be treated as a CV seat ID.",
+    "Assign an approved identity to the extra central armchair; temporary Seat_TMP_01 must not be treated as a CV seat ID.",
     "Confirm sofa slot order, individual armless chair correspondence and central pair orientations.",
     "Confirm Table_G15/G17 neighboring ownership using g22 before any composition; no duplicate context tables were created.",
     "Review the estimated 8.4 x 8.8 m footprint, 2.8 m path, 4.1 m visualization ceiling and all object dimensions.",
