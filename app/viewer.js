@@ -5,6 +5,7 @@ import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js'
 import {validateBlock} from './shared/schema/block-schema.js';
 import {receptionSizes, buildReceptionObject} from './reception-objects.js';
 import {buildArchitecture} from './architecture.js';
+import {buildEggChair} from './lounge-objects.js';
 const $=id=>document.getElementById(id), status=message=>$('status').textContent=message;
 let block, revision, selected, dirty=false, history=[], view='iso', tool='select', dragStart;
 const blockKey=new URLSearchParams(location.search).get('block')||'ground/g9';
@@ -27,6 +28,7 @@ const isChair=o=>['armchair','office-chair'].includes(o.type);
 const objectLabel=o=>o.seats.length?`${o.type==='sofa'?'Sofa':'Chair'} · ${o.seats.map(s=>s.replace(/^Seat_/, '')).join(' / ')}`:o.type==='table'?`${o.name.split(' · ')[0]}${o.externalId?' · '+o.externalId:''}`:o.name;
 function build(o){const g=new THREE.Group(),[w,h,d]=referenceSize[o.type], fabric=mat(o.color),dark=mat('#303b3a',.4),gold=mat('#ab9564',.35,.6);g.userData.objectId=o.id;
  if(receptionSizes[o.type])buildReceptionObject(g,o,{box,mesh,rod,mat});
+ else if(o.type==='armchair'&&o.variant==='egg-swivel')g.add(buildEggChair(o.color));
  else if(o.type==='sofa'||o.type==='armchair'){
   const n=o.type==='sofa'?2:1;
   box(g,[w,.22,d],[0,.29,0],fabric,.09);
