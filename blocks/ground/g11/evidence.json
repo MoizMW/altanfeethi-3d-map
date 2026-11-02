@@ -46,9 +46,9 @@
     "Review plant/shelf details and calibrate block-to-map alignment before assembly."
   ],
   "wideSnapshots": {
-    "C1": "evidence/wide capture snapshots/c1.jpg",
-    "C2": "evidence/wide capture snapshots/c2.jpg",
-    "C3": "evidence/wide capture snapshots/c3.jpg"
+    "C1": "evidence/wide capture snapshots/C1.jpg",
+    "C2": "evidence/wide capture snapshots/C2.jpg",
+    "C3": "evidence/wide capture snapshots/C3.jpg"
   },
   "wideCaptureContext": {
     "mountPosition": "Unchanged per user",

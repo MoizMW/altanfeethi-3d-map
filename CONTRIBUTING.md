@@ -56,9 +56,15 @@ For every camera assigned to your block, inspect its normal detection image in `
 - Normal zoomed-in views support seat/table recognition and the existing ROI labels.
 - Wide views support walls, glass, rounded entrances, corridors, walking paths, columns, lamps, display tables, decorative artifacts and details at the edges of the normal view. The currently supplied wide captures were taken from the same camera mounts, with wider zoom.
 - Existing chair, table and reception ROIs are mapped to the normal detection views. **Do not overlay or project those coordinates onto a wide capture.** A shared mount position does not make the two pixel coordinate systems equivalent. Wide-view ROI mapping requires its own verified transform or separate annotation.
-- Match cameras by ID while respecting actual filename case: for example `camera-snapshots/B1.jpg` pairs with `wide capture snapshots/b1.jpg`. Reference exact project-relative paths in `evidence.json`, using `snapshots` for normal views and `wideSnapshots` for wide views.
+- Match cameras by ID while respecting actual filename case: for example `camera-snapshots/B1.jpg` pairs with `wide capture snapshots/B1.jpg`. Reference exact project-relative paths in `evidence.json`, using `snapshots` for normal views and `wideSnapshots` for wide views.
 - Reconcile objects seen in both images into one physical object. Preserve approved seat/table IDs and manual furniture corrections. Record supporting views, human descriptions and uncertainty for architecture and decorative details.
 - Wide captures are supplementary and are not available for every camera. If absent or occluded, record the unresolved detail; use available map and owner information without inventing hidden boundaries.
+
+### Use nearby cameras when a detail is unclear (optional)
+
+If the block's own views leave a surrounding wall, entrance, corridor, exterior-facing edge or nearby object unclear, use `evidence/registration/camera-placements.json` or the camera-registration map to find a nearby positioned camera whose heading may cover it. For example, while building G10, a camera from an adjacent group may clarify a shared wall or the continuation of a path. Inspect its normal snapshot and any available wide capture only when they could resolve that specific uncertainty; a routine scan of neighboring cameras is unnecessary when the block evidence is already sufficient.
+
+Check actual visual overlap: proximity on the map alone does not prove a camera can see the detail. Nearby cameras can support the block even if their zone/group differs. Record any camera used and what it clarified in `evidence.json`, with its exact snapshot paths (and `wideSnapshots` entry if used). Keep its existing registration and group assignment, preserve block boundaries/shared ownership, and avoid duplicating neighboring furniture. Any ROI used still belongs to that camera's normal detection view.
 
 ## 4. IDs, units and coordinates
 

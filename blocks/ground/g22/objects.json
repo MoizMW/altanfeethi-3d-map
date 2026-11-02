@@ -1,0 +1,876 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-g-lounge-022",
+  "objects": [
+    {
+      "id": "g22-sofa-01",
+      "type": "sofa",
+      "name": "Cream sofa · G50 / G51",
+      "position": [
+        -3.82,
+        0,
+        -1.65
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d6cebd",
+      "seats": [
+        "Seat_G51",
+        "Seat_G50"
+      ],
+      "cameras": [
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-sofa-02",
+      "type": "sofa",
+      "name": "Cream sofa · G54 / G55",
+      "position": [
+        -3.82,
+        0,
+        1.65
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d6cebd",
+      "seats": [
+        "Seat_G55",
+        "Seat_G54"
+      ],
+      "cameras": [
+        "G8",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-chair-49",
+      "type": "armchair",
+      "name": "Teal armchair · G49",
+      "position": [
+        -2.7,
+        0,
+        -3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_G49"
+      ],
+      "cameras": [
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-chair-52",
+      "type": "armchair",
+      "name": "Teal armchair · G52",
+      "position": [
+        -2.35,
+        0,
+        0
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_G52"
+      ],
+      "cameras": [
+        "G8",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-chair-56",
+      "type": "armchair",
+      "name": "Teal armchair · G56",
+      "position": [
+        -2.7,
+        0,
+        3.25
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_G56"
+      ],
+      "cameras": [
+        "G8",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-chair-57",
+      "type": "armchair",
+      "name": "Teal armchair · G57",
+      "position": [
+        2.7,
+        0,
+        -3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_G57"
+      ],
+      "cameras": [
+        "G7",
+        "G9"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-chair-58",
+      "type": "armchair",
+      "name": "Teal armchair · G58",
+      "position": [
+        3.82,
+        0,
+        -2.15
+      ],
+      "yaw": -90,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_G58"
+      ],
+      "cameras": [
+        "G7"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-chair-59",
+      "type": "armchair",
+      "name": "Teal armchair · G59",
+      "position": [
+        3.82,
+        0,
+        -1.15
+      ],
+      "yaw": -90,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_G59"
+      ],
+      "cameras": [
+        "G7"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-chair-60",
+      "type": "armchair",
+      "name": "Teal armchair · G60",
+      "position": [
+        3.82,
+        0,
+        1.15
+      ],
+      "yaw": -90,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_G60"
+      ],
+      "cameras": [
+        "G7"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-chair-61",
+      "type": "armchair",
+      "name": "Teal armchair · G61",
+      "position": [
+        3.82,
+        0,
+        2.15
+      ],
+      "yaw": -90,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_G61"
+      ],
+      "cameras": [
+        "G7"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-chair-62",
+      "type": "armchair",
+      "name": "Teal armchair · G62",
+      "position": [
+        2.7,
+        0,
+        3.25
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_G62"
+      ],
+      "cameras": [
+        "G7",
+        "G8"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-coffee-table-15",
+      "type": "table",
+      "name": "Oval coffee table · Table_G15",
+      "position": [
+        -2.5,
+        0,
+        -1.65
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "externalId": "Table_G15"
+    },
+    {
+      "id": "g22-coffee-table-16",
+      "type": "table",
+      "name": "Oval coffee table · Table_G16",
+      "position": [
+        -2.5,
+        0,
+        1.65
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "externalId": "Table_G16"
+    },
+    {
+      "id": "g22-coffee-table-17",
+      "type": "table",
+      "name": "Oval coffee table · Table_G17",
+      "position": [
+        2.5,
+        0,
+        -1.65
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8",
+        "G9"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "externalId": "Table_G17"
+    },
+    {
+      "id": "g22-coffee-table-18",
+      "type": "table",
+      "name": "Oval coffee table · Table_G18",
+      "position": [
+        2.5,
+        0,
+        1.65
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8",
+        "G9"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "externalId": "Table_G18"
+    },
+    {
+      "id": "g22-display-divider",
+      "type": "screen",
+      "name": "Dark open shelving · curtain side",
+      "position": [
+        3,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        2.65,
+        2.2,
+        0.44
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#39342e",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "variant": "open-shelving"
+    },
+    {
+      "id": "g22-side-table-01",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        -3.82,
+        0,
+        -3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.58,
+        0.62,
+        0.58
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b0a181",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "accessories": false,
+      "materialNote": "Round shared table approximates glass top/brass cage; no CV table identity."
+    },
+    {
+      "id": "g22-side-table-02",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        -3.82,
+        0,
+        3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.58,
+        0.62,
+        0.58
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b0a181",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "accessories": false,
+      "materialNote": "Round shared table approximates glass top/brass cage; no CV table identity."
+    },
+    {
+      "id": "g22-side-table-03",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        3.82,
+        0,
+        -3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.58,
+        0.62,
+        0.58
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b0a181",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "accessories": false,
+      "materialNote": "Round shared table approximates glass top/brass cage; no CV table identity."
+    },
+    {
+      "id": "g22-side-table-04",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        3.82,
+        0,
+        3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.58,
+        0.62,
+        0.58
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b0a181",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "accessories": false,
+      "materialNote": "Round shared table approximates glass top/brass cage; no CV table identity."
+    },
+    {
+      "id": "g22-plant-stand",
+      "type": "table",
+      "name": "Central wood plant stand · rounded approximation",
+      "position": [
+        -3.82,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.72,
+        0.72,
+        0.72
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#856746",
+      "seats": [],
+      "cameras": [
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "accessories": false,
+      "shapeNote": "Square wood/brass pedestal approximated with shared round table builder."
+    },
+    {
+      "id": "g22-floor-lamp-reflective",
+      "type": "floor-lamp",
+      "name": "Floor lamp · reflective side",
+      "position": [
+        -4.03,
+        0,
+        -3.95
+      ],
+      "yaw": 0,
+      "size": [
+        0.4,
+        1.85,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-floor-lamp-curtain",
+      "type": "floor-lamp",
+      "name": "Floor lamp · curtain side",
+      "position": [
+        4.15,
+        0,
+        2.8
+      ],
+      "yaw": 0,
+      "size": [
+        0.4,
+        1.85,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-table-lamp-reflective",
+      "type": "floor-lamp",
+      "name": "Table lamp · shared shade approximation",
+      "position": [
+        -3.82,
+        0.6679761904761905,
+        3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.29,
+        0.57,
+        0.29
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G8",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "supportObjectId": "g22-side-table-02",
+      "appearanceNote": "Photo has rectangular shade and sculpted base; shared cylindrical shade is schematic."
+    },
+    {
+      "id": "g22-table-lamp-curtain",
+      "type": "floor-lamp",
+      "name": "Tube table lamp · schematic shade",
+      "position": [
+        3.82,
+        0.6679761904761905,
+        -3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.24,
+        0.52,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G9"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "supportObjectId": "g22-side-table-03",
+      "appearanceNote": "Photo has clear cylindrical tube; shared lamp builder is schematic."
+    },
+    {
+      "id": "g22-plant-center",
+      "type": "plant",
+      "name": "Raised plant between the sofas",
+      "position": [
+        -3.82,
+        0.7757142857142857,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.65,
+        1.6,
+        0.65
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526b45",
+      "seats": [],
+      "cameras": [
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated",
+      "supportObjectId": "g22-plant-stand"
+    },
+    {
+      "id": "g22-plant-floor-01",
+      "type": "plant",
+      "name": "Tall floor plant · bay edge",
+      "position": [
+        3.92,
+        0,
+        -3.95
+      ],
+      "yaw": 0,
+      "size": [
+        0.6,
+        2.1,
+        0.6
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526b45",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G9"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-plant-floor-02",
+      "type": "plant",
+      "name": "Tall floor plant · bay edge",
+      "position": [
+        3.92,
+        0,
+        3.95
+      ],
+      "yaw": 0,
+      "size": [
+        0.6,
+        2.1,
+        0.6
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526b45",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-plant-floor-03",
+      "type": "plant",
+      "name": "Tall floor plant · bay edge",
+      "position": [
+        -3.92,
+        0,
+        3.95
+      ],
+      "yaw": 0,
+      "size": [
+        0.6,
+        2.1,
+        0.6
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526b45",
+      "seats": [],
+      "cameras": [
+        "G8",
+        "G10"
+      ],
+      "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    }
+  ]
+}
