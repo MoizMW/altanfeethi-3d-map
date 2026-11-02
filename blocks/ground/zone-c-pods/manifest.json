@@ -1,0 +1,19 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-zone-c-pods",
+  "slug": "zone-c-pods",
+  "name": "Zone C \u00b7 Pods and reception approach",
+  "floor": "ground",
+  "groups": [],
+  "zone": "C",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  },
+  "displayCode": "ZONE C"
+}

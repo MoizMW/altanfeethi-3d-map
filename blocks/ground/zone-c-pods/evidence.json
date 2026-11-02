@@ -1,0 +1,46 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-zone-c-pods",
+  "cameras": [
+    "Cor2",
+    "C2",
+    "C22",
+    "E13"
+  ],
+  "primaryCameras": [
+    "Cor2"
+  ],
+  "snapshots": {
+    "Cor2": "evidence/camera-snapshots/Cor2.jpg",
+    "C2": "evidence/camera-snapshots/C2.jpg",
+    "C22": "evidence/camera-snapshots/C22.jpg",
+    "E13": "evidence/camera-snapshots/E13.jpg"
+  },
+  "wideSnapshots": {
+    "C2": "evidence/wide capture snapshots/C2.jpg",
+    "C22": "evidence/wide capture snapshots/C22.jpg",
+    "E13": "evidence/wide capture snapshots/E13.jpg"
+  },
+  "cameraRoles": {
+    "Cor2": "Primary pod/arched passage view; owner identifies top-left as requested area",
+    "C2": "Nearby lounge-side wide view clarifies pale circulation and curved surround",
+    "C22": "Opposite nearby lounge view clarifies arches and circulation continuity",
+    "E13": "Arrival reception destination; this block must not duplicate reception"
+  },
+  "notes": [
+    "Latest owner reference supersedes earlier pane finishes: behind pods and reception half-pane use smoky transparent glass with a narrow geometric frosted band and brass frame, matching G2 backing. Opposite-side blue/gold pane retained.",
+    "Owner glass correction: half-width reception-side pane is clear transparent standard glazing, matching G18; full side panes remain blue/gold patterned.",
+    "Owner refinement: saved pod/planter transforms preserved. Dark checks under +X pod strip, other floor white; front/back side glass is blue with gold rosette/lattice pattern. Reception-side boundary is half glass, half open. Pattern is procedural approximation of owner reference.",
+    "Ground-floor map Zone C label and registration anchors reviewed together with full Cor2. Owner confirms two pods and a clear path behind G2.",
+    "No lounge chairs, sofas, reception counter or occupancy Seat_/Table_ IDs are assigned here. Pods are editable physical objects; interior worktops are part of pod geometry.",
+    "Pod dimensions, second-pod depth/spacing, arch profile and planter correspondence are schematic. No metric camera calibration is claimed.",
+    "Customs/Passport/check-point fixtures and surrounding lounges remain outside this block. No ROIs are supplied for pods. Existing normal-view ROI rules still apply to supporting cameras."
+  ],
+  "reviewItems": [
+    "Confirm bay footprint and exact placement of both pods from owner feedback",
+    "Confirm door-facing direction and pod dimensions; internals are schematic",
+    "Resolve shared entrance arch ownership and connection to G2 before merging",
+    "Confirm where Zone C continues toward the checkpoint; do not enclose unseen edges"
+  ]
+}

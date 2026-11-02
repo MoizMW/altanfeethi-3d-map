@@ -51,7 +51,7 @@
       }
     ],
     "localAxes": {
-      "x": "Across the pale path, from reflective glazing/four armless chairs (G5) toward curtained sofas (G1)",
+      "x": "Across the pale path, from owner-swapped sofa bank (-X) toward four-chair/shelf bank (+X); seating backs at outer glass and faces inward",
       "z": "Along the path, from Seat_G38/Seat_G43 end toward Seat_G42/Seat_G48 end",
       "y": "Up"
     },
@@ -86,11 +86,11 @@
       "id": "g21-reflective-glazing",
       "kind": "glass",
       "start": [
-        -4.15,
+        4.15,
         -4.3
       ],
       "end": [
-        -4.15,
+        4.15,
         4.3
       ],
       "height": 4.1,
@@ -108,11 +108,11 @@
       "id": "g21-curtained-glazing",
       "kind": "glass",
       "start": [
-        4.15,
+        -4.15,
         -4.3
       ],
       "end": [
-        4.15,
+        -4.15,
         4.3
       ],
       "height": 4.1,
@@ -125,10 +125,73 @@
       ],
       "confidence": "Visible backing; full span, height and frame spacing estimated. Glazing inferred behind visible sheer curtains.",
       "notes": "Shared schematic glazing; detailed pattern, accurate reflections and curtain fabric are unresolved."
+    },
+    {
+      "id": "g21-arch-wall-positive-z",
+      "kind": "solid",
+      "start": [
+        -4.2,
+        4.4
+      ],
+      "end": [
+        4.2,
+        4.4
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g21",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner requests G18/G20 arch style; dimensions and neighboring seam estimated"
     }
   ],
-  "openings": [],
-  "sharedBoundaries": [],
+  "openings": [
+    {
+      "id": "g21-arch-positive-z",
+      "wallId": "g21-arch-wall-positive-z",
+      "kind": "rounded-passage",
+      "offset": 4.2,
+      "width": 7.9,
+      "springHeight": 1.6,
+      "height": 3.35,
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Same 8.4 m span, 7.9 m opening and rounded profile as the G18/G20 partition"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "g21-g2-reception-connection",
+      "kind": "open-connection",
+      "neighbor": "ground/g2",
+      "neighborBoundary": "g2-left-lounge-arch",
+      "owner": "ground/g2",
+      "ownsWall": false,
+      "status": "owner-confirmed-adjacency-needs-global-alignment",
+      "start": [
+        -1.4,
+        -4.4
+      ],
+      "end": [
+        1.4,
+        -4.4
+      ],
+      "notes": "Right-hand end in owner front view; G2 owns its left-lounge arch. No duplicate arch is created in G21."
+    },
+    {
+      "id": "g21-arch-positive-z",
+      "kind": "rounded-passage",
+      "owner": "ground/g21",
+      "ownsWall": true,
+      "status": "owner-requested-local-partition-needs-seam-alignment",
+      "notes": "Local preview wall only; suppressed in B/G composition because G22 owns the shared arch.",
+      "compositionOwner": "ground/g22",
+      "compositionBoundary": "g22-arch-negative-z"
+    }
+  ],
   "floorCenter": [
     0,
     0
@@ -180,7 +243,8 @@
       "sources": [
         "G2"
       ],
-      "status": "reception-side-neighbor-seam-unresolved"
+      "status": "owner-confirmed-reception-adjacency-seam-unresolved",
+      "candidateNeighborGroup": "g2"
     },
     {
       "id": "g21-positive-z-path",
@@ -198,8 +262,13 @@
         "G2",
         "G4"
       ],
-      "status": "partly-visible-not-modeled",
-      "notes": "Curved pale surrounds/pier returns are visible but full profiles, spans and ownership are unmeasured."
+      "status": "owner-requested-standard-arches-modeled-profile-estimated",
+      "notes": "Standard G18/G20 full-width arch profile added at the authored end boundaries; exact measured profiles and seam fitting remain unresolved."
     }
+  ],
+  "notes": [
+    "Owner requests swapping the complete dark seating strips across the central path without rotating furniture. Objects from original -X strip translate +5.6 m; original +X strip translate -5.6 m. All Y/Z, yaw, scale and identities remain unchanged. Outer glazing follows each bank to the opposite outer boundary; the central path and footprint are retained. These provisional coordinates supersede the earlier camera-side arrangement for merge preparation.",
+    "Owner correction supersedes translation-only strip swap: furniture arrangement is reflected across X from the original draft, retaining Z and height. Sofa bank remains -X and four-chair bank +X; outer seating backs onto glazing and tables sit inward as in G18/G20. Furniture yaw is reflected to face the seating groups. G2 reception is at the right-hand end in the owner front view (local -Z, G38/G43 end); connection dimensions and global transform remain provisional.",
+    "Owner requests arched partitions matching G18/G20. Full-width pale partitions have a clear rounded central opening; circulation remains open beneath the arches. Only +Z partition is locally owned; reception-side -Z arch remains owned by G2."
   ]
 }

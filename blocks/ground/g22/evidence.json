@@ -71,7 +71,8 @@
     "Table_G18": "g22-coffee-table-18"
   },
   "notes": [
-    "Two cream two-seat sofas and nine teal armchairs reconcile 13 seat labels across G7/G8/G9/G10. Four physical oval coffee tables carry Table_G15–Table_G18.",
+    "Owner merge request: G22 -> G21 -> G2 in supplied left-to-right view. Reviewed G4/E13/G8/G9 wide context and registration/map topology. Standard rounded arches added at both G22 ends; 9 m span retains source shell, with 7.9 m opening matching G18/G20. No furniture or occupancy identities changed. Relative dimensions and exact seams remain estimates.",
+    "Two cream two-seat sofas and nine teal armchairs reconcile 13 seat labels across G7/G8/G9/G10. Four physical oval coffee tables carry Table_G15\u2013Table_G18.",
     "Curtain side has six individual armchairs around two tables, separated by one open display shelf. Reflective side has two sofas and three armchairs. G8/G9 connect the opposite banks across the pale path.",
     "Seat_G53 is absent from all supplied g22 ROI files. Preserve the gap; no missing seat or additional chair is inferred. Sofa slot ordering remains provisional.",
     "The working floor is estimated 9 x 8.8 m with a 2.8 m through path. Schematic side glazing is supported by normal and wide views; curved surrounds, curtain fabric and patterned glazing are unresolved.",
@@ -94,7 +95,7 @@
     "Confirm Seat_G52 is the one central reflective-side armchair and the absence of Seat_G53 is intentional.",
     "Review estimated chair angles, spacing, 9 x 8.8 m footprint and 2.8 m path.",
     "Trace arch/pier endpoints and curtain/reflective boundary extents; resolve neighboring ownership before shell completion.",
-    "Fit map-to-block transform and shared seams using structural landmarks; ceiling estimate 4.1 m retains the 3.66–4.57 m range."
+    "Fit map-to-block transform and shared seams using structural landmarks; ceiling estimate 4.1 m retains the 3.66\u20134.57 m range."
   ],
   "accuracy": {
     "position": "estimated-local",

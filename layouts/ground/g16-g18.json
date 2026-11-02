@@ -1,0 +1,93 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "ground-g16-g18",
+  "name": "G16 + G18 + G20 \u00b7 Arched lounges",
+  "floor": "ground",
+  "status": "draft-needs-human-review",
+  "components": [
+    {
+      "block": "ground/g16",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "ground/g18",
+      "position": [
+        -7.2,
+        0,
+        1
+      ],
+      "yaw": -90
+    },
+    {
+      "block": "ground/g20",
+      "position": [
+        -14.8,
+        0,
+        1
+      ],
+      "yaw": -90
+    }
+  ],
+  "floorSize": [
+    21.6,
+    8.4
+  ],
+  "floorCenter": [
+    -7.8,
+    1
+  ],
+  "walls": [
+    {
+      "id": "g18-g20-arch-wall",
+      "kind": "solid",
+      "start": [
+        -11,
+        -3.2
+      ],
+      "end": [
+        -11,
+        5.2
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "layout/ground/g16-g18",
+      "sources": [
+        "owner-description",
+        "G26-wide",
+        "G27-wide"
+      ],
+      "confidence": "Owner confirms G18 at the G31/G24 end of G20, separated by same arch style as G16/G18. Width matches paired shells; curve and metric dimensions estimated."
+    }
+  ],
+  "evidenceCameras": [
+    "G23"
+  ],
+  "notes": [
+    "Front-view order is now G20 \u2192 G18 \u2192 G16, left to right. Owner confirms G18 attaches to the right-hand G31/G24 end of G20 in the supplied image.",
+    "Owner: trimmed G18 right-hand end in supplied view meets G16 LEFT arched partition. Working front-view layout has G18 left, G16 right.",
+    "G16 stays at source transform. G18 rotates -90 degrees and translates [-7.2,0,1], placing its trimmed Z=-4.2 end at G16 X=-3. Furniture and seat IDs load live from source blocks.",
+    "G16 owns the single full-width arch; G18 has no duplicate end wall. Pale walking floors are rendered from both source circulation polygons, with a shared clear overlap at the arch.",
+    "Owner alignment correction: G16 shell now has the same 8.4 m cross-span as G18. Both floor edges and side glazing meet at global Z=-3.2 and Z=5.2, with the arch at X=-3. G18 glazing extends to its trimmed end. Furniture is not scaled or moved; metric dimensions remain provisional.",
+    "This G-zone assembly is independent of the G9/G10/G11 layout. G16 G9 entry metadata is retained for a later full-floor join.",
+    "G20 yaw -90, position [-14.8,0,1] places its G31/G24 end at X=-11 against G18. A single layout-owned arch matches G16/G18 in span and profile. All three blocks align at global Z=-3.2 and 5.2. White paths continue through both arches; source furniture and corrected seat IDs are preserved."
+  ],
+  "openings": [
+    {
+      "id": "g18-g20-arch",
+      "wallId": "g18-g20-arch-wall",
+      "kind": "rounded-passage",
+      "offset": 4.2,
+      "width": 7.9,
+      "springHeight": 1.6,
+      "height": 3.35,
+      "confidence": "Uses owner-requested full-width arch style matching G16/G18"
+    }
+  ]
+}

@@ -62,3 +62,7 @@ This texture metadata is a future extension and is not currently loaded by the r
 - Keep exact dimensions and material identification marked as estimates until reviewed.
 
 G9 and G32 should share this visual language while retaining their observed lounge and check-in finishes. A floor transition requires evidence; a different camera angle alone does not.
+
+Architectural glass variant `blue-gold-geometric` uses translucent blue glazing, brass edging and a procedural gold twelve-point rosette/lattice approximation from the owner's Zone C reference. Reuse it through `architecture.walls[].variant` for the same observed finish; do not replace clear or smoked glazing elsewhere without evidence. The motif is geometry, not a photographic texture.
+
+Owner lounge-chair standard: G18/G20 blue `#627d86` is the default for new lounge chairs. The former G27 green overrides are retired and rejected for armchairs by shared block validation, including imported or saved drafts. Other physical materials and editable colors remain available.

@@ -1,0 +1,76 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-arrival-exit-002",
+  "cameras": [
+    "E13",
+    "G26",
+    "G27",
+    "G4",
+    "G5"
+  ],
+  "primaryCameras": [
+    "E13"
+  ],
+  "supportingCameras": [
+    "G26",
+    "G27",
+    "G4",
+    "G5"
+  ],
+  "snapshots": {
+    "E13": "evidence/camera-snapshots/E13.jpg",
+    "G26": "evidence/camera-snapshots/G26.jpg",
+    "G27": "evidence/camera-snapshots/G27.jpg",
+    "G4": "evidence/camera-snapshots/G4.jpg",
+    "G5": "evidence/camera-snapshots/G5.jpg"
+  },
+  "wideSnapshots": {
+    "E13": "evidence/wide capture snapshots/E13.jpg",
+    "G26": "evidence/wide capture snapshots/G26.jpg",
+    "G27": "evidence/wide capture snapshots/G27.jpg",
+    "G4": "evidence/wide capture snapshots/G4.jpg",
+    "G5": "evidence/wide capture snapshots/G5.jpg"
+  },
+  "rois": {
+    "E13": {
+      "reception": "evidence/rois/reception-rois/g2/E13.json"
+    }
+  },
+  "roiFiles": [
+    "evidence/rois/reception-rois/g2/E13.json"
+  ],
+  "receptionRegion": "R1",
+  "cameraRoles": {
+    "E13": "Only primary G2 view: reception half, open approach half, exit below camera",
+    "G26": "G20 path and window/reflection sides",
+    "G27": "G20 end toward reception; counter and arch edge visible",
+    "G4": "G21 side context and open pale walking route",
+    "G5": "G21 arch surround, console and neighboring seating; no furniture ownership transferred"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per owner",
+    "roiUsage": "R1 refers only to normal E13 snapshot; do not transfer coordinates to wide images",
+    "capturedAt": null
+  },
+  "notes": [
+    "Gate refinement per owner: remove scanner pedestal and match overall gate/header height to the 4.1 m walls.",
+    "Owner supplied gate reference: central double sliding glass doors with metal frames, horizontal bands, fixed side glass and an access sensor post. Added at front exit edge opposite reception. Opening preview is static, not connected to real gate control.",
+    "Primary E13 normal/wide and registration reviewed. Reception counter fills the left half of the forward view; pale walking approach remains open to its right. The exit below camera is owner-confirmed, outside the visible frame.",
+    "Nearby G20/G21 wide captures and registered positions support side arch/corridor continuity. Their seating stays in its own group; G2 contains no neighboring lounge seats or ROI tables.",
+    "Two observed reception staff chairs use clearly temporary Seat_G2_STAFF_TMP_01/02 identifiers. They are editable placeholders, not mapped occupancy IDs. G2 supplies reception region R1 only, no chair/table ROIs.",
+    "Stone/teal counter, screens, plants and arch-side console reuse shared builders. Small ornaments and counter plant are representative; printed signs, exit hardware and reflections are not reconstructed."
+  ],
+  "reviewItems": [
+    "Confirm reception station count and replace temporary staff identities if real CV IDs become available",
+    "Refine left/right arch spans and reception/backing footprint",
+    "Confirm gate dimensions/threshold alignment; owner photo establishes appearance, not measurements",
+    "Confirm neighboring G20/G21 joins before spatial merging; do not automatically attach this block to existing layout"
+  ],
+  "accuracy": {
+    "dimensions": "unmeasured-estimates",
+    "globalAlignment": "unresolved",
+    "receptionROI": "source-image-only; authoring resolution unrecorded",
+    "exit": "owner-confirmed connection; geometry below camera unresolved"
+  }
+}

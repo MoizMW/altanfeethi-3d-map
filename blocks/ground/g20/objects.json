@@ -6,7 +6,7 @@
     {
       "id": "g20-sofa-01",
       "type": "sofa",
-      "name": "Two-seat sofa · G26 / G25",
+      "name": "Two-seat sofa · G33 / G32",
       "position": [
         -3.55,
         0,
@@ -25,18 +25,18 @@
       ],
       "color": "#bcb6a7",
       "seats": [
-        "Seat_G26",
-        "Seat_G25"
+        "Seat_G33",
+        "Seat_G32"
       ],
       "cameras": [
         "G22"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g20-sofa-02",
       "type": "sofa",
-      "name": "Two-seat sofa · G29 / G28",
+      "name": "Two-seat sofa · G35 / G36",
       "position": [
         -3.55,
         0,
@@ -55,19 +55,19 @@
       ],
       "color": "#bcb6a7",
       "seats": [
-        "Seat_G29",
-        "Seat_G28"
+        "Seat_G35",
+        "Seat_G36"
       ],
       "cameras": [
         "G22",
         "G27"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g20-sofa-03",
       "type": "sofa",
-      "name": "Two-seat sofa · G32 / G33",
+      "name": "Two-seat sofa · G25 / G26",
       "position": [
         3.55,
         0,
@@ -86,19 +86,19 @@
       ],
       "color": "#bcb6a7",
       "seats": [
-        "Seat_G32",
-        "Seat_G33"
+        "Seat_G25",
+        "Seat_G26"
       ],
       "cameras": [
         "G21",
         "G27"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g20-sofa-04",
       "type": "sofa",
-      "name": "Two-seat sofa · G36 / G35",
+      "name": "Two-seat sofa · G28 / G29",
       "position": [
         3.55,
         0,
@@ -117,21 +117,21 @@
       ],
       "color": "#bcb6a7",
       "seats": [
-        "Seat_G36",
-        "Seat_G35"
+        "Seat_G28",
+        "Seat_G29"
       ],
       "cameras": [
         "G21",
         "G27"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g20-chair-24",
       "type": "armchair",
-      "name": "Teal armchair · G24",
+      "name": "Blue armchair · G31",
       "position": [
-        -2.6,
+        -2.432115996882022,
         0,
         -3.08
       ],
@@ -146,26 +146,26 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
-        "Seat_G24"
+        "Seat_G31"
       ],
       "cameras": [
         "G22",
         "G26"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g20-chair-27",
       "type": "armchair",
-      "name": "Teal armchair · G27",
+      "name": "Blue armchair · G34",
       "position": [
-        -2.4,
+        -2.4116038060920904,
         0,
         0
       ],
-      "yaw": 270,
+      "yaw": 0.28971677109628835,
       "size": [
         0.88,
         0.9,
@@ -176,22 +176,22 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
-        "Seat_G27"
+        "Seat_G34"
       ],
       "cameras": [
         "G22",
         "G27"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g20-chair-30",
       "type": "armchair",
-      "name": "Teal armchair · G30",
+      "name": "Blue armchair · G37",
       "position": [
-        -2.6,
+        -2.4046334057048337,
         0,
         3.08
       ],
@@ -206,22 +206,22 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
-        "Seat_G30"
+        "Seat_G37"
       ],
       "cameras": [
         "G22",
         "G27"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g20-chair-31",
       "type": "armchair",
-      "name": "Teal armchair · G31",
+      "name": "Blue armchair · G24",
       "position": [
-        2.6,
+        2.415522430378617,
         0,
         -3.08
       ],
@@ -236,26 +236,26 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
-        "Seat_G31"
+        "Seat_G24"
       ],
       "cameras": [
         "G21",
         "G26"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g20-chair-34",
       "type": "armchair",
-      "name": "Teal armchair · G34",
+      "name": "Blue armchair · G27",
       "position": [
         2.4,
         0,
         0
       ],
-      "yaw": 90,
+      "yaw": -0.1888178766395041,
       "size": [
         0.88,
         0.9,
@@ -266,22 +266,22 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
-        "Seat_G34"
+        "Seat_G27"
       ],
       "cameras": [
         "G21",
         "G27"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g20-chair-37",
       "type": "armchair",
-      "name": "Teal armchair · G37",
+      "name": "Blue armchair · G30",
       "position": [
-        2.6,
+        2.4443181865608254,
         0,
         3.08
       ],
@@ -296,15 +296,15 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
-        "Seat_G37"
+        "Seat_G30"
       ],
       "cameras": [
         "G21",
         "G27"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g20-coffee-table-7",

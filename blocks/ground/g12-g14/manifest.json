@@ -1,0 +1,22 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-c-lounge-012-014",
+  "slug": "g12-g14",
+  "name": "G12 + G14 · Shared C-zone lounge",
+  "floor": "ground",
+  "groups": [
+    "g12",
+    "g14"
+  ],
+  "zone": "C",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  },
+  "displayCode": "G12 + G14"
+}

@@ -2,6 +2,8 @@ import * as THREE from 'three';
 
 // Local +Z is the visitor side of counters and the facing direction of chairs.
 export const receptionSizes = {
+  'automatic-glass-gate': [8.4,2.8,.16],
+  'privacy-pod': [1.35,2.35,1.35],
   'floor-lamp': [.46,1.85,.46],
   'display-console': [3.1,.9,.4],
   counter: [2.45, 1.18, .86],
@@ -15,7 +17,37 @@ export const receptionSizes = {
 export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
   const [w,h,d] = receptionSizes[o.type];
   const body=mat(o.color), wood=mat('#856746'), charcoal=mat('#242a2c'), metal=mat('#a7afb0',.3,.65);
-  if(o.type==='floor-lamp'){
+  if(o.type==='automatic-glass-gate'){
+    const frame=mat(o.color,.32,.65),glass=new THREE.MeshStandardMaterial({color:'#a7c1c7',transparent:true,opacity:.2,roughness:.12,depthWrite:false,side:THREE.DoubleSide});
+    const clear=3.6,sideWidth=(w-clear)/2,open=o.openFraction??0,leafHeight=h-.13;
+    const pane=(width,x,z)=>{
+      const leaf=new THREE.Group();leaf.position.set(x,0,z);g.add(leaf);
+      box(leaf,[width-.06,leafHeight-.18,.018],[0,leafHeight/2,0],glass,.003);
+      for(const edge of [-1,1])box(leaf,[.055,leafHeight,.065],[edge*(width/2-.0275),leafHeight/2,0],frame,.005);
+      for(const y of [.055,leafHeight-.055])box(leaf,[width,.075,.065],[0,y,0],frame,.005);
+      for(const y of [.95,1.65])box(leaf,[width-.06,.028,.021],[0,y,.012],mat('#d3dedc',.45),.002);
+    };
+    for(const sign of [-1,1]){
+      pane(sideWidth,sign*(clear/2+sideWidth/2),0);
+      pane(clear/2,sign*(clear/4+open*clear/2),.075);
+    }
+    box(g,[w,.13,.19],[0,h-.065,0],frame,.012);
+    box(g,[.22,.055,.07],[0,h-.09,-.13],mat('#202c2e'),.012);
+    box(g,[w,.018,.13],[0,.009,0],frame,.002);
+  }else if(o.type==='privacy-pod'){
+    const shell=mat(o.color,.65),frame=mat('#293335',.35,.3);
+    const glass=new THREE.MeshStandardMaterial({color:'#a6bdbe',transparent:true,opacity:.18,roughness:.12,depthWrite:false,side:THREE.DoubleSide});
+    box(g,[w,.08,d],[0,.04,0],frame,.025);
+    box(g,[w,.08,d],[0,h-.04,0],frame,.025);
+    box(g,[w-.08,h-.16,.07],[0,h/2,-d/2+.035],shell,.012);
+    for(const x of [-w/2+.035,w/2-.035])box(g,[.07,h-.16,d-.08],[x,h/2,0],shell,.012);
+    for(const x of [-w/2+.045,w/2-.045])box(g,[.055,h-.12,.055],[x,h/2,d/2-.035],frame,.012);
+    box(g,[w-.12,h-.18,.018],[0,h/2,d/2-.035],glass,.005);
+    box(g,[.025,.22,.035],[w*.3,1.05,d/2+.012],metal,.008);
+    box(g,[w-.2,.04,.38],[0,.94,-d*.2],mat('#e2ded4',.35),.012);
+    for(let i=0;i<6;i++)box(g,[.015,.009,d*.45],[-.2+i*.08,h+.005,0],charcoal,.002);
+    // A worktop is visible; no occupancy seat or chair identity is inferred.
+  }else if(o.type==='floor-lamp'){
     box(g,[.3,.035,.3],[0,.025,0],mat('#ab9564',.35,.6),.008);
     rod(g,[0,.04,0],[0,1.58,0],.018,mat('#ab9564',.35,.6));
     const shade=mat('#f4ecd2',.85);shade.emissive=new THREE.Color('#e4d4a1');shade.emissiveIntensity=.18;
@@ -69,6 +101,15 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
     box(g,[w,h,d],[0,h/2,0],body,.008);
     box(g,[w+.02,.04,d+.025],[0,h,0],wood,.008);
     for(let i=1;i<4;i++) box(g,[.008,h-.06,.006],[-w/2+i*w/4,h/2,d/2+.004],mat('#64513d'),.001);
+  } else if(o.type==='display'&&o.variant==='framed-art') {
+    box(g,[w,h,.035],[0,h/2,0],charcoal,.004);
+    for(const side of [-1,1]){
+      box(g,[w-.025,h-.025,.008],[0,h/2,side*.023],body,.003);
+      for(let i=0;i<4;i++){
+        const ring=mesh(g,new THREE.TorusGeometry(1,.012,4,32),mat('#78766d'),[(i-1.5)*w*.12,h*(.38+(i%2)*.22),side*.03]);
+        ring.scale.set(w*(.16+i*.015),h*(.25-i*.025),.4);ring.rotation.z=i*.6;
+      }
+    }
   } else if(o.type==='display') {
     box(g,[w,h-.07,.035],[0,h/2+.035,0],charcoal,.008);
     box(g,[w-.035,h-.105,.008],[0,h/2+.035,.024],body,.003);

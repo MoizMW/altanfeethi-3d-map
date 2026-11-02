@@ -86,12 +86,12 @@
       "id": "g20-reflective-glazing",
       "kind": "glass",
       "start": [
-        -4.15,
-        -3.7
+        -4.2,
+        -3.8
       ],
       "end": [
-        -4.15,
-        3.7
+        -4.2,
+        3.8
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -102,18 +102,18 @@
         "G27"
       ],
       "confidence": "Visible backing; estimated span, height and generic frame spacing. Reflective panels with patterned lower strip.",
-      "notes": "Shared glazing builder is schematic. Reflections, patterned lower panel and curtain fabric are not reproduced."
+      "notes": "Shared glazing builder is schematic. Reflections, patterned lower panel and curtain fabric are not reproduced. Shell endpoints aligned with floor and adjacent G18 shell in the composed layout."
     },
     {
       "id": "g20-curtained-glazing",
       "kind": "glass",
       "start": [
-        4.15,
-        -3.7
+        4.2,
+        -3.8
       ],
       "end": [
-        4.15,
-        3.7
+        4.2,
+        3.8
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -124,11 +124,20 @@
         "G27"
       ],
       "confidence": "Visible backing; estimated span, height and generic frame spacing. Curtained window boundary; glazing details inferred through curtains.",
-      "notes": "Shared glazing builder is schematic. Reflections, patterned lower panel and curtain fabric are not reproduced."
+      "notes": "Shared glazing builder is schematic. Reflections, patterned lower panel and curtain fabric are not reproduced. Shell endpoints aligned with floor and adjacent G18 shell in the composed layout."
     }
   ],
   "openings": [],
-  "sharedBoundaries": [],
+  "sharedBoundaries": [
+    {
+      "id": "g18-g20-arch",
+      "kind": "rounded-passage",
+      "neighbor": "ground/g18",
+      "owner": "layout/ground/g16-g18",
+      "status": "relative-layout-authored-needs-owner-review",
+      "ownsWall": false
+    }
+  ],
   "floorCenter": [
     0,
     0
@@ -202,5 +211,8 @@
       "status": "partly-visible-not-modeled",
       "notes": "Pale curved surrounds/pier returns are visible but their complete spans and profiles are unmeasured. No guessed wall closes the passage."
     }
+  ],
+  "notes": [
+    "Owner confirms G18 beyond local -Z end beside Seat_G31/G24. Full-width arch is owned by the G16/G18/G20 layout; no duplicate local wall is added. Source seat/furniture transforms retained."
   ]
 }
