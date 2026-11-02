@@ -1,0 +1,663 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-g-lounge-028",
+  "objects": [
+    {
+      "id": "g28-sofa-01",
+      "type": "sofa",
+      "name": "Two-seat sofa · G78 / G77",
+      "position": [
+        -3.55,
+        0,
+        -1.5
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_G78",
+        "Seat_G77"
+      ],
+      "cameras": [
+        "G11",
+        "G15",
+        "G18"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-sofa-02",
+      "type": "sofa",
+      "name": "Two-seat sofa · G82 / G81",
+      "position": [
+        -3.55,
+        0,
+        1.5
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_G82",
+        "Seat_G81"
+      ],
+      "cameras": [
+        "G11",
+        "G15"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-chair-76",
+      "type": "armchair",
+      "name": "Teal armchair · G76",
+      "position": [
+        -2.6,
+        0,
+        -3.08
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#527e86",
+      "seats": [
+        "Seat_G76"
+      ],
+      "cameras": [
+        "G15",
+        "G18"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-chair-79",
+      "type": "armchair",
+      "name": "Teal armchair · G79",
+      "position": [
+        -2.4,
+        0,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#527e86",
+      "seats": [
+        "Seat_G79"
+      ],
+      "cameras": [
+        "G11",
+        "G15"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-chair-83",
+      "type": "armchair",
+      "name": "Teal armchair · G83",
+      "position": [
+        -2.6,
+        0,
+        3.08
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#527e86",
+      "seats": [
+        "Seat_G83"
+      ],
+      "cameras": [
+        "G11",
+        "G15"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-chair-84",
+      "type": "armchair",
+      "name": "Teal armchair · G84",
+      "position": [
+        2.6,
+        0,
+        -3.08
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#527e86",
+      "seats": [
+        "Seat_G84"
+      ],
+      "cameras": [
+        "G18",
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-chair-85",
+      "type": "armchair",
+      "name": "Teal armchair · G85",
+      "position": [
+        3.55,
+        0,
+        -2.05
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#527e86",
+      "seats": [
+        "Seat_G85"
+      ],
+      "cameras": [
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-chair-86",
+      "type": "armchair",
+      "name": "Teal armchair · G86",
+      "position": [
+        3.55,
+        0,
+        -0.95
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#527e86",
+      "seats": [
+        "Seat_G86"
+      ],
+      "cameras": [
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-chair-87",
+      "type": "armchair",
+      "name": "Teal armchair · G87",
+      "position": [
+        3.55,
+        0,
+        0.95
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#527e86",
+      "seats": [
+        "Seat_G87"
+      ],
+      "cameras": [
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-chair-88",
+      "type": "armchair",
+      "name": "Teal armchair · G88",
+      "position": [
+        3.55,
+        0,
+        2.05
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#527e86",
+      "seats": [
+        "Seat_G88"
+      ],
+      "cameras": [
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-chair-89",
+      "type": "armchair",
+      "name": "Teal armchair · G89",
+      "position": [
+        2.6,
+        0,
+        3.08
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#527e86",
+      "seats": [
+        "Seat_G89"
+      ],
+      "cameras": [
+        "G11",
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-coffee-table-23",
+      "type": "table",
+      "name": "Coffee table · G23",
+      "position": [
+        -2.6,
+        0,
+        -1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d8d5c6",
+      "seats": [],
+      "cameras": [
+        "G11",
+        "G15",
+        "G18"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G23"
+    },
+    {
+      "id": "g28-coffee-table-24",
+      "type": "table",
+      "name": "Coffee table · G24",
+      "position": [
+        -2.6,
+        0,
+        1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d8d5c6",
+      "seats": [],
+      "cameras": [
+        "G11",
+        "G15"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G24"
+    },
+    {
+      "id": "g28-coffee-table-25",
+      "type": "table",
+      "name": "Coffee table · G25",
+      "position": [
+        2.6,
+        0,
+        -1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d8d5c6",
+      "seats": [],
+      "cameras": [
+        "G11",
+        "G18",
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G25"
+    },
+    {
+      "id": "g28-coffee-table-26",
+      "type": "table",
+      "name": "Coffee table · G26",
+      "position": [
+        2.6,
+        0,
+        1.5
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d8d5c6",
+      "seats": [],
+      "cameras": [
+        "G11",
+        "G18",
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_G26"
+    },
+    {
+      "id": "g28-shelf-divider-01",
+      "type": "screen",
+      "name": "Curtain-side shelf divider",
+      "position": [
+        3.12,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        1.75,
+        2.3,
+        0.34
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#303b3a",
+      "seats": [],
+      "cameras": [
+        "G11",
+        "G18",
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review",
+      "variant": "open-shelving",
+      "notes": "Schematic shared shelf builder approximates the tall rounded dark divider. Exact outline, wood grain and ornaments require review."
+    },
+    {
+      "id": "g28-side-table-01",
+      "type": "table",
+      "name": "Round side table",
+      "position": [
+        -3.55,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        0.62,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a99c78",
+      "seats": [],
+      "cameras": [
+        "G11",
+        "G15",
+        "G18"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "Round glass/brass table approximated with shared opaque table builder; no external table identity."
+    },
+    {
+      "id": "g28-side-table-02",
+      "type": "table",
+      "name": "Round side table",
+      "position": [
+        3.55,
+        0,
+        -3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        0.62,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a99c78",
+      "seats": [],
+      "cameras": [
+        "G18",
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "Round glass/brass table approximated with shared opaque table builder; no external table identity."
+    },
+    {
+      "id": "g28-side-table-03",
+      "type": "table",
+      "name": "Round side table",
+      "position": [
+        3.55,
+        0,
+        3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        0.62,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a99c78",
+      "seats": [],
+      "cameras": [
+        "G11",
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "Round glass/brass table approximated with shared opaque table builder; no external table identity."
+    },
+    {
+      "id": "g28-plant-01",
+      "type": "plant",
+      "name": "Plant on reflective-side table",
+      "position": [
+        -3.55,
+        0.62,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.56,
+        1.25,
+        0.56
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c6d45",
+      "seats": [],
+      "cameras": [
+        "G11",
+        "G15",
+        "G18"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review",
+      "supportObjectId": "g28-side-table-01"
+    },
+    {
+      "id": "g28-floor-lamp-01",
+      "type": "floor-lamp",
+      "name": "Reflective-side floor lamp",
+      "position": [
+        -3.65,
+        0,
+        -3.4
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G15",
+        "G18"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g28-floor-lamp-02",
+      "type": "floor-lamp",
+      "name": "Curtain-side floor lamp",
+      "position": [
+        3.9,
+        0,
+        -3.15
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G18",
+        "G19"
+      ],
+      "confidence": "Evidence-supported draft; local position, orientation and dimensions estimated; needs human review"
+    }
+  ]
+}

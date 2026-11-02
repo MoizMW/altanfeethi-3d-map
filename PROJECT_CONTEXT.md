@@ -2,6 +2,7 @@
 
 ## Current phase
 
+G28's editable draft is available in `blocks/ground/g28/`, using G11/G15/G18/G19 normal and wide captures and their original chair/table ROIs. Two sofas and nine armchairs resolve 13 annotated seat slots (Seat_G76–G79 and Seat_G81–G89), with four core tables Table_G23–G26. Table_G27 and surrounding unlabelled end-lounge sofas remain background evidence outside the crop with unresolved ownership. One shelf divider, three side tables, one raised plant and two floor lamps bring the draft to 22 objects. The pale central path, schematic side glazing and 4.1 m ceiling use estimated dimensions; curved side-bay surrounds, curtains, slot order, seams and global calibration require review.
 G27 now extends the B + C + G combined layout left of G22. Current Seat_G69/G63 end joins current G22 Seat_G56/G62 end at X=-46.98; G27 yaw +90, center [-51.78,0,-7.2]. Shared arch is owned by G22 once. Width/glazing/path align, source furniture is retained without offsets/scaling, and all prior component placements stay fixed. Layout now contains twelve areas; all dimensions remain provisional.
 
 G12/G14 now fills the full G21/G22 span in the renamed B + C + G combined layout (same URL). C19/C20 end meets Zone C at X=-29.38; C28/C29 end is -46.98. Integration-only shell/arch extensions and end-cluster translations match 17.6 m without furniture scaling; the front corridor connects through the Zone C approach. Shared glazing and end-wall surfaces render once. See layouts/README.md for ownership and provisional dimensions.
