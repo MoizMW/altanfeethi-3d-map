@@ -40,6 +40,8 @@ Open `http://127.0.0.1:4209/?block=ground/g9`. Change the query value to another
 
 Available blocks: [G9 private seating](blocks/ground/g9/README.md), [G11 C-zone lounge](blocks/ground/g11/README.md), [G18 G-zone passage lounge](blocks/ground/g18/README.md), [G20 G-zone passage lounge](blocks/ground/g20/README.md), and [G32 SGS check-in](blocks/ground/g32/README.md). Use the header selector to switch blocks, or open `http://127.0.0.1:4209/?block=ground/g20` directly.
 
+G28 shelf lounge is also available at `http://127.0.0.1:4209/?block=ground/g28` — [draft evidence and review notes](blocks/ground/g28/README.md).
+
 Run `npm test` before sharing a branch. Run `npm run camera-registration` to open the camera tool at `http://127.0.0.1:4199`.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before creating or merging a block. Project evidence and reconstruction decisions are recorded in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).

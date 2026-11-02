@@ -1,0 +1,204 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-g-lounge-028",
+  "floorSize": [
+    8.4,
+    7.6
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-01T09:20:19.073Z",
+    "anchors": [
+      {
+        "camera": "G11",
+        "pixel": [
+          8131,
+          6817
+        ],
+        "heading": 128,
+        "status": "verified"
+      },
+      {
+        "camera": "G15",
+        "pixel": [
+          8234,
+          7082
+        ],
+        "heading": 49,
+        "status": "verified"
+      },
+      {
+        "camera": "G18",
+        "pixel": [
+          8740,
+          7133
+        ],
+        "heading": 304,
+        "status": "verified"
+      },
+      {
+        "camera": "G19",
+        "pixel": [
+          8594,
+          6872
+        ],
+        "heading": 228,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "Across the pale walkway from reflective backing in G15 toward curtain-side chairs in G19",
+      "z": "From Seat_G76/G84 toward Seat_G83/G89",
+      "y": "Up"
+    },
+    "sourceMapCrop": [
+      7700,
+      6400,
+      9200,
+      7600
+    ],
+    "mapReview": "Ground-floor map and four registered anchors reviewed. Map symbols provide relative topology; current furniture comes from camera views. No fitted map-to-world transform."
+  },
+  "footprint": [
+    [
+      -4.2,
+      -3.8
+    ],
+    [
+      4.2,
+      -3.8
+    ],
+    [
+      4.2,
+      3.8
+    ],
+    [
+      -4.2,
+      3.8
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g28-reflective-glazing",
+      "kind": "glass",
+      "start": [
+        -4.15,
+        -3.7
+      ],
+      "end": [
+        -4.15,
+        3.7
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g28",
+      "sources": [
+        "G11",
+        "G15",
+        "G18"
+      ],
+      "confidence": "Visible reflective backing; span and height estimated",
+      "notes": "Schematic glass. Geometric lower film, accurate reflections, pale piers and curved side-bay surrounds unresolved."
+    },
+    {
+      "id": "g28-curtained-glazing",
+      "kind": "glass",
+      "start": [
+        4.15,
+        -3.7
+      ],
+      "end": [
+        4.15,
+        3.7
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g28",
+      "sources": [
+        "G11",
+        "G18",
+        "G19"
+      ],
+      "confidence": "Window framing visible behind sheer curtains in G19-wide; span and height estimated",
+      "notes": "Curtains and exact frame divisions are not represented by the shared schematic glass."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "circulation": {
+    "id": "g28-central-walkway",
+    "polygon": [
+      [
+        -1.4,
+        -3.8
+      ],
+      [
+        1.4,
+        -3.8
+      ],
+      [
+        1.4,
+        3.8
+      ],
+      [
+        -1.4,
+        3.8
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "status": "visually-supported-width-estimated",
+    "sources": [
+      "G11",
+      "G18"
+    ],
+    "notes": "Pale stone between dark seating strips. Both crop ends remain clear; background end lounge around Table_G27 is outside this crop."
+  },
+  "ceiling": {
+    "size": [
+      8.4,
+      7.6
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "boundaryReview": [
+    {
+      "id": "g28-negative-z-seam",
+      "kind": "open-corridor",
+      "status": "neighbor-and-seam-unresolved",
+      "sources": [
+        "G18"
+      ]
+    },
+    {
+      "id": "g28-positive-z-seam",
+      "kind": "unknown",
+      "status": "background-end-lounge-outside-crop",
+      "sources": [
+        "G11"
+      ],
+      "notes": "Table_G27 and surrounding unlabelled sofas lie beyond this draft. Do not claim a through-building route or enclose this end from the crop rectangle."
+    },
+    {
+      "id": "g28-side-bay-arches",
+      "kind": "unknown",
+      "status": "profile-and-ownership-unresolved",
+      "sources": [
+        "G15",
+        "G19"
+      ],
+      "notes": "Wide views show pale curved surrounds/pier returns at side-bay ends. Exact extents and shared ownership require review; no guessed wall spans added."
+    }
+  ]
+}

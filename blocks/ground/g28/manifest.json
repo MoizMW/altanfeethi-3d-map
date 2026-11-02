@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-g-lounge-028",
+  "slug": "g28",
+  "name": "G28 · G-zone shelf lounge",
+  "floor": "ground",
+  "groups": [
+    "g28"
+  ],
+  "zone": "G",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}
