@@ -1,0 +1,205 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-g-lounge-021",
+  "floorSize": [
+    8.4,
+    8.8
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-10-29T05:38:50.669Z",
+    "registrationSha256": "946614fa7f414bbe43488accf9e0ead7b646473813e83942ad343432c756da51",
+    "anchors": [
+      {
+        "camera": "G1",
+        "pixel": [
+          6533,
+          5701
+        ],
+        "heading": 233,
+        "status": "verified"
+      },
+      {
+        "camera": "G2",
+        "pixel": [
+          6667,
+          5946
+        ],
+        "heading": 299,
+        "status": "verified"
+      },
+      {
+        "camera": "G4",
+        "pixel": [
+          6074,
+          5646
+        ],
+        "heading": 131,
+        "status": "verified"
+      },
+      {
+        "camera": "G5",
+        "pixel": [
+          6248,
+          5879
+        ],
+        "heading": 62,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "Across the pale path, from reflective glazing/four armless chairs (G5) toward curtained sofas (G1)",
+      "z": "Along the path, from Seat_G38/Seat_G43 end toward Seat_G42/Seat_G48 end",
+      "y": "Up"
+    },
+    "sourceMapCrop": [
+      5700,
+      5250,
+      7200,
+      6500
+    ],
+    "mapReview": "Two seating banks around a passage beside arrival circulation. Photos supersede illustrated furniture symbols and establish the asymmetric layout."
+  },
+  "footprint": [
+    [
+      -4.2,
+      -4.4
+    ],
+    [
+      4.2,
+      -4.4
+    ],
+    [
+      4.2,
+      4.4
+    ],
+    [
+      -4.2,
+      4.4
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g21-reflective-glazing",
+      "kind": "glass",
+      "start": [
+        -4.15,
+        -4.3
+      ],
+      "end": [
+        -4.15,
+        4.3
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g21",
+      "sources": [
+        "G5",
+        "G2",
+        "G4"
+      ],
+      "confidence": "Visible backing; full span, height and frame spacing estimated. Reflective patterned lower panel.",
+      "notes": "Shared schematic glazing; detailed pattern, accurate reflections and curtain fabric are unresolved."
+    },
+    {
+      "id": "g21-curtained-glazing",
+      "kind": "glass",
+      "start": [
+        4.15,
+        -4.3
+      ],
+      "end": [
+        4.15,
+        4.3
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g21",
+      "sources": [
+        "G1",
+        "G2",
+        "G4"
+      ],
+      "confidence": "Visible backing; full span, height and frame spacing estimated. Glazing inferred behind visible sheer curtains.",
+      "notes": "Shared schematic glazing; detailed pattern, accurate reflections and curtain fabric are unresolved."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "circulation": {
+    "id": "g21-central-walkway",
+    "polygon": [
+      [
+        -1.4,
+        -4.4
+      ],
+      [
+        1.4,
+        -4.4
+      ],
+      [
+        1.4,
+        4.4
+      ],
+      [
+        -1.4,
+        4.4
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "sources": [
+      "G2",
+      "G4"
+    ],
+    "status": "visually-supported-width-estimated",
+    "notes": "Pale central path with dark stone seating strips; both ends remain open."
+  },
+  "ceiling": {
+    "size": [
+      8.4,
+      8.8
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "boundaryReview": [
+    {
+      "id": "g21-negative-z-path",
+      "kind": "open-corridor",
+      "sources": [
+        "G2"
+      ],
+      "status": "reception-side-neighbor-seam-unresolved"
+    },
+    {
+      "id": "g21-positive-z-path",
+      "kind": "open-corridor",
+      "sources": [
+        "G4"
+      ],
+      "candidateNeighborGroup": "g22",
+      "status": "neighboring-seating-seam-unresolved"
+    },
+    {
+      "id": "g21-arch-surrounds",
+      "kind": "unknown",
+      "sources": [
+        "G2",
+        "G4"
+      ],
+      "status": "partly-visible-not-modeled",
+      "notes": "Curved pale surrounds/pier returns are visible but full profiles, spans and ownership are unmeasured."
+    }
+  ]
+}

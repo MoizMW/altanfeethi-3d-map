@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-g-lounge-021",
+  "slug": "g21",
+  "name": "G21 \u00b7 G-zone mixed seating lounge",
+  "floor": "ground",
+  "groups": [
+    "g21"
+  ],
+  "zone": "G",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}
