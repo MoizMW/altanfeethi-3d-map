@@ -114,6 +114,14 @@ git push -u origin block/ground-g10
 
 ## 7. Merge rules
 
+### Spatial merge guided by the owner
+
+The owner selects which blocks to combine and describes their relative order, viewing direction, corridor location and connections. Record this description before placing blocks; left/right must be tied to that stated view or a named camera. Use the map and registered camera positions/headings to interpret it, then inspect normal and wide views from the selected blocks and any nearby cameras that show the connecting area. `Cor1` and `Cor2` are corridor cameras in `evidence/camera-snapshots/`; mark their actual positions in registration before using them for spatial placement. Their optional zone/group fields may stay blank.
+
+Build a provisional connected layout from the owner's description and supporting views, preserving walking space. Connectivity does not mean every pair of blocks shares a doorway. A camera's group does not limit which corridor or neighboring block it can support. Record unknown spans and estimates, and refine placement, corridor widths and boundaries through the owner's subsequent instructions.
+
+Keep independent block coordinates and identities; compose them using floor-level position/rotation transforms. Shared corridor sections need an agreed owner and boundary, and each shared wall/opening is rendered once. Reconcile conflicting estimated dimensions explicitly; do not stretch furniture to force a join. Document evidence, connection endpoints and unresolved seams alongside the combined layout. Git file merging alone does not establish spatial alignment. The first combined viewer is available at `/?layout=ground/g9-g10`; placement transforms and shared boundaries are edited in `layouts/ground/g9-g10.json`. See [layout workflow](layouts/README.md). A visual placement editor is not yet implemented.
+
 Use one pull request per block or one small shared-contract change. The integrator checks validation, stable IDs, camera evidence, top-view alignment and seams before merging.
 
 Before final review, update the branch from main:

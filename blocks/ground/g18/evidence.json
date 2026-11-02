@@ -15,14 +15,21 @@
     "G29": "evidence/camera-snapshots/G29.jpg"
   },
   "notes": [
+    "Owner upholstery correction: all six single-seat armchairs use shared blue upholstery #627d86, matching G16/other lounge chairs; previous green/teal appearance superseded.",
+    "Owner correction: swap top/bottom seat assignments between opposing rows while preserving all furniture positions, yaws, scales and physical IDs. Opposing sofa slots are reversed during transfer to retain the visible column order.",
     "Four two-seat sofas and six teal armchairs resolve Seat_G10\u2013Seat_G23 once across the overlapping views. Four coffee tables, Table_G3\u2013Table_G6, belong to the main seating draft.",
-    "Table_G1 and Table_G2 are visible beyond the core in G25. They are editable context with unresolved neighboring ownership; background seating is excluded rather than assigned invented seat IDs.",
+    "Owner removed the two rightmost context tables Table_G1/Table_G2. They are owned by G16 and remain external observations only; no duplicate geometry is rendered in G18.",
     "G28 shows the reflective-glazing side; G29 shows the curtain side. G24/G25 establish opposing rows and a pale central path between dark stone seating strips. Reflections are not duplicate physical furniture.",
     "Local sizes and shell extents are estimated. Registered map anchors are preserved without deriving world yaw or claiming global calibration.",
     "Three round side tables, three floor lamps and two plants are simplified context. Curtains, patterned glazing, table lamp, artifacts and partly occluded arch surrounds are not reconstructed in this draft."
   ],
-  "wideSnapshots": {},
-  "wideCaptureStatus": "Checked supplied wide-capture folder: no G24/G25/G28/G29 files available.",
+  "wideSnapshots": {
+    "G24": "evidence/wide capture snapshots/G24.jpg",
+    "G25": "evidence/wide capture snapshots/G25.jpg",
+    "G28": "evidence/wide capture snapshots/G28.jpg",
+    "G29": "evidence/wide capture snapshots/G29.jpg"
+  },
+  "wideCaptureStatus": "Wide captures are now available in the shared evidence folder and linked in the editor; structural reassessment from these additional views is pending.",
   "rois": {
     "G24": {
       "chairs": "evidence/rois/chair-rois/g18/G24_to_g18.json",
@@ -50,123 +57,123 @@
     {
       "objectId": "g18-sofa-01",
       "seats": [
-        "Seat_G12",
-        "Seat_G11"
+        "Seat_G19",
+        "Seat_G18"
       ],
       "sources": [
         "G24",
         "G25",
         "G28"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
       "objectId": "g18-sofa-02",
-      "seats": [
-        "Seat_G15",
-        "Seat_G14"
-      ],
-      "sources": [
-        "G24",
-        "G28"
-      ],
-      "status": "draft-needs-owner-review"
-    },
-    {
-      "objectId": "g18-sofa-03",
-      "seats": [
-        "Seat_G18",
-        "Seat_G19"
-      ],
-      "sources": [
-        "G25",
-        "G29"
-      ],
-      "status": "draft-needs-owner-review"
-    },
-    {
-      "objectId": "g18-sofa-04",
       "seats": [
         "Seat_G22",
         "Seat_G21"
       ],
       "sources": [
         "G24",
-        "G29"
+        "G28"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
-      "objectId": "g18-chair-10",
+      "objectId": "g18-sofa-03",
       "seats": [
-        "Seat_G10"
+        "Seat_G11",
+        "Seat_G12"
       ],
       "sources": [
         "G25",
-        "G28"
+        "G29"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
-      "objectId": "g18-chair-13",
+      "objectId": "g18-sofa-04",
       "seats": [
-        "Seat_G13"
+        "Seat_G14",
+        "Seat_G15"
       ],
       "sources": [
         "G24",
-        "G28"
+        "G29"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
-      "objectId": "g18-chair-16",
-      "seats": [
-        "Seat_G16"
-      ],
-      "sources": [
-        "G24",
-        "G28"
-      ],
-      "status": "draft-needs-owner-review"
-    },
-    {
-      "objectId": "g18-chair-17",
+      "objectId": "g18-chair-10",
       "seats": [
         "Seat_G17"
       ],
       "sources": [
         "G25",
-        "G29"
+        "G28"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
-      "objectId": "g18-chair-20",
+      "objectId": "g18-chair-13",
       "seats": [
         "Seat_G20"
       ],
       "sources": [
         "G24",
-        "G29"
+        "G28"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
-      "objectId": "g18-chair-23",
+      "objectId": "g18-chair-16",
       "seats": [
         "Seat_G23"
       ],
       "sources": [
         "G24",
+        "G28"
+      ],
+      "status": "owner-corrected-opposing-row-assignment"
+    },
+    {
+      "objectId": "g18-chair-17",
+      "seats": [
+        "Seat_G10"
+      ],
+      "sources": [
+        "G25",
         "G29"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
+    },
+    {
+      "objectId": "g18-chair-20",
+      "seats": [
+        "Seat_G13"
+      ],
+      "sources": [
+        "G24",
+        "G29"
+      ],
+      "status": "owner-corrected-opposing-row-assignment"
+    },
+    {
+      "objectId": "g18-chair-23",
+      "seats": [
+        "Seat_G16"
+      ],
+      "sources": [
+        "G24",
+        "G29"
+      ],
+      "status": "owner-corrected-opposing-row-assignment"
     }
   ],
   "reviewItems": [
-    "Confirm sofa slot order and physical chair orientation against G28/G29; IDs are ROI-derived, not human-approved.",
+    "Owner-corrected row identities take precedence over original draft; preserve edited orientations and positions.",
     "Confirm the footprint, walkway width, side-glazing heights, curtain backing, and curved surround/pier geometry.",
-    "Confirm whether Table_G1/G2 belong to G18 or a neighboring block; transfer their stable physical IDs if ownership changes.",
+    "Table_G1/G2 are references to G16 only; confirm the physical seam before spatial merging.",
     "Resolve main block endpoints and neighboring seams before composition.",
     "Calibrate floor-map basis and scale before assigning a global transform.",
     "Review contextual plants, side tables, lamps and their dimensions; decorative glass/brass remains schematic."
@@ -175,8 +182,138 @@
     "position": "estimated-local",
     "orientation": "estimated-from-overlapping-views",
     "dimensions": "unmeasured-estimates",
-    "identity": "ROI-derived-needs-human-review",
+    "identity": "owner-corrected-row-assignment; ROI files retained unchanged",
     "appearance": "shared-procedural-draft",
     "globalAlignment": "unresolved"
-  }
+  },
+  "ownerSeatCorrections": [
+    {
+      "objectId": "g18-sofa-01",
+      "previousSeats": [
+        "Seat_G12",
+        "Seat_G11"
+      ],
+      "seats": [
+        "Seat_G19",
+        "Seat_G18"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g18-sofa-03",
+      "previousSeats": [
+        "Seat_G18",
+        "Seat_G19"
+      ],
+      "seats": [
+        "Seat_G11",
+        "Seat_G12"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g18-sofa-02",
+      "previousSeats": [
+        "Seat_G15",
+        "Seat_G14"
+      ],
+      "seats": [
+        "Seat_G22",
+        "Seat_G21"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g18-sofa-04",
+      "previousSeats": [
+        "Seat_G21",
+        "Seat_G22"
+      ],
+      "seats": [
+        "Seat_G14",
+        "Seat_G15"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g18-chair-10",
+      "previousSeats": [
+        "Seat_G10"
+      ],
+      "seats": [
+        "Seat_G17"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g18-chair-17",
+      "previousSeats": [
+        "Seat_G17"
+      ],
+      "seats": [
+        "Seat_G10"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g18-chair-13",
+      "previousSeats": [
+        "Seat_G13"
+      ],
+      "seats": [
+        "Seat_G20"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g18-chair-20",
+      "previousSeats": [
+        "Seat_G20"
+      ],
+      "seats": [
+        "Seat_G13"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g18-chair-16",
+      "previousSeats": [
+        "Seat_G16"
+      ],
+      "seats": [
+        "Seat_G23"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g18-chair-23",
+      "previousSeats": [
+        "Seat_G23"
+      ],
+      "seats": [
+        "Seat_G16"
+      ],
+      "source": "owner top/bottom row correction"
+    }
+  ],
+  "externalObservations": [
+    {
+      "externalId": "Table_G1",
+      "ownerBlock": "ground/g16",
+      "objectId": "g16-table-01",
+      "camera": "G25",
+      "roiFile": "evidence/rois/table-rois/g18/G25_to_g18.json",
+      "status": "Removed duplicate context geometry per owner; G16 owns identity, global placement unresolved",
+      "renderLocally": false
+    },
+    {
+      "externalId": "Table_G2",
+      "ownerBlock": "ground/g16",
+      "objectId": "g16-table-02",
+      "camera": "G25",
+      "roiFile": "evidence/rois/table-rois/g18/G25_to_g18.json",
+      "status": "Removed duplicate context geometry per owner; G16 owns identity, global placement unresolved",
+      "renderLocally": false
+    }
+  ]
 }

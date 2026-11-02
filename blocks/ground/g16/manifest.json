@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-g-lounge-016",
+  "slug": "g16",
+  "name": "G16 \u00b7 Window lounge",
+  "floor": "ground",
+  "groups": [
+    "g16"
+  ],
+  "zone": "G",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

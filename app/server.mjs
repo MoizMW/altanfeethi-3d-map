@@ -4,6 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {resolve,extname,basename} from 'node:path';
 import {createHash,randomUUID} from 'node:crypto';
 import {validateBlock} from '../shared/schema/block-schema.js';
+import {composeLayout} from './layouts.mjs';
 
 const appRoot=fileURLToPath(new URL('./',import.meta.url));
 const projectRoot=resolve(appRoot,'..');
@@ -35,8 +36,11 @@ async function listBlocks(){
     let entries=[];try{entries=await readdir(resolve(blocksRoot,floor),{withFileTypes:true});}catch{}
     for(const entry of entries)if(entry.isDirectory())try{const manifest=JSON.parse(await readFile(resolve(blocksRoot,floor,entry.name,'manifest.json'),'utf8'));result.push({key:`${floor}/${entry.name}`,id:manifest.id,name:manifest.name,floor,status:manifest.status,owner:manifest.owner});}catch{}
   }
+  for(const floor of ['ground','first']){let files=[];try{files=await readdir(resolve(projectRoot,'layouts',floor));}catch{}for(const file of files.filter(f=>f.endsWith('.json'))){const layout=JSON.parse(await readFile(resolve(projectRoot,'layouts',floor,file),'utf8'));result.push({key:`layout:${floor}/${file.slice(0,-5)}`,name:layout.name,floor,status:layout.status});}}
   return result;
 }
+
+const loadScene=url=>url.searchParams.has('layout')?composeLayout(projectRoot,url.searchParams.get('layout'),loadBlock):loadBlock(blockKey(url.searchParams.get('block')||undefined));
 
 function send(res,status,data,type='application/json; charset=utf-8'){res.writeHead(status,{'Content-Type':type,'Cache-Control':type.startsWith('image/')?'public, max-age=60':'no-store'});res.end(typeof data==='string'||Buffer.isBuffer(data)?data:JSON.stringify(data));}
 
@@ -65,14 +69,15 @@ export const server=createServer(async(req,res)=>{
     if(url.pathname==='/api/blocks'&&req.method==='GET')return send(res,200,{blocks:await listBlocks()});
     if(url.pathname==='/api/block'){
       const key=blockKey(url.searchParams.get('block')||undefined);
-      if(req.method==='GET'){const data=await loadBlock(key);return send(res,200,{revision:data.revision,block:data.block,key});}
+      if(req.method==='GET'){const data=await loadScene(url);return send(res,200,{revision:data.revision,block:data.block,key});}
+      if(url.searchParams.has('layout'))return send(res,405,{error:'Edit furniture in its source block; layout placements are stored separately.'});
       if(req.method==='PUT')return saveObjects(req,res,key);
       return send(res,405,{error:'Method not allowed'});
     }
     if(url.pathname.startsWith('/api/evidence/camera/')&&req.method==='GET'){
       const key=blockKey(url.searchParams.get('block')||undefined),id=decodeURIComponent(basename(url.pathname));
       if(!/^[A-Za-z0-9_-]{1,80}$/.test(id))return send(res,404,{error:'Not found'});
-      const {block}=await loadBlock(key);if(!block.evidence.cameras.includes(id))return send(res,404,{error:'Camera is not evidence for this block'});
+      const {block}=await loadScene(url);if(!block.evidence.cameras.includes(id))return send(res,404,{error:'Camera is not evidence for this block'});
       if(url.searchParams.get('wide')==='1'){
         const path=block.evidence.wideSnapshots?.[id];if(!path)return send(res,404,{error:'No wide capture for this camera'});
         const target=resolve(projectRoot,path);if(!target.startsWith(evidenceRoot+'/'))return send(res,403,{error:'Evidence path rejected'});
@@ -81,7 +86,7 @@ export const server=createServer(async(req,res)=>{
       return send(res,200,await readFile(resolve(evidenceRoot,'camera-snapshots',`${id}.jpg`)),types['.jpg']);
     }
     if(url.pathname==='/api/evidence/map'&&req.method==='GET'){
-      const {block}=await loadBlock(blockKey(url.searchParams.get('block')||undefined));
+      const {block}=await loadScene(url);
       const target=resolve(projectRoot,block.placement.map);if(!target.startsWith(resolve(evidenceRoot,'maps')+'/'))return send(res,403,{error:'Map path rejected'});
       return send(res,200,await readFile(target),types[extname(target)]||'application/octet-stream');
     }

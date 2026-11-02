@@ -1,0 +1,76 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-g-lounge-016",
+  "cameras": [
+    "G20",
+    "G23"
+  ],
+  "snapshots": {
+    "G20": "evidence/camera-snapshots/G20.jpg",
+    "G23": "evidence/camera-snapshots/G23.jpg"
+  },
+  "wideSnapshots": {
+    "G20": "evidence/wide capture snapshots/G20.jpg",
+    "G23": "evidence/wide capture snapshots/G23.jpg"
+  },
+  "rois": {
+    "G20": {
+      "chairs": "evidence/rois/chair-rois/g16/G20_to_g16.json",
+      "tables": "evidence/rois/table-rois/g16/G20_to_g16.json"
+    },
+    "G23": {
+      "chairs": "evidence/rois/chair-rois/g16/G23_to_g16.json",
+      "tables": "evidence/rois/table-rois/g16/G23_to_g16.json"
+    }
+  },
+  "seatMappings": {
+    "Seat_G6": "g16-sofa-01",
+    "Seat_G5": "g16-sofa-01",
+    "Seat_G7": "g16-chair-07",
+    "Seat_G4": "g16-chair-04",
+    "Seat_G1": "g16-chair-01",
+    "Seat_G2": "g16-chair-02"
+  },
+  "tableMappings": {
+    "Table_G2": "g16-table-02",
+    "Table_G1": "g16-table-01"
+  },
+  "contextOnlyRois": {
+    "Table_G5": "Background beyond arch in G20; owned by ground/g18 object g18-coffee-table-5, not rendered in G16"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per owner",
+    "roiUsage": "ROIs apply only to normal detection snapshots",
+    "capturedAt": null
+  },
+  "notes": [
+    "Owner clarification supersedes curtain interpretation on the back span behind G4-G7: glass only. Pale floor fills lower-left walking area; G2-side strip is dark checked floor. Saved furniture retained.",
+    "Owner refined chair positions and rotations; preserve saved objects.json. Owner confirms full-width arch behind G7 and G23 at G9-to-G-zone entrance. Walking route beside G1/G2 comes from G9 passage and turns left.",
+    "Six ROI seat slots: G1/G2/G4/G7 armchairs and G5/G6 on one sofa; two main tables Table_G1 and Table_G2. Repeated observations are one physical object. Sofa slot order and chair positions need owner review.",
+    "G20/G23 wide show curtained glazing, a large rounded neighboring-lounge arch, brass side tables/lamps and a console/artwork nook. Shared builders match existing block style; material motifs remain simplified.",
+    "Table_G5 ROI in G20 refers to background seating beyond the arch and is recorded as contextual evidence, not duplicated here. Seat_G3 is absent from supplied ROIs and is not invented.",
+    "Normal ROIs are not transferred onto wide captures. No measured room dimensions or calibrated camera projection is claimed."
+  ],
+  "reviewItems": [
+    "Confirm sofa G5/G6 slot order; preserve owner-refined chair transforms",
+    "Confirm Table_G5 ownership and whether it should be inside an expanded G16 boundary",
+    "Confirm window return, console wall extents and walking-strip alignment",
+    "Review neighboring arch seam before merging; G16 is not automatically added to existing layout"
+  ],
+  "cameraRoles": {
+    "G23": "At G-zone entrance from B-zone/G9 walking passage; supports entry and left-turn route",
+    "G20": "Window seating and full-width neighboring arch context"
+  },
+  "externalObservations": [
+    {
+      "externalId": "Table_G5",
+      "ownerBlock": "ground/g18",
+      "objectId": "g18-coffee-table-5",
+      "camera": "G20",
+      "roiFile": "evidence/rois/table-rois/g16/G20_to_g16.json",
+      "renderLocally": false,
+      "status": "Resolved from merged G18 identity; seam alignment pending"
+    }
+  ]
+}

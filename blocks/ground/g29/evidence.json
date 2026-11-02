@@ -1,0 +1,59 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-g-lounge-029",
+  "cameras": ["G16", "G17"],
+  "snapshots": {
+    "G16": "evidence/camera-snapshots/G16.jpg",
+    "G17": "evidence/camera-snapshots/G17.jpg"
+  },
+  "wideSnapshots": {
+    "G16": "evidence/wide capture snapshots/G16.jpg",
+    "G17": "evidence/wide capture snapshots/G17.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Same camera mounts per supplied wide-capture guide",
+    "zoom": "Wider architectural views",
+    "roiUsage": "Existing ROIs apply only to normal detection snapshots",
+    "capturedAt": null
+  },
+  "rois": {
+    "G16": {
+      "chairs": "evidence/rois/chair-rois/g29/G16_to_g29.json",
+      "tables": "evidence/rois/table-rois/g29/G16_to_g29.json"
+    },
+    "G17": {
+      "chairs": "evidence/rois/chair-rois/g29/G17_to_g29.json",
+      "tables": "evidence/rois/table-rois/g29/G17_to_g29.json"
+    }
+  },
+  "sourceImageSize": [1920, 1080],
+  "roiCoordinateStatus": "Normal-view ROI labels were compared with both 1920x1080 snapshots. Historical authoring resolution is unrecorded; pixel rectangles are not 3D coordinates and were not reused on wide captures.",
+  "notes": [
+    "G16 and G17 show the same three sofas from opposite ends. Six distinct seat labels, Seat_G90–Seat_G95, resolve to three two-seat physical objects; Table_G27 is one shared coffee table.",
+    "The photographed lounge has light upholstery with blue/teal cushions, pale square coffee table, light floor tile, sheer curtains, plants, side tables and a floor lamp. Shared procedural builders simplify these finishes and accessories.",
+    "Owner confirms the boundary behind Seat_G92/G93 is 30% solid from the G92 end and 70% window, the boundary behind Seat_G94/G95 is 20% solid toward the right-side pier and 80% window, and the wall behind Seat_G90/G91 is fully solid. G16/G17 wide captures support the visible curtains, pier and decorative panel; segment lengths and heights remain estimated.",
+    "G16/G17 registration points and image headings are preserved as map evidence; no camera heading has been copied into world yaw."
+  ],
+  "seatCorrespondence": [
+    {"objectId": "g29-sofa-01", "seats": ["Seat_G90", "Seat_G91"], "sources": ["G17"], "status": "ROI-derived-needs-owner-review"},
+    {"objectId": "g29-sofa-02", "seats": ["Seat_G92", "Seat_G93"], "sources": ["G16", "G17"], "status": "ROI-derived-needs-owner-review"},
+    {"objectId": "g29-sofa-03", "seats": ["Seat_G94", "Seat_G95"], "sources": ["G16"], "status": "ROI-derived-needs-owner-review"}
+  ],
+  "reviewItems": [
+    "Confirm the physical sofa-to-seat correspondence and left/right slot order against both normal views and ROI overlays.",
+    "Review side-table and lamp correspondence across the wide views; context placements are schematic.",
+    "Review the left/right placement of the owner-confirmed 30% and 20% wall sections against the wide views and confirm exact lengths on site.",
+    "Confirm the decorative panel finish and pier depth on the complete wall behind Seat_G90/G91.",
+    "Fit the floor map transform and resolve neighboring ownership and seams before composing G29 with adjacent blocks.",
+    "Review sofa dimensions, coffee-table proportions, upholstery finish and pale floor material on site."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-overlapping-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-derived-needs-human-review",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

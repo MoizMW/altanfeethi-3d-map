@@ -1,0 +1,309 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-arrival-exit-002",
+  "floorSize": [
+    8.4,
+    7.2
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "anchors": [
+      {
+        "camera": "E13",
+        "pixel": [
+          5591,
+          5751
+        ],
+        "heading": 35
+      }
+    ],
+    "localAxes": {
+      "x": "Camera-view left (-X, G21) to right (+X, G20), following owner description",
+      "z": "Toward exit/camera (+Z); inward reception/path end is -Z",
+      "y": "Up"
+    },
+    "mapReview": "Registration places E13 at Arrival Exit Gate in front of Arrival Reception; adjacent G20/G21 cameras support surrounding lounge topology. Raw map pixels are not world coordinates."
+  },
+  "footprint": [
+    [
+      -4.2,
+      -3.6
+    ],
+    [
+      4.2,
+      -3.6
+    ],
+    [
+      4.2,
+      3.6
+    ],
+    [
+      -4.2,
+      3.6
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g2-left-arch-wall",
+      "kind": "solid",
+      "start": [
+        -4.2,
+        -3.6
+      ],
+      "end": [
+        -4.2,
+        3.6
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g2",
+      "neighbor": "ground/g21",
+      "sources": [
+        "E13",
+        "G4-wide",
+        "owner-description"
+      ],
+      "confidence": "Side arches/neighbor relation from camera views and owner; wall span and elliptical profile estimated"
+    },
+    {
+      "id": "g2-right-arch-wall",
+      "kind": "solid",
+      "start": [
+        4.2,
+        -3.6
+      ],
+      "end": [
+        4.2,
+        3.6
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g2",
+      "neighbor": "ground/g20",
+      "sources": [
+        "E13",
+        "G27-wide",
+        "owner-description"
+      ],
+      "confidence": "Side arches/neighbor relation from camera views and owner; wall span and elliptical profile estimated"
+    },
+    {
+      "id": "g2-reception-backing",
+      "kind": "glass",
+      "variant": "patterned-smoked",
+      "start": [
+        -4.2,
+        -3.6
+      ],
+      "end": [
+        0,
+        -3.6
+      ],
+      "height": 4.1,
+      "thickness": 0.025,
+      "color": "#65716d",
+      "owner": "ground/g2",
+      "sources": [
+        "E13"
+      ],
+      "confidence": "Dark reflective reception backing observed; glazing interpretation, pattern and extent provisional"
+    },
+    {
+      "id": "g2-reception-rear-pillar",
+      "kind": "solid",
+      "start": [
+        -0.225,
+        -3.6
+      ],
+      "end": [
+        0.225,
+        -3.6
+      ],
+      "height": 4.1,
+      "thickness": 0.45,
+      "color": "#e7e3d9",
+      "owner": "ground/g2",
+      "sources": [
+        "E13-wide",
+        "owner-description"
+      ],
+      "confidence": "White pier and dark skirting visible behind reception/right console; 0.45 m square section and height estimated"
+    },
+    {
+      "id": "g2-right-rear-pillar",
+      "kind": "solid",
+      "start": [
+        3.975,
+        -3.6
+      ],
+      "end": [
+        4.425,
+        -3.6
+      ],
+      "height": 4.1,
+      "thickness": 0.45,
+      "color": "#e7e3d9",
+      "owner": "ground/g2",
+      "sources": [
+        "E13-wide",
+        "owner-description"
+      ],
+      "confidence": "White pier and dark skirting visible behind reception/right console; 0.45 m square section and height estimated"
+    }
+  ],
+  "openings": [
+    {
+      "id": "g2-left-lounge-arch",
+      "wallId": "g2-left-arch-wall",
+      "kind": "rounded-passage",
+      "offset": 3.6,
+      "width": 6.4,
+      "springHeight": 1.65,
+      "height": 3.35,
+      "confidence": "Approximate broad arch; curve and pier dimensions require owner refinement"
+    },
+    {
+      "id": "g2-right-lounge-arch",
+      "wallId": "g2-right-arch-wall",
+      "kind": "rounded-passage",
+      "offset": 3.6,
+      "width": 6.4,
+      "springHeight": 1.65,
+      "height": 3.35,
+      "confidence": "Approximate broad arch; curve and pier dimensions require owner refinement"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "g2-left-lounge-arch",
+      "neighbor": "ground/g21",
+      "status": "needs-global-alignment",
+      "ownsWall": true
+    },
+    {
+      "id": "g2-right-lounge-arch",
+      "neighbor": "ground/g20",
+      "status": "needs-global-alignment",
+      "ownsWall": true
+    },
+    {
+      "id": "g2-arrival-exit",
+      "kind": "automatic-sliding-gate",
+      "neighbor": "arrival exit below E13",
+      "start": [
+        -1.8,
+        3.6
+      ],
+      "end": [
+        1.8,
+        3.6
+      ],
+      "ownsWall": false,
+      "status": "Owner reference now supplies gate appearance; dimensions and threshold position estimated",
+      "objectId": "g2-automatic-exit-gate"
+    },
+    {
+      "id": "g2-inward-path",
+      "kind": "open-connection",
+      "neighbor": "interior circulation",
+      "start": [
+        0.3,
+        -3.6
+      ],
+      "end": [
+        4.2,
+        -3.6
+      ],
+      "ownsWall": false,
+      "status": "visible route beside reception; global alignment pending"
+    }
+  ],
+  "ceiling": {
+    "height": 4.1,
+    "size": [
+      8.4,
+      7.2
+    ],
+    "defaultVisible": false,
+    "confidence": "Plain visualization plane from owner approximate 12\u201315 ft height; fixtures unresolved"
+  },
+  "circulation": {
+    "polygon": [
+      [
+        -4.2,
+        -0.8
+      ],
+      [
+        0,
+        -0.8
+      ],
+      [
+        0,
+        -3.6
+      ],
+      [
+        4.2,
+        -3.6
+      ],
+      [
+        4.2,
+        3.6
+      ],
+      [
+        -4.2,
+        3.6
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "route": {
+      "from": "interior path beside reception",
+      "to": "arrival exit below E13",
+      "centerline": [
+        [
+          2.1,
+          -3.6
+        ],
+        [
+          2.1,
+          1.5
+        ],
+        [
+          0,
+          2.4
+        ],
+        [
+          0,
+          3.6
+        ]
+      ],
+      "status": "owner-confirmed connectivity; dimensions provisional"
+    },
+    "connections": [
+      {
+        "id": "g2-arrival-exit",
+        "destination": "exit below E13",
+        "kind": "open-connection"
+      },
+      {
+        "id": "g2-inward-path",
+        "destination": "inward circulation",
+        "kind": "open-connection"
+      }
+    ],
+    "confidence": "Pale exit approach and right-of-counter path visible; edge widths and depth estimated"
+  },
+  "notes": [
+    "Owner: E13 is the only G2 camera. It overlooks exit below camera; reception occupies half the forward span and entry/exit path the other half. G20 is right and G21 left in owner camera-view reference.",
+    "Exit threshold is an open connection at +Z. Door leaves, access hardware and exact exit width are not visible and are not modeled.",
+    "Counter is offset to left; no barrier crosses the right-hand passage. Side arch ownership is provisional until a future merge. Neighboring seating seen through arches is excluded.",
+    "Working 8.4 by 7.2 m footprint, broad arch profiles, dark backing material and shell extents are estimates, not traced metric boundaries.",
+    "Owner gate reference supersedes earlier unresolved exit hardware: G2 front +Z edge has double automatic sliding glass leaves, fixed side panes and a sensor post. Static openFraction preview is editable; no live access-control connection.",
+    "Owner refinement: preserve saved counter/chair/monitor poses. Dark reception strip is 2.8 m deep, matching G18/G20 seating strips (approximately 4\u00bd tiles); pale approach begins at local Z=-0.8. Two white rear pillars with dark skirting frame the inward opening at X=0 and X=4.2. Pillar dimensions provisional."
+  ]
+}

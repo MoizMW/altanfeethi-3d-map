@@ -15,14 +15,21 @@
     "G27": "evidence/camera-snapshots/G27.jpg"
   },
   "notes": [
+    "Owner upholstery correction: all six single-seat armchairs use shared blue upholstery #627d86, matching G16/other lounge chairs; previous green/teal appearance superseded.",
+    "Owner correction: swap opposing top/bottom seat identities as in G18, without moving or rotating furniture. Opposing sofa slot order is reversed during transfer to preserve visible column correspondence. Source ROI annotations remain unchanged.",
     "Four two-seat sofas and six teal armchairs reconcile Seat_G24\u2013Seat_G37 once across G21/G22/G26/G27. Four main coffee tables carry Table_G7\u2013Table_G10.",
     "G26 also observes Table_G4 and Table_G6 beyond the core. They already belong to G18 and are linked as external observations instead of duplicated in G20. Their image-space positions do not supply a calibrated seam transform.",
     "G22 establishes the reflective-patterned backing; G21 the curtained window side. G26/G27 show a pale central path with dark stone seating strips and partly visible curved surrounds.",
     "Four round side tables, three floor lamps and three plants are simplified context. Two plants rest on side tables, preserving their raised pot positions. Reflected seats, reception fixtures and neighboring furniture are excluded.",
     "All dimensions, slot order and local transforms are draft estimates. Curtain fabric, patterned panels, small white stand/bin, ornaments and hidden arch geometry are unresolved."
   ],
-  "wideSnapshots": {},
-  "wideCaptureStatus": "Checked supplied wide-capture folder: no G21/G22/G26/G27 captures available.",
+  "wideSnapshots": {
+    "G21": "evidence/wide capture snapshots/G21.jpg",
+    "G22": "evidence/wide capture snapshots/G22.jpg",
+    "G26": "evidence/wide capture snapshots/G26.jpg",
+    "G27": "evidence/wide capture snapshots/G27.jpg"
+  },
+  "wideCaptureStatus": "Wide captures are now available in the shared evidence folder and linked in the editor; structural reassessment from these additional views is pending.",
   "sourceImageSize": [
     1920,
     1080
@@ -70,119 +77,119 @@
     {
       "objectId": "g20-sofa-01",
       "seats": [
-        "Seat_G26",
-        "Seat_G25"
+        "Seat_G33",
+        "Seat_G32"
       ],
       "sources": [
         "G22"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
       "objectId": "g20-sofa-02",
       "seats": [
-        "Seat_G29",
-        "Seat_G28"
+        "Seat_G35",
+        "Seat_G36"
       ],
       "sources": [
         "G22",
         "G27"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
       "objectId": "g20-sofa-03",
       "seats": [
-        "Seat_G32",
-        "Seat_G33"
+        "Seat_G25",
+        "Seat_G26"
       ],
       "sources": [
         "G21",
         "G27"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
       "objectId": "g20-sofa-04",
       "seats": [
-        "Seat_G36",
-        "Seat_G35"
+        "Seat_G28",
+        "Seat_G29"
       ],
       "sources": [
         "G21",
         "G27"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
       "objectId": "g20-chair-24",
       "seats": [
-        "Seat_G24"
+        "Seat_G31"
       ],
       "sources": [
         "G22",
         "G26"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
       "objectId": "g20-chair-27",
       "seats": [
-        "Seat_G27"
+        "Seat_G34"
       ],
       "sources": [
         "G22",
         "G27"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
       "objectId": "g20-chair-30",
       "seats": [
-        "Seat_G30"
+        "Seat_G37"
       ],
       "sources": [
         "G22",
         "G27"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
       "objectId": "g20-chair-31",
       "seats": [
-        "Seat_G31"
+        "Seat_G24"
       ],
       "sources": [
         "G21",
         "G26"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
       "objectId": "g20-chair-34",
       "seats": [
-        "Seat_G34"
+        "Seat_G27"
       ],
       "sources": [
         "G21",
         "G27"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     },
     {
       "objectId": "g20-chair-37",
       "seats": [
-        "Seat_G37"
+        "Seat_G30"
       ],
       "sources": [
         "G21",
         "G27"
       ],
-      "status": "draft-needs-owner-review"
+      "status": "owner-corrected-opposing-row-assignment"
     }
   ],
   "reviewItems": [
-    "Confirm sofa slot order and chair yaw against G21/G22; preserve physical IDs when correcting occupancy names.",
+    "Preserve owner-corrected row identities and saved chair transforms; physical IDs remain stable.",
     "Confirm the estimated 8.4 x 7.6 m working crop, 2.8 m path and 4.1 m visualization ceiling height.",
     "Confirm G18 background table correspondence and negative-Z adjacency; resolve shared seam ownership and floor transform before composition.",
     "Review curved surrounds, wall returns, glazing extents, curtain backing and frame spacing before extending architecture.",
@@ -192,8 +199,118 @@
     "position": "estimated-local",
     "orientation": "estimated-from-overlapping-views",
     "dimensions": "unmeasured-estimates",
-    "identity": "ROI-derived-needs-human-review",
+    "identity": "owner-corrected-row-assignment; source ROIs unchanged",
     "appearance": "shared-procedural-draft",
     "globalAlignment": "unresolved"
-  }
+  },
+  "ownerSeatCorrections": [
+    {
+      "objectId": "g20-sofa-01",
+      "previousSeats": [
+        "Seat_G26",
+        "Seat_G25"
+      ],
+      "seats": [
+        "Seat_G33",
+        "Seat_G32"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g20-sofa-03",
+      "previousSeats": [
+        "Seat_G32",
+        "Seat_G33"
+      ],
+      "seats": [
+        "Seat_G25",
+        "Seat_G26"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g20-sofa-02",
+      "previousSeats": [
+        "Seat_G29",
+        "Seat_G28"
+      ],
+      "seats": [
+        "Seat_G35",
+        "Seat_G36"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g20-sofa-04",
+      "previousSeats": [
+        "Seat_G36",
+        "Seat_G35"
+      ],
+      "seats": [
+        "Seat_G28",
+        "Seat_G29"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g20-chair-24",
+      "previousSeats": [
+        "Seat_G24"
+      ],
+      "seats": [
+        "Seat_G31"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g20-chair-31",
+      "previousSeats": [
+        "Seat_G31"
+      ],
+      "seats": [
+        "Seat_G24"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g20-chair-27",
+      "previousSeats": [
+        "Seat_G27"
+      ],
+      "seats": [
+        "Seat_G34"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g20-chair-34",
+      "previousSeats": [
+        "Seat_G34"
+      ],
+      "seats": [
+        "Seat_G27"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g20-chair-30",
+      "previousSeats": [
+        "Seat_G30"
+      ],
+      "seats": [
+        "Seat_G37"
+      ],
+      "source": "owner top/bottom row correction"
+    },
+    {
+      "objectId": "g20-chair-37",
+      "previousSeats": [
+        "Seat_G37"
+      ],
+      "seats": [
+        "Seat_G30"
+      ],
+      "source": "owner top/bottom row correction"
+    }
+  ]
 }

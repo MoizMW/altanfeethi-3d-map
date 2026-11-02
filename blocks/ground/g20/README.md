@@ -36,3 +36,11 @@ No G21/G22/G26/G27 wide captures exist in the supplied folder. The original ROIs
 ## Editing and handoff
 
 Select objects to move, rotate, resize or correct seat/table labels. Physical `g20-...` IDs remain stable. **Save block** persists only `objects.json`, retains a backup and checks the base revision. The four JSON files are authoritative; structural edits use `architecture.json` directly. See `evidence.json` for outstanding review items and root `CONTRIBUTING.md` for sharing rules.
+
+Integration update: G21/G22/G26/G27 wide captures are now available and linked in evidence.json. Earlier absence statements are superseded; a structural review of these additional views is pending.
+
+## Owner seat-row correction
+
+Top/bottom seat IDs are swapped between opposing rows, as for G18. All furniture positions, rotations, sizes and physical IDs are preserved. Opposing sofa seat arrays are reversed during transfer to retain the same visible column order. Current correspondence is recorded in evidence.json; this owner correction supersedes earlier draft row assignments. Source ROIs remain unchanged.
+
+G20 extension: the existing `/?layout=ground/g16-g18` URL now composes G20 → G18 → G16, left to right in the owner front view. G20 uses yaw -90 and position [-14.8,0,1]; its G31/G24 end meets G18 at global X=-11. A single layout-owned full-width arch matches the G16/G18 arch profile (8.4 m shell span, 7.9 m opening width, provisional). All outer edges align at Z=-3.2 and 5.2. White pathways continue through both arches. Source furniture transforms and owner-corrected seat IDs are preserved.

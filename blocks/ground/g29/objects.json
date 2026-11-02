@@ -1,0 +1,267 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-g-lounge-029",
+  "objects": [
+    {
+      "id": "g29-sofa-01",
+      "type": "sofa",
+      "name": "Two-seat sofa · G90 / G91",
+      "position": [
+        -0.06237349329465358,
+        0,
+        -1.82
+      ],
+      "yaw": 0,
+      "size": [
+        1.9,
+        0.88,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d8d4cb",
+      "seats": [
+        "Seat_G90",
+        "Seat_G91"
+      ],
+      "cameras": [
+        "G17"
+      ],
+      "confidence": "Two seat labels in G17; physical orientation and slot order need owner review"
+    },
+    {
+      "id": "g29-sofa-02",
+      "type": "sofa",
+      "name": "Curtain-side sofa · G92 / G93",
+      "position": [
+        1.55,
+        0,
+        0
+      ],
+      "yaw": -90,
+      "size": [
+        2.25,
+        0.88,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d8d4cb",
+      "seats": [
+        "Seat_G92",
+        "Seat_G93"
+      ],
+      "cameras": [
+        "G16",
+        "G17"
+      ],
+      "confidence": "Same sofa observed in both views; dimensions and seat order estimated"
+    },
+    {
+      "id": "g29-sofa-03",
+      "type": "sofa",
+      "name": "Two-seat sofa · G94 / G95",
+      "position": [
+        0.11585950819468382,
+        0,
+        1.82
+      ],
+      "yaw": 180,
+      "size": [
+        1.9,
+        0.88,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d8d4cb",
+      "seats": [
+        "Seat_G94",
+        "Seat_G95"
+      ],
+      "cameras": [
+        "G16"
+      ],
+      "confidence": "Two seat labels in G16; physical orientation and slot order need owner review"
+    },
+    {
+      "id": "g29-coffee-table-01",
+      "type": "table",
+      "name": "Coffee table · Table_G27",
+      "position": [
+        0.13436993424743232,
+        0,
+        0.16002927332448635
+      ],
+      "yaw": 0,
+      "size": [
+        1.4,
+        0.43,
+        1.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e2ded4",
+      "seats": [],
+      "cameras": [
+        "G16",
+        "G17"
+      ],
+      "externalId": "Table_G27",
+      "shape": "square",
+      "confidence": "One square pale table observed in both views; dimensions and surface finish estimated"
+    },
+    {
+      "id": "g29-side-table-01",
+      "type": "table",
+      "name": "Round side table · panel side",
+      "position": [
+        -1.168146446035185,
+        0,
+        1.8311661630709672
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        0.48,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d8d5cd",
+      "seats": [],
+      "cameras": [
+        "G17"
+      ],
+      "accessories": false,
+      "confidence": "Round table visible beside the panel-side seating; position estimated"
+    },
+    {
+      "id": "g29-side-table-02",
+      "type": "table",
+      "name": "Round side table · curtain side",
+      "position": [
+        1.3196122287164473,
+        0,
+        -1.3653159525047476
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        0.48,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d8d5cd",
+      "seats": [],
+      "cameras": [
+        "G16"
+      ],
+      "accessories": false,
+      "confidence": "Small round table visible beside the curtained sofa; position estimated"
+    },
+    {
+      "id": "g29-side-table-03",
+      "type": "table",
+      "name": "Round display table · far window",
+      "position": [
+        1.7703479842054672,
+        0,
+        2.05
+      ],
+      "yaw": 0,
+      "size": [
+        0.58,
+        0.64,
+        0.58
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b5a783",
+      "seats": [],
+      "cameras": [
+        "G16"
+      ],
+      "accessories": false,
+      "confidence": "Round metallic display table visible behind G94/G95; glass top and vase simplified"
+    },
+    {
+      "id": "g29-plant-01",
+      "type": "plant",
+      "name": "Potted plant · window corner",
+      "position": [
+        1.55,
+        0,
+        -2
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        1.75,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#425c42",
+      "seats": [],
+      "cameras": [
+        "G17"
+      ],
+      "confidence": "Plant visible in G17 wide capture; foliage and position simplified"
+    },
+    {
+      "id": "g29-lamp-01",
+      "type": "floor-lamp",
+      "name": "Floor lamp · plant corner",
+      "position": [
+        2.1,
+        0,
+        -2.05
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        1.75,
+        0.44
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b8aa8d",
+      "seats": [],
+      "cameras": [
+        "G16",
+        "G17"
+      ],
+      "confidence": "Pale floor lamp observed beside plant; shade and position schematic"
+    }
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-g-lounge-021",
+  "objects": [
+    {
+      "id": "g21-sofa-01",
+      "type": "sofa",
+      "name": "Two-seat sofa · G43 / G44",
+      "position": [
+        -3.55,
+        0,
+        -2.2
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G44",
+        "Seat_G43"
+      ],
+      "cameras": [
+        "G1",
+        "G2"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g21-sofa-02",
+      "type": "sofa",
+      "name": "Two-seat sofa · G46 / G47",
+      "position": [
+        -3.55,
+        0,
+        2.2
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G47",
+        "Seat_G46"
+      ],
+      "cameras": [
+        "G1",
+        "G4"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g21-chair-38",
+      "type": "armchair",
+      "name": "Armless lounge chair · G38",
+      "position": [
+        3.55,
+        0,
+        -3.05
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G38"
+      ],
+      "cameras": [
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Owner requests the standard G18/G20 upholstered armchair style; original position, yaw and seat identity retained."
+    },
+    {
+      "id": "g21-chair-39",
+      "type": "armchair",
+      "name": "Armless lounge chair · G39",
+      "position": [
+        3.55,
+        0,
+        -1.85
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G39"
+      ],
+      "cameras": [
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Owner requests the standard G18/G20 upholstered armchair style; original position, yaw and seat identity retained."
+    },
+    {
+      "id": "g21-chair-40",
+      "type": "armchair",
+      "name": "Armless lounge chair · G40",
+      "position": [
+        3.55,
+        0,
+        1.85
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G40"
+      ],
+      "cameras": [
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Owner requests the standard G18/G20 upholstered armchair style; original position, yaw and seat identity retained."
+    },
+    {
+      "id": "g21-chair-41",
+      "type": "armchair",
+      "name": "Armless lounge chair · G41",
+      "position": [
+        3.55,
+        0,
+        3.05
+      ],
+      "yaw": 270,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G41"
+      ],
+      "cameras": [
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Owner requests the standard G18/G20 upholstered armchair style; original position, yaw and seat identity retained."
+    },
+    {
+      "id": "g21-chair-42",
+      "type": "armchair",
+      "name": "Teal armchair · G42",
+      "position": [
+        2.383,
+        0,
+        3.7
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G42"
+      ],
+      "cameras": [
+        "G4",
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g21-chair-45",
+      "type": "armchair",
+      "name": "Teal armchair · G45",
+      "position": [
+        -2.55,
+        0,
+        -0.7643554376106891
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G45"
+      ],
+      "cameras": [
+        "G1",
+        "G4"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g21-chair-48",
+      "type": "armchair",
+      "name": "Teal armchair · G48",
+      "position": [
+        -2.55,
+        0,
+        3.9
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G48"
+      ],
+      "cameras": [
+        "G1",
+        "G4"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g21-chair-unmapped-01",
+      "type": "armchair",
+      "name": "Unmapped central armchair · TEMPORARY ID",
+      "position": [
+        -2.55,
+        0,
+        0.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_TMP_01"
+      ],
+      "cameras": [
+        "G1",
+        "G4"
+      ],
+      "confidence": "Physical chair visible next to Seat_G45 in G1/G4; no corresponding supplied ROI label; temporary editor ID only",
+      "identityStatus": "temporary-unmapped",
+      "notes": "This second central armchair is visible in the same frame as Seat_G45. Do not duplicate G45 or invent an approved CV identity; replace this temporary label after owner review."
+    },
+    {
+      "id": "g21-coffee-table-11",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        2.35,
+        0,
+        -2.45
+      ],
+      "yaw": 270,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G2",
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "externalId": "Table_G11"
+    },
+    {
+      "id": "g21-coffee-table-12",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        2.35,
+        0,
+        2.3
+      ],
+      "yaw": 270,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G4",
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "externalId": "Table_G12"
+    },
+    {
+      "id": "g21-coffee-table-13",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        -2.45,
+        0,
+        -2.2
+      ],
+      "yaw": 270,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G1",
+        "G2"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "externalId": "Table_G13"
+    },
+    {
+      "id": "g21-coffee-table-14",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        -2.45,
+        0,
+        2.2
+      ],
+      "yaw": 270,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G1",
+        "G4"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "externalId": "Table_G14"
+    },
+    {
+      "id": "g21-display-shelf-01",
+      "type": "screen",
+      "name": "Tall display shelf · simplified",
+      "position": [
+        2.95,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        2,
+        2.3,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#303b3a",
+      "seats": [],
+      "cameras": [
+        "G2",
+        "G4",
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "variant": "open-shelving",
+      "notes": "Shared open shelving approximates the tall dark display unit seen end-on in G5 and lengthwise in G4. Organic shelf contours, tier count and artifacts are not exact."
+    },
+    {
+      "id": "g21-side-table-01",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        3.55,
+        0,
+        3.98
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G4",
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "No external table ROI ID. Vase and tabletop lamp are not reproduced."
+    },
+    {
+      "id": "g21-side-table-02",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        -3.55,
+        0,
+        3.88
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G1",
+        "G4"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "No external table ROI ID. Vase and tabletop lamp are not reproduced."
+    },
+    {
+      "id": "g21-plant-stand-01",
+      "type": "table",
+      "name": "Square plant stand · simplified wood/brass",
+      "position": [
+        -3.6,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.72,
+        0.65,
+        0.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#856746",
+      "seats": [],
+      "cameras": [
+        "G1",
+        "G4"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "variant": "rectangular",
+      "accessories": false,
+      "notes": "Visible square plant stand between sofas, simplified to a rectangular top and connected supports."
+    },
+    {
+      "id": "g21-floor-lamp-01",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        3.8,
+        0,
+        -4.03
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G2",
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g21-floor-lamp-02",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        3.8,
+        0,
+        4.13
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G4",
+        "G5"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g21-floor-lamp-03",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        -3.85,
+        0,
+        -3.6
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G1",
+        "G2"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g21-plant-01",
+      "type": "plant",
+      "name": "Potted climber · on square stand",
+      "position": [
+        -3.6,
+        0.65,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.5,
+        1.5,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "G1",
+        "G4"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "supportObjectId": "g21-plant-stand-01",
+      "notes": "Pot rests on square stand; shared procedural foliage approximates the climbing plant."
+    },
+    {
+      "id": "g21-plant-02",
+      "type": "plant",
+      "name": "Potted plant · near arch",
+      "position": [
+        -3.25,
+        0,
+        -3.85
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        1.7,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "G2"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Separate dark pot visible beside the near arch in G2; correspondence/extent require review. Shared pale pot and foliage are schematic."
+    }
+  ]
+}

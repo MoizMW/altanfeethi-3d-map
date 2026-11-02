@@ -1,0 +1,290 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-g-lounge-022",
+  "floorSize": [
+    9,
+    8.8
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-01T09:20:19.073Z",
+    "registrationSha256": "887ac6af5570a87f11259701c63e1dc4905b05dd7716ca184731c139f8fe2e98",
+    "anchors": [
+      {
+        "camera": "G7",
+        "pixel": [
+          7186,
+          6069
+        ],
+        "heading": 230,
+        "status": "verified"
+      },
+      {
+        "camera": "G8",
+        "pixel": [
+          6778,
+          6014
+        ],
+        "heading": 126,
+        "status": "verified"
+      },
+      {
+        "camera": "G9",
+        "pixel": [
+          7324,
+          6366
+        ],
+        "heading": 308,
+        "status": "verified"
+      },
+      {
+        "camera": "G10",
+        "pixel": [
+          6889,
+          6267
+        ],
+        "heading": 47,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "Across central walkway, from G10 reflective sofa side toward G7 curtain armchair side",
+      "z": "Along walkway from Seat_G49/G57 toward Seat_G56/G62",
+      "y": "Up"
+    },
+    "sourceMapCrop": [
+      6300,
+      5550,
+      7950,
+      6900
+    ],
+    "mapReview": "Map reviewed around all four registered cameras. Two opposite seating banks and a through passage are retained. Drawing shows sofa symbols on both banks, but G7 proves the curtain-side furniture is individual armchairs. Dimensions and map-to-block transform remain unresolved."
+  },
+  "footprint": [
+    [
+      -4.5,
+      -4.4
+    ],
+    [
+      4.5,
+      -4.4
+    ],
+    [
+      4.5,
+      4.4
+    ],
+    [
+      -4.5,
+      4.4
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g22-reflective-glazing",
+      "kind": "glass",
+      "start": [
+        -4.45,
+        -4.4
+      ],
+      "end": [
+        -4.45,
+        4.4
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g22",
+      "sources": [
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Visible reflective glazed/paneled backing; precise substrate, height and framing need review."
+    },
+    {
+      "id": "g22-curtained-glazing",
+      "kind": "glass",
+      "start": [
+        4.45,
+        -4.4
+      ],
+      "end": [
+        4.45,
+        4.4
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g22",
+      "sources": [
+        "G7",
+        "G8",
+        "G9"
+      ],
+      "confidence": "Window frame visible through curtains; span, height and framing estimated. Curtain fabric not rendered."
+    },
+    {
+      "id": "g22-arch-wall-negative-z",
+      "kind": "solid",
+      "start": [
+        -4.5,
+        -4.4
+      ],
+      "end": [
+        4.5,
+        -4.4
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g22",
+      "sources": [
+        "owner-merge-request",
+        "G8-wide",
+        "G9-wide"
+      ],
+      "confidence": "Owner-requested G18/G20 arch profile; 9 m shell span follows saved G22 footprint, opening width and profile estimated"
+    },
+    {
+      "id": "g22-arch-wall-positive-z",
+      "kind": "solid",
+      "start": [
+        -4.5,
+        4.4
+      ],
+      "end": [
+        4.5,
+        4.4
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g22",
+      "sources": [
+        "owner-merge-request",
+        "G8-wide",
+        "G9-wide"
+      ],
+      "confidence": "Owner-requested G18/G20 arch profile; 9 m shell span follows saved G22 footprint, opening width and profile estimated"
+    }
+  ],
+  "openings": [
+    {
+      "id": "g22-arch-negative-z",
+      "wallId": "g22-arch-wall-negative-z",
+      "kind": "rounded-passage",
+      "offset": 4.5,
+      "width": 7.9,
+      "springHeight": 1.6,
+      "height": 3.35,
+      "confidence": "Shared G18/G20 clear opening and rounded profile; wider piers retain existing 9 m shell"
+    },
+    {
+      "id": "g22-arch-positive-z",
+      "wallId": "g22-arch-wall-positive-z",
+      "kind": "rounded-passage",
+      "offset": 4.5,
+      "width": 7.9,
+      "springHeight": 1.6,
+      "height": 3.35,
+      "confidence": "Shared G18/G20 clear opening and rounded profile; wider piers retain existing 9 m shell"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "g22-arch-negative-z",
+      "owner": "ground/g22",
+      "ownsWall": true,
+      "neighbor": "ground/g21",
+      "status": "owner-confirmed-adjacency-relative-layout-authored",
+      "notes": "Negative-Z arch owns the G21/G22 seam once in combined layout; G21 preview arch is excluded in composition."
+    },
+    {
+      "id": "g22-arch-positive-z",
+      "owner": "ground/g22",
+      "ownsWall": true,
+      "neighbor": null,
+      "status": "outer-neighbor-unresolved",
+      "notes": "Negative-Z arch owns the G21/G22 seam once in combined layout; G21 preview arch is excluded in composition."
+    }
+  ],
+  "circulation": {
+    "id": "g22-central-walkway",
+    "polygon": [
+      [
+        -1.4,
+        -4.4
+      ],
+      [
+        1.4,
+        -4.4
+      ],
+      [
+        1.4,
+        4.4
+      ],
+      [
+        -1.4,
+        4.4
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "sources": [
+      "G8",
+      "G9"
+    ],
+    "status": "visually-supported-width-estimated",
+    "notes": "Pale central walkway between dark stone seating strips. Keep both ends open; adjacent bays beyond the core are excluded."
+  },
+  "ceiling": {
+    "size": [
+      9,
+      8.8
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "boundaryReview": [
+    {
+      "id": "g22-path-negative-z",
+      "kind": "open-corridor",
+      "sources": [
+        "G9"
+      ],
+      "status": "owner-confirmed-relative-layout-authored",
+      "candidateNeighborGroup": "g21"
+    },
+    {
+      "id": "g22-path-positive-z",
+      "kind": "open-corridor",
+      "sources": [
+        "G8"
+      ],
+      "status": "neighbor-and-seam-unresolved"
+    },
+    {
+      "id": "g22-arch-returns",
+      "kind": "unknown",
+      "sources": [
+        "G7",
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "status": "owner-requested-standard-arches-modeled",
+      "notes": "Both end partitions now use G18/G20 profile. Detailed camera-derived curvature remains provisional."
+    }
+  ],
+  "notes": [
+    "Owner requests G22 left of G21, with G2 right of G21 in supplied front view. Full-width end arches added; shell remains 9 m wide to retain saved furniture. The G21/G22 seam is owned by G22 once; G21 end-arch preview is excluded only in the combined layout."
+  ]
+}

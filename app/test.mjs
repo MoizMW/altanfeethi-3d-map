@@ -6,6 +6,18 @@ import {server} from './server.mjs';
 import * as THREE from 'three';
 import {buildArchitecture} from './architecture.js';
 
+test('Wider arch piers stay straight through the spring and meet a smooth elliptical crown',()=>{
+  const a={walls:[{id:'arch',kind:'solid',start:[0,0],end:[8.4,0],height:4.1,thickness:.18}],openings:[{wallId:'arch',offset:4.2,width:7.6,springHeight:1.65,height:3.35}]};
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);
+    const hit=(x,y)=>new THREE.Raycaster(new THREE.Vector3(x,y,1),new THREE.Vector3(0,0,-1),0,2).intersectObject(shell,true).length;
+    assert.ok(hit(.45,.2),'Lower pier must extend farther into the opening');
+    assert.ok(hit(.45,1),'Wider pier must continue upward without a pinched waist');
+    assert.equal(hit(.6,1),0,'Clear opening must remain beside the straight pier');
+    assert.equal(hit(4.2,.2),0,'Middle of passage must stay clear');
+  }
+});
+
 test('G9 equals G11 area while the G-zone half remains open at both ends',async()=>{
   const [g9,g11]=await Promise.all(['g9','g11'].map(async key=>JSON.parse(await readFile(new URL(`../blocks/ground/${key}/architecture.json`,import.meta.url)))));
   assert.equal(g9.floorSize[0]*g9.floorSize[1],g11.floorSize[0]*g11.floorSize[1]);
@@ -55,7 +67,35 @@ test('duplicate IDs, duplicate seats and invalid dimensions are rejected',()=>{
   for(const mutate of [b=>b.objects[1].seats=['Seat_B3'],b=>b.objects[1].id=b.objects[0].id,b=>b.objects[0].position[0]=NaN,b=>b.objects[0].size[0]=-1]){const copy=structuredClone(block);mutate(copy);assert.throws(()=>validateBlock(copy));}
 });
 
-for(const slug of ['g18','g20'])test(`${slug.toUpperCase()} reconciles ROI identities and keeps furniture outside the through path`,async()=>{
+test('Retired green lounge-chair finishes are rejected when validating a draft',()=>{
+  for(const color of ['#637d79','#3F5C59']){
+    const draft=structuredClone(block);draft.objects.find(o=>o.type==='armchair').color=color;
+    assert.throws(()=>validateBlock(draft),/finish is retired/);
+    draft.objects.find(o=>o.type==='armchair').color='#627d86';
+    assert.doesNotThrow(()=>validateBlock(draft));
+  }
+});
+
+test('G21 and G27 arches preserve the walking route and have an overhead crown',async()=>{
+  for(const slug of ['g21','g27']){
+    const a=JSON.parse(await readFile(new URL(`../blocks/ground/${slug}/architecture.json`,import.meta.url)));
+    assert.equal(a.openings.length,slug==='g21'?1:2);
+    for(const cutaway of [true,false]){
+      const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);
+      for(const opening of a.openings){
+        const wall=a.walls.find(w=>w.id===opening.wallId),z=wall.start[1];
+        const ray=y=>new THREE.Raycaster(new THREE.Vector3(0,y,z-1),new THREE.Vector3(0,0,1),0,2).intersectObject(shell,true);
+        assert.equal(ray(.7).length,0,'Arch must leave the walking route open');
+        if(!cutaway)assert.ok(ray(3.7).length,'Partition crown must remain above the opening');
+      }
+      shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+    }
+  }
+  const g27=JSON.parse(await readFile(new URL('../blocks/ground/g27/objects.json',import.meta.url)));
+  assert.ok(g27.objects.filter(o=>o.type==='armchair').every(o=>o.color==='#627d86'));
+});
+
+for(const slug of ['g18','g20','g21','g27'])test(`${slug.toUpperCase()} reconciles ROI identities and keeps furniture outside the through path`,async()=>{
   const base=new URL(`../blocks/ground/${slug}/`,import.meta.url);
   const [m,a,o,e]=await Promise.all(['manifest.json','architecture.json','objects.json','evidence.json'].map(async f=>JSON.parse(await readFile(new URL(f,base)))));
   const draft=validateBlock({...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects});
@@ -64,12 +104,13 @@ for(const slug of ['g18','g20'])test(`${slug.toUpperCase()} reconciles ROI ident
     const roi=JSON.parse(await readFile(new URL(`../${e.rois[camera][kind]}`,import.meta.url)));
     for(const label of Object.keys(roi))labels.add(label);
   }
-  assert.deepEqual(draft.objects.flatMap(x=>x.seats).sort(),[...observedSeats].sort());
+  const temporarySeats=new Set((e.unmappedSeats||[]).map(x=>x.temporarySeatId));
+  assert.deepEqual(draft.objects.flatMap(x=>x.seats).filter(s=>!temporarySeats.has(s)).sort(),[...observedSeats].sort());
   const localTables=draft.objects.filter(x=>x.externalId).map(x=>x.externalId);
-  const externalTables=(e.externalObservations||[]).map(x=>x.externalId);
+  const externalTables=[...(e.externalObservations||[]),...(e.deferredObservations||[])].map(x=>x.externalId);
   assert.deepEqual([...localTables,...externalTables].sort(),[...observedTables].sort());
   const context=draft.objects.filter(x=>x.ownershipStatus==='provisional-context-neighbor-unresolved');
-  assert.deepEqual(context.map(x=>x.externalId).sort(),slug==='g18'?['Table_G1','Table_G2']:[]);
+  assert.deepEqual(context.map(x=>x.externalId).sort(),[]);
   const shell=buildArchitecture(a);shell.updateMatrixWorld(true);
   const pathXs=a.circulation.polygon.map(p=>p[0]);
   for(const x of [Math.min(...pathXs)+.05,0,Math.max(...pathXs)-.05]){
@@ -79,6 +120,39 @@ for(const slug of ['g18','g20'])test(`${slug.toUpperCase()} reconciles ROI ident
     const angle=THREE.MathUtils.degToRad(object.yaw),[w,,d]=object.size;
     const extentX=(Math.abs(Math.cos(angle))*w+Math.abs(Math.sin(angle))*d)/2;
     assert.ok(object.position[0]+extentX<=Math.min(...pathXs)||object.position[0]-extentX>=Math.max(...pathXs),`${object.id} obstructs the central path`);
+  }
+});
+
+for(const slug of ['g21','g27'])test(`${slug.toUpperCase()} records unresolved identities and neighbors while keeping objects inside its crop`,async()=>{
+  const [objects,evidence,architecture]=await Promise.all(['objects.json','evidence.json','architecture.json'].map(async file=>JSON.parse(await readFile(new URL(`../blocks/ground/${slug}/${file}`,import.meta.url)))));
+  const unmappedSeats=evidence.unmappedSeats||[];
+  assert.equal(unmappedSeats.length,slug==='g21'?1:0);
+  for(const unmapped of unmappedSeats){
+    const chair=objects.objects.find(o=>o.id===unmapped.objectId);
+    assert.equal(chair.identityStatus,'temporary-unmapped');
+    assert.deepEqual(chair.seats,[unmapped.temporarySeatId]);
+    assert.ok(unmapped.cameras.every(camera=>evidence.cameras.includes(camera)));
+    for(const camera of evidence.cameras){
+      const roi=JSON.parse(await readFile(new URL(`../${evidence.rois[camera].chairs}`,import.meta.url)));
+      assert.ok(!roi[unmapped.temporarySeatId],'Temporary names cannot claim supplied ROI identities');
+    }
+  }
+  for(const deferred of evidence.deferredObservations){
+    const roi=JSON.parse(await readFile(new URL(`../${deferred.corroboratingRoiFile}`,import.meta.url)));
+    assert.ok(roi[deferred.externalId]);
+    assert.ok(!objects.objects.some(o=>o.externalId===deferred.externalId),'Background tables remain outside local ownership');
+  }
+  for(const object of objects.objects){
+    const angle=THREE.MathUtils.degToRad(object.yaw),[w,,d]=object.size;
+    const extentX=(Math.abs(Math.cos(angle))*w+Math.abs(Math.sin(angle))*d)/2;
+    const extentZ=(Math.abs(Math.sin(angle))*w+Math.abs(Math.cos(angle))*d)/2;
+    assert.ok(Math.abs(object.position[0])+extentX<=architecture.floorSize[0]/2,`${object.id} crosses the crop's side`);
+    assert.ok(Math.abs(object.position[2])+extentZ<=architecture.floorSize[1]/2,`${object.id} crosses the crop's end`);
+    if(object.supportObjectId){
+      const support=objects.objects.find(o=>o.id===object.supportObjectId);
+      assert.ok(support,`${object.id} needs a real support object`);
+      assert.equal(object.position[1],support.position[1]+support.size[1]);
+    }
   }
 });
 
@@ -123,7 +197,7 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     const jpg=Buffer.from(await(await fetch(`${origin}/api/evidence/camera/B1${query}`)).arrayBuffer());assert.equal(jpg[0],255);assert.equal(jpg[1],216);
     assert.equal((await fetch(`${origin}/shared/schema/block-schema.js`)).status,200);assert.equal((await fetch(`${origin}/server.mjs`)).status,404);assert.equal((await fetch(`${origin}/api/block?block=../../private`)).status,400);
     const g32=await(await fetch(`${origin}/api/block?block=ground/g32`)).json();validateBlock(g32.block);
-    for(const slug of ['g18','g20','g28']){
+    for(const slug of ['g18','g20','g21','g27','g28']){
       assert.ok(listing.blocks.some(b=>b.key===`ground/${slug}`));
       const data=await(await fetch(`${origin}/api/block?block=ground/${slug}`)).json();validateBlock(data.block);
       for(const id of data.block.evidence.cameras)assert.equal((await fetch(`${origin}/api/evidence/camera/${id}?block=ground/${slug}`)).status,200);
@@ -136,4 +210,261 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     assert.equal((await fetch(`${origin}/reception-objects.js`)).status,200);
     for(const id of g32.block.evidence.cameras){const photo=await fetch(`${origin}/api/evidence/camera/${id}?block=ground/g32`);assert.equal(photo.status,200);assert.equal(photo.headers.get('content-type'),'image/jpeg');}
   }finally{await new Promise(resolve=>server.close(resolve));}
+});
+
+test('G9/G10/G11 composition keeps source seating and opens onto one shared corridor',async()=>{
+  const {composeLayout}=await import('./layouts.mjs');
+  const projectRoot=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const {block}=await composeLayout(projectRoot,'ground/g9-g10',load);validateBlock(block);
+  assert.equal(block.objects.flatMap(o=>o.seats).length,20);
+  const originals=(await Promise.all(['ground/g9','ground/g10','ground/g11'].map(load))).flatMap(({block})=>block.objects);
+  for(const o of block.objects){const source=originals.find(v=>v.id===o.id);assert.deepEqual(o.seats,source.seats);assert.deepEqual(o.size,source.size);assert.deepEqual(o.scale,source.scale);}
+  assert.equal(block.architecture.walls.filter(w=>w.id==='g9-g10-shared-partition').length,1);
+  assert.ok(!block.architecture.walls.some(w=>['g9-passage-outer-wall','g10-side-b5','g10-side-b4','g11-side-c1'].includes(w.id)));
+  assert.ok(block.evidence.cameras.includes('Cor1'));assert.equal(block.readOnly,true);
+  const partition=block.architecture.walls.find(w=>w.id==='g9-g10-shared-partition');assert.equal(partition.start[0],-5.38);assert.equal(partition.kind,'glass');assert.equal(partition.variant,'patterned-smoked');assert.equal(partition.finish,undefined);
+  assert.ok(block.objects.filter(o=>o.sourceBlock==='ground/g10').every(o=>o.position[0]<-5.38));
+  assert.equal(block.architecture.floorSections[1].size[1],6);
+  assert.deepEqual(block.groups,['g9','g10','g11']);
+  assert.equal(block.architecture.walls.filter(w=>w.id==='g10-g11-shared-partition').length,1);
+  assert.ok(block.objects.filter(o=>o.sourceBlock==='ground/g11').every(o=>o.position[0]<-11.98));
+  const shell=buildArchitecture(block.architecture);shell.updateMatrixWorld(true);
+  for(const x of [0,-10.33,-7.03,-17.58,-13.58]){const hits=new THREE.Raycaster(new THREE.Vector3(x,.7,4.3),new THREE.Vector3(0,0,-1)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.z<0,'Lounge entrances must stay clear from common corridor');}
+  assert.equal(new THREE.Raycaster(new THREE.Vector3(-20,.7,4.3),new THREE.Vector3(1,0,0)).intersectObject(shell,true).length,0,'Corridor must remain continuous');
+});
+
+test('G16 reconciles camera ROI identities while leaving neighboring Table_G5 contextual',async()=>{
+  const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/ground/g16/${f}.json`,import.meta.url)))));
+  validateBlock({...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects});
+  assert.deepEqual(o.objects.flatMap(v=>v.seats).sort(),['Seat_G1','Seat_G2','Seat_G4','Seat_G5','Seat_G6','Seat_G7']);
+  for(const camera of e.cameras)for(const kind of ['chairs','tables']){
+    const roi=JSON.parse(await readFile(new URL('../'+e.rois[camera][kind],import.meta.url)));
+    for(const label of Object.keys(roi)){
+      const matches=o.objects.filter(v=>v.seats.includes(label)||v.externalId===label);
+      if(e.contextOnlyRois[label])assert.equal(matches.length,0);else assert.equal(matches.length,1,label);
+    }
+  }
+  assert.equal(o.objects.find(v=>v.externalId==='Table_G2').variant,'square-stone');
+  const archWall=a.walls.find(w=>w.id==='g16-neighbor-arch-wall');assert.deepEqual(archWall.end,[-3,5.2]);
+  assert.equal(a.circulation.route.cameraAtEntrance,'G23');
+  assert.deepEqual(a.circulation.polygon,[[-3,.9],[-.7,.9],[-.7,5.2],[-3,5.2]]);
+  assert.equal(a.walls.find(w=>w.id==='g16-window-back').variant,undefined);
+  assert.equal(a.circulation.connections[0].neighborBoundary,'g9-passage-g-zone');
+  for(const cutaway of [false,true]){const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);const hits=new THREE.Raycaster(new THREE.Vector3(-4,.7,-.8),new THREE.Vector3(1,0,0)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.x>2.8,'Neighbor arch should stay open');}
+});
+
+test('G16/G18/G20 joins align widths and preserve both arched walking connections',async()=>{
+  const {composeLayout}=await import('./layouts.mjs');
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const {block}=await composeLayout(new URL('../',import.meta.url).pathname,'ground/g16-g18',load);
+  validateBlock(block);assert.equal(block.objects.flatMap(o=>o.seats).length,34);
+  assert.equal(block.architecture.walls.filter(w=>w.id==='g16-neighbor-arch-wall').length,1);
+  assert.equal(block.architecture.circulations.length,3);
+  const [g16Floor,g18Floor,g20Floor]=block.architecture.floorSections;
+  assert.equal(g20Floor.size[0],g18Floor.size[0]);
+  assert.equal(g20Floor.center[1],g18Floor.center[1]);
+  assert.ok(Math.abs((g20Floor.center[0]+g20Floor.size[1]/2)-(g18Floor.center[0]-g18Floor.size[1]/2))<1e-8);
+  assert.equal(block.architecture.walls.filter(w=>w.id==='g18-g20-arch-wall').length,1);
+  const newArch=block.architecture.openings.find(o=>o.id==='g18-g20-arch');
+  assert.equal(newArch.width,block.architecture.openings.find(o=>o.id==='g16-neighbor-arch').width);
+  assert.equal(g16Floor.size[1],g18Floor.size[0]);
+  assert.equal(g16Floor.center[1]-g16Floor.size[1]/2,g18Floor.center[1]-g18Floor.size[0]/2);
+  assert.equal(g16Floor.center[1]+g16Floor.size[1]/2,g18Floor.center[1]+g18Floor.size[0]/2);
+  const arch=block.architecture.walls.find(w=>w.id==='g16-neighbor-arch-wall');assert.deepEqual(arch.start,[-3,-3.2]);assert.deepEqual(arch.end,[-3,5.2]);
+  const g18=(await load('ground/g18')).block;
+  const chair=g18.objects.find(o=>o.seats.includes('Seat_G10'));
+  const floorEnd=g18.architecture.floorCenter[1]-g18.floorSize[1]/2;
+  const margin=chair.position[2]-chair.size[2]/2-floorEnd;assert.ok(margin>=.6&&margin<.8,'Floor should stop about one tile after G10');
+  assert.ok(Math.abs(-7.2-floorEnd+3)<1e-8,'Trimmed G18 end meets G16 X=-3');
+  const originals=(await Promise.all(['ground/g16','ground/g18','ground/g20'].map(load))).flatMap(({block})=>block.objects);
+  for(const o of block.objects){const source=originals.find(v=>v.id===o.id);assert.deepEqual(o.seats,source.seats);assert.deepEqual(o.size,source.size);assert.deepEqual(o.scale,source.scale);}
+  const shell=buildArchitecture(block.architecture);shell.updateMatrixWorld(true);
+  for(const z of [1,1.7,2.2]){const hits=new THREE.Raycaster(new THREE.Vector3(-3.5,.7,z),new THREE.Vector3(1,0,0)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.x>2.8,'Join must stay open through the arch');}
+  for(const cutaway of [false,true]){const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);const hits=new THREE.Raycaster(new THREE.Vector3(-12,.7,1),new THREE.Vector3(1,0,0)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.x>2.8,'White path must pass through both arches');}
+  const lintel=buildArchitecture(block.architecture);lintel.updateMatrixWorld(true);assert.ok(new THREE.Raycaster(new THREE.Vector3(-12,3.8,1),new THREE.Vector3(1,0,0)).intersectObject(lintel,true).some(h=>Math.abs(h.point.x+11)<.2),'New arch must have a solid surround overhead');
+});
+
+test('B/G floor assembly aligns paired bay lengths and keeps G9 passage open into G16',async()=>{
+  const {composeLayout}=await import('./layouts.mjs');
+  const root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);validateBlock(block);
+  assert.equal(block.objects.flatMap(o=>o.seats).length,115);assert.equal(block.groups.length,12);
+  const spans=block.architecture.floorSections.slice(0,6).map(f=>{const r=f.yaw*Math.PI/180,w=Math.abs(Math.cos(r))*f.size[0]+Math.abs(Math.sin(r))*f.size[1];return [f.center[0]-w/2,f.center[0]+w/2];});
+  for(const [b,g]of [[0,3],[1,4],[2,5]])for(let i=0;i<2;i++)assert.ok(Math.abs(spans[b][i]-spans[g][i])<1e-8,'Paired floor bay boundaries must align');
+  const added=block.architecture.floorSections.slice(6,8);assert.equal(added[0].size[0],added[1].size[0]);assert.equal(added[0].center[0],added[1].center[0]);
+  assert.ok(!block.architecture.walls.some(w=>['g2-reception-backing','g11-side-c5'].includes(w.id)));
+  assert.equal(block.architecture.walls.filter(w=>w.id==='zone-c-reception-half-glass').length,1);
+  for(const part of layout.components){const {block:source}=await load(part.block),r=part.yaw*Math.PI/180;
+    for(const seat of source.objects.filter(o=>o.seats.length)){
+      const actual=block.objects.find(o=>o.id===seat.id);assert.deepEqual(actual.seats,seat.seats);assert.deepEqual(actual.size,seat.size);assert.deepEqual(actual.scale,seat.scale);assert.equal(actual.yaw,seat.yaw+part.yaw);
+      const offset=part.objectOffsets?.[seat.id]||[0,0,0];
+      const [x,y,z]=seat.position.map((v,i)=>v+offset[i]),expected=[Math.cos(r)*x+Math.sin(r)*z+part.position[0],y+part.position[1],-Math.sin(r)*x+Math.cos(r)*z+part.position[2]];
+      expected.forEach((v,i)=>assert.ok(Math.abs(v-actual.position[i])<1e-8));
+    }
+  }
+  assert.ok(!block.architecture.walls.some(w=>['g18-curtained-glazing','g20-curtained-glazing'].includes(w.id)),'Shared interface glazing must have one owner');
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    const receptionRoute=new THREE.Raycaster(new THREE.Vector3(-27.5,.7,2),new THREE.Vector3(0,0,-1),0,12).intersectObject(shell,true);assert.equal(receptionRoute.length,0,'Half-open reception/Zone C connection must stay clear');
+    const g20Entry=new THREE.Raycaster(new THREE.Vector3(-20,.7,-7.7),new THREE.Vector3(-1,0,0),0,8).intersectObject(shell,true);assert.equal(g20Entry.length,0,'G20 must connect through G2 arch');
+    const passage=new THREE.Raycaster(new THREE.Vector3(-3.5,.7,1),new THREE.Vector3(0,0,-1),0,7).intersectObject(shell,true);assert.equal(passage.length,0,'G9 passage must stay open into G16');
+    const route=new THREE.Raycaster(new THREE.Vector3(-3.5,.7,-6.7),new THREE.Vector3(-1,0,0),0,17).intersectObject(shell,true);assert.equal(route.length,0,'G-zone route must pass through both arches');
+  }
+});
+
+test('G22, G21 and G2 join in owner order with one arch per seam and a continuous route',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
+  const parts=['ground/g22','ground/g21','ground/g2'].map(key=>layout.components.find(p=>p.block===key));
+  assert.ok(parts[0].position[0]<parts[1].position[0]&&parts[1].position[0]<parts[2].position[0]);
+  for(const part of parts.slice(0,2)){
+    const {block:source}=await load(part.block),r=part.yaw*Math.PI/180;
+    for(const o of source.objects){
+      const actual=block.objects.find(v=>v.id===o.id);
+      assert.deepEqual(actual.size,o.size);assert.deepEqual(actual.scale,o.scale);assert.deepEqual(actual.seats,o.seats);
+      assert.equal(actual.yaw,o.yaw+part.yaw);
+      const offset=part.objectOffsets?.[o.id]||[0,0,0];
+      const [x,y,z]=o.position.map((v,i)=>v+offset[i]),expected=[Math.cos(r)*x+Math.sin(r)*z+part.position[0],y,-Math.sin(r)*x+Math.cos(r)*z+part.position[2]];
+      actual.position.forEach((value,i)=>assert.ok(Math.abs(value-expected[i])<1e-8,'All source furniture must retain its relative transform'));
+    }
+  }
+  assert.ok(!block.architecture.walls.some(w=>w.id==='g21-arch-wall-positive-z'));
+  for(const [x,id] of [[-29.38,'g2-right-arch-wall'],[-38.18,'g22-arch-wall-positive-z']]){
+    const owners=block.architecture.walls.filter(w=>Math.abs(w.start[0]-x)<1e-8&&Math.abs(w.end[0]-x)<1e-8&&Math.min(w.start[1],w.end[1])< -7.2&&Math.max(w.start[1],w.end[1])> -7.2);
+    assert.deepEqual(owners.map(w=>w.id),[id],'Each shared arch must render once');
+  }
+  const g22Objects=block.objects.filter(o=>o.sourceBlock==='ground/g22');
+  for(const label of ['Seat_G49','Seat_G57']){
+    const chair=g22Objects.find(o=>o.seats.includes(label));
+    assert.ok(chair.position[0]>-40,'G49/G57 must be beside the G21 join, not the outer end');
+  }
+  const sections=parts.slice(0,2).map(p=>block.architecture.floorSections[layout.components.indexOf(p)]);
+  assert.equal(sections[0].size[0],sections[1].size[0],'G22 and G21 cross-spans must match');
+  assert.equal(sections[0].center[1],sections[1].center[1]);
+  const {block:g22Source}=await load('ground/g22');
+  for(const side of [-1,1]){
+    const bank=g22Source.objects.filter(o=>Math.sign(o.position[0])===side);
+    const offsets=bank.map(o=>parts[0].objectOffsets[o.id]);
+    assert.ok(offsets.every(v=>Math.abs(v[0]+side*.3)<1e-8&&v[1]===0&&v[2]===0),'Each bank must move together without changing internal offsets');
+  }
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    for(const z of [-8.5,-7.2,-5.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-46.8,.7,z),new THREE.Vector3(1,0,0),0,25.7).intersectObject(shell,true).length,0,'Walking route must connect G22 through G21 into G2');
+    if(!cutaway)for(const x of [-46.98,-38.18,-29.38])assert.ok(new THREE.Raycaster(new THREE.Vector3(x-1,3.8,-7.2),new THREE.Vector3(1,0,0),0,2).intersectObject(shell,true).length,'All new connections have overhead arch surrounds');
+    shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+  }
+});
+
+test('G12/G14 fills both G21/G22 bays and connects its C19 end to Zone C without duplicate walls',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  assert.equal(block.name,'B + C + G · Combined lounges');
+  const index=layout.components.findIndex(p=>p.block==='ground/g12-g14'),part=layout.components[index];
+  const floor=block.architecture.floorSections[index];
+  assert.ok(Math.abs(floor.center[0]-floor.size[1]/2+46.98)<1e-8);
+  assert.ok(Math.abs(floor.center[0]+floor.size[1]/2+29.38)<1e-8);
+  assert.ok(Math.abs(floor.center[1]-floor.size[0]/2+3)<1e-8,'Floor-center override must align the G-row seam');
+  assert.ok(Math.abs(floor.center[1]+floor.size[0]/2-5.6)<1e-8,'Outer corridor edge must match the existing front corridor');
+  for(const label of ['Seat_C19','Seat_C20'])assert.ok(block.objects.find(o=>o.seats.includes(label)).position[0]>-31,'C19/C20 end must face the Zone C seam');
+  const {block:source}=await load(part.block),r=part.yaw*Math.PI/180;
+  for(const o of source.objects){
+    const actual=block.objects.find(v=>v.id===o.id),offset=part.objectOffsets[o.id]||[0,0,0];
+    assert.deepEqual(actual.size,o.size);assert.deepEqual(actual.scale,o.scale);assert.deepEqual(actual.seats,o.seats);
+    const expectedShift=Math.abs(o.position[2])>2.2?Math.sign(o.position[2])*2.2:0;
+    assert.equal(offset[2],expectedShift,'End groups move rigidly; the central group stays fixed');
+    const [x,y,z]=o.position.map((v,i)=>v+offset[i]);
+    const expected=[Math.cos(r)*x+Math.sin(r)*z+part.position[0],y,-Math.sin(r)*x+Math.cos(r)*z+part.position[2]];
+    actual.position.forEach((v,i)=>assert.ok(Math.abs(v-expected[i])<1e-8));
+  }
+  assert.ok(!block.architecture.walls.some(w=>/^g12-g14-glazing-/.test(w.id)||w.id==='zone-c-opposite-pods-glass'));
+  const cFront=block.architecture.walls.find(w=>w.id==='g12-g14-corridor-arches');
+  const zoneFront=block.architecture.walls.find(w=>w.id==='zone-c-approach-arch-wall');
+  for(const p of [cFront.start,cFront.end])assert.ok(Math.abs(p[1]-zoneFront.start[1])<1e-8,'C lounge frontage must align with the Zone C arch line');
+  const corridor=block.architecture.circulations.find(c=>c.sourceBlock==='ground/g12-g14');
+  const depths=corridor.polygon.map(p=>p[1]);
+  assert.ok(Math.abs(Math.min(...depths)-3)<1e-8&&Math.abs(Math.max(...depths)-5.6)<1e-8,'Corridor must retain constant width through the lower-right join');
+  for(const o of block.objects.filter(o=>o.sourceBlock==='ground/g12-g14')){
+    const r=o.yaw*Math.PI/180,extent=(Math.abs(Math.sin(r))*o.size[0]*o.scale[0]+Math.abs(Math.cos(r))*o.size[2]*o.scale[2])/2;
+    assert.ok(o.position[2]+extent<3-.09,`${o.id} must clear the aligned arch wall`);
+  }
+  for(const id of ['g21-reflective-glazing','g22-reflective-glazing']){
+    const wall=block.architecture.walls.find(w=>w.id===id);
+    assert.ok(Math.abs(wall.start[1]+3)<1e-8&&Math.abs(wall.end[1]+3)<1e-8,'Existing G-row panes own the aligned shared boundary');
+  }
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    const cast=(p,d,length)=>new THREE.Raycaster(new THREE.Vector3(...p),new THREE.Vector3(...d),0,length).intersectObject(shell,true);
+    assert.equal(cast([-46,.7,4.5],[1,0,0],21).length,0,'Front corridor must connect C lounge to Zone C');
+    assert.equal(cast([-25.5,.7,4.5],[0,0,-1],4).length,0,'Existing Zone C approach arch must remain open');
+    assert.equal(cast([-38.18,.7,4.5],[0,0,-1],4).length,0,'Central lounge frontage arch must remain open');
+    assert.ok(cast([-30.5,.7,0],[1,0,0],2).length,'Decorative C19 end backing stays closed beside Zone C');
+    shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+  }
+});
+
+test('G27 G69/G63 end joins G22 G56/G62 with matching shell dimensions and one shared arch',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  const index=key=>layout.components.findIndex(p=>p.block===key);
+  const g27=block.architecture.floorSections[index('ground/g27')],g22=block.architecture.floorSections[index('ground/g22')];
+  assert.ok(Math.abs(g27.center[0]+g27.size[1]/2-(g22.center[0]-g22.size[1]/2))<1e-8,'Bay ends must meet without a gap or overlap');
+  assert.equal(g27.size[0],g22.size[0]);assert.equal(g27.center[1],g22.center[1]);
+  for(const label of ['Seat_G69','Seat_G63'])assert.ok(block.objects.find(o=>o.seats.includes(label)).position[0]>-49,'G69/G63 must be at the G22 end');
+  for(const label of ['Seat_G56','Seat_G62'])assert.ok(block.objects.find(o=>o.seats.includes(label)).position[0]<-45,'G56/G62 must be at the G27 end');
+  assert.ok(!block.architecture.walls.some(w=>w.id==='g27-arch-wall-positive-z'));
+  const seam=block.architecture.walls.filter(w=>Math.abs(w.start[0]+46.98)<1e-8&&Math.abs(w.end[0]+46.98)<1e-8&&Math.min(w.start[1],w.end[1])< -7.2&&Math.max(w.start[1],w.end[1])> -7.2);
+  assert.deepEqual(seam.map(w=>w.id),['g22-arch-wall-negative-z']);
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    for(const z of [-8.5,-7.2,-5.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-56.4,.7,z),new THREE.Vector3(1,0,0),0,34).intersectObject(shell,true).length,0,'Route must continue from G27 through G22/G21 into G2');
+    if(!cutaway)assert.ok(new THREE.Raycaster(new THREE.Vector3(-47.5,3.8,-7.2),new THREE.Vector3(1,0,0),0,1).intersectObject(shell,true).length,'Shared arch must retain its overhead surround');
+    shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+  }
+});
+
+test('G2 reception leaves an open exit approach with E13 as sole primary camera',async()=>{
+  const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/ground/g2/${f}.json`,import.meta.url)))));
+  validateBlock({...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects});
+  assert.deepEqual(e.primaryCameras,['E13']);
+  const roi=JSON.parse(await readFile(new URL('../'+e.rois.E13.reception,import.meta.url)));assert.ok(roi.R1.points.length>=3);
+  assert.equal(o.objects.filter(v=>v.type==='counter').length,1);
+  const chairs=o.objects.filter(v=>v.type==='office-chair');assert.equal(chairs.length,2);assert.ok(chairs.every(v=>v.seats[0].startsWith('Seat_')));assert.equal(new Set(chairs.map(v=>v.seats[0])).size,2);
+  assert.ok(o.objects.every(v=>!v.externalId),'Neighboring ROI tables must not be duplicated');
+  const desk=o.objects.find(v=>v.type==='counter');assert.ok(desk.position[0]+desk.size[0]/2<.3,'Counter must leave right half open');
+  assert.equal(a.sharedBoundaries.find(v=>v.id==='g2-right-lounge-arch').neighbor,'ground/g20');assert.equal(a.sharedBoundaries.find(v=>v.id==='g2-left-lounge-arch').neighbor,'ground/g21');
+  assert.ok(Math.abs(a.circulation.polygon[0][1]+a.floorSize[1]/2-2.8)<1e-8,'Reception dark strip matches the G18/G20 seating bank depth');
+  const pillars=a.walls.filter(w=>w.id.endsWith('rear-pillar'));assert.equal(pillars.length,2);
+  assert.deepEqual(pillars.map(w=>(w.start[0]+w.end[0])/2),[0,4.2]);
+  for(const cutaway of [false,true]){const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);assert.equal(new THREE.Raycaster(new THREE.Vector3(2.1,.7,4.5),new THREE.Vector3(0,0,-1),0,9).intersectObject(shell,true).length,0,'Reception-side path to exit stays clear');}
+});
+
+test('Zone C has two pods, no seat identities, and a clear reception approach',async()=>{
+  const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/ground/zone-c-pods/${f}.json`,import.meta.url)))));
+  validateBlock({...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects});
+  const pods=o.objects.filter(v=>v.type==='privacy-pod');assert.equal(pods.length,2);
+  assert.equal(o.objects.flatMap(v=>v.seats).length,0);assert.ok(!o.objects.some(v=>v.externalId));
+  assert.deepEqual(e.primaryCameras,['Cor2']);assert.equal(a.sharedBoundaries[0].neighborBoundary,'g2-inward-path');
+  for(const pod of pods){const r=pod.yaw*Math.PI/180,extent=(Math.abs(Math.cos(r))*pod.size[0]*pod.scale[0]+Math.abs(Math.sin(r))*pod.size[2]*pod.scale[2])/2;assert.ok(pod.position[0]-extent>=2,'Pods must be over the dark strip');}
+  assert.deepEqual(a.circulation.polygon,[[-3.8,-3],[2,-3],[2,3],[-3.8,3]]);
+  const panes=a.walls.filter(w=>w.variant==='blue-gold-geometric');assert.equal(panes.length,1);assert.equal(a.walls.find(w=>w.id==='zone-c-behind-pods-glass').variant,'patterned-smoked');const halfPane=a.walls.find(w=>w.id==='zone-c-reception-half-glass');assert.deepEqual(halfPane.start,[0,-3]);assert.equal(halfPane.kind,'glass');assert.equal(halfPane.variant,'patterned-smoked');
+  for(const cutaway of [false,true]){const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);assert.equal(new THREE.Raycaster(new THREE.Vector3(-1.5,.7,4),new THREE.Vector3(0,0,-1),0,8).intersectObject(shell,true).length,0,'Route toward arrival reception must remain open');}
+});
+
+test('G2 double sliding gate opens the central passage and validates opening range',async()=>{
+  const {buildReceptionObject}=await import('./reception-objects.js');
+  const [m,a,o]=await Promise.all(['manifest','architecture','objects'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/ground/g2/${f}.json`,import.meta.url)))));
+  const gate=o.objects.find(v=>v.id==='g2-automatic-exit-gate');assert.equal(gate.type,'automatic-glass-gate');assert.equal(gate.position[2],3.52);
+  const mesh=(group,geometry,material,p)=>{const v=new THREE.Mesh(geometry,material);v.position.set(...p);group.add(v);return v;};
+  const helpers={mesh,box:(g,size,p,m)=>mesh(g,new THREE.BoxGeometry(...size),m,p),mat:color=>new THREE.MeshStandardMaterial({color})};
+  for(const openFraction of [0,1]){const group=new THREE.Group();buildReceptionObject(group,{...gate,openFraction},helpers);group.updateMatrixWorld(true);const hits=new THREE.Raycaster(new THREE.Vector3(.2,.7,1),new THREE.Vector3(0,0,-1),0,2).intersectObject(group,true);assert.equal(hits.length>0,openFraction===0,'Leaves must clear the passage when open');}
+  const draft={...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects};for(const value of [-.1,1.1]){gate.openFraction=value;assert.throws(()=>validateBlock(draft),/Gate opening/);}
 });
