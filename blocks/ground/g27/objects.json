@@ -1,0 +1,779 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-g-lounge-027",
+  "objects": [
+    {
+      "id": "g27-sofa-01",
+      "type": "sofa",
+      "name": "Two-seat sofa · G70 / G71",
+      "position": [
+        3.55,
+        0,
+        -2.2
+      ],
+      "yaw": 270,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G74",
+        "Seat_G73"
+      ],
+      "cameras": [
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g27-sofa-02",
+      "type": "sofa",
+      "name": "Two-seat sofa · G73 / G74",
+      "position": [
+        3.55,
+        0,
+        2.2
+      ],
+      "yaw": 270,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G71",
+        "Seat_G70"
+      ],
+      "cameras": [
+        "G6",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g27-chair-64",
+      "type": "armchair",
+      "name": "Upholstered lounge chair · G64",
+      "position": [
+        -3.55,
+        0,
+        -2.8
+      ],
+      "yaw": 90,
+      "size": [
+        0.83,
+        0.88,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G67"
+      ],
+      "cameras": [
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Four separate low curved upholstered chairs are visible in G13. Shared lounge builder approximates their curved shells and cushions; fabric pattern and exact profile are unresolved."
+    },
+    {
+      "id": "g27-chair-65",
+      "type": "armchair",
+      "name": "Upholstered lounge chair · G65",
+      "position": [
+        -3.55,
+        0,
+        -1.7
+      ],
+      "yaw": 90,
+      "size": [
+        0.83,
+        0.88,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G66"
+      ],
+      "cameras": [
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Four separate low curved upholstered chairs are visible in G13. Shared lounge builder approximates their curved shells and cushions; fabric pattern and exact profile are unresolved."
+    },
+    {
+      "id": "g27-chair-66",
+      "type": "armchair",
+      "name": "Upholstered lounge chair · G66",
+      "position": [
+        -3.55,
+        0,
+        1.7
+      ],
+      "yaw": 90,
+      "size": [
+        0.83,
+        0.88,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G65"
+      ],
+      "cameras": [
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Four separate low curved upholstered chairs are visible in G13. Shared lounge builder approximates their curved shells and cushions; fabric pattern and exact profile are unresolved."
+    },
+    {
+      "id": "g27-chair-67",
+      "type": "armchair",
+      "name": "Upholstered lounge chair · G67",
+      "position": [
+        -3.55,
+        0,
+        2.8
+      ],
+      "yaw": 90,
+      "size": [
+        0.83,
+        0.88,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G64"
+      ],
+      "cameras": [
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Four separate low curved upholstered chairs are visible in G13. Shared lounge builder approximates their curved shells and cushions; fabric pattern and exact profile are unresolved."
+    },
+    {
+      "id": "g27-chair-63",
+      "type": "armchair",
+      "name": "Teal armchair · G63",
+      "position": [
+        -2.398,
+        0,
+        -3.8
+      ],
+      "yaw": -0.224,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G68"
+      ],
+      "cameras": [
+        "G12",
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g27-chair-68",
+      "type": "armchair",
+      "name": "Teal armchair · G68",
+      "position": [
+        -2.38,
+        0,
+        3.8
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G63"
+      ],
+      "cameras": [
+        "G6",
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g27-chair-69",
+      "type": "armchair",
+      "name": "Teal armchair · G69",
+      "position": [
+        2.55,
+        0,
+        -3.82
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G75"
+      ],
+      "cameras": [
+        "G12",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g27-chair-72",
+      "type": "armchair",
+      "name": "Teal armchair · G72",
+      "position": [
+        2.45,
+        0,
+        0
+      ],
+      "yaw": -0.7173141772342336,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G72"
+      ],
+      "cameras": [
+        "G6",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g27-chair-75",
+      "type": "armchair",
+      "name": "Teal armchair · G75",
+      "position": [
+        2.55,
+        0,
+        3.82
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G69"
+      ],
+      "cameras": [
+        "G6",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g27-coffee-table-19",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        -2.35,
+        0,
+        -2.3
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G12",
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "externalId": "Table_G19"
+    },
+    {
+      "id": "g27-coffee-table-20",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        -2.35,
+        0,
+        2.1567406289498154
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "externalId": "Table_G20"
+    },
+    {
+      "id": "g27-coffee-table-21",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        2.45,
+        0,
+        -2.2
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G12",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "externalId": "Table_G21"
+    },
+    {
+      "id": "g27-coffee-table-22",
+      "type": "table",
+      "name": "Oval coffee table",
+      "position": [
+        2.45,
+        0,
+        2.2
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9ca",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "externalId": "Table_G22"
+    },
+    {
+      "id": "g27-display-shelf-01",
+      "type": "screen",
+      "name": "Tall display shelf · simplified",
+      "position": [
+        -2.95,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        2,
+        2.3,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#303b3a",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G12",
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "variant": "open-shelving",
+      "notes": "Shared open shelving approximates the tall dark organic display unit seen end-on in G13 and lengthwise in G6/G12; shelf contours, tier count, books and artifacts are not exact."
+    },
+    {
+      "id": "g27-side-table-01",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        -3.55,
+        0,
+        -3.6
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G12",
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "No external table ROI ID. Vase, books and display artifacts omitted."
+    },
+    {
+      "id": "g27-side-table-02",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        -3.55,
+        0,
+        3.9
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "No external table ROI ID. Vase, books and display artifacts omitted."
+    },
+    {
+      "id": "g27-side-table-03",
+      "type": "table",
+      "name": "Round side table · simplified glass/brass",
+      "position": [
+        3.55,
+        0,
+        -3.6
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G12",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "accessories": false,
+      "notes": "No external table ROI ID. Vase, books and display artifacts omitted."
+    },
+    {
+      "id": "g27-plant-stand-01",
+      "type": "table",
+      "name": "Square plant stand · simplified wood/brass",
+      "position": [
+        3.6,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.72,
+        0.65,
+        0.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#856746",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "variant": "rectangular",
+      "accessories": false,
+      "notes": "Square stand between sofas, simplified with the shared rectangular table variant."
+    },
+    {
+      "id": "g27-floor-lamp-01",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        -3.85,
+        0,
+        -3.95
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G12",
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g27-floor-lamp-02",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        -3.85,
+        0,
+        4.3
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g27-floor-lamp-03",
+      "type": "floor-lamp",
+      "name": "Floor lamp",
+      "position": [
+        3.85,
+        0,
+        -3.95
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "G12",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g27-plant-01",
+      "type": "plant",
+      "name": "Potted climber · on square stand",
+      "position": [
+        3.6,
+        0.65,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.5,
+        1.5,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "supportObjectId": "g27-plant-stand-01",
+      "notes": "Pot rests on the square stand. Shared foliage approximates the visible climbing plant."
+    },
+    {
+      "id": "g27-plant-02",
+      "type": "plant",
+      "name": "Tall potted plant · near passage",
+      "position": [
+        -3.7,
+        0,
+        -4.45
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        1.9,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "G12",
+        "G13"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Visible near-end plant; exact spacing, pot and foliage are schematic and need review."
+    },
+    {
+      "id": "g27-plant-03",
+      "type": "plant",
+      "name": "Tall potted plant · near passage",
+      "position": [
+        3.7,
+        0,
+        -4.45
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        1.9,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "G12",
+        "G14"
+      ],
+      "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
+      "notes": "Visible near-end plant; exact spacing, pot and foliage are schematic and need review."
+    }
+  ]
+}

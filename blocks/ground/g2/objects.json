@@ -1,0 +1,259 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-arrival-exit-002",
+  "objects": [
+    {
+      "id": "g2-reception-counter",
+      "type": "counter",
+      "name": "Arrival reception · stone and teal",
+      "position": [
+        -2.05,
+        0,
+        -1.7565808179865838
+      ],
+      "yaw": 0,
+      "size": [
+        3.7,
+        1.12,
+        0.85
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d3cbb7",
+      "seats": [],
+      "cameras": [
+        "E13"
+      ],
+      "confidence": "Visible reception/context in E13; dimensions and positions estimated",
+      "workstations": 2
+    },
+    {
+      "id": "g2-staff-chair-01",
+      "type": "office-chair",
+      "name": "Staff chair 1 · temporary identity",
+      "position": [
+        -2.9,
+        0,
+        -2.8226455647369684
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.15,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#303b3a",
+      "seats": [
+        "Seat_STAFF_01"
+      ],
+      "cameras": [
+        "E13"
+      ],
+      "confidence": "Visible reception/context in E13; dimensions and positions estimated",
+      "confidenceStatus": "temporary-non-CV-seat-ID"
+    },
+    {
+      "id": "g2-monitor-01",
+      "type": "display",
+      "name": "Reception monitor 1",
+      "position": [
+        -2.92106356598518,
+        0.76,
+        -1.8022094842653127
+      ],
+      "yaw": 180,
+      "size": [
+        0.52,
+        0.38,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#344341",
+      "seats": [],
+      "cameras": [
+        "E13"
+      ],
+      "confidence": "Visible reception/context in E13; dimensions and positions estimated"
+    },
+    {
+      "id": "g2-staff-chair-02",
+      "type": "office-chair",
+      "name": "Staff chair 2 · temporary identity",
+      "position": [
+        -1.2,
+        0,
+        -2.8562524103551894
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.15,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#303b3a",
+      "seats": [
+        "Seat_STAFF_02"
+      ],
+      "cameras": [
+        "E13"
+      ],
+      "confidence": "Visible reception/context in E13; dimensions and positions estimated",
+      "confidenceStatus": "temporary-non-CV-seat-ID"
+    },
+    {
+      "id": "g2-monitor-02",
+      "type": "display",
+      "name": "Reception monitor 2",
+      "position": [
+        -1.2183700223112115,
+        0.76,
+        -1.7815218479164514
+      ],
+      "yaw": 180,
+      "size": [
+        0.52,
+        0.38,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#344341",
+      "seats": [],
+      "cameras": [
+        "E13"
+      ],
+      "confidence": "Visible reception/context in E13; dimensions and positions estimated"
+    },
+    {
+      "id": "g2-right-console",
+      "type": "display-console",
+      "name": "Arch-side console and ornaments",
+      "position": [
+        3.7163743579132547,
+        0,
+        -3.232917997633952
+      ],
+      "yaw": -90,
+      "size": [
+        1.35,
+        0.86,
+        0.35
+      ],
+      "scale": [
+        0.6150426289133519,
+        0.798317755626124,
+        1
+      ],
+      "color": "#c7bea3",
+      "seats": [],
+      "cameras": [
+        "E13"
+      ],
+      "confidence": "Visible reception/context in E13; dimensions and positions estimated"
+    },
+    {
+      "id": "g2-rear-planter",
+      "type": "plant",
+      "name": "Tall reception-side planter",
+      "position": [
+        -0.13068608874763088,
+        0,
+        -3.05
+      ],
+      "yaw": 0,
+      "size": [
+        0.65,
+        1.65,
+        0.65
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4b6643",
+      "seats": [],
+      "cameras": [
+        "E13"
+      ],
+      "confidence": "Visible reception/context in E13; dimensions and positions estimated"
+    },
+    {
+      "id": "g2-counter-planter",
+      "type": "plant",
+      "name": "Small counter-end plant",
+      "position": [
+        -0.30192657048401383,
+        1.12,
+        -1.4821732210372205
+      ],
+      "yaw": 0,
+      "size": [
+        0.22,
+        0.38,
+        0.22
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4b6643",
+      "seats": [],
+      "cameras": [
+        "E13"
+      ],
+      "confidence": "Visible reception/context in E13; dimensions and positions estimated"
+    },
+    {
+      "id": "g2-automatic-exit-gate",
+      "type": "automatic-glass-gate",
+      "name": "Automatic double sliding glass exit gate",
+      "position": [
+        0,
+        0,
+        3.52
+      ],
+      "yaw": 0,
+      "size": [
+        8.4,
+        4.1,
+        0.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#929b99",
+      "seats": [],
+      "cameras": [
+        "E13"
+      ],
+      "openFraction": 0,
+      "operation": "automatic-sliding",
+      "confidence": "Owner-corrected gate: no floor scanner stand; overall height matches wall height, including header. Width/location provisional."
+    }
+  ]
+}

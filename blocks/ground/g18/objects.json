@@ -6,7 +6,7 @@
     {
       "id": "g18-sofa-01",
       "type": "sofa",
-      "name": "Two-seat sofa · G12 / G11",
+      "name": "Two-seat sofa · G19 / G18",
       "position": [
         -3.55,
         0,
@@ -25,88 +25,26 @@
       ],
       "color": "#bcb6a7",
       "seats": [
-        "Seat_G12",
-        "Seat_G11"
+        "Seat_G19",
+        "Seat_G18"
       ],
       "cameras": [
         "G24",
         "G25",
         "G28"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g18-sofa-02",
       "type": "sofa",
-      "name": "Two-seat sofa · G15 / G14",
+      "name": "Two-seat sofa · G22 / G21",
       "position": [
         -3.55,
         0,
         1.5
       ],
       "yaw": 90,
-      "size": [
-        2.05,
-        0.88,
-        0.9
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "color": "#bcb6a7",
-      "seats": [
-        "Seat_G15",
-        "Seat_G14"
-      ],
-      "cameras": [
-        "G24",
-        "G28"
-      ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
-    },
-    {
-      "id": "g18-sofa-03",
-      "type": "sofa",
-      "name": "Two-seat sofa · G18 / G19",
-      "position": [
-        3.55,
-        0,
-        -1.5
-      ],
-      "yaw": 270,
-      "size": [
-        2.05,
-        0.88,
-        0.9
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "color": "#bcb6a7",
-      "seats": [
-        "Seat_G18",
-        "Seat_G19"
-      ],
-      "cameras": [
-        "G25",
-        "G29"
-      ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
-    },
-    {
-      "id": "g18-sofa-04",
-      "type": "sofa",
-      "name": "Two-seat sofa · G22 / G21",
-      "position": [
-        3.55,
-        0,
-        1.5
-      ],
-      "yaw": 270,
       "size": [
         2.05,
         0.88,
@@ -124,16 +62,78 @@
       ],
       "cameras": [
         "G24",
+        "G28"
+      ],
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
+    },
+    {
+      "id": "g18-sofa-03",
+      "type": "sofa",
+      "name": "Two-seat sofa · G11 / G12",
+      "position": [
+        3.55,
+        0,
+        -1.5
+      ],
+      "yaw": 270,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G11",
+        "Seat_G12"
+      ],
+      "cameras": [
+        "G25",
         "G29"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
+    },
+    {
+      "id": "g18-sofa-04",
+      "type": "sofa",
+      "name": "Two-seat sofa · G14 / G15",
+      "position": [
+        3.55,
+        0,
+        1.5
+      ],
+      "yaw": 270,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_G14",
+        "Seat_G15"
+      ],
+      "cameras": [
+        "G24",
+        "G29"
+      ],
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g18-chair-10",
       "type": "armchair",
-      "name": "Teal armchair · G10",
+      "name": "Blue armchair · G17",
       "position": [
-        -2.6,
+        -2.4231813862359886,
         0,
         -3.08
       ],
@@ -148,116 +148,26 @@
         1,
         1
       ],
-      "color": "#3f5c59",
-      "seats": [
-        "Seat_G10"
-      ],
-      "cameras": [
-        "G25",
-        "G28"
-      ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
-    },
-    {
-      "id": "g18-chair-13",
-      "type": "armchair",
-      "name": "Teal armchair · G13",
-      "position": [
-        -2.4,
-        0,
-        0
-      ],
-      "yaw": 270,
-      "size": [
-        0.88,
-        0.9,
-        0.92
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "color": "#3f5c59",
-      "seats": [
-        "Seat_G13"
-      ],
-      "cameras": [
-        "G24",
-        "G28"
-      ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
-    },
-    {
-      "id": "g18-chair-16",
-      "type": "armchair",
-      "name": "Teal armchair · G16",
-      "position": [
-        -2.6,
-        0,
-        3.08
-      ],
-      "yaw": 180,
-      "size": [
-        0.88,
-        0.9,
-        0.92
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "color": "#3f5c59",
-      "seats": [
-        "Seat_G16"
-      ],
-      "cameras": [
-        "G24",
-        "G28"
-      ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
-    },
-    {
-      "id": "g18-chair-17",
-      "type": "armchair",
-      "name": "Teal armchair · G17",
-      "position": [
-        2.6,
-        0,
-        -3.08
-      ],
-      "yaw": 0,
-      "size": [
-        0.88,
-        0.9,
-        0.92
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
         "Seat_G17"
       ],
       "cameras": [
         "G25",
-        "G29"
+        "G28"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
-      "id": "g18-chair-20",
+      "id": "g18-chair-13",
       "type": "armchair",
-      "name": "Teal armchair · G20",
+      "name": "Blue armchair · G20",
       "position": [
-        2.4,
+        -2.4,
         0,
         0
       ],
-      "yaw": 90,
+      "yaw": -0.5639787644922037,
       "size": [
         0.88,
         0.9,
@@ -268,22 +178,22 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
         "Seat_G20"
       ],
       "cameras": [
         "G24",
-        "G29"
+        "G28"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
-      "id": "g18-chair-23",
+      "id": "g18-chair-16",
       "type": "armchair",
-      "name": "Teal armchair · G23",
+      "name": "Blue armchair · G23",
       "position": [
-        2.6,
+        -2.4281847236380556,
         0,
         3.08
       ],
@@ -298,15 +208,105 @@
         1,
         1
       ],
-      "color": "#3f5c59",
+      "color": "#627d86",
       "seats": [
         "Seat_G23"
       ],
       "cameras": [
         "G24",
+        "G28"
+      ],
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
+    },
+    {
+      "id": "g18-chair-17",
+      "type": "armchair",
+      "name": "Blue armchair · G10",
+      "position": [
+        2.3754817231357572,
+        0,
+        -3.08
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G10"
+      ],
+      "cameras": [
+        "G25",
         "G29"
       ],
-      "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review"
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
+    },
+    {
+      "id": "g18-chair-20",
+      "type": "armchair",
+      "name": "Blue armchair · G13",
+      "position": [
+        2.4241701280551915,
+        0,
+        0
+      ],
+      "yaw": -0.8750482977530373,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G13"
+      ],
+      "cameras": [
+        "G24",
+        "G29"
+      ],
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
+    },
+    {
+      "id": "g18-chair-23",
+      "type": "armchair",
+      "name": "Blue armchair · G16",
+      "position": [
+        2.423697863513861,
+        0,
+        3.08
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_G16"
+      ],
+      "cameras": [
+        "G24",
+        "G29"
+      ],
+      "confidence": "Seat row assignment corrected by owner; existing position, yaw and dimensions retained"
     },
     {
       "id": "g18-coffee-table-3",
@@ -425,66 +425,6 @@
       ],
       "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
       "externalId": "Table_G6"
-    },
-    {
-      "id": "g18-context-table-1",
-      "type": "table",
-      "name": "Context table · boundary review",
-      "position": [
-        2.55,
-        0,
-        -5.25
-      ],
-      "yaw": 0,
-      "size": [
-        1.4,
-        0.42,
-        0.72
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "color": "#ddd9ca",
-      "seats": [],
-      "cameras": [
-        "G25"
-      ],
-      "confidence": "ROI identity visible in G25; placement relative to core estimated; not accepted block ownership",
-      "externalId": "Table_G1",
-      "ownershipStatus": "provisional-context-neighbor-unresolved",
-      "notes": "Beyond the main seating group. Context only; associated background seats have no G18 seat labels and are excluded. "
-    },
-    {
-      "id": "g18-context-table-2",
-      "type": "table",
-      "name": "Context table · boundary review",
-      "position": [
-        -2.55,
-        0,
-        -5.25
-      ],
-      "yaw": 90,
-      "size": [
-        1.4,
-        0.42,
-        0.9
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "color": "#ddd9ca",
-      "seats": [],
-      "cameras": [
-        "G25"
-      ],
-      "confidence": "ROI identity visible in G25; placement relative to core estimated; not accepted block ownership",
-      "externalId": "Table_G2",
-      "ownershipStatus": "provisional-context-neighbor-unresolved",
-      "notes": "Beyond the main seating group. Context only; associated background seats have no G18 seat labels and are excluded. Actual rectangular top is approximated by the shared oval builder."
     },
     {
       "id": "g18-side-table-01",

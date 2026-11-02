@@ -41,11 +41,13 @@
     "Local X is across the divider; local Z follows its length. Positive Z is the glazing side visible in B6. These axes are not registered to building coordinates.",
     "Working floor extent 6.6 by 5.4 provisional meters is not a measured or traced room boundary. Map anchors identify the area only; no fitted map reprojection is claimed.",
     "Plants, two lamps and two glass side tables are simplified visual context. Decorative vase shapes and cushion patterns are representative approximations.",
-    "Ceiling estimate 3.66–4.57 m; visualization midpoint 4.1 m. No ceiling, wall or camera calibration is inferred.",
-    "Final visual review, ROI overlay alignment, source-map footprint tracing and neighboring G9 seam alignment remain outstanding.",
-    "Integration review 2026-11-01: normal and wide B4/B5/B6 inspected. Wide views show glazing on the B6 end, rounded access surrounds at the opposite end, teal/gold side cladding and display consoles. Their geometry, wall endpoints and ownership remain pending; this push contains a furniture draft, not a completed shell.",
     "Updated d30ab2d ROIs retain the eight seat identities and two table identities. Some duplicate observations were removed. Original map anchors predate the updated ground-floor image and require alignment review.",
-    "Rendering now reuses the current shared lounge, open-shelving screen, floor-lamp and table builders. Side-table glass/brass detail and custom upholstery detail from the original local implementation are simplified for compatibility."
+    "Rendering now reuses the current shared lounge, open-shelving screen, floor-lamp and table builders. Side-table glass/brass detail and custom upholstery detail from the original local implementation are simplified for compatibility.",
+    "Shell quality review: compared with G11 and inspected normal/wide B4/B5/B6. Shared lounge, divider, lamp, wall finish, arch, glass and console builders keep rendering consistent. Existing 15 furniture objects and all seat/table identities preserved.",
+    "Added provisional closed +Z glazing, -Z rounded corridor entrances, +X teal/gold TV wall and -X reflective wall, one TV and one console. Left/right finishes confirmed by owner from B6; room dimensions remain estimated.",
+    "Reflections and corridor seating are excluded from object counts. Normal ROIs remain specific to the detection snapshots.",
+    "Measured dimensions, updated map alignment, G9 shared seams, full ceiling fixture reconstruction and exact upholstery/side-table finishes remain unresolved.",
+    "Owner correction: swap side finishes to match B6 camera-left blue/teal design and camera-right black design. TV and console follow the blue wall; seating transforms and IDs retained."
   ],
   "wideSnapshots": {
     "B4": "evidence/wide capture snapshots/B4.jpg",
@@ -57,5 +59,10 @@
     "zoom": "Wider architectural view",
     "roiUsage": "ROIs apply only to normal detection snapshots",
     "capturedAt": null
-  }
+  },
+  "reviewItems": [
+    "Confirm two access arches and central pier widths",
+    "Confirm floor footprint and map alignment before global merge",
+    "Confirm sofa seat order; current contributor IDs retained"
+  ]
 }

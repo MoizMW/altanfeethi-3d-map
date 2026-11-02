@@ -1,0 +1,209 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-g-lounge-028",
+  "cameras": [
+    "G11",
+    "G15",
+    "G18",
+    "G19"
+  ],
+  "snapshots": {
+    "G11": "evidence/camera-snapshots/G11.jpg",
+    "G15": "evidence/camera-snapshots/G15.jpg",
+    "G18": "evidence/camera-snapshots/G18.jpg",
+    "G19": "evidence/camera-snapshots/G19.jpg"
+  },
+  "wideSnapshots": {
+    "G11": "evidence/wide capture snapshots/G11.jpg",
+    "G15": "evidence/wide capture snapshots/G15.jpg",
+    "G18": "evidence/wide capture snapshots/G18.jpg",
+    "G19": "evidence/wide capture snapshots/G19.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per project owner",
+    "zoom": "Supplementary wider architecture framing",
+    "roiUsage": "Detection ROIs apply only to normal images; no wide-view pixel mapping assumed",
+    "capturedAt": null
+  },
+  "rois": {
+    "G11": {
+      "chairs": "evidence/rois/chair-rois/g28/G11_to_g28.json",
+      "tables": "evidence/rois/table-rois/g28/G11_to_g28.json"
+    },
+    "G15": {
+      "chairs": "evidence/rois/chair-rois/g28/G15_to_g28.json",
+      "tables": "evidence/rois/table-rois/g28/G15_to_g28.json"
+    },
+    "G18": {
+      "chairs": "evidence/rois/chair-rois/g28/G18_to_g28.json",
+      "tables": "evidence/rois/table-rois/g28/G18_to_g28.json"
+    },
+    "G19": {
+      "chairs": "evidence/rois/chair-rois/g28/G19_to_g28.json",
+      "tables": "evidence/rois/table-rois/g28/G19_to_g28.json"
+    }
+  },
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "roiCoordinateStatus": "Original normal-image rectangles reviewed for correspondence. Historical authoring resolution unrecorded. Seat_G77 in G11 reaches y=1072; Seat_G84 in G19 reaches x=1916. No clamping or conversion of ROI pixels into world positions.",
+  "notes": [
+    "Owner clarified the reference pattern: long sofas must be whitish and small armchairs bluish. Sofa base color is ivory-white #eeeadd; armchair base color is blue #527e86. These local presentation overrides supersede the earlier beige palette; furniture placement and identities retain their camera evidence.",
+    "Two sofas and nine teal armchairs resolve all 13 distinct annotated seat IDs once: Seat_G76–G79 and Seat_G81–G89. Seat_G80 is absent from the supplied group ROIs and is not invented.",
+    "Four core coffee tables map to Table_G23–G26. Table_G27 is background evidence beyond the crop; its neighboring ownership and surrounding unlabelled sofas remain unresolved.",
+    "G15 shows the sofa bank against reflective glazing; G19 shows six individual armchairs divided by one tall shelf against curtains. G11/G18 connect the two banks across the pale path. Reflections are not additional furniture.",
+    "All four normal and wide views were inspected. Shared furniture, schematic side glazing, shelf, three round tables, raised plant and two floor lamps form 22 editable objects.",
+    "Dimensions, sofa slot order, chair angles, curved side-bay surrounds, local endpoints and global alignment need review. No metric calibration or fitted camera projection is claimed."
+  ],
+  "seatCorrespondence": [
+    {
+      "objectId": "g28-sofa-01",
+      "seats": [
+        "Seat_G78",
+        "Seat_G77"
+      ],
+      "sources": [
+        "G11",
+        "G15",
+        "G18"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g28-sofa-02",
+      "seats": [
+        "Seat_G82",
+        "Seat_G81"
+      ],
+      "sources": [
+        "G11",
+        "G15"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g28-chair-76",
+      "seats": [
+        "Seat_G76"
+      ],
+      "sources": [
+        "G15",
+        "G18"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g28-chair-79",
+      "seats": [
+        "Seat_G79"
+      ],
+      "sources": [
+        "G11",
+        "G15"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g28-chair-83",
+      "seats": [
+        "Seat_G83"
+      ],
+      "sources": [
+        "G11",
+        "G15"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g28-chair-84",
+      "seats": [
+        "Seat_G84"
+      ],
+      "sources": [
+        "G18",
+        "G19"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g28-chair-85",
+      "seats": [
+        "Seat_G85"
+      ],
+      "sources": [
+        "G19"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g28-chair-86",
+      "seats": [
+        "Seat_G86"
+      ],
+      "sources": [
+        "G19"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g28-chair-87",
+      "seats": [
+        "Seat_G87"
+      ],
+      "sources": [
+        "G19"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g28-chair-88",
+      "seats": [
+        "Seat_G88"
+      ],
+      "sources": [
+        "G19"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g28-chair-89",
+      "seats": [
+        "Seat_G89"
+      ],
+      "sources": [
+        "G11",
+        "G19"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    }
+  ],
+  "excludedObservations": [
+    {
+      "externalId": "Table_G27",
+      "sources": [
+        "G11"
+      ],
+      "roiFile": "evidence/rois/table-rois/g28/G11_to_g28.json",
+      "status": "background-outside-core-ownership-unresolved",
+      "reason": "Rectangular table beyond the two main seating banks; surrounding end-lounge sofas have no seat labels in these group ROIs. Preserve as evidence for later boundary/ownership review."
+    }
+  ],
+  "reviewItems": [
+    "Confirm sofa left/right seat slots, especially Seat_G77/G78 and Seat_G81/G82.",
+    "Review chair yaw and spacing, particularly shared middle Seat_G79.",
+    "Confirm Table_G27 ownership and the end-lounge boundary before extending the crop.",
+    "Trace side-bay arches, pale piers, glazing and curtains after structural ownership review.",
+    "Review side-table supports, lamp interpretation and shelf silhouette; tabletop lamps, vases, ring ornaments, bin, extinguisher and background sofas are omitted.",
+    "Calibrate floor basis/scale and resolve neighboring seams before composition."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-overlapping-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-derived-needs-human-review",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

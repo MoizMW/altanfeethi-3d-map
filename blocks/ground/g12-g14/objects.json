@@ -1,0 +1,1012 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-c-lounge-012-014",
+  "objects": [
+    {
+      "id": "g12-g14-sofa-01",
+      "type": "sofa",
+      "name": "Two-seat sofa · C19 / C20",
+      "position": [
+        1.55,
+        0,
+        -5.9
+      ],
+      "yaw": 0,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_C19",
+        "Seat_C20"
+      ],
+      "cameras": [
+        "C12",
+        "C24"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-sofa-02",
+      "type": "sofa",
+      "name": "Two-seat sofa · C22 / C21",
+      "position": [
+        1.55,
+        0,
+        -1.55
+      ],
+      "yaw": 0,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_C22",
+        "Seat_C21"
+      ],
+      "cameras": [
+        "C24",
+        "F18"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-sofa-03",
+      "type": "sofa",
+      "name": "Two-seat sofa · C25 / C24",
+      "position": [
+        1.55,
+        0,
+        1.55
+      ],
+      "yaw": 180,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_C25",
+        "Seat_C24"
+      ],
+      "cameras": [
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-sofa-04",
+      "type": "sofa",
+      "name": "Two-seat sofa · C28 / C29",
+      "position": [
+        1.55,
+        0,
+        5.9
+      ],
+      "yaw": 180,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_C28",
+        "Seat_C29"
+      ],
+      "cameras": [
+        "C23",
+        "C26"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-17",
+      "type": "armchair",
+      "name": "Blue armchair · C17",
+      "position": [
+        2.15,
+        0,
+        -3.2
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C17"
+      ],
+      "cameras": [
+        "C22"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-18",
+      "type": "armchair",
+      "name": "Blue armchair · C18",
+      "position": [
+        1.05,
+        0,
+        -3.2
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C18"
+      ],
+      "cameras": [
+        "C22"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-76",
+      "type": "armchair",
+      "name": "Blue armchair · C76",
+      "position": [
+        -0.12,
+        0,
+        -4.55
+      ],
+      "yaw": 88.72433704624432,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C76"
+      ],
+      "cameras": [
+        "C12"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-23",
+      "type": "armchair",
+      "name": "Blue armchair · C23",
+      "position": [
+        -0.12,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C23"
+      ],
+      "cameras": [
+        "C23",
+        "C25",
+        "F18"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-26",
+      "type": "armchair",
+      "name": "Blue armchair · C26",
+      "position": [
+        2.15,
+        0,
+        3.2
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C26"
+      ],
+      "cameras": [
+        "E3"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-27",
+      "type": "armchair",
+      "name": "Blue armchair · C27",
+      "position": [
+        1.05,
+        0,
+        3.2
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C27"
+      ],
+      "cameras": [
+        "C26",
+        "E3"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-77",
+      "type": "armchair",
+      "name": "Blue armchair · C77",
+      "position": [
+        -0.12,
+        0,
+        4.55
+      ],
+      "yaw": 89.11148375701289,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C77"
+      ],
+      "cameras": [
+        "C26",
+        "E3"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-78",
+      "type": "armchair",
+      "name": "Blue armchair · C78",
+      "position": [
+        -2.65,
+        0,
+        -5.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C78"
+      ],
+      "cameras": [
+        "C12",
+        "C24"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-79",
+      "type": "armchair",
+      "name": "Blue armchair · C79",
+      "position": [
+        -2.65,
+        0,
+        -3.45
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C79"
+      ],
+      "cameras": [
+        "C22"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-80",
+      "type": "armchair",
+      "name": "Blue armchair · C80",
+      "position": [
+        -2.65,
+        0,
+        -1.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C80"
+      ],
+      "cameras": [
+        "C24",
+        "C25",
+        "F18"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-81",
+      "type": "armchair",
+      "name": "Blue armchair · C81",
+      "position": [
+        -2.65,
+        0,
+        1.1
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C81"
+      ],
+      "cameras": [
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-82",
+      "type": "armchair",
+      "name": "Blue armchair · C82",
+      "position": [
+        -2.65,
+        0,
+        3.45
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C82"
+      ],
+      "cameras": [
+        "E3"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-chair-83",
+      "type": "armchair",
+      "name": "Blue armchair · C83",
+      "position": [
+        -2.65,
+        0,
+        5.65
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526e78",
+      "seats": [
+        "Seat_C83"
+      ],
+      "cameras": [
+        "C23",
+        "C25",
+        "C26"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-table-22",
+      "type": "table",
+      "name": "Coffee table · Table_C22",
+      "position": [
+        1.55,
+        0,
+        -4.55
+      ],
+      "yaw": 0,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C12",
+        "C24",
+        "F18"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated",
+      "externalId": "Table_C22"
+    },
+    {
+      "id": "g12-g14-table-23",
+      "type": "table",
+      "name": "Coffee table · Table_C23",
+      "position": [
+        1.55,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "E3",
+        "F18"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated",
+      "externalId": "Table_C23"
+    },
+    {
+      "id": "g12-g14-table-24",
+      "type": "table",
+      "name": "Coffee table · Table_C24",
+      "position": [
+        1.55,
+        0,
+        4.55
+      ],
+      "yaw": 0,
+      "size": [
+        1.5,
+        0.42,
+        0.78
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated",
+      "externalId": "Table_C24"
+    },
+    {
+      "id": "g12-g14-table-25",
+      "type": "table",
+      "name": "Coffee table · Table_C25",
+      "position": [
+        -2.65,
+        0,
+        -4.55
+      ],
+      "yaw": 90,
+      "size": [
+        1.2,
+        0.42,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C12",
+        "C22",
+        "C24",
+        "F18"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated",
+      "externalId": "Table_C25"
+    },
+    {
+      "id": "g12-g14-table-26",
+      "type": "table",
+      "name": "Coffee table · Table_C26",
+      "position": [
+        -2.65,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        1.2,
+        0.42,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "F18"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated",
+      "externalId": "Table_C26"
+    },
+    {
+      "id": "g12-g14-table-27",
+      "type": "table",
+      "name": "Coffee table · Table_C27",
+      "position": [
+        -2.65,
+        0,
+        4.55
+      ],
+      "yaw": 90,
+      "size": [
+        1.2,
+        0.42,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated",
+      "externalId": "Table_C27"
+    },
+    {
+      "id": "g12-g14-side-table-01",
+      "type": "table",
+      "name": "Round pale side table",
+      "position": [
+        0.03,
+        0,
+        -3.45
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        0.52,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C12",
+        "C24"
+      ],
+      "confidence": "Round pale side table visible in listed views; no ROI identity assigned; support geometry simplified",
+      "accessories": false
+    },
+    {
+      "id": "g12-g14-side-table-02",
+      "type": "table",
+      "name": "Round pale side table",
+      "position": [
+        -0.12,
+        0,
+        -1.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        0.52,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "F18",
+        "C24"
+      ],
+      "confidence": "Round pale side table visible in listed views; no ROI identity assigned; support geometry simplified",
+      "accessories": false
+    },
+    {
+      "id": "g12-g14-side-table-03",
+      "type": "table",
+      "name": "Round pale side table",
+      "position": [
+        -0.12,
+        0,
+        1.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        0.52,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C25"
+      ],
+      "confidence": "Round pale side table visible in listed views; no ROI identity assigned; support geometry simplified",
+      "accessories": false
+    },
+    {
+      "id": "g12-g14-side-table-04",
+      "type": "table",
+      "name": "Round pale side table",
+      "position": [
+        0.03,
+        0,
+        3.45
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        0.52,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "C23",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Round pale side table visible in listed views; no ROI identity assigned; support geometry simplified",
+      "accessories": false
+    },
+    {
+      "id": "g12-g14-glass-table-c19",
+      "type": "table",
+      "name": "Brass glass side table · C19",
+      "position": [
+        -0.12,
+        0,
+        -5.92
+      ],
+      "yaw": 0,
+      "size": [
+        0.66,
+        0.61,
+        0.66
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "C12",
+        "C24",
+        "F18"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated",
+      "variant": "round-glass",
+      "accessories": false
+    },
+    {
+      "id": "g12-g14-lamp-c19",
+      "type": "floor-lamp",
+      "name": "Floor lamp · C19",
+      "position": [
+        -0.12,
+        0,
+        -6.22
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        1.85,
+        0.44
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "C12",
+        "C24",
+        "F18"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-plant-c19",
+      "type": "plant",
+      "name": "Tall plant · C19",
+      "position": [
+        -1.12,
+        0,
+        -6.05
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        2.2,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526b45",
+      "seats": [],
+      "cameras": [
+        "C12",
+        "C24",
+        "F18"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-glass-table-c28",
+      "type": "table",
+      "name": "Brass glass side table · C28",
+      "position": [
+        -0.12,
+        0,
+        5.92
+      ],
+      "yaw": 0,
+      "size": [
+        0.66,
+        0.61,
+        0.66
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated",
+      "variant": "round-glass",
+      "accessories": false
+    },
+    {
+      "id": "g12-g14-lamp-c28",
+      "type": "floor-lamp",
+      "name": "Floor lamp · C28",
+      "position": [
+        -0.12,
+        0,
+        6.22
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        1.85,
+        0.44
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-plant-c28",
+      "type": "plant",
+      "name": "Tall plant · C28",
+      "position": [
+        -1.12,
+        0,
+        6.05
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        2.2,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#526b45",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    }
+  ]
+}

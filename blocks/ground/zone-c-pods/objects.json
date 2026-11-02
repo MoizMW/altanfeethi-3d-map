@@ -1,0 +1,115 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-zone-c-pods",
+  "objects": [
+    {
+      "id": "zone-c-pod-01",
+      "type": "privacy-pod",
+      "name": "Glazed privacy pod 1",
+      "position": [
+        2.921969329367539,
+        0,
+        0.9369969442768928
+      ],
+      "yaw": -88.39518867739177,
+      "size": [
+        1.35,
+        2.35,
+        1.35
+      ],
+      "scale": [
+        1.1482105668608096,
+        1.1374274790156134,
+        1
+      ],
+      "color": "#9c805b",
+      "seats": [],
+      "cameras": [
+        "Cor2"
+      ],
+      "confidence": "Owner confirms two pods; glazed/dark-frame/wood appearance from Cor2. Size, depth and interior worktop approximated."
+    },
+    {
+      "id": "zone-c-pod-02",
+      "type": "privacy-pod",
+      "name": "Glazed privacy pod 2",
+      "position": [
+        2.913907679620298,
+        0,
+        -1.0355940973363773
+      ],
+      "yaw": -88.06121816373272,
+      "size": [
+        1.35,
+        2.35,
+        1.35
+      ],
+      "scale": [
+        1.1309525859761584,
+        1.1300000244353632,
+        1
+      ],
+      "color": "#9c805b",
+      "seats": [],
+      "cameras": [
+        "Cor2"
+      ],
+      "confidence": "Owner confirms two pods; glazed/dark-frame/wood appearance from Cor2. Size, depth and interior worktop approximated."
+    },
+    {
+      "id": "zone-c-rear-planter",
+      "type": "plant",
+      "name": "Approach planter · simplified",
+      "position": [
+        2.7781231975004106,
+        0,
+        -2.4825679318045117
+      ],
+      "yaw": 0,
+      "size": [
+        0.45,
+        1.5,
+        0.45
+      ],
+      "scale": [
+        1.9223426992615835,
+        1.192899527861398,
+        1.6154287254958595
+      ],
+      "color": "#4b6643",
+      "seats": [],
+      "cameras": [
+        "Cor2"
+      ],
+      "confidence": "Planter context visible in Cor2; foliage/size/placement approximate"
+    },
+    {
+      "id": "zone-c-arch-planter",
+      "type": "plant",
+      "name": "Approach planter · simplified",
+      "position": [
+        3.1109161513876873,
+        0,
+        2.45
+      ],
+      "yaw": 0,
+      "size": [
+        0.38,
+        1.05,
+        0.38
+      ],
+      "scale": [
+        1,
+        1.8787136878007404,
+        1.4361875970269804
+      ],
+      "color": "#4b6643",
+      "seats": [],
+      "cameras": [
+        "Cor2"
+      ],
+      "confidence": "Planter context visible in Cor2; foliage/size/placement approximate"
+    }
+  ]
+}

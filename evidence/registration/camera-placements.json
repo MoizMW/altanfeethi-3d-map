@@ -2,7 +2,7 @@
   "format": "altanfeethi-camera-registration",
   "version": 1,
   "coordinateSpace": "source-image-pixels",
-  "updatedAt": "2026-11-01T09:20:19.073Z",
+  "updatedAt": "2026-11-02T04:59:32.936Z",
   "floors": {
     "ground": {
       "label": "Ground floor",
@@ -535,6 +535,36 @@
       "provenance": null
     },
     {
+      "id": "Cor1",
+      "file": "Cor1.jpg",
+      "zone": "",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 5758,
+        "y": 4165
+      },
+      "heading": 284,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
+      "id": "Cor2",
+      "file": "Cor2.jpg",
+      "zone": "",
+      "group_id": "",
+      "floor": "ground",
+      "position": {
+        "x": 7419,
+        "y": 5118
+      },
+      "heading": 281,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
+      "provenance": null
+    },
+    {
       "id": "D2",
       "file": "D2.jpg",
       "zone": "",
@@ -715,7 +745,7 @@
       "id": "EXIT",
       "file": "EXIT.jpg",
       "zone": "E",
-      "group_id": "g2",
+      "group_id": "g2E",
       "floor": "ground",
       "position": {
         "x": 3058,

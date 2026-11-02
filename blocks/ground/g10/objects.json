@@ -25,8 +25,8 @@
       ],
       "color": "#bcb6a7",
       "seats": [
-        "Seat_B10",
-        "Seat_B11"
+        "Seat_B15",
+        "Seat_B14"
       ],
       "cameras": [
         "B4",
@@ -56,8 +56,8 @@
       ],
       "color": "#bcb6a7",
       "seats": [
-        "Seat_B14",
-        "Seat_B15"
+        "Seat_B10",
+        "Seat_B11"
       ],
       "cameras": [
         "B5",
@@ -87,7 +87,7 @@
       ],
       "color": "#627d86",
       "seats": [
-        "Seat_B9"
+        "Seat_B13"
       ],
       "cameras": [
         "B4"
@@ -116,7 +116,7 @@
       ],
       "color": "#627d86",
       "seats": [
-        "Seat_B12"
+        "Seat_B16"
       ],
       "cameras": [
         "B6"
@@ -145,7 +145,7 @@
       ],
       "color": "#627d86",
       "seats": [
-        "Seat_B13"
+        "Seat_B9"
       ],
       "cameras": [
         "B5"
@@ -174,7 +174,7 @@
       ],
       "color": "#627d86",
       "seats": [
-        "Seat_B16"
+        "Seat_B12"
       ],
       "cameras": [
         "B6"
@@ -359,7 +359,7 @@
       "type": "floor-lamp",
       "name": "Warm floor lamp",
       "position": [
-        -2.3,
+        -2.8975909144521292,
         0,
         2.3
       ],
@@ -438,6 +438,63 @@
         "B6"
       ],
       "confidence": "Cross-view correspondence; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-console-01",
+      "type": "display-console",
+      "name": "TV-wall display console",
+      "position": [
+        2.96,
+        0,
+        0
+      ],
+      "yaw": -90,
+      "size": [
+        2.5,
+        0.88,
+        0.38
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c7bea3",
+      "seats": [],
+      "cameras": [
+        "B5",
+        "B6"
+      ],
+      "confidence": "Visible TV/console context; dimensions and local placement estimated"
+    },
+    {
+      "id": "g10-tv-01",
+      "type": "display",
+      "name": "Wall-mounted TV",
+      "position": [
+        3.14,
+        1.55,
+        0
+      ],
+      "yaw": -90,
+      "size": [
+        1.45,
+        0.86,
+        0.08
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#20282a",
+      "seats": [],
+      "cameras": [
+        "B5",
+        "B6"
+      ],
+      "confidence": "Visible TV/console context; dimensions and local placement estimated",
+      "mount": "wall"
     }
   ]
 }

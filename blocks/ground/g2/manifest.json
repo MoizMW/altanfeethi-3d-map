@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-arrival-exit-002",
+  "slug": "g2",
+  "name": "G2 \u00b7 Arrival reception and exit",
+  "floor": "ground",
+  "groups": [
+    "g2"
+  ],
+  "zone": "E",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

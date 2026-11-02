@@ -4,7 +4,7 @@
   "blockId": "ground-g-lounge-018",
   "floorSize": [
     8.4,
-    10.4
+    8
   ],
   "ceilingHeight": 4.1,
   "placement": {
@@ -65,11 +65,11 @@
   "footprint": [
     [
       -4.2,
-      -6.6
+      -4.2
     ],
     [
       4.2,
-      -6.6
+      -4.2
     ],
     [
       4.2,
@@ -85,12 +85,12 @@
       "id": "g18-reflective-glazing",
       "kind": "glass",
       "start": [
-        -4.15,
-        -3.7
+        -4.2,
+        -4.2
       ],
       "end": [
-        -4.15,
-        3.7
+        -4.2,
+        3.8
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -101,18 +101,18 @@
         "G25",
         "G28"
       ],
-      "notes": "Shared glass builder is schematic; patterned lower panel and reflections are not reproduced. Reflected furniture is excluded."
+      "notes": "Shared glass builder is schematic; patterned lower panel and reflections are not reproduced. Reflected furniture is excluded. Owner refinement aligns glazing endpoints with trimmed floor and G16 arch join."
     },
     {
       "id": "g18-curtained-glazing",
       "kind": "glass",
       "start": [
-        4.15,
-        -3.7
+        4.2,
+        -4.2
       ],
       "end": [
-        4.15,
-        3.7
+        4.2,
+        3.8
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -123,14 +123,31 @@
         "G25",
         "G29"
       ],
-      "notes": "Shared glass builder is schematic; curtain fabric is not reproduced; confirm underlying glazing and frame spacing."
+      "notes": "Shared glass builder is schematic; curtain fabric is not reproduced; confirm underlying glazing and frame spacing. Owner refinement aligns glazing endpoints with trimmed floor and G16 arch join."
     }
   ],
   "openings": [],
-  "sharedBoundaries": [],
+  "sharedBoundaries": [
+    {
+      "id": "g18-g16-arch-entry",
+      "kind": "open-connection",
+      "neighbor": "ground/g16",
+      "neighborBoundary": "g16-neighbor-arch",
+      "status": "relative-layout-authored-needs-owner-review",
+      "ownsWall": false
+    },
+    {
+      "id": "g18-g20-arch",
+      "kind": "rounded-passage",
+      "neighbor": "ground/g20",
+      "owner": "layout/ground/g16-g18",
+      "status": "relative-layout-authored-needs-owner-review",
+      "ownsWall": false
+    }
+  ],
   "floorCenter": [
     0,
-    -1.4
+    -0.2
   ],
   "mainSeatingExtent": {
     "x": [
@@ -148,11 +165,11 @@
     "polygon": [
       [
         -1.4,
-        -6.6
+        -4.2
       ],
       [
         1.4,
-        -6.6
+        -4.2
       ],
       [
         1.4,
@@ -174,11 +191,11 @@
   "ceiling": {
     "size": [
       8.4,
-      10.4
+      8
     ],
     "center": [
       0,
-      -1.4
+      -0.2
     ],
     "height": 4.1,
     "status": "estimated-plain-visualization-only"
@@ -210,5 +227,8 @@
       ],
       "notes": "Pale curved surrounds/pier returns are visible but their complete spans, ownership and profiles are not established."
     }
+  ],
+  "notes": [
+    "Owner trims former context-table end: floor stops at local Z=-4.2, about one 0.6 m tile beyond Seat_G10 outer edge. Furniture transforms retained. This end connects to G16 full-width arch in layouts/ground/g16-g18.json."
   ]
 }
