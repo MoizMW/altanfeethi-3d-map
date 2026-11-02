@@ -8,11 +8,13 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
     const [ax,az]=wall.start,[bx,bz]=wall.end,length=Math.hypot(bx-ax,bz-az),height=cutaway?Math.min(1.05,wall.height):wall.height;
     const group=new THREE.Group();group.position.set(ax,0,az);group.rotation.y=-Math.atan2(bz-az,bx-ax);group.userData.boundaryId=wall.id;root.add(group);
     if(wall.kind==='glass'){
-      add(group,new THREE.BoxGeometry(length,height,wall.thickness),material('#9dbfc3',{transparent:true,opacity:.22,depthWrite:false,side:THREE.DoubleSide}),length/2,height/2,0);
-      const frame=material('#717a78',{metalness:.45,roughness:.4});
+      add(group,new THREE.BoxGeometry(length,height,wall.thickness),material(wall.color||'#9dbfc3',{transparent:true,opacity:wall.opacity??.22,depthWrite:false,side:THREE.DoubleSide}),length/2,height/2,0);
+      const frame=material(wall.frameColor||'#717a78',{metalness:.45,roughness:.4});
       for(const x of [0,length/2,length])add(group,new THREE.BoxGeometry(.05,height,.08),frame,x,height/2,0);
       for(const y of [.08,height])add(group,new THREE.BoxGeometry(length,.06,.08),frame,length/2,y,0);
-      add(group,new THREE.BoxGeometry(length,.42,.015),material('#cadbd8',{transparent:true,opacity:.4,depthWrite:false}),length/2,Math.min(.85,height/2),-.05);continue;
+      const splitHeight=wall.height*wall.horizontalSplit;
+      if(splitHeight>0&&splitHeight<height)add(group,new THREE.BoxGeometry(length,.08,Math.max(.08,wall.thickness+.02)),frame,length/2,splitHeight,0);
+      if(wall.privacyBand!==false)add(group,new THREE.BoxGeometry(length,.42,.015),material('#cadbd8',{transparent:true,opacity:.4,depthWrite:false}),length/2,Math.min(.85,height/2),-.05);continue;
     }
     const openings=(data.openings||[]).filter(o=>o.wallId===wall.id).sort((a,b)=>a.offset-b.offset);
     // The wall contour follows the arch; no wall plane crosses the opening.

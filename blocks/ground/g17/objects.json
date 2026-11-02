@@ -131,6 +131,7 @@
       "id": "g17-chair-02",
       "type": "armchair",
       "name": "Gold lounge chair · E2",
+      "variant": "egg-swivel",
       "position": [
         -2.7,
         0,
@@ -156,12 +157,13 @@
         "E4"
       ],
       "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
-      "notes": "Gold high-back swivel chair approximated with the shared armchair builder; curved shell, pedestal and leather response are not reproduced."
+      "notes": "Curved gold swivel chair follows the owner's reference: flared wraparound back and arms, oval cushion, stitched rim and four-spoke pedestal. Shape and dimensions are visual estimates."
     },
     {
       "id": "g17-chair-11",
       "type": "armchair",
       "name": "Gold lounge chair · E11",
+      "variant": "egg-swivel",
       "position": [
         2.7,
         0,
@@ -187,7 +189,7 @@
         "E4"
       ],
       "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
-      "notes": "Gold high-back swivel chair approximated with the shared armchair builder; curved shell, pedestal and leather response are not reproduced."
+      "notes": "Curved gold swivel chair follows the owner's reference: flared wraparound back and arms, oval cushion, stitched rim and four-spoke pedestal. Shape and dimensions are visual estimates."
     },
     {
       "id": "g17-coffee-table-1",

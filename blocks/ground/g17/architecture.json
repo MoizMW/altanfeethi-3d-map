@@ -80,6 +80,11 @@
     {
       "id": "g17-rear-glazing",
       "kind": "glass",
+      "color": "#426783",
+      "opacity": 0.65,
+      "frameColor": "#858777",
+      "horizontalSplit": 0.5,
+      "privacyBand": false,
       "start": [
         -3.3,
         -2.95
@@ -96,7 +101,7 @@
         "E2",
         "E4"
       ],
-      "confidence": "Patterned blue glazing visible in all views; dimensions, transparency and generic framing estimated. Shared glass builder omits the opaque/frosted decorative pattern."
+      "confidence": "Blue glazing and central vertical/horizontal framing follow E4-wide and the owner's reference. The horizontal rail splits the height in half. Dimensions, tint and opacity are visual estimates; the decorative frosted pattern is not reproduced."
     },
     {
       "id": "g17-sign-wall",
