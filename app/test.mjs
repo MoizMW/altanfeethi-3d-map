@@ -55,7 +55,7 @@ test('duplicate IDs, duplicate seats and invalid dimensions are rejected',()=>{
   for(const mutate of [b=>b.objects[1].seats=['Seat_B3'],b=>b.objects[1].id=b.objects[0].id,b=>b.objects[0].position[0]=NaN,b=>b.objects[0].size[0]=-1]){const copy=structuredClone(block);mutate(copy);assert.throws(()=>validateBlock(copy));}
 });
 
-for(const slug of ['g18','g20'])test(`${slug.toUpperCase()} reconciles ROI identities and keeps furniture outside the through path`,async()=>{
+for(const slug of ['g18','g20','g21','g27'])test(`${slug.toUpperCase()} reconciles ROI identities and keeps furniture outside the through path`,async()=>{
   const base=new URL(`../blocks/ground/${slug}/`,import.meta.url);
   const [m,a,o,e]=await Promise.all(['manifest.json','architecture.json','objects.json','evidence.json'].map(async f=>JSON.parse(await readFile(new URL(f,base)))));
   const draft=validateBlock({...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects});
@@ -64,9 +64,10 @@ for(const slug of ['g18','g20'])test(`${slug.toUpperCase()} reconciles ROI ident
     const roi=JSON.parse(await readFile(new URL(`../${e.rois[camera][kind]}`,import.meta.url)));
     for(const label of Object.keys(roi))labels.add(label);
   }
-  assert.deepEqual(draft.objects.flatMap(x=>x.seats).sort(),[...observedSeats].sort());
+  const temporarySeats=new Set((e.unmappedSeats||[]).map(x=>x.temporarySeatId));
+  assert.deepEqual(draft.objects.flatMap(x=>x.seats).filter(s=>!temporarySeats.has(s)).sort(),[...observedSeats].sort());
   const localTables=draft.objects.filter(x=>x.externalId).map(x=>x.externalId);
-  const externalTables=(e.externalObservations||[]).map(x=>x.externalId);
+  const externalTables=[...(e.externalObservations||[]),...(e.deferredObservations||[])].map(x=>x.externalId);
   assert.deepEqual([...localTables,...externalTables].sort(),[...observedTables].sort());
   const context=draft.objects.filter(x=>x.ownershipStatus==='provisional-context-neighbor-unresolved');
   assert.deepEqual(context.map(x=>x.externalId).sort(),slug==='g18'?['Table_G1','Table_G2']:[]);
@@ -79,6 +80,39 @@ for(const slug of ['g18','g20'])test(`${slug.toUpperCase()} reconciles ROI ident
     const angle=THREE.MathUtils.degToRad(object.yaw),[w,,d]=object.size;
     const extentX=(Math.abs(Math.cos(angle))*w+Math.abs(Math.sin(angle))*d)/2;
     assert.ok(object.position[0]+extentX<=Math.min(...pathXs)||object.position[0]-extentX>=Math.max(...pathXs),`${object.id} obstructs the central path`);
+  }
+});
+
+for(const slug of ['g21','g27'])test(`${slug.toUpperCase()} records unresolved identities and neighbors while keeping objects inside its crop`,async()=>{
+  const [objects,evidence,architecture]=await Promise.all(['objects.json','evidence.json','architecture.json'].map(async file=>JSON.parse(await readFile(new URL(`../blocks/ground/${slug}/${file}`,import.meta.url)))));
+  const unmappedSeats=evidence.unmappedSeats||[];
+  assert.equal(unmappedSeats.length,slug==='g21'?1:0);
+  for(const unmapped of unmappedSeats){
+    const chair=objects.objects.find(o=>o.id===unmapped.objectId);
+    assert.equal(chair.identityStatus,'temporary-unmapped');
+    assert.deepEqual(chair.seats,[unmapped.temporarySeatId]);
+    assert.ok(unmapped.cameras.every(camera=>evidence.cameras.includes(camera)));
+    for(const camera of evidence.cameras){
+      const roi=JSON.parse(await readFile(new URL(`../${evidence.rois[camera].chairs}`,import.meta.url)));
+      assert.ok(!roi[unmapped.temporarySeatId],'Temporary names cannot claim supplied ROI identities');
+    }
+  }
+  for(const deferred of evidence.deferredObservations){
+    const roi=JSON.parse(await readFile(new URL(`../${deferred.corroboratingRoiFile}`,import.meta.url)));
+    assert.ok(roi[deferred.externalId]);
+    assert.ok(!objects.objects.some(o=>o.externalId===deferred.externalId),'Background tables remain outside local ownership');
+  }
+  for(const object of objects.objects){
+    const angle=THREE.MathUtils.degToRad(object.yaw),[w,,d]=object.size;
+    const extentX=(Math.abs(Math.cos(angle))*w+Math.abs(Math.sin(angle))*d)/2;
+    const extentZ=(Math.abs(Math.sin(angle))*w+Math.abs(Math.cos(angle))*d)/2;
+    assert.ok(Math.abs(object.position[0])+extentX<=architecture.floorSize[0]/2,`${object.id} crosses the crop's side`);
+    assert.ok(Math.abs(object.position[2])+extentZ<=architecture.floorSize[1]/2,`${object.id} crosses the crop's end`);
+    if(object.supportObjectId){
+      const support=objects.objects.find(o=>o.id===object.supportObjectId);
+      assert.ok(support,`${object.id} needs a real support object`);
+      assert.equal(object.position[1],support.position[1]+support.size[1]);
+    }
   }
 });
 
@@ -123,7 +157,7 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     const jpg=Buffer.from(await(await fetch(`${origin}/api/evidence/camera/B1${query}`)).arrayBuffer());assert.equal(jpg[0],255);assert.equal(jpg[1],216);
     assert.equal((await fetch(`${origin}/shared/schema/block-schema.js`)).status,200);assert.equal((await fetch(`${origin}/server.mjs`)).status,404);assert.equal((await fetch(`${origin}/api/block?block=../../private`)).status,400);
     const g32=await(await fetch(`${origin}/api/block?block=ground/g32`)).json();validateBlock(g32.block);
-    for(const slug of ['g18','g20']){
+    for(const slug of ['g18','g20','g21','g27']){
       assert.ok(listing.blocks.some(b=>b.key===`ground/${slug}`));
       const data=await(await fetch(`${origin}/api/block?block=ground/${slug}`)).json();validateBlock(data.block);
       for(const id of data.block.evidence.cameras)assert.equal((await fetch(`${origin}/api/evidence/camera/${id}?block=ground/${slug}`)).status,200);
