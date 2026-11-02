@@ -1,0 +1,119 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-g-lounge-029",
+  "floorSize": [4.1, 5],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-01T09:20:19.073Z",
+    "anchors": [
+      {"camera": "G16", "pixel": [9136, 7078], "heading": 184, "status": "verified"},
+      {"camera": "G17", "pixel": [8701, 7331], "heading": 95, "status": "verified"}
+    ],
+    "localAxes": {
+      "x": "Across the group, from the decorative panel behind Seat_G90/G91 toward the curtained glazing behind Seat_G92/G93",
+      "z": "Along the group, from Seat_G90/G91 toward Seat_G94/G95",
+      "y": "Up"
+    },
+    "sourceMapCrop": [7600, 6100, 9800, 7900],
+    "mapReview": "The two registered cameras and illustrated seating locate a lounge near the ground-floor edge. Sofa positions follow the overlapping photos; the illustrated symbols are not literal furniture geometry."
+  },
+  "floorCenter": [0.45, 0],
+  "footprint": [[-1.6, -2.5], [2.5, -2.5], [2.5, 2.5], [-1.6, 2.5]],
+  "walls": [
+    {
+      "id": "g29-curtain-side-solid",
+      "kind": "solid",
+      "start": [2.4, -2.4],
+      "end": [2.4, -0.96],
+      "height": 4.1,
+      "thickness": 0.18,
+      "owner": "ground/g29",
+      "sources": ["G16-wide", "G17-wide", "owner-description"],
+      "confidence": "Owner confirms 30% solid wall from the G92 end; exact dimensions estimated",
+      "notes": "The solid section and adjacent window form one continuous boundary behind Seat_G92/G93."
+    },
+    {
+      "id": "g29-curtain-side-glazing",
+      "kind": "glass",
+      "start": [2.4, -0.96],
+      "end": [2.4, 2.4],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g29",
+      "sources": ["G16-wide", "G17-wide", "owner-description"],
+      "confidence": "Owner confirms the remaining 70% is window glass; height and local offset estimated",
+      "notes": "Sheer curtains and exact frame divisions are not modeled."
+    },
+    {
+      "id": "g29-far-window-glazing",
+      "kind": "glass",
+      "start": [-1.5, 2.4],
+      "end": [1.62, 2.4],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g29",
+      "sources": ["G16-wide", "owner-description"],
+      "confidence": "Owner confirms 80% window glass behind G94/G95; exact dimensions estimated",
+      "notes": "Curtains and frame divisions are simplified."
+    },
+    {
+      "id": "g29-far-window-solid",
+      "kind": "solid",
+      "start": [1.62, 2.4],
+      "end": [2.4, 2.4],
+      "height": 4.1,
+      "thickness": 0.18,
+      "owner": "ground/g29",
+      "sources": ["G16-wide", "owner-description"],
+      "confidence": "Owner confirms 20% solid wall; right-side placement follows the visible pier in G16 wide and needs final review",
+      "notes": "The wall section is placed at the window's right end toward the neighboring bay."
+    },
+    {
+      "id": "g29-panel-side-solid",
+      "kind": "solid",
+      "start": [-1.5, -2.4],
+      "end": [2.4, -2.4],
+      "height": 4.1,
+      "thickness": 0.18,
+      "owner": "ground/g29",
+      "sources": ["G17-wide", "owner-description"],
+      "confidence": "Owner confirms a complete wall behind G90/G91; finish and dimensions estimated",
+      "notes": "A partial dark decorative panel is visible; this structural wall uses the shared plain finish until its panel extent is reviewed."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "circulation": {
+    "id": "g29-pale-tile-floor",
+    "polygon": [[-1.58, -2.48], [2.48, -2.48], [2.48, 2.48], [-1.58, 2.48]],
+    "surfaceMaterial": "pale-stone",
+    "status": "visible-finish-estimated-extent",
+    "sources": ["G16", "G17"],
+    "notes": "The shared editor uses one pale material for this overlay; the photographed tile pattern is not reproduced."
+  },
+  "ceiling": {
+    "size": [4.1, 5],
+    "center": [0.45, 0],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "boundaryReview": [
+    {
+      "id": "g29-panel-side-finish",
+      "kind": "solid-wall-finish",
+      "status": "wall-confirmed-panel-extent-unresolved",
+      "sources": ["G17-wide"],
+      "notes": "The complete wall behind Seat_G90/G91 is owner-confirmed. Its decorative panel and pier finish are only partly visible."
+    },
+    {
+      "id": "g29-next-bay",
+      "kind": "unknown",
+      "status": "neighbor-and-seam-unresolved",
+      "sources": ["G16-wide"],
+      "notes": "The neighboring lounge is visible past a pier. The boundary ownership and connection are still unresolved."
+    }
+  ]
+}

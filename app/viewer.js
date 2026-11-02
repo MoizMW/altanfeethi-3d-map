@@ -35,9 +35,45 @@ function build(o){const g=new THREE.Group(),[w,h,d]=referenceSize[o.type], fabri
   for(let i=0;i<n;i++){const x=(i-(n-1)/2)*(w-.35)/n;box(g,[(w-.38)/n,.16,d*.71],[x,.47,.08],fabric,.065);if(o.variant!=='armless'){const cushion=box(g,[(w-.4)/n*.78,.39,.14],[x,.73,-d*.19],mat(o.type==='sofa'?'#9fafab':'#889fa3'),.055);cushion.rotation.x=-.17;}}
   for(const x of [-w/2+.14,w/2-.14])for(const z of [-d/2+.15,d/2-.15])box(g,[.045,.18,.045],[x,.09,z],dark,.008);
  }else if(o.type==='table'){
-  if(o.variant==='rectangular'||o.variant==='square-stone')box(g,[w,.065,d],[0,h,0],mat(o.color,.28),o.variant==='rectangular'?.012:.025);
-  else{const surface=o.variant==='round-glass'?new THREE.MeshStandardMaterial({color:'#bbc9c5',transparent:true,opacity:.4,roughness:.12,metalness:.12}):mat(o.color,.28);const top=mesh(g,new THREE.CylinderGeometry(1,1,.065,64),surface,[0,h,0]);top.scale.set(w/2,1,d/2);if(o.variant==='round-glass'){const rim=mesh(g,new THREE.TorusGeometry(1,.025,6,48),gold,[0,h,0]);rim.rotation.x=Math.PI/2;rim.scale.set(w/2,d/2,1);}}
-  for(const x of [-w*.28,w*.28])for(const z of [-d*.26,d*.26])box(g,[.035,h,.035],[x,h/2,z],o.variant==='round-glass'?gold:dark,.007);
+  if (
+    o.shape === 'square' ||
+    o.variant === 'rectangular' ||
+    o.variant === 'square-stone'
+  ) {
+    box(
+      g,
+      [w, .065, d],
+      [0, h, 0],
+      mat(o.color, .28),
+      o.variant === 'rectangular' ? .012 : .025
+    );
+  } else {
+    const surface = o.variant === 'round-glass'
+      ? new THREE.MeshStandardMaterial({
+          color: '#bbc9c5',
+          transparent: true,
+          opacity: .4,
+          roughness: .12,
+          metalness: .12
+        })
+      : mat(o.color, .28);
+
+    const top = mesh(g, new THREE.CylinderGeometry(1, 1, .065, 64), surface, [0, h, 0]);
+    top.scale.set(w / 2, 1, d / 2);
+
+    if (o.variant === 'round-glass') {
+      const rim = mesh(g, new THREE.TorusGeometry(1, .025, 6, 48), gold, [0, h, 0]);
+      rim.rotation.x = Math.PI / 2;
+      rim.scale.set(w / 2, d / 2, 1);
+    }
+  }
+
+  for (const x of [-w * .28, w * .28]) {
+    for (const z of [-d * .26, d * .26]) {
+      box(g, [.035, h, .035], [x, h / 2, z],
+        o.variant === 'round-glass' ? gold : dark, .007);
+    }
+  }
   if(o.accessories!==false){box(g,[.17,.15,.17],[.1,h+.11,0],mat('#8a5437'),.012);box(g,[.06,.09,.035],[.1,h+.2,0],mat('#f1eee3'),.01);}
  }else if(o.type==='screen'&&o.variant==='open-shelving'){
   // A shared divider variant; reference dimensions still use the screen contract.
