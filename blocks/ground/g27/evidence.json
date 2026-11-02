@@ -1,0 +1,214 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-g-lounge-027",
+  "cameras": [
+    "G6",
+    "G12",
+    "G13",
+    "G14"
+  ],
+  "snapshots": {
+    "G6": "evidence/camera-snapshots/G6.jpg",
+    "G12": "evidence/camera-snapshots/G12.jpg",
+    "G13": "evidence/camera-snapshots/G13.jpg",
+    "G14": "evidence/camera-snapshots/G14.jpg"
+  },
+  "notes": [
+    "Six individual upholstered chairs face two two-seat sofas and three armchairs across the central path. All 13 supplied Seat_G63\u2013Seat_G75 identities are mapped once; no temporary seat names were needed.",
+    "Four owned coffee tables are Table_G19\u2013Table_G22. Background Table_G16 in G12 is corroborated by g22 ROIs; Table_G23/G25 in G6 by g28 ROIs. These remain deferred observations outside G27 ownership and are not instantiated.",
+    "G13 establishes reflective backing, four low upholstered chairs, angled end chairs and display shelving. G14 establishes curtained sofa bank, its three armchairs and square plant stand. G6/G12 support cross-view arrangement and pale-path/dark-strip continuity.",
+    "Display shelving, three round side tables, square stand, three floor lamps and three plants are schematic context. Reflected furniture, neighboring seats, small stand/bin, detailed books/artifacts, curtains and full arch profiles are excluded.",
+    "All dimensions and local transforms are estimates. Map points/headings, registration revision/hash and evidence paths are retained without fitting a global floor transform or measured camera calibration."
+  ],
+  "wideSnapshots": {},
+  "wideCaptureStatus": "Checked supplied folder: no G6/G12/G13/G14 wide captures available.",
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "rois": {
+    "G6": {
+      "chairs": "evidence/rois/chair-rois/g27/G6_to_g27.json",
+      "tables": "evidence/rois/table-rois/g27/G6_to_g27.json"
+    },
+    "G12": {
+      "chairs": "evidence/rois/chair-rois/g27/G12_to_g27.json",
+      "tables": "evidence/rois/table-rois/g27/G12_to_g27.json"
+    },
+    "G13": {
+      "chairs": "evidence/rois/chair-rois/g27/G13_to_g27.json",
+      "tables": "evidence/rois/table-rois/g27/G13_to_g27.json"
+    },
+    "G14": {
+      "chairs": "evidence/rois/chair-rois/g27/G14_to_g27.json",
+      "tables": "evidence/rois/table-rois/g27/G14_to_g27.json"
+    }
+  },
+  "roiCoordinateStatus": "All four chair/table overlays reviewed against normal 1920x1080 snapshots. G12 Table_G21 starts at x=-4; retain original unclamped partial-edge annotation. Historical authoring resolution unrecorded. ROIs are not world coordinates.",
+  "deferredObservations": [
+    {
+      "externalId": "Table_G16",
+      "camera": "G12",
+      "roiFile": "evidence/rois/table-rois/g27/G12_to_g27.json",
+      "candidateGroup": "g22",
+      "corroboratingRoiFile": "evidence/rois/table-rois/g22/G10_to_g22.json",
+      "status": "outside-core-candidate-neighbor-not-modeled",
+      "renderLocally": false
+    },
+    {
+      "externalId": "Table_G23",
+      "camera": "G6",
+      "roiFile": "evidence/rois/table-rois/g27/G6_to_g27.json",
+      "candidateGroup": "g28",
+      "corroboratingRoiFile": "evidence/rois/table-rois/g28/G11_to_g28.json",
+      "status": "outside-core-candidate-neighbor-not-modeled",
+      "renderLocally": false
+    },
+    {
+      "externalId": "Table_G25",
+      "camera": "G6",
+      "roiFile": "evidence/rois/table-rois/g27/G6_to_g27.json",
+      "candidateGroup": "g28",
+      "corroboratingRoiFile": "evidence/rois/table-rois/g28/G11_to_g28.json",
+      "status": "outside-core-candidate-neighbor-not-modeled",
+      "renderLocally": false
+    }
+  ],
+  "seatCorrespondence": [
+    {
+      "objectId": "g27-sofa-01",
+      "seats": [
+        "Seat_G70",
+        "Seat_G71"
+      ],
+      "sources": [
+        "G14"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g27-sofa-02",
+      "seats": [
+        "Seat_G73",
+        "Seat_G74"
+      ],
+      "sources": [
+        "G6",
+        "G14"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g27-chair-64",
+      "seats": [
+        "Seat_G64"
+      ],
+      "sources": [
+        "G13"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g27-chair-65",
+      "seats": [
+        "Seat_G65"
+      ],
+      "sources": [
+        "G13"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g27-chair-66",
+      "seats": [
+        "Seat_G66"
+      ],
+      "sources": [
+        "G13"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g27-chair-67",
+      "seats": [
+        "Seat_G67"
+      ],
+      "sources": [
+        "G13"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g27-chair-63",
+      "seats": [
+        "Seat_G63"
+      ],
+      "sources": [
+        "G12",
+        "G13"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g27-chair-68",
+      "seats": [
+        "Seat_G68"
+      ],
+      "sources": [
+        "G6",
+        "G13"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g27-chair-69",
+      "seats": [
+        "Seat_G69"
+      ],
+      "sources": [
+        "G12",
+        "G14"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g27-chair-72",
+      "seats": [
+        "Seat_G72"
+      ],
+      "sources": [
+        "G6",
+        "G14"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g27-chair-75",
+      "seats": [
+        "Seat_G75"
+      ],
+      "sources": [
+        "G6",
+        "G14"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    }
+  ],
+  "reviewItems": [
+    "Confirm sofa slot order, four central chair correspondence, angled end-chair yaw and central Seat_G72 direction.",
+    "Resolve background Table_G16/G23/G25 ownership when g22/g28 are built; avoid duplicating their identities.",
+    "Review estimated 8.4 x 9.6 m working crop, 2.8 m path, 4.1 m visualization ceiling and all furniture dimensions.",
+    "Review display-shelf shape, near-end plant correspondence, raised plant support height and contextual lamp/side-table spacing.",
+    "Resolve arch profiles, curtain/glazing backing and neighboring shared seam ownership before floor composition.",
+    "Calibrate floor-map basis and scale before assigning a global transform."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-overlapping-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "13-ROI-seat-labels-needs-human-review",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

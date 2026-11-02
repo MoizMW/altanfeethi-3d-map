@@ -1,0 +1,221 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-g-lounge-021",
+  "cameras": [
+    "G1",
+    "G2",
+    "G4",
+    "G5"
+  ],
+  "snapshots": {
+    "G1": "evidence/camera-snapshots/G1.jpg",
+    "G2": "evidence/camera-snapshots/G2.jpg",
+    "G4": "evidence/camera-snapshots/G4.jpg",
+    "G5": "evidence/camera-snapshots/G5.jpg"
+  },
+  "notes": [
+    "Asymmetric layout: four armless chairs plus one angled armchair by reflective backing; two two-seat sofas plus three armchairs by curtains. Eleven supplied Seat_G38\u2013Seat_G48 labels map once to physical furniture.",
+    "A second central armchair beside Seat_G45 is visible in G1 and G4 but has no supplied ROI identity. Seat_G21_TMP_01 is a temporary editor label, not an approved occupancy-system ID. Total draft: 12 seat slots, 11 ROI-mapped plus one unmapped.",
+    "Four owned coffee tables are Table_G11\u2013Table_G14. G4 background Table_G15/G17 also appear in g22 ROI files; they are deferred observations, not G21-owned meshes or accepted block dependencies.",
+    "Pale central path and dark seating strips follow G2/G4; side glazing follows G1/G5. Reflected furniture is not duplicated. Full arch profiles and neighboring seams remain unresolved.",
+    "Tall display shelving, two round side tables, square plant stand, three floor lamps and two plants are simplified context. Ottoman, small stone stands, tabletop lamp, curtains and patterned backing are not reconstructed."
+  ],
+  "wideSnapshots": {},
+  "wideCaptureStatus": "Checked supplied folder: no G1/G2/G4/G5 wide captures available.",
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "rois": {
+    "G1": {
+      "chairs": "evidence/rois/chair-rois/g21/G1_to_g21.json",
+      "tables": "evidence/rois/table-rois/g21/G1_to_g21.json"
+    },
+    "G2": {
+      "chairs": "evidence/rois/chair-rois/g21/G2_to_g21.json",
+      "tables": "evidence/rois/table-rois/g21/G2_to_g21.json"
+    },
+    "G4": {
+      "chairs": "evidence/rois/chair-rois/g21/G4_to_g21.json",
+      "tables": "evidence/rois/table-rois/g21/G4_to_g21.json"
+    },
+    "G5": {
+      "chairs": "evidence/rois/chair-rois/g21/G5_to_g21.json",
+      "tables": "evidence/rois/table-rois/g21/G5_to_g21.json"
+    }
+  },
+  "roiCoordinateStatus": "All four chair/table overlays reviewed against normal 1920x1080 snapshots. G4 Seat_G45 extends to y=1082, two pixels below the source image; preserve unclamped partial-edge annotation. Historical authoring resolution unrecorded. ROIs are not world coordinates.",
+  "deferredObservations": [
+    {
+      "externalId": "Table_G15",
+      "camera": "G4",
+      "roiFile": "evidence/rois/table-rois/g21/G4_to_g21.json",
+      "candidateGroup": "g22",
+      "corroboratingRoiFile": "evidence/rois/table-rois/g22/G10_to_g22.json",
+      "status": "outside-core-candidate-neighbor-not-modeled",
+      "renderLocally": false
+    },
+    {
+      "externalId": "Table_G17",
+      "camera": "G4",
+      "roiFile": "evidence/rois/table-rois/g21/G4_to_g21.json",
+      "candidateGroup": "g22",
+      "corroboratingRoiFile": "evidence/rois/table-rois/g22/G7_to_g22.json",
+      "status": "outside-core-candidate-neighbor-not-modeled",
+      "renderLocally": false
+    }
+  ],
+  "unmappedSeats": [
+    {
+      "objectId": "g21-chair-unmapped-01",
+      "temporarySeatId": "Seat_G21_TMP_01",
+      "cameras": [
+        "G1",
+        "G4"
+      ],
+      "status": "visible-chair-no-supplied-roi-label",
+      "sourceImageRegions": {
+        "G1": [
+          790,
+          600,
+          1125,
+          995
+        ],
+        "G4": [
+          1180,
+          680,
+          1570,
+          910
+        ]
+      },
+      "notes": "Regions are inspection landmarks in normal images, not official CV annotations."
+    }
+  ],
+  "seatCorrespondence": [
+    {
+      "objectId": "g21-sofa-01",
+      "seats": [
+        "Seat_G43",
+        "Seat_G44"
+      ],
+      "sources": [
+        "G1",
+        "G2"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g21-sofa-02",
+      "seats": [
+        "Seat_G46",
+        "Seat_G47"
+      ],
+      "sources": [
+        "G1",
+        "G4"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g21-chair-38",
+      "seats": [
+        "Seat_G38"
+      ],
+      "sources": [
+        "G5"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g21-chair-39",
+      "seats": [
+        "Seat_G39"
+      ],
+      "sources": [
+        "G5"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g21-chair-40",
+      "seats": [
+        "Seat_G40"
+      ],
+      "sources": [
+        "G5"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g21-chair-41",
+      "seats": [
+        "Seat_G41"
+      ],
+      "sources": [
+        "G5"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g21-chair-42",
+      "seats": [
+        "Seat_G42"
+      ],
+      "sources": [
+        "G4",
+        "G5"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g21-chair-45",
+      "seats": [
+        "Seat_G45"
+      ],
+      "sources": [
+        "G1",
+        "G4"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g21-chair-48",
+      "seats": [
+        "Seat_G48"
+      ],
+      "sources": [
+        "G1",
+        "G4"
+      ],
+      "status": "ROI-derived-needs-human-review"
+    },
+    {
+      "objectId": "g21-chair-unmapped-01",
+      "seats": [
+        "Seat_G21_TMP_01"
+      ],
+      "sources": [
+        "G1",
+        "G4"
+      ],
+      "status": "temporary-unmapped"
+    }
+  ],
+  "reviewItems": [
+    "Assign an approved identity to the extra central armchair; temporary Seat_G21_TMP_01 must not be treated as a CV seat ID.",
+    "Confirm sofa slot order, individual armless chair correspondence and central pair orientations.",
+    "Confirm Table_G15/G17 neighboring ownership using g22 before any composition; no duplicate context tables were created.",
+    "Review the estimated 8.4 x 8.8 m footprint, 2.8 m path, 4.1 m visualization ceiling and all object dimensions.",
+    "Review display-shelf profile, plant correspondence/support height and unmodeled ottoman/stands/table lamp.",
+    "Resolve curtain/glazing backing, arch geometry, shared boundary ownership and global floor transform."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-overlapping-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "11-ROI-seat-labels-plus-one-explicit-temporary-ID",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}
