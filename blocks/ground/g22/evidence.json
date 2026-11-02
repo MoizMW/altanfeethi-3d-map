@@ -1,0 +1,107 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-g-lounge-022",
+  "cameras": [
+    "G7",
+    "G8",
+    "G9",
+    "G10"
+  ],
+  "snapshots": {
+    "G7": "evidence/camera-snapshots/G7.jpg",
+    "G8": "evidence/camera-snapshots/G8.jpg",
+    "G9": "evidence/camera-snapshots/G9.jpg",
+    "G10": "evidence/camera-snapshots/G10.jpg"
+  },
+  "wideSnapshots": {
+    "G7": "evidence/wide capture snapshots/G7.jpg",
+    "G8": "evidence/wide capture snapshots/G8.jpg",
+    "G9": "evidence/wide capture snapshots/G9.jpg",
+    "G10": "evidence/wide capture snapshots/G10.jpg"
+  },
+  "sourceRevision": "ac7453a",
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "wideCaptureContext": {
+    "mountPosition": "Same physical mount per project guidance",
+    "capturedAt": null,
+    "zoom": "Supplementary frames; G7/G10 cover more surrounding detail, G8/G9 provide similar framing under different lighting.",
+    "roiUsage": "Existing ROIs are attached only to normal detection images; no normal-to-wide transform assumed."
+  },
+  "rois": {
+    "G7": {
+      "chairs": "evidence/rois/chair-rois/g22/G7_to_g22.json",
+      "tables": "evidence/rois/table-rois/g22/G7_to_g22.json"
+    },
+    "G8": {
+      "chairs": "evidence/rois/chair-rois/g22/G8_to_g22.json",
+      "tables": "evidence/rois/table-rois/g22/G8_to_g22.json"
+    },
+    "G9": {
+      "chairs": "evidence/rois/chair-rois/g22/G9_to_g22.json",
+      "tables": "evidence/rois/table-rois/g22/G9_to_g22.json"
+    },
+    "G10": {
+      "chairs": "evidence/rois/chair-rois/g22/G10_to_g22.json",
+      "tables": "evidence/rois/table-rois/g22/G10_to_g22.json"
+    }
+  },
+  "seatMappings": {
+    "Seat_G51": "g22-sofa-01",
+    "Seat_G50": "g22-sofa-01",
+    "Seat_G55": "g22-sofa-02",
+    "Seat_G54": "g22-sofa-02",
+    "Seat_G49": "g22-chair-49",
+    "Seat_G52": "g22-chair-52",
+    "Seat_G56": "g22-chair-56",
+    "Seat_G57": "g22-chair-57",
+    "Seat_G58": "g22-chair-58",
+    "Seat_G59": "g22-chair-59",
+    "Seat_G60": "g22-chair-60",
+    "Seat_G61": "g22-chair-61",
+    "Seat_G62": "g22-chair-62"
+  },
+  "tableMappings": {
+    "Table_G15": "g22-coffee-table-15",
+    "Table_G16": "g22-coffee-table-16",
+    "Table_G17": "g22-coffee-table-17",
+    "Table_G18": "g22-coffee-table-18"
+  },
+  "notes": [
+    "Two cream two-seat sofas and nine teal armchairs reconcile 13 seat labels across G7/G8/G9/G10. Four physical oval coffee tables carry Table_G15–Table_G18.",
+    "Curtain side has six individual armchairs around two tables, separated by one open display shelf. Reflective side has two sofas and three armchairs. G8/G9 connect the opposite banks across the pale path.",
+    "Seat_G53 is absent from all supplied g22 ROI files. Preserve the gap; no missing seat or additional chair is inferred. Sofa slot ordering remains provisional.",
+    "The working floor is estimated 9 x 8.8 m with a 2.8 m through path. Schematic side glazing is supported by normal and wide views; curved surrounds, curtain fabric and patterned glazing are unresolved.",
+    "Five side/support tables, four lamps and four plants are editable simplified context. The center plant is raised onto its support; two small lamps rest on side tables. Glass/brass, square stand geometry, shade designs and foliage differ from shared procedural approximations.",
+    "Neighboring sofas/chairs visible beyond the bay edges and reflections are excluded. No global transform, accepted shared seam or measured dimensions are claimed."
+  ],
+  "roiReview": {
+    "status": "All eight ROI files overlaid on normal snapshots and visually inspected on 2026-11-02",
+    "chairObservations": 23,
+    "uniqueSeatLabels": 13,
+    "tableObservations": 12,
+    "uniqueTableLabels": 4,
+    "coordinates": "Pixel rectangles fit the normal 1920x1080 snapshots; several touch image edges. Historical authoring dimensions unknown; no clamping or direct pixel-to-meter conversion.",
+    "missingSeatLabels": [
+      "Seat_G53"
+    ]
+  },
+  "reviewItems": [
+    "Confirm sofa slot order [G51,G50] / [G55,G54] in asset local left/right coordinates.",
+    "Confirm Seat_G52 is the one central reflective-side armchair and the absence of Seat_G53 is intentional.",
+    "Review estimated chair angles, spacing, 9 x 8.8 m footprint and 2.8 m path.",
+    "Trace arch/pier endpoints and curtain/reflective boundary extents; resolve neighboring ownership before shell completion.",
+    "Fit map-to-block transform and shared seams using structural landmarks; ceiling estimate 4.1 m retains the 3.66–4.57 m range."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-overlapping-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-and-visual-correspondence-needs-human-review",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}
