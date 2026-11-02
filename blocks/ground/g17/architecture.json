@@ -1,0 +1,223 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-e-majlis-017",
+  "floorSize": [
+    6.8,
+    6.8
+  ],
+  "floorCenter": [
+    0,
+    0.3
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-01T09:20:19.073Z",
+    "registrationSha256": "887ac6af5570a87f11259701c63e1dc4905b05dd7716ca184731c139f8fe2e98",
+    "anchors": [
+      {
+        "camera": "E1",
+        "pixel": [
+          8310,
+          6003
+        ],
+        "heading": 128,
+        "status": "verified"
+      },
+      {
+        "camera": "E2",
+        "pixel": [
+          8186,
+          5967
+        ],
+        "heading": 299,
+        "status": "verified"
+      },
+      {
+        "camera": "E4",
+        "pixel": [
+          8307,
+          5943
+        ],
+        "heading": 233,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      7500,
+      5350,
+      9100,
+      6600
+    ],
+    "localAxes": {
+      "x": "From the Diriyah sign wall toward the opposite plain wall",
+      "z": "From patterned rear glazing toward the open corridor",
+      "y": "Up"
+    },
+    "mapReview": "Registered anchors locate G17 in Zone E. The illustrated map furniture differs from the current four-sofa majlis; photographs establish the local U-shaped arrangement. No map-to-world transform is fitted."
+  },
+  "footprint": [
+    [
+      -3.4,
+      -3.1
+    ],
+    [
+      3.4,
+      -3.1
+    ],
+    [
+      3.4,
+      3.7
+    ],
+    [
+      -3.4,
+      3.7
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g17-rear-glazing",
+      "kind": "glass",
+      "start": [
+        -3.3,
+        -2.95
+      ],
+      "end": [
+        3.3,
+        -2.95
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "owner": "ground/g17",
+      "sources": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "confidence": "Patterned blue glazing visible in all views; dimensions, transparency and generic framing estimated. Shared glass builder omits the opaque/frosted decorative pattern."
+    },
+    {
+      "id": "g17-sign-wall",
+      "kind": "solid",
+      "start": [
+        -3.3,
+        -2.95
+      ],
+      "end": [
+        -3.3,
+        2.65
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "owner": "ground/g17",
+      "sources": [
+        "E1",
+        "E4"
+      ],
+      "confidence": "Pale wall with Diriyah Majlis signage visible in E1-wide/E4-wide; estimated span and height. Lettering is not reproduced."
+    },
+    {
+      "id": "g17-plain-wall",
+      "kind": "solid",
+      "start": [
+        3.3,
+        -2.95
+      ],
+      "end": [
+        3.3,
+        2.65
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "owner": "ground/g17",
+      "sources": [
+        "E2",
+        "E4"
+      ],
+      "confidence": "Pale side wall visible in E2-wide/E4-wide; estimated span and height. Adjacent lift-lobby arches lie outside this block."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "size": [
+      6.8,
+      6.8
+    ],
+    "center": [
+      0,
+      0.3
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "circulation": {
+    "id": "g17-entry-clearance",
+    "polygon": [
+      [
+        -3.2,
+        2.85
+      ],
+      [
+        3.2,
+        2.85
+      ],
+      [
+        3.2,
+        3.7
+      ],
+      [
+        -3.2,
+        3.7
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "sources": [
+      "E1",
+      "E2",
+      "E4"
+    ],
+    "status": "open-entry-width-and-boundary-estimated",
+    "notes": "Keep the corridor-facing +Z side open. Pale circulation alongside the seating is visible in E1/E2-wide but its extent and neighboring ownership are unresolved; this floor models the dark seating crop only."
+  },
+  "boundaryReview": [
+    {
+      "id": "g17-open-entry",
+      "kind": "open-corridor",
+      "sources": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "start": [
+        -3.3,
+        2.65
+      ],
+      "end": [
+        3.3,
+        2.65
+      ],
+      "status": "open-neighbor-and-seam-unresolved"
+    },
+    {
+      "id": "g17-adjacent-lift-lobby",
+      "kind": "unknown",
+      "sources": [
+        "E2"
+      ],
+      "status": "outside-block-not-modeled",
+      "notes": "Rounded lift surrounds and pale lobby floor in E2-wide do not establish an arch across the majlis entrance."
+    },
+    {
+      "id": "g17-sign-wall-side-return",
+      "kind": "unknown",
+      "sources": [
+        "E1"
+      ],
+      "status": "outside-block-ownership-unresolved",
+      "notes": "E1-wide shows patterned glazing beyond the sign wall and a pale side passage; retain as neighboring evidence rather than closing the open entry."
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-e-majlis-017",
+  "objects": [
+    {
+      "id": "g17-sofa-01",
+      "type": "sofa",
+      "name": "Sign-wall sofa · E3 / E4",
+      "position": [
+        -2.7,
+        0,
+        -0.1
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_E3",
+        "Seat_E4"
+      ],
+      "cameras": [
+        "E1",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g17-sofa-02",
+      "type": "sofa",
+      "name": "Rear left sofa · E5 / E6",
+      "position": [
+        -1.35,
+        0,
+        -2.15
+      ],
+      "yaw": 0,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a8a5a0",
+      "seats": [
+        "Seat_E5",
+        "Seat_E6"
+      ],
+      "cameras": [
+        "E1",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g17-sofa-03",
+      "type": "sofa",
+      "name": "Rear right sofa · E7 / E8",
+      "position": [
+        1.35,
+        0,
+        -2.15
+      ],
+      "yaw": 0,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a8a5a0",
+      "seats": [
+        "Seat_E7",
+        "Seat_E8"
+      ],
+      "cameras": [
+        "E2",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g17-sofa-04",
+      "type": "sofa",
+      "name": "Plain-wall sofa · E9 / E10",
+      "position": [
+        2.7,
+        0,
+        -0.1
+      ],
+      "yaw": 270,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#bcb6a7",
+      "seats": [
+        "Seat_E9",
+        "Seat_E10"
+      ],
+      "cameras": [
+        "E2",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review"
+    },
+    {
+      "id": "g17-chair-02",
+      "type": "armchair",
+      "name": "Gold lounge chair · E2",
+      "position": [
+        -2.7,
+        0,
+        2.05
+      ],
+      "yaw": 90,
+      "size": [
+        0.9,
+        1.15,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a18a50",
+      "seats": [
+        "Seat_E2"
+      ],
+      "cameras": [
+        "E1",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
+      "notes": "Gold high-back swivel chair approximated with the shared armchair builder; curved shell, pedestal and leather response are not reproduced."
+    },
+    {
+      "id": "g17-chair-11",
+      "type": "armchair",
+      "name": "Gold lounge chair · E11",
+      "position": [
+        2.7,
+        0,
+        2.05
+      ],
+      "yaw": 270,
+      "size": [
+        0.9,
+        1.15,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a18a50",
+      "seats": [
+        "Seat_E11"
+      ],
+      "cameras": [
+        "E2",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
+      "notes": "Gold high-back swivel chair approximated with the shared armchair builder; curved shell, pedestal and leather response are not reproduced."
+    },
+    {
+      "id": "g17-coffee-table-1",
+      "type": "table",
+      "name": "Pale oval coffee table · E1",
+      "position": [
+        -1.55,
+        0,
+        2.05
+      ],
+      "yaw": 90,
+      "size": [
+        1.4,
+        0.42,
+        0.72
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "E1",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_E1",
+      "notes": "Shared oval builder approximates the stone top and dark trestle frame; tissue box and card are procedural context."
+    },
+    {
+      "id": "g17-coffee-table-2",
+      "type": "table",
+      "name": "Pale oval coffee table · E2",
+      "position": [
+        -1.55,
+        0,
+        -0.1
+      ],
+      "yaw": 90,
+      "size": [
+        1.4,
+        0.42,
+        0.72
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "E1",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_E2",
+      "notes": "Shared oval builder approximates the stone top and dark trestle frame; tissue box and card are procedural context."
+    },
+    {
+      "id": "g17-coffee-table-4",
+      "type": "table",
+      "name": "Pale oval coffee table · E4",
+      "position": [
+        1.55,
+        0,
+        -0.1
+      ],
+      "yaw": 90,
+      "size": [
+        1.4,
+        0.42,
+        0.72
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "E2",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_E4",
+      "notes": "Shared oval builder approximates the stone top and dark trestle frame; tissue box and card are procedural context."
+    },
+    {
+      "id": "g17-coffee-table-5",
+      "type": "table",
+      "name": "Pale oval coffee table · E5",
+      "position": [
+        1.55,
+        0,
+        2.05
+      ],
+      "yaw": 90,
+      "size": [
+        1.4,
+        0.42,
+        0.72
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "E2",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_E5",
+      "notes": "Shared oval builder approximates the stone top and dark trestle frame; tissue box and card are procedural context."
+    },
+    {
+      "id": "g17-side-table-3",
+      "type": "table",
+      "name": "Round side table · E3",
+      "position": [
+        0,
+        0,
+        -2.15
+      ],
+      "yaw": 0,
+      "size": [
+        0.58,
+        0.62,
+        0.58
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
+      "externalId": "Table_E3",
+      "accessories": false,
+      "notes": "ROI Table_E3 is the single small round table between the rear sofas. Brass pedestal approximated by shared table supports."
+    },
+    {
+      "id": "g17-plant-01",
+      "type": "plant",
+      "name": "Tall corner plant",
+      "position": [
+        -2.85,
+        0,
+        -2.35
+      ],
+      "yaw": 0,
+      "size": [
+        0.5,
+        2.3,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "E1",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
+      "notes": "Simplified foliage and pale planter; the same corner plant is not duplicated across cameras."
+    },
+    {
+      "id": "g17-plant-02",
+      "type": "plant",
+      "name": "Tall corner plant",
+      "position": [
+        2.85,
+        0,
+        -2.35
+      ],
+      "yaw": 0,
+      "size": [
+        0.5,
+        2.3,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#42694c",
+      "seats": [],
+      "cameras": [
+        "E2",
+        "E4"
+      ],
+      "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
+      "notes": "Simplified foliage and pale planter; the same corner plant is not duplicated across cameras."
+    }
+  ]
+}

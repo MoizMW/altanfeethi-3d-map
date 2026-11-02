@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-e-majlis-017",
+  "slug": "g17",
+  "name": "G17 · Diriyah Majlis",
+  "floor": "ground",
+  "groups": [
+    "g17"
+  ],
+  "zone": "E",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}
