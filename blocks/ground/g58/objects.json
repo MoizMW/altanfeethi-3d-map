@@ -1,0 +1,74 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-i-lounge-058",
+  "objects": [
+    {
+      "id": "g58-sofa-01",
+      "type": "sofa",
+      "name": "Pale two-seat sofa · I5 / I6",
+      "position": [-0.1, 0, 1.2],
+      "yaw": 180,
+      "size": [2.05, 0.88, 0.9],
+      "scale": [1, 1, 1],
+      "color": "#ddd9cf",
+      "seats": ["Seat_I5", "Seat_I6"],
+      "cameras": ["I18"],
+      "confidence": "I18 ROIs identify image-left I5 and image-right I6 on a single sofa; dimensions, slot order and local placement need owner review."
+    },
+    {
+      "id": "g58-chair-07",
+      "type": "armchair",
+      "name": "Blue lounge chair · I7",
+      "position": [-0.62, 0, -1.1],
+      "yaw": 0,
+      "size": [0.88, 0.95, 0.88],
+      "scale": [1, 1, 1],
+      "color": "#627d86",
+      "seats": ["Seat_I7"],
+      "cameras": ["I22"],
+      "confidence": "Wall-side chair identified by I22 ROI. Shared lounge builder simplifies curved upholstery and timber supports."
+    },
+    {
+      "id": "g58-chair-08",
+      "type": "armchair",
+      "name": "Blue lounge chair · I8",
+      "position": [0.43, 0, -1.1],
+      "yaw": 0,
+      "size": [0.88, 0.95, 0.88],
+      "scale": [1, 1, 1],
+      "color": "#627d86",
+      "seats": ["Seat_I8"],
+      "cameras": ["I22"],
+      "confidence": "Aisle-side chair identified by I22 ROI; dimensions and spacing estimated."
+    },
+    {
+      "id": "g58-coffee-table-01",
+      "type": "table",
+      "name": "Oval glass coffee table · Table_I2",
+      "position": [-0.1, 0, 0.02],
+      "yaw": 0,
+      "size": [1.55, 0.43, 0.8],
+      "scale": [1, 1, 1],
+      "color": "#b4a274",
+      "seats": [],
+      "externalId": "Table_I2",
+      "variant": "round-glass",
+      "cameras": ["I18", "I22"],
+      "confidence": "One oval brass/glass table reconciles both ROI observations. Lower shelf, frame detail and transient cups are simplified."
+    },
+    {
+      "id": "g58-sofa-screen-01",
+      "type": "wall-panel",
+      "name": "Ribbed sofa screen · schematic panel",
+      "position": [-0.05, 0, 1.88],
+      "yaw": 180,
+      "size": [2.7, 2.4, 0.08],
+      "scale": [1, 1, 1],
+      "color": "#87958a",
+      "seats": [],
+      "cameras": ["I18"],
+      "confidence": "Ribbed/slatted partition visible behind I5/I6; grooved panel is an opaque approximation. Slat spacing, transparency and full height remain unresolved."
+    }
+  ]
+}
