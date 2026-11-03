@@ -1,5 +1,14 @@
 # Composing spatial blocks
 
+## G15/G13 checkpoint and passport control
+
+Open `http://127.0.0.1:4209/?layout=ground/g15-g13`. Owner correction places G13 above G15 in top view, with staff chairs on the right (+X) and passenger gates on the left. G15 stays at [0,0,0], yaw 0; G13 uses [1.3,0,-13.75], yaw -90. The latest owner correction aligns both right walls at X=5, with a layout-owned wall joining their ends. A 0.1 m floor-only extension on G13 aligns all right floor edges at X=5.2; furniture is unchanged. A layout-owned 2 m circulation section joins G15's open top approach at Z=-4.8 to G13's floor at Z=-6.8, leading to the public side of the passport gates. Source walls are retained once; the layout owns only the right-side wall connection. The earlier bottom-end join is superseded. Connection width and global calibration remain estimated; C8/C15/C16/C13/C17/C18/C21 remain the supporting neighboring views.
+
+All 29 objects load live, preserving IDs, saved poses, dimensions and scales. G15 keeps its two handled office glass doors, top-side office extension and 80% checkpoint/office-row length ratio. Its three floor sections retain the repaired glass-front seam without filling the empty area beside the extension. G13 keeps two half-width single gates, one double gate and the screen beside the double booth. Gates retain the static closed reference state. Edit furniture in the original block views; change relative placement in `layouts/ground/g15-g13.json`.
+
+The composer now carries separate source floor sections and room footprints through the same placement transform as furniture and walls. Existing single-floor layouts retain their original behavior.
+
+## G9/G10/G11 lounges
 ## First-floor stair lobby and G42
 
 Open `/?layout=first/bottom-lobby`. The saved `merged-first-floor-bottom-right` row retains G38 → G37 → G36 → G35 and its four placements; G42 loads live from its separate source block. H9 normal and wide views establish two seating rows on opposite sides of the same stair/escalator opening. H18-wide and H19 clarify the checker inlay, lift, console, ornaments, plants, bins and fire/dispenser fixtures. Normal ROIs remain attached to their own normal snapshots. H9 remains a registered supporting camera with no group reassignment; no H19-wide file is invented.

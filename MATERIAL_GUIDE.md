@@ -25,6 +25,7 @@ An object's existing `color` field is an editable base-color override. It does n
 | Dark office-chair upholstery | `office-upholstery` | SGS chair cushions and backrest |
 | Dark plastic | `dark-plastic` | Frames, armrests and monitor housings |
 | Brushed metal | `brushed-metal` | Chair base and luggage-scale metalwork |
+| Blue inspection-equipment housing | `security-blue` | G15 baggage scanner covers |
 
 Camera exposure, white balance and reflections can make one material look different in two views. Compare overlapping views before adding a material variant. Record a genuine local finish change in the block's evidence file, including the supporting camera IDs.
 

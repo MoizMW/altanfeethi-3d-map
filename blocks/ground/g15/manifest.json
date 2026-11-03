@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-c-security-015",
+  "slug": "g15",
+  "name": "G15 · Security checkpoint",
+  "floor": "ground",
+  "groups": [
+    "g15"
+  ],
+  "zone": "C",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

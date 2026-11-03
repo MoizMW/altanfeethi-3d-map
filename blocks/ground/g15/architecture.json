@@ -1,0 +1,455 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-c-security-015",
+  "floorSize": [
+    16.2,
+    11.625
+  ],
+  "floorCenter": [
+    -2.9,
+    -1.3125
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "registrationSha256": "998fa26f3524ab4deea8d01cc8e8e0ac3a2d79018bba642fbbd574c3af0e79a0",
+    "anchors": [
+      {
+        "camera": "C8",
+        "pixel": [
+          6913,
+          4773
+        ],
+        "heading": 61,
+        "status": "verified"
+      },
+      {
+        "camera": "C15",
+        "pixel": [
+          7453,
+          4170
+        ],
+        "heading": 251,
+        "status": "verified"
+      },
+      {
+        "camera": "C16",
+        "pixel": [
+          7769,
+          4445
+        ],
+        "heading": 222,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      6300,
+      3650,
+      8350,
+      5300
+    ],
+    "localAxes": {
+      "x": "From the patterned-glass side (C15 station) toward the pale solid wall (C16 station)",
+      "z": "Along the two inspection lanes, toward the operator chairs and adjacent lobby",
+      "y": "Up"
+    },
+    "mapReview": "C8/C15/C16 locate the checkpoint. Passport and Customs run along one longer row. The checkpoint is 80% of their combined length. Owner top-view clarification places the additional office length toward -Z (top); +Z bottom edges align. Office depth is 6 m. Equipment and door world positions are preserved; dimensions/global calibration remain provisional."
+  },
+  "footprint": [
+    [
+      -11,
+      -7.125
+    ],
+    [
+      5.2,
+      -7.125
+    ],
+    [
+      5.2,
+      4.5
+    ],
+    [
+      -11,
+      4.5
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g15-glass-side",
+      "kind": "glass",
+      "start": [
+        -5,
+        -7.125
+      ],
+      "end": [
+        -5,
+        -1.3125
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "color": "#9daea5",
+      "opacity": 0.8,
+      "privacyBand": false,
+      "owner": "ground/g15",
+      "sources": [
+        "C8",
+        "C15"
+      ],
+      "confidence": "Owner top-view correction: office extra length is toward -Z (top), with the +Z bottom edge aligned to the checkpoint. Checkpoint is 80% of combined office length; dimensions remain estimates.",
+      "frameColor": "#65716b",
+      "doors": [
+        {
+          "id": "g15-passport-glass-door",
+          "offset": 4.325,
+          "width": 1.05,
+          "height": 2.8,
+          "handleHeight": 1.2,
+          "handleLength": 0.85,
+          "handleColor": "#202b2a",
+          "sources": [
+            "C8",
+            "C15"
+          ],
+          "confidence": "Owner-requested glass leaf and dark vertical pull handle based on camera views; dimensions and placement estimated."
+        }
+      ]
+    },
+    {
+      "id": "g15-solid-side",
+      "kind": "solid",
+      "start": [
+        5,
+        -4.8
+      ],
+      "end": [
+        5,
+        4.5
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "owner": "ground/g15",
+      "sources": [
+        "C8",
+        "C16"
+      ],
+      "confidence": "Pale wall visible in C8/C16; endpoints, height, thickness and neighboring ownership estimated."
+    },
+    {
+      "id": "g15-office-rear",
+      "kind": "solid",
+      "start": [
+        -11,
+        -7.125
+      ],
+      "end": [
+        -11,
+        4.5
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#f0efeb",
+      "owner": "ground/g15",
+      "sources": [
+        "C8",
+        "C15"
+      ],
+      "confidence": "Owner top-view correction: office extra length is toward -Z (top), with the +Z bottom edge aligned to the checkpoint. Checkpoint is 80% of combined office length; dimensions remain estimates."
+    },
+    {
+      "id": "g15-office-passport-end",
+      "kind": "solid",
+      "start": [
+        -11,
+        -7.125
+      ],
+      "end": [
+        -5,
+        -7.125
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#f0efeb",
+      "owner": "ground/g15",
+      "sources": [
+        "C8",
+        "C15"
+      ],
+      "confidence": "Owner top-view correction: office extra length is toward -Z (top), with the +Z bottom edge aligned to the checkpoint. Checkpoint is 80% of combined office length; dimensions remain estimates."
+    },
+    {
+      "id": "g15-office-customs-end",
+      "kind": "solid",
+      "start": [
+        -11,
+        4.5
+      ],
+      "end": [
+        -5,
+        4.5
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#f0efeb",
+      "owner": "ground/g15",
+      "sources": [
+        "C8",
+        "C15"
+      ],
+      "confidence": "Owner top-view correction: office extra length is toward -Z (top), with the +Z bottom edge aligned to the checkpoint. Checkpoint is 80% of combined office length; dimensions remain estimates."
+    },
+    {
+      "id": "g15-office-partition",
+      "kind": "solid",
+      "start": [
+        -11,
+        -1.3125
+      ],
+      "end": [
+        -5,
+        -1.3125
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#f0efeb",
+      "owner": "ground/g15",
+      "sources": [
+        "C8",
+        "C15"
+      ],
+      "confidence": "Owner top-view correction: office extra length is toward -Z (top), with the +Z bottom edge aligned to the checkpoint. Checkpoint is 80% of combined office length; dimensions remain estimates."
+    },
+    {
+      "id": "g15-customs-glass-front",
+      "kind": "glass",
+      "start": [
+        -5,
+        -1.3125
+      ],
+      "end": [
+        -5,
+        4.5
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "color": "#9daea5",
+      "opacity": 0.8,
+      "privacyBand": false,
+      "owner": "ground/g15",
+      "sources": [
+        "C8",
+        "C15"
+      ],
+      "confidence": "Owner top-view correction: office extra length is toward -Z (top), with the +Z bottom edge aligned to the checkpoint. Checkpoint is 80% of combined office length; dimensions remain estimates.",
+      "frameColor": "#65716b",
+      "doors": [
+        {
+          "id": "g15-customs-glass-door",
+          "offset": 4.7625,
+          "width": 1.05,
+          "height": 2.8,
+          "handleHeight": 1.2,
+          "handleLength": 0.85,
+          "handleColor": "#202b2a",
+          "sources": [
+            "C8",
+            "C15"
+          ],
+          "confidence": "Owner-requested glass leaf and dark vertical pull handle based on camera views; dimensions and placement estimated."
+        }
+      ]
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "size": [
+      16.2,
+      11.625
+    ],
+    "center": [
+      -2.9,
+      -1.3125
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "circulation": {
+    "id": "g15-open-approach",
+    "polygon": [
+      [
+        -4.8,
+        -4.8
+      ],
+      [
+        4.8,
+        -4.8
+      ],
+      [
+        4.8,
+        -2.7
+      ],
+      [
+        -4.8,
+        -2.7
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "sources": [
+      "C8",
+      "C15",
+      "C16"
+    ],
+    "status": "dark-stone-open-approach-estimated",
+    "notes": "Both ends stay open. Two pedestrian lanes pass through the detector frames. The right frame has a static retractable-belt cue from C8; this is not a live access state."
+  },
+  "boundaryReview": [
+    {
+      "id": "g15-approach-end",
+      "kind": "open-corridor",
+      "sources": [
+        "C8"
+      ],
+      "status": "neighbor-and-seam-unresolved"
+    },
+    {
+      "id": "g15-lobby-end",
+      "kind": "open-corridor",
+      "sources": [
+        "C15",
+        "C16"
+      ],
+      "status": "neighbor-and-seam-unresolved",
+      "notes": "Pale adjoining circulation and distant turnstiles/entrance controls are beyond this equipment crop; their extents and ownership are unresolved."
+    },
+    {
+      "id": "g15-curtain-return",
+      "kind": "unknown",
+      "sources": [
+        "C15"
+      ],
+      "status": "visible-not-modeled",
+      "notes": "Curtain-backed return behind the C15 operator is visible, but backing and shared boundary cannot be established."
+    },
+    {
+      "id": "g15-office-shells",
+      "kind": "solid-wall",
+      "sources": [
+        "C8",
+        "C15"
+      ],
+      "status": "owner-requested-topology-dimensions-estimated",
+      "notes": "Offices extend beyond the checkpoint toward -Z (top in Top view), not +Z/bottom. Bottom edges align. The 80% checkpoint-to-office-row ratio, 6 m office depth, handled frosted fronts, door world positions and saved equipment transforms are retained."
+    },
+    {
+      "id": "g15-office-door-review",
+      "kind": "glass-door",
+      "sources": [
+        "C8",
+        "C15"
+      ],
+      "status": "owner-requested-dimensions-estimated",
+      "notes": "Offices extend beyond the checkpoint toward -Z (top in Top view), not +Z/bottom. Bottom edges align. The 80% checkpoint-to-office-row ratio, 6 m office depth, handled frosted fronts, door world positions and saved equipment transforms are retained."
+    }
+  ],
+  "floorSections": [
+    {
+      "id": "g15-checkpoint-floor",
+      "size": [
+        10.2,
+        9.3
+      ],
+      "center": [
+        0.1,
+        -0.1499999999999999
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "g15-passport-office-floor",
+      "size": [
+        6,
+        5.8125
+      ],
+      "center": [
+        -8,
+        -4.21875
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "g15-customs-office-floor",
+      "size": [
+        6,
+        5.8125
+      ],
+      "center": [
+        -8,
+        1.59375
+      ],
+      "color": "#424747"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "g15-passport-office",
+      "name": "Passport Office",
+      "footprint": [
+        [
+          -11,
+          -7.125
+        ],
+        [
+          -5,
+          -7.125
+        ],
+        [
+          -5,
+          -1.3125
+        ],
+        [
+          -11,
+          -1.3125
+        ]
+      ],
+      "checkpointFrontage": "g15-glass-side",
+      "status": "owner-requested-schematic-box-dimensions-estimated",
+      "doorId": "g15-passport-glass-door"
+    },
+    {
+      "id": "g15-customs-office",
+      "name": "Customs Office",
+      "footprint": [
+        [
+          -11,
+          -1.3125
+        ],
+        [
+          -5,
+          -1.3125
+        ],
+        [
+          -5,
+          4.5
+        ],
+        [
+          -11,
+          4.5
+        ]
+      ],
+      "checkpointFrontage": "g15-customs-glass-front",
+      "status": "owner-requested-schematic-box-dimensions-estimated",
+      "doorId": "g15-customs-glass-door"
+    }
+  ],
+  "proportions": {
+    "checkpointToOfficeRowLength": 0.8,
+    "checkpointLength": 9.3,
+    "officeRowLength": 11.625,
+    "source": "Owner explicit 80% ratio and top-side extension correction; visualization dimensions remain estimates.",
+    "alignedEnd": 4.5,
+    "extensionSide": "negative-Z (top in Top view)"
+  }
+}

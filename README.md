@@ -1,5 +1,10 @@
 # Altanfeethi spatial twin
 
+Combined G15/G13: `http://127.0.0.1:4209/?layout=ground/g15-g13` — checkpoint, two offices and passport control, with a provisional connecting approach. Both source blocks load live with their saved furniture and gate sizes.
+
+G13 arrival passport control: `http://127.0.0.1:4209/?block=ground/g13` — [booth evidence and review notes](blocks/ground/g13/README.md).
+
+G15 security checkpoint: `http://127.0.0.1:4209/?block=ground/g15` — [equipment evidence and review notes](blocks/ground/g15/README.md).
 First-floor lounges and stair lobby: `http://127.0.0.1:4209/?layout=first/bottom-lobby` — G35–G38 opposite G42, connected around the stair/escalator void, with H9/wide-image context and lobby furnishings. The original bottom-right row remains at `/?layout=first/bottom-right`.
 Reception + SGS shared security/unused-counter bays: `http://127.0.0.1:4209/?layout=ground/departure-sgs`.
 
