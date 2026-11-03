@@ -272,7 +272,7 @@
     {
       "id": "departure-reception-portrait-1",
       "type": "display",
-      "name": "Upper framed portrait 1 \u00b7 schematic artwork",
+      "name": "Upper framed royal portrait 1",
       "position": [
         -1.2,
         3.15,
@@ -294,14 +294,14 @@
       "cameras": [
         "ReceptionCam3"
       ],
-      "confidence": "Observed permanent feature; dimensions and local placement estimated",
-      "variant": "framed-art",
+      "confidence": "Portrait artwork recreated from ReceptionCam3 wide; frame dimensions and local placement estimated",
+      "variant": "reception-portrait",
       "mount": "wall"
     },
     {
       "id": "departure-reception-portrait-2",
       "type": "display",
-      "name": "Upper framed portrait 2 \u00b7 schematic artwork",
+      "name": "Upper framed royal portrait 2",
       "position": [
         0,
         3.15,
@@ -323,14 +323,14 @@
       "cameras": [
         "ReceptionCam3"
       ],
-      "confidence": "Observed permanent feature; dimensions and local placement estimated",
-      "variant": "framed-art",
+      "confidence": "Portrait artwork recreated from ReceptionCam3 wide; frame dimensions and local placement estimated",
+      "variant": "reception-portrait",
       "mount": "wall"
     },
     {
       "id": "departure-reception-portrait-3",
       "type": "display",
-      "name": "Upper framed portrait 3 \u00b7 schematic artwork",
+      "name": "Upper framed royal portrait 3",
       "position": [
         1.2,
         3.15,
@@ -352,8 +352,8 @@
       "cameras": [
         "ReceptionCam3"
       ],
-      "confidence": "Observed permanent feature; dimensions and local placement estimated",
-      "variant": "framed-art",
+      "confidence": "Portrait artwork recreated from ReceptionCam3 wide; frame dimensions and local placement estimated",
+      "variant": "reception-portrait",
       "mount": "wall"
     },
     {

@@ -41,8 +41,8 @@
     1080
   ],
   "wideCaptureContext": {
-    "A1": "Normal and wide files are byte-identical, 1920 × 1080; not independent views",
-    "A3": "Normal and wide files are byte-identical, 1920 × 1080; not independent views",
+    "A1": "Normal and wide files are byte-identical, 1920 \u00d7 1080; not independent views",
+    "A3": "Normal and wide files are byte-identical, 1920 \u00d7 1080; not independent views",
     "roiUsage": "No A1/A3 ROIs used; supporting-camera ROIs remain tied to their normal captures"
   },
   "cameraPlacementReview": {
@@ -151,7 +151,7 @@
       "G9/B-zone edge"
     ],
     "superseded": "Entire old A-zone walls/furniture and former Starbucks shop",
-    "sharedWall": "Owner calls A3 wall B3–B24/B25. Existing candidate block ground/g3-g24-g25; exact wall correspondence not calibrated."
+    "sharedWall": "Owner calls A3 wall B3\u2013B24/B25. Existing candidate block ground/g3-g24-g25; exact wall correspondence not calibrated."
   },
   "constructionExclusions": [
     "Navy construction hoarding, temporary partitions and black/gold stored kiosk-like enclosures",
@@ -185,7 +185,8 @@
     "Latest owner correction supersedes curved floor: straight 3 m main walkway from e-gates to G9/G10. Left glass bay set back 3 m with perpendicular glass return; office frontage 7.4 m equals current G9 width. No old A-zone enclosure or B/C/E/G merge.",
     "Owner office room correction: office left side aligns merged G9 right wall X=1.42. Room width is G9 full 7.4 m; length 9.7 m reaches saved exit jamb X=11.12. Front wall aligns G9 entrance line Z=3; rear edge Z=-4.4. G9 owns shared segment once; G16 owns the remaining rear-side segment. Exit doors remain exactly unchanged. Previous frontage-only 7.4 m interpretation is superseded; width now measures room depth.",
     "Office door/console/planter move with revised frontage. No new desks, chairs or office fit-out inferred. All exit-door fields retained exactly.",
-    "Owner floor-edge correction: exit/glass frontage ends at local Z=9.1; no floor apron beyond glazing. Only enclosed office extends to its back wall Z=10.15."
+    "Owner floor-edge correction: exit/glass frontage ends at local Z=9.1; no floor apron beyond glazing. Only enclosed office extends to its back wall Z=10.15.",
+    "Owner 2026-11-03: trim office width from 7.4 m to 6.35 m so its back wall and floor end at exit/glass threshold Z=9.1. Office front, length, door, furniture and exit gate retain their saved positions. This supersedes earlier G9-width match and office-only extension to Z=10.15."
   ],
   "ownerRefinements": [
     {
@@ -237,6 +238,52 @@
       "exitJambLocalX": 16.5,
       "exitPositionPreserved": true,
       "status": "Owner correction: left wall aligns G9 right wall; full room width matches G9, length terminates at existing exit jamb"
+    },
+    {
+      "date": "2026-11-03",
+      "instruction": "Owner 2026-11-03: trim office width from 7.4 m to 6.35 m so its back wall and floor end at exit/glass threshold Z=9.1. Office front, length, door, furniture and exit gate retain their saved positions. This supersedes earlier G9-width match and office-only extension to Z=10.15.",
+      "officeRoom": {
+        "width": 6.35,
+        "widthReference": "Exit/glass threshold at local Z=9.1 minus office front Z=2.75",
+        "length": 9.7,
+        "footprint": [
+          [
+            16.5,
+            2.75
+          ],
+          [
+            26.2,
+            2.75
+          ],
+          [
+            26.2,
+            9.1
+          ],
+          [
+            16.5,
+            9.1
+          ]
+        ],
+        "frontage": [
+          16.5,
+          26.2
+        ],
+        "mergedWorldBounds": {
+          "x": [
+            1.42,
+            11.12
+          ],
+          "z": [
+            -3.35,
+            3
+          ]
+        },
+        "sharedG9Wall": "g9-tv-wall",
+        "exitJambLocalX": 16.5,
+        "exitPositionPreserved": true,
+        "status": "Owner trims office width to exit/glass line; front wall and existing exit jamb remain fixed",
+        "sharedRearWall": "g16-console-wall"
+      }
     }
   ]
 }

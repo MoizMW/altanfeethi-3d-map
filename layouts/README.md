@@ -93,3 +93,19 @@ Passage refinement (2026-11-03): straight 3 m white walk matches the existing e-
 Departure merge (2026-11-03): `/?layout=ground/b-g-lounges` now includes all three live departure sources, for 19 source blocks and 185 seats. The reception/SGS/passage assembly rotates 180° and translates [35.62,0,5.75], joining the G9/G10 front walkway at X=1.42, Z=4.3. All existing B/C/E/G component placements and furniture remain intact. The 3 m approach meets the existing 2.6 m corridor centrally. The dining north-side wall owns the common edge; the passage's standalone A3 wall reference is excluded only in this merged view. The glass setback, 7.4 m office frontage and straight route are retained. Dimensions and overall alignment remain provisional; independent source blocks and departure-only previews stay available.
 
 Office room refinement: office left side now aligns G9's right wall at X=1.42. Room width is 7.4 m, matching G9's full model width, and its 9.7 m length ends at the current exit jamb X=11.12. Office front/back are Z=3/−4.4. G9/G16 own the shared side wall once; office proxies are suppressed here. Saved exit door position, size and opening fraction are unchanged. Earlier frontage-only office dimensions are superseded.
+
+
+### G57 + G58 I-zone lounge pair
+
+Open `/?layout=ground/g57-g58` or choose **G57 + G58 · Connected I-zone lounges**. Per the owner screenshot, G58 joins left/behind G57 I3/I4 via the I7/I8 chair side. G57 remains fixed; G58 translates +4.08 m along Z, without rotation. G57 owns one shared screen. Composed floor crops and pale aisles meet at Z=1.98 with no overlap, and the paneled wall continues across the seam. Eight seat IDs, two table IDs and source furniture poses are preserved. All four normal/wide camera pairs are available. Translation and dimensions remain estimates; source blocks remain independently editable.
+
+
+G59 extension: the same `/?layout=ground/g57-g58` view now contains **G57 + G58 + G59**. G59 is left of G58 behind I6/I5, with I9/I10 backing onto the single G58 screen at Z=5.96. G59 translates +8.06 m along Z with no rotation. G58 composed floor/aisle crops stop at that seam; its furniture and the prior G57/G58 join remain fixed. All 12 seat IDs and three tables are preserved. I13/I24 normal/wide views are included; all source blocks remain independently editable.
+
+
+### Full I-zone (G57, G58, G59, G61, G62)
+
+Open `/?layout=ground/i-zone`. The accepted three screened bays remain fixed; G61 adds the blue-chair corner/console and first four tan window chairs, while G62 continues the remaining six chairs along the glazing. The full area includes the central pale aisle, dark seating bands, end wall, glass frontage and gathered curtains. Source blocks G61/G62 are separately editable. Table_I9 is owned by G61 and referenced by G62, with no duplicate. Six new normal/wide camera pairs and registered headings guide estimated placement. The prior G57–G59-only preview remains available. Unassigned foreground seating outside these five groups is not given invented IDs.
+
+
+I-zone wall finishes: G57/G58/G59 paneled boundaries and G61 corner/end walls now carry procedural vertical grain with panel joints. Pale walls use stone-like striations and dark inset lines; brown cladding uses warm wood grain and finer seams. Finish scale is estimated from I16 and opposing wide captures. Source furniture and structural extents are unchanged.

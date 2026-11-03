@@ -4,11 +4,11 @@
   "blockId": "ground-egate-office-passage",
   "floorSize": [
     26.2,
-    13.6
+    12.55
   ],
   "floorCenter": [
     13.1,
-    3.35
+    2.825
   ],
   "ceilingHeight": 4.1,
   "placement": {
@@ -58,7 +58,7 @@
       "z": "Exterior glass/office frontage is +Z; cleared former A zone is -Z",
       "y": "Up"
     },
-    "mapReview": "Use only entry → former cafe frontage → arrival exit → office → G9/B-edge ordering. Owner supersedes all old A-zone walls/seating and Starbucks interior.",
+    "mapReview": "Use only entry \u2192 former cafe frontage \u2192 arrival exit \u2192 office \u2192 G9/B-edge ordering. Owner supersedes all old A-zone walls/seating and Starbucks interior.",
     "alignment": "Local X=0 is reception X=8. Straight passage Z=-0.05..2.95 matches the saved 3 m e-gate bank centered Z=1.45. A1/A3 lack registration; owner correction supersedes earlier curved-band interpretation."
   },
   "footprint": [
@@ -72,14 +72,6 @@
     ],
     [
       26.2,
-      10.15
-    ],
-    [
-      16.5,
-      10.15
-    ],
-    [
-      16.5,
       9.1
     ],
     [
@@ -228,7 +220,7 @@
       ],
       "end": [
         16.5,
-        10.15
+        9.1
       ],
       "height": 4.1,
       "thickness": 0.18,
@@ -245,11 +237,11 @@
       "kind": "solid",
       "start": [
         16.5,
-        10.15
+        9.1
       ],
       "end": [
         26.2,
-        10.15
+        9.1
       ],
       "height": 4.1,
       "thickness": 0.18,
@@ -293,7 +285,7 @@
       ],
       "end": [
         26.2,
-        10.15
+        9.1
       ],
       "height": 4.1,
       "thickness": 0.18,
@@ -555,18 +547,18 @@
       "neighborBoundary": "g9-tv-wall",
       "ownsWall": false,
       "referenceWall": "egate-office-passage-office-g9-shared-reference",
-      "status": "Standalone side references excluded from main composition. G9 owns shared 6 m segment; G16 owns remaining rear 1.4 m segment."
+      "status": "Standalone references excluded from main composition. G9 owns 6 m segment; remaining G16-side office segment is 0.35 m after exit-line trim."
     }
   ],
   "ceiling": {
     "height": 4.1,
     "size": [
       26.2,
-      13.6
+      12.55
     ],
     "center": [
       13.1,
-      3.35
+      2.825
     ],
     "defaultVisible": false,
     "confidence": "Common provisional height; no camera-mount heights inferred"
@@ -580,20 +572,21 @@
     "A3 shared wall identity and eventual global neighbor alignment remain provisional. This preview does not alter the existing B/C/E/G layout.",
     "Latest owner correction supersedes curved floor: straight 3 m main walkway from e-gates to G9/G10. Left glass bay set back 3 m with perpendicular glass return; office frontage 7.4 m equals current G9 width. No old A-zone enclosure or B/C/E/G merge.",
     "Owner office room correction: office left side aligns merged G9 right wall X=1.42. Room width is G9 full 7.4 m; length 9.7 m reaches saved exit jamb X=11.12. Front wall aligns G9 entrance line Z=3; rear edge Z=-4.4. G9 owns shared segment once; G16 owns the remaining rear-side segment. Exit doors remain exactly unchanged. Previous frontage-only 7.4 m interpretation is superseded; width now measures room depth.",
-    "Owner floor-edge correction: exit/glass frontage ends at local Z=9.1; no floor apron beyond glazing. Only enclosed office extends to its back wall Z=10.15."
+    "Owner floor-edge correction: exit/glass frontage ends at local Z=9.1; no floor apron beyond glazing. Only enclosed office extends to its back wall Z=10.15.",
+    "Owner 2026-11-03: trim office width from 7.4 m to 6.35 m so its back wall and floor end at exit/glass threshold Z=9.1. Office front, length, door, furniture and exit gate retain their saved positions. This supersedes earlier G9-width match and office-only extension to Z=10.15."
   ],
   "refinement": {
     "date": "2026-11-03",
-    "instruction": "Straight white walk equal to e-gate width until G9/G10 walk; left glass has depth; office width matches G9",
+    "instruction": "Office outer edge must align with exit gate; supersedes prior G9-width match",
     "walkWidth": 3,
     "glassSetback": 3,
-    "officeFrontageWidth": 7.4,
-    "officeWidthReference": "ground/g9 architecture.floorSize[0]",
+    "officeFrontageWidth": 6.35,
+    "officeWidthReference": "Exit/glass threshold at local Z=9.1 minus office front Z=2.75",
     "status": "Owner topology and width ratios; glass setback and absolute distances estimated"
   },
   "officeRoom": {
-    "width": 7.4,
-    "widthReference": "ground/g9 architecture.floorSize[0]",
+    "width": 6.35,
+    "widthReference": "Exit/glass threshold at local Z=9.1 minus office front Z=2.75",
     "length": 9.7,
     "footprint": [
       [
@@ -606,11 +599,11 @@
       ],
       [
         26.2,
-        10.15
+        9.1
       ],
       [
         16.5,
-        10.15
+        9.1
       ]
     ],
     "frontage": [
@@ -623,14 +616,14 @@
         11.12
       ],
       "z": [
-        -4.4,
+        -3.35,
         3
       ]
     },
     "sharedG9Wall": "g9-tv-wall",
     "exitJambLocalX": 16.5,
     "exitPositionPreserved": true,
-    "status": "Owner correction: left wall aligns G9 right wall; full room width matches G9, length terminates at existing exit jamb",
+    "status": "Owner trims office width to exit/glass line; front wall and existing exit jamb remain fixed",
     "sharedRearWall": "g16-console-wall"
   },
   "floorSections": [
@@ -642,18 +635,6 @@
       "size": [
         26.2,
         12.55
-      ],
-      "yaw": 0,
-      "color": "#424747"
-    },
-    {
-      "center": [
-        21.35,
-        9.625
-      ],
-      "size": [
-        9.7,
-        1.05
       ],
       "yaw": 0,
       "color": "#424747"

@@ -40,7 +40,14 @@ async function listBlocks(){
   return result;
 }
 
-const loadScene=url=>url.searchParams.has('layout')?composeLayout(projectRoot,url.searchParams.get('layout'),loadBlock):loadBlock(blockKey(url.searchParams.get('block')||undefined));
+async function loadScene(url){
+  const data=await (url.searchParams.has('layout')?composeLayout(projectRoot,url.searchParams.get('layout'),loadBlock):loadBlock(blockKey(url.searchParams.get('block')||undefined)));
+  let files=[];
+  try{files=await readdir(resolve(evidenceRoot,'tables_drawing'));}catch(error){if(error.code!=='ENOENT')throw error;}
+  const available=new Set(files);
+  data.block.evidence.tableDrawings=[...new Set(data.block.objects.filter(o=>o.type==='table').map(o=>o.externalId?.match(/^Table_([A-Za-z]+\d+)$/)?.[1]).filter(id=>id&&available.has(`${id}.png`)))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+  return data;
+}
 
 function send(res,status,data,type='application/json; charset=utf-8'){res.writeHead(status,{'Content-Type':type,'Cache-Control':type.startsWith('image/')?'public, max-age=60':'no-store'});res.end(typeof data==='string'||Buffer.isBuffer(data)?data:JSON.stringify(data));}
 
@@ -74,6 +81,13 @@ export const server=createServer(async(req,res)=>{
       if(req.method==='PUT')return saveObjects(req,res,key);
       return send(res,405,{error:'Method not allowed'});
     }
+    if(url.pathname.startsWith('/api/evidence/table-drawing/')&&req.method==='GET'){
+      const id=url.pathname.slice('/api/evidence/table-drawing/'.length);
+      if(!/^[A-Za-z]+\d+$/.test(id))return send(res,404,{error:'Not found'});
+      const {block}=await loadScene(url);
+      if(!block.evidence.tableDrawings.includes(id))return send(res,404,{error:'No table drawing for this block'});
+      return send(res,200,await readFile(resolve(evidenceRoot,'tables_drawing',`${id}.png`)),types['.png']);
+    }
     if(url.pathname.startsWith('/api/evidence/camera/')&&req.method==='GET'){
       const key=blockKey(url.searchParams.get('block')||undefined),id=decodeURIComponent(basename(url.pathname));
       if(!/^[A-Za-z0-9_-]{1,80}$/.test(id))return send(res,404,{error:'Not found'});
@@ -95,6 +109,7 @@ export const server=createServer(async(req,res)=>{
     if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','dining-objects.js','styles.css','editor.css'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='shared/schema/block-schema.js')target=resolve(projectRoot,relative);
     else if(/^shared\/assets\/flags\/(saudi|altanfeethi)\.svg$/.test(relative))target=resolve(projectRoot,relative);
+    else if(/^shared\/assets\/portraits\/reception-[123]\.png$/.test(relative))target=resolve(projectRoot,relative);
     else if(/^node_modules\/three\/(build|examples\/jsm)\/[\w/.-]+\.js$/.test(relative)&&!relative.includes('..'))target=resolve(appRoot,relative);
     else return send(res,404,{error:'Not found'});
     send(res,200,await readFile(target),types[extname(target)]||'application/octet-stream');

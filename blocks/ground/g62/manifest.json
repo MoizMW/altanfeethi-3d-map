@@ -1,0 +1,26 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-i-lounge-062",
+  "slug": "g62",
+  "name": "G62 \u00b7 I-zone window lounge",
+  "floor": "ground",
+  "groups": [
+    "g62"
+  ],
+  "zone": "I",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  },
+  "dependencies": [
+    {
+      "block": "ground/g61",
+      "reason": "Table_I9 is owned by G61"
+    }
+  ]
+}

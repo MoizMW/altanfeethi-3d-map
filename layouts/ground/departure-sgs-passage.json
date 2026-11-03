@@ -2,7 +2,7 @@
   "format": "altanfeethi-floor-layout",
   "version": 1,
   "id": "ground-departure-sgs-passage",
-  "name": "Reception + SGS + passage · E-gates to exit and office",
+  "name": "Reception + SGS + passage \u00b7 E-gates to exit and office",
   "displayCode": "RECEPTION / SGS / PASSAGE",
   "floor": "ground",
   "status": "draft-needs-human-review",
@@ -136,7 +136,8 @@
     "Current SGS shared edge X=-7.45, transform [-10.75,0,2] at 90 degrees; G32 walls render once, standalone reception proxies excluded. Security and unused counter poses remain intact.",
     "A1/A3 are unregistered and their wide/normal files are identical. Landmark topology and owner corrections guide this estimated extension; no new map calibration is claimed.",
     "26.2 m passage length, straight pale route, exit/office spacing and final B-wall reference are provisional. The preview stops at office/G9 edge and leaves the removed A-zone floor open.",
-    "Latest owner correction supersedes curved floor: straight 3 m main walkway from e-gates to G9/G10. Left glass bay set back 3 m with perpendicular glass return; office frontage 7.4 m equals current G9 width. No old A-zone enclosure or B/C/E/G merge."
+    "Latest owner correction supersedes curved floor: straight 3 m main walkway from e-gates to G9/G10. Left glass bay set back 3 m with perpendicular glass return; office frontage 7.4 m equals current G9 width. No old A-zone enclosure or B/C/E/G merge.",
+    "Owner 2026-11-03: trim office width from 7.4 m to 6.35 m so its back wall and floor end at exit/glass threshold Z=9.1. Office front, length, door, furniture and exit gate retain their saved positions. This supersedes earlier G9-width match and office-only extension to Z=10.15."
   ],
   "sharedBoundaries": [
     {

@@ -1,0 +1,494 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-i-lounge-061",
+  "objects": [
+    {
+      "id": "g61-chair-14",
+      "type": "armchair",
+      "name": "Blue end lounge chair \u00b7 I14",
+      "position": [
+        -0.35,
+        0,
+        -5.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.95,
+        0.88
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_I14"
+      ],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated."
+    },
+    {
+      "id": "g61-chair-15",
+      "type": "armchair",
+      "name": "Blue end lounge chair \u00b7 I15",
+      "position": [
+        -0.35,
+        0,
+        -3.5
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.95,
+        0.88
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_I15"
+      ],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated."
+    },
+    {
+      "id": "g61-table-5",
+      "type": "table",
+      "name": "Round timber table \u00b7 Table_I5",
+      "position": [
+        -0.35,
+        0,
+        -4.3
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.54,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#89614b",
+      "seats": [],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I5"
+    },
+    {
+      "id": "g61-end-console",
+      "type": "display-console",
+      "name": "Stone console \u00b7 brass rings, white vase and silver ring",
+      "position": [
+        2.75,
+        0,
+        -5.95
+      ],
+      "yaw": 0,
+      "size": [
+        2.3,
+        1.5,
+        0.52
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#aca797",
+      "seats": [],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "i-zone-end-console"
+    },
+    {
+      "id": "g61-end-plant",
+      "type": "plant",
+      "name": "Tall potted plant beside end console",
+      "position": [
+        0.9,
+        0,
+        -5.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.7,
+        2.05,
+        0.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#466a4f",
+      "seats": [],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated."
+    },
+    {
+      "id": "g61-window-planter",
+      "type": "cabinet",
+      "name": "Low dark planter at glazing end",
+      "position": [
+        5.2,
+        0,
+        -5.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.85,
+        0.5,
+        0.45
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#393c37",
+      "seats": [],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "plain-planter"
+    },
+    {
+      "id": "g61-window-plant-0",
+      "type": "plant",
+      "name": "End planter foliage",
+      "position": [
+        5.2,
+        0.5,
+        -5.95
+      ],
+      "yaw": 0,
+      "size": [
+        0.3,
+        0.8,
+        0.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#466a4f",
+      "seats": [],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated."
+    },
+    {
+      "id": "g61-window-plant-1",
+      "type": "plant",
+      "name": "End planter foliage",
+      "position": [
+        5.2,
+        0.5,
+        -5.45
+      ],
+      "yaw": 0,
+      "size": [
+        0.3,
+        0.8,
+        0.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#466a4f",
+      "seats": [],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated."
+    },
+    {
+      "id": "g61-chair-16",
+      "type": "armchair",
+      "name": "Tan swivel window chair \u00b7 I16",
+      "position": [
+        4,
+        0,
+        -4.6
+      ],
+      "yaw": 90,
+      "size": [
+        0.96,
+        1.2,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae916b",
+      "seats": [
+        "Seat_I16"
+      ],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g61-chair-17",
+      "type": "armchair",
+      "name": "Tan swivel window chair \u00b7 I17",
+      "position": [
+        4,
+        0,
+        -3.15
+      ],
+      "yaw": 90,
+      "size": [
+        0.96,
+        1.2,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae916b",
+      "seats": [
+        "Seat_I17"
+      ],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g61-chair-18",
+      "type": "armchair",
+      "name": "Tan swivel window chair \u00b7 I18",
+      "position": [
+        4,
+        0,
+        -1.7
+      ],
+      "yaw": 90,
+      "size": [
+        0.96,
+        1.2,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae916b",
+      "seats": [
+        "Seat_I18"
+      ],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g61-chair-19",
+      "type": "armchair",
+      "name": "Tan swivel window chair \u00b7 I19",
+      "position": [
+        4,
+        0,
+        -0.25
+      ],
+      "yaw": 90,
+      "size": [
+        0.96,
+        1.2,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae916b",
+      "seats": [
+        "Seat_I19"
+      ],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g61-table-6",
+      "type": "table",
+      "name": "Round pale side table \u00b7 Table_I6",
+      "position": [
+        4.65,
+        0,
+        -3.875
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        0.55,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deddd4",
+      "seats": [],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I6"
+    },
+    {
+      "id": "g61-table-7",
+      "type": "table",
+      "name": "Round pale side table \u00b7 Table_I7",
+      "position": [
+        4.65,
+        0,
+        -2.425
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        0.55,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deddd4",
+      "seats": [],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I7"
+    },
+    {
+      "id": "g61-table-8",
+      "type": "table",
+      "name": "Round pale side table \u00b7 Table_I8",
+      "position": [
+        4.65,
+        0,
+        -0.975
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        0.55,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deddd4",
+      "seats": [],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I8"
+    },
+    {
+      "id": "g61-table-9",
+      "type": "table",
+      "name": "Round pale side table \u00b7 Table_I9",
+      "position": [
+        4.65,
+        0,
+        0.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        0.55,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deddd4",
+      "seats": [],
+      "cameras": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I9"
+    }
+  ]
+}

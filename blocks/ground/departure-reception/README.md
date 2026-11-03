@@ -114,3 +114,8 @@ Removed the solid entrance-right wall behind the plant (local X=5.55, Z=4.8–6.
 Owner follow-up (2026-11-03): also removed the gate-front white pier between the plant and e-gates. The second scanner keeps its saved rail mounting position and now has an estimated 0.40 m pole below the scanner head (0.65 m total assembly above rail). The first scanner is unchanged. This supersedes the earlier retained-gate-pier note.
 
 Owner height match (2026-11-03): both e-gate scanners now use the same raised pole assembly and mounting height, matching the owner-approved left scanner in the screenshot. Horizontal positions remain unchanged. This supersedes the earlier first-scanner-unchanged note.
+
+
+## Reception wall portraits (2026-11-03)
+
+Replaced the three schematic abstract pictures with portrait textures recreated from ReceptionCam3 wide, in the same left-to-right order. Existing frames, positions, sizes and object IDs are retained. Artwork is an AI-recreated visual approximation rather than original official prints. Local texture assets and provenance are in `shared/assets/portraits/`. This supersedes earlier schematic-portrait notes.

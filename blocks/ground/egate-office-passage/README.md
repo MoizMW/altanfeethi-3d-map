@@ -17,3 +17,8 @@ Owner refinement: glass frontage is recessed 3 m left of the former plane, with 
 Latest office correction: the full room is now 7.4 m wide and 9.7 m long, starting at merged G9 right wall X=1.42 and ending at the unchanged exit jamb X=11.12. Front wall aligns G9's front at Z=3; rear wall is Z=−4.4. The earlier 7.4 m frontage-only interpretation is superseded. G9 and G16 own their respective shared side-wall segments; standalone office references are excluded from the main composition. Office has a closed timber doorway and the existing console/planter; no additional interior furniture is inferred. Exit geometry and pose are retained exactly.
 
 Exit floor trim: floor ends on the glass/exit line at local Z=9.1. Only the enclosed office floor continues to Z=10.15. Two non-overlapping floor sections preserve this outline in standalone and composed views; the pale exit approach also stops at the threshold.
+
+
+## Office width aligned to exit (2026-11-03)
+
+The office back wall now ends at the same local Z=9.1 line as the exit gate and glass frontage. Width reduces from 7.4 m to 6.35 m; length remains 9.7 m. Its floor overhang is removed and both side walls meet the new back wall. Office front, door, console, planter and exit gate positions are retained. The floor/optional ceiling crop now measures 26.2 × 12.55 m. Combined previews inherit this correction. This supersedes the prior G9-width match and office-only floor extension.

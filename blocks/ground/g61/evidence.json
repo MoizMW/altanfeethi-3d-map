@@ -1,0 +1,61 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-i-lounge-061",
+  "cameras": [
+    "I14",
+    "I15",
+    "I16"
+  ],
+  "snapshots": {
+    "I14": "evidence/camera-snapshots/I14.jpg",
+    "I15": "evidence/camera-snapshots/I15.jpg",
+    "I16": "evidence/camera-snapshots/I16.jpg"
+  },
+  "wideSnapshots": {
+    "I14": "evidence/wide capture snapshots/I14.jpg",
+    "I15": "evidence/wide capture snapshots/I15.jpg",
+    "I16": "evidence/wide capture snapshots/I16.jpg"
+  },
+  "rois": {
+    "I14": {
+      "chairs": "evidence/rois/chair-rois/g61/I14_to_g61.json",
+      "tables": "evidence/rois/table-rois/g61/I14_to_g61.json"
+    },
+    "I15": {
+      "chairs": "evidence/rois/chair-rois/g61/I15_to_g61.json",
+      "tables": "evidence/rois/table-rois/g61/I15_to_g61.json"
+    },
+    "I16": {
+      "chairs": "evidence/rois/chair-rois/g61/I16_to_g61.json",
+      "tables": "evidence/rois/table-rois/g61/I16_to_g61.json"
+    }
+  },
+  "seatMappings": {
+    "Seat_I14": "g61-chair-14",
+    "Seat_I15": "g61-chair-15",
+    "Seat_I16": "g61-chair-16",
+    "Seat_I17": "g61-chair-17",
+    "Seat_I18": "g61-chair-18",
+    "Seat_I19": "g61-chair-19"
+  },
+  "tableMappings": {
+    "Table_I5": "g61-table-5",
+    "Table_I6": "g61-table-6",
+    "Table_I7": "g61-table-7",
+    "Table_I8": "g61-table-8",
+    "Table_I9": "g61-table-9"
+  },
+  "notes": [
+    "All three normal/wide pairs and registered anchors/headings reviewed. Normal images are 3840\u00d72160; ROI boxes use a 1920\u00d71080 review canvas. Normal ROIs never transferred to wide views.",
+    "Seat/table observations reconciled by ID across cameras. Table_I9 overlaps G61/G62 cameras and belongs to G61 once. Table_I5 is the blue-chair corner table; I6\u2013I15 are the window-row tables.",
+    "Shared procedural egg-swivel chairs, lounge chairs, side tables and plants reuse existing builders. End console, vase/rings, curtain folds and metal glazing are schematic, not exact replicas.",
+    "Furniture dimensions, chair swivel angles, window setbacks, curtain spacing and aisle widths remain estimates for owner review. No surveyed global calibration is claimed.",
+    "Owner display correction 2026-11-03 supersedes photo-derived curtains: remove curtain columns, retain glass only at the window side and extend it to the 4.1 m ceiling."
+  ],
+  "accuracy": {
+    "identity": "ROI-derived-needs-owner-review",
+    "dimensions": "unmeasured-estimates",
+    "globalAlignment": "relative-topology-only"
+  }
+}

@@ -65,3 +65,6 @@ Run `npm test` before sharing a branch. Run `npm run camera-registration` to ope
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before creating or merging a block. Project evidence and reconstruction decisions are recorded in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
 
 Before building a block, check [wide capture snapshots](evidence/wide%20capture%20snapshots/README.md) for wider images of the same cameras. Existing ROIs apply to the normal detection images, not the wide captures.
+
+
+Table drawing references: place PNGs named after table IDs (for example `B1.png` for `Table_B1`) in `evidence/tables_drawing/`. The editor adds matching `B1 drawing` buttons beside normal/wide camera views, including combined layouts. Missing drawings are omitted. These files are owner visual references for checking chair names; they do not modify or calibrate the model.

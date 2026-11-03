@@ -22,7 +22,8 @@
       ],
       "variants": [
         "grand-piano",
-        "ring-pedestal"
+        "ring-pedestal",
+        "i-zone-end-console"
       ]
     },
     "sofa": {
@@ -113,7 +114,8 @@
       "variants": [
         "checkin-kiosk",
         "drawer-pedestal",
-        "access-reader"
+        "access-reader",
+        "plain-planter"
       ]
     },
     "display": {
@@ -142,7 +144,8 @@
         "teal-reception-backdrop",
         "stone-relief",
         "teal-service-door",
-        "timber-office-door"
+        "timber-office-door",
+        "pleated-curtain"
       ]
     },
     "luggage-scale": {

@@ -75,6 +75,18 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
     rod(g,[0,.04,0],[0,1.58,0],.018,mat('#ab9564',.35,.6));
     const shade=mat('#f4ecd2',.85);shade.emissive=new THREE.Color('#e4d4a1');shade.emissiveIntensity=.18;
     mesh(g,new THREE.CylinderGeometry(.23,.23,.36,32),shade,[0,1.67,0]);
+  }else if(o.type==='display-console'&&o.variant==='i-zone-end-console'){
+    const assembly=new THREE.Group();assembly.scale.fromArray(receptionSizes[o.type].map((v,i)=>v/o.size[i]));g.add(assembly);
+    const [width,height,depth]=o.size,top=height*.55,stone=mat(o.color,.32),brass=mat('#ab9564',.3,.65);
+    box(assembly,[width,.055,depth],[0,top,0],stone,.008);
+    box(assembly,[width,.05,depth],[0,.025,0],stone,.008);
+    for(const x of [-width/2+.025,width/2-.025])for(const z of [-depth/2+.025,depth/2-.025])box(assembly,[.025,top,.025],[x,top/2,z],charcoal,.003);
+    for(const [x,r,color] of [[-width*.29,.26,brass],[width*.3,.32,metal]]){
+      box(assembly,[.3,.04,.2],[x,top+.05,0],charcoal,.004);
+      const ring=mesh(assembly,new THREE.TorusGeometry(r,.018,8,48),color,[x,top+r+.07,0]);
+      if(x<0){const second=mesh(assembly,new THREE.TorusGeometry(r*.75,.012,8,48),color,[x+.15,top+r+.09,0]);second.rotation.y=.35;}
+    }
+    mesh(assembly,new THREE.CylinderGeometry(.04,.1,.3,24),mat('#eeece4'),[0,top+.18,0]);
   }else if(o.type==='display-console'&&o.variant==='ring-pedestal'){
     const brass=mat('#ab9564',.35,.6);
     box(g,[w,.065,d],[0,h-.0325,0],body,.008);
@@ -158,6 +170,9 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
     box(g,[w*.65,h*.25,d*.55],[0,h*.86,0],body,.02);
     box(g,[w*.36,h*.14,d*.025],[0,h*.88,d*.29],mat('#263c48',.25),.003);
     box(g,[w*.4,h*.04,d*.03],[0,h*.7,d*.29],mat('#4d987b'),.003);
+  } else if(o.type==='cabinet'&&o.variant==='plain-planter') {
+    box(g,[w,h,d],[0,h/2,0],body,.008);
+    box(g,[w*.88,h*.03,d*.8],[0,h,0],mat('#3f3529'),.004);
   } else if(o.type==='cabinet'&&o.variant==='drawer-pedestal') {
     box(g,[w,h,d],[0,h/2,0],body,.008);
     for(let i=0;i<3;i++){
@@ -183,6 +198,16 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
     box(g,[w*.14,h*.55,d*.18],[0,h*.3,0],charcoal,.006);
     const head=box(g,[w*.7,h*.5,d*.4],[0,h*.73,0],charcoal,.015);head.rotation.x=-.15;
     box(g,[w*.48,h*.3,d*.025],[0,h*.75,d*.23],body,.003);
+  } else if(o.type==='display'&&o.variant==='reception-portrait') {
+    box(g,[w,h,.035],[0,h/2,0],charcoal,.004);
+    const index=o.id.match(/portrait-([123])$/)?.[1]||'1';
+    const texture=typeof document!=='undefined'?new THREE.TextureLoader().load(`/shared/assets/portraits/reception-${index}.png`):null;
+    if(texture){texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=8;}
+    const print=new THREE.MeshBasicMaterial({color:'#ffffff',map:texture});
+    for(const side of [-1,1]){
+      const face=mesh(g,new THREE.PlaneGeometry(w-.025,h-.025),print,[0,h/2,side*.023]);
+      if(side<0)face.rotation.y=Math.PI;
+    }
   } else if(o.type==='display'&&o.variant==='framed-art') {
     box(g,[w,h,.035],[0,h/2,0],charcoal,.004);
     for(const side of [-1,1]){
@@ -275,6 +300,12 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
   } else if(o.type==='wall-panel'&&o.variant==='air-curtain') {
     box(g,[w,h,d],[0,h/2,0],body,.008);
     for(let i=0;i<32;i++)box(g,[w/60,h*.65,.006],[-w*.46+i*w*.92/31,h*.5,d/2+.004],charcoal,.001);
+  } else if(o.type==='wall-panel'&&o.variant==='pleated-curtain') {
+    const points=[],indices=[],columns=40;
+    for(let row=0;row<2;row++)for(let i=0;i<=columns;i++)points.push(-w/2+w*i/columns,row*h,Math.sin(i/columns*Math.PI*12)*d*.45);
+    for(let i=0;i<columns;i++){const a=i,b=i+1,c=i+columns+1,e=c+1;indices.push(a,b,c,b,e,c);}
+    const cloth=new THREE.BufferGeometry();cloth.setAttribute('position',new THREE.Float32BufferAttribute(points,3));cloth.setIndex(indices);cloth.computeVertexNormals();
+    mesh(g,cloth,new THREE.MeshStandardMaterial({color:o.color,roughness:1,side:THREE.DoubleSide}),[0,0,0]);
   } else if(o.type==='wall-panel'&&o.variant==='plain') {
     box(g,[w,h,d],[0,h/2,0],body,.003);
   } else if(o.type==='wall-panel') {

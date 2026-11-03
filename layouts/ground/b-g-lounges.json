@@ -2,7 +2,7 @@
   "format": "altanfeethi-floor-layout",
   "version": 1,
   "id": "ground-b-g-lounges",
-  "name": "B + C + E + G · Lounges, reception and SGS",
+  "name": "B + C + E + G \u00b7 Lounges, reception and SGS",
   "floor": "ground",
   "status": "draft-needs-human-review",
   "components": [
@@ -1343,7 +1343,7 @@
     "G2 rotates 180 degrees so its front automatic gate faces the outer arrival-exit edge Z=-11.4 and its reception back faces Zone C across Z=-3. The reception half-pane is owned by Zone C once; the other half remains open from G2 inward path into Zone C walking area.",
     "G2 depth expands to 8.4 to match G row and gate shifts 0.6 with threshold. Zone C length expands to 8.4 to match this bay; pod/planter strip shifts 0.4 with its side pane without scaling. Source files and previous layouts are unchanged.",
     "Zone C behind-pod smoked pane owns the closed shared boundary with G11; its prior duplicate dark side wall is suppressed only here. G2 owns the single arch into G20. The front corridor continues across Zone C. Opposite G2 arch now connects to G21 through the owner-requested extension.",
-    "G2 reception strip depth matches G18/G20 at 2.8 m (~4½ tiles); rear pillars follow the aligned reception/Zone C seam. Source furniture poses remain unchanged.",
+    "G2 reception strip depth matches G18/G20 at 2.8 m (~4\u00bd tiles); rear pillars follow the aligned reception/Zone C seam. Source furniture poses remain unchanged.",
     "G21 right/local -Z end meets G2 at X=-29.38. G2 has yaw 180, so its source right arch is the composed west/G21 boundary, and its source left arch is the east/G20 boundary. Source camera-view labels do not change. G2 owns each arch once.",
     "G22 positive-Z arch owns the G21/G22 seam once; G21 preview arch remains excluded. G22 negative-Z arch is the far outer end at X=-46.98. Current seat labels, rather than stable object-number suffixes, identify the connecting G57/G49 side.",
     "Owner width-alignment correction is integration-only: G22 floor/arches narrow from 9 to 8.4 m, matching G21/G2 edges Z=-11.4/-3. Glazing aligns at local X=+/-4.15. Each complete furniture bank shifts 0.3 m inward across source X, with matching offsets for raised plants/lamps and their supports. Object sizes/scales and within-bank arrangement are preserved, and standalone source files stay unchanged. Central path remains 2.8 m wide at Z=-7.2. Metric dimensions remain provisional.",
@@ -1358,7 +1358,8 @@
     "Owner moderate rebalance: G9/G16 width restored from 5.2 to 5.8 m, G10/G18 composed width reduced from 8.0 to 7.4 m. Their shared seam moves to X=-5.98; outer edges X=-13.38/-0.18 and the 13.2 m dining span stay fixed. G9 pale entry is 2.2 m. Furniture banks and source dimensions remain editable; G9/G16 and dining chairs use slightly larger 0.94 x 0.94 x 0.98 m bounds, dining pair separation grows by 0.24 m without changing labels.",
     "Owner trial restores G9/G16 width to 7.4 m, with lengths unchanged and G10/G18 widths retained at 7.4 m. Shared seam stays -5.98; right edge becomes 1.42. Dining width grows to 14.8 m, centered X=-5.98; larger chairs/tables and increased spacing fill the wider room while preserving paths, yaw and IDs. Source blocks carry all furniture edits.",
     "Dining source refinement brings seating banks closer, enlarges chairs/tables and widens the far checked walkway to 2.5 m (global Z=18.7..21.2). Source furniture updates flow directly; floor footprint/placement remain unchanged.",
-    "Owner compact C/G-span correction: G21 and G22 each shorten to 7.4 m, while G12/G14 covers their full 14.8 m span at X=-44.18..-29.38. G21/G22 centers are -33.08/-40.48, C lounge center -36.78. G27/G28/G29 and G17 move +2.8 m in X to retain all connected seams. G2/Zone C and the B/dining row stay fixed. C source shell and former furniture offsets are synchronized into the independent block; G21/G22 sources share the compact span. Sizes, seat labels and routes are retained."
+    "Owner compact C/G-span correction: G21 and G22 each shorten to 7.4 m, while G12/G14 covers their full 14.8 m span at X=-44.18..-29.38. G21/G22 centers are -33.08/-40.48, C lounge center -36.78. G27/G28/G29 and G17 move +2.8 m in X to retain all connected seams. G2/Zone C and the B/dining row stay fixed. C source shell and former furniture offsets are synchronized into the independent block; G21/G22 sources share the compact span. Sizes, seat labels and routes are retained.",
+    "Owner 2026-11-03: trim office width from 7.4 m to 6.35 m so its back wall and floor end at exit/glass threshold Z=9.1. Office front, length, door, furniture and exit gate retain their saved positions. This supersedes earlier G9-width match and office-only extension to Z=10.15."
   ],
   "displayCode": "B / C / E / G",
   "connections": [

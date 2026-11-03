@@ -1,5 +1,28 @@
 import * as THREE from 'three';
 
+const iZoneWallTextures=new Map();
+function iZoneWallTexture(color,wood){
+  const key=`${color}:${wood}`;
+  if(iZoneWallTextures.has(key))return iZoneWallTextures.get(key);
+  // A physical-scale procedural finish: long vertical fibers, with no baked lighting.
+  const width=256,height=256,bytes=new Uint8Array(width*height*4);
+  const base=[1,3,5].map(i=>parseInt(color.slice(i,i+2),16));
+  const noise=(x,y)=>{const v=Math.sin(x*127.1+y*311.7)*43758.5453;return v-Math.floor(v);};
+  for(let y=0;y<height;y++)for(let x=0;x<width;x++){
+    const drift=2*Math.sin(y/height*Math.PI*2),fiber=noise(Math.floor(x+drift),0)-.5;
+    const streak=Math.sin(x*.23+Math.sin(y/height*Math.PI*2)*.6);
+    const variation=fiber*(wood?19:14)+streak*(wood?5:6)+(noise(x,y)-.5)*3;
+    const offset=(y*width+x)*4;
+    for(let c=0;c<3;c++)bytes[offset+c]=Math.max(0,Math.min(255,base[c]+variation));
+    bytes[offset+3]=255;
+  }
+  const texture=new THREE.DataTexture(bytes,width,height,THREE.RGBAFormat);
+  texture.colorSpace=THREE.SRGBColorSpace;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;
+  texture.repeat.set(1/1.2,1/2.4);texture.magFilter=THREE.LinearFilter;texture.minFilter=THREE.LinearMipmapLinearFilter;
+  texture.generateMipmaps=true;texture.anisotropy=8;texture.needsUpdate=true;
+  iZoneWallTextures.set(key,texture);return texture;
+}
+
 export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
   const root=new THREE.Group();root.name='Architecture';
   const material=(color,extra={})=>new THREE.MeshStandardMaterial({color,roughness:.65,...extra});
@@ -258,8 +281,18 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
     }
     shape.lineTo(length,0);shape.lineTo(length,height);shape.lineTo(0,height);shape.closePath();
     const geometry=new THREE.ExtrudeGeometry(shape,{depth:wall.thickness,bevelEnabled:false,curveSegments:24});geometry.translate(0,0,-wall.thickness/2);
-    add(group,geometry,material(wall.color||'#e2dfd5'),0,0,0);
-    if(wall.finish){
+    const iZoneFinish=['i-zone-stone-panels','i-zone-wood-panels'].includes(wall.finish);
+    const wood=wall.finish==='i-zone-wood-panels';
+    add(group,geometry,iZoneFinish?material('#ffffff',{map:iZoneWallTexture(wall.color||'#d8d3c7',wood),roughness:wood?.48:.72}):material(wall.color||'#e2dfd5'),0,0,0);
+    if(iZoneFinish){
+      const joint=material(wood?'#604938':'#55594f',{roughness:.85});
+      for(const side of [-1,1]){
+        const z=side*(wall.thickness/2+.0015),pitch=wood?2.2:1.15;
+        for(let x=pitch;x<length-.05;x+=pitch)add(group,new THREE.BoxGeometry(wood?.006:.009,height,.003),joint,x,height/2,z);
+        for(const y of (wood?[1.6,3.2]:[1.15,1.8,2.95]))if(y<height-.025)add(group,new THREE.BoxGeometry(length,wood?.006:.009,.003),joint,length/2,y,z);
+      }
+    }
+    if(wall.finish&&!iZoneFinish){
       // Side-wall relief is component detail; structural endpoints stay stable.
       for(const interiorSide of wall.finishSides||[wall.interiorSide]){
       const wallFace={...wall,interiorSide};

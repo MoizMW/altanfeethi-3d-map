@@ -2,8 +2,14 @@
   "format": "altanfeethi-block-architecture",
   "version": 1,
   "blockId": "ground-i-lounge-059",
-  "floorSize": [4.2, 4.2],
-  "floorCenter": [0.5, 0],
+  "floorSize": [
+    4.2,
+    4.2
+  ],
+  "floorCenter": [
+    0.5,
+    0
+  ],
   "ceilingHeight": 4.1,
   "placement": {
     "status": "not-globally-calibrated",
@@ -11,31 +17,79 @@
     "registrationRevision": "2026-11-02T11:41:18.260Z",
     "registrationSha256": "d05c6582464466ad2102d215a2bc6b2a563755c2a089bf31737295f0e318f4c6",
     "anchors": [
-      {"camera": "I13", "pixel": [7640, 3006], "heading": 308, "status": "verified"},
-      {"camera": "I24", "pixel": [7401, 2831], "heading": 128, "status": "verified"}
+      {
+        "camera": "I13",
+        "pixel": [
+          7640,
+          3006
+        ],
+        "heading": 308,
+        "status": "verified"
+      },
+      {
+        "camera": "I24",
+        "pixel": [
+          7401,
+          2831
+        ],
+        "heading": 128,
+        "status": "verified"
+      }
     ],
     "localAxes": {
       "x": "From the pale paneled wall toward the open aisle",
       "z": "From Seat_I9/I10 toward the sofa and Seat_I11/I12, matching the neighboring I-zone bay convention",
       "y": "Up"
     },
-    "sourceMapCrop": [6400, 2100, 8000, 3450],
+    "sourceMapCrop": [
+      6400,
+      2100,
+      8000,
+      3450
+    ],
     "mapReview": "The I24/I13 anchors locate the illustrated sofa/two-chair bay after G58 along the I-zone strip. Map geometry provides relative topology; normal and wide views establish the current furniture and partition appearance."
   },
-  "footprint": [[-1.6, -2.1], [2.6, -2.1], [2.6, 2.1], [-1.6, 2.1]],
+  "footprint": [
+    [
+      -1.6,
+      -2.1
+    ],
+    [
+      2.6,
+      -2.1
+    ],
+    [
+      2.6,
+      2.1
+    ],
+    [
+      -1.6,
+      2.1
+    ]
+  ],
   "walls": [
     {
       "id": "g59-paneled-wall",
       "kind": "solid",
-      "start": [-1.5, -2.02],
-      "end": [-1.5, 2.02],
+      "start": [
+        -1.5,
+        -2.02
+      ],
+      "end": [
+        -1.5,
+        2.02
+      ],
       "height": 4.1,
       "thickness": 0.16,
       "color": "#d8d3c7",
       "owner": "ground/g59",
-      "sources": ["I13-wide", "I24-wide"],
+      "sources": [
+        "I13-wide",
+        "I24-wide"
+      ],
       "confidence": "Pale paneled boundary is visible beside both furniture ends; wall extents, height and thickness estimated",
-      "notes": "Panel joints, signs and wall-mounted equipment are omitted from the shared plain wall representation."
+      "notes": "Panel joints, signs and wall-mounted equipment are omitted from the shared plain wall representation.",
+      "finish": "i-zone-stone-panels"
     }
   ],
   "openings": [],
@@ -47,21 +101,50 @@
       "objectId": "g58-sofa-screen-01",
       "ownsWall": false,
       "status": "candidate-shared-screen-needs-owner-review",
-      "sources": ["I13-wide", "I22-I24-registration-proximity"],
+      "sources": [
+        "I13-wide",
+        "I22-I24-registration-proximity"
+      ],
       "notes": "The screen behind I9/I10 appears to be the reverse side of G58's sofa screen. Reference its existing owner provisionally; no duplicate screen is rendered in G59 and no accepted seam transform is claimed."
     }
   ],
   "circulation": {
     "id": "g59-aisle-context",
-    "polygon": [[1.3, -2.1], [2.6, -2.1], [2.6, 2.1], [1.3, 2.1]],
+    "polygon": [
+      [
+        1.3,
+        -2.1
+      ],
+      [
+        2.6,
+        -2.1
+      ],
+      [
+        2.6,
+        2.1
+      ],
+      [
+        1.3,
+        2.1
+      ]
+    ],
     "surfaceMaterial": "pale-stone",
     "status": "visible-aisle-strip-width-estimated",
-    "sources": ["I13-wide", "I24-wide"],
+    "sources": [
+      "I13-wide",
+      "I24-wide"
+    ],
     "notes": "The pale aisle is shown only beside this bay. The far window-side seating and the full corridor width/ownership remain outside G59."
   },
   "ceiling": {
-    "size": [4.2, 4.2],
-    "center": [0.5, 0],
+    "size": [
+      4.2,
+      4.2
+    ],
+    "center": [
+      0.5,
+      0
+    ],
     "height": 4.1,
     "defaultVisible": false,
     "confidence": "Shared visualization estimate; no measured ceiling height or profile"
@@ -72,22 +155,32 @@
       "kind": "decorative-partition",
       "status": "visible-screen-next-owner-unresolved",
       "objectId": "g59-sofa-screen-01",
-      "sources": ["I24-wide"],
+      "sources": [
+        "I24-wide"
+      ],
       "notes": "G59 owns the provisional screen behind its sofa. Its reverse side, neighboring owner and detailed construction require review."
     },
     {
       "id": "g59-aisle-rail-review",
       "kind": "unknown",
       "status": "visible-edge-position-and-function-unresolved",
-      "sources": ["I24-wide"],
+      "sources": [
+        "I24-wide"
+      ],
       "notes": "A horizontal rail/glass edge is visible near the aisle. Its plane, height, ownership and connection to the bay are unclear, so it is not placed as a barrier across the walking strip."
     },
     {
       "id": "g59-open-aisle",
       "kind": "open-corridor",
       "status": "neighbor-and-seam-unresolved",
-      "sources": ["I13-wide", "I24-wide"],
+      "sources": [
+        "I13-wide",
+        "I24-wide"
+      ],
       "notes": "Keep local +X open pending a reviewed corridor/boundary model."
     }
+  ],
+  "notes": [
+    "Owner wall-finish refinement: pale panel walls use fine vertical stone striations and dark inset joints; brown end panel uses vertical wood grain and subtle panel seams, following I16 and opposing I-zone wide views. Procedural appearance and panel spacing estimated; geometry extents unchanged."
   ]
 }

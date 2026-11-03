@@ -2,8 +2,14 @@
   "format": "altanfeethi-block-architecture",
   "version": 1,
   "blockId": "ground-i-lounge-057",
-  "floorSize": [4.2, 4.8],
-  "floorCenter": [0.5, 0],
+  "floorSize": [
+    4.2,
+    4.8
+  ],
+  "floorCenter": [
+    0.5,
+    0
+  ],
   "ceilingHeight": 4.1,
   "placement": {
     "status": "not-globally-calibrated",
@@ -11,46 +17,120 @@
     "registrationRevision": "2026-11-02T11:41:18.260Z",
     "registrationSha256": "d05c6582464466ad2102d215a2bc6b2a563755c2a089bf31737295f0e318f4c6",
     "anchors": [
-      {"camera": "I17", "pixel": [6995, 2626], "heading": 304, "status": "verified"},
-      {"camera": "I26", "pixel": [6760, 2459], "heading": 124, "status": "verified"}
+      {
+        "camera": "I17",
+        "pixel": [
+          6995,
+          2626
+        ],
+        "heading": 304,
+        "status": "verified"
+      },
+      {
+        "camera": "I26",
+        "pixel": [
+          6760,
+          2459
+        ],
+        "heading": 124,
+        "status": "verified"
+      }
     ],
     "localAxes": {
       "x": "From the pale paneled wall toward the open aisle",
       "z": "From the planter and Seat_I1/I2 toward the sofa and Seat_I3/I4",
       "y": "Up"
     },
-    "sourceMapCrop": [6000, 1750, 7700, 3250],
+    "sourceMapCrop": [
+      6000,
+      1750,
+      7700,
+      3250
+    ],
     "mapReview": "The registered I17/I26 anchors lie in the first illustrated sofa/two-chair bay along the I-zone lounge strip. Photos define the current furniture and planter, rather than the map's generic orange symbols."
   },
-  "footprint": [[-1.6, -2.4], [2.6, -2.4], [2.6, 2.4], [-1.6, 2.4]],
+  "footprint": [
+    [
+      -1.6,
+      -2.4
+    ],
+    [
+      2.6,
+      -2.4
+    ],
+    [
+      2.6,
+      2.4
+    ],
+    [
+      -1.6,
+      2.4
+    ]
+  ],
   "walls": [
     {
       "id": "g57-paneled-wall",
       "kind": "solid",
-      "start": [-1.5, -2.4],
-      "end": [-1.5, 2.1],
+      "start": [
+        -1.5,
+        -2.4
+      ],
+      "end": [
+        -1.5,
+        2.1
+      ],
       "height": 4.1,
       "thickness": 0.16,
       "color": "#d8d3c7",
       "owner": "ground/g57",
-      "sources": ["I17-wide", "I26-wide"],
+      "sources": [
+        "I17-wide",
+        "I26-wide"
+      ],
       "confidence": "Pale paneled boundary visible in both views; endpoints, height and thickness estimated",
-      "notes": "The pale stone-like panels and dark inset joints are simplified to a plain structural wall."
+      "notes": "The pale stone-like panels and dark inset joints are simplified to a plain structural wall.",
+      "finish": "i-zone-stone-panels"
     }
   ],
   "openings": [],
   "sharedBoundaries": [],
   "circulation": {
     "id": "g57-aisle-context",
-    "polygon": [[1.3, -2.4], [2.6, -2.4], [2.6, 2.4], [1.3, 2.4]],
+    "polygon": [
+      [
+        1.3,
+        -2.4
+      ],
+      [
+        2.6,
+        -2.4
+      ],
+      [
+        2.6,
+        2.4
+      ],
+      [
+        1.3,
+        2.4
+      ]
+    ],
     "surfaceMaterial": "pale-stone",
     "status": "visible-open-aisle-width-estimated",
-    "sources": ["I17-wide", "I26-wide"],
+    "sources": [
+      "I17-wide",
+      "I26-wide"
+    ],
     "notes": "Only the immediate aisle strip is shown. The far window-side chairs and glazing are outside this block; the crop does not claim the corridor's full width or ownership."
   },
   "ceiling": {
-    "size": [4.2, 4.8],
-    "center": [0.5, 0],
+    "size": [
+      4.2,
+      4.8
+    ],
+    "center": [
+      0.5,
+      0
+    ],
     "height": 4.1,
     "defaultVisible": false,
     "confidence": "Shared provisional ceiling estimate; exact ceiling shape is not established by these captures"
@@ -60,7 +140,9 @@
       "id": "g57-sofa-screen-boundary",
       "kind": "decorative-partition",
       "status": "screen-visible-structural-extent-unresolved",
-      "sources": ["I26-wide"],
+      "sources": [
+        "I26-wide"
+      ],
       "objectId": "g57-sofa-screen-01",
       "notes": "Vertical ribbed/slatted panel behind the sofa is represented as editable context. It is not treated as a confirmed building wall."
     },
@@ -68,7 +150,9 @@
       "id": "g57-planter-boundary",
       "kind": "planter",
       "status": "visible-planter-neighboring-ownership-unresolved",
-      "sources": ["I17-wide"],
+      "sources": [
+        "I17-wide"
+      ],
       "objectId": "g57-planter-01",
       "notes": "The raised planter behind I1/I2 is modeled only across this bay; its continuation and shared ownership need review."
     },
@@ -76,8 +160,14 @@
       "id": "g57-open-aisle",
       "kind": "open-corridor",
       "status": "neighbor-and-seam-unresolved",
-      "sources": ["I17-wide", "I26-wide"],
+      "sources": [
+        "I17-wide",
+        "I26-wide"
+      ],
       "notes": "Keep local +X open. No floor-level scene transform or neighboring seam has been accepted."
     }
+  ],
+  "notes": [
+    "Owner wall-finish refinement: pale panel walls use fine vertical stone striations and dark inset joints; brown end panel uses vertical wood grain and subtle panel seams, following I16 and opposing I-zone wide views. Procedural appearance and panel spacing estimated; geometry extents unchanged."
   ]
 }

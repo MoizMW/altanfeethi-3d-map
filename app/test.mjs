@@ -193,11 +193,19 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     const origin=`http://127.0.0.1:${server.address().port}`,query='?block=ground%2Fg9';
     const listing=await(await fetch(`${origin}/api/blocks`)).json();assert.ok(listing.blocks.some(b=>b.key==='ground/g9'));assert.ok(listing.blocks.some(b=>b.key==='ground/g32'));
     const response=await fetch(`${origin}/api/block${query}`);assert.equal(response.status,200);const data=await response.json();assert.deepEqual(data.block.objects,block.objects);
+    assert.deepEqual(data.block.evidence.tableDrawings,['B1']);
+    const drawing=await fetch(`${origin}/api/evidence/table-drawing/B1${query}`);
+    assert.equal(drawing.status,200);assert.equal(drawing.headers.get('content-type'),'image/png');
+    assert.equal((await fetch(`${origin}/api/evidence/table-drawing/G2${query}`)).status,404);
+    const g16Drawings=await(await fetch(`${origin}/api/block?block=ground/g16`)).json();
+    assert.deepEqual(g16Drawings.block.evidence.tableDrawings,['G1','G2']);
+    const combinedDrawings=await(await fetch(`${origin}/api/block?layout=ground/g9-g10`)).json();
+    assert.deepEqual(combinedDrawings.block.evidence.tableDrawings,['B1','B4','B5','C1','C2']);
     const stale=await fetch(`${origin}/api/block${query}`,{method:'PUT',body:JSON.stringify({revision:'stale',block})});assert.equal(stale.status,409);
     const jpg=Buffer.from(await(await fetch(`${origin}/api/evidence/camera/B1${query}`)).arrayBuffer());assert.equal(jpg[0],255);assert.equal(jpg[1],216);
     assert.equal((await fetch(`${origin}/shared/schema/block-schema.js`)).status,200);assert.equal((await fetch(`${origin}/server.mjs`)).status,404);assert.equal((await fetch(`${origin}/api/block?block=../../private`)).status,400);
     const g32=await(await fetch(`${origin}/api/block?block=ground/g32`)).json();validateBlock(g32.block);
-    for(const slug of ['g18','g20','g21','g27','g28']){
+    for(const slug of ['g18','g20','g21','g27','g28','g61','g62']){
       assert.ok(listing.blocks.some(b=>b.key===`ground/${slug}`));
       const data=await(await fetch(`${origin}/api/block?block=ground/${slug}`)).json();validateBlock(data.block);
       for(const id of data.block.evidence.cameras)assert.equal((await fetch(`${origin}/api/evidence/camera/${id}?block=ground/${slug}`)).status,200);
@@ -214,6 +222,12 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
       assert.match(await asset.text(),/<svg/);
     }
     assert.equal((await fetch(`${origin}/shared/assets/flags/saudi-source.svg`)).status,404);
+    for(const index of [1,2,3]){
+      const portrait=await fetch(`${origin}/shared/assets/portraits/reception-${index}.png`);
+      assert.equal(portrait.status,200);assert.equal(portrait.headers.get('content-type'),'image/png');
+      assert.deepEqual([...new Uint8Array(await portrait.arrayBuffer()).slice(0,8)],[137,80,78,71,13,10,26,10]);
+    }
+    assert.equal((await fetch(`${origin}/shared/assets/portraits/README.md`)).status,404);
     for(const id of g32.block.evidence.cameras){const photo=await fetch(`${origin}/api/evidence/camera/${id}?block=ground/g32`);assert.equal(photo.status,200);assert.equal(photo.headers.get('content-type'),'image/jpeg');}
   }finally{await new Promise(resolve=>server.close(resolve));}
 });
@@ -695,8 +709,83 @@ test('Cleared A-zone passage joins reception and stays open through exit and the
   const egate=combined.objects.find(o=>o.variant==='swing-turnstile');
   assert.equal(source.architecture.circulation.clearWidth,egate.size[0]);
   assert.ok(source.architecture.circulation.route.centerline.every(p=>p[1]===egate.position[2]));
-  const g9=(await load('ground/g9')).block;
-  assert.equal(source.architecture.officeRoom.width,g9.floorSize[0],'Office room width must match G9 width');
+  const room=source.architecture.officeRoom;
+  const exitLine=source.architecture.circulation.connections.find(c=>c.id==='egate-office-passage-exit-threshold').start[1];
+  assert.ok(Math.abs(room.width-(exitLine-Math.min(...room.footprint.map(p=>p[1]))))<1e-8,'Office width must end at exit line');
+  assert.equal(Math.max(...room.footprint.map(p=>p[1])),exitLine);
+  const back=source.architecture.walls.find(w=>w.id==='egate-office-passage-office-back');
+  assert.equal(back.start[1],exitLine);assert.equal(back.end[1],exitLine);
+  for(const section of source.architecture.floorSections)assert.ok(section.center[1]+section.size[1]/2<=exitLine+1e-8,'Floor must not extend beyond exit gate');
+});
+
+test('G61/G62 reconcile normal ROI identities and share Table_I9 without duplicating it',async()=>{
+  for(const key of ['g61','g62']){
+    const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/ground/${key}/${f}.json`,import.meta.url)))));
+    validateBlock({...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects});
+    const observedSeats=new Set(),observedTables=new Set();
+    for(const c of e.cameras){
+      for(const [kind,target] of [['chairs',observedSeats],['tables',observedTables]]){
+        const roi=JSON.parse(await readFile(new URL(`../${e.rois[c][kind]}`,import.meta.url)));
+        for(const id of Object.keys(roi))target.add(id);
+      }
+      assert.ok(e.wideSnapshots[c]);
+    }
+    assert.deepEqual(new Set(o.objects.flatMap(o=>o.seats)),observedSeats);
+    const tables=new Set(o.objects.filter(o=>o.type==='table').map(o=>o.externalId));
+    if(key==='g62'){assert.ok(!tables.has('Table_I9'));tables.add(e.externalObservations[0].externalId);}
+    assert.deepEqual(tables,observedTables);
+    assert.equal(o.objects.filter(o=>o.type==='armchair').length,6);
+    assert.equal(a.walls.filter(w=>w.kind==='glass').length,1);
+  }
+});
+
+test('Full I zone preserves three bays and keeps window-row, floor seams and aisle clear',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const old=(await composeLayout(root,'ground/g57-g58',load)).block;
+  const {block}=await composeLayout(root,'ground/i-zone',load);
+  for(const o of old.objects)assert.deepEqual(block.objects.find(v=>v.id===o.id),o);
+  assert.equal(block.objects.flatMap(o=>o.seats).length,24);
+  assert.equal(block.objects.filter(o=>o.variant==='egg-swivel').length,10);
+  assert.equal(block.objects.filter(o=>o.externalId==='Table_I9').length,1);
+  assert.equal(block.objects.filter(o=>o.type==='table').length,14);
+  assert.equal(block.objects.filter(o=>/^g(?:57|58|59)-sofa-screen-01$/.test(o.id)).length,3);
+  const windows=block.architecture.walls.filter(w=>w.kind==='glass');
+  assert.deepEqual(windows[0].end,windows[1].start);
+  const sections=block.architecture.floorSections;
+  const overlap=(a,b)=>Math.min(a.center[0]+a.size[0]/2,b.center[0]+b.size[0]/2)-Math.max(a.center[0]-a.size[0]/2,b.center[0]-b.size[0]/2)>1e-8&&Math.min(a.center[1]+a.size[1]/2,b.center[1]+b.size[1]/2)-Math.max(a.center[1]-a.size[1]/2,b.center[1]-b.size[1]/2)>1e-8;
+  for(let i=0;i<sections.length;i++)for(let j=0;j<i;j++)assert.ok(!overlap(sections[i],sections[j]),'Source floor sections must not overlap');
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    assert.equal(new THREE.Raycaster(new THREE.Vector3(1.9,.7,-4.5),new THREE.Vector3(0,0,1),0,14.5).intersectObject(shell,true).length,0,'Central aisle must remain open');
+  }
+  for(const o of block.objects.filter(o=>o.variant==='egg-swivel'))assert.ok(o.position[0]-o.size[2]/2>=2.6,'Window chair backs must leave the aisle clear');
+});
+
+test('G57 G58 G59 join behind each sofa with shared screens and continuous aisle',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const {block}=await composeLayout(root,'ground/g57-g58',load);
+  assert.deepEqual(block.objects.flatMap(o=>o.seats).sort(),Array.from({length:12},(_,i)=>`Seat_I${i+1}`).sort());
+  assert.equal(block.objects.filter(o=>o.id==='g57-sofa-screen-01').length,1);
+  assert.equal(block.objects.filter(o=>o.type==='table').length,3);
+  assert.equal(block.objects.filter(o=>o.id==='g58-sofa-screen-01').length,1);
+  const nextScreen=block.objects.find(o=>o.id==='g58-sofa-screen-01');
+  assert.ok(block.objects.find(o=>o.seats.includes('Seat_I5')).position[2]<nextScreen.position[2]);
+  for(const seat of ['Seat_I9','Seat_I10'])assert.ok(block.objects.find(o=>o.seats.includes(seat)).position[2]>nextScreen.position[2]);
+  const screen=block.objects.find(o=>o.id==='g57-sofa-screen-01');
+  const sofa=block.objects.find(o=>o.seats.includes('Seat_I3'));
+  for(const seat of ['Seat_I7','Seat_I8'])assert.ok(block.objects.find(o=>o.seats.includes(seat)).position[2]>screen.position[2]);
+  assert.ok(sofa.position[2]<screen.position[2]);
+  for(let i=1;i<block.architecture.floorSections.length;i++){const [a,b]=block.architecture.floorSections.slice(i-1,i+1);assert.ok(Math.abs(a.center[1]+a.size[1]/2-(b.center[1]-b.size[1]/2))<1e-8);}
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    assert.equal(new THREE.Raycaster(new THREE.Vector3(1.9,.7,-2.3),new THREE.Vector3(0,0,1),0,12.4).intersectObject(shell,true).length,0);
+  }
+  for(const key of ['ground/g57','ground/g58','ground/g59']){
+    const source=(await load(key)).block;
+    for(const o of source.objects){const merged=block.objects.find(v=>v.id===o.id);assert.deepEqual(merged.size,o.size);assert.deepEqual(merged.seats,o.seats);assert.equal(merged.yaw,o.yaw);assert.ok(Math.abs(merged.position[2]-o.position[2]-(key.endsWith('g59')?8.06:key.endsWith('g58')?4.08:0))<1e-8);}
+  }
 });
 
 test('Departure assembly joins the combined G9/G10 walk without duplicate shared walls or furniture',async()=>{

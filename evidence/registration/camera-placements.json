@@ -2,7 +2,7 @@
   "format": "altanfeethi-camera-registration",
   "version": 1,
   "coordinateSpace": "source-image-pixels",
-  "updatedAt": "2026-11-02T11:41:18.260Z",
+  "updatedAt": "2026-11-03T07:14:37.307Z",
   "floors": {
     "ground": {
       "label": "Ground floor",
@@ -2296,8 +2296,8 @@
       "group_id": "g58",
       "floor": "ground",
       "position": {
-        "x": 7085,
-        "y": 2630
+        "x": 7078,
+        "y": 2604
       },
       "heading": 126,
       "status": "verified",
@@ -2308,7 +2308,7 @@
       "id": "I22",
       "file": "I22.jpg",
       "zone": "I",
-      "group_id": "g58",
+      "group_id": "",
       "floor": "ground",
       "position": {
         "x": 7273,
@@ -2341,8 +2341,8 @@
       "group_id": "g62",
       "floor": "ground",
       "position": {
-        "x": 7866,
-        "y": 2613
+        "x": 7880,
+        "y": 2602
       },
       "heading": 286,
       "status": "verified",
@@ -2398,48 +2398,60 @@
       "id": "I29",
       "file": "I29.jpg",
       "zone": "I",
-      "group_id": "",
-      "floor": null,
-      "position": null,
-      "heading": 0,
-      "status": "unplaced",
-      "notes": "",
+      "group_id": "g63",
+      "floor": "ground",
+      "position": {
+        "x": 8312,
+        "y": 5065
+      },
+      "heading": 53,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
       "provenance": null
     },
     {
       "id": "I30",
       "file": "I30.jpg",
       "zone": "I",
-      "group_id": "",
-      "floor": null,
-      "position": null,
-      "heading": 0,
-      "status": "unplaced",
-      "notes": "",
+      "group_id": "g63",
+      "floor": "ground",
+      "position": {
+        "x": 8280,
+        "y": 4738
+      },
+      "heading": 188,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
       "provenance": null
     },
     {
       "id": "I31",
       "file": "I31.jpg",
       "zone": "I",
-      "group_id": "",
-      "floor": null,
-      "position": null,
-      "heading": 0,
-      "status": "unplaced",
-      "notes": "",
+      "group_id": "g63",
+      "floor": "ground",
+      "position": {
+        "x": 7740,
+        "y": 5040
+      },
+      "heading": 91,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
       "provenance": null
     },
     {
       "id": "I32",
       "file": "I32.jpg",
       "zone": "I",
-      "group_id": "",
-      "floor": null,
-      "position": null,
-      "heading": 0,
-      "status": "unplaced",
-      "notes": "",
+      "group_id": "g63",
+      "floor": "ground",
+      "position": {
+        "x": 8375,
+        "y": 5424
+      },
+      "heading": 5,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
       "provenance": null
     },
     {
@@ -2458,12 +2470,15 @@
       "id": "I34",
       "file": "I34.jpg",
       "zone": "I",
-      "group_id": "",
-      "floor": null,
-      "position": null,
-      "heading": 0,
-      "status": "unplaced",
-      "notes": "",
+      "group_id": "g63",
+      "floor": "ground",
+      "position": {
+        "x": 8858,
+        "y": 5143
+      },
+      "heading": 288,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
       "provenance": null
     },
     {
