@@ -1,5 +1,11 @@
 # Altanfeethi spatial twin
 
+Combined G15/G13: `http://127.0.0.1:4209/?layout=ground/g15-g13` — checkpoint, two offices and passport control, with a provisional connecting approach. Both source blocks load live with their saved furniture and gate sizes.
+
+G13 arrival passport control: `http://127.0.0.1:4209/?block=ground/g13` — [booth evidence and review notes](blocks/ground/g13/README.md).
+
+G15 security checkpoint: `http://127.0.0.1:4209/?block=ground/g15` — [equipment evidence and review notes](blocks/ground/g15/README.md).
+
 G12 + G14 shared C-zone lounge: `http://127.0.0.1:4209/?block=ground/g12-g14` — [evidence and review notes](blocks/ground/g12-g14/README.md). One editable space for both groups, with 21 unique seat IDs.
 
 Zone C pods and approach: `http://127.0.0.1:4209/?block=ground/zone-c-pods`.

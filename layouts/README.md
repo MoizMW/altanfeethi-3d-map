@@ -1,5 +1,15 @@
 # Composing spatial blocks
 
+## G15/G13 checkpoint and passport control
+
+Open `http://127.0.0.1:4209/?layout=ground/g15-g13`. Owner correction places G13 above G15 in top view, with staff chairs on the right (+X) and passenger gates on the left. G15 stays at [0,0,0], yaw 0; G13 uses [1.3,0,-13.75], yaw -90. The latest owner correction aligns both right walls at X=5, with a layout-owned wall joining their ends. A 0.1 m floor-only extension on G13 aligns all right floor edges at X=5.2; furniture is unchanged. A layout-owned 2 m circulation section joins G15's open top approach at Z=-4.8 to G13's floor at Z=-6.8, leading to the public side of the passport gates. Source walls are retained once; the layout owns only the right-side wall connection. The earlier bottom-end join is superseded. Connection width and global calibration remain estimated; C8/C15/C16/C13/C17/C18/C21 remain the supporting neighboring views.
+
+All 29 objects load live, preserving IDs, saved poses, dimensions and scales. G15 keeps its two handled office glass doors, top-side office extension and 80% checkpoint/office-row length ratio. Its three floor sections retain the repaired glass-front seam without filling the empty area beside the extension. G13 keeps two half-width single gates, one double gate and the screen beside the double booth. Gates retain the static closed reference state. Edit furniture in the original block views; change relative placement in `layouts/ground/g15-g13.json`.
+
+The composer now carries separate source floor sections and room footprints through the same placement transform as furniture and walls. Existing single-floor layouts retain their original behavior.
+
+## G9/G10/G11 lounges
+
 Open `/?layout=ground/g9-g10`. The combined view loads source furniture live; edit furniture in each source block and refresh the layout.
 
 Owner correction: G10 is LEFT of G9 in the supplied front view, with furniture orientations retained. The shared wall is G9's white OUTER PASSAGE wall and G10's black side wall. Owner material clarification: it is one mildly dark tinted glass panel, with a geometric etched/frosted band and brass edging visible from both sides. Earlier white/black solid faces are superseded. Earlier TV-wall pairing and G10-right placement are superseded.

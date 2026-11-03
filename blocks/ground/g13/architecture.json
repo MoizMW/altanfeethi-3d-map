@@ -1,0 +1,250 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-c-passport-013",
+  "floorSize": [
+    11.5,
+    7.6
+  ],
+  "floorCenter": [
+    1.2,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "registrationSha256": "998fa26f3524ab4deea8d01cc8e8e0ac3a2d79018bba642fbbd574c3af0e79a0",
+    "anchors": [
+      {
+        "camera": "C13",
+        "pixel": [
+          8118,
+          4150
+        ],
+        "heading": 126,
+        "status": "verified"
+      },
+      {
+        "camera": "C17",
+        "pixel": [
+          8505,
+          4501
+        ],
+        "heading": 312,
+        "status": "verified"
+      },
+      {
+        "camera": "C18",
+        "pixel": [
+          8609,
+          3916
+        ],
+        "heading": 137,
+        "status": "verified"
+      },
+      {
+        "camera": "C21",
+        "pixel": [
+          8918,
+          4246
+        ],
+        "heading": 312,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      7500,
+      3300,
+      9550,
+      5000
+    ],
+    "localAxes": {
+      "x": "From the end single booth (-X/left) toward the double bank and outer glass door (+X/right)",
+      "z": "From officer/rear aisle (-Z) toward traveller/front approach (+Z)",
+      "y": "Up"
+    },
+    "mapReview": "Owner correction and C13 set the right-to-left order: fixed glass, outer glass door, two-officer bank, gate, single booth, gate, single booth. The row is mirrored from the initial draft. The information screen belongs beside the double bank, not against the rear wall. Dimensions and global map alignment remain provisional."
+  },
+  "footprint": [
+    [
+      -4.55,
+      -3.8
+    ],
+    [
+      6.95,
+      -3.8
+    ],
+    [
+      6.95,
+      3.8
+    ],
+    [
+      -4.55,
+      3.8
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g13-rear-wall",
+      "kind": "solid",
+      "start": [
+        -4.2,
+        -3.7
+      ],
+      "end": [
+        6.8,
+        -3.7
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e6e3db",
+      "owner": "ground/g13",
+      "sources": [
+        "C13",
+        "C18"
+      ],
+      "confidence": "Pale wall behind the officer positions visible in front-facing cameras. Extent, height and thickness estimated."
+    },
+    {
+      "id": "g13-end-return",
+      "kind": "solid",
+      "start": [
+        -4.2,
+        -3.7
+      ],
+      "end": [
+        -4.2,
+        1.4
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e6e3db",
+      "owner": "ground/g13",
+      "sources": [
+        "C18",
+        "C21"
+      ],
+      "confidence": "Wall return beside end single booth visible in overlapping front/rear views; local correspondence and endpoint need owner review."
+    },
+    {
+      "id": "g13-right-fixed-glass",
+      "kind": "glass",
+      "start": [
+        5.575,
+        0.625
+      ],
+      "end": [
+        6.775,
+        0.625
+      ],
+      "height": 1.1,
+      "thickness": 0.02,
+      "color": "#a7c3bc",
+      "opacity": 0.2,
+      "frameColor": "#a7afb0",
+      "privacyBand": false,
+      "owner": "ground/g13",
+      "sources": [
+        "C13",
+        "C17"
+      ],
+      "confidence": "Fixed glass panel beyond the right-hand third passenger door, per owner sequence. Width, height and framing are estimates."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "size": [
+      11.5,
+      7.6
+    ],
+    "center": [
+      1.2,
+      0
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "circulation": {
+    "id": "g13-traveller-approach",
+    "polygon": [
+      [
+        -4.35,
+        1.1
+      ],
+      [
+        6.8,
+        1.1
+      ],
+      [
+        6.8,
+        3.8
+      ],
+      [
+        -4.35,
+        3.8
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "sources": [
+      "C13",
+      "C17",
+      "C18",
+      "C21"
+    ],
+    "status": "dark-stone-approach-extent-estimated",
+    "notes": "Right-to-left order retained. Each single gate opening is 0.975 m, half the final 1.95 m double-gate opening. Adjoining single-booth groups and shell ends are compacted to remove the leftover gaps; the double bank and its display are retained."
+  },
+  "boundaryReview": [
+    {
+      "id": "g13-traveller-edge",
+      "kind": "open-corridor",
+      "sources": [
+        "C17",
+        "C21"
+      ],
+      "status": "neighbor-and-seam-unresolved"
+    },
+    {
+      "id": "g13-double-bank-end",
+      "kind": "glass-panel-and-passenger-door",
+      "sources": [
+        "C13",
+        "C17"
+      ],
+      "status": "owner-confirmed-sequence-dimensions-estimated",
+      "notes": "Right-hand fixed glass and third passenger door precede the double bank."
+    },
+    {
+      "id": "g13-neighbor-security",
+      "kind": "open-connection",
+      "sources": [
+        "C17",
+        "C21"
+      ],
+      "candidateNeighbor": "ground/g15",
+      "status": "visual-context-transform-and-ownership-unresolved",
+      "notes": "Background detectors/turnstiles are not duplicated in G13 or automatically joined to G15."
+    }
+  ],
+  "sequenceRightToLeft": [
+    "g13-right-fixed-glass",
+    "g13-passenger-gate-03",
+    [
+      "g13-booth-01",
+      "g13-booth-02"
+    ],
+    "g13-passenger-gate-01",
+    "g13-booth-03",
+    "g13-passenger-gate-02",
+    "g13-booth-04"
+  ],
+  "gateWidthProportion": {
+    "single": 0.975,
+    "double": 1.95,
+    "ratio": 0.5,
+    "source": "Owner explicit half-width correction; dimensions remain provisional."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-c-passport-013",
+  "cameras": [
+    "C13",
+    "C17",
+    "C18",
+    "C21"
+  ],
+  "snapshots": {
+    "C13": "evidence/camera-snapshots/C13.jpg",
+    "C17": "evidence/camera-snapshots/C17.jpg",
+    "C18": "evidence/camera-snapshots/C18.jpg",
+    "C21": "evidence/camera-snapshots/C21.jpg"
+  },
+  "wideSnapshots": {
+    "C13": "evidence/wide capture snapshots/C13.jpg",
+    "C17": "evidence/wide capture snapshots/C17.jpg",
+    "C18": "evidence/wide capture snapshots/C18.jpg",
+    "C21": "evidence/wide capture snapshots/C21.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per project context",
+    "zoom": "Supplied wider references reviewed separately",
+    "roiUsage": "Existing reception polygons apply only to normal snapshots",
+    "capturedAt": null
+  },
+  "rois": {
+    "C13": {
+      "reception": "evidence/rois/reception-rois/g13/C13.json"
+    },
+    "C17": {
+      "reception": "evidence/rois/reception-rois/g13/C17.json"
+    },
+    "C18": {
+      "reception": "evidence/rois/reception-rois/g13/C18.json"
+    },
+    "C21": {
+      "reception": "evidence/rois/reception-rois/g13/C21.json"
+    }
+  },
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "roiCoordinateStatus": "All four R1 overlays inspected on the 1920x1080 normal snapshots. All polygon vertices fit the image. Region polygons cover overlapping desk/passenger areas, not individual chair identities. They are not projected onto wide views or interpreted as 3D coordinates.",
+  "notes": [
+    "Owner/C13 correction: right-to-left order is fixed glass, third glass passenger door, two-officer bank, gate, single booth, gate, end single booth. Four officer positions are retained once; the row is mirrored from the initial draft.",
+    "C17 R1 primarily covers the paired staff positions. C13 R1 includes the pair and neighboring single; C18 R1 covers the end-single passage; C21 R1 covers the middle/end-single side. The repeated R1 label is local to each camera and is not a shared physical desk ID.",
+    "Sixteen editable objects comprise four booths, four officer chairs, four monitors, three glass passenger gates and one portrait information display. Booths include reader towers, keyboards, glass/brass dividers, platforms and accessory cues.",
+    "No G13 chair or table ROI identities are supplied. Seat_G13_TMP_01 through Seat_G13_TMP_04 are temporary editor slots, not approved occupancy IDs. Confirm slot order and correspondence before telemetry integration.",
+    "The central partition of the double bank is generated once by booth 2; booth 1 omits its left partition. Rear staff access and the continuous aisle remain open. Exact rear staff gates, waste bins, flag inscriptions, labels and detailed reader hardware are not reproduced.",
+    "All four normal/wide pairs, four reception polygons and the annotated map crop were reviewed. Dimensions, gate widths, floor extents, side-return correspondence and world yaw remain estimates; raw registered headings were not used directly as world yaw.",
+    "C17/C21 show background security/access equipment toward the neighboring checkpoint. This is evidence only: G15 geometry and saved objects remain unchanged, with no duplicate background scanners or assumed global seam.",
+    "The owner identifies the portrait display with the two-officer bank in C13. It now stands beside that bank at its outer end and faces the traveller side, away from the rear wall. Third-door/fixed-glass dimensions and exact display placement are estimated.",
+    "Owner clarifies the first two passenger gates from the right each have one glass leaf; only the final gate between the single booths has two leaves. These counts follow C13 and the wider final opening seen in C18/C21. Gate positions, widths and the corrected booth/display arrangement are retained.",
+    "C13 single-gate construction correction: each single leaf hinges from one round stainless post beside the double booth, with a slim top rail and counter-side latch; the extra standalone post is removed. Middle gate hinges at its right end and outer gate at its left end. Single leaves use lighter transparent glass; the last double-leaf gate is unchanged.",
+    "Owner clarifies width as well as leaf count: the first two single gates must each be half the width of the last double gate. They now have 0.975 m openings versus 1.95 m. Gate posts retain their full thickness; adjoining single-booth groups move as complete units to close gaps. The double booth, its chairs/monitors and information display remain fixed."
+  ],
+  "reviewItems": [
+    "Confirm four-position double/single/single layout, station order and cross-view matching with the site owner.",
+    "Replace temporary officer seat IDs only after CV/owner review while retaining physical g13 object IDs.",
+    "Review desk platforms, gate widths/heights, partition finishes and staff-door details.",
+    "Confirm side-return ownership and left/front boundaries; fit the map basis and measured scale before composition."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-map-and-overlapping-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "four-provisional-officer-slots-not-CV-IDs",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

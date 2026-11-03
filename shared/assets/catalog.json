@@ -2,6 +2,14 @@
   "format": "altanfeethi-asset-catalog",
   "version": 1,
   "types": {
+    "passport-booth": {"builder": "procedural-passport-booth", "defaultSize": [1.35, 1.7, 2.25]},
+    "passport-gate": {"builder": "procedural-passport-gate", "defaultSize": [1.925, 1.1, 0.24]},
+    "passport-totem": {"builder": "procedural-passport-totem", "defaultSize": [0.6, 1.9, 0.24]},
+    "security-scanner": {"builder": "procedural-security-scanner", "defaultSize": [1.15, 1.5, 4.6]},
+    "security-detector": {"builder": "procedural-security-detector", "defaultSize": [1.05, 2.3, 0.45]},
+    "security-console": {"builder": "procedural-security-console", "defaultSize": [1.1, 1.65, 0.5]},
+    "security-kiosk": {"builder": "procedural-security-kiosk", "defaultSize": [0.62, 1.5, 0.5]},
+    "security-barrier": {"builder": "procedural-security-barrier", "defaultSize": [4.4, 1.15, 0.28]},
     "floor-lamp": {
       "builder": "procedural-floor-lamp",
       "defaultSize": [0.46, 1.85, 0.46]
@@ -33,6 +41,7 @@
     },
     "plant": {
       "builder": "procedural-plant",
+      "variants": ["rectangular-planter"],
       "defaultSize": [0.5, 1.7, 0.5]
     },
     "counter": {

@@ -184,6 +184,51 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
         continue;
       }
 
+      // Segment door frontages so a fixed pane never covers the door leaf.
+      if(wall.doors?.length){
+        const glass=material(wall.color||'#9dbfc3',{transparent:true,opacity:wall.opacity??.22,
+          depthWrite:false,side:THREE.DoubleSide});
+        const frame=material(wall.frameColor||'#717a78',{metalness:.45,roughness:.4});
+        const pane=(width,h,x,y,target=group)=>{
+          if(width>.001&&h>.001)add(target,new THREE.BoxGeometry(width,h,wall.thickness),glass,x,y,0);
+        };
+        const doors=wall.doors.slice().sort((a,b)=>a.offset-b.offset);
+        let cursor=0;
+        for(const door of doors){
+          const left=door.offset-door.width/2,right=door.offset+door.width/2;
+          pane(left-cursor,height,(cursor+left)/2,height/2);
+          if(height>door.height)pane(door.width,height-door.height,door.offset,(height+door.height)/2);
+          const leaf=new THREE.Group();leaf.name='Glass door';leaf.userData.doorId=door.id;
+          leaf.position.x=door.offset;group.add(leaf);
+          const leafHeight=Math.min(height,door.height)-.04;
+          pane(door.width-.055,leafHeight,0,.04+leafHeight/2,leaf);
+          for(const x of [left,right])add(group,new THREE.BoxGeometry(.035,height,.075),frame,x,height/2,0);
+          if(door.height<=height)add(group,new THREE.BoxGeometry(door.width,.045,.075),frame,door.offset,door.height,0);
+          const handleCenter=door.handleHeight??1.2,handleLength=door.handleLength??.85;
+          const bottom=Math.max(.05,handleCenter-handleLength/2),top=Math.min(height-.02,handleCenter+handleLength/2);
+          if(top>bottom){
+            const handle=material(door.handleColor||'#202b2a',{roughness:.35,metalness:.5});
+            const x=door.width/2-.13;
+            for(const side of [-1,1]){
+              const z=side*(wall.thickness/2+.055);
+              const bar=add(leaf,new THREE.CylinderGeometry(.013,.013,top-bottom,16),handle,x,(top+bottom)/2,z);
+              bar.name='Door pull handle';
+              for(const y of [bottom+.035,top-.035]){
+                if(y<bottom||y>top)continue;
+                const mount=add(leaf,new THREE.CylinderGeometry(.009,.009,.055,12),handle,x,y,side*(wall.thickness/2+.0275));
+                mount.rotation.x=Math.PI/2;
+              }
+            }
+          }
+          cursor=right;
+        }
+        pane(length-cursor,height,(cursor+length)/2,height/2);
+        for(const x of [0,length])add(group,new THREE.BoxGeometry(.05,height,.08),frame,x,height/2,0);
+        // No sill crosses a doorway; the top rail stays at the visible cut height.
+        add(group,new THREE.BoxGeometry(length,.06,.08),frame,length/2,height,0);
+        continue;
+      }
+
       // Standard glass fallback, including G17's wall-specific finish settings.
       add(group, new THREE.BoxGeometry(length, height, wall.thickness),
         material(wall.color || '#9dbfc3', {

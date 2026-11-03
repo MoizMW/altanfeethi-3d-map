@@ -1,0 +1,75 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-c-security-015",
+  "cameras": [
+    "C8",
+    "C15",
+    "C16"
+  ],
+  "snapshots": {
+    "C8": "evidence/camera-snapshots/C8.jpg",
+    "C15": "evidence/camera-snapshots/C15.jpg",
+    "C16": "evidence/camera-snapshots/C16.jpg"
+  },
+  "wideSnapshots": {
+    "C8": "evidence/wide capture snapshots/C8.jpg",
+    "C15": "evidence/wide capture snapshots/C15.jpg",
+    "C16": "evidence/wide capture snapshots/C16.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per project context",
+    "zoom": "Supplied supplementary views; reviewed individually",
+    "roiUsage": "Reception polygons apply only to normal detection views",
+    "capturedAt": null
+  },
+  "rois": {
+    "C15": {
+      "reception": "evidence/rois/reception-rois/g15/C15.json"
+    },
+    "C16": {
+      "reception": "evidence/rois/reception-rois/g15/C16.json"
+    }
+  },
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "roiCoordinateStatus": "Both R1 reception polygons were overlaid and inspected on the normal 1920x1080 images. They cover checkpoint/operator areas, not chair identities or tables. No polygon is projected to a wide image or interpreted as world coordinates. C8 has no supplied G15 ROI.",
+  "excludedRoiAssociations": {
+    "paths": [
+      "evidence/rois/table-rois/g15/C22_to_g15.json",
+      "evidence/rois/table-rois/g15/C23_to_g15.json",
+      "evidence/rois/table-rois/g15/C25_to_g15.json"
+    ],
+    "reason": "Legacy folder association conflicts with current registration: C22/C25 belong to g12 and C23 to g14. Their seating-table observations are not part of the C8/C15/C16 checkpoint; do not import Table_C22/C23/C24/C26/C27 or change camera groups."
+  },
+  "notes": [
+    "G15 is the current C8/C15/C16 security checkpoint beside Zone C, matching the map Custom Check Point. Two blue baggage scanners flank two gray walk-through detectors, with lane dividers and a central kiosk/planter.",
+    "C15 and C16 show the glass-side and solid-wall-side operator stations respectively. They corroborate the same two scanners seen in C8; machines are not duplicated across views. Each operator station has one dual-monitor console and one visible staff chair.",
+    "Thirteen editable objects comprise two scanners (including roller beds), two detectors, two lane dividers, two dual-monitor consoles, two chairs, one kiosk and two plants.",
+    "No G15 chair ROI is supplied. Seat_G15_TMP_01/02 are temporary editor slots, not approved occupancy identities. R1 in each C15/C16 reception ROI is a region label, not one shared physical reception desk.",
+    "The historical g15 table-ROI files refer to C22/C23/C25 seating views now assigned to g12/g14. They are excluded rather than adding neighboring furniture or silently overriding current registration.",
+    "All normal and supplied wide views, both reception overlays and the map crop were reviewed. C8 establishes the two lanes; C15 supports patterned glazing/curtains, and C16 supports the pale side wall and tall plant.",
+    "All geometry is procedural and unmeasured. Curtains, exact frosting, signs, floor veins, hardware labels and distant gates/turnstiles are not reproduced. Screens and right-lane belt are static appearance cues, not telemetry.",
+    "Owner requests two simple office boxes beyond the checkpoint glass side: Passport at the approach end (-Z) and Customs at the operator end (+Z), as identified on the supplied map. Only the checkpoint-facing side is glass; other sides and the shared partition are white walls. No furniture or measured room dimensions are inferred.",
+    "C15 supports the shallow inward bend of each dual-monitor pair. Monitor posts, crossbar and brackets are now entirely behind the screen faces on both operator stations. The central kiosk record and all saved object transforms are preserved exactly.",
+    "Owner specifies Passport and Customs in sequence, with checkpoint length at 80% of their combined length. The top-view correction places all extra office length toward -Z (top) and aligns their +Z bottom edges with the checkpoint. Office depth, frosted glass, door/handle world positions and equipment records remain unchanged; dimensions are estimates."
+  ],
+  "reviewItems": [
+    "Confirm lane spacing, equipment dimensions, belt state and operator-console placement.",
+    "Replace temporary staff seat IDs only after owner/CV review; preserve physical g15 object IDs.",
+    "Resolve glazing doors, curtain backing, neighboring boundaries and open-end seams before composition.",
+    "Review the map-to-world basis and measured scale before assigning any global transform.",
+    "Review the estimated office footprints, shared partition and glass-door extents; no office interior or access-door swing is claimed.",
+    "Review enlarged office depth/Customs length, frosted opacity and estimated door/handle dimensions against site measurements."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-overlapping-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "equipment-visual-staff-slots-temporary",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

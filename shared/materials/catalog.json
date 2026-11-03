@@ -2,6 +2,7 @@
   "format": "altanfeethi-material-catalog",
   "version": 1,
   "materials": {
+    "security-blue": {"color": "#294b81", "roughness": 0.45, "metalness": 0},
     "dark-stone-floor": {"color": "#424747", "roughness": 0.35},
     "beige-upholstery": {"color": "#bcb6a7", "roughness": 0.65},
     "blue-upholstery": {"color": "#526e78", "roughness": 0.65},

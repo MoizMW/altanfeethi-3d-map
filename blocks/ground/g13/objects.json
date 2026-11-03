@@ -1,0 +1,509 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-c-passport-013",
+  "objects": [
+    {
+      "id": "g13-booth-01",
+      "type": "passport-booth",
+      "name": "Double bank · slot 1",
+      "position": [
+        3.925,
+        0,
+        -0.5
+      ],
+      "yaw": 0,
+      "size": [
+        1.35,
+        1.7,
+        2.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#24292f",
+      "seats": [],
+      "cameras": [
+        "C13",
+        "C17"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "notes": "Desk, glass/brass side partitions, raised staff platform, keyboard, simplified reader towers, green flag and tissue-box cue form one editable booth. Double-bank middle partition is owned once by slot 2. Rear staff access stays open; exact rear staff doors and biometric devices are simplified.",
+      "omitLeftPartition": true,
+      "omitRightPartition": false
+    },
+    {
+      "id": "g13-chair-01",
+      "type": "office-chair",
+      "name": "Officer chair · temporary slot 1",
+      "position": [
+        3.925,
+        0.07,
+        -0.98
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#292f31",
+      "seats": [
+        "Seat_G13_TMP_01"
+      ],
+      "cameras": [
+        "C13",
+        "C17"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "identityStatus": "temporary-editor-slot-not-cv-identity",
+      "notes": "Visible officer chair; temporary editor identity only. Slot order is not CV-verified. Chair feet meet the booth platform."
+    },
+    {
+      "id": "g13-monitor-01",
+      "type": "display",
+      "name": "Officer monitor · slot 1",
+      "position": [
+        3.925,
+        0.825,
+        0.02
+      ],
+      "yaw": 180,
+      "size": [
+        0.54,
+        0.42,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#41616a",
+      "seats": [],
+      "cameras": [
+        "C13",
+        "C17"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "notes": "Static placeholder facing the officer; no passport data or live service screen is implied."
+    },
+    {
+      "id": "g13-booth-02",
+      "type": "passport-booth",
+      "name": "Double bank · slot 2",
+      "position": [
+        2.575,
+        0,
+        -0.5
+      ],
+      "yaw": 0,
+      "size": [
+        1.35,
+        1.7,
+        2.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#24292f",
+      "seats": [],
+      "cameras": [
+        "C13",
+        "C17"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "notes": "Desk, glass/brass side partitions, raised staff platform, keyboard, simplified reader towers, green flag and tissue-box cue form one editable booth. Double-bank middle partition is owned once by slot 2. Rear staff access stays open; exact rear staff doors and biometric devices are simplified.",
+      "omitLeftPartition": false,
+      "omitRightPartition": false
+    },
+    {
+      "id": "g13-chair-02",
+      "type": "office-chair",
+      "name": "Officer chair · temporary slot 2",
+      "position": [
+        2.575,
+        0.07,
+        -0.98
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#292f31",
+      "seats": [
+        "Seat_G13_TMP_02"
+      ],
+      "cameras": [
+        "C13",
+        "C17"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "identityStatus": "temporary-editor-slot-not-cv-identity",
+      "notes": "Visible officer chair; temporary editor identity only. Slot order is not CV-verified. Chair feet meet the booth platform."
+    },
+    {
+      "id": "g13-monitor-02",
+      "type": "display",
+      "name": "Officer monitor · slot 2",
+      "position": [
+        2.575,
+        0.825,
+        0.02
+      ],
+      "yaw": 180,
+      "size": [
+        0.54,
+        0.42,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#41616a",
+      "seats": [],
+      "cameras": [
+        "C13",
+        "C17"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "notes": "Static placeholder facing the officer; no passport data or live service screen is implied."
+    },
+    {
+      "id": "g13-booth-03",
+      "type": "passport-booth",
+      "name": "Middle single booth",
+      "position": [
+        0.25,
+        0,
+        -0.5
+      ],
+      "yaw": 0,
+      "size": [
+        1.35,
+        1.7,
+        2.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#24292f",
+      "seats": [],
+      "cameras": [
+        "C13",
+        "C17",
+        "C18",
+        "C21"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "notes": "Desk, glass/brass side partitions, raised staff platform, keyboard, simplified reader towers, green flag and tissue-box cue form one editable booth. Double-bank middle partition is owned once by slot 2. Rear staff access stays open; exact rear staff doors and biometric devices are simplified.",
+      "omitLeftPartition": false,
+      "omitRightPartition": false
+    },
+    {
+      "id": "g13-chair-03",
+      "type": "office-chair",
+      "name": "Officer chair · temporary slot 3",
+      "position": [
+        0.25,
+        0.07,
+        -0.98
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#292f31",
+      "seats": [
+        "Seat_G13_TMP_03"
+      ],
+      "cameras": [
+        "C13",
+        "C17",
+        "C18",
+        "C21"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "identityStatus": "temporary-editor-slot-not-cv-identity",
+      "notes": "Visible officer chair; temporary editor identity only. Slot order is not CV-verified. Chair feet meet the booth platform."
+    },
+    {
+      "id": "g13-monitor-03",
+      "type": "display",
+      "name": "Officer monitor · slot 3",
+      "position": [
+        0.25,
+        0.825,
+        0.02
+      ],
+      "yaw": 180,
+      "size": [
+        0.54,
+        0.42,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#41616a",
+      "seats": [],
+      "cameras": [
+        "C13",
+        "C17",
+        "C18",
+        "C21"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "notes": "Static placeholder facing the officer; no passport data or live service screen is implied."
+    },
+    {
+      "id": "g13-booth-04",
+      "type": "passport-booth",
+      "name": "End single booth",
+      "position": [
+        -3.05,
+        0,
+        -0.5
+      ],
+      "yaw": 0,
+      "size": [
+        1.35,
+        1.7,
+        2.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#24292f",
+      "seats": [],
+      "cameras": [
+        "C18",
+        "C21"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "notes": "Desk, glass/brass side partitions, raised staff platform, keyboard, simplified reader towers, green flag and tissue-box cue form one editable booth. Double-bank middle partition is owned once by slot 2. Rear staff access stays open; exact rear staff doors and biometric devices are simplified.",
+      "omitLeftPartition": false,
+      "omitRightPartition": false
+    },
+    {
+      "id": "g13-chair-04",
+      "type": "office-chair",
+      "name": "Officer chair · temporary slot 4",
+      "position": [
+        -3.05,
+        0.07,
+        -0.98
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#292f31",
+      "seats": [
+        "Seat_G13_TMP_04"
+      ],
+      "cameras": [
+        "C18",
+        "C21"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "identityStatus": "temporary-editor-slot-not-cv-identity",
+      "notes": "Visible officer chair; temporary editor identity only. Slot order is not CV-verified. Chair feet meet the booth platform."
+    },
+    {
+      "id": "g13-monitor-04",
+      "type": "display",
+      "name": "Officer monitor · slot 4",
+      "position": [
+        -3.05,
+        0.825,
+        0.02
+      ],
+      "yaw": 180,
+      "size": [
+        0.54,
+        0.42,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#41616a",
+      "seats": [],
+      "cameras": [
+        "C18",
+        "C21"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "notes": "Static placeholder facing the officer; no passport data or live service screen is implied."
+    },
+    {
+      "id": "g13-passenger-gate-01",
+      "type": "passport-gate",
+      "name": "Glass passenger gate · passage 1",
+      "position": [
+        1.4125,
+        0,
+        0.625
+      ],
+      "yaw": 0,
+      "size": [
+        0.975,
+        1.1,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a7afb0",
+      "seats": [],
+      "cameras": [
+        "C13",
+        "C17"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "openFraction": 0,
+      "notes": "Single-leaf opening is half the double-leaf opening width, per owner. Full-size round post, slim top rail and existing hinge side retained. Adjoining booth groups are translated together so no extra gap remains.",
+      "leafCount": 1,
+      "hingeSide": "right"
+    },
+    {
+      "id": "g13-passenger-gate-02",
+      "type": "passport-gate",
+      "name": "Glass passenger gate · passage 2",
+      "position": [
+        -1.4,
+        0,
+        0.625
+      ],
+      "yaw": 0,
+      "size": [
+        1.95,
+        1.1,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a7afb0",
+      "seats": [],
+      "cameras": [
+        "C18",
+        "C21"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "openFraction": 0,
+      "notes": "Two glass swing leaves between the existing posts, per owner/C13 correction. Right-to-left leaf counts are 1, 1, 2; gate position and width are retained.",
+      "leafCount": 2
+    },
+    {
+      "id": "g13-information-totem",
+      "type": "passport-totem",
+      "name": "Passport information display",
+      "position": [
+        4.95,
+        0,
+        -0.5
+      ],
+      "yaw": 0,
+      "size": [
+        0.6,
+        1.9,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#24292f",
+      "seats": [],
+      "cameras": [
+        "C13",
+        "C18"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "notes": "Owner/C13 correction: display stands beside the two-officer booth bank, not at the rear wall. Faces travellers; exact placement and dimensions remain estimates.",
+      "associatedBoothBank": [
+        "g13-booth-01",
+        "g13-booth-02"
+      ]
+    },
+    {
+      "id": "g13-passenger-gate-03",
+      "type": "passport-gate",
+      "name": "Glass passenger gate · double-bank outer end",
+      "position": [
+        5.0875,
+        0,
+        0.625
+      ],
+      "yaw": 0,
+      "size": [
+        0.975,
+        1.1,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a7afb0",
+      "seats": [],
+      "cameras": [
+        "C13",
+        "C17"
+      ],
+      "confidence": "Cross-view visual correspondence; position, orientation and dimensions estimated; needs owner review",
+      "openFraction": 0,
+      "notes": "Single-leaf opening is half the double-leaf opening width, per owner. Full-size round post, slim top rail and existing hinge side retained. Adjoining booth groups are translated together so no extra gap remains.",
+      "leafCount": 1,
+      "hingeSide": "left"
+    }
+  ]
+}

@@ -92,7 +92,7 @@ export const server=createServer(async(req,res)=>{
     }
     if(req.method!=='GET')return send(res,405,{error:'Method not allowed'});
     const relative=decodeURIComponent(url.pathname).slice(1)||'index.html';let target;
-    if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','styles.css','editor.css'].includes(relative))target=resolve(appRoot,relative);
+    if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','security-objects.js','passport-objects.js','styles.css','editor.css'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='shared/schema/block-schema.js')target=resolve(projectRoot,relative);
     else if(/^node_modules\/three\/(build|examples\/jsm)\/[\w/.-]+\.js$/.test(relative)&&!relative.includes('..'))target=resolve(appRoot,relative);
     else return send(res,404,{error:'Not found'});
