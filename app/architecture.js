@@ -5,9 +5,37 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
   const material=(color,extra={})=>new THREE.MeshStandardMaterial({color,roughness:.65,...extra});
   const add=(g,geometry,m,x,y,z)=>{const o=new THREE.Mesh(geometry,m);o.position.set(x,y,z);o.castShadow=!m.transparent;o.receiveShadow=true;g.add(o);return o;};
   for(const wall of data.walls||[]){
-    const [ax,az]=wall.start,[bx,bz]=wall.end,length=Math.hypot(bx-ax,bz-az),height=cutaway?Math.min(1.05,wall.height):wall.height;
-    const group=new THREE.Group();group.position.set(ax,0,az);group.rotation.y=-Math.atan2(bz-az,bx-ax);group.userData.boundaryId=wall.id;root.add(group);
+    const elevation=wall.elevation??0;
+    if(cutaway&&elevation>=1.05)continue;
+    const [ax,az]=wall.start,[bx,bz]=wall.end,length=Math.hypot(bx-ax,bz-az),height=cutaway?Math.min(1.05-elevation,wall.height):wall.height;
+    const group=new THREE.Group();group.position.set(ax,elevation,az);group.rotation.y=-Math.atan2(bz-az,bx-ax);group.userData.boundaryId=wall.id;root.add(group);
+    if(wall.variant==='opaque-blue-panel') {
+      const finish=material(wall.color||'#245968',{roughness:.18,metalness:.28});
+      add(group,new THREE.BoxGeometry(length,height,wall.thickness),finish,length/2,height/2,0);
+      const seam=material('#486d73',{roughness:.25,metalness:.45});
+      for(let x=0;x<=length+.001;x+=length/Math.ceil(length/1.2))add(group,new THREE.BoxGeometry(.012,height,.008),seam,x,height/2,wall.thickness/2+.004);
+      continue;
+    }
     if (wall.kind === 'glass') {
+      if(wall.variant==='frosted-diagonal'){
+        add(group,new THREE.BoxGeometry(length,height,wall.thickness),material(wall.color||'#b5c9bc',{
+          transparent:true,opacity:.48,roughness:.4,depthWrite:false,side:THREE.DoubleSide
+        }),length/2,height/2,0);
+        const frame=material('#737e75',{metalness:.55,roughness:.35});
+        for(let x=0;x<=length+.001;x+=length/Math.ceil(length/1.15))add(group,new THREE.BoxGeometry(.025,height,.045),frame,x,height/2,0);
+        for(const y of [.035,height-.025])add(group,new THREE.BoxGeometry(length,.035,.05),frame,length/2,y,0);
+        // Clipped diagonal inlays approximate the fixed glazing, not stored loose trim.
+        for(let start=-height;start<length;start+=.62){
+          const x1=Math.max(.03,start),x2=Math.min(length-.03,start+height-.06);
+          if(x2<=x1)continue;
+          const y1=x1-start+.03,y2=x2-start+.03,span=Math.hypot(x2-x1,y2-y1);
+          for(const side of [-1,1]){
+            const stripe=add(group,new THREE.BoxGeometry(span,.018,.004),material('#a99158',{metalness:.65,roughness:.3}),(x1+x2)/2,(y1+y2)/2,side*(wall.thickness/2+.003));
+            stripe.rotation.z=Math.PI/4;
+          }
+        }
+        continue;
+      }
       if (wall.variant === 'blue-gold-geometric') {
         add(group, new THREE.BoxGeometry(length, height, wall.thickness),
           material(wall.color || '#245968', {
@@ -254,9 +282,21 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
       if(wall.pilaster){const p=wall.pilaster;add(group,new THREE.BoxGeometry(p.width,height,p.depth),material('#e4e0d6'),p.offset,height/2,z+wall.interiorSide*p.depth/2);}
       }
     }
+    if(elevation>0)continue;
     const trim=material('#444947');let cursor=0;
     for(const o of [...openings,{offset:length,width:0}]){const inset=o.width?pierInset(o):0,end=o.offset-o.width/2+inset;if(end>cursor)add(group,new THREE.BoxGeometry(end-cursor,.12,wall.thickness+.015),trim,(cursor+end)/2,.06,0);cursor=o.offset+o.width/2-inset;}
   }
   if(ceiling&&data.ceiling){const c=data.ceiling;add(root,new THREE.BoxGeometry(c.size[0],.08,c.size[1]),material('#eceae2'),c.center?.[0]||0,c.height+.04,c.center?.[1]||0);}
   return root;
+}
+
+// Flat architectural inlays sit above the circulation surface; they never block a ray or aisle.
+export function buildFloorInlays(data={}) {
+  const group=new THREE.Group();group.name='Floor inlays';
+  for(const inlay of data.floorInlays||[]) {
+    const shape=new THREE.Shape();inlay.polygon.forEach(([x,z],i)=>i?shape.lineTo(x,-z):shape.moveTo(x,-z));shape.closePath();
+    const material=new THREE.MeshStandardMaterial({color:inlay.color,roughness:.27,metalness:.05,side:THREE.DoubleSide});
+    const surface=new THREE.Mesh(new THREE.ShapeGeometry(shape),material);surface.rotation.x=-Math.PI/2;surface.position.y=-.009+(inlay.layer||0)*.001;surface.receiveShadow=true;group.add(surface);
+  }
+  return group;
 }

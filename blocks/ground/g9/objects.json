@@ -8,7 +8,7 @@
       "type": "sofa",
       "name": "Two-seat sofa",
       "position": [
-        0,
+        -0.8,
         0,
         -1.35
       ],
@@ -36,17 +36,17 @@
     {
       "id": "g9-chair-01",
       "type": "armchair",
-      "name": "Blue armchair · B1",
+      "name": "Blue armchair \u00b7 B1",
       "position": [
-        0.57,
+        -0.11000000000000001,
         0,
         1.28
       ],
       "yaw": 180,
       "size": [
-        0.88,
-        0.9,
-        0.92
+        0.94,
+        0.94,
+        0.98
       ],
       "scale": [
         1,
@@ -65,17 +65,17 @@
     {
       "id": "g9-chair-02",
       "type": "armchair",
-      "name": "Blue armchair · B2",
+      "name": "Blue armchair \u00b7 B2",
       "position": [
-        -0.57,
+        -1.4900000000000002,
         0,
         1.28
       ],
       "yaw": 180,
       "size": [
-        0.88,
-        0.9,
-        0.92
+        0.94,
+        0.94,
+        0.98
       ],
       "scale": [
         1,
@@ -96,7 +96,7 @@
       "type": "table",
       "name": "Shared oval coffee table",
       "position": [
-        0,
+        -0.8,
         0,
         0
       ],
@@ -123,9 +123,9 @@
     {
       "id": "g9-screen-01",
       "type": "screen",
-      "name": "TV-wall cladding · teal and gold",
+      "name": "TV-wall cladding \u00b7 teal and gold",
       "position": [
-        1.7842077292704717,
+        1.38420772927,
         0,
         0
       ],
@@ -154,7 +154,7 @@
       "type": "plant",
       "name": "Potted plant",
       "position": [
-        -1.5965571346990437,
+        -2.796557134699,
         -0.03302168843328368,
         1.95
       ],
@@ -179,9 +179,9 @@
     {
       "id": "g9-tv-01",
       "type": "display",
-      "name": "TV · seating wall",
+      "name": "TV \u00b7 seating wall",
       "position": [
-        1.6602769235384882,
+        1.260276923538,
         1.45,
         0
       ],
@@ -208,9 +208,9 @@
     {
       "id": "g9-console-01",
       "type": "display-console",
-      "name": "Display console · passage edge",
+      "name": "Display console \u00b7 passage edge",
       "position": [
-        -1.52,
+        -2.72,
         0,
         0
       ],
@@ -236,9 +236,9 @@
     {
       "id": "g9-lamp-01",
       "type": "floor-lamp",
-      "name": "Floor lamp · beside sofa",
+      "name": "Floor lamp \u00b7 beside sofa",
       "position": [
-        1.28,
+        0.88,
         0,
         -2.32
       ],

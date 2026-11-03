@@ -1,0 +1,23 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-b-shared-003-024-025",
+  "slug": "g3-g24-g25",
+  "name": "G3 + G24 + G25 \u00b7 Shared B-zone dining lounge",
+  "displayCode": "G3 + G24 + G25",
+  "floor": "ground",
+  "groups": [
+    "g3",
+    "g24",
+    "g25"
+  ],
+  "zone": "B",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

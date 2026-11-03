@@ -2,7 +2,7 @@
   "format": "altanfeethi-floor-layout",
   "version": 1,
   "id": "ground-b-g-lounges",
-  "name": "B + C + G \u00b7 Combined lounges",
+  "name": "B + C + E + G · Lounges, reception and SGS",
   "floor": "ground",
   "status": "draft-needs-human-review",
   "components": [
@@ -21,7 +21,7 @@
     {
       "block": "ground/g10",
       "position": [
-        -9.38,
+        -9.68,
         0,
         0
       ],
@@ -32,68 +32,68 @@
       ],
       "architectureOverrides": {
         "floorSize": [
-          8,
+          7.4,
           6
         ],
         "wallEndpoints": {
           "g10-glass-front": {
             "start": [
-              -4,
+              -3.7,
               3
             ],
             "end": [
-              4,
+              3.7,
               3
             ]
           },
           "g10-side-b5": {
             "start": [
-              -4,
+              -3.7,
               -3
             ],
             "end": [
-              -4,
+              -3.7,
               3
             ]
           },
           "g10-side-b4": {
             "start": [
-              4,
+              3.7,
               -3
             ],
             "end": [
-              4,
+              3.7,
               3
             ]
           },
           "g10-access-wall": {
             "start": [
-              -4,
+              -3.7,
               -3
             ],
             "end": [
-              4,
+              3.7,
               -3
             ]
           }
         },
         "openings": {
           "g10-access-b5": {
-            "offset": 2
+            "offset": 1.7
           },
           "g10-access-b4": {
-            "offset": 6
+            "offset": 5.7
           }
         }
       },
       "objectOffsets": {
         "g10-tv-01": [
-          0.7,
+          0.4,
           0,
           0
         ],
         "g10-console-01": [
-          0.7,
+          0.4,
           0,
           0
         ]
@@ -193,61 +193,61 @@
     {
       "block": "ground/g16",
       "position": [
-        -1.78,
+        -2.28,
         0,
         -8.2
       ],
       "yaw": 0,
       "architectureOverrides": {
         "floorSize": [
-          7.2,
+          7.4,
           8.4
         ],
         "wallEndpoints": {
           "g16-window-back": {
             "start": [
-              -3.6,
+              -3.7,
               -3.2
             ],
             "end": [
-              3.6,
+              3.7,
               -3.2
             ]
           },
           "g16-window-return": {
             "start": [
-              3.6,
+              3.7,
               -3.2
             ],
             "end": [
-              3.6,
+              3.7,
               1.2
             ]
           },
           "g16-console-wall": {
             "start": [
-              3.6,
+              3.7,
               1.2
             ],
             "end": [
-              3.6,
+              3.7,
               5.2
             ]
           },
           "g16-neighbor-arch-wall": {
             "start": [
-              -3.6,
+              -3.7,
               -3.2
             ],
             "end": [
-              -3.6,
+              -3.7,
               5.2
             ]
           }
         },
         "circulationPolygon": [
           [
-            -3.6,
+            -3.7,
             0.9
           ],
           [
@@ -259,35 +259,121 @@
             5.2
           ],
           [
-            -3.6,
+            -3.7,
             5.2
           ]
-        ]
-      },
-      "objectOffsets": {
-        "g16-console-01": [
-          0.6,
-          0,
-          0
-        ],
-        "g16-art-01": [
-          0.6,
-          0,
-          0
         ]
       }
     },
     {
       "block": "ground/g18",
       "position": [
-        -9.58,
+        -9.88,
         0,
         -7.2
       ],
       "yaw": -90,
       "excludeWalls": [
         "g18-curtained-glazing"
-      ]
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          8.4,
+          7.4
+        ],
+        "wallEndpoints": {
+          "g18-reflective-glazing": {
+            "start": [
+              -4.2,
+              -3.9
+            ],
+            "end": [
+              -4.2,
+              3.5
+            ]
+          },
+          "g18-curtained-glazing": {
+            "start": [
+              4.2,
+              -3.9
+            ],
+            "end": [
+              4.2,
+              3.5
+            ]
+          }
+        },
+        "circulationPolygon": [
+          [
+            -1.4,
+            -3.9
+          ],
+          [
+            1.4,
+            -3.9
+          ],
+          [
+            1.4,
+            3.5
+          ],
+          [
+            -1.4,
+            3.5
+          ]
+        ]
+      },
+      "objectOffsets": {
+        "g18-chair-10": [
+          0,
+          0,
+          0.3
+        ],
+        "g18-chair-16": [
+          0,
+          0,
+          -0.3
+        ],
+        "g18-chair-17": [
+          0,
+          0,
+          0.3
+        ],
+        "g18-chair-23": [
+          0,
+          0,
+          -0.3
+        ],
+        "g18-side-table-01": [
+          0,
+          0,
+          -0.3
+        ],
+        "g18-side-table-03": [
+          0,
+          0,
+          -0.3
+        ],
+        "g18-floor-lamp-01": [
+          0,
+          0,
+          0.3
+        ],
+        "g18-floor-lamp-02": [
+          0,
+          0,
+          -0.3
+        ],
+        "g18-floor-lamp-03": [
+          0,
+          0,
+          0.3
+        ],
+        "g18-plant-02": [
+          0,
+          0,
+          -0.3
+        ]
+      }
     },
     {
       "block": "ground/g20",
@@ -523,7 +609,7 @@
     {
       "block": "ground/g21",
       "position": [
-        -33.78,
+        -33.08,
         0,
         -7.2
       ],
@@ -536,11 +622,11 @@
           "g21-reflective-glazing": {
             "start": [
               4.2,
-              -4.4
+              -3.7
             ],
             "end": [
               4.2,
-              4.4
+              3.7
             ]
           }
         }
@@ -549,7 +635,7 @@
     {
       "block": "ground/g22",
       "position": [
-        -42.58,
+        -40.48,
         0,
         -7.2
       ],
@@ -704,47 +790,47 @@
       "architectureOverrides": {
         "floorSize": [
           8.4,
-          8.8
+          7.4
         ],
         "wallEndpoints": {
           "g22-reflective-glazing": {
             "start": [
               -4.2,
-              -4.4
+              -3.7
             ],
             "end": [
               -4.2,
-              4.4
+              3.7
             ]
           },
           "g22-curtained-glazing": {
             "start": [
               4.15,
-              -4.4
+              -3.7
             ],
             "end": [
               4.15,
-              4.4
+              3.7
             ]
           },
           "g22-arch-wall-negative-z": {
             "start": [
               -4.2,
-              -4.4
+              -3.7
             ],
             "end": [
               4.2,
-              -4.4
+              -3.7
             ]
           },
           "g22-arch-wall-positive-z": {
             "start": [
               -4.2,
-              4.4
+              3.7
             ],
             "end": [
               4.2,
-              4.4
+              3.7
             ]
           }
         },
@@ -763,7 +849,7 @@
     {
       "block": "ground/g12-g14",
       "position": [
-        -38.18,
+        -36.78,
         0,
         0.4
       ],
@@ -772,288 +858,12 @@
         "g12-g14-glazing-1",
         "g12-g14-glazing-2",
         "g12-g14-glazing-3"
-      ],
-      "architectureOverrides": {
-        "floorSize": [
-          8.6,
-          17.6
-        ],
-        "floorCenter": [
-          0.9,
-          0
-        ],
-        "wallEndpoints": {
-          "g12-g14-glazing-1": {
-            "start": [
-              -3.4,
-              -8.8
-            ],
-            "end": [
-              -3.4,
-              -2.2
-            ]
-          },
-          "g12-g14-glazing-2": {
-            "start": [
-              -3.4,
-              -2.2
-            ],
-            "end": [
-              -3.4,
-              2.2
-            ]
-          },
-          "g12-g14-glazing-3": {
-            "start": [
-              -3.4,
-              2.2
-            ],
-            "end": [
-              -3.4,
-              8.8
-            ]
-          },
-          "g12-g14-end-return-c19": {
-            "start": [
-              -3.4,
-              -8.8
-            ],
-            "end": [
-              -1.4,
-              -8.8
-            ]
-          },
-          "g12-g14-end-panel-c19": {
-            "start": [
-              -1.4,
-              -8.8
-            ],
-            "end": [
-              2.6,
-              -8.8
-            ]
-          },
-          "g12-g14-end-return-c28": {
-            "start": [
-              -3.4,
-              8.8
-            ],
-            "end": [
-              -1.4,
-              8.8
-            ]
-          },
-          "g12-g14-end-panel-c28": {
-            "start": [
-              -1.4,
-              8.8
-            ],
-            "end": [
-              2.6,
-              8.8
-            ]
-          },
-          "g12-g14-corridor-arches": {
-            "start": [
-              2.6,
-              -8.8
-            ],
-            "end": [
-              2.6,
-              8.8
-            ]
-          }
-        },
-        "openings": {
-          "g12-g14-access-1": {
-            "offset": 2.9333333333333336,
-            "width": 5.166666666666667
-          },
-          "g12-g14-access-2": {
-            "offset": 8.8,
-            "width": 5.166666666666667
-          },
-          "g12-g14-access-3": {
-            "offset": 14.666666666666668,
-            "width": 5.166666666666667
-          }
-        },
-        "circulationPolygon": [
-          [
-            2.6,
-            -8.8
-          ],
-          [
-            5.2,
-            -8.8
-          ],
-          [
-            5.2,
-            8.8
-          ],
-          [
-            2.6,
-            8.8
-          ]
-        ]
-      },
-      "objectOffsets": {
-        "g12-g14-sofa-01": [
-          -0.6,
-          0,
-          -2.2
-        ],
-        "g12-g14-sofa-04": [
-          -0.6,
-          0,
-          2.2
-        ],
-        "g12-g14-chair-17": [
-          -0.6,
-          0,
-          -2.2
-        ],
-        "g12-g14-chair-18": [
-          -0.6,
-          0,
-          -2.2
-        ],
-        "g12-g14-chair-76": [
-          -0.6,
-          0,
-          -2.2
-        ],
-        "g12-g14-chair-26": [
-          -0.6,
-          0,
-          2.2
-        ],
-        "g12-g14-chair-27": [
-          -0.6,
-          0,
-          2.2
-        ],
-        "g12-g14-chair-77": [
-          -0.6,
-          0,
-          2.2
-        ],
-        "g12-g14-chair-78": [
-          0,
-          0,
-          -2.2
-        ],
-        "g12-g14-chair-79": [
-          0,
-          0,
-          -2.2
-        ],
-        "g12-g14-chair-82": [
-          0,
-          0,
-          2.2
-        ],
-        "g12-g14-chair-83": [
-          0,
-          0,
-          2.2
-        ],
-        "g12-g14-table-22": [
-          -0.6,
-          0,
-          -2.2
-        ],
-        "g12-g14-table-24": [
-          -0.6,
-          0,
-          2.2
-        ],
-        "g12-g14-table-25": [
-          0,
-          0,
-          -2.2
-        ],
-        "g12-g14-table-27": [
-          0,
-          0,
-          2.2
-        ],
-        "g12-g14-side-table-01": [
-          -0.6,
-          0,
-          -2.2
-        ],
-        "g12-g14-side-table-04": [
-          -0.6,
-          0,
-          2.2
-        ],
-        "g12-g14-glass-table-c19": [
-          -0.6,
-          0,
-          -2.2
-        ],
-        "g12-g14-lamp-c19": [
-          -0.6,
-          0,
-          -2.2
-        ],
-        "g12-g14-plant-c19": [
-          -0.6,
-          0,
-          -2.2
-        ],
-        "g12-g14-glass-table-c28": [
-          -0.6,
-          0,
-          2.2
-        ],
-        "g12-g14-lamp-c28": [
-          -0.6,
-          0,
-          2.2
-        ],
-        "g12-g14-plant-c28": [
-          -0.6,
-          0,
-          2.2
-        ],
-        "g12-g14-sofa-02": [
-          -0.6,
-          0,
-          0
-        ],
-        "g12-g14-sofa-03": [
-          -0.6,
-          0,
-          0
-        ],
-        "g12-g14-chair-23": [
-          -0.6,
-          0,
-          0
-        ],
-        "g12-g14-table-23": [
-          -0.6,
-          0,
-          0
-        ],
-        "g12-g14-side-table-02": [
-          -0.6,
-          0,
-          0
-        ],
-        "g12-g14-side-table-03": [
-          -0.6,
-          0,
-          0
-        ]
-      }
+      ]
     },
     {
       "block": "ground/g27",
       "position": [
-        -51.78,
+        -48.98,
         0,
         -7.2
       ],
@@ -1085,23 +895,249 @@
           }
         }
       }
+    },
+    {
+      "block": "ground/g28",
+      "position": [
+        -57.58,
+        0,
+        -7.2
+      ],
+      "yaw": 90,
+      "excludeWalls": [
+        "g28-arch-wall-positive-z",
+        "g28-arch-wall-negative-z"
+      ],
+      "architectureOverrides": {
+        "wallEndpoints": {
+          "g28-reflective-glazing": {
+            "start": [
+              -4.2,
+              -3.8
+            ],
+            "end": [
+              -4.2,
+              3.8
+            ]
+          },
+          "g28-curtained-glazing": {
+            "start": [
+              4.15,
+              -3.8
+            ],
+            "end": [
+              4.15,
+              3.8
+            ]
+          }
+        }
+      }
+    },
+    {
+      "block": "ground/g29",
+      "position": [
+        -62.98,
+        0,
+        -7.2
+      ],
+      "yaw": 180,
+      "architectureOverrides": {
+        "wallEndpoints": {
+          "g29-arch-wall-negative-x": {
+            "start": [
+              -1.6,
+              -4.2
+            ],
+            "end": [
+              -1.6,
+              4.2
+            ]
+          },
+          "g29-panel-side-solid": {
+            "start": [
+              -1.6,
+              -4.2
+            ],
+            "end": [
+              2.4,
+              -4.2
+            ]
+          },
+          "g29-far-window-glazing": {
+            "start": [
+              -1.6,
+              4.2
+            ],
+            "end": [
+              1.62,
+              4.2
+            ]
+          }
+        },
+        "openings": {
+          "g29-arch-negative-x": {
+            "offset": 4.2,
+            "width": 7.9
+          }
+        }
+      }
+    },
+    {
+      "block": "ground/g17",
+      "position": [
+        -48.98,
+        0,
+        0.1
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g17-rear-glazing",
+        "g17-plain-wall"
+      ]
+    },
+    {
+      "block": "ground/g3-g24-g25",
+      "position": [
+        -5.98,
+        0,
+        10.6
+      ],
+      "yaw": -90,
+      "architectureOverrides": {
+        "floorSize": [
+          15.6,
+          14.8
+        ],
+        "floorCenter": [
+          2.8,
+          0
+        ],
+        "circulationPolygon": [
+          [
+            -5,
+            -7.4
+          ],
+          [
+            10.6,
+            -7.4
+          ],
+          [
+            10.6,
+            7.4
+          ],
+          [
+            -5,
+            7.4
+          ]
+        ]
+      }
+    },
+    {
+      "block": "ground/departure-reception",
+      "position": [
+        35.62,
+        0,
+        5.75
+      ],
+      "yaw": 180,
+      "excludeWalls": [
+        "departure-reception-sgs-security-backing",
+        "departure-reception-sgs-unused-bay-side"
+      ],
+      "architectureOverrides": {
+        "circulationPolygon": [
+          [
+            -4.16,
+            -3.55
+          ],
+          [
+            4.2,
+            -3.55
+          ],
+          [
+            4.2,
+            -0.05
+          ],
+          [
+            8,
+            -0.05
+          ],
+          [
+            8,
+            2.95
+          ],
+          [
+            5.7,
+            2.95
+          ],
+          [
+            5.7,
+            5.92
+          ],
+          [
+            -3.55,
+            5.92
+          ],
+          [
+            -3.55,
+            -0.75
+          ],
+          [
+            -4.16,
+            -0.75
+          ]
+        ]
+      }
+    },
+    {
+      "block": "ground/g32",
+      "position": [
+        46.37,
+        0,
+        3.75
+      ],
+      "yaw": 270,
+      "architectureOverrides": {
+        "floorSize": [
+          13.4,
+          6.7
+        ],
+        "floorCenter": [
+          0,
+          -0.05
+        ]
+      }
+    },
+    {
+      "block": "ground/egate-office-passage",
+      "position": [
+        27.62,
+        0,
+        5.75
+      ],
+      "yaw": 180,
+      "excludeWalls": [
+        "egate-office-passage-b-dining-wall-reference",
+        "egate-office-passage-office-g9-shared-reference",
+        "egate-office-passage-office-g9-back-return"
+      ]
     }
   ],
   "floorSize": [
-    58.4,
-    17
+    115.25,
+    32.6
   ],
   "floorCenter": [
-    -27.38,
-    -2.9
+    -7.855,
+    4.9
   ],
   "corridor": {
     "center": [
-      -13.78,
+      -13.98,
       4.3
     ],
     "size": [
-      31.2,
+      30.8,
       2.6
     ],
     "color": "#dedbd2",
@@ -1115,11 +1151,11 @@
       "id": "g9-g10-shared-partition",
       "kind": "glass",
       "start": [
-        -5.38,
+        -5.98,
         -3
       ],
       "end": [
-        -5.38,
+        -5.98,
         3
       ],
       "height": 4.1,
@@ -1183,6 +1219,29 @@
         "G27-wide"
       ],
       "confidence": "Owner confirms G18 at the G31/G24 end of G20, separated by same arch style as G16/G18. Width matches paired shells; curve and metric dimensions estimated."
+    },
+    {
+      "id": "egate-office-passage-reception-frontage-join",
+      "kind": "glass",
+      "start": [
+        30.07,
+        -0.35
+      ],
+      "end": [
+        27.62,
+        -0.35
+      ],
+      "height": 3.3,
+      "thickness": 0.025,
+      "color": "#c9d9d8",
+      "owner": "layout/ground/b-g-lounges",
+      "sources": [
+        "A1",
+        "owner-2026-11-03"
+      ],
+      "confidence": "Observed feature; local position, extent and dimensions estimated",
+      "privacyBand": false,
+      "frameColor": "#a2aaa7"
     }
   ],
   "openings": [
@@ -1200,7 +1259,21 @@
   "evidenceCameras": [
     "Cor1",
     "Cor2",
-    "G23"
+    "G23",
+    "ReceptionCam1",
+    "ReceptionCam2",
+    "ReceptionCam3",
+    "ENTRANCE",
+    "Egate1",
+    "SGSCam1",
+    "SGSCam2",
+    "SGSCam3",
+    "SGSCam4",
+    "A1",
+    "A3",
+    "EXIT",
+    "B1",
+    "B3"
   ],
   "pairedBays": [
     {
@@ -1252,6 +1325,8 @@
   ],
   "registrationRevision": "2026-11-01T10:33:43.748Z",
   "notes": [
+    "Owner office room correction: office left side aligns merged G9 right wall X=1.42. Room width is G9 full 7.4 m; length 9.7 m reaches saved exit jamb X=11.12. Front wall aligns G9 entrance line Z=3; rear edge Z=-4.4. G9 owns shared segment once; G16 owns the remaining rear-side segment. Exit doors remain exactly unchanged. Previous frontage-only 7.4 m interpretation is superseded; width now measures room depth.",
+    "2026-11-03 owner merge: reception + SGS + straight passage now joins the G9/G10 front corridor at X=1.42, centre Z=4.3. Entire departure assembly rotates 180 degrees and translates [35.62,0,5.75]; existing B/C/E/G components and all source furniture are retained. New passage meets existing 2.6 m corridor with 3 m approach; glass setback and 7.4 m office frontage are preserved. Dining owns the side wall once; passage standalone A3 proxy is excluded. Relative alignment remains provisional.",
     "Owner G27 extension: G27 joins left of G22. G27 G69/G63 end (current +Z) meets G22 G56/G62 end (current -Z) at X=-46.98. G27 uses yaw +90, center [-51.78,0,-7.2], retaining all saved furniture positions, IDs, yaw and scale under placement. G22 owns the shared arch once.",
     "G27 keeps its 8.4 x 9.6 m shell. Global side edges align with G22 at Z=-11.4/-3; glazing endpoints align with G22, and the 2.8 m pale route continues at Z=-7.2. Outer G27 arch is X=-56.58. Existing eleven components retain their positions and geometry; full-floor dimensions remain provisional.",
     "Owner lower-right corner correction: C lounge front arches and decorative end walls terminate at global Z=3, matching Zone C/B-row front arches exactly. Pale corridor is 2.6 m wide through the join (Z=3..5.6). Inner furniture group moves 0.6 m toward the glass as a unit to clear the corrected front wall; window pairs stay fixed. All furniture sizes, scales, yaw and occupancy IDs are retained; standalone blocks stay unchanged.",
@@ -1268,14 +1343,24 @@
     "G2 rotates 180 degrees so its front automatic gate faces the outer arrival-exit edge Z=-11.4 and its reception back faces Zone C across Z=-3. The reception half-pane is owned by Zone C once; the other half remains open from G2 inward path into Zone C walking area.",
     "G2 depth expands to 8.4 to match G row and gate shifts 0.6 with threshold. Zone C length expands to 8.4 to match this bay; pod/planter strip shifts 0.4 with its side pane without scaling. Source files and previous layouts are unchanged.",
     "Zone C behind-pod smoked pane owns the closed shared boundary with G11; its prior duplicate dark side wall is suppressed only here. G2 owns the single arch into G20. The front corridor continues across Zone C. Opposite G2 arch now connects to G21 through the owner-requested extension.",
-    "G2 reception strip depth matches G18/G20 at 2.8 m (~4\u00bd tiles); rear pillars follow the aligned reception/Zone C seam. Source furniture poses remain unchanged.",
+    "G2 reception strip depth matches G18/G20 at 2.8 m (~4½ tiles); rear pillars follow the aligned reception/Zone C seam. Source furniture poses remain unchanged.",
     "G21 right/local -Z end meets G2 at X=-29.38. G2 has yaw 180, so its source right arch is the composed west/G21 boundary, and its source left arch is the east/G20 boundary. Source camera-view labels do not change. G2 owns each arch once.",
     "G22 positive-Z arch owns the G21/G22 seam once; G21 preview arch remains excluded. G22 negative-Z arch is the far outer end at X=-46.98. Current seat labels, rather than stable object-number suffixes, identify the connecting G57/G49 side.",
     "Owner width-alignment correction is integration-only: G22 floor/arches narrow from 9 to 8.4 m, matching G21/G2 edges Z=-11.4/-3. Glazing aligns at local X=+/-4.15. Each complete furniture bank shifts 0.3 m inward across source X, with matching offsets for raised plants/lamps and their supports. Object sizes/scales and within-bank arrangement are preserved, and standalone source files stay unchanged. Central path remains 2.8 m wide at Z=-7.2. Metric dimensions remain provisional.",
     "New C lounge spans global Z=-3..3; its pale front corridor spans Z=3..5.6 and meets the existing Zone C/B-row corridor. Floor-center override is explicit so the extended corridor and floor edges align. G21/G22 furniture and all other component placements stay unchanged.",
-    "Shared long boundary at Z=-3 is owned by G21/G22 glazing, aligned from their former 5 cm inset. Three duplicate C-lounge glass segments are excluded only in composition. C19/C20 teal end wall owns the Zone C seam; the former Zone C opposite-pods glass is excluded to avoid overlapping wall surfaces. Walking connection runs around the end through the open front corridor and Zone C approach arch; no passage is cut through the decorative sofa backing."
+    "Shared long boundary at Z=-3 is owned by G21/G22 glazing, aligned from their former 5 cm inset. Three duplicate C-lounge glass segments are excluded only in composition. C19/C20 teal end wall owns the Zone C seam; the former Zone C opposite-pods glass is excluded to avoid overlapping wall surfaces. Walking connection runs around the end through the open front corridor and Zone C approach arch; no passage is cut through the decorative sofa backing.",
+    "Owner adds G28 to the left of G27: current Seat_G84/G76 end (+Z) joins at X=-56.58. G28 yaw +90, center [-60.38,0,-7.2], span X=-64.18..-56.58 and matching 8.4 m depth. Glazing endpoints extend to the bay ends and align with G27; G27 owns the shared arch once. Furniture poses, sizes and seat labels are preserved. Overall bounds extend left; dimensions remain provisional.",
+    "G29 open negative-X side joins the exposed G28 end at X=-64.18. G29 rotates 180 degrees, centered at [-65.78,0,-7.2], preserving all furniture poses. Its 8.4 m width matches G28. The G29-owned partition has a matching 7.9 m clear arch; duplicate G28 end arch is excluded. Floor edges meet exactly; G29 uses the dark seating finish. Dimensions remain provisional.",
+    "Owner adds Zone E G17 beside the C28/C29 end of G12/G14. G17 right/E9/E10/E11 side meets C lounge at X=-46.98. Its 9.6 m span X=-56.58..-46.98 matches G27 exactly. G27 glazing owns the rear seam Z=-3 and C lounge owns the side backing; duplicate G17 walls excluded in composition. G17 third/open side faces the continuous front walkway Z=3..5.6. Furniture banks were translated 1.4 m outward across X without scaling; those positions now live in the source block. Individual G17 now uses the same shell and furniture positions; source edits flow directly into composition. Dimensions provisional.",
+    "Owner corrects dining orientation: rotate the shared G3/G24/G25 area 90 degrees clockwise in the supplied overhead view (yaw -90). Position [-5.78,0,10.6] makes its arched side meet the G9/G10 front corridor at Z=5.6. Existing corridor owns Z=3..5.6; integration-only floor crop excludes the duplicate source corridor, without moving/scaling furniture. Dining floor X=-11.08..-0.48, Z=5.6..18.2; standalone block remains unchanged. TV-side path is now at the far end, open at both sides. Existing component placements stay unchanged.",
+    "Owner dimension correction: dining rotation stays yaw -90, placement [-5.78,0,10.6]. Source cross-room Z span is now 15.2 m; integration floor is [12.6,15.2], centered [1.3,0], spanning world X=-13.38..1.82 exactly across G10/G9. Front arch line remains Z=5.6; far TV-side path remains Z=16.45..18.2. Source-bank translations provide more space without furniture scaling. Individual edits still flow directly into composition.",
+    "Owner map-proportion correction narrows G9/G16 paired bay to 5.2 m, retaining depths 6/8.4 m and fixed G10/G18 boundary X=-5.38. Right edge becomes -0.18. G9 seating retains its size; excess is removed from the pale passage. Dining width becomes 13.2 m (8+5.2), X=-13.38..-0.18; room length increases to 15.6 m, Z=5.6..21.2. Source floor includes the 2.6 m shared-corridor strip. Floor, ceiling, arches, counters, piano and inlays follow the reshaped shell without furniture scaling. All other component placements are retained.",
+    "Owner moderate rebalance: G9/G16 width restored from 5.2 to 5.8 m, G10/G18 composed width reduced from 8.0 to 7.4 m. Their shared seam moves to X=-5.98; outer edges X=-13.38/-0.18 and the 13.2 m dining span stay fixed. G9 pale entry is 2.2 m. Furniture banks and source dimensions remain editable; G9/G16 and dining chairs use slightly larger 0.94 x 0.94 x 0.98 m bounds, dining pair separation grows by 0.24 m without changing labels.",
+    "Owner trial restores G9/G16 width to 7.4 m, with lengths unchanged and G10/G18 widths retained at 7.4 m. Shared seam stays -5.98; right edge becomes 1.42. Dining width grows to 14.8 m, centered X=-5.98; larger chairs/tables and increased spacing fill the wider room while preserving paths, yaw and IDs. Source blocks carry all furniture edits.",
+    "Dining source refinement brings seating banks closer, enlarges chairs/tables and widens the far checked walkway to 2.5 m (global Z=18.7..21.2). Source furniture updates flow directly; floor footprint/placement remain unchanged.",
+    "Owner compact C/G-span correction: G21 and G22 each shorten to 7.4 m, while G12/G14 covers their full 14.8 m span at X=-44.18..-29.38. G21/G22 centers are -33.08/-40.48, C lounge center -36.78. G27/G28/G29 and G17 move +2.8 m in X to retain all connected seams. G2/Zone C and the B/dining row stay fixed. C source shell and former furniture offsets are synchronized into the independent block; G21/G22 sources share the compact span. Sizes, seat labels and routes are retained."
   ],
-  "displayCode": "B / C / G",
+  "displayCode": "B / C / E / G",
   "connections": [
     {
       "id": "g2-g21",
@@ -1299,7 +1384,7 @@
       "boundaryOwner": "ground/g22",
       "wallId": "g22-arch-wall-positive-z",
       "openingId": "g22-arch-positive-z",
-      "globalSeamX": -38.18,
+      "globalSeamX": -36.78,
       "walkwayZ": -7.2,
       "status": "owner-confirmed-order-relative-placement-estimated"
     },
@@ -1343,10 +1428,142 @@
       "boundaryOwner": "ground/g22",
       "wallId": "g22-arch-wall-negative-z",
       "openingId": "g22-arch-negative-z",
-      "globalSeamX": -46.98,
+      "globalSeamX": -44.18,
       "walkwayZ": -7.2,
       "status": "owner-confirmed-seat-endpoints-relative-dimensions-estimated",
       "notes": "Current G27 G69/G63 end (+Z) joins current G22 G56/G62 end (-Z). G22 owns the shared arch; G27 positive-Z preview wall is excluded."
+    },
+    {
+      "id": "g27-g28",
+      "blocks": [
+        "ground/g27",
+        "ground/g28"
+      ],
+      "boundaryOwner": "ground/g27",
+      "wallId": "g27-arch-wall-negative-z",
+      "openingId": "g27-arch-negative-z",
+      "globalSeamX": -53.78,
+      "walkwayZ": -7.2,
+      "status": "owner-confirmed-seat-endpoints-relative-dimensions-estimated",
+      "notes": "G28 current G84/G76 end (+Z) joins G27 negative-Z end. G27 owns the shared arch; duplicate G28 positive-Z wall excluded."
+    },
+    {
+      "id": "g28-g29",
+      "blocks": [
+        "ground/g28",
+        "ground/g29"
+      ],
+      "boundaryOwner": "ground/g29",
+      "wallId": "g29-arch-wall-negative-x",
+      "openingId": "g29-arch-negative-x",
+      "globalSeamX": -61.38,
+      "walkwayZ": -7.2,
+      "status": "owner-requested-open-side-connection-dimensions-estimated"
+    },
+    {
+      "id": "g17-c-lounge",
+      "blocks": [
+        "ground/g17",
+        "ground/g12-g14"
+      ],
+      "boundaryOwner": "ground/g12-g14",
+      "wallIds": [
+        "g12-g14-end-return-c28",
+        "g12-g14-end-panel-c28"
+      ],
+      "globalSeamX": -44.18,
+      "walkwayZ": 4.3,
+      "route": "E9/E10/E11 side backs onto C lounge; open entrance connects through the front corridor",
+      "status": "owner-confirmed-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g17-g27",
+      "blocks": [
+        "ground/g17",
+        "ground/g27"
+      ],
+      "boundaryOwner": "ground/g27",
+      "wallId": "g27-reflective-glazing",
+      "globalSeamZ": -3,
+      "status": "matching-full-bay-span"
+    },
+    {
+      "id": "g9-g10-shared-dining",
+      "blocks": [
+        "ground/g9",
+        "ground/g10",
+        "ground/g3-g24-g25"
+      ],
+      "kind": "shared-front-corridor",
+      "globalSeamZ": 5.6,
+      "corridorZ": [
+        3,
+        5.6
+      ],
+      "globalSpanX": [
+        -13.38,
+        1.42
+      ],
+      "routes": [
+        "Dining arch line remains Z=5.6, across X=-13.38..1.42",
+        "Existing pale G9/G10 corridor stays continuous",
+        "Arch centers X=-9.68 and -2.28",
+        "TV-side path remains Z=18.7..21.2, open at both ends"
+      ],
+      "status": "owner-confirmed-front-placement-dimensions-estimated"
+    },
+    {
+      "id": "departure-passage-g9-g10",
+      "blocks": [
+        "ground/egate-office-passage",
+        "ground/g9",
+        "ground/g10"
+      ],
+      "kind": "open-front-corridor-join",
+      "globalSeamX": 1.42,
+      "walkwayZ": 4.3,
+      "passageSpanZ": [
+        2.8,
+        5.8
+      ],
+      "existingCorridorSpanZ": [
+        3,
+        5.6
+      ],
+      "clearConnectionWidth": 2.6,
+      "boundaryOwner": "ground/g3-g24-g25",
+      "wallIds": [
+        "g3-g24-g25-north-blue-left"
+      ],
+      "excludedProxy": "egate-office-passage-b-dining-wall-reference",
+      "status": "Owner requested merge; relative placement estimated",
+      "notes": "3 m straight approach meets existing 2.6 m front walkway at its right end. Dining north side is single owner; no duplicated A3 wall proxy."
+    },
+    {
+      "id": "office-g9-shared-wall",
+      "blocks": [
+        "ground/g9",
+        "ground/egate-office-passage"
+      ],
+      "boundaryOwner": "ground/g9",
+      "wallId": "g9-tv-wall",
+      "globalSeamX": 1.42,
+      "sharedSpanZ": [
+        -3,
+        3
+      ],
+      "officeBounds": {
+        "x": [
+          1.42,
+          11.12
+        ],
+        "z": [
+          -4.4,
+          3
+        ]
+      },
+      "exitJambX": 11.12,
+      "notes": "Office full width 7.4 m and length 9.7 m. Existing exit door position retained; G9 shared wall renders once."
     }
   ]
 }

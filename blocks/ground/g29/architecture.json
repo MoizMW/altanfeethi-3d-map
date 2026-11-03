@@ -2,101 +2,261 @@
   "format": "altanfeethi-block-architecture",
   "version": 1,
   "blockId": "ground-g-lounge-029",
-  "floorSize": [4.1, 5],
+  "floorSize": [
+    4.1,
+    8.4
+  ],
   "ceilingHeight": 4.1,
   "placement": {
     "status": "not-globally-calibrated",
     "map": "evidence/maps/ground-floor.png",
     "registrationRevision": "2026-11-01T09:20:19.073Z",
     "anchors": [
-      {"camera": "G16", "pixel": [9136, 7078], "heading": 184, "status": "verified"},
-      {"camera": "G17", "pixel": [8701, 7331], "heading": 95, "status": "verified"}
+      {
+        "camera": "G16",
+        "pixel": [
+          9136,
+          7078
+        ],
+        "heading": 184,
+        "status": "verified"
+      },
+      {
+        "camera": "G17",
+        "pixel": [
+          8701,
+          7331
+        ],
+        "heading": 95,
+        "status": "verified"
+      }
     ],
     "localAxes": {
       "x": "Across the group, from the decorative panel behind Seat_G90/G91 toward the curtained glazing behind Seat_G92/G93",
       "z": "Along the group, from Seat_G90/G91 toward Seat_G94/G95",
       "y": "Up"
     },
-    "sourceMapCrop": [7600, 6100, 9800, 7900],
+    "sourceMapCrop": [
+      7600,
+      6100,
+      9800,
+      7900
+    ],
     "mapReview": "The two registered cameras and illustrated seating locate a lounge near the ground-floor edge. Sofa positions follow the overlapping photos; the illustrated symbols are not literal furniture geometry."
   },
-  "floorCenter": [0.45, 0],
-  "footprint": [[-1.6, -2.5], [2.5, -2.5], [2.5, 2.5], [-1.6, 2.5]],
+  "floorCenter": [
+    0.45,
+    0
+  ],
+  "footprint": [
+    [
+      -1.6,
+      -4.2
+    ],
+    [
+      2.5,
+      -4.2
+    ],
+    [
+      2.5,
+      4.2
+    ],
+    [
+      -1.6,
+      4.2
+    ]
+  ],
   "walls": [
     {
       "id": "g29-curtain-side-solid",
       "kind": "solid",
-      "start": [2.4, -2.4],
-      "end": [2.4, -0.96],
+      "start": [
+        2.4,
+        -4.2
+      ],
+      "end": [
+        2.4,
+        -1.68
+      ],
       "height": 4.1,
       "thickness": 0.18,
       "owner": "ground/g29",
-      "sources": ["G16-wide", "G17-wide", "owner-description"],
+      "sources": [
+        "G16-wide",
+        "G17-wide",
+        "owner-description"
+      ],
       "confidence": "Owner confirms 30% solid wall from the G92 end; exact dimensions estimated",
       "notes": "The solid section and adjacent window form one continuous boundary behind Seat_G92/G93."
     },
     {
       "id": "g29-curtain-side-glazing",
       "kind": "glass",
-      "start": [2.4, -0.96],
-      "end": [2.4, 2.4],
+      "start": [
+        2.4,
+        -1.68
+      ],
+      "end": [
+        2.4,
+        4.2
+      ],
       "height": 4.1,
       "thickness": 0.06,
       "owner": "ground/g29",
-      "sources": ["G16-wide", "G17-wide", "owner-description"],
+      "sources": [
+        "G16-wide",
+        "G17-wide",
+        "owner-description"
+      ],
       "confidence": "Owner confirms the remaining 70% is window glass; height and local offset estimated",
       "notes": "Sheer curtains and exact frame divisions are not modeled."
     },
     {
       "id": "g29-far-window-glazing",
       "kind": "glass",
-      "start": [-1.5, 2.4],
-      "end": [1.62, 2.4],
+      "start": [
+        -1.5,
+        4.2
+      ],
+      "end": [
+        1.62,
+        4.2
+      ],
       "height": 4.1,
       "thickness": 0.06,
       "owner": "ground/g29",
-      "sources": ["G16-wide", "owner-description"],
+      "sources": [
+        "G16-wide",
+        "owner-description"
+      ],
       "confidence": "Owner confirms 80% window glass behind G94/G95; exact dimensions estimated",
       "notes": "Curtains and frame divisions are simplified."
     },
     {
       "id": "g29-far-window-solid",
       "kind": "solid",
-      "start": [1.62, 2.4],
-      "end": [2.4, 2.4],
+      "start": [
+        1.62,
+        4.2
+      ],
+      "end": [
+        2.4,
+        4.2
+      ],
       "height": 4.1,
       "thickness": 0.18,
       "owner": "ground/g29",
-      "sources": ["G16-wide", "owner-description"],
+      "sources": [
+        "G16-wide",
+        "owner-description"
+      ],
       "confidence": "Owner confirms 20% solid wall; right-side placement follows the visible pier in G16 wide and needs final review",
       "notes": "The wall section is placed at the window's right end toward the neighboring bay."
     },
     {
       "id": "g29-panel-side-solid",
       "kind": "solid",
-      "start": [-1.5, -2.4],
-      "end": [2.4, -2.4],
+      "start": [
+        -1.5,
+        -4.2
+      ],
+      "end": [
+        2.4,
+        -4.2
+      ],
       "height": 4.1,
       "thickness": 0.18,
       "owner": "ground/g29",
-      "sources": ["G17-wide", "owner-description"],
+      "sources": [
+        "G17-wide",
+        "owner-description"
+      ],
       "confidence": "Owner confirms a complete wall behind G90/G91; finish and dimensions estimated",
       "notes": "A partial dark decorative panel is visible; this structural wall uses the shared plain finish until its panel extent is reviewed."
+    },
+    {
+      "id": "g29-arch-wall-negative-x",
+      "kind": "solid",
+      "start": [
+        -1.5,
+        -4.2
+      ],
+      "end": [
+        -1.5,
+        4.2
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g29",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner-requested standard arch; dimensions and neighboring seam estimated"
     }
   ],
-  "openings": [],
-  "sharedBoundaries": [],
+  "openings": [
+    {
+      "id": "g29-arch-negative-x",
+      "wallId": "g29-arch-wall-negative-x",
+      "kind": "rounded-passage",
+      "offset": 4.2,
+      "width": 7.9,
+      "springHeight": 1.6,
+      "height": 3.35,
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "G18/G20 arch style fitted to the local boundary span"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "g29-arch-negative-x",
+      "kind": "rounded-passage",
+      "owner": "ground/g29",
+      "ownsWall": true,
+      "status": "owner-requested-local-partition-needs-seam-alignment",
+      "notes": "Retain one wall owner when composing with adjacent blocks."
+    }
+  ],
   "circulation": {
     "id": "g29-pale-tile-floor",
-    "polygon": [[-1.58, -2.48], [2.48, -2.48], [2.48, 2.48], [-1.58, 2.48]],
-    "surfaceMaterial": "pale-stone",
-    "status": "visible-finish-estimated-extent",
-    "sources": ["G16", "G17"],
-    "notes": "The shared editor uses one pale material for this overlay; the photographed tile pattern is not reproduced."
+    "polygon": [
+      [
+        -1.58,
+        -4.18
+      ],
+      [
+        2.48,
+        -4.18
+      ],
+      [
+        2.48,
+        4.18
+      ],
+      [
+        -1.58,
+        4.18
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "owner-requested-dark-finish",
+    "sources": [
+      "G16",
+      "G17"
+    ],
+    "notes": "Owner requests the same dark seating-floor finish as the other combined lounge areas; suppress the former pale overlay."
   },
   "ceiling": {
-    "size": [4.1, 5],
-    "center": [0.45, 0],
+    "size": [
+      4.1,
+      8.4
+    ],
+    "center": [
+      0.45,
+      0
+    ],
     "height": 4.1,
     "status": "estimated-plain-visualization-only"
   },
@@ -105,15 +265,24 @@
       "id": "g29-panel-side-finish",
       "kind": "solid-wall-finish",
       "status": "wall-confirmed-panel-extent-unresolved",
-      "sources": ["G17-wide"],
+      "sources": [
+        "G17-wide"
+      ],
       "notes": "The complete wall behind Seat_G90/G91 is owner-confirmed. Its decorative panel and pier finish are only partly visible."
     },
     {
       "id": "g29-next-bay",
       "kind": "unknown",
       "status": "neighbor-and-seam-unresolved",
-      "sources": ["G16-wide"],
+      "sources": [
+        "G16-wide"
+      ],
       "notes": "The neighboring lounge is visible past a pier. The boundary ownership and connection are still unresolved."
     }
+  ],
+  "notes": [
+    "Owner-requested pale arched partitions added at the remaining open negative-X side. Open passages retain access; dimensions and adjacent seam ownership remain provisional.",
+    "Owner requests dark flooring matching the other seating areas.",
+    "Owner correction: standalone width along local Z expands from 5 to 8.4 m to match G28. Walls, arch, floor and ceiling follow the new width; existing furniture positions and sizes are retained for manual adjustment."
   ]
 }

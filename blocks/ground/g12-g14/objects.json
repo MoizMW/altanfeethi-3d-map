@@ -6,11 +6,11 @@
     {
       "id": "g12-g14-sofa-01",
       "type": "sofa",
-      "name": "Two-seat sofa · C19 / C20",
+      "name": "Two-seat sofa \u00b7 C19 / C20",
       "position": [
-        1.55,
+        0.95,
         0,
-        -5.9
+        -6.7
       ],
       "yaw": 0,
       "size": [
@@ -37,9 +37,9 @@
     {
       "id": "g12-g14-sofa-02",
       "type": "sofa",
-      "name": "Two-seat sofa · C22 / C21",
+      "name": "Two-seat sofa \u00b7 C22 / C21",
       "position": [
-        1.55,
+        0.95,
         0,
         -1.55
       ],
@@ -68,9 +68,9 @@
     {
       "id": "g12-g14-sofa-03",
       "type": "sofa",
-      "name": "Two-seat sofa · C25 / C24",
+      "name": "Two-seat sofa \u00b7 C25 / C24",
       "position": [
-        1.55,
+        0.95,
         0,
         1.55
       ],
@@ -100,11 +100,11 @@
     {
       "id": "g12-g14-sofa-04",
       "type": "sofa",
-      "name": "Two-seat sofa · C28 / C29",
+      "name": "Two-seat sofa \u00b7 C28 / C29",
       "position": [
-        1.55,
+        0.95,
         0,
-        5.9
+        6.7
       ],
       "yaw": 180,
       "size": [
@@ -131,11 +131,11 @@
     {
       "id": "g12-g14-chair-17",
       "type": "armchair",
-      "name": "Blue armchair · C17",
+      "name": "Blue armchair \u00b7 C17",
       "position": [
-        2.15,
+        1.55,
         0,
-        -3.2
+        -4.0
       ],
       "yaw": 180,
       "size": [
@@ -160,11 +160,11 @@
     {
       "id": "g12-g14-chair-18",
       "type": "armchair",
-      "name": "Blue armchair · C18",
+      "name": "Blue armchair \u00b7 C18",
       "position": [
-        1.05,
+        0.45,
         0,
-        -3.2
+        -4.0
       ],
       "yaw": 180,
       "size": [
@@ -189,11 +189,11 @@
     {
       "id": "g12-g14-chair-76",
       "type": "armchair",
-      "name": "Blue armchair · C76",
+      "name": "Blue armchair \u00b7 C76",
       "position": [
-        -0.12,
+        -0.72,
         0,
-        -4.55
+        -5.35
       ],
       "yaw": 88.72433704624432,
       "size": [
@@ -218,9 +218,9 @@
     {
       "id": "g12-g14-chair-23",
       "type": "armchair",
-      "name": "Blue armchair · C23",
+      "name": "Blue armchair \u00b7 C23",
       "position": [
-        -0.12,
+        -0.72,
         0,
         0
       ],
@@ -249,11 +249,11 @@
     {
       "id": "g12-g14-chair-26",
       "type": "armchair",
-      "name": "Blue armchair · C26",
+      "name": "Blue armchair \u00b7 C26",
       "position": [
-        2.15,
+        1.55,
         0,
-        3.2
+        4.0
       ],
       "yaw": 0,
       "size": [
@@ -278,11 +278,11 @@
     {
       "id": "g12-g14-chair-27",
       "type": "armchair",
-      "name": "Blue armchair · C27",
+      "name": "Blue armchair \u00b7 C27",
       "position": [
-        1.05,
+        0.45,
         0,
-        3.2
+        4.0
       ],
       "yaw": 0,
       "size": [
@@ -308,11 +308,11 @@
     {
       "id": "g12-g14-chair-77",
       "type": "armchair",
-      "name": "Blue armchair · C77",
+      "name": "Blue armchair \u00b7 C77",
       "position": [
-        -0.12,
+        -0.72,
         0,
-        4.55
+        5.35
       ],
       "yaw": 89.11148375701289,
       "size": [
@@ -338,11 +338,11 @@
     {
       "id": "g12-g14-chair-78",
       "type": "armchair",
-      "name": "Blue armchair · C78",
+      "name": "Blue armchair \u00b7 C78",
       "position": [
         -2.65,
         0,
-        -5.65
+        -6.45
       ],
       "yaw": 0,
       "size": [
@@ -368,11 +368,11 @@
     {
       "id": "g12-g14-chair-79",
       "type": "armchair",
-      "name": "Blue armchair · C79",
+      "name": "Blue armchair \u00b7 C79",
       "position": [
         -2.65,
         0,
-        -3.45
+        -4.25
       ],
       "yaw": 180,
       "size": [
@@ -397,7 +397,7 @@
     {
       "id": "g12-g14-chair-80",
       "type": "armchair",
-      "name": "Blue armchair · C80",
+      "name": "Blue armchair \u00b7 C80",
       "position": [
         -2.65,
         0,
@@ -428,7 +428,7 @@
     {
       "id": "g12-g14-chair-81",
       "type": "armchair",
-      "name": "Blue armchair · C81",
+      "name": "Blue armchair \u00b7 C81",
       "position": [
         -2.65,
         0,
@@ -459,11 +459,11 @@
     {
       "id": "g12-g14-chair-82",
       "type": "armchair",
-      "name": "Blue armchair · C82",
+      "name": "Blue armchair \u00b7 C82",
       "position": [
         -2.65,
         0,
-        3.45
+        4.25
       ],
       "yaw": 0,
       "size": [
@@ -488,11 +488,11 @@
     {
       "id": "g12-g14-chair-83",
       "type": "armchair",
-      "name": "Blue armchair · C83",
+      "name": "Blue armchair \u00b7 C83",
       "position": [
         -2.65,
         0,
-        5.65
+        6.45
       ],
       "yaw": 180,
       "size": [
@@ -519,11 +519,11 @@
     {
       "id": "g12-g14-table-22",
       "type": "table",
-      "name": "Coffee table · Table_C22",
+      "name": "Coffee table \u00b7 Table_C22",
       "position": [
-        1.55,
+        0.95,
         0,
-        -4.55
+        -5.35
       ],
       "yaw": 0,
       "size": [
@@ -549,9 +549,9 @@
     {
       "id": "g12-g14-table-23",
       "type": "table",
-      "name": "Coffee table · Table_C23",
+      "name": "Coffee table \u00b7 Table_C23",
       "position": [
-        1.55,
+        0.95,
         0,
         0
       ],
@@ -582,11 +582,11 @@
     {
       "id": "g12-g14-table-24",
       "type": "table",
-      "name": "Coffee table · Table_C24",
+      "name": "Coffee table \u00b7 Table_C24",
       "position": [
-        1.55,
+        0.95,
         0,
-        4.55
+        5.35
       ],
       "yaw": 0,
       "size": [
@@ -614,11 +614,11 @@
     {
       "id": "g12-g14-table-25",
       "type": "table",
-      "name": "Coffee table · Table_C25",
+      "name": "Coffee table \u00b7 Table_C25",
       "position": [
         -2.65,
         0,
-        -4.55
+        -5.35
       ],
       "yaw": 90,
       "size": [
@@ -645,7 +645,7 @@
     {
       "id": "g12-g14-table-26",
       "type": "table",
-      "name": "Coffee table · Table_C26",
+      "name": "Coffee table \u00b7 Table_C26",
       "position": [
         -2.65,
         0,
@@ -677,11 +677,11 @@
     {
       "id": "g12-g14-table-27",
       "type": "table",
-      "name": "Coffee table · Table_C27",
+      "name": "Coffee table \u00b7 Table_C27",
       "position": [
         -2.65,
         0,
-        4.55
+        5.35
       ],
       "yaw": 90,
       "size": [
@@ -711,9 +711,9 @@
       "type": "table",
       "name": "Round pale side table",
       "position": [
-        0.03,
+        -0.57,
         0,
-        -3.45
+        -4.25
       ],
       "yaw": 0,
       "size": [
@@ -740,7 +740,7 @@
       "type": "table",
       "name": "Round pale side table",
       "position": [
-        -0.12,
+        -0.72,
         0,
         -1.1
       ],
@@ -769,7 +769,7 @@
       "type": "table",
       "name": "Round pale side table",
       "position": [
-        -0.12,
+        -0.72,
         0,
         1.1
       ],
@@ -799,9 +799,9 @@
       "type": "table",
       "name": "Round pale side table",
       "position": [
-        0.03,
+        -0.57,
         0,
-        3.45
+        4.25
       ],
       "yaw": 0,
       "size": [
@@ -827,11 +827,11 @@
     {
       "id": "g12-g14-glass-table-c19",
       "type": "table",
-      "name": "Brass glass side table · C19",
+      "name": "Brass glass side table \u00b7 C19",
       "position": [
-        -0.12,
+        -0.72,
         0,
-        -5.92
+        -6.72
       ],
       "yaw": 0,
       "size": [
@@ -858,11 +858,11 @@
     {
       "id": "g12-g14-lamp-c19",
       "type": "floor-lamp",
-      "name": "Floor lamp · C19",
+      "name": "Floor lamp \u00b7 C19",
       "position": [
-        -0.12,
+        -0.72,
         0,
-        -6.22
+        -7.02
       ],
       "yaw": 0,
       "size": [
@@ -887,11 +887,11 @@
     {
       "id": "g12-g14-plant-c19",
       "type": "plant",
-      "name": "Tall plant · C19",
+      "name": "Tall plant \u00b7 C19",
       "position": [
-        -1.12,
+        -1.72,
         0,
-        -6.05
+        -6.85
       ],
       "yaw": 0,
       "size": [
@@ -916,11 +916,11 @@
     {
       "id": "g12-g14-glass-table-c28",
       "type": "table",
-      "name": "Brass glass side table · C28",
+      "name": "Brass glass side table \u00b7 C28",
       "position": [
-        -0.12,
+        -0.72,
         0,
-        5.92
+        6.72
       ],
       "yaw": 0,
       "size": [
@@ -949,11 +949,11 @@
     {
       "id": "g12-g14-lamp-c28",
       "type": "floor-lamp",
-      "name": "Floor lamp · C28",
+      "name": "Floor lamp \u00b7 C28",
       "position": [
-        -0.12,
+        -0.72,
         0,
-        6.22
+        7.02
       ],
       "yaw": 0,
       "size": [
@@ -980,11 +980,11 @@
     {
       "id": "g12-g14-plant-c28",
       "type": "plant",
-      "name": "Tall plant · C28",
+      "name": "Tall plant \u00b7 C28",
       "position": [
-        -1.12,
+        -1.72,
         0,
-        6.05
+        6.85
       ],
       "yaw": 0,
       "size": [

@@ -6,11 +6,11 @@
     {
       "id": "g22-sofa-01",
       "type": "sofa",
-      "name": "Cream sofa · G50 / G51",
+      "name": "Cream sofa \u00b7 G50 / G51",
       "position": [
         -3.82,
         0,
-        -1.65
+        -1.4
       ],
       "yaw": 90,
       "size": [
@@ -38,11 +38,11 @@
     {
       "id": "g22-sofa-02",
       "type": "sofa",
-      "name": "Cream sofa · G54 / G55",
+      "name": "Cream sofa \u00b7 G54 / G55",
       "position": [
         -3.82,
         0,
-        1.65
+        1.4
       ],
       "yaw": 90,
       "size": [
@@ -69,11 +69,11 @@
     {
       "id": "g22-chair-49",
       "type": "armchair",
-      "name": "Teal armchair · G49",
+      "name": "Teal armchair \u00b7 G49",
       "position": [
         -2.7,
         0,
-        -3.25
+        -2.75
       ],
       "yaw": 0,
       "size": [
@@ -99,7 +99,7 @@
     {
       "id": "g22-chair-52",
       "type": "armchair",
-      "name": "Teal armchair · G52",
+      "name": "Teal armchair \u00b7 G52",
       "position": [
         -2.684766209859474,
         0,
@@ -129,11 +129,11 @@
     {
       "id": "g22-chair-56",
       "type": "armchair",
-      "name": "Teal armchair · G56",
+      "name": "Teal armchair \u00b7 G56",
       "position": [
         -2.7,
         0,
-        3.25
+        2.75
       ],
       "yaw": 180,
       "size": [
@@ -159,11 +159,11 @@
     {
       "id": "g22-chair-57",
       "type": "armchair",
-      "name": "Teal armchair · G57",
+      "name": "Teal armchair \u00b7 G57",
       "position": [
         2.7,
         0,
-        -3.25
+        -2.75
       ],
       "yaw": 0,
       "size": [
@@ -189,11 +189,11 @@
     {
       "id": "g22-chair-58",
       "type": "armchair",
-      "name": "Teal armchair · G58",
+      "name": "Teal armchair \u00b7 G58",
       "position": [
         3.82,
         0,
-        -2.15
+        -1.9
       ],
       "yaw": -90,
       "size": [
@@ -218,11 +218,11 @@
     {
       "id": "g22-chair-59",
       "type": "armchair",
-      "name": "Teal armchair · G59",
+      "name": "Teal armchair \u00b7 G59",
       "position": [
         3.82,
         0,
-        -1.15
+        -0.9
       ],
       "yaw": -90,
       "size": [
@@ -247,11 +247,11 @@
     {
       "id": "g22-chair-60",
       "type": "armchair",
-      "name": "Teal armchair · G60",
+      "name": "Teal armchair \u00b7 G60",
       "position": [
         3.82,
         0,
-        1.15
+        0.9
       ],
       "yaw": -90,
       "size": [
@@ -276,11 +276,11 @@
     {
       "id": "g22-chair-61",
       "type": "armchair",
-      "name": "Teal armchair · G61",
+      "name": "Teal armchair \u00b7 G61",
       "position": [
         3.82,
         0,
-        2.15
+        1.9
       ],
       "yaw": -90,
       "size": [
@@ -305,11 +305,11 @@
     {
       "id": "g22-chair-62",
       "type": "armchair",
-      "name": "Teal armchair · G62",
+      "name": "Teal armchair \u00b7 G62",
       "position": [
         2.7,
         0,
-        3.25
+        2.75
       ],
       "yaw": 180,
       "size": [
@@ -335,11 +335,11 @@
     {
       "id": "g22-coffee-table-15",
       "type": "table",
-      "name": "Oval coffee table · Table_G15",
+      "name": "Oval coffee table \u00b7 Table_G15",
       "position": [
         -2.5,
         0,
-        -1.65
+        -1.4
       ],
       "yaw": 90,
       "size": [
@@ -365,11 +365,11 @@
     {
       "id": "g22-coffee-table-16",
       "type": "table",
-      "name": "Oval coffee table · Table_G16",
+      "name": "Oval coffee table \u00b7 Table_G16",
       "position": [
         -2.5,
         0,
-        1.65
+        1.4
       ],
       "yaw": 90,
       "size": [
@@ -395,11 +395,11 @@
     {
       "id": "g22-coffee-table-17",
       "type": "table",
-      "name": "Oval coffee table · Table_G17",
+      "name": "Oval coffee table \u00b7 Table_G17",
       "position": [
         2.5,
         0,
-        -1.65
+        -1.4
       ],
       "yaw": 90,
       "size": [
@@ -425,11 +425,11 @@
     {
       "id": "g22-coffee-table-18",
       "type": "table",
-      "name": "Oval coffee table · Table_G18",
+      "name": "Oval coffee table \u00b7 Table_G18",
       "position": [
         2.5,
         0,
-        1.65
+        1.4
       ],
       "yaw": 90,
       "size": [
@@ -455,7 +455,7 @@
     {
       "id": "g22-display-divider",
       "type": "screen",
-      "name": "Dark open shelving · curtain side",
+      "name": "Dark open shelving \u00b7 curtain side",
       "position": [
         3,
         0,
@@ -486,11 +486,11 @@
     {
       "id": "g22-side-table-01",
       "type": "table",
-      "name": "Round side table · simplified glass/brass",
+      "name": "Round side table \u00b7 simplified glass/brass",
       "position": [
         -3.82,
         0,
-        -3.25
+        -2.75
       ],
       "yaw": 0,
       "size": [
@@ -518,11 +518,11 @@
     {
       "id": "g22-side-table-02",
       "type": "table",
-      "name": "Round side table · simplified glass/brass",
+      "name": "Round side table \u00b7 simplified glass/brass",
       "position": [
         -3.82,
         0,
-        3.25
+        2.75
       ],
       "yaw": 0,
       "size": [
@@ -550,11 +550,11 @@
     {
       "id": "g22-side-table-03",
       "type": "table",
-      "name": "Round side table · simplified glass/brass",
+      "name": "Round side table \u00b7 simplified glass/brass",
       "position": [
         3.82,
         0,
-        -3.25
+        -2.75
       ],
       "yaw": 0,
       "size": [
@@ -582,11 +582,11 @@
     {
       "id": "g22-side-table-04",
       "type": "table",
-      "name": "Round side table · simplified glass/brass",
+      "name": "Round side table \u00b7 simplified glass/brass",
       "position": [
         3.82,
         0,
-        3.25
+        2.75
       ],
       "yaw": 0,
       "size": [
@@ -614,7 +614,7 @@
     {
       "id": "g22-plant-stand",
       "type": "table",
-      "name": "Central wood plant stand · rounded approximation",
+      "name": "Central wood plant stand \u00b7 rounded approximation",
       "position": [
         -3.82,
         0,
@@ -645,11 +645,11 @@
     {
       "id": "g22-floor-lamp-reflective",
       "type": "floor-lamp",
-      "name": "Floor lamp · reflective side",
+      "name": "Floor lamp \u00b7 reflective side",
       "position": [
         -4.03,
         0,
-        -3.95
+        -3.35
       ],
       "yaw": 0,
       "size": [
@@ -673,11 +673,11 @@
     {
       "id": "g22-floor-lamp-curtain",
       "type": "floor-lamp",
-      "name": "Floor lamp · curtain side",
+      "name": "Floor lamp \u00b7 curtain side",
       "position": [
         4.15,
         0,
-        2.8
+        2.3
       ],
       "yaw": 0,
       "size": [
@@ -701,11 +701,11 @@
     {
       "id": "g22-table-lamp-reflective",
       "type": "floor-lamp",
-      "name": "Table lamp · shared shade approximation",
+      "name": "Table lamp \u00b7 shared shade approximation",
       "position": [
         -3.82,
         0.6679761904761905,
-        3.25
+        2.75
       ],
       "yaw": 0,
       "size": [
@@ -731,11 +731,11 @@
     {
       "id": "g22-table-lamp-curtain",
       "type": "floor-lamp",
-      "name": "Tube table lamp · schematic shade",
+      "name": "Tube table lamp \u00b7 schematic shade",
       "position": [
         3.82,
         0.6679761904761905,
-        -3.25
+        -2.75
       ],
       "yaw": 0,
       "size": [
@@ -791,11 +791,11 @@
     {
       "id": "g22-plant-floor-01",
       "type": "plant",
-      "name": "Tall floor plant · bay edge",
+      "name": "Tall floor plant \u00b7 bay edge",
       "position": [
         3.92,
         0,
-        -3.95
+        -3.35
       ],
       "yaw": 0,
       "size": [
@@ -819,11 +819,11 @@
     {
       "id": "g22-plant-floor-02",
       "type": "plant",
-      "name": "Tall floor plant · bay edge",
+      "name": "Tall floor plant \u00b7 bay edge",
       "position": [
         3.92,
         0,
-        3.95
+        3.35
       ],
       "yaw": 0,
       "size": [
@@ -847,11 +847,11 @@
     {
       "id": "g22-plant-floor-03",
       "type": "plant",
-      "name": "Tall floor plant · bay edge",
+      "name": "Tall floor plant \u00b7 bay edge",
       "position": [
         -3.92,
         0,
-        3.95
+        3.35
       ],
       "yaw": 0,
       "size": [

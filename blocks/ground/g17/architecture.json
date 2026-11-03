@@ -3,12 +3,12 @@
   "version": 1,
   "blockId": "ground-e-majlis-017",
   "floorSize": [
-    6.8,
-    6.8
+    9.6,
+    8.6
   ],
   "floorCenter": [
     0,
-    0.3
+    1.2
   ],
   "ceilingHeight": 4.1,
   "placement": {
@@ -60,20 +60,20 @@
   },
   "footprint": [
     [
-      -3.4,
+      -4.8,
       -3.1
     ],
     [
-      3.4,
+      4.8,
       -3.1
     ],
     [
-      3.4,
-      3.7
+      4.8,
+      5.5
     ],
     [
-      -3.4,
-      3.7
+      -4.8,
+      5.5
     ]
   ],
   "walls": [
@@ -86,12 +86,12 @@
       "horizontalSplit": 0.5,
       "privacyBand": false,
       "start": [
-        -3.3,
-        -2.95
+        -4.8,
+        -3.1
       ],
       "end": [
-        3.3,
-        -2.95
+        4.8,
+        -3.1
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -107,12 +107,12 @@
       "id": "g17-sign-wall",
       "kind": "solid",
       "start": [
-        -3.3,
-        -2.95
+        -4.8,
+        -3.1
       ],
       "end": [
-        -3.3,
-        2.65
+        -4.8,
+        2.9
       ],
       "height": 4.1,
       "thickness": 0.16,
@@ -127,12 +127,12 @@
       "id": "g17-plain-wall",
       "kind": "solid",
       "start": [
-        3.3,
-        -2.95
+        4.8,
+        -3.1
       ],
       "end": [
-        3.3,
-        2.65
+        4.8,
+        2.9
       ],
       "height": 4.1,
       "thickness": 0.16,
@@ -148,12 +148,12 @@
   "sharedBoundaries": [],
   "ceiling": {
     "size": [
-      6.8,
-      6.8
+      9.6,
+      8.6
     ],
     "center": [
       0,
-      0.3
+      1.2
     ],
     "height": 4.1,
     "status": "estimated-plain-visualization-only"
@@ -162,30 +162,30 @@
     "id": "g17-entry-clearance",
     "polygon": [
       [
-        -3.2,
-        2.85
+        -4.8,
+        2.9
       ],
       [
-        3.2,
-        2.85
+        4.8,
+        2.9
       ],
       [
-        3.2,
-        3.7
+        4.8,
+        5.5
       ],
       [
-        -3.2,
-        3.7
+        -4.8,
+        5.5
       ]
     ],
-    "surfaceMaterial": "same-as-seating",
+    "surfaceMaterial": "pale-stone",
     "sources": [
       "E1",
       "E2",
       "E4"
     ],
     "status": "open-entry-width-and-boundary-estimated",
-    "notes": "Keep the corridor-facing +Z side open. Pale circulation alongside the seating is visible in E1/E2-wide but its extent and neighboring ownership are unresolved; this floor models the dark seating crop only."
+    "notes": "Pale walking-path finish beyond the wall ends, from local Z=2.9 to 5.5. Shared by individual and combined views."
   },
   "boundaryReview": [
     {
@@ -197,12 +197,12 @@
         "E4"
       ],
       "start": [
-        -3.3,
-        2.65
+        -4.8,
+        2.9
       ],
       "end": [
-        3.3,
-        2.65
+        4.8,
+        2.9
       ],
       "status": "open-neighbor-and-seam-unresolved"
     },
@@ -224,5 +224,8 @@
       "status": "outside-block-ownership-unresolved",
       "notes": "E1-wide shows patterned glazing beyond the sign wall and a pale side passage; retain as neighboring evidence rather than closing the open entry."
     }
+  ],
+  "notes": [
+    "Owner requests individual G17 match the combined layout: floor 9.6 by 8.6 m, center [0,1.2], open front walkway. Composition furniture offsets are baked into source positions once; furniture dimensions and labels are retained. Saved source edits flow directly into the combined view."
   ]
 }

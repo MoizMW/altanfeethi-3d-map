@@ -1,0 +1,1771 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-b-shared-003-024-025",
+  "objects": [
+    {
+      "id": "g3-g24-g25-chair-17",
+      "type": "armchair",
+      "name": "Chair 17",
+      "position": [
+        -3.710769585253,
+        0,
+        -3.967575757576
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B35"
+      ],
+      "cameras": [
+        "B10",
+        "C11"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-23",
+      "type": "armchair",
+      "name": "Chair 23",
+      "position": [
+        -3.710769585253,
+        0,
+        -1.632424242425
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B29"
+      ],
+      "cameras": [
+        "B7",
+        "C11"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-17",
+      "type": "table",
+      "name": "Table 17",
+      "position": [
+        -3.710769585253,
+        0,
+        -2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "C11",
+        "B7",
+        "B10"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B11"
+    },
+    {
+      "id": "g3-g24-g25-chair-29",
+      "type": "armchair",
+      "name": "Chair 29",
+      "position": [
+        -3.710769585253,
+        0,
+        1.632424242425
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B23"
+      ],
+      "cameras": [
+        "B10",
+        "C14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-35",
+      "type": "armchair",
+      "name": "Chair 35",
+      "position": [
+        -3.710769585253,
+        0,
+        3.967575757576
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B17"
+      ],
+      "cameras": [
+        "B7",
+        "C14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-11",
+      "type": "table",
+      "name": "Table 11",
+      "position": [
+        -3.710769585253,
+        0,
+        2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "C14",
+        "B7",
+        "B10"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B17"
+    },
+    {
+      "id": "g3-g24-g25-chair-18",
+      "type": "armchair",
+      "name": "Chair 18",
+      "position": [
+        -1.908112304147,
+        0,
+        -3.967575757576
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B36"
+      ],
+      "cameras": [
+        "B10",
+        "B11",
+        "C11"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-24",
+      "type": "armchair",
+      "name": "Chair 24",
+      "position": [
+        -1.908112304147,
+        0,
+        -1.632424242425
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B30"
+      ],
+      "cameras": [
+        "B7",
+        "C11"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-16",
+      "type": "table",
+      "name": "Table 16",
+      "position": [
+        -1.908112304147,
+        0,
+        -2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "B7",
+        "B10",
+        "B11"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B10"
+    },
+    {
+      "id": "g3-g24-g25-chair-30",
+      "type": "armchair",
+      "name": "Chair 30",
+      "position": [
+        -1.908112304147,
+        0,
+        1.632424242425
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B24"
+      ],
+      "cameras": [
+        "B10"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-36",
+      "type": "armchair",
+      "name": "Chair 36",
+      "position": [
+        -1.908112304147,
+        0,
+        3.967575757576
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B18"
+      ],
+      "cameras": [
+        "B7",
+        "B8"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-10",
+      "type": "table",
+      "name": "Table 10",
+      "position": [
+        -1.908112304147,
+        0,
+        2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B10"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B16"
+    },
+    {
+      "id": "g3-g24-g25-chair-19",
+      "type": "armchair",
+      "name": "Chair 19",
+      "position": [
+        -0.105455023042,
+        0,
+        -3.967575757576
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B37"
+      ],
+      "cameras": [
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-25",
+      "type": "armchair",
+      "name": "Chair 25",
+      "position": [
+        -0.105455023042,
+        0,
+        -1.632424242425
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B31"
+      ],
+      "cameras": [
+        "B7",
+        "B8"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-15",
+      "type": "table",
+      "name": "Table 15",
+      "position": [
+        -0.105455023042,
+        0,
+        -2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B10",
+        "B11"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B9"
+    },
+    {
+      "id": "g3-g24-g25-chair-31",
+      "type": "armchair",
+      "name": "Chair 31",
+      "position": [
+        -0.105455023042,
+        0,
+        1.632424242425
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B25"
+      ],
+      "cameras": [
+        "B10",
+        "B11"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-37",
+      "type": "armchair",
+      "name": "Chair 37",
+      "position": [
+        -0.105455023042,
+        0,
+        3.967575757576
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B19"
+      ],
+      "cameras": [
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-9",
+      "type": "table",
+      "name": "Table 9",
+      "position": [
+        -0.105455023042,
+        0,
+        2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B15"
+    },
+    {
+      "id": "g3-g24-g25-chair-20",
+      "type": "armchair",
+      "name": "Chair 20",
+      "position": [
+        1.697202258064,
+        0,
+        -3.967575757576
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B38"
+      ],
+      "cameras": [
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-26",
+      "type": "armchair",
+      "name": "Chair 26",
+      "position": [
+        1.697202258064,
+        0,
+        -1.632424242425
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B32"
+      ],
+      "cameras": [
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-14",
+      "type": "table",
+      "name": "Table 14",
+      "position": [
+        1.697202258064,
+        0,
+        -2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B8"
+    },
+    {
+      "id": "g3-g24-g25-chair-32",
+      "type": "armchair",
+      "name": "Chair 32",
+      "position": [
+        1.697202258064,
+        0,
+        1.632424242425
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B26"
+      ],
+      "cameras": [
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-38",
+      "type": "armchair",
+      "name": "Chair 38",
+      "position": [
+        1.697202258064,
+        0,
+        3.967575757576
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B20"
+      ],
+      "cameras": [
+        "B13",
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-8",
+      "type": "table",
+      "name": "Table 8",
+      "position": [
+        1.697202258064,
+        0,
+        2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B14"
+    },
+    {
+      "id": "g3-g24-g25-chair-21",
+      "type": "armchair",
+      "name": "Chair 21",
+      "position": [
+        3.49985953917,
+        0,
+        -3.967575757576
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B39"
+      ],
+      "cameras": [
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-27",
+      "type": "armchair",
+      "name": "Chair 27",
+      "position": [
+        3.49985953917,
+        0,
+        -1.632424242425
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B33"
+      ],
+      "cameras": [
+        "B8",
+        "B9"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-13",
+      "type": "table",
+      "name": "Table 13",
+      "position": [
+        3.49985953917,
+        0,
+        -2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B7"
+    },
+    {
+      "id": "g3-g24-g25-chair-33",
+      "type": "armchair",
+      "name": "Chair 33",
+      "position": [
+        3.49985953917,
+        0,
+        1.632424242425
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B27"
+      ],
+      "cameras": [
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-39",
+      "type": "armchair",
+      "name": "Chair 39",
+      "position": [
+        3.49985953917,
+        0,
+        3.967575757576
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B21"
+      ],
+      "cameras": [
+        "B13",
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-7",
+      "type": "table",
+      "name": "Table 7",
+      "position": [
+        3.49985953917,
+        0,
+        2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B11",
+        "B12"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B13"
+    },
+    {
+      "id": "g3-g24-g25-chair-22",
+      "type": "armchair",
+      "name": "Chair 22",
+      "position": [
+        5.302516820277,
+        0,
+        -3.967575757576
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B40"
+      ],
+      "cameras": [
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-28",
+      "type": "armchair",
+      "name": "Chair 28",
+      "position": [
+        5.302516820277,
+        0,
+        -1.632424242425
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B34"
+      ],
+      "cameras": [
+        "B13",
+        "B9"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-12",
+      "type": "table",
+      "name": "Table 12",
+      "position": [
+        5.302516820277,
+        0,
+        -2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B13",
+        "B8",
+        "B9",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B12"
+    },
+    {
+      "id": "g3-g24-g25-chair-34",
+      "type": "armchair",
+      "name": "Chair 34",
+      "position": [
+        5.302516820277,
+        0,
+        1.632424242425
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B28"
+      ],
+      "cameras": [
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-40",
+      "type": "armchair",
+      "name": "Chair 40",
+      "position": [
+        5.302516820277,
+        0,
+        3.967575757576
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B22"
+      ],
+      "cameras": [
+        "B13",
+        "B8",
+        "B9"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-6",
+      "type": "table",
+      "name": "Table 6",
+      "position": [
+        5.302516820277,
+        0,
+        2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B13",
+        "B9",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B"
+    },
+    {
+      "id": "g3-g24-g25-chair-41",
+      "type": "armchair",
+      "name": "Chair 41",
+      "position": [
+        -3.717415130033,
+        0,
+        -6.222727272727
+      ],
+      "yaw": 90,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B41"
+      ],
+      "cameras": [
+        "B10",
+        "C11"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-42",
+      "type": "armchair",
+      "name": "Chair 42",
+      "position": [
+        -0.7905293403,
+        0,
+        -6.222727272727
+      ],
+      "yaw": 270,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B42"
+      ],
+      "cameras": [
+        "B10",
+        "B11",
+        "B12",
+        "B2"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-20",
+      "type": "table",
+      "name": "Table 20",
+      "position": [
+        -2.290317693089,
+        0,
+        -6.222727272727
+      ],
+      "yaw": 90,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "B10"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B20"
+    },
+    {
+      "id": "g3-g24-g25-chair-44",
+      "type": "armchair",
+      "name": "Chair 44",
+      "position": [
+        7.105174101383,
+        0,
+        -3.967575757576
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B50"
+      ],
+      "cameras": [
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-46",
+      "type": "armchair",
+      "name": "Chair 46",
+      "position": [
+        7.105174101383,
+        0,
+        -1.632424242425
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B49"
+      ],
+      "cameras": [
+        "B13",
+        "B9"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-21",
+      "type": "table",
+      "name": "Table 21",
+      "position": [
+        7.105174101383,
+        0,
+        -2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B13",
+        "B9",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B23"
+    },
+    {
+      "id": "g3-g24-g25-chair-49",
+      "type": "armchair",
+      "name": "Chair 49",
+      "position": [
+        7.105174101383,
+        0,
+        1.632424242425
+      ],
+      "yaw": 0,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B46"
+      ],
+      "cameras": [
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-chair-50",
+      "type": "armchair",
+      "name": "Chair 50",
+      "position": [
+        7.105174101383,
+        0,
+        3.967575757576
+      ],
+      "yaw": 180,
+      "size": [
+        1.12,
+        1.03,
+        1.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_B44"
+      ],
+      "cameras": [
+        "B13",
+        "B8",
+        "B9"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-table-23",
+      "type": "table",
+      "name": "Table 23",
+      "position": [
+        7.105174101383,
+        0,
+        2.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.58,
+        0.52,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e5d9",
+      "seats": [],
+      "cameras": [
+        "B13",
+        "B9",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "externalId": "Table_B21"
+    },
+    {
+      "id": "g3-g24-g25-buffet-north",
+      "type": "counter",
+      "name": "Food counter · illuminated niches, coffee equipment and side fridge",
+      "position": [
+        5.594930875576,
+        0,
+        -6.615151515152
+      ],
+      "yaw": 0,
+      "size": [
+        3.9,
+        1.1,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e3d5",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "variant": "food-buffet",
+      "serviceStyle": "juice"
+    },
+    {
+      "id": "g3-g24-g25-buffet-display-north",
+      "type": "display",
+      "name": "Buffet wall display · content omitted",
+      "position": [
+        5.594930875576,
+        2.15,
+        -7.337212121212
+      ],
+      "yaw": 0,
+      "size": [
+        1.55,
+        0.9,
+        0.08
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#202c2e",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "mount": "wall"
+    },
+    {
+      "id": "g3-g24-g25-plant-north",
+      "type": "plant",
+      "name": "Plant North",
+      "position": [
+        0.239920769366,
+        0,
+        -6.846604855488
+      ],
+      "yaw": 0,
+      "size": [
+        0.52,
+        1.75,
+        0.52
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#416340",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-art-north",
+      "type": "display",
+      "name": "Framed artwork · schematic",
+      "position": [
+        -2.290317693076,
+        2.15,
+        -7.281059743618291
+      ],
+      "yaw": 0,
+      "size": [
+        0.7,
+        1.15,
+        0.08
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e4dfd1",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "variant": "framed-art"
+    },
+    {
+      "id": "g3-g24-g25-buffet-south",
+      "type": "counter",
+      "name": "Food counter · illuminated niches, coffee equipment and side fridge",
+      "position": [
+        5.594930875576,
+        0,
+        6.615151515152
+      ],
+      "yaw": 180,
+      "size": [
+        3.9,
+        1.1,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e8e3d5",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "variant": "food-buffet",
+      "serviceStyle": "coffee"
+    },
+    {
+      "id": "g3-g24-g25-buffet-display-south",
+      "type": "display",
+      "name": "Buffet wall display · content omitted",
+      "position": [
+        5.594930875576,
+        2.15,
+        7.337212121212
+      ],
+      "yaw": 180,
+      "size": [
+        1.55,
+        0.9,
+        0.08
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#202c2e",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "mount": "wall"
+    },
+    {
+      "id": "g3-g24-g25-plant-south",
+      "type": "plant",
+      "name": "Plant South",
+      "position": [
+        -0.213133640553,
+        0,
+        6.615151515152
+      ],
+      "yaw": 0,
+      "size": [
+        0.52,
+        1.75,
+        0.52
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#416340",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+    },
+    {
+      "id": "g3-g24-g25-art-south",
+      "type": "display",
+      "name": "Framed artwork · schematic",
+      "position": [
+        -1.042857142857,
+        2.15,
+        7.337212121212
+      ],
+      "yaw": 180,
+      "size": [
+        0.7,
+        1.15,
+        0.08
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e4dfd1",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "variant": "framed-art"
+    },
+    {
+      "id": "g3-g24-g25-large-wall-display",
+      "type": "display",
+      "name": "Large dark wall display · schematic",
+      "position": [
+        10.4736622902883,
+        2.15,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        3.8,
+        1.5,
+        0.08
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#20292d",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "mount": "wall"
+    },
+    {
+      "id": "g3-g24-g25-grand-piano",
+      "type": "display-console",
+      "variant": "grand-piano",
+      "name": "Grand piano and bench · B7 wide",
+      "position": [
+        -3.340552995392,
+        0,
+        6.054545454545
+      ],
+      "yaw": 180,
+      "size": [
+        1.9,
+        1.05,
+        1.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#171d1e",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B13"
+      ],
+      "confidence": "Black closed-lid grand piano visible behind B17 in wide captures; body and bench dimensions estimated"
+    }
+  ]
+}

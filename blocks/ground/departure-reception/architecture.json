@@ -1,0 +1,786 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-departure-reception-030",
+  "floorSize": [
+    15.45,
+    9.95
+  ],
+  "floorCenter": [
+    0.275,
+    1.425
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "anchors": [
+      {
+        "camera": "Egate1",
+        "pixel": [
+          3513,
+          3005
+        ],
+        "heading": 299,
+        "zone": "Departure_Reception",
+        "group": "g31"
+      },
+      {
+        "camera": "ENTRANCE",
+        "pixel": [
+          2689,
+          2705
+        ],
+        "heading": 237,
+        "zone": "Departure_Reception",
+        "group": "g1"
+      },
+      {
+        "camera": "ReceptionCam1",
+        "pixel": [
+          2969,
+          2274
+        ],
+        "heading": 151,
+        "zone": "Departure_Reception",
+        "group": "g30"
+      },
+      {
+        "camera": "ReceptionCam2",
+        "pixel": [
+          3383,
+          2526
+        ],
+        "heading": 273,
+        "zone": "Departure_Reception",
+        "group": "g30"
+      },
+      {
+        "camera": "ReceptionCam3",
+        "pixel": [
+          2515,
+          2513
+        ],
+        "heading": 69,
+        "zone": "Departure_Reception",
+        "group": "g30"
+      },
+      {
+        "camera": "SGSCam2",
+        "pixel": [
+          2178,
+          1856
+        ],
+        "heading": 202,
+        "zone": "Sgs",
+        "group": "g32"
+      },
+      {
+        "camera": "SGSCam4",
+        "pixel": [
+          1317,
+          2364
+        ],
+        "heading": 78,
+        "zone": "Sgs",
+        "group": "g32"
+      }
+    ],
+    "localAxes": {
+      "x": "Existing coordinates retained: -X is right in owner screenshot (small counter and SGS approach); +X is the e-gate side",
+      "z": "From teal main-reception backdrop toward exterior entrance (+Z)",
+      "y": "Up"
+    },
+    "mapReview": {
+      "regionPixels": [
+        1800,
+        1700,
+        4400,
+        3900
+      ],
+      "observation": "Map supports main reception beside e-gate/departure entry, and SGS on adjacent side. Camera views supersede schematic two-seat map symbol for actual three monitor stations.",
+      "metricTransform": null
+    }
+  },
+  "footprint": [
+    [
+      -7.45,
+      -3.55
+    ],
+    [
+      8,
+      -3.55
+    ],
+    [
+      8,
+      6.4
+    ],
+    [
+      -7.45,
+      6.4
+    ]
+  ],
+  "walls": [
+    {
+      "id": "departure-reception-left-stone-return",
+      "kind": "solid",
+      "start": [
+        -4.25,
+        -3.45
+      ],
+      "end": [
+        -4.25,
+        -0.75
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#cfbea2",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3",
+        "ENTRANCE",
+        "Egate1"
+      ],
+      "confidence": "Fixed span observed; dimensions and topology estimated from paired views"
+    },
+    {
+      "id": "departure-reception-rear-left-pier",
+      "kind": "solid",
+      "start": [
+        -4.25,
+        -3.45
+      ],
+      "end": [
+        -3.3,
+        -3.45
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#cfbea2",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3",
+        "ENTRANCE",
+        "Egate1"
+      ],
+      "confidence": "Fixed span observed; dimensions and topology estimated from paired views"
+    },
+    {
+      "id": "departure-reception-rear-right-pier",
+      "kind": "solid",
+      "start": [
+        3.3,
+        -3.45
+      ],
+      "end": [
+        4.2,
+        -3.45
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#cfbea2",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3",
+        "ENTRANCE",
+        "Egate1"
+      ],
+      "confidence": "Fixed span observed; dimensions and topology estimated from paired views"
+    },
+    {
+      "id": "departure-reception-gate-rear-pier",
+      "kind": "solid",
+      "start": [
+        4.2,
+        -3.45
+      ],
+      "end": [
+        4.2,
+        -1.25
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e1ddd1",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3",
+        "ENTRANCE",
+        "Egate1"
+      ],
+      "confidence": "Fixed span observed; dimensions and topology estimated from paired views"
+    },
+    {
+      "id": "departure-reception-entrance-left-frame",
+      "kind": "solid",
+      "start": [
+        -5.2,
+        5.95
+      ],
+      "end": [
+        -4.75,
+        5.95
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#c4c8c2",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3",
+        "ENTRANCE",
+        "Egate1"
+      ],
+      "confidence": "Fixed span observed; dimensions and topology estimated from paired views"
+    },
+    {
+      "id": "departure-reception-entrance-right-frame",
+      "kind": "solid",
+      "start": [
+        3.15,
+        5.95
+      ],
+      "end": [
+        3.6,
+        5.95
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#c4c8c2",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3",
+        "ENTRANCE",
+        "Egate1"
+      ],
+      "confidence": "Fixed span observed; dimensions and topology estimated from paired views"
+    },
+    {
+      "id": "departure-reception-entrance-right-window",
+      "kind": "glass",
+      "start": [
+        3.65,
+        6.1
+      ],
+      "end": [
+        5.4,
+        6.1
+      ],
+      "height": 3.3,
+      "thickness": 0.025,
+      "color": "#e1ddd1",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3",
+        "ENTRANCE",
+        "Egate1"
+      ],
+      "confidence": "Fixed span observed; dimensions and topology estimated from paired views",
+      "privacyBand": false,
+      "frameColor": "#a2aaa7"
+    },
+    {
+      "id": "departure-reception-side-counter-sgs-return",
+      "kind": "solid",
+      "start": [
+        -7.45,
+        2.45
+      ],
+      "end": [
+        -3.55,
+        2.45
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e1ddd1",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "owner-chairs-flags-walls-2026-11-02",
+        "ReceptionCam2",
+        "ENTRANCE",
+        "Egate1"
+      ],
+      "confidence": "Owner confirms wall topology; full-height span and dimensions estimated from saved geometry"
+    },
+    {
+      "id": "departure-reception-sgs-security-backing",
+      "kind": "solid",
+      "start": [
+        -7.45,
+        2.45
+      ],
+      "end": [
+        -7.45,
+        5.95
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e3dfd2",
+      "owner": "ground/g32",
+      "neighborBoundary": "g32-kiosk-backing",
+      "sources": [
+        "owner-security-unused-bays-2026-11-02",
+        "ReceptionCam2",
+        "Egate1",
+        "SGSCam2",
+        "SGSCam4"
+      ],
+      "confidence": "Owner confirms common SGS wall; local standalone reference proxy, span estimated",
+      "renderRole": "standalone-shared-wall-reference"
+    },
+    {
+      "id": "departure-reception-sgs-unused-bay-side",
+      "kind": "solid",
+      "start": [
+        -7.45,
+        -3.45
+      ],
+      "end": [
+        -7.45,
+        -0.1
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e3dfd2",
+      "owner": "ground/g32",
+      "neighborBoundary": "g32-approach-wall-return",
+      "sources": [
+        "owner-security-unused-bays-2026-11-02",
+        "ReceptionCam2",
+        "Egate1",
+        "SGSCam2",
+        "SGSCam4"
+      ],
+      "confidence": "Owner confirms common SGS wall; local standalone reference proxy, span estimated",
+      "renderRole": "standalone-shared-wall-reference"
+    },
+    {
+      "id": "departure-reception-security-entrance-closure",
+      "kind": "solid",
+      "start": [
+        -7.45,
+        5.95
+      ],
+      "end": [
+        -5.2,
+        5.95
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e3dfd2",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "owner-two-small-updates-2026-11-03",
+        "ENTRANCE",
+        "ReceptionCam2"
+      ],
+      "confidence": "Owner requests closure beside entrance at security bay; span fits existing backing/frame, dimensions estimated"
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [
+    {
+      "id": "departure-reception-entry",
+      "kind": "sliding-glass-entry",
+      "start": [
+        -2.4,
+        6.1
+      ],
+      "end": [
+        0.8,
+        6.1
+      ],
+      "objectId": "departure-reception-entrance-sliding-doors",
+      "ownsWall": true,
+      "neighbor": "exterior departure entry",
+      "status": "Visible entry; dimensions and opening amount provisional"
+    },
+    {
+      "id": "departure-reception-sgs-connection",
+      "kind": "open-connection",
+      "start": [
+        -7.45,
+        -0.65
+      ],
+      "end": [
+        -7.45,
+        2.35
+      ],
+      "ownsWall": false,
+      "neighbor": "ground/g32",
+      "status": "Open SGS approach between new side-counter wall and L-shaped return after main desk; global G32 alignment pending."
+    },
+    {
+      "id": "departure-reception-interior-connection",
+      "kind": "open-connection",
+      "start": [
+        7.8,
+        -0.2
+      ],
+      "end": [
+        7.8,
+        3.2
+      ],
+      "ownsWall": false,
+      "neighbor": "interior circulation after two e-gate lanes",
+      "status": "E-gate interior side; unseen onward shell remains open"
+    },
+    {
+      "id": "departure-reception-left-unresolved",
+      "kind": "unknown",
+      "start": [
+        -7.45,
+        2.65
+      ],
+      "end": [
+        -7.45,
+        5.92
+      ],
+      "ownsWall": false,
+      "neighbor": "construction-obscured side",
+      "status": "Outer backing of owner-positioned counter/staff strip remains unresolved; adjacent lower span is the open SGS approach. Do not infer a permanent wall from hoarding."
+    },
+    {
+      "id": "departure-reception-side-counter-sgs-return",
+      "kind": "solid-return",
+      "start": [
+        -7.45,
+        2.45
+      ],
+      "end": [
+        -3.55,
+        2.45
+      ],
+      "ownsWall": true,
+      "neighbor": "SGS-side approach; local ownership pending composition",
+      "status": "Owner-confirmed return, modeled once in departure-reception"
+    },
+    {
+      "id": "departure-reception-sgs-security-backing",
+      "kind": "solid-shared-reference",
+      "neighbor": "ground/g32",
+      "neighborBoundary": "g32-kiosk-backing",
+      "ownsWall": false,
+      "start": [
+        -7.45,
+        2.45
+      ],
+      "end": [
+        -7.45,
+        5.95
+      ],
+      "status": "Reference proxy for standalone review; excluded from combined view, which renders source G32 wall once"
+    },
+    {
+      "id": "departure-reception-sgs-unused-bay-side",
+      "kind": "solid-shared-reference",
+      "neighbor": "ground/g32",
+      "neighborBoundary": "g32-approach-wall-return",
+      "ownsWall": false,
+      "start": [
+        -7.45,
+        -3.45
+      ],
+      "end": [
+        -7.45,
+        -0.1
+      ],
+      "status": "Reference proxy for standalone review; excluded from combined view, which renders source G32 wall once"
+    }
+  ],
+  "ceiling": {
+    "height": 4.1,
+    "size": [
+      15.45,
+      9.95
+    ],
+    "center": [
+      0.275,
+      1.425
+    ],
+    "defaultVisible": false,
+    "confidence": "Plain plane at owner approximate 12\u201315 ft height; no measured mounting elevations"
+  },
+  "circulation": {
+    "polygon": [
+      [
+        -4.16,
+        -3.55
+      ],
+      [
+        4.2,
+        -3.55
+      ],
+      [
+        4.2,
+        -0.45
+      ],
+      [
+        7.85,
+        -0.45
+      ],
+      [
+        7.85,
+        3.35
+      ],
+      [
+        5.7,
+        3.35
+      ],
+      [
+        5.7,
+        5.92
+      ],
+      [
+        -3.55,
+        5.92
+      ],
+      [
+        -3.55,
+        -0.75
+      ],
+      [
+        -4.16,
+        -0.75
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "route": {
+      "centerline": [
+        [
+          -0.8,
+          6.1
+        ],
+        [
+          -0.8,
+          2.4
+        ],
+        [
+          1.2,
+          1.45
+        ],
+        [
+          4.9,
+          1.45
+        ],
+        [
+          7.8,
+          1.45
+        ]
+      ],
+      "to": "interior via e-gates",
+      "status": "Topology from entrance/reception/e-gate cameras; provisional centerline, no routing claim",
+      "from": "departure exterior entry"
+    },
+    "routes": [
+      {
+        "id": "departure-reception-sgs-side-path",
+        "to": "SGS approach at owner screenshot right",
+        "centerline": [
+          [
+            -2.8,
+            0.7
+          ],
+          [
+            -3.55,
+            0.7
+          ],
+          [
+            -7.45,
+            0.7
+          ]
+        ],
+        "width": 2.0,
+        "surfaceMaterial": "dark-stone-floor",
+        "status": "Owner-confirmed path beside side-counter staff strip; width and local seam remain estimated",
+        "from": "pale reception foyer"
+      }
+    ]
+  },
+  "notes": [
+    "Owner requests entire Departure_Reception zone, with side-wise camera evidence and construction objects excluded. Primary g1/g30/g31 cameras retain original zone/group registrations.",
+    "Main desk and three monitors appear repeatedly in ReceptionCam1/2/3: model once. The narrow counter near entrance seen in ENTRANCE/ReceptionCam2/Egate1 is a separate side counter, not a duplicated main desk.",
+    "Two swing-flap e-gate lanes are distinct from exterior sliding doors. Their renderer uses a static editable opening preview, not live access-control state.",
+    "SGSCam2/4 clarify the neighboring floor transition and passage. SGS counters, kiosks, scales, glass and corrected wall returns remain owned by ground/g32; none are copied into this block.",
+    "Branded construction hoarding is temporary, even where it looks like a tall wall. Do not replace it with an invented finished wall. Loose glazing leaning against the pier is also excluded.",
+    "Teal backing, stone relief, framed portraits, pendants, flags and scanner terminals are schematic permanent details; reflections are not extra doorways, monitors, flags or furniture.",
+    "13.8 \u00d7 10.4 m crop, counter dimensions, pendant heights, gate spacing and all global seams are estimates. Backdrop is one editable wall-panel, not a second structural wall. Side continuations beyond observed piers stay open.",
+    "Owner right-side correction 2026-11-02: preserve ALL saved object transforms, especially side counter position/rotation and relocated drawer/access-post/plants. Screenshot right corresponds to -X in retained local coordinates; SGS approach is on this side, replacing earlier rear/+X interpretation.",
+    "Pale foyer meets black/dark tiles at X\u2248-3.55 along the side counter front. Counter plus chair occupy an approximately 2.25 m staff strip; a separate clear dark-tiled path below its end leads outward to SGS. Widths and floor edge are provisional.",
+    "Owner refinement 2026-11-02: add three dark staff chairs behind the main reception, one for each monitor. Keep the existing side chair (Seat_DepRec_TMP_01). New Seat_DepRec_TMP_02\u201304 are editable temporary identities, not ROI or approved occupancy IDs.",
+    "Owner screenshot right of the small counter/DepRec_TMP_01 corresponds to its inner end at Z\u22482.45. Add full-height solid wall across the counter/staff strip from X=-5.8 to -3.55. Continue the existing main-desk stone side return at [-4.25,-1.4] toward SGS (-X), creating an L to [-5.8,-1.4]. Both walls preserve the central dark path.",
+    "Saudi flag uses sourced Shahada/sword artwork; Altanfeethi flag uses official bilingual logo geometry on ivory fabric. Both have metal poles, circular feet, folded cloth and separately readable reverse faces. Flag stand centers shift to X=\u00b12.8 to clear the new staff chairs. Other saved object poses remain unchanged.",
+    "Owner rear-wall correction 2026-11-02: move main desk assembly and three chairs forward by 0.65 m (+Z); keep both flags behind chairs at X=\u00b11.65, Z=-2.83. ReceptionCam3 wide confirms blue closed doors at both ends of the same blue rear wall, with textured stone flanks. This supersedes earlier flag-at-outer-edges placement. Side counter, SGS approach walls, gates and other owner poses unchanged.",
+    "Latest side-wall correction: cream relief panels are perpendicular side cladding, not rear-plane strips. Return ends follow forward desk placement (+0.65 m); L remains connected. E-gates/readers move +1.2 m along +Z retaining owner-saved X, with pale flooring carried forward under them. Blue rear wall, doors, flags, desk/chairs and small side counter are unchanged. See evidence ownerCorrections for mount/headings review.",
+    "Latest shared-bay correction: existing side counter is SECURITY per owner. Its back is closed against SGS kiosk-side wall, with its reviewed counter opening/pose retained. Farther in (-Z), an unused counter lies between SGS approach wall at X=-5.8 and cream reception side wall at X=-4.25. The short main-wall L leg now stops at X=-4.65, leaving 1.15 m access to the unused bay. Shared-wall proxies belong to G32 and are suppressed in combined layout; G32 source walls render once there.",
+    "Owner widening correction: intermediate bay grows from 1.55 m to 3.2 m (over twice), by moving SGS-side shared wall to X=-7.45. Existing reception, security counter/chair and G32 local furniture stay fixed; G32 composition shifts 1.65 m left. Security backing remains closed. Unused counter becomes 2.6 m wide, using the same pale-stone/teal/wood reception builder with no active equipment. Access gap beside L grows to 2.8 m. Earlier 1.55 m bay, dark-glass counter and transforms are superseded.",
+    "Owner 2026-11-03: remove short front L stub at unused/lower counter, leaving full 3.2 m bay-mouth access. Close remaining entrance-side gap at upper/security counter with wall from [-7.45,5.95] to [-5.2,5.95], joining SGS backing to existing entrance frame without crossing door opening. Counter/furniture poses unchanged. Supersedes earlier short-L geometry.",
+    "Owner 2026-11-03: trim the extra rear floor behind the reception wall. Rear crop now ends at Z=-3.55, just beyond the rear wall outer face; front edge remains Z=6.4. Furniture, walls and entrance/e-gate/SGS routes retain their saved positions.",
+    "Owner 2026-11-03: remove entrance-right solid wall behind the plant; retain the adjacent entrance glazing and gate pier. Move both freestanding e-gate readers onto the approach ends of the first two rail tops.",
+    "Owner 2026-11-03: also remove the remaining white gate-front pier between the plant and e-gate. Second scanner retains its rail mounting position with a 0.40 m pole lifting the scanner head above the rail."
+  ],
+  "sgsSideApproach": {
+    "viewReference": "Owner screenshot: right side with moved counter at top right; matches ReceptionCam2 top-right counter",
+    "floorTransition": {
+      "start": [
+        -3.55,
+        -0.75
+      ],
+      "end": [
+        -3.55,
+        5.92
+      ],
+      "fromMaterial": "pale-stone",
+      "toMaterial": "dark-stone-floor",
+      "confidence": "Owner confirms black tiles start at this side; exact edge position estimated from saved counter front"
+    },
+    "staffStrip": {
+      "polygon": [
+        [
+          -7.45,
+          2.65
+        ],
+        [
+          -3.55,
+          2.65
+        ],
+        [
+          -3.55,
+          5.92
+        ],
+        [
+          -7.45,
+          5.92
+        ]
+      ],
+      "width": 3.9,
+      "objects": [
+        "departure-reception-entrance-side-counter",
+        "departure-reception-entrance-side-chair",
+        "departure-reception-entrance-side-drawers"
+      ],
+      "status": "Counter and chair occupy this strip; do not count its full width as a through aisle"
+    },
+    "path": {
+      "polygon": [
+        [
+          -7.45,
+          -0.65
+        ],
+        [
+          -3.55,
+          -0.65
+        ],
+        [
+          -3.55,
+          2.35
+        ],
+        [
+          -7.45,
+          2.35
+        ]
+      ],
+      "centerline": [
+        [
+          -2.8,
+          0.7
+        ],
+        [
+          -3.55,
+          0.7
+        ],
+        [
+          -7.45,
+          0.7
+        ]
+      ],
+      "clearWidth": 2.0,
+      "destination": "ground/g32",
+      "status": "Two owner-confirmed wall returns bound the approach; middle dark-tiled route remains clear toward SGS at -X. Dimensions and composition seam remain estimated."
+    },
+    "sources": [
+      "owner-right-side-correction-2026-11-02",
+      "ReceptionCam2",
+      "ENTRANCE",
+      "Egate1",
+      "SGSCam2",
+      "SGSCam4"
+    ],
+    "walls": [
+      "departure-reception-side-counter-sgs-return",
+      "departure-reception-main-counter-sgs-l-return"
+    ]
+  },
+  "rearReception": {
+    "backdrop": "departure-reception-teal-backdrop",
+    "doors": [
+      "departure-reception-rear-door-1",
+      "departure-reception-rear-door-2"
+    ],
+    "sideStone": [
+      "departure-reception-stone-flank-1",
+      "departure-reception-stone-flank-2"
+    ],
+    "status": "One blue rear wall with two closed blue door leaves, stone texture only on flanks; unknown rooms beyond not reconstructed",
+    "sources": [
+      "ReceptionCam3",
+      "owner-forward-rear-doors-2026-11-02"
+    ],
+    "sideStoneStatus": "Cladding now on perpendicular inward side walls, replacing the earlier flat rear flanks interpretation."
+  },
+  "sharedReceptionSgsBays": {
+    "viewReference": "Owner 2D map: security below, unused counter above; local +Z is entrance/security, -Z is unused bay/reception rear",
+    "security": {
+      "counterId": "departure-reception-entrance-side-counter",
+      "chairId": "departure-reception-entrance-side-chair",
+      "backingId": "departure-reception-sgs-security-backing",
+      "openingStatus": "Existing counter pose and staff-side access retained; back closes against SGS wall",
+      "entranceClosure": "departure-reception-security-entrance-closure"
+    },
+    "unused": {
+      "counterId": "departure-reception-unused-counter",
+      "leftBoundary": "g32-approach-wall-return",
+      "rightBoundary": "departure-reception-left-stone-return",
+      "rightCladding": "departure-reception-stone-flank-1",
+      "accessGap": {
+        "start": [
+          -7.45,
+          -0.75
+        ],
+        "end": [
+          -4.25,
+          -0.75
+        ],
+        "width": 3.2
+      },
+      "status": "Unoccupied counter; no workstation equipment or new chair inferred",
+      "width": 3.2,
+      "previousWidth": 1.55,
+      "widthIncrease": "2.06 times previous nominal wall-to-wall width",
+      "counterStyle": "Same shared stone-and-teal reception counter as main desk; scaled to fit; no active equipment"
+    },
+    "combinedPreview": "ground/departure-sgs",
+    "alignment": {
+      "sgsPosition": [
+        -10.75,
+        0,
+        2
+      ],
+      "sgsYaw": 90,
+      "status": "Owner topology + camera overlap; estimated transform, not global metric calibration"
+    }
+  }
+}

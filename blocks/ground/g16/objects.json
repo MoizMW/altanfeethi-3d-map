@@ -39,15 +39,15 @@
       "type": "armchair",
       "name": "Blue chair \u00b7 G7",
       "position": [
-        -1.692524781780344,
+        -2.09252478178,
         0,
         -0.4254509501983338
       ],
       "yaw": 89.68905309805359,
       "size": [
-        0.88,
-        0.9,
-        0.92
+        0.94,
+        0.94,
+        0.98
       ],
       "scale": [
         1,
@@ -69,15 +69,15 @@
       "type": "armchair",
       "name": "Blue chair \u00b7 G4",
       "position": [
-        1.7,
+        2.1,
         0,
         -0.4
       ],
       "yaw": -89.1902459190451,
       "size": [
-        0.88,
-        0.9,
-        0.92
+        0.94,
+        0.94,
+        0.98
       ],
       "scale": [
         1,
@@ -99,15 +99,15 @@
       "type": "armchair",
       "name": "Blue chair \u00b7 G1",
       "position": [
-        0.7500374880544469,
+        1.150037488054,
         0,
         4.404537284946338
       ],
       "yaw": 178.3929766565208,
       "size": [
-        0.88,
-        0.9,
-        0.92
+        0.94,
+        0.94,
+        0.98
       ],
       "scale": [
         1,
@@ -129,15 +129,15 @@
       "type": "armchair",
       "name": "Blue chair \u00b7 G2",
       "position": [
-        1.7,
+        2.1,
         0,
         3.2552779568427757
       ],
       "yaw": -90,
       "size": [
-        0.88,
-        0.9,
-        0.92
+        0.94,
+        0.94,
+        0.98
       ],
       "scale": [
         1,
@@ -189,7 +189,7 @@
       "type": "table",
       "name": "Small coffee table \u00b7 Table_G1",
       "position": [
-        0.65,
+        1.05,
         0,
         3.3
       ],
@@ -218,7 +218,7 @@
       "type": "table",
       "name": "Brass and glass side table",
       "position": [
-        -1.7,
+        -2.1,
         0,
         -1.5783976309082859
       ],
@@ -248,7 +248,7 @@
       "type": "floor-lamp",
       "name": "Window floor lamp",
       "position": [
-        -2.3670668818411227,
+        -3.067066881841,
         0,
         -2.5
       ],
@@ -276,7 +276,7 @@
       "type": "table",
       "name": "Brass and glass side table",
       "position": [
-        1.7,
+        2.1,
         0,
         -1.5502494028562317
       ],
@@ -306,7 +306,7 @@
       "type": "floor-lamp",
       "name": "Window floor lamp",
       "position": [
-        2.262211729878206,
+        2.962211729878,
         0,
         -2.5
       ],
@@ -334,7 +334,7 @@
       "type": "plant",
       "name": "Window-side potted plant",
       "position": [
-        2.5,
+        3.1,
         0,
         0.1
       ],
@@ -362,7 +362,7 @@
       "type": "display-console",
       "name": "Console and abstract ornaments",
       "position": [
-        2.72,
+        3.42,
         0,
         3.3
       ],
@@ -390,7 +390,7 @@
       "type": "display",
       "name": "Framed abstract artwork placeholder",
       "position": [
-        2.86,
+        3.56,
         1.12,
         3.3
       ],

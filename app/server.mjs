@@ -10,7 +10,7 @@ const appRoot=fileURLToPath(new URL('./',import.meta.url));
 const projectRoot=resolve(appRoot,'..');
 const blocksRoot=resolve(projectRoot,'blocks');
 const evidenceRoot=resolve(projectRoot,'evidence');
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.jpg':'image/jpeg','.png':'image/png'};
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml'};
 const revision=parts=>createHash('sha256').update(parts.join('\n')).digest('hex');
 let saveQueue=Promise.resolve();
 
@@ -92,8 +92,9 @@ export const server=createServer(async(req,res)=>{
     }
     if(req.method!=='GET')return send(res,405,{error:'Method not allowed'});
     const relative=decodeURIComponent(url.pathname).slice(1)||'index.html';let target;
-    if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','styles.css','editor.css'].includes(relative))target=resolve(appRoot,relative);
+    if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','dining-objects.js','styles.css','editor.css'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='shared/schema/block-schema.js')target=resolve(projectRoot,relative);
+    else if(/^shared\/assets\/flags\/(saudi|altanfeethi)\.svg$/.test(relative))target=resolve(projectRoot,relative);
     else if(/^node_modules\/three\/(build|examples\/jsm)\/[\w/.-]+\.js$/.test(relative)&&!relative.includes('..'))target=resolve(appRoot,relative);
     else return send(res,404,{error:'Not found'});
     send(res,200,await readFile(target),types[extname(target)]||'application/octet-stream');

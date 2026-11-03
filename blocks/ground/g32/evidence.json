@@ -30,13 +30,116 @@
     "All Seat_SGS_TMP_* IDs are local temporary IDs; no G32 chair/table ROI mapping was found. Review chair counts and IDs before telemetry integration.",
     "Stone-and-teal counter fronts, wood worktops/back panels, dark office chairs and two end luggage scales are supported by the snapshots. Dimensions remain estimated.",
     "SGSCam1 and SGSCam3 share the flyadeal display/counter; SGSCam2 and SGSCam4 show the staff side. Their repeated workstations are modeled once.",
-    "The far-side kiosks, doorway/glazing, security area and adjacent reception are outside this block pending boundary review.",
-    "Local axes follow the counter row. Full-floor alignment and camera calibration remain unresolved; registered camera coordinates were preserved."
+    "Local axes follow the counter row. Full-floor alignment and camera calibration remain unresolved; registered camera coordinates were preserved.",
+    "Owner approved the basic G32 arrangement; all 32 original objects and their transforms, finishes and temporary seat identities are unchanged.",
+    "All four normal/wide pairs and the ground-floor SGS map crop were reviewed for permanent surroundings. Four kiosks, third scale, exit details and four schematic counter notices bring the editable inventory to 44 objects.",
+    "Opposite kiosk wall and approach wall are provisional local surrounding context, not accepted global boundaries. Adjacent reception and security equipment remain unmodeled.",
+    "Exposed stored materials in wide views are temporary per owner and are excluded, including loose decorative fixtures and additional stored chairs. Normal-image ROI coordinates are never applied to wide frames.",
+    "Floor-map topology supports the established four banks; it does not measure the expanded shell. Glass motif, sill heights, door hardware and kiosk positions remain approximate.",
+    "Latest owner clarification restores a solid wall section and more floor space beyond the exit on the left. The added 1.2 m allowance is provisional; full-side patterned glass is retained and extends with the wall. This supersedes the prior door-at-corner alignment."
   ],
   "reviewItems": [
     "Confirm seven active workstations, chair positions, and the left-to-right bank order.",
     "Replace temporary chair IDs with approved SGS identifiers if available.",
     "Confirm counter dimensions, gaps, rear aisle clearance and scale positions.",
-    "Calibrate block-to-map placement and agree neighboring ownership before full-floor assembly."
+    "Calibrate block-to-map placement and agree neighboring ownership before full-floor assembly.",
+    "Confirm surrounding wall spans, window sill/head, exit width and glass motif against site dimensions.",
+    "Reconcile the kiosk-side wall/scale ownership and open front approach with neighboring blocks during future composition."
+  ],
+  "wideSnapshots": {
+    "SGSCam1": "evidence/wide capture snapshots/SGSCam1.jpg",
+    "SGSCam2": "evidence/wide capture snapshots/SGSCam2.jpg",
+    "SGSCam3": "evidence/wide capture snapshots/SGSCam3.jpg",
+    "SGSCam4": "evidence/wide capture snapshots/SGSCam4.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per owner; original registered points retained",
+    "zoom": "Wider architectural views",
+    "roiUsage": "All R1 reception polygons apply only to normal snapshots; no projection onto wide frames",
+    "capturedAt": null,
+    "sourceImageSize": [
+      1920,
+      1080
+    ],
+    "source": "Owner-supplied bundled wide captures"
+  },
+  "surroundingsReview": [
+    {
+      "feature": "Saudia-end fixed patterned glazing",
+      "cameras": [
+        "SGSCam1",
+        "SGSCam2"
+      ],
+      "observation": "Pale green-grey glazed boundary with metallic diagonal strips at single-counter end; also visible without stored materials in SGSCam2 normal",
+      "interpretation": "Owner confirms entire side is glass, now extended to the opposite wall after restoring space beyond exit; motif and dimensions estimated"
+    },
+    {
+      "feature": "Flynas-end window, exit and air curtain",
+      "cameras": [
+        "SGSCam3",
+        "SGSCam4",
+        "SGSCam2"
+      ],
+      "observation": "Small horizontal window next to glazed exit; grille-fronted air curtain overhead in SGSCam3 wide. SGSCam4 shows the same end window from the staff side.",
+      "interpretation": "Permanent features, with owner-confirmed solid wall continuing 1.2 m provisionally beyond the outer door edge; window and door dimensions remain estimated"
+    },
+    {
+      "feature": "Four opposite kiosks and adjoining luggage scale",
+      "cameras": [
+        "SGSCam2",
+        "SGSCam4"
+      ],
+      "observation": "Four tall branded terminals and a distinct third ATRAX scale appear across the visitor aisle in both normal and wide frames",
+      "interpretation": "Four simplified single kiosk objects and one scale; surrounding context ownership unresolved"
+    },
+    {
+      "feature": "Pale wall returns, dark skirting and open approach",
+      "cameras": [
+        "SGSCam2",
+        "SGSCam4"
+      ],
+      "observation": "Broad pale wall return opposite the single-counter side; clear opening toward a lighter neighboring floor beside the kiosk-side wall",
+      "interpretation": "Latest owner clarification restores solid wall and space beyond door. Opposite wall segments move 1.2 m outward; kiosks follow backing and central approach remains open."
+    },
+    {
+      "feature": "Upright counter notices",
+      "cameras": [
+        "SGSCam1",
+        "SGSCam3",
+        "SGSCam4"
+      ],
+      "observation": "Countertop information holders recur in normal and wide captures",
+      "interpretation": "One schematic holder per existing bank; no exact text, branding or transient screen error pages"
+    }
+  ],
+  "constructionExclusions": {
+    "ownerInstruction": "2026-11-02: temporary construction things must not appear in the 3D scene",
+    "excluded": [
+      "Stacks of green plasterboard, brown cover sheets and leaning boards in the visitor aisle",
+      "White/red rubble sacks, plaster offcuts, debris piles, buckets and cable reels",
+      "Loose long aluminum tracks, wrapped timber/trim, cardboard cartons and plastic bags",
+      "Loose gold metal fittings or decorative pieces stored on the floor; final installation position unknown",
+      "Extra brown visitor/swivel chairs and loose office chair parked among construction stock; do not infer new permanent seating from storage",
+      "Tape rolls, cloth draped over counters/screens, cups, bottles, tools, loose papers and construction clutter"
+    ],
+    "crossCheck": "SGSCam2/SGSCam4 normal snapshots show the aisle clear where the wide captures contain material stacks. Existing seven workstation chairs remain unchanged.",
+    "rule": "Model observed fixed features only; do not invent completed partitions or install loose decorative pieces"
+  },
+  "ownerCorrections": [
+    {
+      "date": "2026-11-02",
+      "source": "Owner message and attached G32 screenshot",
+      "instruction": "Door ends at leftmost wall; move the left wall closer. Below wall is whole glass, not half.",
+      "interpretation": "In screenshot, left means the opposite/kiosk side (+Z); below means Saudia end (+X). Both opposite wall segments align with exit door outer edge Z=2.1. Patterned glass spans the full end from rear panel to that line.",
+      "preserved": "Original 32 counter-row objects and all seat IDs",
+      "dimensions": "Provisional; topology corrected by owner"
+    },
+    {
+      "date": "2026-11-02",
+      "source": "Latest owner message and two attached reference/3D crops",
+      "instruction": "After door on left side we have wall, so after door end on left give some more enough space.",
+      "interpretation": "Supersedes previous door-at-corner assumption. Add 1.2 m provisional solid wall beyond exit and move opposite walls/kiosks/scale outward by that amount. Retain full-span Saudia-end glazing.",
+      "dimensions": "Extra wall existence confirmed by owner; 1.2 m chosen as a provisional visual allowance, not a measurement"
+    }
   ]
 }

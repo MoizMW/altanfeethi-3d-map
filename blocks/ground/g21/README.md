@@ -42,3 +42,5 @@ Latest owner correction supersedes the translation-only swap above: the sofa ban
 Owner update: standard G18/G20 full-width arched partitions are now modeled at +Z; the −Z reception arch is owned by G2 and is not duplicated. The arches retain clear passage beneath a 3.35 m crown, with estimated 7.9 m opening width and 1.6 m spring height. Review seam ownership during composition.
 
 Combined layout: G21 now sits between G22 (left) and G2 (right) in `/?layout=ground/b-g-lounges`. Its standalone +Z arch is suppressed in composition because G22 owns the shared arch; G2 owns the reception arch. Saved source furniture is retained.
+
+Latest compact C/G revision: G21 and G22 span 7.4 m each; the shared G12/G14 spans 14.8 m, with cross-room depths unchanged. Source dimensions/positions synchronize with composition. Combined seams: G21/G22 -36.78, G22/G27 and C/G17 -44.18. Downstream G27/G28/G29/G17 move +2.8 m to retain joins. Furniture sizes/labels and walking connections are preserved. C-lounge source furniture now loads directly without additional offsets.

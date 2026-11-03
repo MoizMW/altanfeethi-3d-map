@@ -3,7 +3,7 @@
   "version": 1,
   "blockId": "ground-seating-001",
   "floorSize": [
-    7.2,
+    7.4,
     6
   ],
   "ceilingHeight": 4.1,
@@ -32,19 +32,19 @@
   },
   "footprint": [
     [
-      -5.38,
+      -5.98,
       -3
     ],
     [
-      1.82,
+      1.42,
       -3
     ],
     [
-      1.82,
+      1.42,
       3
     ],
     [
-      -5.38,
+      -5.98,
       3
     ]
   ],
@@ -53,11 +53,11 @@
       "id": "g9-tv-wall",
       "kind": "solid",
       "start": [
-        1.82,
+        1.42,
         -3
       ],
       "end": [
-        1.82,
+        1.42,
         3
       ],
       "height": 4.1,
@@ -77,16 +77,16 @@
       "id": "g9-sofa-glazing",
       "kind": "glass",
       "start": [
-        -1.78,
+        -2.98,
         -3
       ],
       "end": [
-        1.82,
+        1.42,
         -3
       ],
       "height": 4.1,
       "thickness": 0.06,
-      "color": "#e2dfd5",
+      "color": "#9dbfc3",
       "owner": "ground/g9",
       "sources": [
         "B1-wide",
@@ -99,11 +99,11 @@
       "id": "g9-entrance-wall",
       "kind": "solid",
       "start": [
-        -1.78,
+        -2.98,
         3
       ],
       "end": [
-        1.82,
+        1.42,
         3
       ],
       "height": 4.1,
@@ -121,11 +121,11 @@
       "id": "g9-passage-entrance-wall",
       "kind": "solid",
       "start": [
-        -5.38,
+        -5.98,
         3
       ],
       "end": [
-        -1.78,
+        -2.98,
         3
       ],
       "height": 4.1,
@@ -143,11 +143,11 @@
       "id": "g9-passage-outer-wall",
       "kind": "solid",
       "start": [
-        -5.38,
+        -5.98,
         -3
       ],
       "end": [
-        -5.38,
+        -5.98,
         3
       ],
       "height": 4.1,
@@ -167,8 +167,8 @@
       "id": "g9-rounded-entrance",
       "wallId": "g9-entrance-wall",
       "kind": "rounded-passage",
-      "offset": 1.8,
-      "width": 2.55,
+      "offset": 2.2,
+      "width": 3.2,
       "springHeight": 1.85,
       "height": 3.15,
       "sources": [
@@ -181,8 +181,8 @@
       "id": "g9-passage-rounded-entrance",
       "wallId": "g9-passage-entrance-wall",
       "kind": "rounded-passage",
-      "offset": 1.8,
-      "width": 2.55,
+      "offset": 1.5,
+      "width": 2.4,
       "springHeight": 1.85,
       "height": 3.15,
       "sources": [
@@ -202,17 +202,17 @@
     }
   ],
   "floorCenter": [
-    -1.78,
+    -2.28,
     0
   ],
   "ceiling": {
     "height": 4.1,
     "size": [
-      7.2,
+      7.4,
       6
     ],
     "center": [
-      -1.78,
+      -2.28,
       0
     ],
     "defaultVisible": false,
@@ -220,22 +220,22 @@
   },
   "circulation": {
     "kind": "open-through-passage",
-    "destination": "G zone",
+    "destination": "G16 / G zone",
     "polygon": [
       [
-        -5.38,
+        -5.98,
         -3
       ],
       [
-        -1.78,
+        -2.98,
         -3
       ],
       [
-        -1.78,
+        -2.98,
         3
       ],
       [
-        -5.38,
+        -5.98,
         3
       ]
     ],
@@ -243,18 +243,18 @@
       {
         "id": "g9-passage-g-zone",
         "start": [
-          -5.38,
+          -5.98,
           -3
         ],
         "end": [
-          -1.78,
+          -2.98,
           -3
         ],
         "destination": "G zone"
       }
     ],
     "confidence": "Half-area circulation and G-zone destination confirmed by user; exact edge placement/width estimated",
-    "surfaceMaterial": "same-as-seating",
+    "surfaceMaterial": "pale-stone",
     "connections": [
       {
         "id": "g9-passage-corridor",
@@ -265,10 +265,13 @@
     ]
   },
   "notes": [
-    "Full working area equals G11's provisional 43.2 m², using 7.2 × 6 m with local floor center [-1.78,0]. This relative equality is user-confirmed; meter dimensions remain estimated.",
-    "Seating half X [-1.78,1.82] and passage half X [-5.38,-1.78] share the same dark stone floor. The passage has an outer left wall and rounded corridor entrance; its G-zone end remains open.",
+    "Full working area equals G11's provisional 43.2 m\u00b2, using 7.2 \u00d7 6 m with local floor center [-1.78,0]. This relative equality is user-confirmed; meter dimensions remain estimated.",
+    "Seating half X [-1.78,1.82] retains dark stone; passage half X [-5.38,-1.78] uses the pale walking-path finish connecting to G16. The passage has an outer left wall and rounded corridor entrance; its G-zone end remains open.",
     "B1-wide shows the rounded corridor entrance behind B1/B2. B3-wide shows glazing behind sofa, TV on the decorated side wall and the open adjacent half.",
     "Existing furniture coordinates, scale and seat IDs retained. The previous freestanding-screen interpretation is updated to wall cladding at its saved position.",
-    "Owner correction: leftmost wall and passage-side rounded surround are present. TV wall has teal/gold decorative finish. Wall dimensions and global seam alignment remain estimated."
+    "Owner correction: leftmost wall and passage-side rounded surround are present. TV wall has teal/gold decorative finish. Wall dimensions and global seam alignment remain estimated.",
+    "Owner compact-bay correction: width 5.2 m, unchanged 6 m depth; G10-facing boundary remains X=-5.38, right wall moves to -0.18. Seating compartment retains its 3.6 m width and furniture sizes, shifted 2 m left. Empty passage narrows to 1.6 m; its rounded access is 1.3 m wide. Previous equality with G11 area is superseded.",
+    "Owner rebalance: width raised to 5.8 m, with 2.2 m pale passage and unchanged 3.6 m seating compartment. G10-facing seam shifts to -5.98, while right edge stays -0.18. Length remains 6 m.",
+    "Owner restores G9/G16 width to 7.4 m. G9 left seam remains -5.98; right edge moves to 1.42. Pale passage is 3.0 m, seating compartment 4.4 m, length unchanged at 6 m."
   ]
 }

@@ -30,3 +30,7 @@ Normal and wide captures were inspected separately. Detection ROIs belong only t
 Move, rotate, resize and recolor furniture in the editor. Seat and table labels are editable while physical `g28-...` IDs stay stable. Save block writes only `objects.json`, keeps a backup and rejects stale revisions. Structural edits use `architecture.json` directly. The four JSON files are authoritative; see `evidence.json` for review items and root `CONTRIBUTING.md` for merge rules.
 
 Run `npm test` and `node --test blocks/ground/g28/validate.test.mjs` before handoff. Rendered top/isometric inspection and human furniture/architecture acceptance remain pending.
+
+Owner-requested arched partitions use the pale G18/G20 style, with 4.1 m walls, 1.6 m spring height and 3.35 m crowns. Both walkway ends have 7.9 m openings. Shared boundary ownership must be aligned when composing neighboring blocks.
+
+G28 is included in the B + C + G combined layout at yaw +90, centered at [-60.38, 0, -7.2]. Its current G84/G76 end joins G27 at X=-56.58 with one G27-owned arch. Floor and walkway edges align; furniture sizes and source positions remain unchanged. Dimensions are provisional.

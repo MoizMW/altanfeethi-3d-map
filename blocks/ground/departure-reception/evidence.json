@@ -1,0 +1,302 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-departure-reception-030",
+  "cameras": [
+    "ReceptionCam1",
+    "ReceptionCam2",
+    "ReceptionCam3",
+    "ENTRANCE",
+    "Egate1",
+    "SGSCam2",
+    "SGSCam4"
+  ],
+  "primaryCameras": [
+    "ReceptionCam1",
+    "ReceptionCam2",
+    "ReceptionCam3",
+    "ENTRANCE",
+    "Egate1"
+  ],
+  "supportingCameras": [
+    "SGSCam2",
+    "SGSCam4"
+  ],
+  "snapshots": {
+    "ReceptionCam1": "evidence/camera-snapshots/ReceptionCam1.jpg",
+    "ReceptionCam2": "evidence/camera-snapshots/ReceptionCam2.jpg",
+    "ReceptionCam3": "evidence/camera-snapshots/ReceptionCam3.jpg",
+    "ENTRANCE": "evidence/camera-snapshots/ENTRANCE.jpg",
+    "Egate1": "evidence/camera-snapshots/Egate1.jpg",
+    "SGSCam2": "evidence/camera-snapshots/SGSCam2.jpg",
+    "SGSCam4": "evidence/camera-snapshots/SGSCam4.jpg"
+  },
+  "wideSnapshots": {
+    "ReceptionCam1": "evidence/wide capture snapshots/ReceptionCam1.jpg",
+    "ReceptionCam2": "evidence/wide capture snapshots/ReceptionCam2.jpg",
+    "ReceptionCam3": "evidence/wide capture snapshots/ReceptionCam3.jpg",
+    "ENTRANCE": "evidence/wide capture snapshots/ENTRANCE.jpg",
+    "Egate1": "evidence/wide capture snapshots/Egate1.jpg",
+    "SGSCam2": "evidence/wide capture snapshots/SGSCam2.jpg",
+    "SGSCam4": "evidence/wide capture snapshots/SGSCam4.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per owner; retained original registration anchors",
+    "zoom": "Wider architecture views",
+    "roiUsage": "Reception R1 polygons apply only to normal frames; no wide projection or pixel-to-meter conversion",
+    "capturedAt": null,
+    "sourceImageSize": [
+      1920,
+      1080
+    ]
+  },
+  "rois": {
+    "ReceptionCam1": "evidence/rois/reception-rois/g30/ReceptionCam1.json",
+    "ReceptionCam2": "evidence/rois/reception-rois/g30/ReceptionCam2.json",
+    "ReceptionCam3": "evidence/rois/reception-rois/g30/ReceptionCam3.json"
+  },
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "roiCoordinateStatus": "Three g30 R1 reception polygons fit normal 1920 × 1080 frames; not chair/table identities. No supplied chair/table ROIs for g1/g30/g31.",
+  "sideReview": [
+    {
+      "side": "Main desk / rear (-Z)",
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "findings": "One pale-stone/teal main desk, three monitors and lower wood worktop with drawer pedestals; teal etched backing between stone piers, three portrait frames and three metallic pendant shades. Repeated front/rear views reconciled once. Owner requests three staff chairs behind the desk; all receive temporary IDs. Saudi and Altanfeethi flags now carry sourced artwork on folded cloth."
+    },
+    {
+      "side": "Exterior entry (+Z)",
+      "cameras": [
+        "ENTRANCE",
+        "ReceptionCam2",
+        "Egate1"
+      ],
+      "findings": "Wide metal-framed sliding glass entrance, access post, two potted plants and a separate small stone-and-teal counter. Reflections do not create a second parallel counter or door bank."
+    },
+    {
+      "side": "Right / gate side (+X)",
+      "cameras": [
+        "Egate1",
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "findings": "Two lanes share three metal rail bodies and frosted swing leaves; this is not the full-height exterior entrance. Pale passage continues toward interior between fixed piers."
+    },
+    {
+      "side": "Owner screenshot right / SGS-side approach (-X)",
+      "cameras": [
+        "ReceptionCam2",
+        "Egate1",
+        "SGSCam2",
+        "SGSCam4"
+      ],
+      "findings": "Owner-positioned counter stands at top right in model and ReceptionCam2. Pale floor ends near counter front; black-tiled staff strip contains counter/chair and a distinct dark path beside its end leads outward into SGS. Existing camera registration is retained and no G32 meshes duplicated. Owner confirms a solid return at the side-counter end and an L leg from existing main-counter wall toward SGS; central approach remains open."
+    },
+    {
+      "side": "Left / partly obscured (-X)",
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ENTRANCE",
+        "Egate1"
+      ],
+      "findings": "Temporary branded hoarding remains excluded. Owner resolves only the counter/staff strip and adjacent open SGS path; final outer backing beyond this remains unknown."
+    }
+  ],
+  "constructionExclusions": {
+    "instruction": "Owner: avoid construction things, use side-wise camera information",
+    "excluded": [
+      "Navy branded construction-area hoarding and temporary partitions",
+      "Ladder, buckets, tools, carts, plasterboard stacks, sacks and debris",
+      "Loose metal tracks, detached glazing/door frames leaning against piers",
+      "Temporary protection mats/sheets, exposed cable coils, cartons and packing",
+      "Loose visitor-area chair and chairs stored among building materials",
+      "Transient cups, bottles, papers, waste, laptop and disinfectant clutter"
+    ],
+    "rule": "Include only observed installed features. Do not fill construction-obscured edges with guessed finished architecture."
+  },
+  "deferredObservations": [
+    {
+      "feature": "Visitor-area office chair",
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "Egate1"
+      ],
+      "reason": "One loose chair appears in normal foyer views and is absent in wide counterpart; permanent staff position/count cannot be assigned."
+    },
+    {
+      "feature": "Exit-side camera EXIT",
+      "reason": "Registration prompted a focused wide-view check; it shows a different external/arrival glazing bay with no direct reception overlap, so it is not used for geometry or treated as the ENTRANCE camera."
+    }
+  ],
+  "notes": [
+    "Five zone cameras (g1 entrance, g30 reception, g31 e-gates) plus two SGS-side support views establish the bounded local draft.",
+    "Main reception contains three observed monitor stations, not seven SGS stations or the map illustration’s two-seat icon. Three camera views describe one physical desk.",
+    "Only local topology is reconstructed. A future owner-guided composition must align this block to SGS and interiors, resolve shared pier ownership and avoid duplicate meshes.",
+    "Right-side floor/path refinement supersedes original rear/+X SGS approach estimate. The new dark-tiled route reaches the local -X boundary beside the counter/staff strip; global merge with G32 remains unresolved.",
+    "Owner now requests three main reception chairs in addition to the confirmed side-counter chair. Four temporary Seat_DepRec_TMP_01–04 identities are explicitly provisional. Existing counters and other owner edits stay unchanged; only flag stand centers move outward to clear chairs.",
+    "New wall at the inner end of the side counter bounds its staff strip; existing main-counter side wall gains an L leg toward SGS. Temporary detached glazing shown leaning on the wall in ReceptionCam2 remains excluded.",
+    "Latest rear correction: 37 editable objects including two blue closed rear service-door leaves within existing blue backdrop. Desk assembly and main chairs moved forward 0.65 m; flags behind at X=±1.65. Existing side counter and SGS approach retained.",
+    "Camera mount/headings were reread and paired wide views compared from opposite sides for this correction. Cream texture is now on side-wall inward faces; no photographic perspective is treated as a measured world transform.",
+    "The security and unused counters are permanent owner-confirmed objects. Construction hoarding, detached glazing leaning on the pier and material piles remain excluded. G32 source furniture, including latest owner counter edits, is loaded live without copying or changing it."
+  ],
+  "reviewItems": [
+    "Confirm working dimensions, exact stone pier extents, counter spacing and entrance-side counter orientation.",
+    "Confirm permanent staff chairs and provide approved seat identities if occupancy integration is needed.",
+    "Review gate opening preview, lane widths and exterior entrance alignment.",
+    "Resolve construction-obscured left boundary from finished-site evidence.",
+    "Align SGS/interior seams only during a requested composition; preserve existing G32 corrections."
+  ],
+  "ownerCorrections": [
+    {
+      "date": "2026-11-02",
+      "source": "Owner moved side-counter in editor, attached model screenshot and ReceptionCam2 crop, and described floor/path",
+      "instruction": "Focus on right side only; keep moved counter at top right. Black tiles begin on the SGS side, with a through path beside the width occupied by counter and chair.",
+      "interpretation": "Owner screenshot right is local -X. Preserve existing object records exactly, add one temporary-ID staff chair behind counter, align pale/dark floor near its front, and reference open dark path to SGS at -X edge.",
+      "dimensions": "2.25 m staff strip and 2.0 m route are provisional; no camera calibration claimed"
+    },
+    {
+      "date": "2026-11-02",
+      "source": "Owner message, ReceptionCam2 and labeled 3D screenshots",
+      "instruction": "Add chairs behind reception; correct Saudi and Altanfeethi flags; add wall right of side counter/DepRec_TMP_01 and make existing return after main counter L-shaped toward SGS.",
+      "interpretation": "Three main staff chairs plus existing side chair. Full-height side-counter wall at Z≈2.45 and main L-return at Z=-1.4, with clear SGS path between. Two textured, draped identity-specific flags on metal stands.",
+      "dimensions": "Chair poses, return extents and flag drape estimated; counter and other owner furniture placements retained"
+    },
+    {
+      "date": "2026-11-02",
+      "instruction": "Move reception and chairs forward, flags behind; blue rear wall with doors both sides and textured side walls per ReceptionCam3 wide.",
+      "result": "Main desk/chairs and all desktop/drawer attachments move +0.65 m in Z. Flags placed behind chairs between two blue closed rear doors; stone flanks retained.",
+      "dimensions": "Estimated shift and door extents; closed visual preview, no hidden-room reconstruction"
+    },
+    {
+      "date": "2026-11-02",
+      "instruction": "Extend side walls forward with counter; cream texture belongs on perpendicular side walls, not rear wall; move e-gate ahead after counter.",
+      "cameraBasis": [
+        {
+          "camera": "Egate1",
+          "mapPixel": [
+            3513,
+            3005
+          ],
+          "heading": 299
+        },
+        {
+          "camera": "ReceptionCam1",
+          "mapPixel": [
+            2969,
+            2274
+          ],
+          "heading": 151
+        },
+        {
+          "camera": "ReceptionCam2",
+          "mapPixel": [
+            3383,
+            2526
+          ],
+          "heading": 273
+        },
+        {
+          "camera": "ReceptionCam3",
+          "mapPixel": [
+            2515,
+            2513
+          ],
+          "heading": 69
+        }
+      ],
+      "interpretation": "ReceptionCam1/2 look across staff side and show cream cladding to either side; ReceptionCam3 sees rear blue plane and the side returns obliquely. Egate1 reverse view confirms gate in visitor approach beyond counter. Retain mount/headings as evidence, not a calibrated perspective transform.",
+      "changes": "Extend left return and attached L forward 0.65 m; extend gate-side rear pier 0.65 m; rotate/reposition existing cream panels onto inward side faces. Move saved gate bank and both readers +1.2 m in Z, retaining saved X positions. Forward gate edge begins about 0.43 m beyond counter front.",
+      "uncertainty": "Wall lengths, offsets and gate clearance provisional; hidden construction areas not reconstructed"
+    },
+    {
+      "date": "2026-11-02",
+      "instruction": "Between reception and SGS: existing lower counter is security, with correct opening and closed SGS-wall back. Above it is an unused counter between textured reception wall and SGS bottom-left wall.",
+      "implementation": "Keep security and all existing furniture poses; add shared-wall reference proxies and one unused counter, shorten L leg only enough to give unused-bay access. Compose original SGS and reception source blocks with shared wall ownership.",
+      "evidence": [
+        "Owner annotated map and G32 screenshot",
+        "ReceptionCam2 wide",
+        "Egate1 wide",
+        "SGSCam2/4 wide"
+      ],
+      "uncertainty": "Metric transform, unused-counter dimensions and exact seam lengths remain provisional"
+    },
+    {
+      "date": "2026-11-02",
+      "instruction": "In-between counter space at least twice as large; same reception-style counter sized to fit.",
+      "result": "Nominal bay width 1.55→3.2 m; SGS shared edge shifts left 1.65 m, original G32 local objects untouched. Unused counter 2.6×1.18×0.94 m, matching main reception materials and geometry; no monitors/chairs added.",
+      "dimensions": "Owner ratio honored; absolute dimensions remain provisional"
+    },
+    {
+      "date": "2026-11-03",
+      "instruction": "Remove short wall in front of lower counter; close remaining open upper-counter area beside entrance gate.",
+      "result": "Remove short L stub, retain long textured side wall; add entrance-side security closure between SGS backing and existing entrance frame. Main entrance and SGS passage remain clear; no furniture moves."
+    }
+  ],
+  "unmappedSeats": [
+    {
+      "objectId": "departure-reception-entrance-side-chair",
+      "temporarySeatId": "Seat_DepRec_TMP_01",
+      "cameras": [
+        "ReceptionCam2",
+        "ENTRANCE"
+      ],
+      "source": "Owner explicitly confirms chair in side-counter staff strip; exact pose and dimensions estimated"
+    },
+    {
+      "objectId": "departure-reception-main-chair-01",
+      "temporarySeatId": "Seat_DepRec_TMP_02",
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "source": "Owner requests chairs behind main reception; one per observed workstation, exact pose and identity estimated"
+    },
+    {
+      "objectId": "departure-reception-main-chair-02",
+      "temporarySeatId": "Seat_DepRec_TMP_03",
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "source": "Owner requests chairs behind main reception; one per observed workstation, exact pose and identity estimated"
+    },
+    {
+      "objectId": "departure-reception-main-chair-03",
+      "temporarySeatId": "Seat_DepRec_TMP_04",
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "source": "Owner requests chairs behind main reception; one per observed workstation, exact pose and identity estimated"
+    }
+  ],
+  "flagArtwork": {
+    "saudi": {
+      "texture": "shared/assets/flags/saudi.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Flag_of_Saudi_Arabia.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg",
+      "usage": "Shahada and sword geometry retained; vector turned for hanging cloth; reverse printed face kept readable"
+    },
+    "altanfeethi": {
+      "texture": "shared/assets/flags/altanfeethi.svg",
+      "source": "https://altanfeethi.com.sa/Style%20Library/Portal/images/logo.svg",
+      "usage": "Official bilingual vector mark; white site lettering recolored dark on ivory fabric to match reception camera flag. Brand geometry preserved."
+    },
+    "reference": [
+      "ReceptionCam3"
+    ],
+    "localProvenance": "shared/assets/flags/README.md"
+  }
+}

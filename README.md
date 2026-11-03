@@ -1,5 +1,9 @@
 # Altanfeethi spatial twin
 
+Reception + SGS shared security/unused-counter bays: `http://127.0.0.1:4209/?layout=ground/departure-sgs`.
+
+Departure_Reception: `http://127.0.0.1:4209/?block=ground/departure-reception` — [reception, entrance, e-gate and side-camera evidence](blocks/ground/departure-reception/README.md).
+
 G12 + G14 shared C-zone lounge: `http://127.0.0.1:4209/?block=ground/g12-g14` — [evidence and review notes](blocks/ground/g12-g14/README.md). One editable space for both groups, with 21 unique seat IDs.
 
 Zone C pods and approach: `http://127.0.0.1:4209/?block=ground/zone-c-pods`.
