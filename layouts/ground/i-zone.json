@@ -1,0 +1,271 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "ground-i-zone",
+  "name": "I zone \u00b7 G57 / G58 / G59 / G61 / G62",
+  "displayCode": "I ZONE",
+  "floor": "ground",
+  "status": "draft-needs-human-review",
+  "floorSize": [
+    7.6,
+    16.56
+  ],
+  "floorCenter": [
+    2.2,
+    1.88
+  ],
+  "components": [
+    {
+      "block": "ground/g57",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "floorSize": [
+          4.2,
+          4.38
+        ],
+        "floorCenter": [
+          0.5,
+          -0.21
+        ],
+        "circulationPolygon": [
+          [
+            1.3,
+            -2.4
+          ],
+          [
+            2.6,
+            -2.4
+          ],
+          [
+            2.6,
+            1.98
+          ],
+          [
+            1.3,
+            1.98
+          ]
+        ],
+        "wallEndpoints": {
+          "g57-paneled-wall": {
+            "start": [
+              -1.5,
+              -2.4
+            ],
+            "end": [
+              -1.5,
+              1.98
+            ]
+          }
+        }
+      }
+    },
+    {
+      "block": "ground/g58",
+      "position": [
+        0,
+        0,
+        4.08
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "wallEndpoints": {
+          "g58-paneled-wall": {
+            "start": [
+              -1.5,
+              -2.1
+            ],
+            "end": [
+              -1.5,
+              1.88
+            ]
+          }
+        },
+        "floorSize": [
+          4.2,
+          3.98
+        ],
+        "floorCenter": [
+          0.5,
+          -0.11
+        ],
+        "circulationPolygon": [
+          [
+            1.3,
+            -2.1
+          ],
+          [
+            2.6,
+            -2.1
+          ],
+          [
+            2.6,
+            1.88
+          ],
+          [
+            1.3,
+            1.88
+          ]
+        ]
+      }
+    },
+    {
+      "block": "ground/g59",
+      "position": [
+        0,
+        0,
+        8.06
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "wallEndpoints": {
+          "g59-paneled-wall": {
+            "start": [
+              -1.5,
+              -2.1
+            ],
+            "end": [
+              -1.5,
+              2.02
+            ]
+          }
+        }
+      }
+    },
+    {
+      "block": "ground/g61",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "ground/g62",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0
+    }
+  ],
+  "walls": [],
+  "openings": [],
+  "sharedBoundaries": [
+    {
+      "id": "g57-g58-shared-screen",
+      "kind": "decorative-partition",
+      "owner": "ground/g57",
+      "objectId": "g57-sofa-screen-01",
+      "neighbors": [
+        "ground/g57",
+        "ground/g58"
+      ],
+      "start": [
+        -1.4,
+        1.98
+      ],
+      "end": [
+        1.3,
+        1.98
+      ]
+    },
+    {
+      "id": "g57-g58-aisle-join",
+      "kind": "open-connection",
+      "start": [
+        1.3,
+        1.98
+      ],
+      "end": [
+        2.6,
+        1.98
+      ],
+      "clearWidth": 1.3
+    },
+    {
+      "id": "g58-g59-shared-screen",
+      "kind": "decorative-partition",
+      "owner": "ground/g58",
+      "objectId": "g58-sofa-screen-01",
+      "neighbors": [
+        "ground/g58",
+        "ground/g59"
+      ],
+      "start": [
+        -1.4,
+        5.96
+      ],
+      "end": [
+        1.3,
+        5.96
+      ]
+    },
+    {
+      "id": "g58-g59-aisle-join",
+      "kind": "open-connection",
+      "start": [
+        1.3,
+        5.96
+      ],
+      "end": [
+        2.6,
+        5.96
+      ],
+      "clearWidth": 1.3
+    },
+    {
+      "id": "i-zone-window-band-seam",
+      "start": [
+        2.6,
+        0.5
+      ],
+      "end": [
+        6,
+        0.5
+      ],
+      "kind": "open-floor-seam"
+    },
+    {
+      "id": "i-zone-end-cap-seam",
+      "start": [
+        -1.6,
+        -2.4
+      ],
+      "end": [
+        2.6,
+        -2.4
+      ],
+      "kind": "open-floor-seam"
+    }
+  ],
+  "evidenceCameras": [
+    "I17",
+    "I26",
+    "I18",
+    "I22",
+    "I13",
+    "I24",
+    "I14",
+    "I15",
+    "I16",
+    "I25",
+    "I27",
+    "I28"
+  ],
+  "notes": [
+    "Full I-zone: three accepted screened bays on the paneled-wall side, blue-chair corner and end console at the planter end, ten tan swivel chairs along the opposite glazing. All five source blocks remain independently editable.",
+    "Existing G57/G58/G59 furniture and transforms remain unchanged. G61 and G62 use the same coordinate basis at the origin, with disjoint window-floor sections meeting at Z=0.5. The G61 end cap meets G57 at Z=-2.4.",
+    "G61 owns Table_I9 once, although observed from G62 I25; G62 records an external reference. Existing planter and shared screens are retained once.",
+    "Central pale walk stays clear between X=1.3 and the window row. Original 1.3 m aisle remains; additional clear space precedes the tan chair backs. Glass/curtain placement, 1.45 m chair pitch and dimensions are estimates, guided by six new camera pairs and the registered map topology.",
+    "The unassigned foreground blue chair visible beyond the tan row is outside the requested groups; its identity and continuation remain unresolved. No Seat_I13 or Table_I4 is invented.",
+    "Pale aisle extends from existing X=1.3 through X=3.4 at the tan chair backs, using a non-overlapping 0.8 m margin owned by G61/G62. The corner before G57 planter stays dark stone as seen in I14/I16.",
+    "Owner correction 2026-11-03: window curtain columns removed from both source blocks; glass frontage now reaches the 4.1 m ceiling throughout. This supersedes earlier curtain/3.5 m glazing descriptions."
+  ]
+}

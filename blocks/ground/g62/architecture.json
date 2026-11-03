@@ -1,0 +1,144 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-i-lounge-062",
+  "floorSize": [
+    3.4,
+    9.66
+  ],
+  "floorCenter": [
+    4.3,
+    5.33
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-03T07:12:11.901Z",
+    "registrationSha256": "979c81588be5532db1a6fb0b91564cc988b1f3eece3591837760a771b5a9fcd3",
+    "anchors": [
+      {
+        "camera": "I25",
+        "pixel": [
+          7880,
+          2602
+        ],
+        "heading": 286,
+        "status": "verified"
+      },
+      {
+        "camera": "I27",
+        "pixel": [
+          8161,
+          2809
+        ],
+        "heading": 299,
+        "status": "verified"
+      },
+      {
+        "camera": "I28",
+        "pixel": [
+          8533,
+          3049
+        ],
+        "heading": 275,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "Same basis as G57\u2013G59: paneled wall toward aisle and windows (+X)",
+      "z": "From end console toward G57, G58, G59 and onward (+Z)",
+      "y": "Up"
+    }
+  },
+  "walls": [
+    {
+      "id": "g62-window-frontage",
+      "kind": "glass",
+      "start": [
+        5.85,
+        0.5
+      ],
+      "end": [
+        5.85,
+        10.16
+      ],
+      "height": 4.1,
+      "thickness": 0.025,
+      "color": "#c9d9d8",
+      "owner": "ground/g62",
+      "sources": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Observed in normal/wide views; extents and dimensions estimated",
+      "privacyBand": false,
+      "frameColor": "#a2aaa7"
+    }
+  ],
+  "openings": [],
+  "floorSections": [
+    {
+      "center": [
+        4.3,
+        5.33
+      ],
+      "size": [
+        3.4,
+        9.66
+      ],
+      "yaw": 0,
+      "color": "#424747"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "g61-g62-table-i9",
+      "neighbor": "ground/g61",
+      "objectId": "g61-table-9",
+      "ownsObject": false,
+      "status": "Shared observation; not rendered again in G62"
+    }
+  ],
+  "ceiling": {
+    "size": [
+      3.4,
+      9.66
+    ],
+    "center": [
+      4.3,
+      5.33
+    ],
+    "height": 4.1,
+    "defaultVisible": false
+  },
+  "notes": [
+    "Dark floor, pale central walk, tan chairs facing glazing, gathered ivory curtains and metal-framed glass are corroborated across wide views. Exact widths and pitch estimated.",
+    "Only the selected five groups are composed. Nearby unassigned foreground blue chair and outside-terminal architecture are not given invented seat IDs.",
+    "Owner correction 2026-11-03: omit all window curtain columns and raise the glass frontage to the 4.1 m ceiling height. Furniture and window positions remain unchanged."
+  ],
+  "circulation": {
+    "id": "g62-window-aisle-margin",
+    "polygon": [
+      [
+        2.6,
+        0.5
+      ],
+      [
+        3.4,
+        0.5
+      ],
+      [
+        3.4,
+        10.16
+      ],
+      [
+        2.6,
+        10.16
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "status": "Estimated continuation of the pale central aisle to the tan chair backs, matching opposing wide views"
+  }
+}

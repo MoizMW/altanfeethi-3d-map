@@ -1,0 +1,87 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-i-lounge-059",
+  "cameras": ["I13", "I24"],
+  "snapshots": {
+    "I13": "evidence/camera-snapshots/I13.jpg",
+    "I24": "evidence/camera-snapshots/I24.jpg"
+  },
+  "wideSnapshots": {
+    "I13": "evidence/wide capture snapshots/I13.jpg",
+    "I24": "evidence/wide capture snapshots/I24.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Same camera mounts with wider zoom per project evidence guide",
+    "roiUsage": "Normal detection-view coordinates were not reused on wide images",
+    "capturedAt": null
+  },
+  "rois": {
+    "I13": {
+      "chairs": "evidence/rois/chair-rois/g59/I13_to_g59.json",
+      "tables": "evidence/rois/table-rois/g59/I13_to_g59.json"
+    },
+    "I24": {
+      "chairs": "evidence/rois/chair-rois/g59/I24_to_g59.json",
+      "tables": "evidence/rois/table-rois/g59/I24_to_g59.json"
+    }
+  },
+  "sourceImageSizes": {
+    "normal": {"I13": [3840, 2160], "I24": [3840, 2160]},
+    "wide": {"I13": [1920, 1080], "I24": [1920, 1080]}
+  },
+  "roiReview": {
+    "reviewCanvas": [1920, 1080],
+    "normalSnapshotDisplayScale": [0.5, 0.5],
+    "status": "Both chair/table overlays were visually reviewed against the normal snapshots displayed at half resolution. The boxes align on a 1920x1080 canvas; historical authoring metadata is unrecorded. I13's Table_I3 observation is partly cropped by the bottom image edge.",
+    "worldCoordinateUsage": "ROI labels establish identity and correspondence; no direct pixel-to-world placement or wide-view transfer was used."
+  },
+  "seatMappings": {
+    "Seat_I9": "g59-chair-09",
+    "Seat_I10": "g59-chair-10",
+    "Seat_I11": "g59-sofa-01",
+    "Seat_I12": "g59-sofa-01"
+  },
+  "tableMappings": {"Table_I3": "g59-coffee-table-01"},
+  "seatCorrespondence": [
+    {"objectId": "g59-chair-09", "seats": ["Seat_I9"], "sources": ["I13"], "status": "ROI-derived-needs-owner-review"},
+    {"objectId": "g59-chair-10", "seats": ["Seat_I10"], "sources": ["I13"], "status": "ROI-derived-needs-owner-review"},
+    {"objectId": "g59-sofa-01", "seats": ["Seat_I12", "Seat_I11"], "sources": ["I24"], "status": "ROI-derived-slot-order-needs-owner-review"}
+  ],
+  "externalObservations": [
+    {
+      "description": "Candidate shared screen behind I9/I10",
+      "camera": "I13",
+      "snapshot": "evidence/wide capture snapshots/I13.jpg",
+      "ownerBlock": "ground/g58",
+      "objectId": "g58-sofa-screen-01",
+      "boundaryId": "g58-sofa-screen-boundary",
+      "renderLocally": false,
+      "status": "candidate-correspondence-needs-owner-review",
+      "reason": "The I22/I24 registration anchors place G58's sofa end next to G59's chair end; matching screen appearance suggests one shared partition. Exact correspondence and seam placement are unconfirmed."
+    }
+  ],
+  "notes": [
+    "I13 identifies two blue armchairs, Seat_I9 and Seat_I10. I24 identifies Seat_I11/I12 on one pale two-seat sofa. Table_I3 appears in both normal views and resolves to one oval glass/brass table.",
+    "Normal and wide views show pale side-wall panels, dark stone beneath the seating, ribbed end partitions and a pale aisle. The compact floor includes the seating and adjacent aisle strip only; window-side chairs and farther lounge clusters are excluded.",
+    "The screen behind the chairs is provisionally referenced to G58's existing sofa screen. It is not rendered again in standalone G59. G59 owns the editable screen behind its own sofa pending review of the next neighbor.",
+    "Furniture, glass materials and panel geometry reuse shared builders. Curved chair shells, wood supports, table shelf, exact screen ribs/transparency, bin, signs and wall-mounted equipment remain simplified or omitted.",
+    "A horizontal rail or glass edge crosses the I24 image near the aisle. Its position, height, purpose and ownership remain unresolved; no barrier is invented across the modeled walking strip.",
+    "The reviewed map crop includes the I24/I13 bay after G58. Saved registration anchors/headings, revision and hash are evidence only; global placement, metric calibration and camera projection remain unresolved."
+  ],
+  "reviewItems": [
+    "Confirm I9/I10 wall-side/aisle-side chair correspondence and I12/I11 local sofa slot order.",
+    "Confirm the candidate shared partition with G58 and establish a seam before composing either block.",
+    "Review ownership beyond the sofa-side screen and inspect its height, transparency and rib details.",
+    "Resolve the rail/glass edge in I24 and any actual effect on corridor access before modeling it.",
+    "Measure the seating and aisle; the 4.2x4.2 m floor and 4.1 m ceiling are visualization estimates. Fit the map basis before assigning global placement."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-opposing-camera-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-derived-needs-human-review",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

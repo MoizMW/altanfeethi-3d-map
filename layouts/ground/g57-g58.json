@@ -1,0 +1,224 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "ground-g57-g58",
+  "name": "G57 + G58 + G59 \u00b7 Connected I-zone lounges",
+  "displayCode": "G57 / G58 / G59",
+  "floor": "ground",
+  "status": "draft-needs-human-review",
+  "floorSize": [
+    4.2,
+    12.56
+  ],
+  "floorCenter": [
+    0.5,
+    3.88
+  ],
+  "components": [
+    {
+      "block": "ground/g57",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "floorSize": [
+          4.2,
+          4.38
+        ],
+        "floorCenter": [
+          0.5,
+          -0.21
+        ],
+        "circulationPolygon": [
+          [
+            1.3,
+            -2.4
+          ],
+          [
+            2.6,
+            -2.4
+          ],
+          [
+            2.6,
+            1.98
+          ],
+          [
+            1.3,
+            1.98
+          ]
+        ],
+        "wallEndpoints": {
+          "g57-paneled-wall": {
+            "start": [
+              -1.5,
+              -2.4
+            ],
+            "end": [
+              -1.5,
+              1.98
+            ]
+          }
+        }
+      }
+    },
+    {
+      "block": "ground/g58",
+      "position": [
+        0,
+        0,
+        4.08
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "wallEndpoints": {
+          "g58-paneled-wall": {
+            "start": [
+              -1.5,
+              -2.1
+            ],
+            "end": [
+              -1.5,
+              1.88
+            ]
+          }
+        },
+        "floorSize": [
+          4.2,
+          3.98
+        ],
+        "floorCenter": [
+          0.5,
+          -0.11
+        ],
+        "circulationPolygon": [
+          [
+            1.3,
+            -2.1
+          ],
+          [
+            2.6,
+            -2.1
+          ],
+          [
+            2.6,
+            1.88
+          ],
+          [
+            1.3,
+            1.88
+          ]
+        ]
+      }
+    },
+    {
+      "block": "ground/g59",
+      "position": [
+        0,
+        0,
+        8.06
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "wallEndpoints": {
+          "g59-paneled-wall": {
+            "start": [
+              -1.5,
+              -2.1
+            ],
+            "end": [
+              -1.5,
+              2.02
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "walls": [],
+  "openings": [],
+  "sharedBoundaries": [
+    {
+      "id": "g57-g58-shared-screen",
+      "kind": "decorative-partition",
+      "owner": "ground/g57",
+      "objectId": "g57-sofa-screen-01",
+      "neighbors": [
+        "ground/g57",
+        "ground/g58"
+      ],
+      "start": [
+        -1.4,
+        1.98
+      ],
+      "end": [
+        1.3,
+        1.98
+      ]
+    },
+    {
+      "id": "g57-g58-aisle-join",
+      "kind": "open-connection",
+      "start": [
+        1.3,
+        1.98
+      ],
+      "end": [
+        2.6,
+        1.98
+      ],
+      "clearWidth": 1.3
+    },
+    {
+      "id": "g58-g59-shared-screen",
+      "kind": "decorative-partition",
+      "owner": "ground/g58",
+      "objectId": "g58-sofa-screen-01",
+      "neighbors": [
+        "ground/g58",
+        "ground/g59"
+      ],
+      "start": [
+        -1.4,
+        5.96
+      ],
+      "end": [
+        1.3,
+        5.96
+      ]
+    },
+    {
+      "id": "g58-g59-aisle-join",
+      "kind": "open-connection",
+      "start": [
+        1.3,
+        5.96
+      ],
+      "end": [
+        2.6,
+        5.96
+      ],
+      "clearWidth": 1.3
+    }
+  ],
+  "evidenceCameras": [
+    "I17",
+    "I26",
+    "I18",
+    "I22",
+    "I13",
+    "I24"
+  ],
+  "notes": [
+    "Owner screenshot: G58 joins to the left behind G57 Seat_I3/I4; G58 Seat_I7/I8 backs meet the reverse of G57 sofa screen. Local +Z points toward this join.",
+    "G57 stays at origin; G58 translates [0,0,4.08] without rotation. Furniture poses, sizes, seat IDs and table IDs remain source-owned and unchanged.",
+    "One G57 screen owns the seam at Z=1.98. G58 already references this screen and has no duplicate chair-side screen. G58 owns the next shared screen toward G59.",
+    "G57 composed floor and aisle crop end at the screen seam; G58 floor begins there, without overlap. Paneled wall endpoints meet there. Continuous pale aisle X=1.3..2.6 stays open. Source crops are preserved.",
+    "Reviewed I17/I26/I18/I22 normal and wide captures plus registered anchors/headings. Owner topology and shared-screen relationship guide the estimated 4.08 m translation; this is not global metric calibration. Neighboring window seating, other blocks and distant glazing remain outside this composition.",
+    "Owner follow-up: add G59 on the left of G58 in the supplied screenshot, behind Seat_I6/I5. Seat_I9/I10 occupies the reverse side of G58 sofa screen, rendered once at Z=5.96.",
+    "G59 translates [0,0,8.06] without rotation. G57/G58 furniture placement and all source objects retain their saved poses and identities. G58 composed crop/aisle ends at its screen; G59 begins there. Twelve seats and three tables render once, with a continuous open pale aisle.",
+    "I13/I24 normal and wide views and registered anchors corroborate the next screened bay. Translation remains estimated from owner topology and existing furniture/screen geometry; no new global calibration or distant window-side furniture is inferred."
+  ]
+}

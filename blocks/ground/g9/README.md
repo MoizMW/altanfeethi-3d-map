@@ -21,10 +21,16 @@ Run `npm test` from the repository root for schema, composition, identity, evide
 
 Owner correction: the passage half has a leftmost outer wall and its own rounded corridor entrance surround, while the G-zone end stays open. Both halves share the dark stone floor. The full TV boundary carries teal/gold geometric cladding. These details supersede the earlier pale-floor/unmodeled outer-edge description below. Wall profiles, pattern scale and dimensions are still estimates.
 
-G9 uses the same provisional area as G11 (43.2 m²), with dimensions oriented as 7.2 × 6 m and an offset floor center of [-1.78, 0]. The owner confirms half is seating and half is open circulation toward G zone. Exact dimensions and block-to-map alignment remain estimated.
+G9 uses a 7.4 × 6 m footprint, centered at [-2.28,0]. The 4.4 m seating compartment adjoins a 3.0 m pale through passage toward G16. This supersedes the earlier equal-area comparison with G11. Exact dimensions and block-to-map alignment remain estimated.
 
 The left half in the B3 description is an open through passage. It is shown with a pale floor surface; both ends remain open. The outer corridor side is unresolved. The TV wall and glazing behind the sofa enclose only the seating half. The rounded entrance behind the armchairs follows B1-wide, with estimated width, height and profile. The G-zone connection is recorded as an open seam for future alignment.
 
 Existing furniture transforms, sizes and human-corrected seat IDs are retained. The old screen's saved position now carries teal/gold wall-cladding geometry. TV, display console and floor lamp are additional editable objects. Neither reflected furniture nor reflected TV is duplicated. Detection ROIs still use only the original zoomed-in images.
 
 Use Walls / Low walls / Ceiling to inspect the shell, and B1 wide / B3 wide for references. Structural geometry is maintained in architecture.json; furniture editing saves only objects.json. These architecture notes supersede the original working-crop/no-shell assumptions.
+
+Owner map-proportion correction: the G9/G16 paired bay is now 5.2 m wide, with depths unchanged at 6/8.4 m and G10/G18 joins fixed. G9 keeps a 3.6 m seating compartment and 1.6 m pale passage. The rotated shared dining room spans 13.2 m across both bays and extends 15.6 m forward; standalone dining floor is 18.2 × 13.2 m including its corridor strip. Furniture sizes are preserved; positions, walls, arches and floor inlays follow the revised shell. Dimensions remain estimates.
+
+Latest owner rebalance: G9/G16 bay width is 5.8 m (G9 passage 2.2 m); G10/G18 composed width is 7.4 m. Combined outer edges and 13.2 m dining width remain fixed; shared seam is X=-5.98. Dining length stays 15.6 m. G9/G16 and dining chairs are slightly larger at 0.94 × 0.94 × 0.98 m, with dining chairs moved 0.12 m back from their tables. Source seat IDs, yaw and manual edits are retained.
+
+Latest owner trial: G9/G16 width restored to 7.4 m; length unchanged, G10/G18 also remain 7.4 m in composition. G9 passage is 3.0 m and seating compartment 4.4 m. Dining is 14.8 m wide × 15.6 m long (source floor 18.2 × 14.8 m), with chairs 1.06 × 1.00 × 1.10 m, tables 1.50 × 0.50 × 0.84 m, wider pair spacing, and slightly larger food counters/piano. Both route ends stay open. Combined span X=-13.38..1.42.

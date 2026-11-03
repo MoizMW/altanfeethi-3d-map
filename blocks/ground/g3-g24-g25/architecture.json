@@ -1,0 +1,1461 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-b-shared-003-024-025",
+  "floorSize": [
+    18.2,
+    14.8
+  ],
+  "floorCenter": [
+    1.5,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "anchors": [
+      {
+        "camera": "B2",
+        "pixel": [
+          5030,
+          3399
+        ],
+        "heading": 67,
+        "status": "verified"
+      },
+      {
+        "camera": "B7",
+        "pixel": [
+          5267,
+          3476
+        ],
+        "heading": 113,
+        "status": "verified"
+      },
+      {
+        "camera": "B8",
+        "pixel": [
+          5625,
+          3258
+        ],
+        "heading": 118,
+        "status": "verified"
+      },
+      {
+        "camera": "B9",
+        "pixel": [
+          5916,
+          3079
+        ],
+        "heading": 128,
+        "status": "verified"
+      },
+      {
+        "camera": "B10",
+        "pixel": [
+          6021,
+          3987
+        ],
+        "heading": 317,
+        "status": "verified"
+      },
+      {
+        "camera": "B11",
+        "pixel": [
+          6347,
+          3773
+        ],
+        "heading": 306,
+        "status": "verified"
+      },
+      {
+        "camera": "B12",
+        "pixel": [
+          6673,
+          3565
+        ],
+        "heading": 303,
+        "status": "verified"
+      },
+      {
+        "camera": "B13",
+        "pixel": [
+          6238,
+          2888
+        ],
+        "heading": 126,
+        "status": "verified"
+      },
+      {
+        "camera": "B14",
+        "pixel": [
+          7009,
+          3357
+        ],
+        "heading": 308,
+        "status": "verified"
+      },
+      {
+        "camera": "C11",
+        "pixel": [
+          5576,
+          3247
+        ],
+        "heading": 239,
+        "status": "verified"
+      },
+      {
+        "camera": "C14",
+        "pixel": [
+          6038,
+          3835
+        ],
+        "heading": 246,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "From corridor/arch side toward the large wall-display end",
+      "z": "Between the two opposing buffet/blue-wall sides",
+      "y": "Up"
+    },
+    "sourceMapCrop": [
+      4400,
+      2300,
+      7600,
+      4700
+    ],
+    "mapReview": "Map confirms two seating banks with food-counter sides. Photo furniture supersedes illustrated symbols. No metric map transform fitted."
+  },
+  "footprint": [
+    [
+      -7.6,
+      -7.4
+    ],
+    [
+      10.6,
+      -7.4
+    ],
+    [
+      10.6,
+      7.4
+    ],
+    [
+      -7.6,
+      7.4
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g3-g24-g25-arch-boundary",
+      "kind": "solid",
+      "start": [
+        -5,
+        -7.4
+      ],
+      "end": [
+        -5,
+        7.4
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "owner": "ground/g3-g24-g25",
+      "sources": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Wide-view topology; local dimensions and profile estimated",
+      "color": "#e7e3d9"
+    },
+    {
+      "id": "g3-g24-g25-screen-wall",
+      "kind": "solid",
+      "start": [
+        10.6,
+        -7.4
+      ],
+      "end": [
+        10.6,
+        7.4
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "owner": "ground/g3-g24-g25",
+      "sources": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Wide-view topology; local dimensions and profile estimated",
+      "color": "#e7e3d9"
+    },
+    {
+      "id": "g3-g24-g25-north-blue-left",
+      "kind": "solid",
+      "start": [
+        -5,
+        -7.4
+      ],
+      "end": [
+        0.61659,
+        -7.4
+      ],
+      "height": 4.1,
+      "thickness": 0.1,
+      "owner": "ground/g3-g24-g25",
+      "sources": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Owner confirms opaque blue reflective cladding; finish sheen estimated from wide images",
+      "color": "#245968",
+      "variant": "opaque-blue-panel"
+    },
+    {
+      "id": "g3-g24-g25-north-blue-right",
+      "kind": "solid",
+      "start": [
+        2.148387,
+        -7.4
+      ],
+      "end": [
+        8.1,
+        -7.4
+      ],
+      "height": 4.1,
+      "thickness": 0.1,
+      "owner": "ground/g3-g24-g25",
+      "sources": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Owner confirms opaque blue reflective cladding; finish sheen estimated from wide images",
+      "color": "#245968",
+      "variant": "opaque-blue-panel"
+    },
+    {
+      "id": "g3-g24-g25-south-blue-left",
+      "kind": "solid",
+      "start": [
+        -5,
+        7.4
+      ],
+      "end": [
+        8.1,
+        7.4
+      ],
+      "height": 4.1,
+      "thickness": 0.1,
+      "owner": "ground/g3-g24-g25",
+      "sources": [
+        "B2",
+        "C11",
+        "C14",
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Owner confirms continuous opaque blue wall on piano side; only the TV-side end passage stays open",
+      "color": "#245968",
+      "variant": "opaque-blue-panel"
+    }
+  ],
+  "openings": [
+    {
+      "id": "g3-g24-g25-corridor-arch-1",
+      "wallId": "g3-g24-g25-arch-boundary",
+      "kind": "rounded-passage",
+      "offset": 3.7,
+      "width": 6.7,
+      "springHeight": 1.85,
+      "height": 3.35,
+      "sources": [
+        "C11",
+        "C14",
+        "B7",
+        "B10"
+      ],
+      "confidence": "Wide captures show adjacent arch bays; exact profile/pier spacing estimated"
+    },
+    {
+      "id": "g3-g24-g25-corridor-arch-2",
+      "wallId": "g3-g24-g25-arch-boundary",
+      "kind": "rounded-passage",
+      "offset": 11.1,
+      "width": 6.7,
+      "springHeight": 1.85,
+      "height": 3.35,
+      "sources": [
+        "C11",
+        "C14",
+        "B7",
+        "B10"
+      ],
+      "confidence": "Wide captures show adjacent arch bays; exact profile/pier spacing estimated"
+    }
+  ],
+  "sharedBoundaries": [],
+  "circulation": {
+    "id": "g3-g24-g25-pale-floor",
+    "polygon": [
+      [
+        -7.6,
+        -7.4
+      ],
+      [
+        10.6,
+        -7.4
+      ],
+      [
+        10.6,
+        7.4
+      ],
+      [
+        -7.6,
+        7.4
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "sources": [
+      "B2",
+      "C11",
+      "C14",
+      "B13",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B14"
+    ],
+    "notes": "Two seating-bank table centerlines are now Z=+/-2.8 m, with slightly larger chairs/tables and increased within-pair separation. The checked TV-side path is 2.5 m wide at local X=8.1..10.6, open at both ends. Existing footprint and arch-side corridor remain unchanged.",
+    "routes": [
+      {
+        "id": "arch-side",
+        "polygon": [
+          [
+            -7.6,
+            -7.4
+          ],
+          [
+            -5,
+            -7.4
+          ],
+          [
+            -5,
+            7.4
+          ],
+          [
+            -7.6,
+            7.4
+          ]
+        ]
+      },
+      {
+        "id": "tv-side",
+        "polygon": [
+          [
+            8.1,
+            -7.4
+          ],
+          [
+            10.6,
+            -7.4
+          ],
+          [
+            10.6,
+            7.4
+          ],
+          [
+            8.1,
+            7.4
+          ]
+        ],
+        "destination": "another zone; connection awaits global alignment"
+      }
+    ]
+  },
+  "ceiling": {
+    "size": [
+      18.2,
+      14.8
+    ],
+    "center": [
+      1.5,
+      0
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "boundaryReview": [
+    {
+      "id": "g3-g24-g25-service-north",
+      "kind": "open-connection",
+      "status": "visible-service-opening-width-and-destination-unresolved",
+      "sources": [
+        "B7",
+        "B11",
+        "B12"
+      ],
+      "notes": "Gap between blue wall sections is provisional; no invented door leaf."
+    },
+    {
+      "id": "g3-g24-g25-service-south",
+      "kind": "solid-wall",
+      "status": "owner-confirmed-continuous-wall",
+      "sources": [
+        "B7",
+        "B11",
+        "B12"
+      ],
+      "notes": "Piano-side middle gap is closed. Only the end opening into the TV-side passage remains."
+    }
+  ],
+  "notes": [
+    "Owner confirms shared G3/G24/G25 area width equals G9 + G10: 7.2 + 8.0 = 15.2 provisional meters. Includes 2.6 m clear corridor at the arch side. Depth 10.6 m and all furniture placement are estimates pending owner review.",
+    "Thirty ROI seat IDs and fifteen table IDs deduplicated across eleven normal views. G3 is overlapping evidence, not a separate enclosure.",
+    "Buffet counters, framed art, plants and wall displays are schematic context without invented occupancy IDs. Decorative glass pattern, diamond floor inlays, serving equipment, signage, exact chair shell and ceiling fittings are unresolved.",
+    "Independent editable shared block; global placement into the existing combined lounge awaits an explicit attachment side.",
+    "Owner refinement: blue panels are opaque glossy cladding. Two photo-based food counters replace reception-style fronts. Black grand piano/bench added behind B17; isolated B41/B42 pair is on the opposite blue-wall side, as B10/B11 show. Chair/table banks fit left of the 1.75 m TV-side passage while preserving IDs, sizes and within-pair layout. Dark diamond floor bands approximate the photo pattern; exact marble veining remains schematic.",
+    "Owner correction: TV-side passage uses charcoal #424747 checked tiles with 0.6 m grout grid. Blue wall runs stop at X=5.85 at both ends, leaving the full 1.75 m route open through Z=-5.3 and +5.3. Wall-mounted TVs have no desk stands.",
+    "Owner correction: piano-side (+Z) blue wall is continuous from X=-5 to 5.85, with no middle opening. TV-side corridor X=5.85..7.6 remains open at the end.",
+    "Owner width correction after clockwise rotation: cross-room local Z span increases from 10.6 to 15.2 m, making combined X endpoints exactly G10 left wall -13.38 and G9 right wall 1.82. The two furniture banks shift 2.3 m apart toward their respective blue walls; object sizes, labels, and within-bank offsets stay intact. Arches and floor pattern widen with the shell. Individual block uses the same expanded dimensions.",
+    "Owner map-proportion correction: source floor now 18.2 by 13.2 m centered [1.5,0]. Shared front corridor omitted in composition gives a 15.6 m long by 13.2 m wide room. Existing clockwise rotation retained. Walls, arch bays and diamond inlays follow the new shell; furniture sizes/scales are unchanged, banks move 1 m inward across Z and tables spread along the longer X axis. TV-side route stays 1.75 m wide and open at both ends.",
+    "Owner restores wider G9/G16 bay: dining width grows to 14.8 m. Keep 15.6 m integrated length and clockwise orientation. Chairs grow to 1.06 x 1.00 x 1.10 m; tables to 1.50 x 0.50 x 0.84 m. Pair spacing grows across Z and columns spread 2% along X; counters and piano are slightly larger. TV-side path remains 1.75 m.",
+    "Owner seating refinement: bring two main banks 0.564 m inward each, increase chairs to 1.12 x 1.03 x 1.16 m and tables to 1.58 x 0.52 x 0.90 m; each chair moves another 0.08 m back from its table. Widen TV-side checked route from 1.75 to 2.5 m by moving its inner edge to X=8.1. Slightly compact longitudinal table-column spacing to retain clearance without changing the floor footprint or source labels."
+  ],
+  "floorInlays": [
+    {
+      "id": "diamond--0.72-2",
+      "polygon": [
+        [
+          -5.0,
+          -6.024717
+        ],
+        [
+          -3.253675,
+          -7.4
+        ],
+        [
+          -2.84591,
+          -7.4
+        ],
+        [
+          -5.0,
+          -5.703585
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond--0.72-3",
+      "polygon": [
+        [
+          -5.0,
+          -2.394528
+        ],
+        [
+          1.355899,
+          -7.4
+        ],
+        [
+          1.763663,
+          -7.4
+        ],
+        [
+          -5.0,
+          -2.073396
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond--0.72-4",
+      "polygon": [
+        [
+          -5.0,
+          1.235661
+        ],
+        [
+          5.965473,
+          -7.4
+        ],
+        [
+          6.373237,
+          -7.4
+        ],
+        [
+          -5.0,
+          1.556793
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond--0.72-5",
+      "polygon": [
+        [
+          -5.0,
+          4.865849
+        ],
+        [
+          8.1,
+          -5.450823
+        ],
+        [
+          8.1,
+          -5.12969
+        ],
+        [
+          -5.0,
+          5.186982
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond--0.72-6",
+      "polygon": [
+        [
+          -3.60826,
+          7.4
+        ],
+        [
+          8.1,
+          -1.820634
+        ],
+        [
+          8.1,
+          -1.499502
+        ],
+        [
+          -3.200496,
+          7.4
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond--0.72-7",
+      "polygon": [
+        [
+          1.001314,
+          7.4
+        ],
+        [
+          8.1,
+          1.809555
+        ],
+        [
+          8.1,
+          2.130687
+        ],
+        [
+          1.409078,
+          7.4
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond--0.72-8",
+      "polygon": [
+        [
+          5.610887,
+          7.4
+        ],
+        [
+          8.1,
+          5.439743
+        ],
+        [
+          8.1,
+          5.760874
+        ],
+        [
+          6.018652,
+          7.4
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond-0.72-2",
+      "polygon": [
+        [
+          6.018652,
+          -7.4
+        ],
+        [
+          8.1,
+          -5.760874
+        ],
+        [
+          8.1,
+          -5.439743
+        ],
+        [
+          5.610887,
+          -7.4
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond-0.72-3",
+      "polygon": [
+        [
+          1.409078,
+          -7.4
+        ],
+        [
+          8.1,
+          -2.130687
+        ],
+        [
+          8.1,
+          -1.809555
+        ],
+        [
+          1.001314,
+          -7.4
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond-0.72-4",
+      "polygon": [
+        [
+          -3.200496,
+          -7.4
+        ],
+        [
+          8.1,
+          1.499502
+        ],
+        [
+          8.1,
+          1.820634
+        ],
+        [
+          -3.60826,
+          -7.4
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond-0.72-5",
+      "polygon": [
+        [
+          -5.0,
+          -5.186982
+        ],
+        [
+          8.1,
+          5.12969
+        ],
+        [
+          8.1,
+          5.450823
+        ],
+        [
+          -5.0,
+          -4.865849
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond-0.72-6",
+      "polygon": [
+        [
+          -5.0,
+          -1.556793
+        ],
+        [
+          6.373237,
+          7.4
+        ],
+        [
+          5.965473,
+          7.4
+        ],
+        [
+          -5.0,
+          -1.235661
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond-0.72-7",
+      "polygon": [
+        [
+          -5.0,
+          2.073396
+        ],
+        [
+          1.763663,
+          7.4
+        ],
+        [
+          1.355899,
+          7.4
+        ],
+        [
+          -5.0,
+          2.394528
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "diamond-0.72-8",
+      "polygon": [
+        [
+          -5.0,
+          5.703585
+        ],
+        [
+          -2.84591,
+          7.4
+        ],
+        [
+          -3.253675,
+          7.4
+        ],
+        [
+          -5.0,
+          6.024717
+        ]
+      ],
+      "color": "#4a4540",
+      "layer": 0
+    },
+    {
+      "id": "tv-side-walking-strip",
+      "polygon": [
+        [
+          8.1,
+          -7.4
+        ],
+        [
+          10.6,
+          -7.4
+        ],
+        [
+          10.6,
+          7.4
+        ],
+        [
+          8.1,
+          7.4
+        ]
+      ],
+      "color": "#424747",
+      "layer": 0
+    },
+    {
+      "id": "tv-tile-column-1",
+      "polygon": [
+        [
+          8.694999999999999,
+          -7.4
+        ],
+        [
+          8.705,
+          -7.4
+        ],
+        [
+          8.705,
+          7.4
+        ],
+        [
+          8.694999999999999,
+          7.4
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-column-2",
+      "polygon": [
+        [
+          9.294999999999998,
+          -7.4
+        ],
+        [
+          9.305,
+          -7.4
+        ],
+        [
+          9.305,
+          7.4
+        ],
+        [
+          9.294999999999998,
+          7.4
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-column-3",
+      "polygon": [
+        [
+          9.894999999999998,
+          -7.4
+        ],
+        [
+          9.905,
+          -7.4
+        ],
+        [
+          9.905,
+          7.4
+        ],
+        [
+          9.894999999999998,
+          7.4
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-column-4",
+      "polygon": [
+        [
+          10.495,
+          -7.4
+        ],
+        [
+          10.505,
+          -7.4
+        ],
+        [
+          10.505,
+          7.4
+        ],
+        [
+          10.495,
+          7.4
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-1",
+      "polygon": [
+        [
+          8.1,
+          -6.805000000000001
+        ],
+        [
+          10.6,
+          -6.805000000000001
+        ],
+        [
+          10.6,
+          -6.795000000000001
+        ],
+        [
+          8.1,
+          -6.795000000000001
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-2",
+      "polygon": [
+        [
+          8.1,
+          -6.205
+        ],
+        [
+          10.6,
+          -6.205
+        ],
+        [
+          10.6,
+          -6.195
+        ],
+        [
+          8.1,
+          -6.195
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-3",
+      "polygon": [
+        [
+          8.1,
+          -5.605
+        ],
+        [
+          10.6,
+          -5.605
+        ],
+        [
+          10.6,
+          -5.595000000000001
+        ],
+        [
+          8.1,
+          -5.595000000000001
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-4",
+      "polygon": [
+        [
+          8.1,
+          -5.005
+        ],
+        [
+          10.6,
+          -5.005
+        ],
+        [
+          10.6,
+          -4.995
+        ],
+        [
+          8.1,
+          -4.995
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-5",
+      "polygon": [
+        [
+          8.1,
+          -4.405
+        ],
+        [
+          10.6,
+          -4.405
+        ],
+        [
+          10.6,
+          -4.3950000000000005
+        ],
+        [
+          8.1,
+          -4.3950000000000005
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-6",
+      "polygon": [
+        [
+          8.1,
+          -3.8050000000000006
+        ],
+        [
+          10.6,
+          -3.8050000000000006
+        ],
+        [
+          10.6,
+          -3.795000000000001
+        ],
+        [
+          8.1,
+          -3.795000000000001
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-7",
+      "polygon": [
+        [
+          8.1,
+          -3.205
+        ],
+        [
+          10.6,
+          -3.205
+        ],
+        [
+          10.6,
+          -3.1950000000000003
+        ],
+        [
+          8.1,
+          -3.1950000000000003
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-8",
+      "polygon": [
+        [
+          8.1,
+          -2.6050000000000004
+        ],
+        [
+          10.6,
+          -2.6050000000000004
+        ],
+        [
+          10.6,
+          -2.5950000000000006
+        ],
+        [
+          8.1,
+          -2.5950000000000006
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-9",
+      "polygon": [
+        [
+          8.1,
+          -2.005000000000001
+        ],
+        [
+          10.6,
+          -2.005000000000001
+        ],
+        [
+          10.6,
+          -1.995000000000001
+        ],
+        [
+          8.1,
+          -1.995000000000001
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-10",
+      "polygon": [
+        [
+          8.1,
+          -1.4050000000000002
+        ],
+        [
+          10.6,
+          -1.4050000000000002
+        ],
+        [
+          10.6,
+          -1.3950000000000005
+        ],
+        [
+          8.1,
+          -1.3950000000000005
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-11",
+      "polygon": [
+        [
+          8.1,
+          -0.8050000000000007
+        ],
+        [
+          10.6,
+          -0.8050000000000007
+        ],
+        [
+          10.6,
+          -0.7950000000000007
+        ],
+        [
+          8.1,
+          -0.7950000000000007
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-12",
+      "polygon": [
+        [
+          8.1,
+          -0.20500000000000107
+        ],
+        [
+          10.6,
+          -0.20500000000000107
+        ],
+        [
+          10.6,
+          -0.19500000000000106
+        ],
+        [
+          8.1,
+          -0.19500000000000106
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-13",
+      "polygon": [
+        [
+          8.1,
+          0.39499999999999946
+        ],
+        [
+          10.6,
+          0.39499999999999946
+        ],
+        [
+          10.6,
+          0.40499999999999947
+        ],
+        [
+          8.1,
+          0.40499999999999947
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-14",
+      "polygon": [
+        [
+          8.1,
+          0.995
+        ],
+        [
+          10.6,
+          0.995
+        ],
+        [
+          10.6,
+          1.005
+        ],
+        [
+          8.1,
+          1.005
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-15",
+      "polygon": [
+        [
+          8.1,
+          1.5949999999999998
+        ],
+        [
+          10.6,
+          1.5949999999999998
+        ],
+        [
+          10.6,
+          1.6049999999999995
+        ],
+        [
+          8.1,
+          1.6049999999999995
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-16",
+      "polygon": [
+        [
+          8.1,
+          2.1949999999999994
+        ],
+        [
+          10.6,
+          2.1949999999999994
+        ],
+        [
+          10.6,
+          2.204999999999999
+        ],
+        [
+          8.1,
+          2.204999999999999
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-17",
+      "polygon": [
+        [
+          8.1,
+          2.794999999999999
+        ],
+        [
+          10.6,
+          2.794999999999999
+        ],
+        [
+          10.6,
+          2.804999999999999
+        ],
+        [
+          8.1,
+          2.804999999999999
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-18",
+      "polygon": [
+        [
+          8.1,
+          3.3949999999999987
+        ],
+        [
+          10.6,
+          3.3949999999999987
+        ],
+        [
+          10.6,
+          3.4049999999999985
+        ],
+        [
+          8.1,
+          3.4049999999999985
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-19",
+      "polygon": [
+        [
+          8.1,
+          3.995
+        ],
+        [
+          10.6,
+          3.995
+        ],
+        [
+          10.6,
+          4.005
+        ],
+        [
+          8.1,
+          4.005
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-20",
+      "polygon": [
+        [
+          8.1,
+          4.595
+        ],
+        [
+          10.6,
+          4.595
+        ],
+        [
+          10.6,
+          4.6049999999999995
+        ],
+        [
+          8.1,
+          4.6049999999999995
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-21",
+      "polygon": [
+        [
+          8.1,
+          5.194999999999999
+        ],
+        [
+          10.6,
+          5.194999999999999
+        ],
+        [
+          10.6,
+          5.204999999999999
+        ],
+        [
+          8.1,
+          5.204999999999999
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-22",
+      "polygon": [
+        [
+          8.1,
+          5.794999999999999
+        ],
+        [
+          10.6,
+          5.794999999999999
+        ],
+        [
+          10.6,
+          5.804999999999999
+        ],
+        [
+          8.1,
+          5.804999999999999
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-23",
+      "polygon": [
+        [
+          8.1,
+          6.394999999999999
+        ],
+        [
+          10.6,
+          6.394999999999999
+        ],
+        [
+          10.6,
+          6.4049999999999985
+        ],
+        [
+          8.1,
+          6.4049999999999985
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    },
+    {
+      "id": "tv-tile-row-24",
+      "polygon": [
+        [
+          8.1,
+          6.994999999999998
+        ],
+        [
+          10.6,
+          6.994999999999998
+        ],
+        [
+          10.6,
+          7.004999999999998
+        ],
+        [
+          8.1,
+          7.004999999999998
+        ]
+      ],
+      "color": "#717878",
+      "layer": 1
+    }
+  ]
+}

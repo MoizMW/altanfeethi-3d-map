@@ -1,0 +1,24 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-i-lounge-058",
+  "slug": "g58",
+  "name": "G58 · I-zone screened lounge",
+  "floor": "ground",
+  "groups": ["g58"],
+  "zone": "I",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  },
+  "dependencies": [
+    {
+      "block": "ground/g57",
+      "reason": "Candidate shared screen behind G58's I7/I8 chairs; references G57's existing screen without duplicating it. The seam transform and physical correspondence require review."
+    }
+  ]
+}

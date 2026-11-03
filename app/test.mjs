@@ -26,16 +26,16 @@ test('Wider arch piers stay straight through the spring and meet a smooth ellipt
   }
 });
 
-test('G9 equals G11 area while the G-zone half remains open at both ends',async()=>{
+test('Compact G9 retains seating width and an open through passage',async()=>{
   const [g9,g11]=await Promise.all(['g9','g11'].map(async key=>JSON.parse(await readFile(new URL(`../blocks/ground/${key}/architecture.json`,import.meta.url)))));
-  assert.equal(g9.floorSize[0]*g9.floorSize[1],g11.floorSize[0]*g11.floorSize[1]);
+  assert.equal(g9.floorSize[1],6);assert.equal(g9.floorSize[0],7.4);assert.ok(Math.abs(g9.circulation.polygon[1][0]-g9.circulation.polygon[0][0]-3.0)<1e-8);
   const shell=buildArchitecture(g9);shell.updateMatrixWorld(true);
-  for(const [z,dz]of [[4,-1],[-4,1]])assert.equal(new THREE.Raycaster(new THREE.Vector3(-3.5,1,z),new THREE.Vector3(0,0,dz)).intersectObject(shell,true).length,0);
-  assert.ok(new THREE.Raycaster(new THREE.Vector3(-3.5,3.6,4),new THREE.Vector3(0,0,-1)).intersectObject(shell,true).length,'Passage entrance must have a rounded wall surround overhead');
+  for(const [z,dz]of [[4,-1],[-4,1]])assert.equal(new THREE.Raycaster(new THREE.Vector3(-4.58,1,z),new THREE.Vector3(0,0,dz)).intersectObject(shell,true).length,0);
+  assert.ok(new THREE.Raycaster(new THREE.Vector3(-4.58,3.6,4),new THREE.Vector3(0,0,-1)).intersectObject(shell,true).length,'Passage entrance must have a rounded wall surround overhead');
   assert.ok(new THREE.Raycaster(new THREE.Vector3(-6,1,0),new THREE.Vector3(1,0,0)).intersectObject(shell,true).length,'Outer left wall must enclose the passage side');
-  assert.equal(g9.circulation.surfaceMaterial,'same-as-seating');assert.equal(g9.walls.find(w=>w.id==='g9-tv-wall').finish,'teal-gold-panels');
-  const glass=new THREE.Raycaster(new THREE.Vector3(0,1,-4),new THREE.Vector3(0,0,1)).intersectObject(shell,true);assert.ok(glass.length);
-  const entrance=new THREE.Raycaster(new THREE.Vector3(0,1,4),new THREE.Vector3(0,0,-1)).intersectObject(shell,true);assert.ok(entrance.length);assert.ok(entrance[0].point.z<0,'Rounded entrance must remain clear');
+  assert.equal(g9.circulation.surfaceMaterial,'pale-stone');assert.equal(g9.walls.find(w=>w.id==='g9-tv-wall').finish,'teal-gold-panels');
+  const glass=new THREE.Raycaster(new THREE.Vector3(-2,1,-4),new THREE.Vector3(0,0,1)).intersectObject(shell,true);assert.ok(glass.length);
+  const entrance=new THREE.Raycaster(new THREE.Vector3(-2,1,4),new THREE.Vector3(0,0,-1)).intersectObject(shell,true);assert.ok(entrance.length);assert.ok(entrance[0].point.z<0,'Rounded entrance must remain clear');
 });
 
 test('G11 access passages remain clear while side walls and glazing close the shell',async()=>{
@@ -201,6 +201,14 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     const origin=`http://127.0.0.1:${server.address().port}`,query='?block=ground%2Fg9';
     const listing=await(await fetch(`${origin}/api/blocks`)).json();assert.ok(listing.blocks.some(b=>b.key==='ground/g9'));assert.ok(listing.blocks.some(b=>b.key==='ground/g32'));
     const response=await fetch(`${origin}/api/block${query}`);assert.equal(response.status,200);const data=await response.json();assert.deepEqual(data.block.objects,block.objects);
+    assert.deepEqual(data.block.evidence.tableDrawings,['B1']);
+    const drawing=await fetch(`${origin}/api/evidence/table-drawing/B1${query}`);
+    assert.equal(drawing.status,200);assert.equal(drawing.headers.get('content-type'),'image/png');
+    assert.equal((await fetch(`${origin}/api/evidence/table-drawing/G2${query}`)).status,404);
+    const g16Drawings=await(await fetch(`${origin}/api/block?block=ground/g16`)).json();
+    assert.deepEqual(g16Drawings.block.evidence.tableDrawings,['G1','G2']);
+    const combinedDrawings=await(await fetch(`${origin}/api/block?layout=ground/g9-g10`)).json();
+    assert.deepEqual(combinedDrawings.block.evidence.tableDrawings,['B1','B4','B5','C1','C2']);
     const stale=await fetch(`${origin}/api/block${query}`,{method:'PUT',body:JSON.stringify({revision:'stale',block})});assert.equal(stale.status,409);
     const jpg=Buffer.from(await(await fetch(`${origin}/api/evidence/camera/B1${query}`)).arrayBuffer());assert.equal(jpg[0],255);assert.equal(jpg[1],216);
     assert.equal((await fetch(`${origin}/shared/schema/block-schema.js`)).status,200);assert.equal((await fetch(`${origin}/server.mjs`)).status,404);assert.equal((await fetch(`${origin}/api/block?block=../../private`)).status,400);
@@ -220,7 +228,7 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     assert.equal((await fetch(`${origin}/api/evidence/map?layout=first/bottom-right`)).status,200);
     assert.equal((await fetch(`${origin}/lounge-tables.js`)).status,200);
     assert.equal((await fetch(`${origin}/api/block?layout=first/bottom-right`,{method:'PUT',body:'{}'})).status,405);
-    for(const slug of ['g18','g20','g21','g27','g28']){
+    for(const slug of ['g18','g20','g21','g27','g28','g61','g62']){
       assert.ok(listing.blocks.some(b=>b.key===`ground/${slug}`));
       const data=await(await fetch(`${origin}/api/block?block=ground/${slug}`)).json();validateBlock(data.block);
       for(const id of data.block.evidence.cameras)assert.equal((await fetch(`${origin}/api/evidence/camera/${id}?block=ground/${slug}`)).status,200);
@@ -231,6 +239,18 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     staff[0].seats=['Seat_SGS_reviewed_01'];staff[0].yaw=30;staff[0].size=[.7,1.3,.75];validateBlock(g32.block);
     staff[1].seats=staff[0].seats;assert.throws(()=>validateBlock(g32.block),/already belongs/);
     assert.equal((await fetch(`${origin}/reception-objects.js`)).status,200);
+    for(const flag of ['saudi','altanfeethi']){
+      const asset=await fetch(`${origin}/shared/assets/flags/${flag}.svg`);
+      assert.equal(asset.status,200);assert.equal(asset.headers.get('content-type'),'image/svg+xml');
+      assert.match(await asset.text(),/<svg/);
+    }
+    assert.equal((await fetch(`${origin}/shared/assets/flags/saudi-source.svg`)).status,404);
+    for(const index of [1,2,3]){
+      const portrait=await fetch(`${origin}/shared/assets/portraits/reception-${index}.png`);
+      assert.equal(portrait.status,200);assert.equal(portrait.headers.get('content-type'),'image/png');
+      assert.deepEqual([...new Uint8Array(await portrait.arrayBuffer()).slice(0,8)],[137,80,78,71,13,10,26,10]);
+    }
+    assert.equal((await fetch(`${origin}/shared/assets/portraits/README.md`)).status,404);
     for(const id of g32.block.evidence.cameras){const photo=await fetch(`${origin}/api/evidence/camera/${id}?block=ground/g32`);assert.equal(photo.status,200);assert.equal(photo.headers.get('content-type'),'image/jpeg');}
   }finally{await new Promise(resolve=>server.close(resolve));}
 });
@@ -253,7 +273,7 @@ test('G9/G10/G11 composition keeps source seating and opens onto one shared corr
   assert.equal(block.architecture.walls.filter(w=>w.id==='g10-g11-shared-partition').length,1);
   assert.ok(block.objects.filter(o=>o.sourceBlock==='ground/g11').every(o=>o.position[0]<-11.98));
   const shell=buildArchitecture(block.architecture);shell.updateMatrixWorld(true);
-  for(const x of [0,-10.33,-7.03,-17.58,-13.58]){const hits=new THREE.Raycaster(new THREE.Vector3(x,.7,4.3),new THREE.Vector3(0,0,-1)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.z<0,'Lounge entrances must stay clear from common corridor');}
+  for(const x of [-.2,-10.33,-7.03,-17.58,-13.58]){const hits=new THREE.Raycaster(new THREE.Vector3(x,.7,4.3),new THREE.Vector3(0,0,-1)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.z<0,'Lounge entrances must stay clear from common corridor');}
   assert.equal(new THREE.Raycaster(new THREE.Vector3(-20,.7,4.3),new THREE.Vector3(1,0,0)).intersectObject(shell,true).length,0,'Corridor must remain continuous');
 });
 
@@ -269,12 +289,12 @@ test('G16 reconciles camera ROI identities while leaving neighboring Table_G5 co
     }
   }
   assert.equal(o.objects.find(v=>v.externalId==='Table_G2').variant,'square-stone');
-  const archWall=a.walls.find(w=>w.id==='g16-neighbor-arch-wall');assert.deepEqual(archWall.end,[-3,5.2]);
+  const archWall=a.walls.find(w=>w.id==='g16-neighbor-arch-wall');assert.deepEqual(archWall.end,[-3.7,5.2]);
   assert.equal(a.circulation.route.cameraAtEntrance,'G23');
-  assert.deepEqual(a.circulation.polygon,[[-3,.9],[-.7,.9],[-.7,5.2],[-3,5.2]]);
+  assert.deepEqual(a.circulation.polygon,[[-3.7,.9],[-.7,.9],[-.7,5.2],[-3.7,5.2]]);
   assert.equal(a.walls.find(w=>w.id==='g16-window-back').variant,undefined);
   assert.equal(a.circulation.connections[0].neighborBoundary,'g9-passage-g-zone');
-  for(const cutaway of [false,true]){const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);const hits=new THREE.Raycaster(new THREE.Vector3(-4,.7,-.8),new THREE.Vector3(1,0,0)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.x>2.8,'Neighbor arch should stay open');}
+  for(const cutaway of [false,true]){const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);const hits=new THREE.Raycaster(new THREE.Vector3(-4,.7,-.8),new THREE.Vector3(1,0,0)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.x>2.4,'Neighbor arch should stay open');}
 });
 
 test('G16/G18/G20 joins align widths and preserve both arched walking connections',async()=>{
@@ -303,8 +323,8 @@ test('G16/G18/G20 joins align widths and preserve both arched walking connection
   const originals=(await Promise.all(['ground/g16','ground/g18','ground/g20'].map(load))).flatMap(({block})=>block.objects);
   for(const o of block.objects){const source=originals.find(v=>v.id===o.id);assert.deepEqual(o.seats,source.seats);assert.deepEqual(o.size,source.size);assert.deepEqual(o.scale,source.scale);}
   const shell=buildArchitecture(block.architecture);shell.updateMatrixWorld(true);
-  for(const z of [1,1.7,2.2]){const hits=new THREE.Raycaster(new THREE.Vector3(-3.5,.7,z),new THREE.Vector3(1,0,0)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.x>2.8,'Join must stay open through the arch');}
-  for(const cutaway of [false,true]){const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);const hits=new THREE.Raycaster(new THREE.Vector3(-12,.7,1),new THREE.Vector3(1,0,0)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.x>2.8,'White path must pass through both arches');}
+  for(const z of [1,1.7,2.2]){const hits=new THREE.Raycaster(new THREE.Vector3(-3.5,.7,z),new THREE.Vector3(1,0,0)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.x>2,'Join must stay open through the arch');}
+  for(const cutaway of [false,true]){const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);const hits=new THREE.Raycaster(new THREE.Vector3(-12,.7,1),new THREE.Vector3(1,0,0)).intersectObject(shell,true);assert.ok(hits.length);assert.ok(hits[0].point.x>2,'White path must pass through both arches');}
   const lintel=buildArchitecture(block.architecture);lintel.updateMatrixWorld(true);assert.ok(new THREE.Raycaster(new THREE.Vector3(-12,3.8,1),new THREE.Vector3(1,0,0)).intersectObject(lintel,true).some(h=>Math.abs(h.point.x+11)<.2),'New arch must have a solid surround overhead');
 });
 
@@ -314,7 +334,8 @@ test('B/G floor assembly aligns paired bay lengths and keeps G9 passage open int
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
   const {block}=await composeLayout(root,'ground/b-g-lounges',load);validateBlock(block);
-  assert.equal(block.objects.flatMap(o=>o.seats).length,115);assert.equal(block.groups.length,12);
+  assert.equal(block.objects.filter(o=>!['ground/departure-reception','ground/g32','ground/egate-office-passage'].includes(o.sourceBlock)).flatMap(o=>o.seats).length,174);
+  assert.equal(block.objects.flatMap(o=>o.seats).length,185);
   const spans=block.architecture.floorSections.slice(0,6).map(f=>{const r=f.yaw*Math.PI/180,w=Math.abs(Math.cos(r))*f.size[0]+Math.abs(Math.sin(r))*f.size[1];return [f.center[0]-w/2,f.center[0]+w/2];});
   for(const [b,g]of [[0,3],[1,4],[2,5]])for(let i=0;i<2;i++)assert.ok(Math.abs(spans[b][i]-spans[g][i])<1e-8,'Paired floor bay boundaries must align');
   const added=block.architecture.floorSections.slice(6,8);assert.equal(added[0].size[0],added[1].size[0]);assert.equal(added[0].center[0],added[1].center[0]);
@@ -333,7 +354,7 @@ test('B/G floor assembly aligns paired bay lengths and keeps G9 passage open int
     const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
     const receptionRoute=new THREE.Raycaster(new THREE.Vector3(-27.5,.7,2),new THREE.Vector3(0,0,-1),0,12).intersectObject(shell,true);assert.equal(receptionRoute.length,0,'Half-open reception/Zone C connection must stay clear');
     const g20Entry=new THREE.Raycaster(new THREE.Vector3(-20,.7,-7.7),new THREE.Vector3(-1,0,0),0,8).intersectObject(shell,true);assert.equal(g20Entry.length,0,'G20 must connect through G2 arch');
-    const passage=new THREE.Raycaster(new THREE.Vector3(-3.5,.7,1),new THREE.Vector3(0,0,-1),0,7).intersectObject(shell,true);assert.equal(passage.length,0,'G9 passage must stay open into G16');
+    const passage=new THREE.Raycaster(new THREE.Vector3(-4.58,.7,1),new THREE.Vector3(0,0,-1),0,7).intersectObject(shell,true).filter(h=>h.object.isMesh);assert.equal(passage.length,0,'G9 passage must stay open into G16');
     const route=new THREE.Raycaster(new THREE.Vector3(-3.5,.7,-6.7),new THREE.Vector3(-1,0,0),0,17).intersectObject(shell,true);assert.equal(route.length,0,'G-zone route must pass through both arches');
   }
 });
@@ -357,7 +378,7 @@ test('G22, G21 and G2 join in owner order with one arch per seam and a continuou
     }
   }
   assert.ok(!block.architecture.walls.some(w=>w.id==='g21-arch-wall-positive-z'));
-  for(const [x,id] of [[-29.38,'g2-right-arch-wall'],[-38.18,'g22-arch-wall-positive-z']]){
+  for(const [x,id] of [[-29.38,'g2-right-arch-wall'],[-36.78,'g22-arch-wall-positive-z']]){
     const owners=block.architecture.walls.filter(w=>Math.abs(w.start[0]-x)<1e-8&&Math.abs(w.end[0]-x)<1e-8&&Math.min(w.start[1],w.end[1])< -7.2&&Math.max(w.start[1],w.end[1])> -7.2);
     assert.deepEqual(owners.map(w=>w.id),[id],'Each shared arch must render once');
   }
@@ -378,7 +399,7 @@ test('G22, G21 and G2 join in owner order with one arch per seam and a continuou
   for(const cutaway of [false,true]){
     const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
     for(const z of [-8.5,-7.2,-5.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-46.8,.7,z),new THREE.Vector3(1,0,0),0,25.7).intersectObject(shell,true).length,0,'Walking route must connect G22 through G21 into G2');
-    if(!cutaway)for(const x of [-46.98,-38.18,-29.38])assert.ok(new THREE.Raycaster(new THREE.Vector3(x-1,3.8,-7.2),new THREE.Vector3(1,0,0),0,2).intersectObject(shell,true).length,'All new connections have overhead arch surrounds');
+    if(!cutaway)for(const x of [-44.18,-36.78,-29.38])assert.ok(new THREE.Raycaster(new THREE.Vector3(x-1,3.8,-7.2),new THREE.Vector3(1,0,0),0,2).intersectObject(shell,true).length,'All new connections have overhead arch surrounds');
     shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
   }
 });
@@ -388,19 +409,19 @@ test('G12/G14 fills both G21/G22 bays and connects its C19 end to Zone C without
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
   const {block}=await composeLayout(root,'ground/b-g-lounges',load);
-  assert.equal(block.name,'B + C + G · Combined lounges');
+  assert.equal(block.name,'B + C + E + G · Lounges, reception and SGS');
   const index=layout.components.findIndex(p=>p.block==='ground/g12-g14'),part=layout.components[index];
   const floor=block.architecture.floorSections[index];
-  assert.ok(Math.abs(floor.center[0]-floor.size[1]/2+46.98)<1e-8);
+  assert.ok(Math.abs(floor.center[0]-floor.size[1]/2+44.18)<1e-8);
   assert.ok(Math.abs(floor.center[0]+floor.size[1]/2+29.38)<1e-8);
   assert.ok(Math.abs(floor.center[1]-floor.size[0]/2+3)<1e-8,'Floor-center override must align the G-row seam');
   assert.ok(Math.abs(floor.center[1]+floor.size[0]/2-5.6)<1e-8,'Outer corridor edge must match the existing front corridor');
   for(const label of ['Seat_C19','Seat_C20'])assert.ok(block.objects.find(o=>o.seats.includes(label)).position[0]>-31,'C19/C20 end must face the Zone C seam');
   const {block:source}=await load(part.block),r=part.yaw*Math.PI/180;
   for(const o of source.objects){
-    const actual=block.objects.find(v=>v.id===o.id),offset=part.objectOffsets[o.id]||[0,0,0];
+    const actual=block.objects.find(v=>v.id===o.id),offset=part.objectOffsets?.[o.id]||[0,0,0];
     assert.deepEqual(actual.size,o.size);assert.deepEqual(actual.scale,o.scale);assert.deepEqual(actual.seats,o.seats);
-    const expectedShift=Math.abs(o.position[2])>2.2?Math.sign(o.position[2])*2.2:0;
+    const expectedShift=0;
     assert.equal(offset[2],expectedShift,'End groups move rigidly; the central group stays fixed');
     const [x,y,z]=o.position.map((v,i)=>v+offset[i]);
     const expected=[Math.cos(r)*x+Math.sin(r)*z+part.position[0],y,-Math.sin(r)*x+Math.cos(r)*z+part.position[2]];
@@ -426,7 +447,7 @@ test('G12/G14 fills both G21/G22 bays and connects its C19 end to Zone C without
     const cast=(p,d,length)=>new THREE.Raycaster(new THREE.Vector3(...p),new THREE.Vector3(...d),0,length).intersectObject(shell,true);
     assert.equal(cast([-46,.7,4.5],[1,0,0],21).length,0,'Front corridor must connect C lounge to Zone C');
     assert.equal(cast([-25.5,.7,4.5],[0,0,-1],4).length,0,'Existing Zone C approach arch must remain open');
-    assert.equal(cast([-38.18,.7,4.5],[0,0,-1],4).length,0,'Central lounge frontage arch must remain open');
+    assert.equal(cast([-36.78,.7,4.5],[0,0,-1],4).length,0,'Central lounge frontage arch must remain open');
     assert.ok(cast([-30.5,.7,0],[1,0,0],2).length,'Decorative C19 end backing stays closed beside Zone C');
     shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
   }
@@ -442,14 +463,71 @@ test('G27 G69/G63 end joins G22 G56/G62 with matching shell dimensions and one s
   assert.ok(Math.abs(g27.center[0]+g27.size[1]/2-(g22.center[0]-g22.size[1]/2))<1e-8,'Bay ends must meet without a gap or overlap');
   assert.equal(g27.size[0],g22.size[0]);assert.equal(g27.center[1],g22.center[1]);
   for(const label of ['Seat_G69','Seat_G63'])assert.ok(block.objects.find(o=>o.seats.includes(label)).position[0]>-49,'G69/G63 must be at the G22 end');
-  for(const label of ['Seat_G56','Seat_G62'])assert.ok(block.objects.find(o=>o.seats.includes(label)).position[0]<-45,'G56/G62 must be at the G27 end');
+  for(const label of ['Seat_G56','Seat_G62'])assert.ok(block.objects.find(o=>o.seats.includes(label)).position[0]<-42.7,'G56/G62 must be at the G27 end');
   assert.ok(!block.architecture.walls.some(w=>w.id==='g27-arch-wall-positive-z'));
-  const seam=block.architecture.walls.filter(w=>Math.abs(w.start[0]+46.98)<1e-8&&Math.abs(w.end[0]+46.98)<1e-8&&Math.min(w.start[1],w.end[1])< -7.2&&Math.max(w.start[1],w.end[1])> -7.2);
+  const seam=block.architecture.walls.filter(w=>Math.abs(w.start[0]+44.18)<1e-8&&Math.abs(w.end[0]+44.18)<1e-8&&Math.min(w.start[1],w.end[1])< -7.2&&Math.max(w.start[1],w.end[1])> -7.2);
   assert.deepEqual(seam.map(w=>w.id),['g22-arch-wall-negative-z']);
   for(const cutaway of [false,true]){
     const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
     for(const z of [-8.5,-7.2,-5.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-56.4,.7,z),new THREE.Vector3(1,0,0),0,34).intersectObject(shell,true).length,0,'Route must continue from G27 through G22/G21 into G2');
-    if(!cutaway)assert.ok(new THREE.Raycaster(new THREE.Vector3(-47.5,3.8,-7.2),new THREE.Vector3(1,0,0),0,1).intersectObject(shell,true).length,'Shared arch must retain its overhead surround');
+    if(!cutaway)assert.ok(new THREE.Raycaster(new THREE.Vector3(-44.7,3.8,-7.2),new THREE.Vector3(1,0,0),0,1).intersectObject(shell,true).length,'Shared arch must retain its overhead surround');
+    shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+  }
+});
+
+test('G28 G84/G76 end joins G27 with aligned floors and a clear single arch',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  const [g27,g28]=block.architecture.floorSections.slice(11,13);
+  assert.ok(Math.abs(g28.center[0]+g28.size[1]/2-(g27.center[0]-g27.size[1]/2))<1e-8);
+  assert.equal(g28.size[0],g27.size[0]);assert.equal(g28.center[1],g27.center[1]);
+  for(const label of ['Seat_G84','Seat_G76'])assert.ok(block.objects.find(o=>o.seats.includes(label)).position[0]>-58,'Requested seat end must face G27');
+  const seam=block.architecture.walls.filter(w=>Math.abs(w.start[0]+53.78)<1e-8&&Math.abs(w.end[0]+53.78)<1e-8&&Math.min(w.start[1],w.end[1])< -7.2&&Math.max(w.start[1],w.end[1])> -7.2);
+  assert.deepEqual(seam.map(w=>w.id),['g27-arch-wall-negative-z']);
+  const shell=buildArchitecture(block.architecture);shell.updateMatrixWorld(true);
+  for(const z of [-8.5,-7.2,-5.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-64,.7,z),new THREE.Vector3(1,0,0),0,41).intersectObject(shell,true).length,0);
+  assert.ok(new THREE.Raycaster(new THREE.Vector3(-54.2,3.8,-7.2),new THREE.Vector3(1,0,0),0,1).intersectObject(shell,true).length);
+  shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+});
+
+test('G29 joins the G28 end through one clear arch and uses dark flooring',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  const [g28,g29]=block.architecture.floorSections.slice(12,14);
+  assert.ok(Math.abs(g29.center[0]+g29.size[0]/2-(g28.center[0]-g28.size[1]/2))<1e-8);
+  assert.equal(g29.center[1],g28.center[1]);assert.equal(g29.size[1],g28.size[0]);
+  assert.ok(!block.architecture.circulations.some(c=>c.sourceBlock==='ground/g29'));
+  assert.ok(!block.architecture.walls.some(w=>w.id==='g28-arch-wall-negative-z'));
+  const seam=block.architecture.walls.filter(w=>Math.abs(w.start[0]+61.38)<1e-8&&Math.abs(w.end[0]+61.38)<1e-8);
+  assert.deepEqual(seam.map(w=>w.id),['g29-arch-wall-negative-x']);
+  const shell=buildArchitecture(block.architecture);shell.updateMatrixWorld(true);
+  for(const z of [-8.5,-7.2,-5.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-61.9,.7,z),new THREE.Vector3(1,0,0),0,2).intersectObject(shell,true).length,0);
+  for(const z of [-10.5,-3.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-61.9,.7,z),new THREE.Vector3(1,0,0),0,2).intersectObject(shell,true).length,0,'Full-width arch must stay clear across the matching bays');
+  shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+});
+
+test('Shared G3/G24/G25 fits in front of G9/G10 and keeps the front corridor and dining entrances open',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  const part=layout.components.find(p=>p.block==='ground/g3-g24-g25');
+  assert.equal(part.yaw,-90);assert.ok(!part.objectOffsets);
+  const section=key=>block.architecture.floorSections[layout.components.findIndex(p=>p.block===key)];
+  const dining=section('ground/g3-g24-g25'),g9=section('ground/g9'),g10=section('ground/g10');
+  assert.ok(Math.abs(dining.center[0]-((g10.center[0]-g10.size[0]/2)+(g9.center[0]+g9.size[0]/2))/2)<1e-8);
+  assert.ok(Math.abs(dining.center[0]-dining.size[1]/2-(g10.center[0]-g10.size[0]/2))<1e-8,'Dining left edge must match G10 leftmost wall');
+  assert.ok(Math.abs(dining.center[0]+dining.size[1]/2-(g9.center[0]+g9.size[0]/2))<1e-8,'Dining right edge must match G9 rightmost wall');
+  assert.ok(Math.abs(dining.center[1]-dining.size[0]/2-(layout.corridor.center[1]+layout.corridor.size[1]/2))<1e-8);
+  const {block:source}=await load(part.block);
+  for(const inlay of source.architecture.floorInlays)assert.ok(block.architecture.floorInlays.some(i=>i.id===inlay.id));
+  for(const cutaway of [false,true]) {
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    assert.equal(new THREE.Raycaster(new THREE.Vector3(-20,.7,4.3),new THREE.Vector3(1,0,0),0,21).intersectObject(shell,true).length,0,'Existing front corridor must stay continuous');
+    for(const x of [-8.43,-3.13])assert.equal(new THREE.Raycaster(new THREE.Vector3(x,.7,4.3),new THREE.Vector3(0,0,1),0,2.5).intersectObject(shell,true).length,0,'Dining entry must connect across the floor seam');
+    assert.equal(new THREE.Raycaster(new THREE.Vector3(-14,.7,20.2),new THREE.Vector3(1,0,0),0,17).intersectObject(shell,true).length,0,'TV-side path must remain open at both ends');
     shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
   }
 });
@@ -490,4 +568,273 @@ test('G2 double sliding gate opens the central passage and validates opening ran
   const helpers={mesh,box:(g,size,p,m)=>mesh(g,new THREE.BoxGeometry(...size),m,p),mat:color=>new THREE.MeshStandardMaterial({color})};
   for(const openFraction of [0,1]){const group=new THREE.Group();buildReceptionObject(group,{...gate,openFraction},helpers);group.updateMatrixWorld(true);const hits=new THREE.Raycaster(new THREE.Vector3(.2,.7,1),new THREE.Vector3(0,0,-1),0,2).intersectObject(group,true);assert.equal(hits.length>0,openFraction===0,'Leaves must clear the passage when open');}
   const draft={...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects};for(const value of [-.1,1.1]){gate.openFraction=value;assert.throws(()=>validateBlock(draft),/Gate opening/);}
+});
+
+test('Elevated wall heads preserve window heights and disappear in cutaway',()=>{
+  const a={walls:[{id:'head',kind:'solid',start:[0,0],end:[2,0],height:2.35,elevation:1.75,thickness:.16}]};
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);
+    const hit=y=>new THREE.Raycaster(new THREE.Vector3(1,y,1),new THREE.Vector3(0,0,-1),0,2).intersectObject(shell,true).length;
+    assert.equal(hit(1.2),0,'A raised wall must not fill the window below');
+    assert.equal(hit(2)>0,!cutaway,'Window head is visible only in the full shell');
+  }
+  for(const elevation of [-1,NaN,Infinity,19]){
+    assert.throws(()=>validateBlock({...block,architecture:{walls:[{...a.walls[0],elevation}]}}),/wall elevation/);
+  }
+});
+
+test('G32 surroundings leave the visitor approach clear in full and cutaway views',async()=>{
+  const base=new URL('../blocks/ground/g32/',import.meta.url);
+  const [m,a,o,e]=await Promise.all(['manifest.json','architecture.json','objects.json','evidence.json'].map(async f=>JSON.parse(await readFile(new URL(f,base)))));
+  validateBlock({...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects});
+  assert.equal(o.objects.filter(x=>x.type==='counter').length,4);
+  assert.equal(o.objects.filter(x=>x.type==='office-chair').length,7);
+  assert.equal(o.objects.filter(x=>x.variant==='checkin-kiosk').length,4);
+  for(const c of e.cameras)assert.ok(e.wideSnapshots[c]);
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);
+    for(const x of [0,.8,1.8]){
+      const ray=new THREE.Raycaster(new THREE.Vector3(x,.7,.65),new THREE.Vector3(0,0,1),0,6);
+      assert.equal(ray.intersectObject(shell,true).length,0,'Front approach must remain open');
+    }
+    const pattern=shell.children.find(g=>g.userData.boundaryId==='g32-saudia-patterned-glass');
+    const bounds=new THREE.Box3().setFromObject(pattern);
+    const glazing=a.walls.find(w=>w.id==='g32-saudia-patterned-glass');
+    assert.ok(bounds.max.y<=(cutaway?1.05:4.1)+.02,'Diagonal strips must stay inside the glazing height');
+    assert.ok(bounds.min.z>=Math.min(glazing.start[1],glazing.end[1])-.03&&bounds.max.z<=Math.max(glazing.start[1],glazing.end[1])+.03,'Diagonal strips must stay inside the glazing span');
+  }
+});
+
+test('Departure reception keeps entry, both e-gate lanes and SGS approach distinct and clear',async()=>{
+  const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/ground/departure-reception/${f}.json`,import.meta.url)))));
+  validateBlock({...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects});
+  const {buildReceptionObject,receptionSizes}=await import('./reception-objects.js');
+  const gate=o.objects.find(o=>o.variant==='swing-turnstile');
+  const mesh=(g,geometry,material,p)=>{const v=new THREE.Mesh(geometry,material);v.position.set(...p);g.add(v);return v;};
+  const helpers={mesh,box:(g,size,p,m)=>mesh(g,new THREE.BoxGeometry(...size),m,p),mat:color=>new THREE.MeshStandardMaterial({color})};
+  for(const openFraction of [0,1]){
+    const g=new THREE.Group();buildReceptionObject(g,{...gate,openFraction},helpers);
+    g.scale.fromArray(gate.size.map((v,i)=>v/receptionSizes[gate.type][i]));g.updateMatrixWorld(true);
+    for(const x of [-.825,.825]){
+      const hits=new THREE.Raycaster(new THREE.Vector3(x,.6,2),new THREE.Vector3(0,0,-1),0,4).intersectObject(g,true);
+      assert.equal(hits.length>0,openFraction===0,'Each lane must clear when swing leaves open');
+    }
+    const bounds=new THREE.Box3().setFromObject(g);
+    assert.ok(bounds.max.z-bounds.min.z<=gate.size[2]+.02,'Rotating leaves must remain within physical gate depth');
+  }
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);
+    for(const [origin,direction,far] of [
+      [[-.8,.7,5.8],[0,0,-1],4],
+      [[3.5,.7,-.43],[1,0,0],4.4],
+      [[3.5,.7,.93],[1,0,0],4.4],
+      [[-2.8,.7,.7],[-1,0,0],3.1]
+    ])assert.equal(new THREE.Raycaster(new THREE.Vector3(...origin),new THREE.Vector3(...direction),0,far).intersectObject(shell,true).length,0,'Entry/gate/SGS routes must not be closed by inferred walls');
+  }
+  const sideChair=o.objects.find(o=>o.id==='departure-reception-entrance-side-chair');
+  assert.equal(sideChair.identityStatus,'owner-confirmed-chair-temporary-id');
+  assert.deepEqual(o.objects.flatMap(o=>o.seats),['Seat_DepRec_TMP_01','Seat_DepRec_TMP_02','Seat_DepRec_TMP_03','Seat_DepRec_TMP_04'],'Owner-requested staff chairs retain unique temporary identities');
+  const path=a.sgsSideApproach.path,strip=a.sgsSideApproach.staffStrip;
+  assert.ok(sideChair.position[2]-sideChair.size[2]/2>=Math.max(...path.polygon.map(p=>p[1])),'Staff chair must stay outside the adjacent SGS route');
+  assert.ok(sideChair.position[0]>=Math.min(...strip.polygon.map(p=>p[0]))&&sideChair.position[0]<=Math.max(...strip.polygon.map(p=>p[0])));
+  assert.ok(!o.objects.some(o=>o.id.startsWith('g32-')),'Supporting SGS views must not duplicate the existing block');
+  assert.ok(e.sideReview.every(side=>side.cameras.every(c=>e.cameras.includes(c))));
+  const oldReturn=a.walls.find(w=>w.id==='departure-reception-left-stone-return');
+  const leg=a.walls.find(w=>w.id==='departure-reception-main-counter-sgs-l-return');
+  assert.equal(leg,undefined,'Owner removed the short front L stub');
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(a,{cutaway});shell.updateMatrixWorld(true);
+    assert.ok(new THREE.Raycaster(new THREE.Vector3(-2.8,.7,2.45),new THREE.Vector3(-1,0,0),0,3.1).intersectObject(shell,true).length,'Side-counter wall must bound the staff strip');
+    assert.equal(new THREE.Raycaster(new THREE.Vector3(-4.45,.7,-2),new THREE.Vector3(0,0,1),0,1.5).intersectObject(shell,true).length,0,'Removed stub must leave lower counter front open');
+  }
+});
+
+test('Reception flags have physical stands, folded cloth and readable reverse UVs',async()=>{
+  const {buildReceptionObject,receptionSizes}=await import('./reception-objects.js');
+  const {objects}=JSON.parse(await readFile(new URL('../blocks/ground/departure-reception/objects.json',import.meta.url)));
+  const mesh=(g,geometry,material,p)=>{const v=new THREE.Mesh(geometry,material);v.position.set(...p);g.add(v);return v;};
+  const helpers={mesh,box:(g,s,p,m)=>mesh(g,new THREE.BoxGeometry(...s),m,p),mat:color=>new THREE.MeshStandardMaterial({color}),rod:(g,a,b,r,m)=>{
+    const delta=new THREE.Vector3(...b).sub(new THREE.Vector3(...a));
+    const v=mesh(g,new THREE.CylinderGeometry(r,r,delta.length(),12),m,new THREE.Vector3(...a).add(new THREE.Vector3(...b)).multiplyScalar(.5).toArray());
+    v.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),delta.normalize());return v;
+  }};
+  for(const flag of objects.filter(o=>o.variant==='standing-flag')){
+    const g=new THREE.Group();buildReceptionObject(g,flag,helpers);g.scale.fromArray(flag.size.map((v,i)=>v/receptionSizes[flag.type][i]));g.updateMatrixWorld(true);
+    const front=g.getObjectByName('Flag cloth · front'),back=g.getObjectByName('Flag cloth · reverse');assert.ok(front&&back);
+    const p=front.geometry.attributes.position,uv=front.geometry.attributes.uv,reverse=back.geometry.attributes.uv;
+    assert.ok(Array.from(p.array).every(Number.isFinite));
+    assert.ok(Math.max(...Array.from({length:p.count},(_,i)=>p.getZ(i)))-Math.min(...Array.from({length:p.count},(_,i)=>p.getZ(i)))>.04,'Cloth must have actual folds');
+    for(let i=0;i<uv.count;i++)assert.ok(Math.abs(uv.getX(i)+reverse.getX(i)-1)<1e-6,'Reverse artwork must compensate for viewing from behind');
+    const bounds=new THREE.Box3().setFromObject(g);assert.ok(Math.abs(bounds.min.y)<1e-6,'Flag base must rest on floor');assert.ok(Math.abs(bounds.max.y-flag.size[1])<1e-6);
+  }
+});
+
+test('Reception and SGS share single walls behind security and beside the unused counter',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects,evidence:e}};};
+  const {block}=await composeLayout(root,'ground/departure-sgs',load);validateBlock(block);
+  for(const id of ['g32-kiosk-backing','g32-approach-wall-return'])assert.equal(block.architecture.walls.filter(w=>w.id===id).length,1);
+  assert.ok(!block.architecture.walls.some(w=>w.renderRole==='standalone-shared-wall-reference'));
+  const original=(await load('ground/g32')).block.objects;
+  for(const o of original)assert.equal(block.objects.filter(n=>n.id===o.id).length,1,'Existing SGS object must be loaded exactly once');
+  const unused=block.objects.find(o=>o.id==='departure-reception-unused-counter');assert.equal(unused.usageStatus,'currently-unused-owner-confirmed');assert.equal(unused.seats.length,0);
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    const hit=(origin,direction,far)=>new THREE.Raycaster(new THREE.Vector3(...origin),new THREE.Vector3(...direction),0,far).intersectObject(shell,true);
+    const back=hit([-5.35,.7,3.93],[-1,0,0],3);assert.ok(back.length);assert.ok(Math.abs(back[0].point.x+7.45)<.1,'SGS wall closes security back');
+    for(const dx of [-1,1])assert.ok(hit([-5.85,.7,-2],[dx,0,0],2).length,'Unused counter must lie between SGS and reception walls');
+    assert.equal(hit([-3.2,.7,.7],[-1,0,0],6).length,0,'Shared passage must stay open into SGS');
+    assert.equal(hit([-5.1,.7,.7],[0,0,-1],1.8).length,0,'Unused-counter bay mouth must stay open');
+    assert.ok(hit([-6.4,.7,5.2],[0,0,1],1.2).length,'Entrance-side wall must close the security bay gap');
+  }
+});
+
+test('Cleared A-zone passage joins reception and stays open through exit and the unmerged G9 edge',async()=>{
+  const {composeLayout}=await import('./layouts.mjs');
+  const {buildReceptionObject,receptionSizes}=await import('./reception-objects.js');
+  const root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{
+    const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));
+    return {block:{...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects,evidence:e}};
+  };
+  const source=(await load('ground/egate-office-passage')).block;
+  const {block:combined}=await composeLayout(root,'ground/departure-sgs-passage',load);
+  const {block:original}=await composeLayout(root,'ground/departure-sgs',load);
+  validateBlock(source);validateBlock(combined);
+  // Source furniture identities and manual poses survive the extension exactly.
+  for(const object of original.objects)assert.deepEqual(combined.objects.find(o=>o.id===object.id),object);
+  assert.deepEqual([...new Set(combined.objects.map(o=>o.sourceBlock))].sort(),['ground/departure-reception','ground/egate-office-passage','ground/g32']);
+  assert.equal(source.objects.flatMap(o=>o.seats).length,0,'Removed A-zone seating must not return as new occupancy IDs');
+  const reception=combined.architecture.circulations.find(c=>c.sourceBlock==='ground/departure-reception');
+  const passage=combined.architecture.circulations.find(c=>c.sourceBlock==='ground/egate-office-passage');
+  const seam=polygon=>polygon.filter(p=>p[0]===8).sort((a,b)=>a[1]-b[1]);
+  assert.deepEqual(seam(reception.polygon),seam(passage.polygon),'Pale floor edges must meet exactly at the e-gate continuation');
+  const mesh=(g,geometry,material,p)=>{const m=new THREE.Mesh(geometry,material);m.position.set(...p);g.add(m);return m;};
+  const helpers={mesh,box:(g,size,p,m)=>mesh(g,new THREE.BoxGeometry(...size),m,p),mat:color=>new THREE.MeshStandardMaterial({color})};
+  const gate=source.objects.find(o=>o.type==='automatic-glass-gate');
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(source.architecture,{cutaway});
+    // Include the actual open exit leaves, not just the architectural gap.
+    const door=new THREE.Group();buildReceptionObject(door,gate,helpers);
+    door.scale.fromArray(gate.size.map((v,i)=>v/receptionSizes[gate.type][i]));door.position.fromArray(gate.position);shell.add(door);shell.updateMatrixWorld(true);
+    const hit=(a,b)=>{
+      const from=new THREE.Vector3(a[0],.7,a[1]),to=new THREE.Vector3(b[0],.7,b[1]),delta=to.sub(from);
+      return new THREE.Raycaster(from,delta.clone().normalize(),0,delta.length()).intersectObject(shell,true);
+    };
+    const line=source.architecture.circulation.route.centerline;
+    for(let i=1;i<line.length;i++)assert.equal(hit(line[i-1],line[i]).length,0,'Straight circulation must not cross a wall');
+    for(const z of [.1,1.45,2.6])assert.equal(hit([25.5,z],[26.6,z]).length,0,'G9/G10 endpoint must remain open');
+    for(const x of [13.2,14,14.8])assert.equal(hit([x,4],[x,9.5]).length,0,'Open exit leaves must clear the pale approach');
+    assert.ok(hit([7,4],[7,9.5]).length,'Setback cafe edge must remain glass frontage');
+    assert.equal(hit([.2,-2],[25.8,-2]).length,0,'Cleared former A-zone floor must not contain obsolete room walls');
+  }
+  for(const camera of ['A1','A3'])assert.ok(source.evidence.cameraPlacementReview.unregisteredCameras.some(c=>c.camera===camera&&c.mount===null&&c.heading===null));
+  const egate=combined.objects.find(o=>o.variant==='swing-turnstile');
+  assert.equal(source.architecture.circulation.clearWidth,egate.size[0]);
+  assert.ok(source.architecture.circulation.route.centerline.every(p=>p[1]===egate.position[2]));
+  const room=source.architecture.officeRoom;
+  const exitLine=source.architecture.circulation.connections.find(c=>c.id==='egate-office-passage-exit-threshold').start[1];
+  assert.ok(Math.abs(room.width-(exitLine-Math.min(...room.footprint.map(p=>p[1]))))<1e-8,'Office width must end at exit line');
+  assert.equal(Math.max(...room.footprint.map(p=>p[1])),exitLine);
+  const back=source.architecture.walls.find(w=>w.id==='egate-office-passage-office-back');
+  assert.equal(back.start[1],exitLine);assert.equal(back.end[1],exitLine);
+  for(const section of source.architecture.floorSections)assert.ok(section.center[1]+section.size[1]/2<=exitLine+1e-8,'Floor must not extend beyond exit gate');
+});
+
+test('G61/G62 reconcile normal ROI identities and share Table_I9 without duplicating it',async()=>{
+  for(const key of ['g61','g62']){
+    const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/ground/${key}/${f}.json`,import.meta.url)))));
+    validateBlock({...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects});
+    const observedSeats=new Set(),observedTables=new Set();
+    for(const c of e.cameras){
+      for(const [kind,target] of [['chairs',observedSeats],['tables',observedTables]]){
+        const roi=JSON.parse(await readFile(new URL(`../${e.rois[c][kind]}`,import.meta.url)));
+        for(const id of Object.keys(roi))target.add(id);
+      }
+      assert.ok(e.wideSnapshots[c]);
+    }
+    assert.deepEqual(new Set(o.objects.flatMap(o=>o.seats)),observedSeats);
+    const tables=new Set(o.objects.filter(o=>o.type==='table').map(o=>o.externalId));
+    if(key==='g62'){assert.ok(!tables.has('Table_I9'));tables.add(e.externalObservations[0].externalId);}
+    assert.deepEqual(tables,observedTables);
+    assert.equal(o.objects.filter(o=>o.type==='armchair').length,6);
+    assert.equal(a.walls.filter(w=>w.kind==='glass').length,1);
+  }
+});
+
+test('Full I zone preserves three bays and keeps window-row, floor seams and aisle clear',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const old=(await composeLayout(root,'ground/g57-g58',load)).block;
+  const {block}=await composeLayout(root,'ground/i-zone',load);
+  for(const o of old.objects)assert.deepEqual(block.objects.find(v=>v.id===o.id),o);
+  assert.equal(block.objects.flatMap(o=>o.seats).length,24);
+  assert.equal(block.objects.filter(o=>o.variant==='egg-swivel').length,10);
+  assert.equal(block.objects.filter(o=>o.externalId==='Table_I9').length,1);
+  assert.equal(block.objects.filter(o=>o.type==='table').length,14);
+  assert.equal(block.objects.filter(o=>/^g(?:57|58|59)-sofa-screen-01$/.test(o.id)).length,3);
+  const windows=block.architecture.walls.filter(w=>w.kind==='glass');
+  assert.deepEqual(windows[0].end,windows[1].start);
+  const sections=block.architecture.floorSections;
+  const overlap=(a,b)=>Math.min(a.center[0]+a.size[0]/2,b.center[0]+b.size[0]/2)-Math.max(a.center[0]-a.size[0]/2,b.center[0]-b.size[0]/2)>1e-8&&Math.min(a.center[1]+a.size[1]/2,b.center[1]+b.size[1]/2)-Math.max(a.center[1]-a.size[1]/2,b.center[1]-b.size[1]/2)>1e-8;
+  for(let i=0;i<sections.length;i++)for(let j=0;j<i;j++)assert.ok(!overlap(sections[i],sections[j]),'Source floor sections must not overlap');
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    assert.equal(new THREE.Raycaster(new THREE.Vector3(1.9,.7,-4.5),new THREE.Vector3(0,0,1),0,14.5).intersectObject(shell,true).length,0,'Central aisle must remain open');
+  }
+  for(const o of block.objects.filter(o=>o.variant==='egg-swivel'))assert.ok(o.position[0]-o.size[2]/2>=2.6,'Window chair backs must leave the aisle clear');
+});
+
+test('G57 G58 G59 join behind each sofa with shared screens and continuous aisle',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const {block}=await composeLayout(root,'ground/g57-g58',load);
+  assert.deepEqual(block.objects.flatMap(o=>o.seats).sort(),Array.from({length:12},(_,i)=>`Seat_I${i+1}`).sort());
+  assert.equal(block.objects.filter(o=>o.id==='g57-sofa-screen-01').length,1);
+  assert.equal(block.objects.filter(o=>o.type==='table').length,3);
+  assert.equal(block.objects.filter(o=>o.id==='g58-sofa-screen-01').length,1);
+  const nextScreen=block.objects.find(o=>o.id==='g58-sofa-screen-01');
+  assert.ok(block.objects.find(o=>o.seats.includes('Seat_I5')).position[2]<nextScreen.position[2]);
+  for(const seat of ['Seat_I9','Seat_I10'])assert.ok(block.objects.find(o=>o.seats.includes(seat)).position[2]>nextScreen.position[2]);
+  const screen=block.objects.find(o=>o.id==='g57-sofa-screen-01');
+  const sofa=block.objects.find(o=>o.seats.includes('Seat_I3'));
+  for(const seat of ['Seat_I7','Seat_I8'])assert.ok(block.objects.find(o=>o.seats.includes(seat)).position[2]>screen.position[2]);
+  assert.ok(sofa.position[2]<screen.position[2]);
+  for(let i=1;i<block.architecture.floorSections.length;i++){const [a,b]=block.architecture.floorSections.slice(i-1,i+1);assert.ok(Math.abs(a.center[1]+a.size[1]/2-(b.center[1]-b.size[1]/2))<1e-8);}
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    assert.equal(new THREE.Raycaster(new THREE.Vector3(1.9,.7,-2.3),new THREE.Vector3(0,0,1),0,12.4).intersectObject(shell,true).length,0);
+  }
+  for(const key of ['ground/g57','ground/g58','ground/g59']){
+    const source=(await load(key)).block;
+    for(const o of source.objects){const merged=block.objects.find(v=>v.id===o.id);assert.deepEqual(merged.size,o.size);assert.deepEqual(merged.seats,o.seats);assert.equal(merged.yaw,o.yaw);assert.ok(Math.abs(merged.position[2]-o.position[2]-(key.endsWith('g59')?8.06:key.endsWith('g58')?4.08:0))<1e-8);}
+  }
+});
+
+test('Departure assembly joins the combined G9/G10 walk without duplicate shared walls or furniture',async()=>{
+  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  const {block:departure}=await composeLayout(root,'ground/departure-sgs-passage',load);
+  for(const o of departure.objects){
+    const actual=block.objects.filter(a=>a.id===o.id);assert.equal(actual.length,1);
+    assert.deepEqual(actual[0].size,o.size);assert.deepEqual(actual[0].seats,o.seats);assert.deepEqual(actual[0].scale,o.scale);
+    [35.62-o.position[0],o.position[1],5.75-o.position[2]].forEach((v,i)=>assert.ok(Math.abs(actual[0].position[i]-v)<1e-8));
+    assert.equal(actual[0].yaw,o.yaw+180);
+  }
+  assert.ok(!block.architecture.walls.some(w=>w.id==='egate-office-passage-b-dining-wall-reference'));
+  assert.ok(!block.architecture.walls.some(w=>w.id==='egate-office-passage-office-g9-shared-reference'));
+  assert.equal(block.architecture.walls.filter(w=>w.id==='g9-tv-wall').length,1);
+  const room=(await load('ground/egate-office-passage')).block.architecture.officeRoom;
+  const g9Wall=block.architecture.walls.find(w=>w.id==='g9-tv-wall');
+  assert.equal(room.mergedWorldBounds.x[0],g9Wall.start[0],'Office left side must align G9 right wall');
+  const exit=block.objects.find(o=>o.id==='egate-office-passage-exit-sliding-doors');
+  assert.ok(Math.abs(exit.position[0]-13.62)<1e-8&&Math.abs(exit.position[2]+3.35)<1e-8,'Exit position must remain unchanged');
+  assert.ok(Math.abs(room.mergedWorldBounds.x[1]-(exit.position[0]-exit.size[0]/2))<1e-8,'Office length must terminate at saved exit jamb');
+  for(const id of ['g3-g24-g25-north-blue-left','g32-kiosk-backing','g32-approach-wall-return'])assert.equal(block.architecture.walls.filter(w=>w.id===id).length,1);
+  for(const cutaway of [false,true]){
+    const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
+    for(const z of [3.2,4.3,5.4])assert.equal(new THREE.Raycaster(new THREE.Vector3(28,.7,z),new THREE.Vector3(-1,0,0),0,40).intersectObject(shell,true).filter(h=>h.object.isMesh).length,0,'Straight departure route must continue into G9/G10 front corridor');
+    assert.ok(new THREE.Raycaster(new THREE.Vector3(2.5,.7,8),new THREE.Vector3(-1,0,0),0,2).intersectObject(shell,true).length,'Dining side must retain its shared backing');
+  }
 });

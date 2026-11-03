@@ -36,3 +36,7 @@ Select furniture to move, rotate, resize, recolor or correct seat/table labels. 
 Run `npm test` and `node --test blocks/ground/g17/validate.test.mjs` before handoff. Follow the root `CONTRIBUTING.md` for review and sharing.
 
 Initial validation passed, including ROI identity reconciliation and entrance/central-access clearance. Isometric, top and full-wall views were inspected in the browser; all six evidence views loaded, and Save/reload preserved the authored object records. This verifies the editable draft, while owner acceptance of the reconstruction and neighboring seams remains pending.
+
+G17 is included in the B + C + E + G combined layout beside G12/G14, with its E9/E10/E11 side against the C lounge. Its 9.6 m span matches G27 directly behind it; the open entrance faces the continuous front walkway. G27 owns rear glazing and the C lounge owns the side partition. Individual G17 now shares the combined 9.6 × 8.6 m shell and furniture positions. Composition uses source positions directly without extra offsets; saved furniture edits appear in both views. Dimensions are provisional.
+
+Individual G17 uses a 9.6 × 8.6 m floor centered at [0,1.2], including its open front walkway. The combined layout applies only placement and shared-wall exclusions. Resize or move furniture in individual G17 and save, then refresh the combined view.

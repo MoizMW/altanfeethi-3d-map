@@ -50,7 +50,8 @@
     "Six ROI seat slots: G1/G2/G4/G7 armchairs and G5/G6 on one sofa; two main tables Table_G1 and Table_G2. Repeated observations are one physical object. Sofa slot order and chair positions need owner review.",
     "G20/G23 wide show curtained glazing, a large rounded neighboring-lounge arch, brass side tables/lamps and a console/artwork nook. Shared builders match existing block style; material motifs remain simplified.",
     "Table_G5 ROI in G20 refers to background seating beyond the arch and is recorded as contextual evidence, not duplicated here. Seat_G3 is absent from supplied ROIs and is not invented.",
-    "Normal ROIs are not transferred onto wide captures. No measured room dimensions or calibrated camera projection is claimed."
+    "Normal ROIs are not transferred onto wide captures. No measured room dimensions or calibrated camera projection is claimed.",
+    "Owner map-proportion update: G9/G16 compact width is 5.2 m with unchanged lengths and fixed G10/G18 seams; shared dining width 13.2 m and integrated length 15.6 m. Source placement updates preserve furniture size and occupancy IDs. Dimensions remain provisional."
   ],
   "reviewItems": [
     "Confirm sofa G5/G6 slot order; preserve owner-refined chair transforms",

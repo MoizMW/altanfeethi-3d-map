@@ -1,0 +1,166 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-b-shared-003-024-025",
+  "cameras": [
+    "B2",
+    "C11",
+    "C14",
+    "B13",
+    "B7",
+    "B8",
+    "B9",
+    "B10",
+    "B11",
+    "B12",
+    "B14"
+  ],
+  "cameraGroups": {
+    "B2": "g3",
+    "C11": "g3",
+    "C14": "g3",
+    "B13": "g24",
+    "B7": "g24",
+    "B8": "g24",
+    "B9": "g24",
+    "B10": "g25",
+    "B11": "g25",
+    "B12": "g25",
+    "B14": "g25"
+  },
+  "snapshots": {
+    "B2": "evidence/camera-snapshots/B2.jpg",
+    "C11": "evidence/camera-snapshots/C11.jpg",
+    "C14": "evidence/camera-snapshots/C14.jpg",
+    "B13": "evidence/camera-snapshots/B13.jpg",
+    "B7": "evidence/camera-snapshots/B7.jpg",
+    "B8": "evidence/camera-snapshots/B8.jpg",
+    "B9": "evidence/camera-snapshots/B9.jpg",
+    "B10": "evidence/camera-snapshots/B10.jpg",
+    "B11": "evidence/camera-snapshots/B11.jpg",
+    "B12": "evidence/camera-snapshots/B12.jpg",
+    "B14": "evidence/camera-snapshots/B14.jpg"
+  },
+  "wideSnapshots": {
+    "B2": "evidence/wide capture snapshots/B2.jpg",
+    "C11": "evidence/wide capture snapshots/C11.jpg",
+    "C14": "evidence/wide capture snapshots/C14.jpg",
+    "B13": "evidence/wide capture snapshots/B13.jpg",
+    "B7": "evidence/wide capture snapshots/B7.jpg",
+    "B8": "evidence/wide capture snapshots/B8.jpg",
+    "B9": "evidence/wide capture snapshots/B9.jpg",
+    "B10": "evidence/wide capture snapshots/B10.jpg",
+    "B11": "evidence/wide capture snapshots/B11.jpg",
+    "B12": "evidence/wide capture snapshots/B12.jpg",
+    "B14": "evidence/wide capture snapshots/B14.jpg"
+  },
+  "rois": {
+    "B2": {
+      "chairs": "evidence/rois/chair-rois/g3/B2_to_g3.json",
+      "tables": "evidence/rois/table-rois/g3/B2_to_g3.json"
+    },
+    "C11": {
+      "chairs": "evidence/rois/chair-rois/g3/C11_to_g3.json",
+      "tables": "evidence/rois/table-rois/g3/C11_to_g3.json"
+    },
+    "C14": {
+      "chairs": "evidence/rois/chair-rois/g3/C14_to_g3.json",
+      "tables": "evidence/rois/table-rois/g3/C14_to_g3.json"
+    },
+    "B13": {
+      "chairs": "evidence/rois/chair-rois/g24/B13_to_g24.json",
+      "tables": "evidence/rois/table-rois/g24/B13_to_g24.json"
+    },
+    "B7": {
+      "chairs": "evidence/rois/chair-rois/g24/B7_to_g24.json",
+      "tables": "evidence/rois/table-rois/g24/B7_to_g24.json"
+    },
+    "B8": {
+      "chairs": "evidence/rois/chair-rois/g24/B8_to_g24.json",
+      "tables": "evidence/rois/table-rois/g24/B8_to_g24.json"
+    },
+    "B9": {
+      "chairs": "evidence/rois/chair-rois/g24/B9_to_g24.json",
+      "tables": "evidence/rois/table-rois/g24/B9_to_g24.json"
+    },
+    "B10": {
+      "chairs": "evidence/rois/chair-rois/g25/B10_to_g25.json",
+      "tables": "evidence/rois/table-rois/g25/B10_to_g25.json"
+    },
+    "B11": {
+      "chairs": "evidence/rois/chair-rois/g25/B11_to_g25.json",
+      "tables": "evidence/rois/table-rois/g25/B11_to_g25.json"
+    },
+    "B12": {
+      "chairs": "evidence/rois/chair-rois/g25/B12_to_g25.json",
+      "tables": "evidence/rois/table-rois/g25/B12_to_g25.json"
+    },
+    "B14": {
+      "chairs": "evidence/rois/chair-rois/g25/B14_to_g25.json",
+      "tables": "evidence/rois/table-rois/g25/B14_to_g25.json"
+    }
+  },
+  "seatMappings": {
+    "Seat_B35": "g3-g24-g25-chair-17",
+    "Seat_B29": "g3-g24-g25-chair-23",
+    "Seat_B23": "g3-g24-g25-chair-29",
+    "Seat_B17": "g3-g24-g25-chair-35",
+    "Seat_B36": "g3-g24-g25-chair-18",
+    "Seat_B30": "g3-g24-g25-chair-24",
+    "Seat_B24": "g3-g24-g25-chair-30",
+    "Seat_B18": "g3-g24-g25-chair-36",
+    "Seat_B37": "g3-g24-g25-chair-19",
+    "Seat_B31": "g3-g24-g25-chair-25",
+    "Seat_B25": "g3-g24-g25-chair-31",
+    "Seat_B19": "g3-g24-g25-chair-37",
+    "Seat_B38": "g3-g24-g25-chair-20",
+    "Seat_B32": "g3-g24-g25-chair-26",
+    "Seat_B26": "g3-g24-g25-chair-32",
+    "Seat_B20": "g3-g24-g25-chair-38",
+    "Seat_B39": "g3-g24-g25-chair-21",
+    "Seat_B33": "g3-g24-g25-chair-27",
+    "Seat_B27": "g3-g24-g25-chair-33",
+    "Seat_B21": "g3-g24-g25-chair-39",
+    "Seat_B40": "g3-g24-g25-chair-22",
+    "Seat_B34": "g3-g24-g25-chair-28",
+    "Seat_B28": "g3-g24-g25-chair-34",
+    "Seat_B22": "g3-g24-g25-chair-40",
+    "Seat_B41": "g3-g24-g25-chair-41",
+    "Seat_B42": "g3-g24-g25-chair-42",
+    "Seat_B50": "g3-g24-g25-chair-44",
+    "Seat_B49": "g3-g24-g25-chair-46",
+    "Seat_B46": "g3-g24-g25-chair-49",
+    "Seat_B44": "g3-g24-g25-chair-50"
+  },
+  "tableMappings": {
+    "Table_B11": "g3-g24-g25-table-17",
+    "Table_B17": "g3-g24-g25-table-11",
+    "Table_B10": "g3-g24-g25-table-16",
+    "Table_B16": "g3-g24-g25-table-10",
+    "Table_B9": "g3-g24-g25-table-15",
+    "Table_B15": "g3-g24-g25-table-9",
+    "Table_B8": "g3-g24-g25-table-14",
+    "Table_B14": "g3-g24-g25-table-8",
+    "Table_B7": "g3-g24-g25-table-13",
+    "Table_B13": "g3-g24-g25-table-7",
+    "Table_B12": "g3-g24-g25-table-12",
+    "Table_B": "g3-g24-g25-table-6",
+    "Table_B20": "g3-g24-g25-table-20",
+    "Table_B23": "g3-g24-g25-table-21",
+    "Table_B21": "g3-g24-g25-table-23"
+  },
+  "notes": [
+    "All eleven normal views and matching wide captures reviewed. Normal chair/table ROI overlays identify thirty seats and fifteen tables once.",
+    "Map crop and registered camera headings establish relative topology only. Wide images are not ROI coordinate maps.",
+    "Seat_B41/B42 and Table_B20 form the isolated decorative-blue-wall pair visible in B2/C11/B10. C14 Seat_B17/B23 and Table_B17 link G3 to the main banks.",
+    "Main pairs: B17..B22 with B23..B28 on Table_B17..B12; B29..B34 with B35..B40 on Table_B11..B6. End pairs B44/B46 on B21 and B49/B50 on B23. Slot directions/metric spacing remain provisional.",
+    "B7/B13 and B11 wide crops reviewed for food-counter niches, coffee machine, gold urn, serving items, juice containers, refrigerator and piano. B10/B11 place the isolated blue-wall B41/B42 pair opposite the piano. Owner confirms blue surfaces opaque, TV-side through-path and dark stone floor bands.",
+    "Current owner-edited seat/table labels are authoritative. Piano is behind current B17 at positive Z; isolated B41/B42 pair remains at negative Z. Camera lists and mappings follow those current labels where they match observed ROIs.",
+    "Owner map-proportion update: G9/G16 compact width is 5.2 m with unchanged lengths and fixed G10/G18 seams; shared dining width 13.2 m and integrated length 15.6 m. Source placement updates preserve furniture size and occupancy IDs. Dimensions remain provisional."
+  ],
+  "assumptions": [
+    "15.2 m width uses owner equality with G9+G10; depth and corridor position estimated from wide captures.",
+    "No sofas inferred from illustrated map: current normal/wide images show separate blue chairs.",
+    "Counter contents, piano proportions and marble bands are procedural approximations of wide captures; no real-time reflected scene is claimed. TV-side route has no assigned global neighbor yet."
+  ]
+}

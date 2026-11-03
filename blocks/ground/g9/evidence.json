@@ -16,7 +16,8 @@
     "Rounded entrance from corridor is evidenced in B1-wide. B3-wide shows the sofa and TV-wall half, with adjoining open circulation. Glazing behind sofa is a closed boundary only across seating half.",
     "Original furniture transforms and human-corrected Seat_B4/Seat_B3 sofa order are preserved. Screen geometry is reinterpreted as decorated wall cladding.",
     "TV, passage-edge display console and sofa-side lamp are approximated from wide captures. Reflections do not create a second sofa or TV.",
-    "Existing ROIs remain attached to original detection snapshots. Images are not metrically calibrated; no raw ROI/pixel distances are treated as meters."
+    "Existing ROIs remain attached to original detection snapshots. Images are not metrically calibrated; no raw ROI/pixel distances are treated as meters.",
+    "Owner map-proportion update: G9/G16 compact width is 5.2 m with unchanged lengths and fixed G10/G18 seams; shared dining width 13.2 m and integrated length 15.6 m. Source placement updates preserve furniture size and occupancy IDs. Dimensions remain provisional."
   ],
   "wideSnapshots": {
     "B1": "evidence/wide capture snapshots/B1.jpg",

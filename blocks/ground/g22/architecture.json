@@ -4,7 +4,7 @@
   "blockId": "ground-g-lounge-022",
   "floorSize": [
     9,
-    8.8
+    7.4
   ],
   "floorCenter": [
     0,
@@ -70,19 +70,19 @@
   "footprint": [
     [
       -4.5,
-      -4.4
+      -3.7
     ],
     [
       4.5,
-      -4.4
+      -3.7
     ],
     [
       4.5,
-      4.4
+      3.7
     ],
     [
       -4.5,
-      4.4
+      3.7
     ]
   ],
   "walls": [
@@ -91,11 +91,11 @@
       "kind": "glass",
       "start": [
         -4.45,
-        -4.4
+        -3.7
       ],
       "end": [
         -4.45,
-        4.4
+        3.7
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -112,11 +112,11 @@
       "kind": "glass",
       "start": [
         4.45,
-        -4.4
+        -3.7
       ],
       "end": [
         4.45,
-        4.4
+        3.7
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -133,11 +133,11 @@
       "kind": "solid",
       "start": [
         -4.5,
-        -4.4
+        -3.7
       ],
       "end": [
         4.5,
-        -4.4
+        -3.7
       ],
       "height": 4.1,
       "thickness": 0.18,
@@ -155,11 +155,11 @@
       "kind": "solid",
       "start": [
         -4.5,
-        4.4
+        3.7
       ],
       "end": [
         4.5,
-        4.4
+        3.7
       ],
       "height": 4.1,
       "thickness": 0.18,
@@ -218,19 +218,19 @@
     "polygon": [
       [
         -1.4,
-        -4.4
+        -3.7
       ],
       [
         1.4,
-        -4.4
+        -3.7
       ],
       [
         1.4,
-        4.4
+        3.7
       ],
       [
         -1.4,
-        4.4
+        3.7
       ]
     ],
     "surfaceMaterial": "pale-stone",
@@ -244,7 +244,7 @@
   "ceiling": {
     "size": [
       9,
-      8.8
+      7.4
     ],
     "center": [
       0,
@@ -285,6 +285,7 @@
     }
   ],
   "notes": [
-    "Owner requests G22 left of G21, with G2 right of G21 in supplied front view. Full-width end arches added; shell remains 9 m wide to retain saved furniture. The G21/G22 seam is owned by G22 once; G21 end-arch preview is excluded only in the combined layout."
+    "Owner requests G22 left of G21, with G2 right of G21 in supplied front view. Full-width end arches added; shell remains 9 m wide to retain saved furniture. The G21/G22 seam is owned by G22 once; G21 end-arch preview is excluded only in the combined layout.",
+    "Owner compact-bay correction: span along local Z reduced from 8.8 to 7.4 m; cross-room depth unchanged. Furniture clusters move inward without resizing, keeping the pale route open. Source and combined layouts use the same span."
   ]
 }

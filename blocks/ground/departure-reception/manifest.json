@@ -1,0 +1,22 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-departure-reception-030",
+  "slug": "departure-reception",
+  "name": "Departure_Reception · Reception, entrance and e-gates",
+  "floor": "ground",
+  "groups": [
+    "g1",
+    "g30",
+    "g31"
+  ],
+  "zone": "Departure_Reception",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

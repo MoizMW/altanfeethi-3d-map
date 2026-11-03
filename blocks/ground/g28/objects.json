@@ -25,8 +25,8 @@
       ],
       "color": "#eeeadd",
       "seats": [
-        "Seat_G78",
-        "Seat_G77"
+        "Seat_G81",
+        "Seat_G82"
       ],
       "cameras": [
         "G11",
@@ -57,8 +57,8 @@
       ],
       "color": "#eeeadd",
       "seats": [
-        "Seat_G82",
-        "Seat_G81"
+        "Seat_G77",
+        "Seat_G78"
       ],
       "cameras": [
         "G11",
@@ -88,7 +88,7 @@
       ],
       "color": "#527e86",
       "seats": [
-        "Seat_G76"
+        "Seat_G83"
       ],
       "cameras": [
         "G15",
@@ -105,7 +105,7 @@
         0,
         0
       ],
-      "yaw": 270,
+      "yaw": -0.8763767103198241,
       "size": [
         0.88,
         0.9,
@@ -148,7 +148,7 @@
       ],
       "color": "#527e86",
       "seats": [
-        "Seat_G83"
+        "Seat_G76"
       ],
       "cameras": [
         "G11",
@@ -178,7 +178,7 @@
       ],
       "color": "#527e86",
       "seats": [
-        "Seat_G84"
+        "Seat_G89"
       ],
       "cameras": [
         "G18",
@@ -208,7 +208,7 @@
       ],
       "color": "#527e86",
       "seats": [
-        "Seat_G85"
+        "Seat_G88"
       ],
       "cameras": [
         "G19"
@@ -237,7 +237,7 @@
       ],
       "color": "#527e86",
       "seats": [
-        "Seat_G86"
+        "Seat_G87"
       ],
       "cameras": [
         "G19"
@@ -266,7 +266,7 @@
       ],
       "color": "#527e86",
       "seats": [
-        "Seat_G87"
+        "Seat_G86"
       ],
       "cameras": [
         "G19"
@@ -295,7 +295,7 @@
       ],
       "color": "#527e86",
       "seats": [
-        "Seat_G88"
+        "Seat_G85"
       ],
       "cameras": [
         "G19"
@@ -324,7 +324,7 @@
       ],
       "color": "#527e86",
       "seats": [
-        "Seat_G89"
+        "Seat_G84"
       ],
       "cameras": [
         "G11",

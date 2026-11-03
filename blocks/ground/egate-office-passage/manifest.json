@@ -1,0 +1,19 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-egate-office-passage",
+  "slug": "egate-office-passage",
+  "displayCode": "PASSAGE",
+  "name": "Departure passage · Glass frontage, exit and office",
+  "floor": "ground",
+  "groups": [],
+  "zone": "Departure_Passage",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

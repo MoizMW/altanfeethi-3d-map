@@ -1,0 +1,74 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-i-lounge-059",
+  "objects": [
+    {
+      "id": "g59-chair-09",
+      "type": "armchair",
+      "name": "Blue lounge chair · I9",
+      "position": [-0.62, 0, -1.1],
+      "yaw": 0,
+      "size": [0.88, 0.95, 0.88],
+      "scale": [1, 1, 1],
+      "color": "#627d86",
+      "seats": ["Seat_I9"],
+      "cameras": ["I13"],
+      "confidence": "Wall-side chair identified by I13 ROI; shared builder simplifies the curved shell and timber supports. Dimensions and placement estimated."
+    },
+    {
+      "id": "g59-chair-10",
+      "type": "armchair",
+      "name": "Blue lounge chair · I10",
+      "position": [0.43, 0, -1.1],
+      "yaw": 0,
+      "size": [0.88, 0.95, 0.88],
+      "scale": [1, 1, 1],
+      "color": "#627d86",
+      "seats": ["Seat_I10"],
+      "cameras": ["I13"],
+      "confidence": "Aisle-side chair identified by I13 ROI; dimensions, angle and spacing need owner review."
+    },
+    {
+      "id": "g59-sofa-01",
+      "type": "sofa",
+      "name": "Pale two-seat sofa · I12 / I11",
+      "position": [-0.1, 0, 1.2],
+      "yaw": 180,
+      "size": [2.05, 0.88, 0.9],
+      "scale": [1, 1, 1],
+      "color": "#ddd9cf",
+      "seats": ["Seat_I12", "Seat_I11"],
+      "cameras": ["I24"],
+      "confidence": "I24 ROIs identify I12 on image-left and I11 on image-right of one sofa. Slot order, dimensions and finish need owner review."
+    },
+    {
+      "id": "g59-coffee-table-01",
+      "type": "table",
+      "name": "Oval glass coffee table · Table_I3",
+      "position": [-0.1, 0, 0.02],
+      "yaw": 0,
+      "size": [1.55, 0.43, 0.8],
+      "scale": [1, 1, 1],
+      "color": "#b4a274",
+      "seats": [],
+      "externalId": "Table_I3",
+      "variant": "round-glass",
+      "cameras": ["I13", "I24"],
+      "confidence": "One oval glass/brass table reconciles both normal-view ROIs. Lower glass shelf, frame details and actual proportions are simplified."
+    },
+    {
+      "id": "g59-sofa-screen-01",
+      "type": "wall-panel",
+      "name": "Ribbed sofa screen · schematic panel",
+      "position": [-0.05, 0, 1.88],
+      "yaw": 180,
+      "size": [2.7, 2.4, 0.08],
+      "scale": [1, 1, 1],
+      "color": "#87958a",
+      "seats": [],
+      "cameras": ["I24"],
+      "confidence": "Ribbed/slatted partition visible behind I11/I12; existing grooved panel is an opaque approximation with estimated height and width."
+    }
+  ]
+}

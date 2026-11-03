@@ -128,10 +128,94 @@
       ],
       "confidence": "Window framing visible behind sheer curtains in G19-wide; span and height estimated",
       "notes": "Curtains and exact frame divisions are not represented by the shared schematic glass."
+    },
+    {
+      "id": "g28-arch-wall-negative-z",
+      "kind": "solid",
+      "start": [
+        -4.2,
+        -3.8
+      ],
+      "end": [
+        4.2,
+        -3.8
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g28",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner-requested standard arch; dimensions and neighboring seam estimated"
+    },
+    {
+      "id": "g28-arch-wall-positive-z",
+      "kind": "solid",
+      "start": [
+        -4.2,
+        3.8
+      ],
+      "end": [
+        4.2,
+        3.8
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e7e3d9",
+      "owner": "ground/g28",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner-requested standard arch; dimensions and neighboring seam estimated"
     }
   ],
-  "openings": [],
-  "sharedBoundaries": [],
+  "openings": [
+    {
+      "id": "g28-arch-negative-z",
+      "wallId": "g28-arch-wall-negative-z",
+      "kind": "rounded-passage",
+      "offset": 4.2,
+      "width": 7.9,
+      "springHeight": 1.6,
+      "height": 3.35,
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "G18/G20 arch style fitted to the local boundary span"
+    },
+    {
+      "id": "g28-arch-positive-z",
+      "wallId": "g28-arch-wall-positive-z",
+      "kind": "rounded-passage",
+      "offset": 4.2,
+      "width": 7.9,
+      "springHeight": 1.6,
+      "height": 3.35,
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "G18/G20 arch style fitted to the local boundary span"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "g28-arch-negative-z",
+      "kind": "rounded-passage",
+      "owner": "ground/g28",
+      "ownsWall": true,
+      "status": "owner-requested-local-partition-needs-seam-alignment",
+      "notes": "Retain one wall owner when composing with adjacent blocks."
+    },
+    {
+      "id": "g28-arch-positive-z",
+      "kind": "rounded-passage",
+      "owner": "ground/g28",
+      "ownsWall": true,
+      "status": "owner-requested-local-partition-needs-seam-alignment",
+      "notes": "Retain one wall owner when composing with adjacent blocks."
+    }
+  ],
   "circulation": {
     "id": "g28-central-walkway",
     "polygon": [
@@ -176,19 +260,20 @@
     {
       "id": "g28-negative-z-seam",
       "kind": "open-corridor",
-      "status": "neighbor-and-seam-unresolved",
+      "status": "owner-requested-arch-added-neighbor-unresolved",
       "sources": [
         "G18"
-      ]
+      ],
+      "notes": "Standard open arch requested by owner; neighboring alignment remains unresolved."
     },
     {
       "id": "g28-positive-z-seam",
       "kind": "unknown",
-      "status": "background-end-lounge-outside-crop",
+      "status": "owner-requested-arch-added-neighbor-unresolved",
       "sources": [
         "G11"
       ],
-      "notes": "Table_G27 and surrounding unlabelled sofas lie beyond this draft. Do not claim a through-building route or enclose this end from the crop rectangle."
+      "notes": "Standard open arch requested by owner; neighboring alignment remains unresolved."
     },
     {
       "id": "g28-side-bay-arches",
@@ -200,5 +285,8 @@
       ],
       "notes": "Wide views show pale curved surrounds/pier returns at side-bay ends. Exact extents and shared ownership require review; no guessed wall spans added."
     }
+  ],
+  "notes": [
+    "Owner-requested pale arched partitions added at both walkway ends. Open passages retain access; dimensions and adjacent seam ownership remain provisional."
   ]
 }

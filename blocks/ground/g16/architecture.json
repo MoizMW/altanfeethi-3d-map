@@ -3,7 +3,7 @@
   "version": 1,
   "blockId": "ground-g-lounge-016",
   "floorSize": [
-    6,
+    7.4,
     8.4
   ],
   "floorCenter": [
@@ -41,19 +41,19 @@
   },
   "footprint": [
     [
-      -3,
+      -3.7,
       -3.2
     ],
     [
-      3,
+      3.7,
       -3.2
     ],
     [
-      3,
+      3.7,
       5.2
     ],
     [
-      -3,
+      -3.7,
       5.2
     ]
   ],
@@ -62,16 +62,16 @@
       "id": "g16-window-back",
       "kind": "glass",
       "start": [
-        -3,
+        -3.7,
         -3.2
       ],
       "end": [
-        3,
+        3.7,
         -3.2
       ],
       "height": 4.1,
       "thickness": 0.06,
-      "color": "#e7e3d9",
+      "color": "#9dbfc3",
       "owner": "ground/g16",
       "sources": [
         "G20-wide",
@@ -85,11 +85,11 @@
       "id": "g16-window-return",
       "kind": "glass",
       "start": [
-        3,
+        3.7,
         -3.2
       ],
       "end": [
-        3,
+        3.7,
         1.2
       ],
       "height": 4.1,
@@ -108,11 +108,11 @@
       "id": "g16-console-wall",
       "kind": "solid",
       "start": [
-        3,
+        3.7,
         1.2
       ],
       "end": [
-        3,
+        3.7,
         5.2
       ],
       "height": 4.1,
@@ -129,11 +129,11 @@
       "id": "g16-neighbor-arch-wall",
       "kind": "solid",
       "start": [
-        -3,
+        -3.7,
         -3.2
       ],
       "end": [
-        -3,
+        -3.7,
         5.2
       ],
       "height": 4.1,
@@ -179,7 +179,7 @@
   "ceiling": {
     "height": 4.1,
     "size": [
-      6,
+      7.4,
       8.4
     ],
     "center": [
@@ -191,7 +191,7 @@
   "circulation": {
     "polygon": [
       [
-        -3,
+        -3.7,
         0.9
       ],
       [
@@ -203,7 +203,7 @@
         5.2
       ],
       [
-        -3,
+        -3.7,
         5.2
       ]
     ],
@@ -214,15 +214,15 @@
       "cameraAtEntrance": "G23",
       "centerline": [
         [
-          -1.15,
+          -2.2,
           5.2
         ],
         [
-          -1.15,
+          -2.2,
           1.35
         ],
         [
-          -3,
+          -3.7,
           1.35
         ]
       ],
@@ -234,7 +234,7 @@
         "id": "g16-g9-entry",
         "kind": "open-connection",
         "start": [
-          -1.6,
+          -3.7,
           5.2
         ],
         "end": [
@@ -260,6 +260,9 @@
     "Owner correction: arched partition behind G7 extends across full local Z span -2.8 to 4.8, not only the window seating half. Arch/pier proportions remain estimates.",
     "G23 is at the B-zone to G-zone entrance from G9 empty-side walking passage. Entry beside G1/G2 turns left into the G-zone route; local L-shaped pale floor is provisional. Saved chair positions and rotations are retained.",
     "Owner floor/material refinement: pale walking floor fills bottom-left region through the left turn; former pale strip beside G2 becomes dark checked seating floor. Back span behind G4-G7 uses glass only instead of curtains.",
-    "Owner alignment correction: shell cross-span expanded to 8.4 m, Z=-3.2 to 5.2, matching G18 edges exactly in the paired layout. Full arch and pale entry floor extend to these edges. Source furniture transforms unchanged; meter values remain provisional."
+    "Owner alignment correction: shell cross-span expanded to 8.4 m, Z=-3.2 to 5.2, matching G18 edges exactly in the paired layout. Full arch and pale entry floor extend to these edges. Source furniture transforms unchanged; meter values remain provisional.",
+    "Owner compact-bay correction: source width 5.2 m, length remains 8.4 m. Combined placement [-2.78,0,-8.2] keeps the G18 seam X=-5.38 fixed and right edge -0.18 aligned with G9. Pale G9 approach has a 1.6 m width; furniture sizes retained.",
+    "Owner rebalance: source width 5.8 m, unchanged length 8.4 m; combined center X=-3.08 matches compacted G18 at -5.98 and G9 right edge -0.18. Pale entry width is 2.2 m.",
+    "Owner restores 7.4 m width with unchanged 8.4 m length. Combined center X=-2.28 retains G18 seam -5.98 and aligns right edge 1.42 with G9. Pale approach width 3.0 m. Furniture spreads across the restored width."
   ]
 }

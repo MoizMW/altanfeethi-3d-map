@@ -8,7 +8,7 @@
       "type": "sofa",
       "name": "Sign-wall sofa · E3 / E4",
       "position": [
-        -2.7,
+        -3.6756830357475154,
         0,
         -0.1
       ],
@@ -39,9 +39,9 @@
       "type": "sofa",
       "name": "Rear left sofa · E5 / E6",
       "position": [
-        -1.35,
+        -1.8513601954181222,
         0,
-        -2.15
+        -1.9097366528596262
       ],
       "yaw": 0,
       "size": [
@@ -50,8 +50,8 @@
         0.9
       ],
       "scale": [
-        1,
-        1,
+        1.2685121838330213,
+        1.141675035221719,
         1
       ],
       "color": "#a8a5a0",
@@ -70,9 +70,9 @@
       "type": "sofa",
       "name": "Rear right sofa · E7 / E8",
       "position": [
-        1.35,
+        1.8927018515226106,
         0,
-        -2.15
+        -1.9090836000330618
       ],
       "yaw": 0,
       "size": [
@@ -81,8 +81,8 @@
         0.9
       ],
       "scale": [
-        1,
-        1,
+        1.1987536762199835,
+        1.1467748037859287,
         1
       ],
       "color": "#a8a5a0",
@@ -101,7 +101,7 @@
       "type": "sofa",
       "name": "Plain-wall sofa · E9 / E10",
       "position": [
-        2.7,
+        3.670867829284686,
         0,
         -0.1
       ],
@@ -133,7 +133,7 @@
       "name": "Gold lounge chair · E2",
       "variant": "egg-swivel",
       "position": [
-        -2.7,
+        -3.6342925335133085,
         0,
         2.05
       ],
@@ -165,7 +165,7 @@
       "name": "Gold lounge chair · E11",
       "variant": "egg-swivel",
       "position": [
-        2.7,
+        3.614403069980039,
         0,
         2.05
       ],
@@ -196,7 +196,7 @@
       "type": "table",
       "name": "Pale oval coffee table · E1",
       "position": [
-        -1.55,
+        -2.417173307182793,
         0,
         2.05
       ],
@@ -226,7 +226,7 @@
       "type": "table",
       "name": "Pale oval coffee table · E2",
       "position": [
-        -1.55,
+        -2.417215076829644,
         0,
         -0.1
       ],
@@ -256,9 +256,9 @@
       "type": "table",
       "name": "Pale oval coffee table · E4",
       "position": [
-        1.55,
+        2.3853524069535337,
         0,
-        -0.1
+        -0.08870704812375341
       ],
       "yaw": 90,
       "size": [
@@ -286,9 +286,9 @@
       "type": "table",
       "name": "Pale oval coffee table · E5",
       "position": [
-        1.55,
+        2.4756960218409674,
         0,
-        2.05
+        2.117757711257479
       ],
       "yaw": 90,
       "size": [
@@ -316,9 +316,9 @@
       "type": "table",
       "name": "Round side table · E3",
       "position": [
+        0.08491622789732123,
         0,
-        0,
-        -2.15
+        -1.9857091912716889
       ],
       "yaw": 0,
       "size": [
@@ -346,7 +346,7 @@
       "type": "plant",
       "name": "Tall corner plant",
       "position": [
-        -2.85,
+        -4.25,
         0,
         -2.35
       ],
@@ -375,7 +375,7 @@
       "type": "plant",
       "name": "Tall corner plant",
       "position": [
-        2.85,
+        4.25,
         0,
         -2.35
       ],
