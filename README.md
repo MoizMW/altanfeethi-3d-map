@@ -5,6 +5,10 @@ Combined G15/G13: `http://127.0.0.1:4209/?layout=ground/g15-g13` — checkpoint,
 G13 arrival passport control: `http://127.0.0.1:4209/?block=ground/g13` — [booth evidence and review notes](blocks/ground/g13/README.md).
 
 G15 security checkpoint: `http://127.0.0.1:4209/?block=ground/g15` — [equipment evidence and review notes](blocks/ground/g15/README.md).
+First-floor lounges and stair lobby: `http://127.0.0.1:4209/?layout=first/bottom-lobby` — G35–G38 opposite G42, connected around the stair/escalator void, with H9/wide-image context and lobby furnishings. The original bottom-right row remains at `/?layout=first/bottom-right`.
+Reception + SGS shared security/unused-counter bays: `http://127.0.0.1:4209/?layout=ground/departure-sgs`.
+
+Departure_Reception: `http://127.0.0.1:4209/?block=ground/departure-reception` — [reception, entrance, e-gate and side-camera evidence](blocks/ground/departure-reception/README.md).
 
 G12 + G14 shared C-zone lounge: `http://127.0.0.1:4209/?block=ground/g12-g14` — [evidence and review notes](blocks/ground/g12-g14/README.md). One editable space for both groups, with 21 unique seat IDs.
 
@@ -67,3 +71,6 @@ Run `npm test` before sharing a branch. Run `npm run camera-registration` to ope
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before creating or merging a block. Project evidence and reconstruction decisions are recorded in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
 
 Before building a block, check [wide capture snapshots](evidence/wide%20capture%20snapshots/README.md) for wider images of the same cameras. Existing ROIs apply to the normal detection images, not the wide captures.
+
+
+Table drawing references: place PNGs named after table IDs (for example `B1.png` for `Table_B1`) in `evidence/tables_drawing/`. The editor adds matching `B1 drawing` buttons beside normal/wide camera views, including combined layouts. Missing drawings are omitted. These files are owner visual references for checking chair names; they do not modify or calibrate the model.

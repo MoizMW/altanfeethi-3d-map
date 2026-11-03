@@ -1,0 +1,122 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-egate-office-passage",
+  "objects": [
+    {
+      "id": "egate-office-passage-exit-sliding-doors",
+      "type": "automatic-glass-gate",
+      "name": "Exterior exit · double sliding glass doors",
+      "position": [
+        14,
+        0,
+        9.1
+      ],
+      "yaw": 0,
+      "size": [
+        5,
+        3.3,
+        0.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#929b99",
+      "seats": [],
+      "cameras": [
+        "EXIT",
+        "A1"
+      ],
+      "confidence": "Observed permanent landmark; local pose/dimensions provisional",
+      "openFraction": 1,
+      "operation": "automatic-sliding"
+    },
+    {
+      "id": "egate-office-passage-office-door",
+      "type": "wall-panel",
+      "name": "Altanfeethi office · closed timber doorway",
+      "position": [
+        19.3,
+        0,
+        2.73
+      ],
+      "yaw": 0,
+      "size": [
+        1.2,
+        2.5,
+        0.12
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#624b3e",
+      "seats": [],
+      "cameras": [
+        "A1",
+        "A3"
+      ],
+      "confidence": "Observed permanent landmark; local pose/dimensions provisional",
+      "variant": "timber-office-door"
+    },
+    {
+      "id": "egate-office-passage-office-console",
+      "type": "display-console",
+      "name": "Office-front dark console with paired brass rings",
+      "position": [
+        22.13921925791279,
+        0,
+        2.3753174626856786
+      ],
+      "yaw": 180,
+      "size": [
+        1.65,
+        0.88,
+        0.38
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#303431",
+      "seats": [],
+      "cameras": [
+        "A3"
+      ],
+      "confidence": "Observed permanent landmark; local pose/dimensions provisional",
+      "variant": "ring-pedestal"
+    },
+    {
+      "id": "egate-office-passage-office-planter",
+      "type": "plant",
+      "name": "Office-side low rectangular planter",
+      "position": [
+        17.16308972525777,
+        0,
+        2.2255367204297056
+      ],
+      "yaw": 0,
+      "size": [
+        1.2,
+        1.15,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4b6643",
+      "seats": [],
+      "cameras": [
+        "A3"
+      ],
+      "confidence": "Observed permanent landmark; local pose/dimensions provisional",
+      "variant": "rectangular-planter"
+    }
+  ]
+}

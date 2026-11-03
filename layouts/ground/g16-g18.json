@@ -9,7 +9,7 @@
     {
       "block": "ground/g16",
       "position": [
-        0,
+        0.7,
         0,
         0
       ],
@@ -35,11 +35,11 @@
     }
   ],
   "floorSize": [
-    21.6,
+    23,
     8.4
   ],
   "floorCenter": [
-    -7.8,
+    -7.1,
     1
   ],
   "walls": [
@@ -76,7 +76,8 @@
     "G16 owns the single full-width arch; G18 has no duplicate end wall. Pale walking floors are rendered from both source circulation polygons, with a shared clear overlap at the arch.",
     "Owner alignment correction: G16 shell now has the same 8.4 m cross-span as G18. Both floor edges and side glazing meet at global Z=-3.2 and Z=5.2, with the arch at X=-3. G18 glazing extends to its trimmed end. Furniture is not scaled or moved; metric dimensions remain provisional.",
     "This G-zone assembly is independent of the G9/G10/G11 layout. G16 G9 entry metadata is retained for a later full-floor join.",
-    "G20 yaw -90, position [-14.8,0,1] places its G31/G24 end at X=-11 against G18. A single layout-owned arch matches G16/G18 in span and profile. All three blocks align at global Z=-3.2 and 5.2. White paths continue through both arches; source furniture and corrected seat IDs are preserved."
+    "G20 yaw -90, position [-14.8,0,1] places its G31/G24 end at X=-11 against G18. A single layout-owned arch matches G16/G18 in span and profile. All three blocks align at global Z=-3.2 and 5.2. White paths continue through both arches; source furniture and corrected seat IDs are preserved.",
+    "Compact G16 source width 5.2 m: shift G16 by -0.4 m to retain the existing G18 seam at X=-3. Other bays remain fixed."
   ],
   "openings": [
     {

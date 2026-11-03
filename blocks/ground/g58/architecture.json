@@ -1,0 +1,177 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-i-lounge-058",
+  "floorSize": [
+    4.2,
+    4.2
+  ],
+  "floorCenter": [
+    0.5,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-02T11:41:18.260Z",
+    "registrationSha256": "d05c6582464466ad2102d215a2bc6b2a563755c2a089bf31737295f0e318f4c6",
+    "anchors": [
+      {
+        "camera": "I18",
+        "pixel": [
+          7085,
+          2630
+        ],
+        "heading": 126,
+        "status": "verified"
+      },
+      {
+        "camera": "I22",
+        "pixel": [
+          7273,
+          2797
+        ],
+        "heading": 301,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "From the pale paneled wall toward the open aisle",
+      "z": "From Seat_I7/I8 toward the sofa and Seat_I5/I6, matching G57's chair-to-sofa axis convention",
+      "y": "Up"
+    },
+    "sourceMapCrop": [
+      6400,
+      2100,
+      8000,
+      3450
+    ],
+    "mapReview": "I18/I22 locate the next illustrated sofa/two-chair bay along the I-zone strip after G57. Normal and wide photographs establish current furniture and screens; map symbols supply relative topology only."
+  },
+  "footprint": [
+    [
+      -1.6,
+      -2.1
+    ],
+    [
+      2.6,
+      -2.1
+    ],
+    [
+      2.6,
+      2.1
+    ],
+    [
+      -1.6,
+      2.1
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g58-paneled-wall",
+      "kind": "solid",
+      "start": [
+        -1.5,
+        -2.02
+      ],
+      "end": [
+        -1.5,
+        2.02
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#d8d3c7",
+      "owner": "ground/g58",
+      "sources": [
+        "I18-wide",
+        "I22-wide"
+      ],
+      "confidence": "Pale paneled wall is visible beside both seating ends; extent, thickness and height estimated",
+      "notes": "Wall finish and dark panel joints are simplified. Its continuation into adjacent bays requires a shared floor transform.",
+      "finish": "i-zone-stone-panels"
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [
+    {
+      "id": "g57-sofa-screen-boundary",
+      "kind": "decorative-partition",
+      "neighbor": "ground/g57",
+      "objectId": "g57-sofa-screen-01",
+      "ownsWall": false,
+      "status": "candidate-shared-screen-needs-owner-review",
+      "sources": [
+        "I22-wide",
+        "I17-I18-registration-proximity"
+      ],
+      "notes": "I7/I8's rear screen appears to be the reverse side of G57's sofa screen. Retain the existing G57 owner provisionally and do not render another copy here. No accepted seam or transform is asserted."
+    }
+  ],
+  "circulation": {
+    "id": "g58-aisle-context",
+    "polygon": [
+      [
+        1.3,
+        -2.1
+      ],
+      [
+        2.6,
+        -2.1
+      ],
+      [
+        2.6,
+        2.1
+      ],
+      [
+        1.3,
+        2.1
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "status": "visible-open-aisle-width-estimated",
+    "sources": [
+      "I18-wide",
+      "I22-wide"
+    ],
+    "notes": "The immediate pale aisle stays open at +X. Its full width, opposite window-side seating and ownership are outside this block."
+  },
+  "ceiling": {
+    "size": [
+      4.2,
+      4.2
+    ],
+    "center": [
+      0.5,
+      0
+    ],
+    "height": 4.1,
+    "defaultVisible": false,
+    "confidence": "Shared provisional ceiling estimate; no measured height or profile"
+  },
+  "boundaryReview": [
+    {
+      "id": "g58-sofa-screen-boundary",
+      "kind": "decorative-partition",
+      "status": "visible-screen-next-owner-unresolved",
+      "objectId": "g58-sofa-screen-01",
+      "sources": [
+        "I18-wide"
+      ],
+      "notes": "G58 owns this provisional screen behind I5/I6. Its other side, neighboring block and detailed slat construction remain unresolved."
+    },
+    {
+      "id": "g58-open-aisle",
+      "kind": "open-corridor",
+      "status": "neighbor-and-seam-unresolved",
+      "sources": [
+        "I18-wide",
+        "I22-wide"
+      ],
+      "notes": "The crop shows only the adjacent aisle strip; do not close the +X side or infer a room enclosure from the floor rectangle."
+    }
+  ],
+  "notes": [
+    "Owner wall-finish refinement: pale panel walls use fine vertical stone striations and dark inset joints; brown end panel uses vertical wood grain and subtle panel seams, following I16 and opposing I-zone wide views. Procedural appearance and panel spacing estimated; geometry extents unchanged."
+  ]
+}

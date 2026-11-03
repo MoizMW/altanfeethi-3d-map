@@ -12,11 +12,13 @@
     "security-barrier": {"builder": "procedural-security-barrier", "defaultSize": [4.4, 1.15, 0.28]},
     "floor-lamp": {
       "builder": "procedural-floor-lamp",
-      "defaultSize": [0.46, 1.85, 0.46]
+      "defaultSize": [0.46, 1.85, 0.46],
+      "variants": ["pendant"]
     },
     "display-console": {
       "builder": "procedural-display-console",
-      "defaultSize": [3.1, 0.9, 0.4]
+      "defaultSize": [3.1, 0.9, 0.4],
+      "variants": ["grand-piano", "ring-pedestal", "i-zone-end-console"]
     },
     "sofa": {
       "builder": "procedural-sofa",
@@ -25,28 +27,35 @@
     "armchair": {
       "builder": "procedural-armchair",
       "defaultSize": [0.88, 0.9, 0.92],
-      "variants": ["armless", "egg-swivel"],
+      "variants": ["armless", "egg-swivel", "shell-lounge"],
       "defaultColor": "#627d86",
       "notes": "Use shared blue lounge upholstery as in G18/G20. Retired green chair overrides are rejected by block validation."
     },
     "table": {
       "builder": "procedural-oval-table",
       "defaultSize": [1.5, 0.42, 0.78],
-      "variants": ["square-stone", "round-glass", "rectangular"]
+      "variants": [
+        "square-stone",
+        "round-glass",
+        "rectangular",
+        "round-pedestal",
+        "nested-stone"
+      ]
     },
     "screen": {
       "builder": "procedural-screen",
       "defaultSize": [3.8, 2.3, 0.07],
       "variants": ["open-shelving", "teal-gold-panel"]
     },
-    "plant": {
+        "plant": {
       "builder": "procedural-plant",
-      "variants": ["rectangular-planter"],
-      "defaultSize": [0.5, 1.7, 0.5]
+      "defaultSize": [0.5, 1.7, 0.5],
+      "variants": ["rectangular-planter"]
     },
     "counter": {
       "builder": "procedural-reception-counter",
-      "defaultSize": [2.45, 1.18, 0.86]
+      "defaultSize": [2.45, 1.18, 0.86],
+      "variants": ["food-buffet", "unused-glass-counter"]
     },
     "office-chair": {
       "builder": "procedural-office-chair",
@@ -54,16 +63,32 @@
     },
     "cabinet": {
       "builder": "procedural-cabinet",
-      "defaultSize": [2.45, 0.78, 0.42]
+      "defaultSize": [2.45, 0.78, 0.42],
+      "variants": [
+        "checkin-kiosk",
+        "drawer-pedestal",
+        "access-reader",
+        "plain-planter"
+      ]
     },
     "display": {
       "builder": "procedural-display",
       "defaultSize": [0.58, 0.42, 0.18],
-      "variants": ["framed-art"]
+      "variants": ["framed-art", "desk-reader"]
     },
     "wall-panel": {
       "builder": "procedural-wall-panel",
-      "defaultSize": [12.2, 4.1, 0.12]
+      "defaultSize": [12.2, 4.1, 0.12],
+      "variants": [
+        "plain",
+        "air-curtain",
+        "standing-flag",
+        "teal-reception-backdrop",
+        "stone-relief",
+        "teal-service-door",
+        "timber-office-door",
+        "pleated-curtain"
+      ]
     },
     "luggage-scale": {
       "builder": "procedural-luggage-scale",
@@ -77,7 +102,8 @@
     "automatic-glass-gate": {
       "builder": "procedural-automatic-glass-gate",
       "defaultSize": [8.4, 2.8, 0.16],
-      "notes": "Double sliding leaves and fixed side glazing, no scanner stand; openFraction 0..1 controls static opening preview. Overall size includes header."
+      "notes": "Double sliding leaves and fixed side glazing, no scanner stand; openFraction 0..1 controls static opening preview. Overall size includes header.",
+      "variants": ["swing-turnstile"]
     }
   }
 }

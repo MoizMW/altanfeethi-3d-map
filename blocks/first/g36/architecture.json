@@ -1,0 +1,276 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-lounge-036",
+  "floorSize": [
+    4.8,
+    5.6
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "anchors": [
+      {
+        "camera": "H3",
+        "pixel": [
+          5991,
+          2585
+        ],
+        "heading": 87,
+        "status": "verified"
+      },
+      {
+        "camera": "H8",
+        "pixel": [
+          6582,
+          2648
+        ],
+        "heading": 284,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      5500,
+      2200,
+      7000,
+      3100
+    ],
+    "localAxes": {
+      "x": "From long wood wall toward escalator-side railing",
+      "z": "From chair pair toward white sofa; sofa at positive Z for first-floor composition review",
+      "y": "Up; first-floor physical elevation remains unresolved"
+    },
+    "mapReview": "First-floor map and H3/H8 anchors reviewed at escalator end. No map basis or metric scale is fitted; global placement remains pending."
+  },
+  "footprint": [
+    [
+      -2.4,
+      -2.8
+    ],
+    [
+      2.4,
+      -2.8
+    ],
+    [
+      2.4,
+      2.8
+    ],
+    [
+      -2.4,
+      2.8
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g36-dark-floor",
+      "size": [
+        4.8,
+        5.6
+      ],
+      "center": [
+        0,
+        0
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [
+    {
+      "id": "g36-rug",
+      "polygon": [
+        [
+          -2.05,
+          -2.35
+        ],
+        [
+          1.15,
+          -2.35
+        ],
+        [
+          1.15,
+          2.5
+        ],
+        [
+          -2.05,
+          2.5
+        ]
+      ],
+      "notes": "Approximate pale rug overlay; not a circulation classification or photographic carpet texture."
+    }
+  ],
+  "circulation": {
+    "id": "g36-escalator-side-access",
+    "polygon": [
+      [
+        1.25,
+        -2.4
+      ],
+      [
+        2.05,
+        -2.4
+      ],
+      [
+        2.05,
+        2.4
+      ],
+      [
+        1.25,
+        2.4
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "estimated-clear-strip",
+    "notes": "Dark tile access strip between rug and balustrade. Stair void/escalator geometry outside the crop."
+  },
+  "walls": [
+    {
+      "id": "g36-long-wood-wall",
+      "kind": "solid",
+      "start": [
+        -2.25,
+        2.65
+      ],
+      "end": [
+        -2.25,
+        -2.65
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#856746",
+      "finish": "warm-wood",
+      "interiorSide": 1,
+      "owner": "first/g36",
+      "sources": [
+        "H3",
+        "H8"
+      ],
+      "confidence": "Wood-paneled boundary visible in both views; height, span and thickness estimated"
+    },
+    {
+      "id": "g36-chair-divider",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        -2.25,
+        -2.5
+      ],
+      "end": [
+        1.15,
+        -2.5
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "first/g36",
+      "sources": [
+        "H3"
+      ],
+      "confidence": "Striated translucent screen behind chairs visible; material, exact height and span provisional",
+      "notes": "Decorative screen, not a confirmed exterior window."
+    },
+    {
+      "id": "g36-sofa-divider",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        1.15,
+        2.5
+      ],
+      "end": [
+        -2.25,
+        2.5
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "first/g36",
+      "sources": [
+        "H8"
+      ],
+      "confidence": "Striated translucent screen behind sofa visible; material, exact height and span provisional",
+      "notes": "Neighbor/shared ownership unresolved; retain stable ID when composing."
+    },
+    {
+      "id": "g36-escalator-balustrade",
+      "kind": "glass",
+      "start": [
+        2.2,
+        -2.65
+      ],
+      "end": [
+        2.2,
+        2.65
+      ],
+      "height": 1.1,
+      "thickness": 0.04,
+      "owner": "first/g36",
+      "sources": [
+        "H3",
+        "H8"
+      ],
+      "confidence": "Observed glass guard; height and extent estimated",
+      "notes": "Schematic handrail/guard, no escalator or stair-well geometry."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "size": [
+      4.8,
+      5.6
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "boundaryReview": [
+    {
+      "id": "g36-chair-side-access",
+      "kind": "open-corridor",
+      "start": [
+        1.15,
+        -2.5
+      ],
+      "end": [
+        2.15,
+        -2.5
+      ],
+      "sources": [
+        "H3"
+      ],
+      "status": "estimated-neighbor-unresolved"
+    },
+    {
+      "id": "g36-sofa-side-access",
+      "kind": "open-corridor",
+      "start": [
+        1.15,
+        2.5
+      ],
+      "end": [
+        2.15,
+        2.5
+      ],
+      "sources": [
+        "H8"
+      ],
+      "status": "estimated-neighbor-unresolved"
+    },
+    {
+      "id": "g36-escalator-interface",
+      "kind": "unknown",
+      "sources": [
+        "H3",
+        "H8"
+      ],
+      "status": "floor-elevation-stair-void-and-neighbor-ownership-unresolved"
+    }
+  ]
+}

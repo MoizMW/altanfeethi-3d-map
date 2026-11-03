@@ -1,0 +1,26 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-i-lounge-061",
+  "slug": "g61",
+  "name": "G61 \u00b7 I-zone end corner and window lounge",
+  "floor": "ground",
+  "groups": [
+    "g61"
+  ],
+  "zone": "I",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  },
+  "dependencies": [
+    {
+      "block": "ground/g57",
+      "reason": "Shared planter reference"
+    }
+  ]
+}

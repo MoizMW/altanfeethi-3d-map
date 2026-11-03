@@ -17,6 +17,7 @@ export function validateBlock(b) {
       previousEnd=d.offset+d.width/2;doorIds.add(d.id);
     }
   }
+  for(const w of walls)if(w.elevation!=null&&(!Number.isFinite(w.elevation)||w.elevation<0||w.elevation+w.height>20))fail('Invalid wall elevation.');
   const openingIds=new Set();for(const o of openings){const w=walls.find(w=>w.id===o.wallId);if(!w||w.kind!=='solid'||openingIds.has(o.id)||typeof o.id!=='string'||o.kind!=='rounded-passage'||![o.offset,o.width,o.springHeight,o.height].every(Number.isFinite)||o.width<=0||o.springHeight<=0||o.height<=o.springHeight||o.height>=w.height||o.offset-o.width/2<0||o.offset+o.width/2>Math.hypot(w.end[0]-w.start[0],w.end[1]-w.start[1]))fail('Invalid opening.');openingIds.add(o.id);}
   for(const w of walls){const list=openings.filter(o=>o.wallId===w.id).sort((a,b)=>a.offset-b.offset);for(let i=1;i<list.length;i++)if(list[i-1].offset+list[i-1].width/2>=list[i].offset-list[i].width/2)fail('Openings overlap.');}
   if(b.architecture?.ceiling){const c=b.architecture.ceiling;if(!vector(c.size,2)||c.size.some(x=>x<=0)||!Number.isFinite(c.height)||c.height<=0||c.height>20||(c.center&&!vector(c.center,2)))fail('Invalid ceiling.');}

@@ -1,0 +1,233 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-i-lounge-061",
+  "floorSize": [
+    7.6,
+    6.9
+  ],
+  "floorCenter": [
+    2.2,
+    -2.95
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-03T07:12:11.901Z",
+    "registrationSha256": "979c81588be5532db1a6fb0b91564cc988b1f3eece3591837760a771b5a9fcd3",
+    "anchors": [
+      {
+        "camera": "I14",
+        "pixel": [
+          7068,
+          2147
+        ],
+        "heading": 266,
+        "status": "verified"
+      },
+      {
+        "camera": "I15",
+        "pixel": [
+          7448,
+          2382
+        ],
+        "heading": 293,
+        "status": "verified"
+      },
+      {
+        "camera": "I16",
+        "pixel": [
+          6670,
+          2036
+        ],
+        "heading": 244,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "Same basis as G57\u2013G59: paneled wall toward aisle and windows (+X)",
+      "z": "From end console toward G57, G58, G59 and onward (+Z)",
+      "y": "Up"
+    }
+  },
+  "walls": [
+    {
+      "id": "g61-window-frontage",
+      "kind": "glass",
+      "start": [
+        5.85,
+        -6.4
+      ],
+      "end": [
+        5.85,
+        0.5
+      ],
+      "height": 4.1,
+      "thickness": 0.025,
+      "color": "#c9d9d8",
+      "owner": "ground/g61",
+      "sources": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Observed in normal/wide views; extents and dimensions estimated",
+      "privacyBand": false,
+      "frameColor": "#a2aaa7"
+    },
+    {
+      "id": "g61-end-wall",
+      "kind": "solid",
+      "start": [
+        -1.5,
+        -6.3
+      ],
+      "end": [
+        1.3,
+        -6.3
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#765745",
+      "owner": "ground/g61",
+      "sources": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Observed in normal/wide views; extents and dimensions estimated",
+      "finish": "i-zone-wood-panels"
+    },
+    {
+      "id": "g61-end-wall-pale",
+      "kind": "solid",
+      "start": [
+        1.3,
+        -6.3
+      ],
+      "end": [
+        5.85,
+        -6.3
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#d8d3c7",
+      "owner": "ground/g61",
+      "sources": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Observed in normal/wide views; extents and dimensions estimated",
+      "finish": "i-zone-stone-panels"
+    },
+    {
+      "id": "g61-corner-side-wall",
+      "kind": "solid",
+      "start": [
+        -1.5,
+        -6.3
+      ],
+      "end": [
+        -1.5,
+        -2.4
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#d8d3c7",
+      "owner": "ground/g61",
+      "sources": [
+        "I14",
+        "I15",
+        "I16"
+      ],
+      "confidence": "Observed in normal/wide views; extents and dimensions estimated",
+      "finish": "i-zone-stone-panels"
+    }
+  ],
+  "openings": [],
+  "floorSections": [
+    {
+      "center": [
+        4.3,
+        -2.95
+      ],
+      "size": [
+        3.4,
+        6.9
+      ],
+      "yaw": 0,
+      "color": "#424747"
+    },
+    {
+      "center": [
+        0.5,
+        -4.4
+      ],
+      "size": [
+        4.2,
+        4.0
+      ],
+      "yaw": 0,
+      "color": "#424747"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "g61-g57-planter-edge",
+      "neighbor": "ground/g57",
+      "objectId": "g57-planter-01",
+      "ownsWall": false,
+      "status": "G57 owns the existing planter, retained once in full layout"
+    },
+    {
+      "id": "g61-g62-table-i9",
+      "neighbor": "ground/g62",
+      "objectId": "g61-table-9",
+      "ownsObject": true,
+      "status": "Table_I9 seen in I15 and I25; G61 owns it, G62 references it"
+    }
+  ],
+  "ceiling": {
+    "size": [
+      7.6,
+      6.9
+    ],
+    "center": [
+      2.2,
+      -2.95
+    ],
+    "height": 4.1,
+    "defaultVisible": false
+  },
+  "notes": [
+    "Dark floor, pale central walk, tan chairs facing glazing, gathered ivory curtains and metal-framed glass are corroborated across wide views. Exact widths and pitch estimated.",
+    "Only the selected five groups are composed. Nearby unassigned foreground blue chair and outside-terminal architecture are not given invented seat IDs.",
+    "Owner correction 2026-11-03: omit all window curtain columns and raise the glass frontage to the 4.1 m ceiling height. Furniture and window positions remain unchanged.",
+    "Owner wall-finish refinement: pale panel walls use fine vertical stone striations and dark inset joints; brown end panel uses vertical wood grain and subtle panel seams, following I16 and opposing I-zone wide views. Procedural appearance and panel spacing estimated; geometry extents unchanged."
+  ],
+  "circulation": {
+    "id": "g61-window-aisle-margin",
+    "polygon": [
+      [
+        2.6,
+        -2.4
+      ],
+      [
+        3.4,
+        -2.4
+      ],
+      [
+        3.4,
+        0.5
+      ],
+      [
+        2.6,
+        0.5
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "status": "Estimated continuation of the pale central aisle to the tan chair backs, matching opposing wide views"
+  }
+}

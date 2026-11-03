@@ -1,0 +1,94 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-lounge-035",
+  "cameras": [
+    "H1",
+    "H2"
+  ],
+  "snapshots": {
+    "H1": "evidence/camera-snapshots/H1.jpg",
+    "H2": "evidence/camera-snapshots/H2.jpg"
+  },
+  "wideSnapshots": {
+    "H1": "evidence/wide capture snapshots/H1.jpg",
+    "H2": "evidence/wide capture snapshots/H2.jpg"
+  },
+  "rois": {
+    "H1": {
+      "chairs": "evidence/rois/chair-rois/g35/H1_to_g35.json",
+      "tables": "evidence/rois/table-rois/g35/H1_to_g35.json"
+    },
+    "H2": {
+      "chairs": "evidence/rois/chair-rois/g35/H2_to_g35.json",
+      "tables": "evidence/rois/table-rois/g35/H2_to_g35.json"
+    }
+  },
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "wideCaptureContext": {
+    "mountPosition": "Same mounts per supplied project context",
+    "roiUsage": "Normal detection ROIs only; not projected onto wide images",
+    "capturedAt": null
+  },
+  "notes": [
+    "Owner-requested orientation update: vertically flip the local floor layout (Z -> -Z), including walls, rug, railing, access, furniture positions and facing directions. Sofa slot order is reversed to preserve each seat identity at its reflected location. Intended composition is far upper-right on the first-floor map; global placement remains pending.",
+    "H2 identifies Seat_H1/H2 on one white two-seat sofa. H1 identifies Seat_H3/H4 on two individual blue armchairs facing that sofa. Four unique seat slots are modeled once.",
+    "Table_H1 is the same nested stone table set in both views. Its boomerang-shaped upper top and circular lower top share one physical object and one external identity.",
+    "H1/H2 normal and wide captures and the first-floor map were reviewed. Wood paneling, pale rug, glass escalator balustrade, decorative divider, one floor lamp and one plant provide context; six editable furniture/context objects total. Wood paneling is structural and follows cutaway controls.",
+    "Armchairs use the current owner standard blue #627d86; sofa is whitish #eeeadd. Marble, wood grain, chair contours, rug pattern and striated divider use procedural approximations.",
+    "Registered anchors/headings are preserved as observational evidence; no world transform, metric calibration, escalator geometry or first-floor stacking height is claimed."
+  ],
+  "seatCorrespondence": [
+    {
+      "objectId": "g35-sofa-01",
+      "seats": [
+        "Seat_H1",
+        "Seat_H2"
+      ],
+      "sources": [
+        "H2",
+        "H1"
+      ],
+      "status": "ROI-derived-slot-order-needs-owner-review"
+    },
+    {
+      "objectId": "g35-chair-03",
+      "seats": [
+        "Seat_H3"
+      ],
+      "sources": [
+        "H1",
+        "H2"
+      ],
+      "status": "ROI-derived-slot-order-needs-owner-review"
+    },
+    {
+      "objectId": "g35-chair-04",
+      "seats": [
+        "Seat_H4"
+      ],
+      "sources": [
+        "H1",
+        "H2"
+      ],
+      "status": "ROI-derived-slot-order-needs-owner-review"
+    }
+  ],
+  "reviewItems": [
+    "Confirm sofa slot order H1/H2 and chair orientation H3/H4.",
+    "Confirm rug dimensions, table contour, brass support positions and furniture spacing.",
+    "Confirm wood-wall extents, divider material/height, balustrade endpoints and access gaps.",
+    "Resolve first-floor coordinate basis, physical elevation, stair/void geometry and neighboring boundary ownership before composition."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-multiview",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-derived-needs-owner-review",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

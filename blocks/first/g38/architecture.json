@@ -1,0 +1,277 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-lounge-038",
+  "floorSize": [
+    4.8,
+    5.6
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "anchors": [
+      {
+        "camera": "H6",
+        "pixel": [
+          5747,
+          2165
+        ],
+        "heading": 281,
+        "status": "verified"
+      },
+      {
+        "camera": "H7",
+        "pixel": [
+          5139,
+          2142
+        ],
+        "heading": 95,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      4700,
+      1750,
+      6200,
+      2650
+    ],
+    "localAxes": {
+      "x": "From long wood wall toward open dark-tile access and escalator-side railing",
+      "z": "From H13/H14 chair pair toward the H15/H16 sofa; sofa at positive Z for composition review",
+      "y": "Up; local floor at zero, actual first-floor elevation unresolved"
+    },
+    "mapReview": "First-floor map and H6/H7 anchors reviewed at the end of the escalator-side lounge row. Photos establish current furniture and solid end-wall topology. No fitted plan basis or metric scale is claimed."
+  },
+  "footprint": [
+    [
+      -2.4,
+      -2.8
+    ],
+    [
+      2.4,
+      -2.8
+    ],
+    [
+      2.4,
+      2.8
+    ],
+    [
+      -2.4,
+      2.8
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g38-dark-floor",
+      "size": [
+        4.8,
+        5.6
+      ],
+      "center": [
+        0,
+        0
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [
+    {
+      "id": "g38-rug",
+      "polygon": [
+        [
+          -2.05,
+          -2.35
+        ],
+        [
+          1.15,
+          -2.35
+        ],
+        [
+          1.15,
+          2.5
+        ],
+        [
+          -2.05,
+          2.5
+        ]
+      ],
+      "notes": "Pale rectangular rug using approximate flat overlay; pattern not reproduced."
+    }
+  ],
+  "circulation": {
+    "id": "g38-side-access",
+    "polygon": [
+      [
+        1.25,
+        -2.4
+      ],
+      [
+        2.05,
+        -2.4
+      ],
+      [
+        2.05,
+        2.4
+      ],
+      [
+        1.25,
+        2.4
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "estimated-clear-strip",
+    "notes": "Dark tile access beside rug. Exact landing widening and railing termination require review."
+  },
+  "walls": [
+    {
+      "id": "g38-long-wood-wall",
+      "kind": "solid",
+      "start": [
+        -2.25,
+        2.65
+      ],
+      "end": [
+        -2.25,
+        -2.65
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#856746",
+      "finish": "warm-wood",
+      "interiorSide": 1,
+      "owner": "first/g38",
+      "sources": [
+        "H6",
+        "H7"
+      ],
+      "confidence": "Observed long wood backing; all dimensions estimated"
+    },
+    {
+      "id": "g38-sofa-wood-wall",
+      "kind": "solid",
+      "start": [
+        1.15,
+        2.65
+      ],
+      "end": [
+        -2.25,
+        2.65
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#856746",
+      "finish": "warm-wood",
+      "interiorSide": 1,
+      "owner": "first/g38",
+      "sources": [
+        "H6"
+      ],
+      "confidence": "Solid wood return behind sofa visible; crop endpoint, wall thickness and height estimated",
+      "notes": "This end is solid wood, unlike the decorative end screens of G36/G37. Doorway/column geometry outside the core remains unresolved."
+    },
+    {
+      "id": "g38-chair-divider",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        -2.25,
+        -2.5
+      ],
+      "end": [
+        1.15,
+        -2.5
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "first/g38",
+      "sources": [
+        "H7"
+      ],
+      "confidence": "Observed striated translucent screen behind chairs; material and height uncertain",
+      "notes": "Decorative divider rather than confirmed exterior glazing; shared ownership unresolved."
+    },
+    {
+      "id": "g38-escalator-side-guard",
+      "kind": "glass",
+      "start": [
+        2.2,
+        -2.65
+      ],
+      "end": [
+        2.2,
+        1.4
+      ],
+      "height": 1.1,
+      "thickness": 0.04,
+      "privacyBand": false,
+      "owner": "first/g38",
+      "sources": [
+        "H7"
+      ],
+      "confidence": "H7-wide shows glass guard beside the escalator beyond the tile strip; exact offset and endpoint estimated",
+      "notes": "Guard stops before sofa-side landing; no escalator or stair-void mesh is inferred."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "size": [
+      4.8,
+      5.6
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  },
+  "boundaryReview": [
+    {
+      "id": "g38-chair-side-access",
+      "kind": "open-corridor",
+      "start": [
+        1.15,
+        -2.5
+      ],
+      "end": [
+        2.15,
+        -2.5
+      ],
+      "sources": [
+        "H7"
+      ],
+      "status": "neighbor-and-screen-ownership-unresolved"
+    },
+    {
+      "id": "g38-sofa-side-landing",
+      "kind": "open-corridor",
+      "start": [
+        1.15,
+        2.65
+      ],
+      "end": [
+        2.35,
+        2.65
+      ],
+      "sources": [
+        "H6"
+      ],
+      "status": "landing-column-and-doorway-extents-unresolved"
+    },
+    {
+      "id": "g38-escalator-interface",
+      "kind": "unknown",
+      "sources": [
+        "H7"
+      ],
+      "status": "stair-void-floor-elevation-and-shared-ownership-unresolved"
+    }
+  ]
+}

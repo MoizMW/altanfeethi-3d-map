@@ -3,11 +3,11 @@
   "version": 1,
   "blockId": "ground-c-lounge-012-014",
   "floorSize": [
-    8.4,
-    13.2
+    8.6,
+    14.8
   ],
   "floorCenter": [
-    0.8,
+    0.9,
     0
   ],
   "ceilingHeight": 4.1,
@@ -130,19 +130,19 @@
   "footprint": [
     [
       -3.4,
-      -6.6
+      -7.4
     ],
     [
-      5,
-      -6.6
+      5.2,
+      -7.4
     ],
     [
-      5,
-      6.6
+      5.2,
+      7.4
     ],
     [
       -3.4,
-      6.6
+      7.4
     ]
   ],
   "walls": [
@@ -151,11 +151,11 @@
       "kind": "glass",
       "start": [
         -3.4,
-        -6.6
+        -7.4
       ],
       "end": [
         -3.4,
-        -2.2
+        -2.466666666666667
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -174,11 +174,11 @@
       "kind": "glass",
       "start": [
         -3.4,
-        -2.2
+        -2.466666666666667
       ],
       "end": [
         -3.4,
-        2.2
+        2.466666666666667
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -198,11 +198,11 @@
       "kind": "glass",
       "start": [
         -3.4,
-        2.2
+        2.466666666666667
       ],
       "end": [
         -3.4,
-        6.6
+        7.400000000000002
       ],
       "height": 4.1,
       "thickness": 0.06,
@@ -221,11 +221,11 @@
       "kind": "solid",
       "start": [
         -3.4,
-        -6.6
+        -7.4
       ],
       "end": [
         -1.4,
-        -6.6
+        -7.4
       ],
       "height": 4.1,
       "thickness": 0.18,
@@ -243,11 +243,11 @@
       "kind": "solid",
       "start": [
         -1.4,
-        -6.6
+        -7.4
       ],
       "end": [
-        3.4,
-        -6.6
+        2.6,
+        -7.4
       ],
       "height": 4.1,
       "thickness": 0.18,
@@ -268,11 +268,11 @@
       "kind": "solid",
       "start": [
         -3.4,
-        6.6
+        7.4
       ],
       "end": [
         -1.4,
-        6.6
+        7.4
       ],
       "height": 4.1,
       "thickness": 0.18,
@@ -292,11 +292,11 @@
       "kind": "solid",
       "start": [
         -1.4,
-        6.6
+        7.4
       ],
       "end": [
-        3.4,
-        6.6
+        2.6,
+        7.4
       ],
       "height": 4.1,
       "thickness": 0.18,
@@ -318,12 +318,12 @@
       "id": "g12-g14-corridor-arches",
       "kind": "solid",
       "start": [
-        3.4,
-        -6.6
+        2.6,
+        -7.4
       ],
       "end": [
-        3.4,
-        6.6
+        2.6,
+        7.4
       ],
       "height": 4.1,
       "thickness": 0.18,
@@ -346,8 +346,8 @@
       "id": "g12-g14-access-1",
       "wallId": "g12-g14-corridor-arches",
       "kind": "rounded-passage",
-      "offset": 2.1999999999999993,
-      "width": 3.7,
+      "offset": 2.466666666666667,
+      "width": 4.233333333333333,
       "springHeight": 1.85,
       "height": 3.35,
       "sources": [
@@ -362,8 +362,8 @@
       "id": "g12-g14-access-2",
       "wallId": "g12-g14-corridor-arches",
       "kind": "rounded-passage",
-      "offset": 6.6,
-      "width": 3.7,
+      "offset": 7.400000000000001,
+      "width": 4.233333333333333,
       "springHeight": 1.85,
       "height": 3.35,
       "sources": [
@@ -378,8 +378,8 @@
       "id": "g12-g14-access-3",
       "wallId": "g12-g14-corridor-arches",
       "kind": "rounded-passage",
-      "offset": 11.0,
-      "width": 3.7,
+      "offset": 12.333333333333334,
+      "width": 4.233333333333333,
       "springHeight": 1.85,
       "height": 3.35,
       "sources": [
@@ -396,20 +396,20 @@
     "id": "g12-g14-corridor",
     "polygon": [
       [
-        3.4,
-        -6.6
+        2.6,
+        -7.4
       ],
       [
-        5,
-        -6.6
+        5.2,
+        -7.4
       ],
       [
-        5,
-        6.6
+        5.2,
+        7.4
       ],
       [
-        3.4,
-        6.6
+        2.6,
+        7.4
       ]
     ],
     "surfaceMaterial": "pale-stone",
@@ -459,11 +459,11 @@
   ],
   "ceiling": {
     "size": [
-      8.4,
-      13.2
+      8.6,
+      14.8
     ],
     "center": [
-      0.8,
+      0.9,
       0
     ],
     "height": 4.1,
@@ -475,6 +475,7 @@
     "Central sofas C21/C22 and C24/C25 face one another across ONE Table_C23. They are not separate rooms or duplicate table observations.",
     "End pairs C17/C18 and C26/C27 are four individual armchairs, not sofas.",
     "Seating floor stays dark stone; only the outer corridor is pale. Arches connect the bays to that common corridor.",
-    "Measured dimensions, exact arch profiles, decorative pendant lights, frosted glass motifs and adjacent block seams remain unresolved."
+    "Measured dimensions, exact arch profiles, decorative pendant lights, frosted glass motifs and adjacent block seams remain unresolved.",
+    "Owner compact-span correction: standalone C lounge now uses the combined 8.6 x 14.8 m shell, floor center [0.9,0], with front arches at X=2.6 and 2.6 m corridor. Previously composed offsets are baked once into source furniture; saved edits now flow directly without extra offsets."
   ]
 }

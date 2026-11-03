@@ -1,0 +1,86 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "ground-departure-sgs",
+  "name": "Departure reception + SGS · Security and unused counter bays",
+  "displayCode": "RECEPTION / SGS",
+  "floor": "ground",
+  "status": "draft-needs-human-review",
+  "floorSize": [
+    22.15,
+    13.4
+  ],
+  "floorCenter": [
+    -3.075,
+    2
+  ],
+  "components": [
+    {
+      "block": "ground/departure-reception",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "departure-reception-sgs-security-backing",
+        "departure-reception-sgs-unused-bay-side"
+      ]
+    },
+    {
+      "block": "ground/g32",
+      "position": [
+        -10.75,
+        0,
+        2
+      ],
+      "yaw": 90,
+      "architectureOverrides": {
+        "floorSize": [
+          13.4,
+          6.7
+        ],
+        "floorCenter": [
+          0,
+          -0.05
+        ]
+      }
+    }
+  ],
+  "walls": [],
+  "openings": [],
+  "notes": [
+    "Owner topology: reception and SGS bound the same intervening area. Security sits toward departure entry, unused counter farther in. Security back is the SGS wall; unused counter lies between SGS approach wall and textured reception side wall.",
+    "Keep source blocks live and furniture identities unchanged. Reception standalone wall proxies excluded here; actual G32 kiosk backing and approach wall each render once.",
+    "SGS rotated 90 degrees and translated [-9.1,0,2] in reception coordinates. Its visitor-facing edge maps to X=-5.8; kiosk-side wall closes security backing, other wall bounds unused bay. Opening aligns to dark reception approach. Transform is provisional, based on map topology, owner instruction and camera overlap, not a survey.",
+    "G32 composed floor crop alone ends on wall seam at X=-5.8 to avoid overlapping floor tiles; source block floor and furniture are untouched. New unused bay retains 1.15 m access beside the short L leg. No hidden security machinery or construction stock is invented.",
+    "Latest owner widening: shared edge now X=-7.45, SGS transform [-10.75,0,2] at 90°. Bay is 3.2 m wide (was 1.55 m), with a 2.6 m main-reception-style counter. Security remains closed-backed with its original pose. This supersedes earlier shared-edge/transform/unused-counter size notes.",
+    "2026-11-03 owner correction: front L stub removed and security entrance-side gap closed up to existing entrance frame. Full unused bay mouth remains open; doorway/gateway and SGS routes preserved."
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "security-backing",
+      "owner": "ground/g32",
+      "sourceWall": "g32-kiosk-backing",
+      "neighbor": "ground/departure-reception"
+    },
+    {
+      "id": "unused-bay-sgs-side",
+      "owner": "ground/g32",
+      "sourceWall": "g32-approach-wall-return",
+      "neighbor": "ground/departure-reception"
+    }
+  ],
+  "evidenceCameras": [
+    "ReceptionCam1",
+    "ReceptionCam2",
+    "ReceptionCam3",
+    "ENTRANCE",
+    "Egate1",
+    "SGSCam1",
+    "SGSCam2",
+    "SGSCam3",
+    "SGSCam4"
+  ]
+}

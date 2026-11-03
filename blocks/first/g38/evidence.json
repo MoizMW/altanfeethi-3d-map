@@ -1,0 +1,96 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-lounge-038",
+  "cameras": [
+    "H6",
+    "H7"
+  ],
+  "snapshots": {
+    "H6": "evidence/camera-snapshots/H6.jpg",
+    "H7": "evidence/camera-snapshots/H7.jpg"
+  },
+  "wideSnapshots": {
+    "H6": "evidence/wide capture snapshots/H6.jpg",
+    "H7": "evidence/wide capture snapshots/H7.jpg"
+  },
+  "rois": {
+    "H6": {
+      "chairs": "evidence/rois/chair-rois/g38/H6_to_g38.json",
+      "tables": "evidence/rois/table-rois/g38/H6_to_g38.json"
+    },
+    "H7": {
+      "chairs": "evidence/rois/chair-rois/g38/H7_to_g38.json",
+      "tables": "evidence/rois/table-rois/g38/H7_to_g38.json"
+    }
+  },
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "wideCaptureContext": {
+    "mountPosition": "Same mounts per project owner",
+    "roiUsage": "Detection ROIs remain tied to normal images; no wide-view pixel mapping inferred",
+    "capturedAt": null
+  },
+  "notes": [
+    "H6 identifies H15/H16 as slots on one white sofa; H7 identifies H13/H14 on two individual blue chairs. Four seat identities appear once; slot order needs owner review.",
+    "Table_H4 is one nested curved/round stone set seen in both views; its lower round top is nearer the sofa and its upper curved top nearer the chairs.",
+    "H6/H7 normal and wide views were reviewed with the first-floor map. Five editable objects comprise the sofa, two chairs, nested table and sofa-corner floor lamp.",
+    "A solid wood wall closes the sofa end and meets the long wood wall. Only the chair end uses a striated decorative screen. Pale rug, dark tile access and a schematic partial escalator-side guard supply context.",
+    "Use ivory-white #eeeadd for the long sofa and shared blue #627d86 for small chairs. Wood grain, marble veining, rug pattern, upholstery and detailed contours remain procedural approximations.",
+    "The white sofa partly visible beyond the H7 screen is outside this group; its identity/ownership is unresolved and no duplicate is created. Bins, control panels, adjacent doorway/column and stairs/escalator geometry are excluded pending boundary review.",
+    "Local sofa lies at positive Z for consistent first-floor orientation review. Registered anchors and headings are preserved evidence; no metric calibration, global placement or floor stacking height is claimed."
+  ],
+  "roiCoordinateStatus": "Historical annotation resolution unrecorded. Normal snapshots are 1920x1080. Table_H4 in H6 ends exactly at y=1080; H7 ends at y=1078. Original annotations unchanged; pixels not interpreted as world positions.",
+  "seatCorrespondence": [
+    {
+      "objectId": "g38-sofa-01",
+      "seats": [
+        "Seat_H16",
+        "Seat_H15"
+      ],
+      "sources": [
+        "H6",
+        "H7"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g38-chair-13",
+      "seats": [
+        "Seat_H13"
+      ],
+      "sources": [
+        "H7",
+        "H6"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g38-chair-14",
+      "seats": [
+        "Seat_H14"
+      ],
+      "sources": [
+        "H7",
+        "H6"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    }
+  ],
+  "reviewItems": [
+    "Confirm H15/H16 sofa slot ordering and H13/H14 chair correspondence.",
+    "Review furniture dimensions, nested tabletop contour/supports, lamp and rug.",
+    "Confirm solid end-wall span, landing/doorway/column extents, chair-screen ownership and partial guard endpoints.",
+    "Resolve global floor transform, first-floor elevation, stair interface and neighboring seams before merging."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-overlapping-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-derived-needs-owner-review",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

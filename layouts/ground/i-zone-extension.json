@@ -1,0 +1,360 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "ground-i-zone-extension",
+  "name": "I zone + L-shaped extension \u00b7 Map lounge",
+  "displayCode": "I ZONE + EXTENSION",
+  "floor": "ground",
+  "status": "draft-needs-human-review",
+  "floorSize": [
+    13.6,
+    23.51
+  ],
+  "floorCenter": [
+    -0.8,
+    12.895
+  ],
+  "components": [
+    {
+      "block": "ground/g57",
+      "position": [
+        0,
+        0,
+        7.54
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "floorSize": [
+          4.2,
+          4.38
+        ],
+        "floorCenter": [
+          0.5,
+          -0.21
+        ],
+        "circulationPolygon": [
+          [
+            1.3,
+            -2.4
+          ],
+          [
+            2.6,
+            -2.4
+          ],
+          [
+            2.6,
+            1.98
+          ],
+          [
+            1.3,
+            1.98
+          ]
+        ],
+        "wallEndpoints": {
+          "g57-paneled-wall": {
+            "start": [
+              -1.5,
+              -2.4
+            ],
+            "end": [
+              -1.5,
+              1.98
+            ]
+          }
+        }
+      }
+    },
+    {
+      "block": "ground/g58",
+      "position": [
+        0,
+        0,
+        11.620000000000001
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "wallEndpoints": {
+          "g58-paneled-wall": {
+            "start": [
+              -1.5,
+              -2.1
+            ],
+            "end": [
+              -1.5,
+              1.88
+            ]
+          }
+        },
+        "floorSize": [
+          4.2,
+          3.98
+        ],
+        "floorCenter": [
+          0.5,
+          -0.11
+        ],
+        "circulationPolygon": [
+          [
+            1.3,
+            -2.1
+          ],
+          [
+            2.6,
+            -2.1
+          ],
+          [
+            2.6,
+            1.88
+          ],
+          [
+            1.3,
+            1.88
+          ]
+        ]
+      }
+    },
+    {
+      "block": "ground/g59",
+      "position": [
+        0,
+        0,
+        15.600000000000001
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "wallEndpoints": {
+          "g59-paneled-wall": {
+            "start": [
+              -1.5,
+              -2.1
+            ],
+            "end": [
+              -1.5,
+              2.02
+            ]
+          }
+        }
+      }
+    },
+    {
+      "block": "ground/g61",
+      "position": [
+        0,
+        0,
+        7.54
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "ground/g62",
+      "position": [
+        0,
+        0,
+        7.54
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "ground/i-map-extension",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "i-extension-long-side"
+      ],
+      "architectureOverrides": {
+        "floorSections": [
+          {
+            "center": [
+              -0.8,
+              21.175
+            ],
+            "size": [
+              13.6,
+              6.95
+            ],
+            "yaw": 0,
+            "color": "#424747"
+          }
+        ],
+        "wallEndpoints": {
+          "i-extension-outer-side": {
+            "start": [
+              5.9,
+              24.55
+            ],
+            "end": [
+              5.9,
+              17.7
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "walls": [],
+  "openings": [],
+  "sharedBoundaries": [
+    {
+      "id": "g57-g58-shared-screen",
+      "kind": "decorative-partition",
+      "owner": "ground/g57",
+      "objectId": "g57-sofa-screen-01",
+      "neighbors": [
+        "ground/g57",
+        "ground/g58"
+      ],
+      "start": [
+        -1.4,
+        9.52
+      ],
+      "end": [
+        1.3,
+        9.52
+      ]
+    },
+    {
+      "id": "g57-g58-aisle-join",
+      "kind": "open-connection",
+      "start": [
+        1.3,
+        9.52
+      ],
+      "end": [
+        2.6,
+        9.52
+      ],
+      "clearWidth": 1.3
+    },
+    {
+      "id": "g58-g59-shared-screen",
+      "kind": "decorative-partition",
+      "owner": "ground/g58",
+      "objectId": "g58-sofa-screen-01",
+      "neighbors": [
+        "ground/g58",
+        "ground/g59"
+      ],
+      "start": [
+        -1.4,
+        13.5
+      ],
+      "end": [
+        1.3,
+        13.5
+      ]
+    },
+    {
+      "id": "g58-g59-aisle-join",
+      "kind": "open-connection",
+      "start": [
+        1.3,
+        13.5
+      ],
+      "end": [
+        2.6,
+        13.5
+      ],
+      "clearWidth": 1.3
+    },
+    {
+      "id": "i-zone-window-band-seam",
+      "start": [
+        2.6,
+        8.04
+      ],
+      "end": [
+        6,
+        8.04
+      ],
+      "kind": "open-floor-seam"
+    },
+    {
+      "id": "i-zone-end-cap-seam",
+      "start": [
+        -1.6,
+        5.14
+      ],
+      "end": [
+        2.6,
+        5.14
+      ],
+      "kind": "open-floor-seam"
+    },
+    {
+      "id": "i-extension-existing-i-zone-join",
+      "kind": "open-connection",
+      "start": [
+        -1.6,
+        17.7
+      ],
+      "end": [
+        6,
+        17.7
+      ],
+      "neighbor": "ground/i-zone",
+      "ownsWall": false
+    },
+    {
+      "id": "i-extension-g24-g25-future-join",
+      "kind": "open-connection",
+      "start": [
+        -3.5,
+        17.7
+      ],
+      "end": [
+        -1.968203,
+        17.7
+      ],
+      "neighbor": "ground/g3-g24-g25",
+      "ownsWall": false,
+      "referenceGap": {
+        "start": [
+          0.61659,
+          -7.4
+        ],
+        "end": [
+          2.148387,
+          -7.4
+        ]
+      },
+      "status": "Owner relocated opening to inner L wall near I11 and extension sofa TMP_12"
+    }
+  ],
+  "evidenceCameras": [
+    "I17",
+    "I26",
+    "I18",
+    "I22",
+    "I13",
+    "I24",
+    "I14",
+    "I15",
+    "I16",
+    "I25",
+    "I27",
+    "I28"
+  ],
+  "notes": [
+    "Owner update: pale I-zone aisle turns along the inner extension edge to form an L. Old opening beside TMP_06 is closed; new 1.531797 m opening is on the inner L wall near I11 and left of TMP_12. Supersedes earlier dark-only floor and opening placement notes.",
+    "Owner correction: extension floor is entirely dark; all extension white walkway inlays removed.",
+    "Owner right-edge trim: outer floor ends at Z=24.65 with wall center Z=24.55, just beyond the saved sofas. Walk doglegs into X=0.6..1.75 after Z=21 so it avoids the moved blue chair; all furniture poses retained.",
+    "Owner saved layout correction: preserve every moved extension object exactly. In this combined view only, translate the completed I-zone assembly +7.54 m along Z so G59 ends at Z=17.7 in the previously empty strip. G59 screen is Z=17.48; the pale extension walk begins just beyond at Z=17.7 and runs toward the repositioned sofas. Composed extension floor is cropped at this join, and its obsolete side wall is suppressed to avoid overlapping the accepted I-zone shell. Individual source poses and the original I-zone-only preview stay unchanged. Earlier unchanged-composition-transform notes are superseded.",
+    "Owner accepts completed G57\u2013G62 and requests a new L-shaped lounge on the left of their 3D screenshot (+Z in existing I-zone coordinates). Do not change accepted source furniture or architecture.",
+    "Counted from owner-supplied 2D map and full map crop: three facing chair pairs (6 chairs), two facing two-seat sofa pairs (4 sofas), five tables. The separate chair pair sits on the short return beside the sofa leg.",
+    "I24 wide provides distant partial support for a two-chair pair beyond G59. Remaining seating and L-shaped wall positions follow the map and owner request, not unseen camera evidence.",
+    "New seat IDs Seat_IExt_TMP_01\u201314 are temporary editable identities, not ROI-approved IDs. No official I-zone seat or table numbers are inferred.",
+    "Off-white striated panel walls reuse the accepted I-zone finish. Absolute dimensions, chair poses, sofa sizes and the rectangular opening are provisional.",
+    "One opening on the short return points toward the existing G24/G25 gap; width matches that source gap (1.531797 m). The main B/C/E/G composition is not moved or merged. Exact global alignment between the I extension and that opening remains pending a future composition.",
+    "Full I-zone: three accepted screened bays on the paneled-wall side, blue-chair corner and end console at the planter end, ten tan swivel chairs along the opposite glazing. All five source blocks remain independently editable.",
+    "Existing G57/G58/G59 furniture and transforms remain unchanged. G61 and G62 use the same coordinate basis at the origin, with disjoint window-floor sections meeting at Z=0.5. The G61 end cap meets G57 at Z=-2.4.",
+    "G61 owns Table_I9 once, although observed from G62 I25; G62 records an external reference. Existing planter and shared screens are retained once.",
+    "Central pale walk stays clear between X=1.3 and the window row. Original 1.3 m aisle remains; additional clear space precedes the tan chair backs. Glass/curtain placement, 1.45 m chair pitch and dimensions are estimates, guided by six new camera pairs and the registered map topology.",
+    "The unassigned foreground blue chair visible beyond the tan row is outside the requested groups; its identity and continuation remain unresolved. No Seat_I13 or Table_I4 is invented.",
+    "Pale aisle extends from existing X=1.3 through X=3.4 at the tan chair backs, using a non-overlapping 0.8 m margin owned by G61/G62. The corner before G57 planter stays dark stone as seen in I14/I16.",
+    "Owner correction 2026-11-03: window curtain columns removed from both source blocks; glass frontage now reaches the 4.1 m ceiling throughout. This supersedes earlier curtain/3.5 m glazing descriptions."
+  ]
+}

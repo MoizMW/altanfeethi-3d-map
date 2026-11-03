@@ -1,0 +1,379 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-i-lounge-062",
+  "objects": [
+    {
+      "id": "g62-chair-20",
+      "type": "armchair",
+      "name": "Tan swivel window chair \u00b7 I20",
+      "position": [
+        4,
+        0,
+        1.05
+      ],
+      "yaw": 90,
+      "size": [
+        0.96,
+        1.2,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae916b",
+      "seats": [
+        "Seat_I20"
+      ],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g62-chair-21",
+      "type": "armchair",
+      "name": "Tan swivel window chair \u00b7 I21",
+      "position": [
+        4,
+        0,
+        2.5
+      ],
+      "yaw": 90,
+      "size": [
+        0.96,
+        1.2,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae916b",
+      "seats": [
+        "Seat_I21"
+      ],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g62-chair-22",
+      "type": "armchair",
+      "name": "Tan swivel window chair \u00b7 I22",
+      "position": [
+        4,
+        0,
+        3.95
+      ],
+      "yaw": 90,
+      "size": [
+        0.96,
+        1.2,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae916b",
+      "seats": [
+        "Seat_I22"
+      ],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g62-chair-23",
+      "type": "armchair",
+      "name": "Tan swivel window chair \u00b7 I23",
+      "position": [
+        4,
+        0,
+        5.4
+      ],
+      "yaw": 90,
+      "size": [
+        0.96,
+        1.2,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae916b",
+      "seats": [
+        "Seat_I23"
+      ],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g62-chair-24",
+      "type": "armchair",
+      "name": "Tan swivel window chair \u00b7 I24",
+      "position": [
+        4,
+        0,
+        6.85
+      ],
+      "yaw": 90,
+      "size": [
+        0.96,
+        1.2,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae916b",
+      "seats": [
+        "Seat_I24"
+      ],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g62-chair-25",
+      "type": "armchair",
+      "name": "Tan swivel window chair \u00b7 I25",
+      "position": [
+        4,
+        0,
+        8.3
+      ],
+      "yaw": 90,
+      "size": [
+        0.96,
+        1.2,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae916b",
+      "seats": [
+        "Seat_I25"
+      ],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g62-table-10",
+      "type": "table",
+      "name": "Round pale side table \u00b7 Table_I10",
+      "position": [
+        4.65,
+        0,
+        1.775
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        0.55,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deddd4",
+      "seats": [],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I10"
+    },
+    {
+      "id": "g62-table-11",
+      "type": "table",
+      "name": "Round pale side table \u00b7 Table_I11",
+      "position": [
+        4.65,
+        0,
+        3.225
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        0.55,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deddd4",
+      "seats": [],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I11"
+    },
+    {
+      "id": "g62-table-12",
+      "type": "table",
+      "name": "Round pale side table \u00b7 Table_I12",
+      "position": [
+        4.65,
+        0,
+        4.675
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        0.55,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deddd4",
+      "seats": [],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I12"
+    },
+    {
+      "id": "g62-table-13",
+      "type": "table",
+      "name": "Round pale side table \u00b7 Table_I13",
+      "position": [
+        4.65,
+        0,
+        6.125
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        0.55,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deddd4",
+      "seats": [],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I13"
+    },
+    {
+      "id": "g62-table-14",
+      "type": "table",
+      "name": "Round pale side table \u00b7 Table_I14",
+      "position": [
+        4.65,
+        0,
+        7.575
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        0.55,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deddd4",
+      "seats": [],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I14"
+    },
+    {
+      "id": "g62-table-15",
+      "type": "table",
+      "name": "Round pale side table \u00b7 Table_I15",
+      "position": [
+        4.65,
+        0,
+        9.025
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        0.55,
+        0.64
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deddd4",
+      "seats": [],
+      "cameras": [
+        "I25",
+        "I27",
+        "I28"
+      ],
+      "confidence": "Normal ROIs establish identities; opposing wide views establish topology. Dimensions and local poses estimated.",
+      "externalId": "Table_I15"
+    }
+  ]
+}

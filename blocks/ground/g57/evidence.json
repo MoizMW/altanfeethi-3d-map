@@ -1,0 +1,73 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-i-lounge-057",
+  "cameras": ["I17", "I26"],
+  "snapshots": {
+    "I17": "evidence/camera-snapshots/I17.jpg",
+    "I26": "evidence/camera-snapshots/I26.jpg"
+  },
+  "wideSnapshots": {
+    "I17": "evidence/wide capture snapshots/I17.jpg",
+    "I26": "evidence/wide capture snapshots/I26.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Same mounts with wider zoom per project wide-capture guide",
+    "roiUsage": "Normal detection-view ROI coordinates were not used on the wide images",
+    "capturedAt": null
+  },
+  "rois": {
+    "I17": {
+      "chairs": "evidence/rois/chair-rois/g57/I17_to_g57.json",
+      "tables": "evidence/rois/table-rois/g57/I17_to_g57.json"
+    },
+    "I26": {
+      "chairs": "evidence/rois/chair-rois/g57/I26_to_g57.json",
+      "tables": "evidence/rois/table-rois/g57/I26_to_g57.json"
+    }
+  },
+  "sourceImageSizes": {
+    "normal": {"I17": [3840, 2160], "I26": [3840, 2160]},
+    "wide": {"I17": [1920, 1080], "I26": [1920, 1080]}
+  },
+  "roiReview": {
+    "reviewCanvas": [1920, 1080],
+    "normalSnapshotDisplayScale": [0.5, 0.5],
+    "status": "Both chair and table overlays visually reviewed against the normal snapshots reduced to 1920x1080. Supplied coordinates align at this display scale; historical ROI authoring resolution is unrecorded.",
+    "worldCoordinateUsage": "None: ROI boxes identify observations and were not converted directly into 3D positions."
+  },
+  "seatMappings": {
+    "Seat_I1": "g57-chair-01",
+    "Seat_I2": "g57-chair-02",
+    "Seat_I3": "g57-sofa-01",
+    "Seat_I4": "g57-sofa-01"
+  },
+  "tableMappings": {"Table_I1": "g57-coffee-table-01"},
+  "seatCorrespondence": [
+    {"objectId": "g57-chair-01", "seats": ["Seat_I1"], "sources": ["I17"], "status": "ROI-derived-needs-owner-review"},
+    {"objectId": "g57-chair-02", "seats": ["Seat_I2"], "sources": ["I17"], "status": "ROI-derived-needs-owner-review"},
+    {"objectId": "g57-sofa-01", "seats": ["Seat_I4", "Seat_I3"], "sources": ["I26"], "status": "ROI-derived-slot-order-needs-owner-review"}
+  ],
+  "notes": [
+    "Two blue lounge chairs face one pale two-seat sofa across a shared oval glass/brass table. Seat_I1/I2 are separate chairs; Seat_I3/I4 are slots on one sofa. Table_I1 is present in both normal views and is rendered once.",
+    "The wide captures show a pale paneled wall along one side and an open pale aisle on the other. A timber planter sits behind the chairs; a ribbed decorative screen sits behind the sofa. Hidden room extents are not closed with guessed walls.",
+    "The compact floor includes the dark seating bay and only the adjacent aisle strip. Window-side brown chairs, their small tables and the distant glazing remain outside G57 pending ownership and corridor review.",
+    "Existing shared builders provide the chairs, sofa and glass table. The planter uses a cabinet shell plus four raised foliage objects, and the screen uses a grooved wall-panel. Actual bucket-chair curves, wood chair legs, table lower shelf, white planter stones and fine screen ribs are simplified.",
+    "The live registration includes the owner's I-zone group assignments. I17/I26 map points, headings, revision and hash are retained as evidence without claiming a fitted map-to-world transform or camera calibration."
+  ],
+  "reviewItems": [
+    "Confirm the sofa's I4/I3 slot order and the I1/I2 wall-side/aisle-side chair correspondence.",
+    "Confirm local furniture sizes, planter footprint and aisle width from site measurements; the 4.2x4.8 m crop and 4.1 m ceiling are provisional.",
+    "Review the planter's continuation/shared ownership and the screen's height, ribbing and transparency before adjoining I-zone bays are composed.",
+    "Review the aisle and neighboring window-side seating separately before expanding this block; preserve open access along +X.",
+    "Fit the floor map basis and establish a reviewed global block transform before integrating G57 into a composed layout."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-from-opposing-camera-views",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-derived-needs-human-review",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

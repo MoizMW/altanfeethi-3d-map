@@ -1,0 +1,1136 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-departure-reception-030",
+  "objects": [
+    {
+      "id": "departure-reception-main-counter",
+      "type": "counter",
+      "name": "Main departure reception · three workstations",
+      "position": [
+        0,
+        0,
+        -0.95
+      ],
+      "yaw": 0,
+      "size": [
+        5.2,
+        1.18,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d5c7aa",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "workstations": 3
+    },
+    {
+      "id": "departure-reception-monitor-01",
+      "type": "display",
+      "name": "Main reception monitor 01",
+      "position": [
+        -1.65,
+        0.79,
+        -1.04
+      ],
+      "yaw": 180,
+      "size": [
+        0.62,
+        0.43,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#34464b",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "mount": "desk"
+    },
+    {
+      "id": "departure-reception-monitor-02",
+      "type": "display",
+      "name": "Main reception monitor 02",
+      "position": [
+        0,
+        0.79,
+        -1.04
+      ],
+      "yaw": 180,
+      "size": [
+        0.62,
+        0.43,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#34464b",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "mount": "desk"
+    },
+    {
+      "id": "departure-reception-monitor-03",
+      "type": "display",
+      "name": "Main reception monitor 03",
+      "position": [
+        1.65,
+        0.79,
+        -1.04
+      ],
+      "yaw": 180,
+      "size": [
+        0.62,
+        0.43,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#34464b",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "mount": "desk"
+    },
+    {
+      "id": "departure-reception-drawers-1",
+      "type": "cabinet",
+      "name": "Main desk drawer pedestal 1",
+      "position": [
+        -2.12,
+        0,
+        -1.15
+      ],
+      "yaw": 180,
+      "size": [
+        0.42,
+        0.69,
+        0.51
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#7d644b",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "drawer-pedestal"
+    },
+    {
+      "id": "departure-reception-drawers-2",
+      "type": "cabinet",
+      "name": "Main desk drawer pedestal 2",
+      "position": [
+        2.12,
+        0,
+        -1.15
+      ],
+      "yaw": 180,
+      "size": [
+        0.42,
+        0.69,
+        0.51
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#7d644b",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "drawer-pedestal"
+    },
+    {
+      "id": "departure-reception-teal-backdrop",
+      "type": "wall-panel",
+      "name": "Teal glass reception backdrop · brand and etching",
+      "position": [
+        0,
+        0,
+        -3.45
+      ],
+      "yaw": 0,
+      "size": [
+        6.6,
+        4.1,
+        0.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#206b77",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "teal-reception-backdrop"
+    },
+    {
+      "id": "departure-reception-stone-flank-1",
+      "type": "wall-panel",
+      "name": "Cream stone cladding · inward left side wall",
+      "position": [
+        -4.115,
+        0,
+        -2.1
+      ],
+      "yaw": 90,
+      "size": [
+        2.7,
+        4.1,
+        0.06
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#cabc9f",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "stone-relief"
+    },
+    {
+      "id": "departure-reception-stone-flank-2",
+      "type": "wall-panel",
+      "name": "Cream stone cladding · inward gate-side wall",
+      "position": [
+        4.065,
+        0,
+        -2.35
+      ],
+      "yaw": 270,
+      "size": [
+        2.2,
+        4.1,
+        0.06
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#cabc9f",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "stone-relief"
+    },
+    {
+      "id": "departure-reception-portrait-1",
+      "type": "display",
+      "name": "Upper framed royal portrait 1",
+      "position": [
+        -1.2,
+        3.15,
+        -3.33
+      ],
+      "yaw": 0,
+      "size": [
+        0.57,
+        0.73,
+        0.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8a8170",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam3"
+      ],
+      "confidence": "Portrait artwork recreated from ReceptionCam3 wide; frame dimensions and local placement estimated",
+      "variant": "reception-portrait",
+      "mount": "wall"
+    },
+    {
+      "id": "departure-reception-portrait-2",
+      "type": "display",
+      "name": "Upper framed royal portrait 2",
+      "position": [
+        0,
+        3.15,
+        -3.33
+      ],
+      "yaw": 0,
+      "size": [
+        0.57,
+        0.73,
+        0.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8a8170",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam3"
+      ],
+      "confidence": "Portrait artwork recreated from ReceptionCam3 wide; frame dimensions and local placement estimated",
+      "variant": "reception-portrait",
+      "mount": "wall"
+    },
+    {
+      "id": "departure-reception-portrait-3",
+      "type": "display",
+      "name": "Upper framed royal portrait 3",
+      "position": [
+        1.2,
+        3.15,
+        -3.33
+      ],
+      "yaw": 0,
+      "size": [
+        0.57,
+        0.73,
+        0.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8a8170",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam3"
+      ],
+      "confidence": "Portrait artwork recreated from ReceptionCam3 wide; frame dimensions and local placement estimated",
+      "variant": "reception-portrait",
+      "mount": "wall"
+    },
+    {
+      "id": "departure-reception-flag-1",
+      "type": "wall-panel",
+      "name": "Saudi flag · Shahada and sword",
+      "position": [
+        -1.65,
+        0,
+        -2.83
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        2.65,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#005430",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam3"
+      ],
+      "confidence": "Saudi flag vector artwork on draped cloth and metal stand; placement moved to clear staff chairs, dimensions estimated",
+      "variant": "standing-flag",
+      "flagDesign": "saudi"
+    },
+    {
+      "id": "departure-reception-flag-2",
+      "type": "wall-panel",
+      "name": "Altanfeethi flag · official bilingual logo",
+      "position": [
+        1.65,
+        0,
+        -2.83
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        2.65,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#f7f5ed",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam3"
+      ],
+      "confidence": "Official Altanfeethi logo geometry on ivory cloth with dark bilingual lettering as in ReceptionCam3; metal stand and drape estimated",
+      "variant": "standing-flag",
+      "flagDesign": "altanfeethi"
+    },
+    {
+      "id": "departure-reception-pendant-1",
+      "type": "floor-lamp",
+      "name": "Reception metal pendant 1",
+      "position": [
+        -2.15,
+        0,
+        -0.75
+      ],
+      "yaw": 0,
+      "size": [
+        0.4,
+        4.1,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b9ad88",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "pendant"
+    },
+    {
+      "id": "departure-reception-pendant-2",
+      "type": "floor-lamp",
+      "name": "Reception metal pendant 2",
+      "position": [
+        0,
+        0,
+        -0.75
+      ],
+      "yaw": 0,
+      "size": [
+        0.4,
+        4.1,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b9ad88",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "pendant"
+    },
+    {
+      "id": "departure-reception-pendant-3",
+      "type": "floor-lamp",
+      "name": "Reception metal pendant 3",
+      "position": [
+        2.15,
+        0,
+        -0.75
+      ],
+      "yaw": 0,
+      "size": [
+        0.4,
+        4.1,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b9ad88",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "pendant"
+    },
+    {
+      "id": "departure-reception-desk-reader-1",
+      "type": "display",
+      "name": "Counter access terminal 1",
+      "position": [
+        -2.25,
+        1.18,
+        -0.58
+      ],
+      "yaw": 0,
+      "size": [
+        0.14,
+        0.32,
+        0.13
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#477b8e",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "desk-reader"
+    },
+    {
+      "id": "departure-reception-desk-reader-2",
+      "type": "display",
+      "name": "Counter access terminal 2",
+      "position": [
+        -1.85,
+        1.18,
+        -0.58
+      ],
+      "yaw": 0,
+      "size": [
+        0.14,
+        0.32,
+        0.13
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#477b8e",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "desk-reader"
+    },
+    {
+      "id": "departure-reception-desk-reader-3",
+      "type": "display",
+      "name": "Counter access terminal 3",
+      "position": [
+        1.85,
+        1.18,
+        -0.58
+      ],
+      "yaw": 0,
+      "size": [
+        0.14,
+        0.32,
+        0.13
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#477b8e",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "desk-reader"
+    },
+    {
+      "id": "departure-reception-desk-reader-4",
+      "type": "display",
+      "name": "Counter access terminal 4",
+      "position": [
+        2.25,
+        1.18,
+        -0.58
+      ],
+      "yaw": 0,
+      "size": [
+        0.14,
+        0.32,
+        0.13
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#477b8e",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "desk-reader"
+    },
+    {
+      "id": "departure-reception-notice",
+      "type": "display",
+      "name": "Countertop welcome notice · schematic",
+      "position": [
+        0.7,
+        1.18,
+        -0.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.24,
+        0.31,
+        0.06
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#283f4a",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "mount": "wall"
+    },
+    {
+      "id": "departure-reception-entrance-side-counter",
+      "type": "counter",
+      "name": "Security counter · owner-positioned opening",
+      "position": [
+        -4.115225497579504,
+        0,
+        4.160464736499117
+      ],
+      "yaw": 89.73920756910731,
+      "size": [
+        2.55,
+        1.18,
+        0.85
+      ],
+      "scale": [
+        0.9382566548845054,
+        1,
+        1
+      ],
+      "color": "#d5c7aa",
+      "seats": [],
+      "cameras": [
+        "ENTRANCE",
+        "ReceptionCam2",
+        "Egate1"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "workstations": 1
+    },
+    {
+      "id": "departure-reception-entrance-side-drawers",
+      "type": "cabinet",
+      "name": "Entrance-side drawer pedestal",
+      "position": [
+        -6.5553791815130245,
+        0,
+        5.291579000039272
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        0.68,
+        0.48
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#7e5b48",
+      "seats": [],
+      "cameras": [
+        "ENTRANCE"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "drawer-pedestal"
+    },
+    {
+      "id": "departure-reception-entrance-sliding-doors",
+      "type": "automatic-glass-gate",
+      "name": "Departure entry · sliding glass doors",
+      "position": [
+        -0.8,
+        0,
+        6.1
+      ],
+      "yaw": 0,
+      "size": [
+        7.8,
+        2.95,
+        0.16
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a2aaa7",
+      "seats": [],
+      "cameras": [
+        "ENTRANCE",
+        "ReceptionCam2"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "openFraction": 0.8
+    },
+    {
+      "id": "departure-reception-entrance-reader",
+      "type": "cabinet",
+      "name": "Entrance access reader post",
+      "position": [
+        -2.524802739619369,
+        0,
+        5.446939711806765
+      ],
+      "yaw": -4.098109380023332,
+      "size": [
+        0.27,
+        1.12,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d1cdb9",
+      "seats": [],
+      "cameras": [
+        "ENTRANCE"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "access-reader"
+    },
+    {
+      "id": "departure-reception-two-lane-egate",
+      "type": "automatic-glass-gate",
+      "name": "Two-lane departure e-gate bank",
+      "position": [
+        3.982163118490248,
+        0,
+        1.45
+      ],
+      "yaw": 90,
+      "size": [
+        3,
+        1.12,
+        1.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a3acad",
+      "seats": [],
+      "cameras": [
+        "Egate1",
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated",
+      "variant": "swing-turnstile",
+      "openFraction": 1
+    },
+    {
+      "id": "departure-reception-egate-reader-1",
+      "type": "cabinet",
+      "name": "E-gate lane 1 · raised scanner on rail-mounted pole",
+      "position": [
+        3.472163118490248,
+        1.1172000000000002,
+        2.86
+      ],
+      "yaw": 270,
+      "size": [
+        0.18,
+        0.65,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#949f9d",
+      "seats": [],
+      "cameras": [
+        "Egate1"
+      ],
+      "confidence": "Owner requests same pole and scanner height as lane 2; horizontal mounting position retained",
+      "variant": "pole-mounted-gate-reader"
+    },
+    {
+      "id": "departure-reception-egate-reader-2",
+      "type": "cabinet",
+      "name": "E-gate lane 2 · raised scanner on rail-mounted pole",
+      "position": [
+        3.472163118490248,
+        1.1172000000000002,
+        1.45
+      ],
+      "yaw": 270,
+      "size": [
+        0.18,
+        0.65,
+        0.18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#949f9d",
+      "seats": [],
+      "cameras": [
+        "Egate1"
+      ],
+      "confidence": "Owner confirms mounting position and requests raised scanner on pole; 0.40 m pole height estimated",
+      "variant": "pole-mounted-gate-reader"
+    },
+    {
+      "id": "departure-reception-entrance-plant-1",
+      "type": "plant",
+      "name": "Entrance potted plant 1",
+      "position": [
+        -6.781057320709185,
+        0,
+        3.0674143395810836
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        2.2,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#466a4f",
+      "seats": [],
+      "cameras": [
+        "ENTRANCE",
+        "ReceptionCam2"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated"
+    },
+    {
+      "id": "departure-reception-entrance-plant-2",
+      "type": "plant",
+      "name": "Entrance potted plant 2",
+      "position": [
+        2.553195040174079,
+        0,
+        5.371265178090168
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        2,
+        0.68
+      ],
+      "scale": [
+        0.6892896440059777,
+        0.7699447432218204,
+        0.8379465699611433
+      ],
+      "color": "#466a4f",
+      "seats": [],
+      "cameras": [
+        "ENTRANCE",
+        "ReceptionCam2"
+      ],
+      "confidence": "Observed permanent feature; dimensions and local placement estimated"
+    },
+    {
+      "id": "departure-reception-entrance-side-chair",
+      "type": "office-chair",
+      "name": "Side counter staff chair · temporary ID",
+      "position": [
+        -5.020614,
+        0,
+        4.237870679505058
+      ],
+      "yaw": 89.73920756910731,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#292f31",
+      "seats": [
+        "Seat_DepRec_TMP_01"
+      ],
+      "cameras": [
+        "ReceptionCam2",
+        "ENTRANCE"
+      ],
+      "confidence": "Owner explicitly confirms chair in side-counter staff strip; exact pose and dimensions estimated",
+      "identityStatus": "owner-confirmed-chair-temporary-id",
+      "placementSource": "owner-right-side-correction-2026-11-02"
+    },
+    {
+      "id": "departure-reception-main-chair-01",
+      "type": "office-chair",
+      "name": "Main reception staff chair 01 · temporary ID",
+      "position": [
+        -1.65,
+        0,
+        -2
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#292f31",
+      "seats": [
+        "Seat_DepRec_TMP_02"
+      ],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Owner requests chairs behind main reception; one per observed workstation, exact pose and identity estimated",
+      "identityStatus": "owner-requested-chair-temporary-id",
+      "placementSource": "owner-chairs-flags-walls-2026-11-02"
+    },
+    {
+      "id": "departure-reception-main-chair-02",
+      "type": "office-chair",
+      "name": "Main reception staff chair 02 · temporary ID",
+      "position": [
+        0,
+        0,
+        -2
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#292f31",
+      "seats": [
+        "Seat_DepRec_TMP_03"
+      ],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Owner requests chairs behind main reception; one per observed workstation, exact pose and identity estimated",
+      "identityStatus": "owner-requested-chair-temporary-id",
+      "placementSource": "owner-chairs-flags-walls-2026-11-02"
+    },
+    {
+      "id": "departure-reception-main-chair-03",
+      "type": "office-chair",
+      "name": "Main reception staff chair 03 · temporary ID",
+      "position": [
+        1.65,
+        0,
+        -2
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#292f31",
+      "seats": [
+        "Seat_DepRec_TMP_04"
+      ],
+      "cameras": [
+        "ReceptionCam1",
+        "ReceptionCam2",
+        "ReceptionCam3"
+      ],
+      "confidence": "Owner requests chairs behind main reception; one per observed workstation, exact pose and identity estimated",
+      "identityStatus": "owner-requested-chair-temporary-id",
+      "placementSource": "owner-chairs-flags-walls-2026-11-02"
+    },
+    {
+      "id": "departure-reception-rear-door-1",
+      "type": "wall-panel",
+      "name": "Blue rear service door 1 · closed",
+      "position": [
+        -2.58,
+        0,
+        -3.34
+      ],
+      "yaw": 0,
+      "size": [
+        1.08,
+        2.45,
+        0.07
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#206b77",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam3"
+      ],
+      "confidence": "Owner confirms blue door at each end of rear blue wall; closed leaf, height and width estimated from wide frame",
+      "variant": "teal-service-door"
+    },
+    {
+      "id": "departure-reception-rear-door-2",
+      "type": "wall-panel",
+      "name": "Blue rear service door 2 · closed",
+      "position": [
+        2.58,
+        0,
+        -3.34
+      ],
+      "yaw": 0,
+      "size": [
+        1.08,
+        2.45,
+        0.07
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#206b77",
+      "seats": [],
+      "cameras": [
+        "ReceptionCam3"
+      ],
+      "confidence": "Owner confirms blue door at each end of rear blue wall; closed leaf, height and width estimated from wide frame",
+      "variant": "teal-service-door"
+    },
+    {
+      "id": "departure-reception-unused-counter",
+      "type": "counter",
+      "name": "Unused reception-style counter · widened shared bay",
+      "position": [
+        -5.85,
+        0,
+        -1.2211033824026472
+      ],
+      "yaw": 0,
+      "size": [
+        2.6,
+        1.18,
+        0.94
+      ],
+      "scale": [
+        0.9198796312317359,
+        1,
+        1
+      ],
+      "color": "#d5c7aa",
+      "seats": [],
+      "cameras": [
+        "Egate1",
+        "ReceptionCam2"
+      ],
+      "confidence": "Owner requests main-reception stone/teal style sized to widened 3.2 m bay; dimensions estimated",
+      "workstations": 0,
+      "usageStatus": "currently-unused-owner-confirmed"
+    }
+  ]
+}
