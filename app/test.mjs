@@ -197,10 +197,11 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     const jpg=Buffer.from(await(await fetch(`${origin}/api/evidence/camera/B1${query}`)).arrayBuffer());assert.equal(jpg[0],255);assert.equal(jpg[1],216);
     assert.equal((await fetch(`${origin}/shared/schema/block-schema.js`)).status,200);assert.equal((await fetch(`${origin}/server.mjs`)).status,404);assert.equal((await fetch(`${origin}/api/block?block=../../private`)).status,400);
     const g32=await(await fetch(`${origin}/api/block?block=ground/g32`)).json();validateBlock(g32.block);
-    for(const slug of ['g18','g20','g21','g27']){
+    for(const slug of ['g18','g20','g21','g27','g28']){
       assert.ok(listing.blocks.some(b=>b.key===`ground/${slug}`));
       const data=await(await fetch(`${origin}/api/block?block=ground/${slug}`)).json();validateBlock(data.block);
       for(const id of data.block.evidence.cameras)assert.equal((await fetch(`${origin}/api/evidence/camera/${id}?block=ground/${slug}`)).status,200);
+      for(const id of Object.keys(data.block.evidence.wideSnapshots||{}))assert.equal((await fetch(`${origin}/api/evidence/camera/${id}?wide=1&block=ground/${slug}`)).status,200);
     }
     assert.equal(g32.block.objects.filter(o=>o.type==='counter').length,4);
     const staff=g32.block.objects.filter(o=>o.type==='office-chair');assert.equal(staff.length,7);
