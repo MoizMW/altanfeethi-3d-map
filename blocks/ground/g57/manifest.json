@@ -1,0 +1,18 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-i-lounge-057",
+  "slug": "g57",
+  "name": "G57 · I-zone planter lounge",
+  "floor": "ground",
+  "groups": ["g57"],
+  "zone": "I",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

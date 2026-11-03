@@ -2,7 +2,7 @@
   "format": "altanfeethi-camera-registration",
   "version": 1,
   "coordinateSpace": "source-image-pixels",
-  "updatedAt": "2026-11-02T04:59:32.936Z",
+  "updatedAt": "2026-11-02T11:41:18.260Z",
   "floors": {
     "ground": {
       "label": "Ground floor",
@@ -2218,7 +2218,7 @@
       "id": "I13",
       "file": "I13.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g59",
       "floor": "ground",
       "position": {
         "x": 7640,
@@ -2233,7 +2233,7 @@
       "id": "I14",
       "file": "I14.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g61",
       "floor": "ground",
       "position": {
         "x": 7068,
@@ -2248,7 +2248,7 @@
       "id": "I15",
       "file": "I15.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g61",
       "floor": "ground",
       "position": {
         "x": 7448,
@@ -2263,7 +2263,7 @@
       "id": "I16",
       "file": "I16.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g61",
       "floor": "ground",
       "position": {
         "x": 6670,
@@ -2278,7 +2278,7 @@
       "id": "I17",
       "file": "I17.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g57",
       "floor": "ground",
       "position": {
         "x": 6995,
@@ -2293,7 +2293,7 @@
       "id": "I18",
       "file": "I18.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g58",
       "floor": "ground",
       "position": {
         "x": 7085,
@@ -2308,7 +2308,7 @@
       "id": "I22",
       "file": "I22.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g58",
       "floor": "ground",
       "position": {
         "x": 7273,
@@ -2323,7 +2323,7 @@
       "id": "I24",
       "file": "I24.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g59",
       "floor": "ground",
       "position": {
         "x": 7401,
@@ -2338,7 +2338,7 @@
       "id": "I25",
       "file": "I25.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g62",
       "floor": "ground",
       "position": {
         "x": 7866,
@@ -2353,7 +2353,7 @@
       "id": "I26",
       "file": "I26.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g57",
       "floor": "ground",
       "position": {
         "x": 6760,
@@ -2368,7 +2368,7 @@
       "id": "I27",
       "file": "I27.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g62",
       "floor": "ground",
       "position": {
         "x": 8161,
@@ -2383,7 +2383,7 @@
       "id": "I28",
       "file": "I28.jpg",
       "zone": "I",
-      "group_id": "",
+      "group_id": "g62",
       "floor": "ground",
       "position": {
         "x": 8533,
