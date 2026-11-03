@@ -1,0 +1,189 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-seating-042",
+  "objects": [
+    {
+      "id": "g42-chair-20",
+      "type": "armchair",
+      "variant": "shell-lounge",
+      "name": "Shell armchair · H20",
+      "position": [
+        0.35,
+        0,
+        -3.2
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "shellColor": "#a48246",
+      "seats": [
+        "Seat_H20"
+      ],
+      "cameras": [
+        "H18"
+      ],
+      "confidence": "ROI-supported chair identity; local placement, orientation and dimensions estimated; needs owner review"
+    },
+    {
+      "id": "g42-chair-19",
+      "type": "armchair",
+      "variant": "shell-lounge",
+      "name": "Shell armchair · H19",
+      "position": [
+        0.35,
+        0,
+        -0.95
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "shellColor": "#a48246",
+      "seats": [
+        "Seat_H19"
+      ],
+      "cameras": [
+        "H19"
+      ],
+      "confidence": "ROI-supported chair identity; local placement, orientation and dimensions estimated; needs owner review"
+    },
+    {
+      "id": "g42-chair-18",
+      "type": "armchair",
+      "variant": "shell-lounge",
+      "name": "Shell armchair · H18",
+      "position": [
+        0.35,
+        0,
+        0.95
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "shellColor": "#a48246",
+      "seats": [
+        "Seat_H18"
+      ],
+      "cameras": [
+        "H18"
+      ],
+      "confidence": "ROI-supported chair identity; local placement, orientation and dimensions estimated; needs owner review"
+    },
+    {
+      "id": "g42-chair-17",
+      "type": "armchair",
+      "variant": "shell-lounge",
+      "name": "Shell armchair · H17",
+      "position": [
+        0.35,
+        0,
+        3.2
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "shellColor": "#a48246",
+      "seats": [
+        "Seat_H17"
+      ],
+      "cameras": [
+        "H19"
+      ],
+      "confidence": "ROI-supported chair identity; local placement, orientation and dimensions estimated; needs owner review"
+    },
+    {
+      "id": "g42-table-9",
+      "type": "table",
+      "variant": "round-pedestal",
+      "name": "Round stone table · H9",
+      "position": [
+        0.35,
+        0,
+        -2.075
+      ],
+      "yaw": 0,
+      "size": [
+        0.72,
+        0.48,
+        0.72
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "externalId": "Table_H9",
+      "cameras": [
+        "H19"
+      ],
+      "confidence": "ROI identity; paired-chair correspondence and dimensions provisional; brass pedestal and pale round top visible"
+    },
+    {
+      "id": "g42-table-8",
+      "type": "table",
+      "variant": "round-pedestal",
+      "name": "Round stone table · H8",
+      "position": [
+        0.35,
+        0,
+        2.075
+      ],
+      "yaw": 0,
+      "size": [
+        0.72,
+        0.48,
+        0.72
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "externalId": "Table_H8",
+      "cameras": [
+        "H18"
+      ],
+      "confidence": "ROI identity; paired-chair correspondence and dimensions provisional; brass pedestal and pale round top visible"
+    }
+  ]
+}

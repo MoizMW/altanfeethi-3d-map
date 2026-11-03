@@ -1,0 +1,159 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-lounge-037",
+  "objects": [
+    {
+      "id": "g37-sofa-01",
+      "type": "sofa",
+      "name": "White two-seat sofa · H10 / H9",
+      "position": [
+        -0.55,
+        0,
+        1.85
+      ],
+      "yaw": 180,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H10",
+        "Seat_H9"
+      ],
+      "cameras": [
+        "H5",
+        "H4"
+      ],
+      "confidence": "Observed correspondence; local position, orientation and dimensions estimated; needs owner review",
+      "notes": "H5 labels H9/H10 on one sofa. Local slot order is provisional and must be owner-reviewed."
+    },
+    {
+      "id": "g37-chair-11",
+      "type": "armchair",
+      "name": "Blue armchair · H11",
+      "position": [
+        -1.1,
+        0,
+        -1.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_H11"
+      ],
+      "cameras": [
+        "H4",
+        "H5"
+      ],
+      "confidence": "Observed correspondence; local position, orientation and dimensions estimated; needs owner review"
+    },
+    {
+      "id": "g37-chair-12",
+      "type": "armchair",
+      "name": "Blue armchair · H12",
+      "position": [
+        -0.1,
+        0,
+        -1.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_H12"
+      ],
+      "cameras": [
+        "H4",
+        "H5"
+      ],
+      "confidence": "Observed correspondence; local position, orientation and dimensions estimated; needs owner review"
+    },
+    {
+      "id": "g37-table-03",
+      "type": "table",
+      "name": "Nested stone coffee-table set · H3",
+      "position": [
+        -0.55,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        1.6,
+        0.48,
+        1.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H4",
+        "H5"
+      ],
+      "confidence": "Observed correspondence; local position, orientation and dimensions estimated; needs owner review",
+      "variant": "nested-stone",
+      "externalId": "Table_H3",
+      "notes": "H4/H5 observe the same nested set. Round lower top sits toward the chair pair; curved upper top faces the sofa. Exact contour and support locations estimated."
+    },
+    {
+      "id": "g37-floor-lamp-01",
+      "type": "floor-lamp",
+      "name": "Chair-corner floor lamp",
+      "position": [
+        -1.92,
+        0,
+        -2.13
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "H4",
+        "H5"
+      ],
+      "confidence": "Observed correspondence; local position, orientation and dimensions estimated; needs owner review",
+      "notes": "H4 shows the lamp beside the wood-side chair; its shade is partly visible at the lower left of H5-wide."
+    }
+  ]
+}

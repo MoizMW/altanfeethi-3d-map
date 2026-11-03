@@ -1,0 +1,374 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "first-bottom-right-lounges",
+  "displayCode": "G38 → G37 → G36 → G35",
+  "name": "First-floor bottom-right lounges",
+  "floor": "first",
+  "status": "draft-needs-human-review",
+  "floorSize": [
+    20.6,
+    4.8
+  ],
+  "floorCenter": [
+    -7.5,
+    0
+  ],
+  "components": [
+    {
+      "block": "first/g35",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "excludeWalls": [
+        "g35-long-wood-backing",
+        "g35-chair-divider",
+        "g35-escalator-balustrade"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          4.8,
+          5.3
+        ],
+        "floorCenter": [
+          0,
+          0.15
+        ]
+      }
+    },
+    {
+      "block": "first/g36",
+      "position": [
+        -5,
+        0,
+        0
+      ],
+      "yaw": -90,
+      "excludeWalls": [
+        "g36-long-wood-wall",
+        "g36-chair-divider",
+        "g36-sofa-divider",
+        "g36-escalator-balustrade"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          4.8,
+          5
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g37",
+      "position": [
+        -10,
+        0,
+        0
+      ],
+      "yaw": -90,
+      "excludeWalls": [
+        "g37-long-wood-wall",
+        "g37-chair-divider",
+        "g37-sofa-divider",
+        "g37-escalator-balustrade"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          4.8,
+          5
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g38",
+      "position": [
+        -15,
+        0,
+        0
+      ],
+      "yaw": -90,
+      "excludeWalls": [
+        "g38-long-wood-wall",
+        "g38-chair-divider",
+        "g38-escalator-side-guard"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          4.8,
+          5.3
+        ],
+        "floorCenter": [
+          0,
+          0.15
+        ]
+      }
+    }
+  ],
+  "walls": [
+    {
+      "id": "first-bottom-right-shared-screen-1",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        -2.5,
+        -2.25
+      ],
+      "end": [
+        -2.5,
+        1.15
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "layout/first/bottom-right",
+      "sources": [
+        "H3",
+        "H1"
+      ],
+      "confidence": "Owner adjacency/order; provisional screen profile and dimensions",
+      "replaces": [
+        "g36-chair-divider",
+        "g35-chair-divider"
+      ],
+      "neighborBlocks": [
+        "first/g36",
+        "first/g35"
+      ]
+    },
+    {
+      "id": "first-bottom-right-shared-screen-2",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        -7.5,
+        -2.25
+      ],
+      "end": [
+        -7.5,
+        1.15
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "layout/first/bottom-right",
+      "sources": [
+        "H4",
+        "H8"
+      ],
+      "confidence": "Owner adjacency/order; provisional screen profile and dimensions",
+      "replaces": [
+        "g37-chair-divider",
+        "g36-sofa-divider"
+      ],
+      "neighborBlocks": [
+        "first/g37",
+        "first/g36"
+      ]
+    },
+    {
+      "id": "first-bottom-right-shared-screen-3",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        -12.5,
+        -2.25
+      ],
+      "end": [
+        -12.5,
+        1.15
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "layout/first/bottom-right",
+      "sources": [
+        "H7",
+        "H5"
+      ],
+      "confidence": "Owner adjacency/order; provisional screen profile and dimensions",
+      "replaces": [
+        "g38-chair-divider",
+        "g37-sofa-divider"
+      ],
+      "neighborBlocks": [
+        "first/g38",
+        "first/g37"
+      ]
+    },
+    {
+      "id": "first-bottom-right-wood-back",
+      "kind": "solid",
+      "start": [
+        -17.65,
+        -2.25
+      ],
+      "end": [
+        2.65,
+        -2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#856746",
+      "finish": "warm-wood",
+      "interiorSide": 1,
+      "owner": "layout/first/bottom-right",
+      "sources": [
+        "H1",
+        "H2",
+        "H3",
+        "H8",
+        "H4",
+        "H5",
+        "H6",
+        "H7"
+      ],
+      "confidence": "Continuous wood finish across owner-ordered row; provisional span",
+      "replaces": [
+        "g35-long-wood-backing",
+        "g36-long-wood-wall",
+        "g37-long-wood-wall",
+        "g38-long-wood-wall"
+      ]
+    },
+    {
+      "id": "first-bottom-right-glass-guard",
+      "kind": "glass",
+      "start": [
+        -16.4,
+        2.2
+      ],
+      "end": [
+        2.65,
+        2.2
+      ],
+      "height": 1.1,
+      "thickness": 0.04,
+      "privacyBand": false,
+      "frameSpacing": 1.5,
+      "owner": "layout/first/bottom-right",
+      "sources": [
+        "H1",
+        "H2",
+        "H3",
+        "H8",
+        "H4",
+        "H5",
+        "H7"
+      ],
+      "confidence": "Joined schematic escalator-side guards; G38 landing termination remains provisional",
+      "replaces": [
+        "g35-escalator-balustrade",
+        "g36-escalator-balustrade",
+        "g37-escalator-balustrade",
+        "g38-escalator-side-guard"
+      ]
+    }
+  ],
+  "openings": [],
+  "seams": [
+    {
+      "x": -2.5,
+      "blocks": [
+        "first/g36",
+        "first/g35"
+      ],
+      "replaces": [
+        "g36-chair-divider",
+        "g35-chair-divider"
+      ],
+      "cameras": [
+        "H3",
+        "H1"
+      ]
+    },
+    {
+      "x": -7.5,
+      "blocks": [
+        "first/g37",
+        "first/g36"
+      ],
+      "replaces": [
+        "g37-chair-divider",
+        "g36-sofa-divider"
+      ],
+      "cameras": [
+        "H4",
+        "H8"
+      ]
+    },
+    {
+      "x": -12.5,
+      "blocks": [
+        "first/g38",
+        "first/g37"
+      ],
+      "replaces": [
+        "g38-chair-divider",
+        "g37-sofa-divider"
+      ],
+      "cameras": [
+        "H7",
+        "H5"
+      ]
+    }
+  ],
+  "sourceRevisions": {
+    "first/g35": {
+      "branch": "g35",
+      "commit": "67c7800245d936ccfb4c7e6e4a9643f396754abd"
+    },
+    "first/g36": {
+      "branch": "g36",
+      "commit": "ff4431a3a3034fa461674b9ef459a9f0c782ef10"
+    },
+    "first/g37": {
+      "branch": "g37",
+      "commit": "1edd43cdec742acae74ba9af8ce5ed17dfb03eec"
+    },
+    "first/g38": {
+      "branch": "masood/g38",
+      "commit": "34f1ba35a92fec14df91376233947d2a8bbb5c96"
+    }
+  },
+  "access": {
+    "polygon": [
+      [
+        -17.65,
+        1.25
+      ],
+      [
+        2.65,
+        1.25
+      ],
+      [
+        2.65,
+        2.05
+      ],
+      [
+        -17.65,
+        2.05
+      ]
+    ],
+    "clearThroughSpan": [
+      -16.3,
+      1.5
+    ],
+    "notes": "Continuous dark tile strip connects all four bays. G35 plant occupies part of the right terminal landing; retain source placement. Guard terminates before left landing."
+  },
+  "notes": [
+    "Owner specifies bottom-right first-floor row, left-to-right G38 → G37 → G36 → G35, with G35 rightmost. This supersedes earlier upper-right wording in the standalone G35 history.",
+    "Four saved source blocks load live with their original object/seat/table IDs, dimensions and colors. G35 yaw +90; G36/G37/G38 yaw -90. Furniture receives only rigid position/yaw transforms.",
+    "Continuous wood backing is global Z=-2.25; dark access strip is Z=1.25..2.05. Three screens at X=-2.5/-7.5/-12.5 are owned once by this layout, replacing both standalone copies.",
+    "Floor crops meet at the shared screens through integration-only size/center overrides; original source floors remain intact. Pale rugs from each source are transformed and retained. Outer solid sofa returns remain at X=2.65 and -17.65.",
+    "All H1–H8 normal/wide evidence and registered first-floor anchors inform the provisional relative row. Source registration is observational and does not establish metric scale or a building origin.",
+    "This is one connected first-floor 3D scene with 21 furniture/context objects and 16 seat slots. The first-floor physical elevation, exact dimensions, screen profiles, escalator void and placement against future groups remain unresolved.",
+    "Edit furniture in its individual source block, then refresh this combined view. Use Download JSON for the assembled model data."
+  ]
+}

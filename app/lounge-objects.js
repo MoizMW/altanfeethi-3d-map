@@ -1,4 +1,16 @@
 import * as THREE from 'three';
+import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+// Reuse the curved shell and star base with separate upholstery and shell finishes.
+export function buildShellLoungeChair({color='#eeeadd',shellColor='#a48246'}={}) {
+  const group=buildEggChair(shellColor);
+  const cushion=group.getObjectByName('Oval seat cushion');
+  cushion.material=new THREE.MeshStandardMaterial({color,roughness:.85});
+  const back=new THREE.Mesh(new RoundedBoxGeometry(.5,.36,.12,3,.045),cushion.material);
+  back.name='Light back cushion';back.position.set(0,.65,-.235);back.rotation.x=-.12;
+  back.castShadow=true;back.receiveShadow=true;group.add(back);
+  return group;
+}
 
 // Normalized to the existing armchair reference size: .88 x .9 x .92 m, facing +Z.
 export function buildEggChair(color) {

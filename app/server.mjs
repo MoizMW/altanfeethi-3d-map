@@ -106,7 +106,7 @@ export const server=createServer(async(req,res)=>{
     }
     if(req.method!=='GET')return send(res,405,{error:'Method not allowed'});
     const relative=decodeURIComponent(url.pathname).slice(1)||'index.html';let target;
-    if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','dining-objects.js','styles.css','editor.css'].includes(relative))target=resolve(appRoot,relative);
+    if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','lounge-tables.js','lobby-fixtures.js','vertical-circulation.js','dining-objects.js','styles.css','editor.css'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='shared/schema/block-schema.js')target=resolve(projectRoot,relative);
     else if(/^shared\/assets\/flags\/(saudi|altanfeethi)\.svg$/.test(relative))target=resolve(projectRoot,relative);
     else if(/^shared\/assets\/portraits\/reception-[123]\.png$/.test(relative))target=resolve(projectRoot,relative);

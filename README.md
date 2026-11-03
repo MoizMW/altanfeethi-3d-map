@@ -1,5 +1,6 @@
 # Altanfeethi spatial twin
 
+First-floor lounges and stair lobby: `http://127.0.0.1:4209/?layout=first/bottom-lobby` — G35–G38 opposite G42, connected around the stair/escalator void, with H9/wide-image context and lobby furnishings. The original bottom-right row remains at `/?layout=first/bottom-right`.
 Reception + SGS shared security/unused-counter bays: `http://127.0.0.1:4209/?layout=ground/departure-sgs`.
 
 Departure_Reception: `http://127.0.0.1:4209/?block=ground/departure-reception` — [reception, entrance, e-gate and side-camera evidence](blocks/ground/departure-reception/README.md).

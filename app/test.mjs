@@ -1,4 +1,12 @@
 import {test} from 'node:test';
+import '../blocks/first/g42/validate.test.mjs';
+import './lobby-layout.test.mjs';
+import {fileURLToPath} from 'node:url';
+import './first-floor-layout.test.mjs';
+import '../blocks/first/g35/validate.test.mjs';
+import '../blocks/first/g36/validate.test.mjs';
+import '../blocks/first/g37/validate.test.mjs';
+import '../blocks/first/g38/validate.test.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {validateBlock} from '../shared/schema/block-schema.js';
@@ -205,6 +213,21 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     const jpg=Buffer.from(await(await fetch(`${origin}/api/evidence/camera/B1${query}`)).arrayBuffer());assert.equal(jpg[0],255);assert.equal(jpg[1],216);
     assert.equal((await fetch(`${origin}/shared/schema/block-schema.js`)).status,200);assert.equal((await fetch(`${origin}/server.mjs`)).status,404);assert.equal((await fetch(`${origin}/api/block?block=../../private`)).status,400);
     const g32=await(await fetch(`${origin}/api/block?block=ground/g32`)).json();validateBlock(g32.block);
+    assert.ok(listing.blocks.some(b=>b.key==='layout:first/bottom-lobby'));
+    const lobby=await(await fetch(`${origin}/api/block?layout=first/bottom-lobby`)).json();validateBlock(lobby.block);
+    assert.equal(lobby.block.objects.flatMap(o=>o.seats).length,20);
+    for(const camera of ['H9','H18','H19'])assert.equal((await fetch(`${origin}/api/evidence/camera/${camera}?layout=first/bottom-lobby`)).status,200);
+    for(const camera of ['H9','H18'])assert.equal((await fetch(`${origin}/api/evidence/camera/${camera}?layout=first/bottom-lobby&wide=1`)).status,200);
+    assert.equal((await fetch(`${origin}/api/evidence/camera/H19?layout=first/bottom-lobby&wide=1`)).status,404);
+    for(const module of ['lobby-fixtures.js','vertical-circulation.js'])assert.equal((await fetch(`${origin}/${module}`)).status,200);
+    assert.equal((await fetch(`${origin}/api/block?layout=first/bottom-lobby`,{method:'PUT',body:'{}'})).status,405);
+    assert.ok(listing.blocks.some(b=>b.key==='layout:first/bottom-right'));
+    const firstResponse=await fetch(`${origin}/api/block?layout=first/bottom-right`);assert.equal(firstResponse.status,200);
+    const first=(await firstResponse.json()).block;validateBlock(first);assert.equal(first.objects.length,21);assert.equal(first.readOnly,true);
+    for(let i=1;i<=8;i++)for(const wide of [0,1])assert.equal((await fetch(`${origin}/api/evidence/camera/H${i}?layout=first/bottom-right&wide=${wide}`)).status,200);
+    assert.equal((await fetch(`${origin}/api/evidence/map?layout=first/bottom-right`)).status,200);
+    assert.equal((await fetch(`${origin}/lounge-tables.js`)).status,200);
+    assert.equal((await fetch(`${origin}/api/block?layout=first/bottom-right`,{method:'PUT',body:'{}'})).status,405);
     for(const slug of ['g18','g20','g21','g27','g28','g61','g62']){
       assert.ok(listing.blocks.some(b=>b.key===`ground/${slug}`));
       const data=await(await fetch(`${origin}/api/block?block=ground/${slug}`)).json();validateBlock(data.block);
@@ -234,7 +257,7 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
 
 test('G9/G10/G11 composition keeps source seating and opens onto one shared corridor',async()=>{
   const {composeLayout}=await import('./layouts.mjs');
-  const projectRoot=new URL('../',import.meta.url).pathname;
+  const projectRoot=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const {block}=await composeLayout(projectRoot,'ground/g9-g10',load);validateBlock(block);
   assert.equal(block.objects.flatMap(o=>o.seats).length,20);
@@ -277,7 +300,7 @@ test('G16 reconciles camera ROI identities while leaving neighboring Table_G5 co
 test('G16/G18/G20 joins align widths and preserve both arched walking connections',async()=>{
   const {composeLayout}=await import('./layouts.mjs');
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
-  const {block}=await composeLayout(new URL('../',import.meta.url).pathname,'ground/g16-g18',load);
+  const {block}=await composeLayout(fileURLToPath(new URL('../',import.meta.url)),'ground/g16-g18',load);
   validateBlock(block);assert.equal(block.objects.flatMap(o=>o.seats).length,34);
   assert.equal(block.architecture.walls.filter(w=>w.id==='g16-neighbor-arch-wall').length,1);
   assert.equal(block.architecture.circulations.length,3);
@@ -307,7 +330,7 @@ test('G16/G18/G20 joins align widths and preserve both arched walking connection
 
 test('B/G floor assembly aligns paired bay lengths and keeps G9 passage open into G16',async()=>{
   const {composeLayout}=await import('./layouts.mjs');
-  const root=new URL('../',import.meta.url).pathname;
+  const root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
   const {block}=await composeLayout(root,'ground/b-g-lounges',load);validateBlock(block);
@@ -337,7 +360,7 @@ test('B/G floor assembly aligns paired bay lengths and keeps G9 passage open int
 });
 
 test('G22, G21 and G2 join in owner order with one arch per seam and a continuous route',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const {block}=await composeLayout(root,'ground/b-g-lounges',load);
   const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
@@ -382,7 +405,7 @@ test('G22, G21 and G2 join in owner order with one arch per seam and a continuou
 });
 
 test('G12/G14 fills both G21/G22 bays and connects its C19 end to Zone C without duplicate walls',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
   const {block}=await composeLayout(root,'ground/b-g-lounges',load);
@@ -431,7 +454,7 @@ test('G12/G14 fills both G21/G22 bays and connects its C19 end to Zone C without
 });
 
 test('G27 G69/G63 end joins G22 G56/G62 with matching shell dimensions and one shared arch',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
   const {block}=await composeLayout(root,'ground/b-g-lounges',load);
