@@ -1,13 +1,25 @@
 import * as THREE from 'three';
+import {buildVerticalCirculation,buildPatternedSurfaces} from './vertical-circulation.js';
 
 export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
   const root=new THREE.Group();root.name='Architecture';
+  for(const structure of data.structures||[])root.add(buildVerticalCirculation(structure));
+  root.add(buildPatternedSurfaces(data.floorSections));
   const material=(color,extra={})=>new THREE.MeshStandardMaterial({color,roughness:.65,...extra});
   const add=(g,geometry,m,x,y,z)=>{const o=new THREE.Mesh(geometry,m);o.position.set(x,y,z);o.castShadow=!m.transparent;o.receiveShadow=true;g.add(o);return o;};
   for(const wall of data.walls||[]){
     const [ax,az]=wall.start,[bx,bz]=wall.end,length=Math.hypot(bx-ax,bz-az),height=cutaway?Math.min(1.05,wall.height):wall.height;
     const group=new THREE.Group();group.position.set(ax,0,az);group.rotation.y=-Math.atan2(bz-az,bx-ax);group.userData.boundaryId=wall.id;root.add(group);
     if (wall.kind === 'glass') {
+      if(wall.variant==='reeded-divider'){
+        add(group,new THREE.BoxGeometry(length,height,wall.thickness),material('#a8a999',{transparent:true,opacity:.32,roughness:.4,depthWrite:false,side:THREE.DoubleSide}),length/2,height/2,0);
+        const metal=material('#a69b80',{metalness:.45,roughness:.4});
+        for(const x of [0,length])add(group,new THREE.BoxGeometry(.035,height,.05),metal,x,height/2,0);
+        for(const y of [.06,height])add(group,new THREE.BoxGeometry(length,.035,.05),metal,length/2,y,0);
+        const lines=[];for(let x=.04;x<length;x+=.055)for(const z of [-wall.thickness/2-.002,wall.thickness/2+.002])lines.push(new THREE.Vector3(x,.06,z),new THREE.Vector3(x,height-.03,z));
+        group.add(new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(lines),new THREE.LineBasicMaterial({color:'#8b8975',transparent:true,opacity:.65})));
+        continue;
+      }
       if (wall.variant === 'blue-gold-geometric') {
         add(group, new THREE.BoxGeometry(length, height, wall.thickness),
           material(wall.color || '#245968', {
@@ -197,7 +209,8 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
         metalness: .45, roughness: .4
       });
 
-      for (const x of [0, length / 2, length]) {
+      const frameXs=wall.frameSpacing>0?Array.from({length:Math.ceil(length/wall.frameSpacing)+1},(_,i)=>Math.min(i*wall.frameSpacing,length)):[0,length/2,length];
+      for (const x of frameXs) {
         add(group, new THREE.BoxGeometry(.05, height, .08), frame, x, height / 2, 0);
       }
       for (const y of [.08, height]) {
@@ -236,7 +249,10 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
       for(const interiorSide of wall.finishSides||[wall.interiorSide]){
       const wallFace={...wall,interiorSide};
       const z=wallFace.interiorSide*(wall.thickness/2+.025),brass=material('#ab9564',{metalness:.6,roughness:.35});
-      if(wall.finish==='dark-reflective-panels'){
+      if(wall.finish==='warm-wood'){
+        add(group,new THREE.BoxGeometry(length,height-.12,.025),material(wall.color||'#856746'),length/2,height/2+.06,z);
+        for(let x=.48;x<length;x+=.48)add(group,new THREE.BoxGeometry(.008,height-.12,.006),material('#67513d'),x,height/2+.06,z+interiorSide*.018);
+      }else if(wall.finish==='dark-reflective-panels'){
         const gloss=material('#252c2c',{roughness:.16,metalness:.3});
         for(let i=0;i<5;i++)add(group,new THREE.BoxGeometry(length/5-.025,height-.15,.035),gloss,(i+.5)*length/5,height/2+.05,z);
         for(const y of [.16,Math.min(2.35,height-.03)])add(group,new THREE.BoxGeometry(length,.035,.045),brass,length/2,y,z+wall.interiorSide*.025);

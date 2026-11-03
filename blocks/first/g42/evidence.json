@@ -1,0 +1,96 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-seating-042",
+  "cameras": [
+    "H18",
+    "H19"
+  ],
+  "snapshots": {
+    "H18": "evidence/camera-snapshots/H18.jpg",
+    "H19": "evidence/camera-snapshots/H19.jpg"
+  },
+  "wideSnapshots": {
+    "H18": "evidence/wide capture snapshots/H18.jpg"
+  },
+  "rois": {
+    "H18": {
+      "chairs": "evidence/rois/chair-rois/g42/H18_to_g42.json",
+      "tables": "evidence/rois/table-rois/g42/H18_to_g42.json"
+    },
+    "H19": {
+      "chairs": "evidence/rois/chair-rois/g42/H19_to_g42.json",
+      "tables": "evidence/rois/table-rois/g42/H19_to_g42.json"
+    }
+  },
+  "sourceImageSize": [
+    1920,
+    1080
+  ],
+  "wideCaptureStatus": "H18-wide available and reviewed; no H19 wide capture in the supplied folder.",
+  "notes": [
+    "Owner explicitly requests only group G42: four independent chairs, two round pedestal tables and immediate rug/floor/guard context. Lift, console, lobby checker pattern, plants, bins, stair/escalator and other groups are excluded.",
+    "H18 labels Seat_H18/H20; H19 labels Seat_H17/H19. All four labels are represented once. The two cameras show opposite sides of the same strip; unlabelled reverse-view chairs are not duplicated.",
+    "Provisional pairing: H20/H19 around Table_H9 at the screen-side end; H18/H17 around Table_H8 at the lift-side end. Tables have distinct ROI identities and are not fused. Pairing and slot direction require owner review.",
+    "Unlike the blue upholstered chairs in earlier groups, these photos show tan outer shells with light seat/back cushions on dark star bases. An opt-in shared shell-lounge builder retains that evidence-supported local finish.",
+    "H18/H19 normal views and H18-wide were reviewed. Existing ROIs stay in normal-image pixel space and are not used as direct world coordinates. No H19-wide image exists.",
+    "All dimensions, local spacing, chair yaw and guard dimensions are visualization estimates. Registered first-floor map anchors/headings are preserved without fitting metric calibration or global alignment."
+  ],
+  "roiCoordinateStatus": "Historical authoring resolution unrecorded. Normal views are 1920x1080; H18 Table_H8 reaches the bottom edge y=1080. Original annotations retained.",
+  "seatCorrespondence": [
+    {
+      "objectId": "g42-chair-20",
+      "seats": [
+        "Seat_H20"
+      ],
+      "sources": [
+        "H18"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g42-chair-19",
+      "seats": [
+        "Seat_H19"
+      ],
+      "sources": [
+        "H19"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g42-chair-18",
+      "seats": [
+        "Seat_H18"
+      ],
+      "sources": [
+        "H18"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    },
+    {
+      "objectId": "g42-chair-17",
+      "seats": [
+        "Seat_H17"
+      ],
+      "sources": [
+        "H19"
+      ],
+      "status": "ROI-derived-needs-owner-review"
+    }
+  ],
+  "reviewItems": [
+    "Confirm two facing pairs and Table_H8/H9 correspondence across opposite views.",
+    "Confirm local +Z direction, all chair yaw and spacing.",
+    "Review tan shell/light upholstery, table/pedestal dimensions and rug extent.",
+    "Resolve neighboring ownership, guard endpoints, first-floor elevation and map calibration before merging."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-multiview",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-derived-needs-owner-review",
+    "appearance": "shared-procedural-variant",
+    "globalAlignment": "unresolved"
+  }
+}

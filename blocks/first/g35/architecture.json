@@ -1,0 +1,282 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-lounge-035",
+  "floorSize": [
+    4.8,
+    5.6
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "anchors": [
+      {
+        "camera": "H1",
+        "pixel": [
+          6951,
+          2841
+        ],
+        "heading": 273,
+        "status": "verified"
+      },
+      {
+        "camera": "H2",
+        "pixel": [
+          6349,
+          2830
+        ],
+        "heading": 104,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      5900,
+      2400,
+      7076,
+      3300
+    ],
+    "localAxes": {
+      "x": "From escalator balustrade toward the long wood wall",
+      "z": "From the two armchairs and decorative divider toward the white sofa (owner-requested vertical plan flip)",
+      "y": "Up; local floor at zero, first-floor elevation unresolved"
+    },
+    "mapReview": "First-floor map and H1/H2 anchors reviewed near the stairs/escalator end. Camera evidence establishes current furniture; the illustrated map is not a dimensioned plan.",
+    "orientationReview": {
+      "status": "owner-requested-plan-orientation",
+      "operation": "Mirror the original local floor plan across Z=0; Y stays up",
+      "compositionIntent": "Place this group at the far upper-right of the first-floor map when composing multiple groups",
+      "globalPlacement": "Pending floor composition; camera map pixels and headings unchanged"
+    }
+  },
+  "footprint": [
+    [
+      -2.4,
+      -2.8
+    ],
+    [
+      2.4,
+      -2.8
+    ],
+    [
+      2.4,
+      2.8
+    ],
+    [
+      -2.4,
+      2.8
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g35-dark-floor",
+      "size": [
+        4.8,
+        5.6
+      ],
+      "center": [
+        0,
+        0
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [
+    {
+      "id": "g35-rug",
+      "polygon": [
+        [
+          -1.15,
+          -2.35
+        ],
+        [
+          2.05,
+          -2.35
+        ],
+        [
+          2.05,
+          2.5
+        ],
+        [
+          -1.15,
+          2.5
+        ]
+      ],
+      "notes": "Pale rectangular rug visible in both normal/wide views; approximate flat surface using existing pale overlay."
+    }
+  ],
+  "circulation": {
+    "id": "g35-escalator-side-access",
+    "polygon": [
+      [
+        -2.05,
+        -2.4
+      ],
+      [
+        -1.25,
+        -2.4
+      ],
+      [
+        -1.25,
+        1.5
+      ],
+      [
+        -2.05,
+        1.5
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "estimated-clear-strip",
+    "notes": "Dark tile strip beside rug and balustrade. No stair, escalator or void geometry is implied."
+  },
+  "walls": [
+    {
+      "id": "g35-long-wood-backing",
+      "kind": "solid",
+      "start": [
+        2.25,
+        -2.65
+      ],
+      "end": [
+        2.25,
+        2.65
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#856746",
+      "owner": "first/g35",
+      "sources": [
+        "H1",
+        "H2"
+      ],
+      "confidence": "Visible long wood-paneled boundary; height, thickness and span estimated",
+      "finish": "warm-wood",
+      "interiorSide": 1
+    },
+    {
+      "id": "g35-sofa-backing",
+      "kind": "solid",
+      "start": [
+        2.25,
+        2.65
+      ],
+      "end": [
+        -1.15,
+        2.65
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#856746",
+      "owner": "first/g35",
+      "sources": [
+        "H2"
+      ],
+      "confidence": "Wood-paneled return behind sofa visible; junction and extents estimated",
+      "finish": "warm-wood",
+      "interiorSide": 1
+    },
+    {
+      "id": "g35-chair-divider",
+      "kind": "glass",
+      "start": [
+        2.25,
+        -2.5
+      ],
+      "end": [
+        -1.15,
+        -2.5
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "first/g35",
+      "sources": [
+        "H1"
+      ],
+      "confidence": "Vertical decorative translucent divider behind chairs; material and top extent uncertain",
+      "notes": "Schematic glass builder approximates the striated screen. This is not a confirmed exterior window."
+    },
+    {
+      "id": "g35-escalator-balustrade",
+      "kind": "glass",
+      "start": [
+        -2.2,
+        -2.65
+      ],
+      "end": [
+        -2.2,
+        2.65
+      ],
+      "height": 1.1,
+      "thickness": 0.04,
+      "owner": "first/g35",
+      "sources": [
+        "H1",
+        "H2"
+      ],
+      "confidence": "Glass guard beside escalator visible; dimensions estimated",
+      "notes": "Shared glass builder supplies schematic guard and handrail. Floor slab remains a working crop; no structural stair/void model."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "size": [
+      4.8,
+      5.6
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "project-visualization-estimate"
+  },
+  "boundaryReview": [
+    {
+      "id": "g35-sofa-side-access",
+      "kind": "open-corridor",
+      "start": [
+        -2.15,
+        2.65
+      ],
+      "end": [
+        -1.15,
+        2.65
+      ],
+      "sources": [
+        "H2"
+      ],
+      "status": "access-gap-estimated-neighbor-unresolved"
+    },
+    {
+      "id": "g35-chair-side-access",
+      "kind": "open-corridor",
+      "start": [
+        -2.15,
+        -2.5
+      ],
+      "end": [
+        -1.15,
+        -2.5
+      ],
+      "sources": [
+        "H1"
+      ],
+      "status": "access-gap-estimated-neighbor-unresolved"
+    },
+    {
+      "id": "g35-escalator-interface",
+      "kind": "unknown",
+      "sources": [
+        "H1",
+        "H2"
+      ],
+      "status": "stair-void-floor-elevation-and-ownership-unresolved"
+    }
+  ]
+}

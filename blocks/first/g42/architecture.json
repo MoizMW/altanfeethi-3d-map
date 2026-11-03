@@ -1,0 +1,204 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-seating-042",
+  "floorSize": [
+    3.2,
+    8.6
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "anchors": [
+      {
+        "camera": "H18",
+        "pixel": [
+          5628,
+          3244
+        ],
+        "heading": 304,
+        "status": "verified"
+      },
+      {
+        "camera": "H19",
+        "pixel": [
+          4946,
+          2801
+        ],
+        "heading": 124,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      4500,
+      2350,
+      6150,
+      3650
+    ],
+    "localAxes": {
+      "x": "From the lobby-side access toward the stair-side railing",
+      "z": "From the reeded-screen side toward the lift-side end",
+      "y": "Up; local floor zero does not establish first-floor building elevation"
+    },
+    "mapReview": "Registered H18/H19 first-floor anchors locate this seating beside the stairs. Source map is an illustrated reference; no metric basis or global transform is fitted."
+  },
+  "footprint": [
+    [
+      -1.6,
+      -4.3
+    ],
+    [
+      1.6,
+      -4.3
+    ],
+    [
+      1.6,
+      4.3
+    ],
+    [
+      -1.6,
+      4.3
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g42-dark-floor",
+      "size": [
+        3.2,
+        8.6
+      ],
+      "center": [
+        0,
+        0
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [
+    {
+      "id": "g42-rug",
+      "polygon": [
+        [
+          -0.55,
+          -4.05
+        ],
+        [
+          1.25,
+          -4.05
+        ],
+        [
+          1.25,
+          4.05
+        ],
+        [
+          -0.55,
+          4.05
+        ]
+      ],
+      "notes": "Pale rug beneath the four chairs and two tables. Texture and exact extent estimated."
+    }
+  ],
+  "circulation": {
+    "id": "g42-access-strip",
+    "polygon": [
+      [
+        -1.55,
+        -4.3
+      ],
+      [
+        -0.65,
+        -4.3
+      ],
+      [
+        -0.65,
+        4.3
+      ],
+      [
+        -1.55,
+        4.3
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "estimated-clear-access",
+    "notes": "Narrow working crop of adjoining dark-tile access; wider lobby patterned floor is outside scope."
+  },
+  "walls": [
+    {
+      "id": "g42-stair-side-guard",
+      "kind": "glass",
+      "start": [
+        1.45,
+        -4.15
+      ],
+      "end": [
+        1.45,
+        4.15
+      ],
+      "height": 1.1,
+      "thickness": 0.04,
+      "privacyBand": false,
+      "owner": "first/g42",
+      "sources": [
+        "H18",
+        "H19"
+      ],
+      "confidence": "Glass guard visible alongside seating; offset, span and height estimated",
+      "notes": "Schematic guard only; stair/escalator and void geometry excluded."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "boundaryReview": [
+    {
+      "id": "g42-lobby-side",
+      "kind": "open-corridor",
+      "start": [
+        -1.6,
+        -4.3
+      ],
+      "end": [
+        -1.6,
+        4.3
+      ],
+      "sources": [
+        "H18",
+        "H19"
+      ],
+      "status": "open-access-crop"
+    },
+    {
+      "id": "g42-screen-side",
+      "kind": "unknown",
+      "sources": [
+        "H18"
+      ],
+      "status": "end-screen-outside-seating-crop"
+    },
+    {
+      "id": "g42-lift-side",
+      "kind": "open-corridor",
+      "sources": [
+        "H19"
+      ],
+      "status": "lift-and-landing-outside-scope"
+    }
+  ],
+  "ceiling": {
+    "size": [
+      3.2,
+      8.6
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "estimated-plain-visualization-only"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-lounge-035",
+  "objects": [
+    {
+      "id": "g35-sofa-01",
+      "type": "sofa",
+      "name": "White two-seat sofa · H2 / H1",
+      "position": [
+        0.55,
+        0,
+        1.85
+      ],
+      "yaw": 180,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H1",
+        "Seat_H2"
+      ],
+      "cameras": [
+        "H2",
+        "H1"
+      ],
+      "confidence": "Observed in camera views; dimensions and local position estimated; needs owner review",
+      "notes": "H2 labels both slots on one sofa. Local left/right correspondence requires review."
+    },
+    {
+      "id": "g35-chair-03",
+      "type": "armchair",
+      "name": "Blue armchair · H3",
+      "position": [
+        1.1,
+        0,
+        -1.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_H3"
+      ],
+      "cameras": [
+        "H1",
+        "H2"
+      ],
+      "confidence": "Observed in camera views; dimensions and local position estimated; needs owner review"
+    },
+    {
+      "id": "g35-chair-04",
+      "type": "armchair",
+      "name": "Blue armchair · H4",
+      "position": [
+        0.1,
+        0,
+        -1.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_H4"
+      ],
+      "cameras": [
+        "H1",
+        "H2"
+      ],
+      "confidence": "Observed in camera views; dimensions and local position estimated; needs owner review"
+    },
+    {
+      "id": "g35-table-01",
+      "type": "table",
+      "name": "Nested stone coffee-table set · H1",
+      "position": [
+        0.55,
+        0,
+        0
+      ],
+      "yaw": 180,
+      "size": [
+        1.6,
+        0.48,
+        1.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H1",
+        "H2"
+      ],
+      "confidence": "Observed in camera views; dimensions and local position estimated; needs owner review",
+      "externalId": "Table_H1",
+      "variant": "nested-stone",
+      "notes": "One ROI table identity covers the nested set: boomerang-shaped upper top and round lower top. Marble veins and exact contour are simplified."
+    },
+    {
+      "id": "g35-floor-lamp-01",
+      "type": "floor-lamp",
+      "name": "Sofa-corner floor lamp",
+      "position": [
+        1.92,
+        0,
+        2.13
+      ],
+      "yaw": 180,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "H2"
+      ],
+      "confidence": "Observed in camera views; dimensions and local position estimated; needs owner review"
+    },
+    {
+      "id": "g35-plant-01",
+      "type": "plant",
+      "name": "Plant beside sofa and balustrade",
+      "position": [
+        -1.58,
+        0,
+        2.13
+      ],
+      "yaw": 180,
+      "size": [
+        0.58,
+        2.05,
+        0.58
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c6d45",
+      "seats": [],
+      "cameras": [
+        "H1",
+        "H2"
+      ],
+      "confidence": "Observed in camera views; dimensions and local position estimated; needs owner review",
+      "notes": "One physical plant seen beside the sofa in H2 and at the opposite edge of H1-wide; pot and foliage simplified."
+    }
+  ]
+}
