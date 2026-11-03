@@ -342,32 +342,6 @@
       "renderRole": "standalone-shared-wall-reference"
     },
     {
-      "id": "departure-reception-sgs-unused-bay-side",
-      "kind": "solid",
-      "start": [
-        -7.45,
-        -3.45
-      ],
-      "end": [
-        -7.45,
-        -0.1
-      ],
-      "height": 4.1,
-      "thickness": 0.16,
-      "color": "#e3dfd2",
-      "owner": "ground/g32",
-      "neighborBoundary": "g32-approach-wall-return",
-      "sources": [
-        "owner-security-unused-bays-2026-11-02",
-        "ReceptionCam2",
-        "Egate1",
-        "SGSCam2",
-        "SGSCam4"
-      ],
-      "confidence": "Owner confirms common SGS wall; local standalone reference proxy, span estimated",
-      "renderRole": "standalone-shared-wall-reference"
-    },
-    {
       "id": "departure-reception-security-entrance-closure",
       "kind": "solid",
       "start": [
@@ -388,6 +362,66 @@
         "ReceptionCam2"
       ],
       "confidence": "Owner requests closure beside entrance at security bay; span fits existing backing/frame, dimensions estimated"
+    },
+    {
+      "id": "departure-reception-pillar-to-egate-wall",
+      "kind": "solid",
+      "start": [
+        3.375,
+        5.95
+      ],
+      "end": [
+        3.375,
+        2.95
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e1ddd1",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "owner-pillar-to-egate-wall-2026-11-03"
+      ],
+      "confidence": "Owner requested wall from entrance pillar beside plant to start of e-gate bank; follows existing pillar and gate endpoints"
+    },
+    {
+      "kind": "solid",
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e3dfd2",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "owner-unused-counter-three-walls-2026-11-03"
+      ],
+      "confidence": "Owner requests three-sided enclosure with counter front open",
+      "id": "departure-reception-unused-counter-left-wall",
+      "start": [
+        -7.45,
+        -3.45
+      ],
+      "end": [
+        -7.45,
+        -0.75
+      ]
+    },
+    {
+      "kind": "solid",
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e3dfd2",
+      "owner": "ground/departure-reception",
+      "sources": [
+        "owner-unused-counter-three-walls-2026-11-03"
+      ],
+      "confidence": "Owner requests three-sided enclosure with counter front open",
+      "id": "departure-reception-unused-counter-back-wall",
+      "start": [
+        -7.45,
+        -3.45
+      ],
+      "end": [
+        -4.25,
+        -3.45
+      ]
     }
   ],
   "openings": [],
@@ -611,6 +645,9 @@
     ]
   },
   "notes": [
+    "Owner correction: unused counter bay now has three full-height walls: existing right stone return plus new back and left walls. Front at Z=-0.75 remains open. Supersedes earlier open-back request; counter pose unchanged.",
+    "Owner correction: remove wall behind top-left unused counter (SGS unused bay outer side); this is an open area. Counter and neighboring reception partitions retained.",
+    "Owner adds full-height wall from entrance pillar left of plant to start of e-gates: X=3.375, Z=5.95..2.95. Existing plant, entrance and gates retained.",
     "Owner requests entire Departure_Reception zone, with side-wise camera evidence and construction objects excluded. Primary g1/g30/g31 cameras retain original zone/group registrations.",
     "Main desk and three monitors appear repeatedly in ReceptionCam1/2/3: model once. The narrow counter near entrance seen in ENTRANCE/ReceptionCam2/Egate1 is a separate side counter, not a duplicated main desk.",
     "Two swing-flap e-gate lanes are distinct from exterior sliding doors. Their renderer uses a static editable opening preview, not live access-control state.",

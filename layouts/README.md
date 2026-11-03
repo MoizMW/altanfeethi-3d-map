@@ -121,3 +121,13 @@ Open `/?layout=ground/i-zone`. The accepted three screened bays remain fixed; G6
 
 
 I-zone wall finishes: G57/G58/G59 paneled boundaries and G61 corner/end walls now carry procedural vertical grain with panel joints. Pale walls use stone-like striations and dark inset lines; brown cladding uses warm wood grain and finer seams. Finish scale is estimated from I16 and opposing wide captures. Source furniture and structural extents are unchanged.
+
+
+### I-zone L-shaped map extension
+
+`/?layout=ground/i-zone-extension` adds an independently editable `ground/i-map-extension` to the left (+Z in the owner screenshot) of the completed I zone. Map count: three chair pairs, two sofa pairs and five tables, with temporary IDs. Off-white paneled walls match the accepted I-zone finish. A clear return-side opening matches the saved G24/G25 gap width, for a future global join; existing dining/departure layouts and the completed I-zone-only preview are preserved.
+
+
+I-extension owner-positioned join: furniture saved in `i-map-extension/objects.json` is retained exactly. In the combined extension preview, the accepted I-zone assembly shifts +7.54 m along Z as one unit, so G59 ends in the formerly empty source strip. Its screen sits at Z=17.48 and the pale walk continues from Z=17.7 toward the extension sofas. A composition-only floor crop and wall suppression remove overlap at that seam. The I-zone-only preview remains unchanged.
+
+The main B/C/E/G composition now includes the full I zone and extension. A rigid -90° rotation and [4.32,0,22.7] translation attaches its inner L edge to the B13 buffet-end passage behind B44. The dining wall owns the seam; duplicate extension wall pieces are omitted in this composition. The 2.5 m opening remains clear, and source blocks and the I-only previews remain independently editable.

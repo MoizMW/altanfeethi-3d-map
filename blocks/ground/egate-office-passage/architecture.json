@@ -3,11 +3,11 @@
   "version": 1,
   "blockId": "ground-egate-office-passage",
   "floorSize": [
-    26.2,
+    23.2,
     12.55
   ],
   "floorCenter": [
-    13.1,
+    11.6,
     2.825
   ],
   "ceilingHeight": 4.1,
@@ -67,11 +67,11 @@
       -3.45
     ],
     [
-      26.2,
+      23.2,
       -3.45
     ],
     [
-      26.2,
+      23.2,
       9.1
     ],
     [
@@ -131,7 +131,7 @@
         2.75
       ],
       "end": [
-        26.2,
+        23.2,
         2.75
       ],
       "height": 4.1,
@@ -168,11 +168,11 @@
       "id": "egate-office-passage-b-dining-wall-reference",
       "kind": "solid",
       "start": [
-        26.2,
+        23.2,
         -3.45
       ],
       "end": [
-        26.2,
+        23.2,
         -0.2
       ],
       "height": 4.1,
@@ -240,7 +240,7 @@
         9.1
       ],
       "end": [
-        26.2,
+        23.2,
         9.1
       ],
       "height": 4.1,
@@ -254,50 +254,48 @@
       "confidence": "Owner room topology; dimensions follow current G9 width and saved exit jamb, not surveyed"
     },
     {
-      "id": "egate-office-passage-office-g9-shared-reference",
+      "id": "egate-office-passage-office-far-side",
       "kind": "solid",
       "start": [
-        26.2,
+        23.2,
         2.75
       ],
       "end": [
-        26.2,
+        23.2,
         8.75
       ],
       "height": 4.1,
       "thickness": 0.18,
       "color": "#e1ddd1",
-      "owner": "ground/g9",
+      "owner": "ground/egate-office-passage",
       "sources": [
         "owner-office-room-alignment-2026-11-03",
         "A3"
       ],
       "confidence": "Owner room topology; dimensions follow current G9 width and saved exit jamb, not surveyed",
-      "renderRole": "standalone-shared-wall-reference",
-      "neighborBoundary": "g9-tv-wall"
+      "renderRole": "office-enclosure"
     },
     {
-      "id": "egate-office-passage-office-g9-back-return",
+      "id": "egate-office-passage-office-far-back-return",
       "kind": "solid",
       "start": [
-        26.2,
+        23.2,
         8.75
       ],
       "end": [
-        26.2,
+        23.2,
         9.1
       ],
       "height": 4.1,
       "thickness": 0.18,
       "color": "#e1ddd1",
-      "owner": "ground/g16",
+      "owner": "ground/egate-office-passage",
       "sources": [
         "owner-office-room-alignment-2026-11-03",
         "A3"
       ],
       "confidence": "Owner room topology; dimensions follow current G9 width and saved exit jamb, not surveyed",
-      "renderRole": "standalone-shared-wall-reference",
-      "neighborBoundary": "g16-console-wall"
+      "renderRole": "office-enclosure"
     }
   ],
   "openings": [],
@@ -366,11 +364,11 @@
         -0.05
       ],
       [
-        26.2,
+        23.2,
         -0.05
       ],
       [
-        26.2,
+        23.2,
         2.95
       ],
       [
@@ -387,7 +385,7 @@
           1.45
         ],
         [
-          26.2,
+          23.2,
           1.45
         ]
       ],
@@ -460,11 +458,11 @@
         "id": "egate-office-passage-g9-edge",
         "destination": "G9/G10 walking approach (not merged)",
         "start": [
-          26.2,
+          23.2,
           -0.05
         ],
         "end": [
-          26.2,
+          23.2,
           2.95
         ],
         "kind": "open-connection",
@@ -496,11 +494,11 @@
       "kind": "open-connection",
       "ownsWall": false,
       "start": [
-        26.2,
+        23.2,
         -0.05
       ],
       "end": [
-        26.2,
+        23.2,
         2.95
       ],
       "status": "Straight route stops at G9/G10 walking approach; no neighbor merge"
@@ -535,7 +533,7 @@
         2.75
       ],
       "end": [
-        26.2,
+        23.2,
         2.75
       ],
       "objectId": "egate-office-passage-office-door",
@@ -545,25 +543,29 @@
       "id": "egate-office-passage-office-g9-wall",
       "neighbor": "ground/g9",
       "neighborBoundary": "g9-tv-wall",
-      "ownsWall": false,
-      "referenceWall": "egate-office-passage-office-g9-shared-reference",
-      "status": "Standalone references excluded from main composition. G9 owns 6 m segment; remaining G16-side office segment is 0.35 m after exit-line trim."
+      "ownsWall": true,
+      "referenceWall": "egate-office-passage-office-far-side",
+      "status": "Office shortened along X; far wall is no longer shared with G9",
+      "kind": "separate-office-side"
     }
   ],
   "ceiling": {
     "height": 4.1,
     "size": [
-      26.2,
+      23.2,
       12.55
     ],
     "center": [
-      13.1,
+      11.6,
       2.825
     ],
     "defaultVisible": false,
     "confidence": "Common provisional height; no camera-mount heights inferred"
   },
   "notes": [
+    "Owner alignment correction: trim entire passage floor to office end X=23.2 and move the opposite dining-wall proxy to the same X. In main layout shift the whole departure assembly 3 m toward G9, preserving reception/SGS/passage joins and eliminating the office gap.",
+    "Owner floor trim after office shortening: remove surplus floor at X=23.2..26.2 on office side Z=2.75..9.1. Retain the through-passage floor below Z=2.75 to preserve the G9/G10 connection. Office and furniture unchanged.",
+    "Owner X-axis length reduction: shorten office from 9.7 m to 6.7 m by moving far side X=26.2 to X=23.2. Depth 6.35 m and height 4.1 m unchanged. Door, console, planter, exit and passage remain fixed; far side is now a separate enclosure wall. Supersedes earlier shared G9-side alignment.",
     "Owner requests only passage extension from reception e-gates to exit/office/G9 edge. Former A zone is cleared of all old walls and furnishings.",
     "Former Starbucks is glass frontage only. Do not recreate cafe counters, signage, equipment or shop enclosure from obsolete map.",
     "A1/A3 normal/wide file pairs are byte-identical; they provide one view each. Neither is registered, so no invented mount, heading or ROI projection is used.",
@@ -587,18 +589,18 @@
   "officeRoom": {
     "width": 6.35,
     "widthReference": "Exit/glass threshold at local Z=9.1 minus office front Z=2.75",
-    "length": 9.7,
+    "length": 6.7,
     "footprint": [
       [
         16.5,
         2.75
       ],
       [
-        26.2,
+        23.2,
         2.75
       ],
       [
-        26.2,
+        23.2,
         9.1
       ],
       [
@@ -608,32 +610,30 @@
     ],
     "frontage": [
       16.5,
-      26.2
+      23.2
     ],
     "mergedWorldBounds": {
       "x": [
         1.42,
-        11.12
+        8.12
       ],
       "z": [
         -3.35,
         3
       ]
     },
-    "sharedG9Wall": "g9-tv-wall",
     "exitJambLocalX": 16.5,
     "exitPositionPreserved": true,
-    "status": "Owner trims office width to exit/glass line; front wall and existing exit jamb remain fixed",
-    "sharedRearWall": "g16-console-wall"
+    "status": "Short office far side aligns with G9 after departure assembly shift"
   },
   "floorSections": [
     {
       "center": [
-        13.1,
+        11.6,
         2.825
       ],
       "size": [
-        26.2,
+        23.2,
         12.55
       ],
       "yaw": 0,

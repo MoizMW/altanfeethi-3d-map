@@ -1,0 +1,299 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-i-map-extension",
+  "floorSize": [
+    13.6,
+    14.49
+  ],
+  "floorCenter": [
+    -0.8,
+    17.405
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "owner-map-based-not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "localAxes": {
+      "x": "Existing I-zone basis: paneled wall toward aisle/windows at +X",
+      "z": "Left in owner 3D screenshot, continuing past I11/I12 and I25 at +Z",
+      "y": "Up"
+    },
+    "sourceMapCrop": [
+      6800,
+      2700,
+      9500,
+      4450
+    ]
+  },
+  "footprint": [
+    [
+      -1.6,
+      10.16
+    ],
+    [
+      6,
+      10.16
+    ],
+    [
+      6,
+      24.65
+    ],
+    [
+      -7.6,
+      24.65
+    ],
+    [
+      -7.6,
+      17.7
+    ],
+    [
+      -1.6,
+      17.7
+    ]
+  ],
+  "floorSections": [
+    {
+      "center": [
+        2.2,
+        17.405
+      ],
+      "size": [
+        7.6,
+        14.49
+      ],
+      "yaw": 0,
+      "color": "#424747"
+    },
+    {
+      "center": [
+        -4.6,
+        21.175
+      ],
+      "size": [
+        6,
+        6.95
+      ],
+      "yaw": 0,
+      "color": "#424747"
+    }
+  ],
+  "walls": [
+    {
+      "id": "i-extension-long-side",
+      "kind": "solid",
+      "start": [
+        -1.5,
+        10.16
+      ],
+      "end": [
+        -1.5,
+        17.7
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#d8d3c7",
+      "finish": "i-zone-stone-panels",
+      "owner": "ground/i-map-extension",
+      "sources": [
+        "owner-map-extension-2026-11-03"
+      ],
+      "confidence": "Owner-requested map-based outline; dimensions estimated, no camera reconstruction claimed"
+    },
+    {
+      "id": "i-extension-return-inner",
+      "kind": "solid",
+      "start": [
+        -7.5,
+        17.7
+      ],
+      "end": [
+        -3.5,
+        17.7
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#d8d3c7",
+      "finish": "i-zone-stone-panels",
+      "owner": "ground/i-map-extension",
+      "sources": [
+        "owner-map-extension-2026-11-03"
+      ],
+      "confidence": "Owner-requested map-based outline; dimensions estimated, no camera reconstruction claimed"
+    },
+    {
+      "id": "i-extension-outer-end",
+      "kind": "solid",
+      "start": [
+        -7.5,
+        24.55
+      ],
+      "end": [
+        5.9,
+        24.55
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#d8d3c7",
+      "finish": "i-zone-stone-panels",
+      "owner": "ground/i-map-extension",
+      "sources": [
+        "owner-map-extension-2026-11-03"
+      ],
+      "confidence": "Owner-requested map-based outline; dimensions estimated, no camera reconstruction claimed"
+    },
+    {
+      "id": "i-extension-outer-side",
+      "kind": "solid",
+      "start": [
+        5.9,
+        24.55
+      ],
+      "end": [
+        5.9,
+        10.16
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#d8d3c7",
+      "finish": "i-zone-stone-panels",
+      "owner": "ground/i-map-extension",
+      "sources": [
+        "owner-map-extension-2026-11-03"
+      ],
+      "confidence": "Owner-requested map-based outline; dimensions estimated, no camera reconstruction claimed"
+    },
+    {
+      "id": "i-extension-return-end",
+      "kind": "solid",
+      "start": [
+        -7.5,
+        17.7
+      ],
+      "end": [
+        -7.5,
+        24.55
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#d8d3c7",
+      "finish": "i-zone-stone-panels",
+      "owner": "ground/i-map-extension",
+      "sources": [
+        "owner-map-extension-2026-11-03"
+      ],
+      "confidence": "Owner-requested map-based outline; dimensions estimated, no camera reconstruction claimed"
+    },
+    {
+      "id": "i-extension-return-inner-after-opening",
+      "kind": "solid",
+      "start": [
+        -1.968203,
+        17.7
+      ],
+      "end": [
+        -1.5,
+        17.7
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#d8d3c7",
+      "finish": "i-zone-stone-panels",
+      "owner": "ground/i-map-extension",
+      "sources": [
+        "owner-map-extension-2026-11-03"
+      ],
+      "confidence": "Owner-requested map-based outline; dimensions estimated, no camera reconstruction claimed"
+    }
+  ],
+  "openings": [],
+  "floorInlays": [
+    {
+      "id": "i-extension-l-walk",
+      "polygon": [
+        [
+          -7.4,
+          17.7
+        ],
+        [
+          3.4,
+          17.7
+        ],
+        [
+          3.4,
+          19.23
+        ],
+        [
+          -7.4,
+          19.23
+        ]
+      ],
+      "color": "#d7d4c9"
+    }
+  ],
+  "sharedBoundaries": [
+    {
+      "id": "i-extension-existing-i-zone-join",
+      "kind": "open-connection",
+      "start": [
+        -1.6,
+        10.16
+      ],
+      "end": [
+        6,
+        10.16
+      ],
+      "neighbor": "ground/i-zone",
+      "ownsWall": false
+    },
+    {
+      "id": "i-extension-g24-g25-future-join",
+      "kind": "open-connection",
+      "start": [
+        -3.5,
+        17.7
+      ],
+      "end": [
+        -1.968203,
+        17.7
+      ],
+      "neighbor": "ground/g3-g24-g25",
+      "ownsWall": false,
+      "referenceGap": {
+        "start": [
+          0.61659,
+          -7.4
+        ],
+        "end": [
+          2.148387,
+          -7.4
+        ]
+      },
+      "status": "Owner relocated opening to inner L wall near I11 and extension sofa TMP_12"
+    }
+  ],
+  "ceiling": {
+    "height": 4.1,
+    "size": [
+      13.6,
+      14.49
+    ],
+    "center": [
+      -0.8,
+      17.405
+    ],
+    "defaultVisible": false
+  },
+  "notes": [
+    "Owner update: pale I-zone aisle turns along the inner extension edge to form an L. Old opening beside TMP_06 is closed; new 1.531797 m opening is on the inner L wall near I11 and left of TMP_12. Supersedes earlier dark-only floor and opening placement notes.",
+    "Owner accepts completed G57\u2013G62 and requests a new L-shaped lounge on the left of their 3D screenshot (+Z in existing I-zone coordinates). Do not change accepted source furniture or architecture.",
+    "Counted from owner-supplied 2D map and full map crop: three facing chair pairs (6 chairs), two facing two-seat sofa pairs (4 sofas), five tables. The separate chair pair sits on the short return beside the sofa leg.",
+    "I24 wide provides distant partial support for a two-chair pair beyond G59. Remaining seating and L-shaped wall positions follow the map and owner request, not unseen camera evidence.",
+    "New seat IDs Seat_IExt_TMP_01\u201314 are temporary editable identities, not ROI-approved IDs. No official I-zone seat or table numbers are inferred.",
+    "Off-white striated panel walls reuse the accepted I-zone finish. Absolute dimensions, chair poses, sofa sizes and the rectangular opening are provisional.",
+    "One opening on the short return points toward the existing G24/G25 gap; width matches that source gap (1.531797 m). The main B/C/E/G composition is not moved or merged. Exact global alignment between the I extension and that opening remains pending a future composition.",
+    "Owner saved furniture arrangement retained exactly. Combined G59 now ends at Z=17.7 in the empty strip; its screen is Z=17.48. White extension walk starts immediately beyond that screen, meeting the I-zone aisle and the existing branch toward the extension sofas/G24-G25. Empty source crop is neighbor context; combined view crops it to avoid duplicate floors.",
+    "Owner right-edge trim: outer floor ends at Z=24.65 with wall center Z=24.55, just beyond the saved sofas. Walk doglegs into X=0.6..1.75 after Z=21 so it avoids the moved blue chair; all furniture poses retained.",
+    "Owner correction: entire extension uses the dark seating floor, with no white walkway inlays. Opening and furniture are retained."
+  ]
+}

@@ -6,7 +6,7 @@
     {
       "id": "departure-reception-main-counter",
       "type": "counter",
-      "name": "Main departure reception \u00b7 three workstations",
+      "name": "Main departure reception · three workstations",
       "position": [
         0,
         0,
@@ -186,7 +186,7 @@
     {
       "id": "departure-reception-teal-backdrop",
       "type": "wall-panel",
-      "name": "Teal glass reception backdrop \u00b7 brand and etching",
+      "name": "Teal glass reception backdrop · brand and etching",
       "position": [
         0,
         0,
@@ -214,7 +214,7 @@
     {
       "id": "departure-reception-stone-flank-1",
       "type": "wall-panel",
-      "name": "Cream stone cladding \u00b7 inward left side wall",
+      "name": "Cream stone cladding · inward left side wall",
       "position": [
         -4.115,
         0,
@@ -243,7 +243,7 @@
     {
       "id": "departure-reception-stone-flank-2",
       "type": "wall-panel",
-      "name": "Cream stone cladding \u00b7 inward gate-side wall",
+      "name": "Cream stone cladding · inward gate-side wall",
       "position": [
         4.065,
         0,
@@ -359,7 +359,7 @@
     {
       "id": "departure-reception-flag-1",
       "type": "wall-panel",
-      "name": "Saudi flag \u00b7 Shahada and sword",
+      "name": "Saudi flag · Shahada and sword",
       "position": [
         -1.65,
         0,
@@ -389,7 +389,7 @@
     {
       "id": "departure-reception-flag-2",
       "type": "wall-panel",
-      "name": "Altanfeethi flag \u00b7 official bilingual logo",
+      "name": "Altanfeethi flag · official bilingual logo",
       "position": [
         1.65,
         0,
@@ -629,7 +629,7 @@
     {
       "id": "departure-reception-notice",
       "type": "display",
-      "name": "Countertop welcome notice \u00b7 schematic",
+      "name": "Countertop welcome notice · schematic",
       "position": [
         0.7,
         1.18,
@@ -659,7 +659,7 @@
     {
       "id": "departure-reception-entrance-side-counter",
       "type": "counter",
-      "name": "Security counter \u00b7 owner-positioned opening",
+      "name": "Security counter · owner-positioned opening",
       "position": [
         -4.115225497579504,
         0,
@@ -717,7 +717,7 @@
     {
       "id": "departure-reception-entrance-sliding-doors",
       "type": "automatic-glass-gate",
-      "name": "Departure entry \u00b7 sliding glass doors",
+      "name": "Departure entry · sliding glass doors",
       "position": [
         -0.8,
         0,
@@ -748,11 +748,11 @@
       "type": "cabinet",
       "name": "Entrance access reader post",
       "position": [
-        -2.705647692216854,
+        -2.524802739619369,
         0,
-        5.1
+        5.446939711806765
       ],
-      "yaw": 0,
+      "yaw": -4.098109380023332,
       "size": [
         0.27,
         1.12,
@@ -806,7 +806,7 @@
     {
       "id": "departure-reception-egate-reader-1",
       "type": "cabinet",
-      "name": "E-gate lane 1 \u00b7 raised scanner on rail-mounted pole",
+      "name": "E-gate lane 1 · raised scanner on rail-mounted pole",
       "position": [
         3.472163118490248,
         1.1172000000000002,
@@ -834,7 +834,7 @@
     {
       "id": "departure-reception-egate-reader-2",
       "type": "cabinet",
-      "name": "E-gate lane 2 \u00b7 raised scanner on rail-mounted pole",
+      "name": "E-gate lane 2 · raised scanner on rail-mounted pole",
       "position": [
         3.472163118490248,
         1.1172000000000002,
@@ -892,7 +892,7 @@
       "type": "plant",
       "name": "Entrance potted plant 2",
       "position": [
-        4.584675571564651,
+        2.553195040174079,
         0,
         5.371265178090168
       ],
@@ -903,9 +903,9 @@
         0.68
       ],
       "scale": [
-        1.052665597669182,
-        1.2141568198447068,
-        1.1694131986339913
+        0.6892896440059777,
+        0.7699447432218204,
+        0.8379465699611433
       ],
       "color": "#466a4f",
       "seats": [],
@@ -918,7 +918,7 @@
     {
       "id": "departure-reception-entrance-side-chair",
       "type": "office-chair",
-      "name": "Side counter staff chair \u00b7 temporary ID",
+      "name": "Side counter staff chair · temporary ID",
       "position": [
         -5.020614,
         0,
@@ -950,7 +950,7 @@
     {
       "id": "departure-reception-main-chair-01",
       "type": "office-chair",
-      "name": "Main reception staff chair 01 \u00b7 temporary ID",
+      "name": "Main reception staff chair 01 · temporary ID",
       "position": [
         -1.65,
         0,
@@ -983,7 +983,7 @@
     {
       "id": "departure-reception-main-chair-02",
       "type": "office-chair",
-      "name": "Main reception staff chair 02 \u00b7 temporary ID",
+      "name": "Main reception staff chair 02 · temporary ID",
       "position": [
         0,
         0,
@@ -1016,7 +1016,7 @@
     {
       "id": "departure-reception-main-chair-03",
       "type": "office-chair",
-      "name": "Main reception staff chair 03 \u00b7 temporary ID",
+      "name": "Main reception staff chair 03 · temporary ID",
       "position": [
         1.65,
         0,
@@ -1049,7 +1049,7 @@
     {
       "id": "departure-reception-rear-door-1",
       "type": "wall-panel",
-      "name": "Blue rear service door 1 \u00b7 closed",
+      "name": "Blue rear service door 1 · closed",
       "position": [
         -2.58,
         0,
@@ -1077,7 +1077,7 @@
     {
       "id": "departure-reception-rear-door-2",
       "type": "wall-panel",
-      "name": "Blue rear service door 2 \u00b7 closed",
+      "name": "Blue rear service door 2 · closed",
       "position": [
         2.58,
         0,
@@ -1105,7 +1105,7 @@
     {
       "id": "departure-reception-unused-counter",
       "type": "counter",
-      "name": "Unused reception-style counter \u00b7 widened shared bay",
+      "name": "Unused reception-style counter · widened shared bay",
       "position": [
         -5.85,
         0,

@@ -1,0 +1,425 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-i-map-extension",
+  "objects": [
+    {
+      "id": "i-extension-pair-1-0",
+      "type": "armchair",
+      "name": "Map pair 1 · blue lounge chair",
+      "position": [
+        4.85769983945591,
+        0,
+        19.112700991824187
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.95,
+        0.88
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_IExt_TMP_01"
+      ],
+      "cameras": [
+        "I24"
+      ],
+      "identityStatus": "map-only-temporary-id",
+      "confidence": "Map count and arrangement requested by owner. Only the first chair pair has partial distant I24-wide support; all identities and dimensions are provisional."
+    },
+    {
+      "id": "i-extension-pair-1-2",
+      "type": "armchair",
+      "name": "Map pair 1 · blue lounge chair",
+      "position": [
+        4.874502832661655,
+        0,
+        21.169439921992975
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.95,
+        0.88
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_IExt_TMP_02"
+      ],
+      "cameras": [
+        "I24"
+      ],
+      "identityStatus": "map-only-temporary-id",
+      "confidence": "Map count and arrangement requested by owner. Only the first chair pair has partial distant I24-wide support; all identities and dimensions are provisional."
+    },
+    {
+      "id": "i-extension-table-1",
+      "type": "table",
+      "name": "Map seating pair 1 · coffee table",
+      "position": [
+        4.799180887163097,
+        0,
+        20.122117929832662
+      ],
+      "yaw": 0,
+      "size": [
+        1.2,
+        0.43,
+        0.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b4a274",
+      "variant": "round-glass",
+      "seats": [],
+      "cameras": [],
+      "confidence": "One table per pair as drawn on the map; glass/brass style reused from adjacent I-zone, not photographically confirmed"
+    },
+    {
+      "id": "i-extension-pair-2-0",
+      "type": "armchair",
+      "name": "Map pair 2 · blue lounge chair",
+      "position": [
+        4.682808855797942,
+        0,
+        23.089167776635755
+      ],
+      "yaw": -89.3420477315254,
+      "size": [
+        0.88,
+        0.95,
+        0.88
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_IExt_TMP_03"
+      ],
+      "cameras": [],
+      "identityStatus": "map-only-temporary-id",
+      "confidence": "Map count and arrangement requested by owner. Only the first chair pair has partial distant I24-wide support; all identities and dimensions are provisional."
+    },
+    {
+      "id": "i-extension-pair-2-2",
+      "type": "armchair",
+      "name": "Map pair 2 · blue lounge chair",
+      "position": [
+        2.2968062483199487,
+        0,
+        23.20454878452457
+      ],
+      "yaw": 89.93732656422603,
+      "size": [
+        0.88,
+        0.95,
+        0.88
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_IExt_TMP_04"
+      ],
+      "cameras": [],
+      "identityStatus": "map-only-temporary-id",
+      "confidence": "Map count and arrangement requested by owner. Only the first chair pair has partial distant I24-wide support; all identities and dimensions are provisional."
+    },
+    {
+      "id": "i-extension-table-2",
+      "type": "table",
+      "name": "Map seating pair 2 · coffee table",
+      "position": [
+        3.612452545901271,
+        0,
+        23.13570873568066
+      ],
+      "yaw": -87.65760792693466,
+      "size": [
+        1.2,
+        0.43,
+        0.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b4a274",
+      "variant": "round-glass",
+      "seats": [],
+      "cameras": [],
+      "confidence": "One table per pair as drawn on the map; glass/brass style reused from adjacent I-zone, not photographically confirmed"
+    },
+    {
+      "id": "i-extension-pair-3-0",
+      "type": "armchair",
+      "name": "Map pair 3 · blue lounge chair",
+      "position": [
+        -4.4,
+        0,
+        20.158035847655373
+      ],
+      "yaw": -89.86065514757037,
+      "size": [
+        0.88,
+        0.95,
+        0.88
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_IExt_TMP_05"
+      ],
+      "cameras": [],
+      "identityStatus": "map-only-temporary-id",
+      "confidence": "Map count and arrangement requested by owner. Only the first chair pair has partial distant I24-wide support; all identities and dimensions are provisional."
+    },
+    {
+      "id": "i-extension-pair-3-2",
+      "type": "armchair",
+      "name": "Map pair 3 · blue lounge chair",
+      "position": [
+        -6.767157607579337,
+        0,
+        20.137471690664366
+      ],
+      "yaw": 88.66646960053748,
+      "size": [
+        0.88,
+        0.95,
+        0.88
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_IExt_TMP_06"
+      ],
+      "cameras": [],
+      "identityStatus": "map-only-temporary-id",
+      "confidence": "Map count and arrangement requested by owner. Only the first chair pair has partial distant I24-wide support; all identities and dimensions are provisional."
+    },
+    {
+      "id": "i-extension-table-3",
+      "type": "table",
+      "name": "Map seating pair 3 · coffee table",
+      "position": [
+        -5.4257581303176465,
+        0,
+        20.0443328893457
+      ],
+      "yaw": -88.80889516506349,
+      "size": [
+        1.2,
+        0.43,
+        0.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b4a274",
+      "variant": "round-glass",
+      "seats": [],
+      "cameras": [],
+      "confidence": "One table per pair as drawn on the map; glass/brass style reused from adjacent I-zone, not photographically confirmed"
+    },
+    {
+      "id": "i-extension-pair-4-0",
+      "type": "sofa",
+      "name": "Map pair 4 · pale two-seat sofa",
+      "position": [
+        -6.288343320642959,
+        0,
+        23.138769841257293
+      ],
+      "yaw": 88.35188447339026,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9cf",
+      "seats": [
+        "Seat_IExt_TMP_07",
+        "Seat_IExt_TMP_08"
+      ],
+      "cameras": [],
+      "identityStatus": "map-only-temporary-id",
+      "confidence": "Map count and arrangement requested by owner. Only the first chair pair has partial distant I24-wide support; all identities and dimensions are provisional."
+    },
+    {
+      "id": "i-extension-pair-4-2",
+      "type": "sofa",
+      "name": "Map pair 4 · pale two-seat sofa",
+      "position": [
+        -4.080733431481072,
+        0,
+        23.0980572205531
+      ],
+      "yaw": -89.00962458771988,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9cf",
+      "seats": [
+        "Seat_IExt_TMP_09",
+        "Seat_IExt_TMP_10"
+      ],
+      "cameras": [],
+      "identityStatus": "map-only-temporary-id",
+      "confidence": "Map count and arrangement requested by owner. Only the first chair pair has partial distant I24-wide support; all identities and dimensions are provisional."
+    },
+    {
+      "id": "i-extension-table-4",
+      "type": "table",
+      "name": "Map seating pair 4 · coffee table",
+      "position": [
+        -5.240286100535796,
+        0,
+        23.006918081910182
+      ],
+      "yaw": 86.57056369310472,
+      "size": [
+        1.2,
+        0.43,
+        0.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b4a274",
+      "variant": "round-glass",
+      "seats": [],
+      "cameras": [],
+      "confidence": "One table per pair as drawn on the map; glass/brass style reused from adjacent I-zone, not photographically confirmed"
+    },
+    {
+      "id": "i-extension-pair-5-0",
+      "type": "sofa",
+      "name": "Map pair 5 · pale two-seat sofa",
+      "position": [
+        -2.16301170958286,
+        0,
+        23.18171911422096
+      ],
+      "yaw": 89.25707729538131,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9cf",
+      "seats": [
+        "Seat_IExt_TMP_11",
+        "Seat_IExt_TMP_12"
+      ],
+      "cameras": [],
+      "identityStatus": "map-only-temporary-id",
+      "confidence": "Map count and arrangement requested by owner. Only the first chair pair has partial distant I24-wide support; all identities and dimensions are provisional."
+    },
+    {
+      "id": "i-extension-pair-5-2",
+      "type": "sofa",
+      "name": "Map pair 5 · pale two-seat sofa",
+      "position": [
+        0,
+        0,
+        23.274801032310773
+      ],
+      "yaw": -89.3975842414135,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ddd9cf",
+      "seats": [
+        "Seat_IExt_TMP_13",
+        "Seat_IExt_TMP_14"
+      ],
+      "cameras": [],
+      "identityStatus": "map-only-temporary-id",
+      "confidence": "Map count and arrangement requested by owner. Only the first chair pair has partial distant I24-wide support; all identities and dimensions are provisional."
+    },
+    {
+      "id": "i-extension-table-5",
+      "type": "table",
+      "name": "Map seating pair 5 · coffee table",
+      "position": [
+        -1.137253579265217,
+        0,
+        23.22826007326586
+      ],
+      "yaw": 88.37820195687473,
+      "size": [
+        1.2,
+        0.43,
+        0.7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b4a274",
+      "variant": "round-glass",
+      "seats": [],
+      "cameras": [],
+      "confidence": "One table per pair as drawn on the map; glass/brass style reused from adjacent I-zone, not photographically confirmed"
+    }
+  ]
+}
