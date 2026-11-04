@@ -1,0 +1,190 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-private-lounge-039",
+  "objects": [
+    {
+      "id": "g39-sofa-01",
+      "type": "sofa",
+      "name": "White two-seat sofa · H31 / H30",
+      "position": [
+        -1.16,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [
+        "Seat_H31",
+        "Seat_H30"
+      ],
+      "cameras": [
+        "H13"
+      ],
+      "confidence": "Camera/ROI correspondence; dimensions and room-relative pose estimated from the G41 family.",
+      "cushionColor": "#e2e2d8",
+      "notes": "H31 is the entrance-side sofa slot; H30 is the rear-side slot. Physical sofa is counted once across normal ROI sets; slot order needs owner review."
+    },
+    {
+      "id": "g39-chair-29",
+      "type": "armchair",
+      "name": "Rear blue tub chair · H29",
+      "position": [
+        0.05,
+        0,
+        -1.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_H29"
+      ],
+      "cameras": [
+        "H13"
+      ],
+      "confidence": "Camera/ROI correspondence; dimensions and room-relative pose estimated from the G41 family.",
+      "variant": "tub-chair",
+      "notes": "H29 is supplied by the historical H10 ROI; the missing H10 view prevents direct confirmation. Rear placement follows the repeated four-seat layout."
+    },
+    {
+      "id": "g39-chair-32",
+      "type": "armchair",
+      "name": "Entrance blue tub chair · H32",
+      "position": [
+        0.05,
+        0,
+        1.55
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_H32"
+      ],
+      "cameras": [
+        "H13"
+      ],
+      "confidence": "Camera/ROI correspondence; dimensions and room-relative pose estimated from the G41 family.",
+      "variant": "tub-chair",
+      "notes": "Entrance-side chair identified by H13 ROI; blue tub-chair builder matches G41."
+    },
+    {
+      "id": "g39-coffee-table-7",
+      "type": "table",
+      "name": "Organic nested stone table · H7",
+      "position": [
+        0.03,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.95
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H13"
+      ],
+      "confidence": "Camera/ROI correspondence; dimensions and room-relative pose estimated from the G41 family.",
+      "variant": "organic-stone",
+      "externalId": "Table_H7",
+      "notes": "One nested stone set owns Table_H7. Its multiple stone tops and repeated ROI observations do not create separate external table identities. Tissue box is schematic; transient cups, plates and bottles are omitted."
+    },
+    {
+      "id": "g39-tv",
+      "type": "display",
+      "name": "Wall-mounted television",
+      "position": [
+        1.7,
+        1.23,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        1.55,
+        0.88,
+        0.09
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#1d272a",
+      "seats": [],
+      "cameras": [
+        "H13"
+      ],
+      "confidence": "Camera/ROI correspondence; dimensions and room-relative pose estimated from the G41 family.",
+      "mount": "wall",
+      "notes": "Wall-mounted TV opposite the sofa, edge visible in H13; screen content omitted."
+    },
+    {
+      "id": "g39-flag-stand",
+      "type": "wall-panel",
+      "name": "Saudi flag on chrome floor stand",
+      "position": [
+        -1.1,
+        0,
+        -1.89
+      ],
+      "yaw": 0,
+      "size": [
+        0.6,
+        2.05,
+        0.36
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#155b47",
+      "seats": [],
+      "cameras": [
+        "H13"
+      ],
+      "confidence": "Camera/ROI correspondence; dimensions and room-relative pose estimated from the G41 family.",
+      "variant": "standing-flag",
+      "notes": "Saudi flag and circular chrome base visible in H13; reuse the shared textured flag asset. Pose and scale are estimated.",
+      "flagDesign": "saudi"
+    }
+  ]
+}

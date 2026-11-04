@@ -14,6 +14,7 @@ import {server} from './server.mjs';
 import * as THREE from 'three';
 import {buildArchitecture} from './architecture.js';
 import './g41.test.mjs';
+import './private-lounges.test.mjs';
 
 test('Wider arch piers stay straight through the spring and meet a smooth elliptical crown',()=>{
   const a={walls:[{id:'arch',kind:'solid',start:[0,0],end:[8.4,0],height:4.1,thickness:.18}],openings:[{wallId:'arch',offset:4.2,width:7.6,springHeight:1.65,height:3.35}]};
@@ -237,6 +238,15 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
       assert.equal(photo.status,200);assert.equal(photo.headers.get('content-type'),'image/jpeg');
     }
     assert.equal((await fetch(`${origin}/private-lounge-objects.js`)).status,200);
+    for(const group of ['g39','g40']){
+      assert.ok(listing.blocks.some(b=>b.key===`first/${group}`));
+      const room=await(await fetch(`${origin}/api/block?block=first/${group}`)).json();validateBlock(room.block);
+      for(const camera of room.block.evidence.cameras)for(const wide of [0,1])assert.equal((await fetch(`${origin}/api/evidence/camera/${camera}?block=first/${group}&wide=${wide}`)).status,200);
+    }
+    const privateRow=await(await fetch(`${origin}/api/block?layout=first/private-lounges`)).json();validateBlock(privateRow.block);
+    assert.equal(privateRow.block.objects.flatMap(o=>o.seats).length,12);
+    assert.equal(privateRow.block.objects.length,20);
+    assert.equal((await fetch(`${origin}/api/block?layout=first/private-lounges`,{method:'PUT',body:'{}'})).status,405);
     for(const slug of ['g18','g20','g21','g27','g28','g61','g62']){
       assert.ok(listing.blocks.some(b=>b.key===`ground/${slug}`));
       const data=await(await fetch(`${origin}/api/block?block=ground/${slug}`)).json();validateBlock(data.block);

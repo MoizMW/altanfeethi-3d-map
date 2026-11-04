@@ -3,10 +3,10 @@
   "version": 1,
   "scope": "Saved ground and first-floor block objects; excludes architecture and composed layout copies.",
   "totals": {
-    "blocks": 36,
+    "blocks": 38,
     "designs": 64,
-    "configurations": 196,
-    "placements": 577
+    "configurations": 197,
+    "placements": 590
   },
   "blocks": [
     {
@@ -178,6 +178,16 @@
       "key": "first/g38",
       "name": "G38 · First-floor corner lounge",
       "count": 5
+    },
+    {
+      "key": "first/g39",
+      "name": "G39 · Private lounge",
+      "count": 6
+    },
+    {
+      "key": "first/g40",
+      "name": "G40 · Private lounge",
+      "count": 7
     },
     {
       "key": "first/g41",
@@ -2460,7 +2470,7 @@
         "type": "armchair",
         "variant": "tub-chair"
       },
-      "count": 2,
+      "count": 6,
       "configurations": [
         {
           "id": "5a604f374883",
@@ -2491,7 +2501,7 @@
               1
             ],
             "color": "#627d86",
-            "id": "g41-chair-21",
+            "id": "g39-chair-29",
             "name": "Armchair · Tub Chair",
             "position": [
               0,
@@ -2503,6 +2513,52 @@
             "cameras": []
           },
           "usages": [
+            {
+              "block": "first/g39",
+              "objectId": "g39-chair-29",
+              "name": "Rear blue tub chair · H29",
+              "seats": [
+                "Seat_H29"
+              ],
+              "cameras": [
+                "H13"
+              ]
+            },
+            {
+              "block": "first/g39",
+              "objectId": "g39-chair-32",
+              "name": "Entrance blue tub chair · H32",
+              "seats": [
+                "Seat_H32"
+              ],
+              "cameras": [
+                "H13"
+              ]
+            },
+            {
+              "block": "first/g40",
+              "objectId": "g40-chair-25",
+              "name": "Rear blue tub chair · H25",
+              "seats": [
+                "Seat_H25"
+              ],
+              "cameras": [
+                "H11",
+                "H20"
+              ]
+            },
+            {
+              "block": "first/g40",
+              "objectId": "g40-chair-28",
+              "name": "Entrance blue tub chair · H28",
+              "seats": [
+                "Seat_H28"
+              ],
+              "cameras": [
+                "H11",
+                "H20"
+              ]
+            },
             {
               "block": "first/g41",
               "objectId": "g41-chair-21",
@@ -2983,7 +3039,7 @@
         "type": "sofa",
         "variant": "default"
       },
-      "count": 51,
+      "count": 53,
       "configurations": [
         {
           "id": "61fba18b6369",
@@ -4135,7 +4191,7 @@
             ],
             "color": "#e5e1d5",
             "cushionColor": "#e2e2d8",
-            "id": "g41-sofa-01",
+            "id": "g39-sofa-01",
             "name": "Sofa",
             "position": [
               0,
@@ -4147,6 +4203,31 @@
             "cameras": []
           },
           "usages": [
+            {
+              "block": "first/g39",
+              "objectId": "g39-sofa-01",
+              "name": "White two-seat sofa · H31 / H30",
+              "seats": [
+                "Seat_H31",
+                "Seat_H30"
+              ],
+              "cameras": [
+                "H13"
+              ]
+            },
+            {
+              "block": "first/g40",
+              "objectId": "g40-sofa-01",
+              "name": "White two-seat sofa · H27 / H26",
+              "seats": [
+                "Seat_H27",
+                "Seat_H26"
+              ],
+              "cameras": [
+                "H11",
+                "H20"
+              ]
+            },
             {
               "block": "first/g41",
               "objectId": "g41-sofa-01",
@@ -6665,7 +6746,7 @@
         "type": "table",
         "variant": "organic-stone"
       },
-      "count": 1,
+      "count": 3,
       "configurations": [
         {
           "id": "aede99fd8a91",
@@ -6696,7 +6777,7 @@
               1
             ],
             "color": "#e5e1d5",
-            "id": "g41-coffee-table-5",
+            "id": "g39-coffee-table-7",
             "name": "Table · Organic Stone",
             "position": [
               0,
@@ -6708,6 +6789,25 @@
             "cameras": []
           },
           "usages": [
+            {
+              "block": "first/g39",
+              "objectId": "g39-coffee-table-7",
+              "name": "Organic nested stone table · H7",
+              "seats": [],
+              "cameras": [
+                "H13"
+              ]
+            },
+            {
+              "block": "first/g40",
+              "objectId": "g40-coffee-table-6",
+              "name": "Organic nested stone table · H6",
+              "seats": [],
+              "cameras": [
+                "H11",
+                "H20"
+              ]
+            },
             {
               "block": "first/g41",
               "objectId": "g41-coffee-table-5",
@@ -8600,7 +8700,7 @@
         "variant": "default",
         "mount": "wall"
       },
-      "count": 19,
+      "count": 21,
       "configurations": [
         {
           "id": "4e90a83d2677",
@@ -9369,7 +9469,7 @@
               1
             ],
             "color": "#1d272a",
-            "id": "g41-tv",
+            "id": "g39-tv",
             "name": "Display · Wall",
             "position": [
               0,
@@ -9381,6 +9481,25 @@
             "cameras": []
           },
           "usages": [
+            {
+              "block": "first/g39",
+              "objectId": "g39-tv",
+              "name": "Wall-mounted television",
+              "seats": [],
+              "cameras": [
+                "H13"
+              ]
+            },
+            {
+              "block": "first/g40",
+              "objectId": "g40-tv",
+              "name": "Wall-mounted television",
+              "seats": [],
+              "cameras": [
+                "H11",
+                "H20"
+              ]
+            },
             {
               "block": "first/g41",
               "objectId": "g41-tv",
@@ -12653,7 +12772,7 @@
         "type": "wall-panel",
         "variant": "oval-mirror"
       },
-      "count": 1,
+      "count": 2,
       "configurations": [
         {
           "id": "0a90d1080429",
@@ -12684,7 +12803,7 @@
               1
             ],
             "color": "#5a5149",
-            "id": "g41-rear-mirror",
+            "id": "g40-rear-mirror",
             "name": "Wall Panel · Oval Mirror",
             "position": [
               0,
@@ -12696,6 +12815,15 @@
             "cameras": []
           },
           "usages": [
+            {
+              "block": "first/g40",
+              "objectId": "g40-rear-mirror",
+              "name": "Oval mirror with dark surround",
+              "seats": [],
+              "cameras": [
+                "H20"
+              ]
+            },
             {
               "block": "first/g41",
               "objectId": "g41-rear-mirror",
@@ -12969,7 +13097,7 @@
         "variant": "standing-flag",
         "flagDesign": "saudi"
       },
-      "count": 4,
+      "count": 6,
       "configurations": [
         {
           "id": "dc6dfddd14b2",
@@ -13139,6 +13267,69 @@
                 "I29",
                 "I31",
                 "I32"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "12311d011af4",
+          "appearance": {
+            "size": [
+              0.6,
+              2.05,
+              0.36
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#155b47"
+          },
+          "preview": {
+            "type": "wall-panel",
+            "variant": "standing-flag",
+            "flagDesign": "saudi",
+            "size": [
+              0.6,
+              2.05,
+              0.36
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#155b47",
+            "id": "g39-flag-stand",
+            "name": "Wall Panel · Standing Flag · Saudi",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g39",
+              "objectId": "g39-flag-stand",
+              "name": "Saudi flag on chrome floor stand",
+              "seats": [],
+              "cameras": [
+                "H13"
+              ]
+            },
+            {
+              "block": "first/g40",
+              "objectId": "g40-flag-stand",
+              "name": "Saudi flag on chrome floor stand",
+              "seats": [],
+              "cameras": [
+                "H11",
+                "H20"
               ]
             }
           ]

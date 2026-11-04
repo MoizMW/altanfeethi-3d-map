@@ -1,5 +1,7 @@
 # First-floor blocks
 
+G39 and G40 join G41 at `/?layout=first/private-lounges` in map order G39 → G40 → G41. Each source group stays independently editable. G39 retains historical H10 ROI identities while documenting the absent image; see [G39](g39/README.md) and [G40](g40/README.md).
+
 Combined lounges, G42 and stair lobby: `/?layout=first/bottom-lobby`. Bottom-right-only row: `/?layout=first/bottom-right`. Source blocks G35, G36, G37, G38 and G42 remain independently editable.
 
 Create each first-floor block as a separate directory copied from `blocks/_template/`. Follow the repository `CONTRIBUTING.md` before adding files here.
