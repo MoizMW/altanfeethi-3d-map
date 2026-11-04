@@ -1,0 +1,77 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-banquette-048",
+  "cameras": [
+    "H51",
+    "H49"
+  ],
+  "snapshots": {
+    "H51": "evidence/camera-snapshots/H51.jpg",
+    "H49": "evidence/camera-snapshots/H49.jpg"
+  },
+  "wideSnapshots": {
+    "H51": "evidence/wide capture snapshots/H51.jpg",
+    "H49": "evidence/wide capture snapshots/H49.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Same mounts with wider zoom per project guide",
+    "roiUsage": "Existing ROIs apply only to normal detection views; not projected onto wide captures",
+    "capturedAt": null
+  },
+  "rois": {
+    "H51": {
+      "chairs": "evidence/rois/chair-rois/g48/H51_to_g48.json",
+      "tables": "evidence/rois/table-rois/g48/H51_to_g48.json"
+    },
+    "H49": {
+      "chairs": "evidence/rois/chair-rois/g48/H49_to_g48.json",
+      "tables": "evidence/rois/table-rois/g48/H49_to_g48.json"
+    }
+  },
+  "seatMappings": {
+    "Seat_H107": "g48-banquette",
+    "Seat_H106": "g48-banquette",
+    "Seat_H105": "g48-banquette",
+    "Seat_H104": "g48-banquette"
+  },
+  "tableMappings": {
+    "Table_H41": "g48-table-41",
+    "Table_H42": "g48-table-42"
+  },
+  "roiReview": {
+    "normalCanvas": [
+      1920,
+      1080
+    ],
+    "reviewCanvas": [
+      1200,
+      675
+    ],
+    "displayScale": [
+      0.625,
+      0.625
+    ],
+    "status": "Both chair/table overlays inspected. H49 supports four banquette slots and two tables; H51 overlaps stored cabinets and cannot resolve occluded seating independently.",
+    "worldCoordinates": "None; image-space polygons support identities, not meter-based placement."
+  },
+  "notes": [
+    "One continuous four-slot banquette resolves Seat_H104–H107. Table_H41 is at the H104/storage end; Table_H42 is toward H107/reception. H51 occlusions do not create new chairs or tables.",
+    "Plastic covering, two stored shelves, dried trough, ornaments and leaning reeded glass capture the current construction-state evidence. Layout is not final fit-out. Loose tools, compressor, cables, debris and reflected furniture are omitted.",
+    "The nearby branded reception seen in H51 belongs to G45. Its staff chairs and counter are not duplicated in G48.",
+    "Owner top-view correction: mirror all G48 objects, patterned glazing, reflective side, wood end and aisle across X=0 to move the sofa/storage bank from screen-right to screen-left. Keep dimensions, Z ordering, physical IDs and longitudinal seat positions unchanged. G45 reception furniture stays fixed."
+  ],
+  "reviewItems": [
+    "Confirm the banquette slot order and side-table end correspondence with the owner.",
+    "Review construction-state storage locations, exact counter dimensions, protective film shape, stone patterns, shelving count and object ownership.",
+    "First-floor map placement, wall spans, ceiling height, floor extents and the G48/G45 connecting transform are unmeasured estimates.",
+    "Existing shared portrait artwork is a visual approximation; exact H45 printed portrait/order correspondence remains unconfirmed."
+  ],
+  "accuracy": {
+    "identity": "H49-ROI-supported-H51-occluded",
+    "position": "estimated-local",
+    "dimensions": "unmeasured",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

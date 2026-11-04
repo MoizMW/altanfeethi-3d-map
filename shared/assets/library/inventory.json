@@ -3,10 +3,10 @@
   "version": 1,
   "scope": "Saved ground and first-floor block objects; excludes architecture and composed layout copies.",
   "totals": {
-    "blocks": 40,
-    "designs": 71,
-    "configurations": 212,
-    "placements": 631
+    "blocks": 42,
+    "designs": 81,
+    "configurations": 228,
+    "placements": 654
   },
   "blocks": [
     {
@@ -198,6 +198,16 @@
       "key": "first/g42",
       "name": "G42 · First-floor paired seating",
       "count": 6
+    },
+    {
+      "key": "first/g45",
+      "name": "G45 · First-floor reception",
+      "count": 11
+    },
+    {
+      "key": "first/g48",
+      "name": "G48 · Covered banquette and stored fit-out",
+      "count": 12
     },
     {
       "key": "first/g50",
@@ -2785,7 +2795,7 @@
         "type": "office-chair",
         "variant": "default"
       },
-      "count": 19,
+      "count": 22,
       "configurations": [
         {
           "id": "b42636d743eb",
@@ -3100,6 +3110,82 @@
               ],
               "cameras": [
                 "E13"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "38032ca430c9",
+          "appearance": {
+            "size": [
+              0.64,
+              1.22,
+              0.68
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#323a3c"
+          },
+          "preview": {
+            "type": "office-chair",
+            "variant": "default",
+            "size": [
+              0.64,
+              1.22,
+              0.68
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#323a3c",
+            "id": "g45-staff-chair-1",
+            "name": "Office Chair",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-staff-chair-1",
+              "name": "Reception staff chair 1 · temporary slot",
+              "seats": [
+                "Seat_G45_RECEPTION_TMP_01"
+              ],
+              "cameras": [
+                "H45"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-staff-chair-2",
+              "name": "Reception staff chair 2 · temporary slot",
+              "seats": [
+                "Seat_G45_RECEPTION_TMP_02"
+              ],
+              "cameras": [
+                "H45"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-staff-chair-3",
+              "name": "Reception staff chair 3 · temporary slot",
+              "seats": [
+                "Seat_G45_RECEPTION_TMP_03"
+              ],
+              "cameras": [
+                "H45"
               ]
             }
           ]
@@ -4506,6 +4592,78 @@
       ]
     },
     {
+      "id": "sofa-c1418311e677",
+      "name": "Sofa · Four Seat Banquette",
+      "category": "Seating",
+      "design": {
+        "type": "sofa",
+        "variant": "four-seat-banquette"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "49e36e35c1a6",
+          "appearance": {
+            "size": [
+              4.6,
+              1.12,
+              1.1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b1aa98",
+            "constructionCover": true
+          },
+          "preview": {
+            "type": "sofa",
+            "variant": "four-seat-banquette",
+            "size": [
+              4.6,
+              1.12,
+              1.1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b1aa98",
+            "constructionCover": true,
+            "id": "g48-banquette",
+            "name": "Sofa · Four Seat Banquette",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g48",
+              "objectId": "g48-banquette",
+              "name": "Covered four-seat banquette · H104–H107",
+              "seats": [
+                "Seat_H104",
+                "Seat_H105",
+                "Seat_H106",
+                "Seat_H107"
+              ],
+              "cameras": [
+                "H49",
+                "H51"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "display-console-d1fc65ff8a84",
       "name": "Display Console",
       "category": "Tables & consoles",
@@ -4918,6 +5076,154 @@
                 "I14",
                 "I15",
                 "I16"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "display-console-e3a937a9343d",
+      "name": "Display Console · Patterned Vase",
+      "category": "Tables & consoles",
+      "design": {
+        "type": "display-console",
+        "variant": "patterned-vase"
+      },
+      "count": 2,
+      "configurations": [
+        {
+          "id": "20bc89b71af0",
+          "appearance": {
+            "size": [
+              0.35,
+              0.4,
+              0.35
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#353743"
+          },
+          "preview": {
+            "type": "display-console",
+            "variant": "patterned-vase",
+            "size": [
+              0.35,
+              0.4,
+              0.35
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#353743",
+            "id": "g45-counter-vase-1",
+            "name": "Display Console · Patterned Vase",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-counter-vase-1",
+              "name": "Patterned ceramic vessel on counter",
+              "seats": [],
+              "cameras": [
+                "H45"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-counter-vase-2",
+              "name": "Patterned ceramic vessel on counter",
+              "seats": [],
+              "cameras": [
+                "H45"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "display-console-1235fa894087",
+      "name": "Display Console · Pierced Ornament",
+      "category": "Tables & consoles",
+      "design": {
+        "type": "display-console",
+        "variant": "pierced-ornament"
+      },
+      "count": 2,
+      "configurations": [
+        {
+          "id": "11487d0bde21",
+          "appearance": {
+            "size": [
+              0.35,
+              0.9,
+              0.22
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#353c3d"
+          },
+          "preview": {
+            "type": "display-console",
+            "variant": "pierced-ornament",
+            "size": [
+              0.35,
+              0.9,
+              0.22
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#353c3d",
+            "id": "g48-ornament-1",
+            "name": "Display Console · Pierced Ornament",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g48",
+              "objectId": "g48-ornament-1",
+              "name": "Dark pierced ornament",
+              "seats": [],
+              "cameras": [
+                "H49",
+                "H51"
+              ]
+            },
+            {
+              "block": "first/g48",
+              "objectId": "g48-ornament-2",
+              "name": "Dark pierced ornament",
+              "seats": [],
+              "cameras": [
+                "H49",
+                "H51"
               ]
             }
           ]
@@ -7628,7 +7934,7 @@
         "type": "table",
         "variant": "round-pedestal"
       },
-      "count": 16,
+      "count": 18,
       "configurations": [
         {
           "id": "6eb7d739fc03",
@@ -7943,6 +8249,71 @@
               "seats": [],
               "cameras": [
                 "H18"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7ef455c91a68",
+          "appearance": {
+            "size": [
+              0.65,
+              0.5,
+              0.65
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#deded4",
+            "accessories": false
+          },
+          "preview": {
+            "type": "table",
+            "variant": "round-pedestal",
+            "size": [
+              0.65,
+              0.5,
+              0.65
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#deded4",
+            "accessories": false,
+            "id": "g48-table-41",
+            "name": "Table · Round Pedestal",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g48",
+              "objectId": "g48-table-41",
+              "name": "Round stone side table · H41",
+              "seats": [],
+              "cameras": [
+                "H49",
+                "H51"
+              ]
+            },
+            {
+              "block": "first/g48",
+              "objectId": "g48-table-42",
+              "name": "Round stone side table · H42",
+              "seats": [],
+              "cameras": [
+                "H49",
+                "H51"
               ]
             }
           ]
@@ -8823,6 +9194,186 @@
               "cameras": [
                 "G20",
                 "G23"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "display-965451997945",
+      "name": "Display · Reception Portrait",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "display",
+        "variant": "reception-portrait"
+      },
+      "count": 3,
+      "configurations": [
+        {
+          "id": "3126a9f676e4",
+          "appearance": {
+            "size": [
+              0.64,
+              0.84,
+              0.05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#31393c",
+            "frameStyle": "slim-brass",
+            "portraitIndex": "1"
+          },
+          "preview": {
+            "type": "display",
+            "variant": "reception-portrait",
+            "size": [
+              0.64,
+              0.84,
+              0.05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#31393c",
+            "frameStyle": "slim-brass",
+            "portraitIndex": "1",
+            "id": "g45-portrait-1",
+            "name": "Display · Reception Portrait",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-portrait-1",
+              "name": "Reception wall portrait",
+              "seats": [],
+              "cameras": [
+                "H45"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d993eae0c9d2",
+          "appearance": {
+            "size": [
+              0.64,
+              0.84,
+              0.05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#31393c",
+            "frameStyle": "slim-brass",
+            "portraitIndex": "2"
+          },
+          "preview": {
+            "type": "display",
+            "variant": "reception-portrait",
+            "size": [
+              0.64,
+              0.84,
+              0.05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#31393c",
+            "frameStyle": "slim-brass",
+            "portraitIndex": "2",
+            "id": "g45-portrait-2",
+            "name": "Display · Reception Portrait",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-portrait-2",
+              "name": "Reception wall portrait",
+              "seats": [],
+              "cameras": [
+                "H45"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "59597955931b",
+          "appearance": {
+            "size": [
+              0.64,
+              0.84,
+              0.05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#31393c",
+            "frameStyle": "slim-brass",
+            "portraitIndex": "3"
+          },
+          "preview": {
+            "type": "display",
+            "variant": "reception-portrait",
+            "size": [
+              0.64,
+              0.84,
+              0.05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#31393c",
+            "frameStyle": "slim-brass",
+            "portraitIndex": "3",
+            "id": "g45-portrait-3",
+            "name": "Display · Reception Portrait",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-portrait-3",
+              "name": "Reception wall portrait",
+              "seats": [],
+              "cameras": [
+                "H45"
               ]
             }
           ]
@@ -12720,6 +13271,70 @@
       ]
     },
     {
+      "id": "plant-57d382c07484",
+      "name": "Plant · Pampas Trough",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "plant",
+        "variant": "pampas-trough"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "1d660e1c34ad",
+          "appearance": {
+            "size": [
+              4.8,
+              1.6,
+              0.32
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b7a17a"
+          },
+          "preview": {
+            "type": "plant",
+            "variant": "pampas-trough",
+            "size": [
+              4.8,
+              1.6,
+              0.32
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b7a17a",
+            "id": "g48-dried-planter",
+            "name": "Plant · Pampas Trough",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g48",
+              "objectId": "g48-dried-planter",
+              "name": "Dried pampas trough behind banquette",
+              "seats": [],
+              "cameras": [
+                "H49"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "plant-911c2829b301",
       "name": "Plant · Rectangular Planter",
       "category": "Decor & fixtures",
@@ -12904,6 +13519,70 @@
               "cameras": [
                 "H56",
                 "H25"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "screen-b332ae909a81",
+      "name": "Screen · Folding Louver",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "screen",
+        "variant": "folding-louver"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "3df9f7c13b97",
+          "appearance": {
+            "size": [
+              1.8,
+              1.7,
+              0.35
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#45504d"
+          },
+          "preview": {
+            "type": "screen",
+            "variant": "folding-louver",
+            "size": [
+              1.8,
+              1.7,
+              0.35
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#45504d",
+            "id": "g45-folding-screen",
+            "name": "Screen · Folding Louver",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-folding-screen",
+              "name": "Portable folding louver screen",
+              "seats": [],
+              "cameras": [
+                "H45"
               ]
             }
           ]
@@ -13462,6 +14141,200 @@
               "seats": [],
               "cameras": [
                 "SGSCam3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall-panel-f99d145d32ac",
+      "name": "Wall Panel · Branded Marble",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "wall-panel",
+        "variant": "branded-marble"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "592c5903e410",
+          "appearance": {
+            "size": [
+              5,
+              3.4,
+              0.08
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#222629"
+          },
+          "preview": {
+            "type": "wall-panel",
+            "variant": "branded-marble",
+            "size": [
+              5,
+              3.4,
+              0.08
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#222629",
+            "id": "g45-branded-backdrop",
+            "name": "Wall Panel · Branded Marble",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-branded-backdrop",
+              "name": "Dark veined reception backdrop",
+              "seats": [],
+              "cameras": [
+                "H45",
+                "H51"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall-panel-32c10aa19678",
+      "name": "Wall Panel · Cylindrical Display",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "wall-panel",
+        "variant": "cylindrical-display"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "38938f3f7be1",
+          "appearance": {
+            "size": [
+              1.35,
+              4.1,
+              1.35
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#344a83"
+          },
+          "preview": {
+            "type": "wall-panel",
+            "variant": "cylindrical-display",
+            "size": [
+              1.35,
+              4.1,
+              1.35
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#344a83",
+            "id": "g50-display-column",
+            "name": "Wall Panel · Cylindrical Display",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g50",
+              "objectId": "g50-display-column",
+              "name": "Cylindrical digital display · shared G50/G51 landmark",
+              "seats": [],
+              "cameras": [
+                "H26"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall-panel-95b3bfaa3250",
+      "name": "Wall Panel · Leaning Glass Panel",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "wall-panel",
+        "variant": "leaning-glass-panel"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "1eae3464d633",
+          "appearance": {
+            "size": [
+              6,
+              2.35,
+              0.22
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b3c5bb"
+          },
+          "preview": {
+            "type": "wall-panel",
+            "variant": "leaning-glass-panel",
+            "size": [
+              6,
+              2.35,
+              0.22
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b3c5bb",
+            "id": "g48-stored-glass-panel",
+            "name": "Wall Panel · Leaning Glass Panel",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g48",
+              "objectId": "g48-stored-glass-panel",
+              "name": "Leaning reeded glass construction panel",
+              "seats": [],
+              "cameras": [
+                "H49",
+                "H51"
               ]
             }
           ]
@@ -14733,7 +15606,7 @@
         "type": "cabinet",
         "variant": "default"
       },
-      "count": 5,
+      "count": 7,
       "configurations": [
         {
           "id": "dbeb4efe638f",
@@ -14910,6 +15783,69 @@
               "seats": [],
               "cameras": [
                 "I17"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "550a0fa2d740",
+          "appearance": {
+            "size": [
+              0.4,
+              0.9,
+              0.36
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#80664c"
+          },
+          "preview": {
+            "type": "cabinet",
+            "variant": "default",
+            "size": [
+              0.4,
+              0.9,
+              0.36
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#80664c",
+            "id": "g48-ornament-stand-1",
+            "name": "Cabinet",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g48",
+              "objectId": "g48-ornament-stand-1",
+              "name": "Timber ornament pedestal",
+              "seats": [],
+              "cameras": [
+                "H49",
+                "H51"
+              ]
+            },
+            {
+              "block": "first/g48",
+              "objectId": "g48-ornament-stand-2",
+              "name": "Timber ornament pedestal",
+              "seats": [],
+              "cameras": [
+                "H49",
+                "H51"
               ]
             }
           ]
@@ -15212,8 +16148,60 @@
         "type": "cabinet",
         "variant": "fire-extinguisher"
       },
-      "count": 2,
+      "count": 3,
       "configurations": [
+        {
+          "id": "0eb3a9b58c8d",
+          "appearance": {
+            "size": [
+              0.3,
+              0.9,
+              0.3
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ae2c27"
+          },
+          "preview": {
+            "type": "cabinet",
+            "variant": "fire-extinguisher",
+            "size": [
+              0.3,
+              0.9,
+              0.3
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ae2c27",
+            "id": "g48-extinguisher",
+            "name": "Cabinet · Fire Extinguisher",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g48",
+              "objectId": "g48-extinguisher",
+              "name": "Fire extinguisher beside banquette end",
+              "seats": [],
+              "cameras": [
+                "H49"
+              ]
+            }
+          ]
+        },
         {
           "id": "58d11cfab523",
           "appearance": {
@@ -15472,6 +16460,83 @@
               "seats": [],
               "cameras": [
                 "Egate1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabinet-7252f6638c96",
+      "name": "Cabinet · Stored Shelving",
+      "category": "Reception & equipment",
+      "design": {
+        "type": "cabinet",
+        "variant": "stored-shelving"
+      },
+      "count": 2,
+      "configurations": [
+        {
+          "id": "67c65ce64cdb",
+          "appearance": {
+            "size": [
+              0.85,
+              2.6,
+              0.58
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#80664c",
+            "constructionCover": true
+          },
+          "preview": {
+            "type": "cabinet",
+            "variant": "stored-shelving",
+            "size": [
+              0.85,
+              2.6,
+              0.58
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#80664c",
+            "constructionCover": true,
+            "id": "g48-stored-cabinet-1",
+            "name": "Cabinet · Stored Shelving",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g48",
+              "objectId": "g48-stored-cabinet-1",
+              "name": "Stored timber shelving",
+              "seats": [],
+              "cameras": [
+                "H49",
+                "H51"
+              ]
+            },
+            {
+              "block": "first/g48",
+              "objectId": "g48-stored-cabinet-2",
+              "name": "Stored timber shelving",
+              "seats": [],
+              "cameras": [
+                "H49",
+                "H51"
               ]
             }
           ]
@@ -16190,6 +17255,73 @@
                 "B11",
                 "B12",
                 "B14"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "counter-04afc079c902",
+      "name": "Counter · Stone Reception",
+      "category": "Reception & equipment",
+      "design": {
+        "type": "counter",
+        "variant": "stone-reception"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "f683ff16dbe7",
+          "appearance": {
+            "size": [
+              4.8,
+              1.15,
+              0.9
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#d6d3bd",
+            "workstations": 3
+          },
+          "preview": {
+            "type": "counter",
+            "variant": "stone-reception",
+            "size": [
+              4.8,
+              1.15,
+              0.9
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#d6d3bd",
+            "workstations": 3,
+            "id": "g45-reception-counter",
+            "name": "Counter · Stone Reception",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-reception-counter",
+              "name": "Pale bookmatched stone reception counter",
+              "seats": [],
+              "cameras": [
+                "H45",
+                "H51"
               ]
             }
           ]
@@ -17249,70 +18381,6 @@
               "cameras": [
                 "C8",
                 "C16"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "wall-panel-32c10aa19678",
-      "name": "Wall Panel · Cylindrical Display",
-      "category": "Decor & fixtures",
-      "design": {
-        "type": "wall-panel",
-        "variant": "cylindrical-display"
-      },
-      "count": 1,
-      "configurations": [
-        {
-          "id": "38938f3f7be1",
-          "appearance": {
-            "size": [
-              1.35,
-              4.1,
-              1.35
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#344a83"
-          },
-          "preview": {
-            "type": "wall-panel",
-            "variant": "cylindrical-display",
-            "size": [
-              1.35,
-              4.1,
-              1.35
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#344a83",
-            "id": "g50-display-column",
-            "name": "Wall Panel · Cylindrical Display",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "first/g50",
-              "objectId": "g50-display-column",
-              "name": "Cylindrical digital display · shared G50/G51 landmark",
-              "seats": [],
-              "cameras": [
-                "H26"
               ]
             }
           ]

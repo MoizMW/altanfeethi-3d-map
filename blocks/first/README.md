@@ -1,5 +1,7 @@
 # First-floor blocks
 
+G48 covered banquette and G45 reception: `/?layout=first/g48-g45`. Edit sources at `/?block=first/g48` and `/?block=first/g45`. This camera-defined draft uses H51/H49/H45 normal and wide evidence, preserves four banquette CV slots, and explicitly separates H45's reception region from the historical H15/H16 seating ROIs stored under g45.
+
 G39 and G40 join G41 at `/?layout=first/private-lounges` in map order G39 → G40 → G41. Each source group stays independently editable. G39 retains historical H10 ROI identities while documenting the absent image; see [G39](g39/README.md) and [G40](g40/README.md).
 Window-side G50/G51: `/?layout=first/g50-g51`. Source blocks `/?block=first/g50` and `/?block=first/g51` remain editable. All six normal/wide camera pairs are recorded with ROI identities, shared asset reuse and provisional placement in their evidence files.
 

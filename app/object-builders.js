@@ -7,6 +7,7 @@ import {buildCurvedArmchair} from './curved-armchair.js';
 import {buildPrivateLoungeObject,privateLoungeSizes} from './private-lounge-objects.js';
 import {buildNestedStoneTable} from './lounge-tables.js';
 import {buildLobbyFixture} from './lobby-fixtures.js';
+import {buildFirstFloorReceptionObject} from './first-floor-reception.js';
 import {securitySizes, buildSecurityObject} from './security-objects.js';
 import {passportSizes, buildPassportObject} from './passport-objects.js';
 
@@ -19,6 +20,7 @@ export function buildObject(o){const g=new THREE.Group(),nativeSize=privateLoung
  if(privateLoungeSizes[o.variant])g.add(buildPrivateLoungeObject(o));
  else if((o.type==='counter'&&o.variant==='food-buffet')||(o.type==='display-console'&&o.variant==='grand-piano'))buildDiningObject(g,o,{box,mesh,rod,mat});
  else if(buildLobbyFixture(g,o,{box,mesh,rod,mat,referenceSize,THREE})){}
+ else if(buildFirstFloorReceptionObject(g,o,{box,mesh,rod,mat,referenceSize})){}
  else if(receptionSizes[o.type])buildReceptionObject(g,o,{box,mesh,rod,mat});
  else if(securitySizes[o.type])buildSecurityObject(g,o,{box,mesh,rod,mat});
  else if(passportSizes[o.type])buildPassportObject(g,o,{box,mesh,rod,mat});
