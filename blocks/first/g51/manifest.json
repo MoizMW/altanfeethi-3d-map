@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "first-h-window-51",
+  "slug": "g51",
+  "name": "G51 · First-floor window bucket-chair lounge",
+  "floor": "first",
+  "groups": [
+    "g51"
+  ],
+  "zone": "H",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

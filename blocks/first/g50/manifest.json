@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "first-h-window-50",
+  "slug": "g50",
+  "name": "G50 · First-floor window lounge row",
+  "floor": "first",
+  "groups": [
+    "g50"
+  ],
+  "zone": "H",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-window-50",
+  "cameras": [
+    "H56",
+    "H23",
+    "H25",
+    "H26"
+  ],
+  "snapshots": {
+    "H56": "evidence/camera-snapshots/H56.jpg",
+    "H23": "evidence/camera-snapshots/H23.jpg",
+    "H25": "evidence/camera-snapshots/H25.jpg",
+    "H26": "evidence/camera-snapshots/H26.jpg"
+  },
+  "wideSnapshots": {
+    "H56": "evidence/wide capture snapshots/H56.jpg",
+    "H23": "evidence/wide capture snapshots/H23.jpg",
+    "H25": "evidence/wide capture snapshots/H25.jpg",
+    "H26": "evidence/wide capture snapshots/H26.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Same mounts with wider zoom per project guide",
+    "roiUsage": "Existing ROIs reviewed only on normal detection images; not applied to wide captures",
+    "capturedAt": null
+  },
+  "rois": {
+    "H56": {
+      "chairs": "evidence/rois/chair-rois/g50/H56_to_g50.json",
+      "tables": "evidence/rois/table-rois/g50/H56_to_g50.json"
+    },
+    "H23": {
+      "chairs": "evidence/rois/chair-rois/g50/H23_to_g50.json",
+      "tables": "evidence/rois/table-rois/g50/H23_to_g50.json"
+    },
+    "H25": {
+      "chairs": "evidence/rois/chair-rois/g50/H25_to_g50.json",
+      "tables": "evidence/rois/table-rois/g50/H25_to_g50.json"
+    },
+    "H26": {
+      "chairs": "evidence/rois/chair-rois/g50/H26_to_g50.json",
+      "tables": "evidence/rois/table-rois/g50/H26_to_g50.json"
+    }
+  },
+  "roiReview": {
+    "reviewCanvas": [
+      960,
+      540
+    ],
+    "normalSnapshotSize": [
+      1920,
+      1080
+    ],
+    "displayScale": [
+      0.5,
+      0.5
+    ],
+    "status": "All six normal chair/table overlays reviewed against images at half resolution; wide captures inspected independently.",
+    "worldCoordinateUsage": "None; ROIs identify objects and are not mapped directly to 3D."
+  },
+  "seatMappings": {
+    "Seat_H103": "g50-chair-103",
+    "Seat_H102": "g50-chair-102",
+    "Seat_H101": "g50-chair-101",
+    "Seat_H100": "g50-chair-100",
+    "Seat_H99": "g50-sofa-98-99",
+    "Seat_H98": "g50-sofa-98-99",
+    "Seat_H96": "g50-sofa-96-97",
+    "Seat_H97": "g50-sofa-96-97",
+    "Seat_H95": "g50-chair-95",
+    "Seat_H94": "g50-chair-94",
+    "Seat_H93": "g50-chair-93",
+    "Seat_H92": "g50-chair-92"
+  },
+  "tableMappings": {
+    "Table_H39": "g50-table-39",
+    "Table_H38": "g50-table-38",
+    "Table_H36": "g50-table-36"
+  },
+  "externalObservations": [],
+  "notes": [
+    "Window-row order from wood end: H102/H103 facing H100/H101 around Table_H39; pale sofas H98/H99 and H96/H97 around Table_H38; H94/H95 facing H92/H93 around Table_H36; cylindrical display at the G51 end. Twelve seat slots and three physical tables are rendered once.",
+    "Reuses shared shell-lounge armchairs, sofas, nested-stone and round-pedestal tables, lamps, curtains, plants, bins and extinguishers. Curved bronze dividers and cylindrical display are shared library assets implemented before block placement.",
+    "Both normal and wide H56/H23/H25/H26 captures reviewed. Pale rugs, window glazing, curtains, end wood return and the open dark-tile aisle are included. No enclosing wall is inferred along the aisle."
+  ],
+  "reviewItems": [
+    "Confirm every seat's window-side/aisle-side correspondence and sofa slot order with the owner.",
+    "Review estimated floor extent, furniture spacing, rug sizes, glazing height, mullions, wood curvature and 4.1 m ceiling against site measurements.",
+    "The display recreates H26/H27's palm campaign and H30's red-lit architecture with generated artwork, Arabic copy, gentle panning and a 24-second fade loop. Original video, timing and camera calibration are unavailable. Window detailing adds clear glazing, mullions/transoms, gathered sheer panels, sill and pierced sculptures from H23/H25/H26/H56. Exact marble veins, folds, sculpture dimensions and structural pillar positions remain unresolved.",
+    "Combined relative placement follows photographic overlap and source-map ordering; no survey calibration or complete first-floor shell is claimed."
+  ],
+  "accuracy": {
+    "identity": "normal-ROI-supported-needs-owner-review",
+    "position": "estimated-local",
+    "dimensions": "unmeasured",
+    "globalAlignment": "unresolved",
+    "appearance": "shared-procedural-assets"
+  }
+}
