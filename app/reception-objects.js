@@ -199,14 +199,26 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
     const head=box(g,[w*.7,h*.5,d*.4],[0,h*.73,0],charcoal,.015);head.rotation.x=-.15;
     box(g,[w*.48,h*.3,d*.025],[0,h*.75,d*.23],body,.003);
   } else if(o.type==='display'&&o.variant==='reception-portrait') {
-    box(g,[w,h,.035],[0,h/2,0],charcoal,.004);
     const index=o.id.match(/portrait-([123])$/)?.[1]||'1';
     const texture=typeof document!=='undefined'?new THREE.TextureLoader().load(`/shared/assets/portraits/reception-${index}.png`):null;
     if(texture){texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=8;}
     const print=new THREE.MeshBasicMaterial({color:'#ffffff',map:texture});
-    for(const side of [-1,1]){
-      const face=mesh(g,new THREE.PlaneGeometry(w-.025,h-.025),print,[0,h/2,side*.023]);
-      if(side<0)face.rotation.y=Math.PI;
+    if(o.frameStyle==='slim-brass'){
+      // Build frame widths in physical units to preserve photo proportions after resizing.
+      const frame=new THREE.Group();frame.scale.fromArray(receptionSizes[o.type].map((v,i)=>v/o.size[i]));g.add(frame);
+      const [W,H,D]=o.size,border=.014,edge=mat('#a79363',.3,.65);
+      box(frame,[W-.018,H-.018,D*.7],[0,H/2,0],charcoal,.003);
+      box(frame,[W-border*2,H-border*2,.008],[0,H/2,D/2],mat('#e6e2d7',.85),.002);
+      for(const x of [-W/2+border/2,W/2-border/2])box(frame,[border,H,D],[x,H/2,.003],edge,.003);
+      for(const y of [border/2,H-border/2])box(frame,[W-border*2,border,D],[0,y,.003],edge,.003);
+      const aspect=(index==='2'?640:639)/820,photoWidth=Math.min(W-.07,(H-.07)*aspect),photoHeight=photoWidth/aspect;
+      mesh(frame,new THREE.PlaneGeometry(photoWidth,photoHeight),print,[0,H/2,D/2+.006]).name='Matted portrait print';
+    }else{
+      box(g,[w,h,.035],[0,h/2,0],charcoal,.004);
+      for(const side of [-1,1]){
+        const face=mesh(g,new THREE.PlaneGeometry(w-.025,h-.025),print,[0,h/2,side*.023]);
+        if(side<0)face.rotation.y=Math.PI;
+      }
     }
   } else if(o.type==='display'&&o.variant==='framed-art') {
     box(g,[w,h,.035],[0,h/2,0],charcoal,.004);

@@ -6,6 +6,7 @@ import {buildEggChair,buildShellLoungeChair} from './lounge-objects.js';
 import {buildCurvedArmchair} from './curved-armchair.js';
 import {buildNestedStoneTable} from './lounge-tables.js';
 import {buildLobbyFixture} from './lobby-fixtures.js';
+import {buildFirstFloorReceptionObject} from './first-floor-reception.js';
 import {securitySizes, buildSecurityObject} from './security-objects.js';
 import {passportSizes, buildPassportObject} from './passport-objects.js';
 
@@ -17,6 +18,7 @@ export const referenceSize={sofa:[2.05,.88,.9],armchair:[.88,.9,.92],table:[1.5,
 export function buildObject(o){const g=new THREE.Group(),[w,h,d]=referenceSize[o.type], fabric=mat(o.color),dark=mat('#303b3a',.4),gold=mat('#ab9564',.35,.6);g.userData.objectId=o.id;
  if((o.type==='counter'&&o.variant==='food-buffet')||(o.type==='display-console'&&o.variant==='grand-piano'))buildDiningObject(g,o,{box,mesh,rod,mat});
  else if(buildLobbyFixture(g,o,{box,mesh,rod,mat,referenceSize,THREE})){}
+ else if(buildFirstFloorReceptionObject(g,o,{box,mesh,rod,mat,referenceSize})){}
  else if(receptionSizes[o.type])buildReceptionObject(g,o,{box,mesh,rod,mat});
  else if(securitySizes[o.type])buildSecurityObject(g,o,{box,mesh,rod,mat});
  else if(passportSizes[o.type])buildPassportObject(g,o,{box,mesh,rod,mat});

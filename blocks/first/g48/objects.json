@@ -1,0 +1,363 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-banquette-048",
+  "objects": [
+    {
+      "id": "g48-banquette",
+      "type": "sofa",
+      "name": "Covered four-seat banquette · H104–H107",
+      "position": [
+        1.1,
+        0,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        4.6,
+        1.12,
+        1.1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b1aa98",
+      "seats": [
+        "Seat_H104",
+        "Seat_H105",
+        "Seat_H106",
+        "Seat_H107"
+      ],
+      "cameras": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "H49 normal ROIs identify four slots on one continuous bench. H51's stored cabinets occlude most matching slots; mappings use H49 rather than treating occluders as extra chairs.",
+      "variant": "four-seat-banquette",
+      "constructionCover": true
+    },
+    {
+      "id": "g48-table-41",
+      "type": "table",
+      "name": "Round stone side table · H41",
+      "position": [
+        0.05,
+        0,
+        -1.35
+      ],
+      "yaw": 0,
+      "size": [
+        0.65,
+        0.5,
+        0.65
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deded4",
+      "seats": [],
+      "cameras": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H41",
+      "accessories": false
+    },
+    {
+      "id": "g48-table-42",
+      "type": "table",
+      "name": "Round stone side table · H42",
+      "position": [
+        0.05,
+        0,
+        1.35
+      ],
+      "yaw": 0,
+      "size": [
+        0.65,
+        0.5,
+        0.65
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#deded4",
+      "seats": [],
+      "cameras": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H42",
+      "accessories": false
+    },
+    {
+      "id": "g48-stored-cabinet-1",
+      "type": "cabinet",
+      "name": "Stored timber shelving",
+      "position": [
+        1.4,
+        0,
+        -3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.85,
+        2.6,
+        0.58
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#80664c",
+      "seats": [],
+      "cameras": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "stored-shelving",
+      "constructionCover": true
+    },
+    {
+      "id": "g48-stored-cabinet-2",
+      "type": "cabinet",
+      "name": "Stored timber shelving",
+      "position": [
+        0.4,
+        0,
+        -3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.85,
+        2.6,
+        0.58
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#80664c",
+      "seats": [],
+      "cameras": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "stored-shelving",
+      "constructionCover": true
+    },
+    {
+      "id": "g48-dried-planter",
+      "type": "plant",
+      "name": "Dried pampas trough behind banquette",
+      "position": [
+        1.94,
+        0,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        4.8,
+        1.6,
+        0.32
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b7a17a",
+      "seats": [],
+      "cameras": [
+        "H49"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "pampas-trough"
+    },
+    {
+      "id": "g48-ornament-stand-1",
+      "type": "cabinet",
+      "name": "Timber ornament pedestal",
+      "position": [
+        1.7,
+        0,
+        -2.58
+      ],
+      "yaw": 270,
+      "size": [
+        0.4,
+        0.9,
+        0.36
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#80664c",
+      "seats": [],
+      "cameras": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review."
+    },
+    {
+      "id": "g48-ornament-1",
+      "type": "display-console",
+      "name": "Dark pierced ornament",
+      "position": [
+        1.7,
+        0.94,
+        -2.58
+      ],
+      "yaw": 270,
+      "size": [
+        0.35,
+        0.9,
+        0.22
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#353c3d",
+      "seats": [],
+      "cameras": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "pierced-ornament"
+    },
+    {
+      "id": "g48-ornament-stand-2",
+      "type": "cabinet",
+      "name": "Timber ornament pedestal",
+      "position": [
+        1.7,
+        0,
+        2.58
+      ],
+      "yaw": 270,
+      "size": [
+        0.4,
+        0.9,
+        0.36
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#80664c",
+      "seats": [],
+      "cameras": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review."
+    },
+    {
+      "id": "g48-ornament-2",
+      "type": "display-console",
+      "name": "Dark pierced ornament",
+      "position": [
+        1.7,
+        0.94,
+        2.58
+      ],
+      "yaw": 270,
+      "size": [
+        0.35,
+        0.9,
+        0.22
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#353c3d",
+      "seats": [],
+      "cameras": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "pierced-ornament"
+    },
+    {
+      "id": "g48-stored-glass-panel",
+      "type": "wall-panel",
+      "name": "Leaning reeded glass construction panel",
+      "position": [
+        -1.92,
+        0,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        6,
+        2.35,
+        0.22
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b3c5bb",
+      "seats": [],
+      "cameras": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "leaning-glass-panel"
+    },
+    {
+      "id": "g48-extinguisher",
+      "type": "cabinet",
+      "name": "Fire extinguisher beside banquette end",
+      "position": [
+        1.2,
+        0,
+        3.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.3,
+        0.9,
+        0.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ae2c27",
+      "seats": [],
+      "cameras": [
+        "H49"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "fire-extinguisher"
+    }
+  ]
+}

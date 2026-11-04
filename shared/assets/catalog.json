@@ -90,7 +90,9 @@
       "variants": [
         "grand-piano",
         "ring-pedestal",
-        "i-zone-end-console"
+        "i-zone-end-console",
+        "pierced-ornament",
+        "patterned-vase"
       ]
     },
     "sofa": {
@@ -99,6 +101,9 @@
         2.05,
         0.88,
         0.9
+      ],
+      "variants": [
+        "four-seat-banquette"
       ]
     },
     "armchair": {
@@ -140,7 +145,8 @@
       ],
       "variants": [
         "open-shelving",
-        "teal-gold-panel"
+        "teal-gold-panel",
+        "folding-louver"
       ]
     },
     "plant": {
@@ -151,7 +157,8 @@
         0.5
       ],
       "variants": [
-        "rectangular-planter"
+        "rectangular-planter",
+        "pampas-trough"
       ]
     },
     "counter": {
@@ -163,7 +170,8 @@
       ],
       "variants": [
         "food-buffet",
-        "unused-glass-counter"
+        "unused-glass-counter",
+        "stone-reception"
       ]
     },
     "office-chair": {
@@ -185,7 +193,8 @@
         "checkin-kiosk",
         "drawer-pedestal",
         "access-reader",
-        "plain-planter"
+        "plain-planter",
+        "stored-shelving"
       ]
     },
     "display": {
@@ -215,7 +224,9 @@
         "stone-relief",
         "teal-service-door",
         "timber-office-door",
-        "pleated-curtain"
+        "pleated-curtain",
+        "branded-marble",
+        "leaning-glass-panel"
       ]
     },
     "luggage-scale": {

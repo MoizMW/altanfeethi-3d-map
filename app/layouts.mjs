@@ -41,5 +41,6 @@ export async function composeLayout(projectRoot,key,loadBlock){
   const architecture={floorInlays,floorCenter:layout.floorCenter,floorSections,rooms,circulations,walls,openings,structures:layout.structures||[],voids:layout.voids||[],ceiling:{height:4.1,size:layout.floorSize,center:layout.floorCenter},notes:layout.notes};
   const block={format:'altanfeethi-spatial-block',version:1,id:layout.id,name:layout.name,groups:[...groups],zone:[...zones].join(' / '),floor:layout.floor,status:layout.status,units:'provisional-meters',floorSize:layout.floorSize,ceilingHeight:4.1,placement:{map:`evidence/maps/${layout.floor==='ground'?'ground-floor':'first-floor'}.png`,status:'relative-layout-needs-review'},architecture,objects,evidence:{cameras:[...cameras],snapshots,wideSnapshots,notes:layout.notes},readOnly:true,layoutKey:key};
   if(layout.displayCode)block.displayCode=layout.displayCode;
+  if(layout.viewer)block.viewer=structuredClone(layout.viewer);
   validateBlock(block);return {block,revision:null,key};
 }

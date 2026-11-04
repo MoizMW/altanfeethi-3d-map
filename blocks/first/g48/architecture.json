@@ -1,0 +1,218 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-banquette-048",
+  "floorSize": [
+    4.8,
+    8
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "estimated-local-not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-03T07:14:37.307Z",
+    "anchors": [
+      {
+        "camera": "H51",
+        "pixel": [
+          2689,
+          653
+        ],
+        "heading": 95,
+        "status": "verified"
+      },
+      {
+        "camera": "H49",
+        "pixel": [
+          3130,
+          948
+        ],
+        "heading": 0,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "From the reflective wall and open aisle toward the patterned glazing and banquette (owner left/right correction)",
+      "z": "From stored cabinetry / Seat_H104 toward Seat_H107 and the reception approach",
+      "y": "Up; first-floor structural elevation unresolved"
+    },
+    "sourceMapCrop": [
+      2100,
+      150,
+      4100,
+      1550
+    ],
+    "mapReview": "Illustrated first-floor map locates the four-seat bench and nearby service/reception area. Construction-state photos define current objects; no metric/global transform fitted.",
+    "orientationReview": {
+      "status": "owner-requested-side-swap",
+      "operation": "Mirror G48 across X=0; keep every Z position and all object dimensions. Reverse sofa slot ordering with its facing direction to retain each seat at the same longitudinal position.",
+      "referenceView": "Owner top-view screenshot: move the complete banquette/storage arrangement from screen-right to screen-left",
+      "reception": "G45 furniture and backdrop remain fixed"
+    }
+  },
+  "footprint": [
+    [
+      2.4,
+      4
+    ],
+    [
+      -2.4,
+      4
+    ],
+    [
+      -2.4,
+      -4
+    ],
+    [
+      2.4,
+      -4
+    ]
+  ],
+  "floorSections": [
+    {
+      "center": [
+        0,
+        0
+      ],
+      "size": [
+        4.8,
+        8
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [],
+  "walls": [
+    {
+      "id": "g48-patterned-glazing",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        2.2,
+        -4
+      ],
+      "end": [
+        2.2,
+        4
+      ],
+      "height": 4.1,
+      "thickness": 0.045,
+      "owner": "first/g48",
+      "sources": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Patterned translucent glazed boundary visible behind banquette. Shared reeded finish approximates crosshatched/striped glazing; sill, opening status and dimensions unresolved."
+    },
+    {
+      "id": "g48-reflective-side",
+      "kind": "glass",
+      "variant": "opaque-black-glass",
+      "start": [
+        -2.2,
+        -4
+      ],
+      "end": [
+        -2.2,
+        4
+      ],
+      "height": 4.1,
+      "thickness": 0.06,
+      "color": "#242b2d",
+      "owner": "first/g48",
+      "sources": [
+        "H51",
+        "H49"
+      ],
+      "confidence": "Dark reflective opposite boundary visible; reflected chairs/portraits are not duplicate objects. Dotted pattern, span and height simplified."
+    },
+    {
+      "id": "g48-wood-end",
+      "kind": "solid",
+      "start": [
+        2.2,
+        -3.9
+      ],
+      "end": [
+        -0.45,
+        -3.9
+      ],
+      "height": 4.1,
+      "thickness": 0.12,
+      "color": "#b0a99a",
+      "finish": "warm-wood",
+      "interiorSide": -1,
+      "owner": "first/g48",
+      "sources": [
+        "H49",
+        "H51"
+      ],
+      "confidence": "Paneled return beside stored shelves; simplified curved cladding with estimated extent."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "circulation": {
+    "id": "g48-clear-approach",
+    "polygon": [
+      [
+        -0.65,
+        4
+      ],
+      [
+        -1.65,
+        4
+      ],
+      [
+        -1.65,
+        -4
+      ],
+      [
+        -0.65,
+        -4
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "estimated-open-dark-tile-aisle",
+    "sources": [
+      "H49",
+      "H51"
+    ],
+    "notes": "Keep this strip clear of stored cabinets and leaning glass. Construction tools, cables, loose panels and debris are excluded from the stable draft."
+  },
+  "boundaryReview": [
+    {
+      "id": "g48-reception-approach",
+      "kind": "open-corridor",
+      "sources": [
+        "H51"
+      ],
+      "status": "reception-visible-relative-join-estimated"
+    },
+    {
+      "id": "g48-construction-state",
+      "kind": "unknown",
+      "sources": [
+        "H49",
+        "H51"
+      ],
+      "status": "stored-items-current-layout-not-final-fitout"
+    }
+  ],
+  "ceiling": {
+    "size": [
+      4.8,
+      8
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "provisional-visualization-only"
+  }
+}
