@@ -1,0 +1,27 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "first-h-reception-045",
+  "slug": "g45-reception",
+  "name": "G45 reception · H45 service desk",
+  "floor": "first",
+  "groups": [
+    "g45"
+  ],
+  "zone": "H",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "viewer": {
+    "cameraOffset": [
+      6,
+      6,
+      -7
+    ]
+  },
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

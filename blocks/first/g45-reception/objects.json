@@ -1,0 +1,324 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-reception-045",
+  "objects": [
+    {
+      "id": "g45-reception-counter",
+      "type": "counter",
+      "name": "Pale bookmatched stone reception counter",
+      "position": [
+        -0.6,
+        0,
+        0.35
+      ],
+      "yaw": 180,
+      "size": [
+        4.8,
+        1.15,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d6d3bd",
+      "seats": [],
+      "cameras": [
+        "H45",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "stone-reception",
+      "workstations": 3
+    },
+    {
+      "id": "g45-staff-chair-1",
+      "type": "office-chair",
+      "name": "Reception staff chair 1 · temporary slot",
+      "position": [
+        -1.75,
+        0,
+        1.45
+      ],
+      "yaw": 180,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#323a3c",
+      "seats": [
+        "Seat_G45_RECEPTION_TMP_01"
+      ],
+      "cameras": [
+        "H45"
+      ],
+      "confidence": "Three office chairs visible in H45. Temporary editor identities only; no CV chair IDs exist for this reception-region annotation."
+    },
+    {
+      "id": "g45-staff-chair-2",
+      "type": "office-chair",
+      "name": "Reception staff chair 2 · temporary slot",
+      "position": [
+        -0.6,
+        0,
+        1.45
+      ],
+      "yaw": 180,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#323a3c",
+      "seats": [
+        "Seat_G45_RECEPTION_TMP_02"
+      ],
+      "cameras": [
+        "H45"
+      ],
+      "confidence": "Three office chairs visible in H45. Temporary editor identities only; no CV chair IDs exist for this reception-region annotation."
+    },
+    {
+      "id": "g45-staff-chair-3",
+      "type": "office-chair",
+      "name": "Reception staff chair 3 · temporary slot",
+      "position": [
+        0.55,
+        0,
+        1.45
+      ],
+      "yaw": 180,
+      "size": [
+        0.64,
+        1.22,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#323a3c",
+      "seats": [
+        "Seat_G45_RECEPTION_TMP_03"
+      ],
+      "cameras": [
+        "H45"
+      ],
+      "confidence": "Three office chairs visible in H45. Temporary editor identities only; no CV chair IDs exist for this reception-region annotation."
+    },
+    {
+      "id": "g45-branded-backdrop",
+      "type": "wall-panel",
+      "name": "Dark veined reception backdrop",
+      "position": [
+        -0.6,
+        0,
+        2.43
+      ],
+      "yaw": 180,
+      "size": [
+        5,
+        3.4,
+        0.08
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#222629",
+      "seats": [],
+      "cameras": [
+        "H45",
+        "H51"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "branded-marble"
+    },
+    {
+      "id": "g45-portrait-1",
+      "type": "display",
+      "name": "Reception wall portrait",
+      "position": [
+        0.12,
+        2.45,
+        2.36
+      ],
+      "yaw": 180,
+      "size": [
+        0.64,
+        0.84,
+        0.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#31393c",
+      "seats": [],
+      "cameras": [
+        "H45"
+      ],
+      "confidence": "Existing shared portrait artwork reused as a visual approximation. Exact print/order correspondence needs owner review.",
+      "variant": "reception-portrait",
+      "frameStyle": "slim-brass"
+    },
+    {
+      "id": "g45-portrait-2",
+      "type": "display",
+      "name": "Reception wall portrait",
+      "position": [
+        -0.6,
+        2.45,
+        2.36
+      ],
+      "yaw": 180,
+      "size": [
+        0.64,
+        0.84,
+        0.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#31393c",
+      "seats": [],
+      "cameras": [
+        "H45"
+      ],
+      "confidence": "Existing shared portrait artwork reused as a visual approximation. Exact print/order correspondence needs owner review.",
+      "variant": "reception-portrait",
+      "frameStyle": "slim-brass"
+    },
+    {
+      "id": "g45-portrait-3",
+      "type": "display",
+      "name": "Reception wall portrait",
+      "position": [
+        -1.32,
+        2.45,
+        2.36
+      ],
+      "yaw": 180,
+      "size": [
+        0.64,
+        0.84,
+        0.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#31393c",
+      "seats": [],
+      "cameras": [
+        "H45"
+      ],
+      "confidence": "Existing shared portrait artwork reused as a visual approximation. Exact print/order correspondence needs owner review.",
+      "variant": "reception-portrait",
+      "frameStyle": "slim-brass"
+    },
+    {
+      "id": "g45-counter-vase-1",
+      "type": "display-console",
+      "name": "Patterned ceramic vessel on counter",
+      "position": [
+        -2.7,
+        1.15,
+        0.12
+      ],
+      "yaw": 0,
+      "size": [
+        0.35,
+        0.4,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#353743",
+      "seats": [],
+      "cameras": [
+        "H45"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "patterned-vase"
+    },
+    {
+      "id": "g45-counter-vase-2",
+      "type": "display-console",
+      "name": "Patterned ceramic vessel on counter",
+      "position": [
+        1.5,
+        1.15,
+        0.12
+      ],
+      "yaw": 0,
+      "size": [
+        0.35,
+        0.4,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#353743",
+      "seats": [],
+      "cameras": [
+        "H45"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "patterned-vase"
+    },
+    {
+      "id": "g45-folding-screen",
+      "type": "screen",
+      "name": "Portable folding louver screen",
+      "position": [
+        2.65,
+        0,
+        -1.15
+      ],
+      "yaw": 30,
+      "size": [
+        1.8,
+        1.7,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#45504d",
+      "seats": [],
+      "cameras": [
+        "H45"
+      ],
+      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "variant": "folding-louver"
+    }
+  ]
+}

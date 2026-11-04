@@ -59,7 +59,8 @@
     "One continuous four-slot banquette resolves Seat_H104–H107. Table_H41 is at the H104/storage end; Table_H42 is toward H107/reception. H51 occlusions do not create new chairs or tables.",
     "Plastic covering, two stored shelves, dried trough, ornaments and leaning reeded glass capture the current construction-state evidence. Layout is not final fit-out. Loose tools, compressor, cables, debris and reflected furniture are omitted.",
     "The nearby branded reception seen in H51 belongs to G45. Its staff chairs and counter are not duplicated in G48.",
-    "Owner top-view correction: mirror all G48 objects, patterned glazing, reflective side, wood end and aisle across X=0 to move the sofa/storage bank from screen-right to screen-left. Keep dimensions, Z ordering, physical IDs and longitudinal seat positions unchanged. G45 reception furniture stays fixed."
+    "Owner top-view correction: mirror all G48 objects, patterned glazing, reflective side, wood end and aisle across X=0 to move the sofa/storage bank from screen-right to screen-left. Keep dimensions, Z ordering, physical IDs and longitudinal seat positions unchanged. G45 reception furniture stays fixed.",
+    "The adjacent H45 reception source is first/g45-reception after resolving a duplicate g45 folder name; first/g45 remains the separate H15/H16 lounge."
   ],
   "reviewItems": [
     "Confirm the banquette slot order and side-table end correspondence with the owner.",
