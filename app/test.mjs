@@ -13,6 +13,8 @@ import {validateBlock} from '../shared/schema/block-schema.js';
 import {server} from './server.mjs';
 import * as THREE from 'three';
 import {buildArchitecture} from './architecture.js';
+import './g41.test.mjs';
+import './private-lounges.test.mjs';
 
 test('Wider arch piers stay straight through the spring and meet a smooth elliptical crown',()=>{
   const a={walls:[{id:'arch',kind:'solid',start:[0,0],end:[8.4,0],height:4.1,thickness:.18}],openings:[{wallId:'arch',offset:4.2,width:7.6,springHeight:1.65,height:3.35}]};
@@ -228,6 +230,23 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     assert.equal((await fetch(`${origin}/api/evidence/map?layout=first/bottom-right`)).status,200);
     assert.equal((await fetch(`${origin}/lounge-tables.js`)).status,200);
     assert.equal((await fetch(`${origin}/api/block?layout=first/bottom-right`,{method:'PUT',body:'{}'})).status,405);
+    assert.ok(listing.blocks.some(b=>b.key==='first/g41'));
+    const g41=await(await fetch(`${origin}/api/block?block=first/g41`)).json();validateBlock(g41.block);
+    assert.equal(g41.block.objects.flatMap(o=>o.seats).length,4);
+    for(const id of g41.block.evidence.cameras)for(const wide of [0,1]){
+      const photo=await fetch(`${origin}/api/evidence/camera/${id}?block=first/g41&wide=${wide}`);
+      assert.equal(photo.status,200);assert.equal(photo.headers.get('content-type'),'image/jpeg');
+    }
+    assert.equal((await fetch(`${origin}/private-lounge-objects.js`)).status,200);
+    for(const group of ['g39','g40']){
+      assert.ok(listing.blocks.some(b=>b.key===`first/${group}`));
+      const room=await(await fetch(`${origin}/api/block?block=first/${group}`)).json();validateBlock(room.block);
+      for(const camera of room.block.evidence.cameras)for(const wide of [0,1])assert.equal((await fetch(`${origin}/api/evidence/camera/${camera}?block=first/${group}&wide=${wide}`)).status,200);
+    }
+    const privateRow=await(await fetch(`${origin}/api/block?layout=first/private-lounges`)).json();validateBlock(privateRow.block);
+    assert.equal(privateRow.block.objects.flatMap(o=>o.seats).length,12);
+    assert.equal(privateRow.block.objects.length,20);
+    assert.equal((await fetch(`${origin}/api/block?layout=first/private-lounges`,{method:'PUT',body:'{}'})).status,405);
     for(const slug of ['g18','g20','g21','g27','g28','g61','g62']){
       assert.ok(listing.blocks.some(b=>b.key===`ground/${slug}`));
       const data=await(await fetch(`${origin}/api/block?block=ground/${slug}`)).json();validateBlock(data.block);
@@ -476,7 +495,7 @@ test('G27 G69/G63 end joins G22 G56/G62 with matching shell dimensions and one s
 });
 
 test('G28 G84/G76 end joins G27 with aligned floors and a clear single arch',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const {block}=await composeLayout(root,'ground/b-g-lounges',load);
   const [g27,g28]=block.architecture.floorSections.slice(11,13);
@@ -492,7 +511,7 @@ test('G28 G84/G76 end joins G27 with aligned floors and a clear single arch',asy
 });
 
 test('G29 joins the G28 end through one clear arch and uses dark flooring',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const {block}=await composeLayout(root,'ground/b-g-lounges',load);
   const [g28,g29]=block.architecture.floorSections.slice(12,14);
@@ -509,7 +528,7 @@ test('G29 joins the G28 end through one clear arch and uses dark flooring',async
 });
 
 test('Shared G3/G24/G25 fits in front of G9/G10 and keeps the front corridor and dining entrances open',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
   const {block}=await composeLayout(root,'ground/b-g-lounges',load);
@@ -670,7 +689,7 @@ test('Reception flags have physical stands, folded cloth and readable reverse UV
 });
 
 test('Reception and SGS share single walls behind security and beside the unused counter',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects,evidence:e}};};
   const {block}=await composeLayout(root,'ground/departure-sgs',load);validateBlock(block);
   for(const id of ['g32-kiosk-backing','g32-approach-wall-return'])assert.equal(block.architecture.walls.filter(w=>w.id===id).length,1);
@@ -692,7 +711,7 @@ test('Reception and SGS share single walls behind security and beside the unused
 test('Cleared A-zone passage joins reception and stays open through exit and the unmerged G9 edge',async()=>{
   const {composeLayout}=await import('./layouts.mjs');
   const {buildReceptionObject,receptionSizes}=await import('./reception-objects.js');
-  const root=new URL('../',import.meta.url).pathname;
+  const root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{
     const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));
     return {block:{...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects,evidence:e}};
@@ -742,7 +761,7 @@ test('Cleared A-zone passage joins reception and stays open through exit and the
 });
 
 test('Map L extension preserves the accepted I zone and matches map seating counts with an open G24/G25 connector',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects,evidence:e}};};
   const source=(await load('ground/i-map-extension')).block;validateBlock(source);
   assert.equal(source.objects.filter(o=>o.type==='armchair').length,6);
@@ -795,7 +814,7 @@ test('G61/G62 reconcile normal ROI identities and share Table_I9 without duplica
 });
 
 test('Full I zone preserves three bays and keeps window-row, floor seams and aisle clear',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const old=(await composeLayout(root,'ground/g57-g58',load)).block;
   const {block}=await composeLayout(root,'ground/i-zone',load);
@@ -818,7 +837,7 @@ test('Full I zone preserves three bays and keeps window-row, floor seams and ais
 });
 
 test('G57 G58 G59 join behind each sofa with shared screens and continuous aisle',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const {block}=await composeLayout(root,'ground/g57-g58',load);
   assert.deepEqual(block.objects.flatMap(o=>o.seats).sort(),Array.from({length:12},(_,i)=>`Seat_I${i+1}`).sort());
@@ -844,7 +863,7 @@ test('G57 G58 G59 join behind each sofa with shared screens and continuous aisle
 });
 
 test('Departure assembly joins the combined G9/G10 walk without duplicate shared walls or furniture',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const {block}=await composeLayout(root,'ground/b-g-lounges',load);
   const {block:departure}=await composeLayout(root,'ground/departure-sgs-passage',load);
@@ -875,7 +894,7 @@ test('Departure assembly joins the combined G9/G10 walk without duplicate shared
 });
 
 test('Main lounge joins I extension to the B13 end passage behind B44',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const main=(await composeLayout(root,'ground/b-g-lounges',load)).block;
   const source=(await composeLayout(root,'ground/i-zone-extension',load)).block;
@@ -905,7 +924,7 @@ test('Dining north side is closed while I-zone end passage stays open',async()=>
 
 
 test('G15/G13 rotates anticlockwise with cabins below I extension',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
   const main=(await composeLayout(root,'ground/b-g-lounges',load)).block;
   const source=(await composeLayout(root,'ground/g15-g13',load)).block;
@@ -939,7 +958,7 @@ test('G15/G13 rotates anticlockwise with cabins below I extension',async()=>{
 
 
 test('G13 source owns C10 end floor wall and frosted gate in both previews',async()=>{
-  const {composeLayout}=await import('./layouts.mjs'),root=new URL('../',import.meta.url).pathname;
+  const {composeLayout}=await import('./layouts.mjs'),root=fileURLToPath(new URL('../',import.meta.url));
   const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects,evidence:e}};};
   const source=(await load('ground/g13')).block;validateBlock(source);assert.deepEqual(source.floorSize,[11.7,9.05]);
   assert.ok(source.evidence.cameras.includes('C10'));assert.ok(source.evidence.wideSnapshots.C10);

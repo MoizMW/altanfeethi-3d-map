@@ -1,5 +1,12 @@
 # Composing spatial blocks
 
+## First-floor private-room row
+
+Open `/?layout=first/private-lounges` for G39 → G40 → G41. H13 [4567,1496], H11 [4931,1711] and H12 [5249,1914] establish the increasing-X/down-right row on the registered first-floor map. All source furniture keeps its local dimensions, finish and IDs. The repeated room spacing remains an estimate.
+
+G39 is at [-7.2,0,0], G40 at [-3.6,0,0], and G41 at [0,0,0], all with yaw 0. Layout-only floor widths of 3.6 m replace the standalone 4 m working crops, so slabs meet at the wall centers. Two layout-owned solid partitions at X=-5.4 and -1.8 replace both copies of each adjoining wall. Three rear walls and three sliding entrance frontages remain source-owned.
+
+A 1.4 m provisional common corridor at Z=2.4..3.8 connects the front entrances. Sliding doors default closed; open previews leave each TV-side access clear. Private-room partitions stay closed. The assembly has 20 objects, 12 unique seats H21–H32, and Table_H5/H6/H7. G39's missing H10 snapshot/registration is documented; its historical ROIs retain H29, with rear placement inferred. An unobserved G39 mirror is omitted. This row remains separate from the stair-lobby assembly.
 ## First-floor G50/G51 window row
 
 Open `/?layout=first/g50-g51`. From the wood-paneled end toward the cylindrical display and onward, G50 owns the shell-chair bay (H100–H103), two pale sofas (H96–H99), and another shell-chair bay (H92–H95); G51 adds tan bucket chairs H88–H91. G50 owns the display column once. H30 sees G50's H94/H95 and Table_H36 in the background; they are not duplicated in G51.

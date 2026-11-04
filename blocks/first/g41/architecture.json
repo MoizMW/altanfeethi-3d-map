@@ -1,0 +1,272 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-private-lounge-041",
+  "floorSize": [
+    4,
+    4.8
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-02T04:59:32.936Z",
+    "anchors": [
+      {
+        "camera": "H12",
+        "pixel": [
+          5249,
+          1914
+        ],
+        "heading": 261,
+        "status": "verified"
+      },
+      {
+        "camera": "H14",
+        "pixel": [
+          4935,
+          2133
+        ],
+        "heading": 22,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      4550,
+      1600,
+      5550,
+      2400
+    ],
+    "localAxes": {
+      "x": "From the pale sofa backing toward the TV wall",
+      "z": "From the rear mirror/flag wall toward the reeded entrance",
+      "y": "Up; local first-floor elevation unresolved"
+    },
+    "mapReview": "First-floor PNG and H12/H14 registration reviewed. Enclosed lounge lies in the service/kitchen-side area above the stair lounge row; presentation map is not a dimensioned plan. Camera views govern current furniture."
+  },
+  "footprint": [
+    [
+      -2,
+      -2.4
+    ],
+    [
+      2,
+      -2.4
+    ],
+    [
+      2,
+      2.4
+    ],
+    [
+      -2,
+      2.4
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g41-dark-floor",
+      "center": [
+        0,
+        0
+      ],
+      "size": [
+        4,
+        4.8
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [
+    {
+      "id": "g41-pale-rug",
+      "polygon": [
+        [
+          -1.7,
+          -2.08
+        ],
+        [
+          1.55,
+          -2.08
+        ],
+        [
+          1.55,
+          2.08
+        ],
+        [
+          -1.7,
+          2.08
+        ]
+      ],
+      "notes": "Pale grey rug below the complete seating set; flat shared pale surface is schematic."
+    }
+  ],
+  "circulation": {
+    "id": "g41-tv-side-access",
+    "polygon": [
+      [
+        0.78,
+        -1.9
+      ],
+      [
+        1.55,
+        -1.9
+      ],
+      [
+        1.55,
+        2.2
+      ],
+      [
+        0.78,
+        2.2
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "provisional-clear-route",
+    "notes": "Clear route beside the furniture to the owner-confirmed sliding entrance. Open the leaf to use the doorway; dimensions remain estimated."
+  },
+  "walls": [
+    {
+      "id": "g41-sofa-wall",
+      "kind": "solid",
+      "start": [
+        -1.8,
+        -2.25
+      ],
+      "end": [
+        -1.8,
+        2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "first/g41",
+      "sources": [
+        "H14"
+      ],
+      "confidence": "Boundary observed; endpoints, thickness and height estimated.",
+      "notes": "Pale panelled wall behind the white sofa."
+    },
+    {
+      "id": "g41-rear-wall",
+      "kind": "solid",
+      "start": [
+        -1.8,
+        -2.25
+      ],
+      "end": [
+        1.8,
+        -2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "first/g41",
+      "sources": [
+        "H14",
+        "H12"
+      ],
+      "confidence": "Boundary observed; endpoints, thickness and height estimated.",
+      "notes": "Pale rear wall with oval mirror and flag stand; no extra seating inferred from reflections."
+    },
+    {
+      "id": "g41-tv-wall",
+      "kind": "solid",
+      "start": [
+        1.8,
+        -2.25
+      ],
+      "end": [
+        1.8,
+        2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "first/g41",
+      "sources": [
+        "H14"
+      ],
+      "confidence": "Boundary observed; endpoints, thickness and height estimated.",
+      "notes": "Pale wall opposite sofa carrying the television."
+    },
+    {
+      "id": "g41-entrance-screen",
+      "kind": "glass",
+      "start": [
+        -1.8,
+        2.25
+      ],
+      "end": [
+        1.8,
+        2.25
+      ],
+      "height": 3.2,
+      "thickness": 0.055,
+      "color": "#a8aaa3",
+      "owner": "first/g41",
+      "sources": [
+        "H14",
+        "H12"
+      ],
+      "confidence": "Boundary observed; endpoints, thickness and height estimated.",
+      "variant": "reeded-divider",
+      "notes": "Owner confirms a sliding entrance door on 2026-11-04. Fixed reeded pane occupies X=-1.8..0.45; the single leaf closes X=0.45..1.8 and slides left in front of the fixed pane. Handle, track and dimensions are provisional.",
+      "doors": [
+        {
+          "id": "g41-sliding-entrance",
+          "kind": "sliding",
+          "offset": 2.925,
+          "width": 1.35,
+          "height": 3.2,
+          "openFraction": 0,
+          "slideDirection": -1,
+          "handleHeight": 1.1,
+          "handleLength": 0.32
+        }
+      ]
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "size": [
+      4,
+      4.8
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "visualization-height-estimate-hidden-by-default"
+  },
+  "boundaryReview": [
+    {
+      "id": "g41-entrance",
+      "kind": "sliding-glass-door",
+      "start": [
+        0.45,
+        2.25
+      ],
+      "end": [
+        1.8,
+        2.25
+      ],
+      "sources": [
+        "owner-confirmation-2026-11-04",
+        "H12",
+        "H14"
+      ],
+      "status": "door-type-owner-confirmed-dimensions-estimated",
+      "notes": "Single sliding leaf with handle and top track; default preview closed. Hardware profile and travel remain estimated."
+    }
+  ],
+  "notes": [
+    "Three solid pale walls and reeded entrance glazing are supported by camera views. Owner confirms a sliding entrance door; dimensions and hardware remain estimates.",
+    "No automatic merge with G35–G38/G42; original block coordinates and camera registration stay independent."
+  ]
+}
