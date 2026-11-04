@@ -1,0 +1,104 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-window-51",
+  "cameras": [
+    "H27",
+    "H30"
+  ],
+  "snapshots": {
+    "H27": "evidence/camera-snapshots/H27.jpg",
+    "H30": "evidence/camera-snapshots/H30.jpg"
+  },
+  "wideSnapshots": {
+    "H27": "evidence/wide capture snapshots/H27.jpg",
+    "H30": "evidence/wide capture snapshots/H30.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Same mounts with wider zoom per project guide",
+    "roiUsage": "Existing ROIs reviewed only on normal detection images; not applied to wide captures",
+    "capturedAt": null
+  },
+  "rois": {
+    "H27": {
+      "chairs": "evidence/rois/chair-rois/g51/H27_to_g51.json",
+      "tables": "evidence/rois/table-rois/g51/H27_to_g51.json"
+    },
+    "H30": {
+      "chairs": "evidence/rois/chair-rois/g51/H30_to_g51.json",
+      "tables": "evidence/rois/table-rois/g51/H30_to_g51.json"
+    }
+  },
+  "roiReview": {
+    "reviewCanvas": [
+      960,
+      540
+    ],
+    "normalSnapshotSize": [
+      1920,
+      1080
+    ],
+    "displayScale": [
+      0.5,
+      0.5
+    ],
+    "status": "All six normal chair/table overlays reviewed against images at half resolution; wide captures inspected independently.",
+    "worldCoordinateUsage": "None; ROIs identify objects and are not mapped directly to 3D."
+  },
+  "seatMappings": {
+    "Seat_H91": "g51-chair-91",
+    "Seat_H90": "g51-chair-90",
+    "Seat_H89": "g51-chair-89",
+    "Seat_H88": "g51-chair-88"
+  },
+  "tableMappings": {
+    "Table_H34": "g51-table-34",
+    "Table_H35": "g51-table-35"
+  },
+  "externalObservations": [
+    {
+      "camera": "H30",
+      "seats": [
+        "Seat_H94",
+        "Seat_H95"
+      ],
+      "externalId": "Table_H36",
+      "owner": "first/g50",
+      "objectIds": [
+        "g50-chair-94",
+        "g50-chair-95",
+        "g50-table-36"
+      ],
+      "renderLocally": false,
+      "notes": "Background G50 observations retained in g51 ROI files; reuse existing owner rather than creating extra G51 furniture."
+    },
+    {
+      "cameras": [
+        "H27",
+        "H30"
+      ],
+      "objectId": "g50-display-column",
+      "owner": "first/g50",
+      "renderLocally": false,
+      "notes": "The same cylindrical display is a shared landmark and is owned once by G50."
+    }
+  ],
+  "notes": [
+    "Four tan swivel bucket chairs H88–H91 face in two pairs around separate tables H34/H35. Existing egg-swivel asset approximates the observed leather bucket shape; fine upholstery gathers remain simplified.",
+    "H30 background H94/H95 and Table_H36 belong to G50 and are excluded locally. The cylindrical display also belongs to G50; open the combined layout for shared context.",
+    "Both normal and wide H27/H30 captures reviewed. Window glazing, curtain, pale rug, floor lamp and bin are included; interior-row seating and hanging gold ornaments across the aisle are excluded."
+  ],
+  "reviewItems": [
+    "Confirm every seat's window-side/aisle-side correspondence and sofa slot order with the owner.",
+    "Review estimated floor extent, furniture spacing, rug sizes, glazing height, mullions, wood curvature and 4.1 m ceiling against site measurements.",
+    "G50's shared display recreates the H26/H27 palm campaign and H30 red-lit building as an animated reference-based loop. Original footage/timing remain unavailable. H27/H30 support clear glazing, mullions/transoms, gathered sheer panels, sill and the pierced ornament. Exact marble veins, folds, sculpture dimensions and structural pillar positions remain unresolved.",
+    "Combined relative placement follows photographic overlap and source-map ordering; no survey calibration or complete first-floor shell is claimed."
+  ],
+  "accuracy": {
+    "identity": "normal-ROI-supported-needs-owner-review",
+    "position": "estimated-local",
+    "dimensions": "unmeasured",
+    "globalAlignment": "unresolved",
+    "appearance": "shared-procedural-assets"
+  }
+}

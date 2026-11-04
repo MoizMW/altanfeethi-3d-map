@@ -1,0 +1,45 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "first-g50-g51",
+  "name": "G50 + G51 · First-floor window row",
+  "displayCode": "G50 / G51",
+  "floor": "first",
+  "status": "draft-needs-human-review",
+  "components": [
+    {
+      "block": "first/g50",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "first/g51",
+      "position": [
+        0,
+        0,
+        9.6
+      ],
+      "yaw": 0
+    }
+  ],
+  "floorSize": [
+    4.8,
+    19.75
+  ],
+  "floorCenter": [
+    0,
+    3.125
+  ],
+  "walls": [],
+  "openings": [],
+  "notes": [
+    "Owner-selected G50/G51 first-floor window row reconstructed from H56/H23/H25/H26/H27/H30 normal and wide captures. Local +Z runs from the wood return through sofas and four shell chairs to the display and G51 bucket chairs.",
+    "G50 stays at the origin; G51 translates +9.6 m on Z with no rotation or furniture scaling. Floor/window endpoints meet at Z=6.8; the open dark-tiled aisle continues at X=1.05..2.4.",
+    "G50 owns the cylindrical display once. H30's background Seat_H94/H95 and Table_H36 are the same source objects as G50, not extra G51 furniture.",
+    "The illustration and photographic overlap establish ordering only. All metric spans, camera poses, display height and global map registration remain estimates."
+  ]
+}
