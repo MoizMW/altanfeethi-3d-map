@@ -1,0 +1,65 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-reception-045",
+  "cameras": [
+    "H45"
+  ],
+  "snapshots": {
+    "H45": "evidence/camera-snapshots/H45.jpg"
+  },
+  "wideSnapshots": {
+    "H45": "evidence/wide capture snapshots/H45.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Same mounts with wider zoom per project guide",
+    "roiUsage": "Existing ROIs apply only to normal detection views; not projected onto wide captures",
+    "capturedAt": null
+  },
+  "rois": {
+    "H45": {
+      "reception": "evidence/rois/reception-rois/g45/H45.json"
+    }
+  },
+  "seatMappings": {
+    "Seat_G45_RECEPTION_TMP_01": "g45-staff-chair-1",
+    "Seat_G45_RECEPTION_TMP_02": "g45-staff-chair-2",
+    "Seat_G45_RECEPTION_TMP_03": "g45-staff-chair-3"
+  },
+  "tableMappings": {},
+  "roiReview": {
+    "normalCanvas": [
+      1920,
+      1080
+    ],
+    "reviewCanvas": [
+      1200,
+      675
+    ],
+    "displayScale": [
+      0.625,
+      0.625
+    ],
+    "status": "H45 R1 reception polygon inspected on the normal snapshot. It is a region annotation, not staff seat data.",
+    "worldCoordinates": "None; image-space polygons support identities, not meter-based placement."
+  },
+  "notes": [
+    "H45 depicts the branded reception, not the H15/H16 seating found in historical g45 chair/table ROI files. Those observations are excluded from this requested camera-defined block.",
+    "Three visible staff chairs use explicit temporary editor IDs Seat_G45_RECEPTION_TMP_01–03. No certified CV staff-chair identities are claimed.",
+    "Counter, three portraits, branded veined backdrop, two vases and portable folding screen are reconstructed using shared assets. Buffet counters, directory signage and distant dining area are outside scope.",
+    "Merge naming collision resolved without combining rooms: first/g45 is the H15/H16 privacy lounge; this separate H45 reception is first/g45-reception. Physical IDs and camera metadata are retained."
+  ],
+  "reviewItems": [
+    "Confirm the banquette slot order and side-table end correspondence with the owner.",
+    "Review construction-state storage locations, exact counter dimensions, protective film shape, stone patterns, shelving count and object ownership.",
+    "First-floor map placement, wall spans, ceiling height, floor extents and the G48/G45 connecting transform are unmeasured estimates.",
+    "Existing shared portrait artwork is a visual approximation; exact H45 printed portrait/order correspondence remains unconfirmed."
+  ],
+  "accuracy": {
+    "identity": "reception-region-only-staff-slots-temporary",
+    "position": "estimated-local",
+    "dimensions": "unmeasured",
+    "appearance": "shared-procedural-draft",
+    "globalAlignment": "unresolved"
+  }
+}

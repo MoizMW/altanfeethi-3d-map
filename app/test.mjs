@@ -13,8 +13,11 @@ import {validateBlock} from '../shared/schema/block-schema.js';
 import {server} from './server.mjs';
 import * as THREE from 'three';
 import {buildArchitecture} from './architecture.js';
+import './g45.test.mjs';
+
 import './g41.test.mjs';
 import './private-lounges.test.mjs';
+import './editor-ui.test.mjs';
 
 test('Wider arch piers stay straight through the spring and meet a smooth elliptical crown',()=>{
   const a={walls:[{id:'arch',kind:'solid',start:[0,0],end:[8.4,0],height:4.1,thickness:.18}],openings:[{wallId:'arch',offset:4.2,width:7.6,springHeight:1.65,height:3.35}]};
@@ -215,6 +218,11 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     const jpg=Buffer.from(await(await fetch(`${origin}/api/evidence/camera/B1${query}`)).arrayBuffer());assert.equal(jpg[0],255);assert.equal(jpg[1],216);
     assert.equal((await fetch(`${origin}/shared/schema/block-schema.js`)).status,200);assert.equal((await fetch(`${origin}/server.mjs`)).status,404);assert.equal((await fetch(`${origin}/api/block?block=../../private`)).status,400);
     const g32=await(await fetch(`${origin}/api/block?block=ground/g32`)).json();validateBlock(g32.block);
+    assert.ok(listing.blocks.some(b=>b.key==='first/g45'));
+    const g45=await(await fetch(`${origin}/api/block?block=first/g45`)).json();validateBlock(g45.block);
+    assert.equal(g45.block.objects.flatMap(o=>o.seats).length,7);
+    for(const camera of ['H15','H16'])for(const wide of [0,1])assert.equal((await fetch(`${origin}/api/evidence/camera/${camera}?block=first/g45&wide=${wide}`)).status,200);
+    assert.equal((await fetch(`${origin}/api/evidence/camera/H45?block=first/g45`)).status,404);
     assert.ok(listing.blocks.some(b=>b.key==='layout:first/bottom-lobby'));
     const lobby=await(await fetch(`${origin}/api/block?layout=first/bottom-lobby`)).json();validateBlock(lobby.block);
     assert.equal(lobby.block.objects.flatMap(o=>o.seats).length,20);
@@ -238,6 +246,7 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
       assert.equal(photo.status,200);assert.equal(photo.headers.get('content-type'),'image/jpeg');
     }
     assert.equal((await fetch(`${origin}/private-lounge-objects.js`)).status,200);
+    assert.equal((await fetch(`${origin}/editor-ui.js`)).status,200);
     for(const group of ['g39','g40']){
       assert.ok(listing.blocks.some(b=>b.key===`first/${group}`));
       const room=await(await fetch(`${origin}/api/block?block=first/${group}`)).json();validateBlock(room.block);

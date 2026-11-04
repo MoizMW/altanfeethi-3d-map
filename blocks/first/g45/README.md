@@ -1,11 +1,20 @@
-# G45 · First-floor reception
+# G45 · First-floor privacy lounge
 
-Open `/?block=first/g45`. Cameras: H45. Normal and wide captures were reviewed with the first-floor map; normal-view ROI coordinates were never reused on wide images.
+Open `http://127.0.0.1:4209/?block=first/g45` after running `npm start` from the project root.
 
-The default isometric and perspective camera looks toward the visitor face of the reception, showing the counter, branding and portraits. This is a viewing preset, not a CCTV calibration; top view and saved furniture coordinates are unchanged.
+Owner explicitly selects **only the lounge**. H15/H16 normal and wide captures, their four chair/table ROI files, the first-floor PNG and saved map anchors were reviewed. H45 normal/wide and reception ROI were reviewed to verify that its distant reception/buffet is outside this block. Camera registration and group assignments are unchanged.
 
-H45 supports one stone reception counter, three visible staff chairs, dark branded backdrop, three portraits, two decorative vessels and a folding louver screen. Staff IDs Seat_G45_RECEPTION_TMP_01–03 are temporary editor slots only. The old H15/H16 g45 chair/table files refer to another location and are excluded. R1 is a reception region, not a seat ID.
+| Row/object | External identities |
+| --- | --- |
+| Three partition-side chairs, glazing → wood end | Seat_H39 / Seat_H38 / Seat_H37 |
+| Four facing chairs, wood → glazing end | Seat_H33 / Seat_H34 / Seat_H35 / Seat_H36 |
+| Individual privacy tables | Table_H14 / Table_H13 / Table_H12 |
+| Shared facing-pair tables | Table_H10 / Table_H11 |
 
-New reusable designs were created in the [shared asset library](../../../shared/assets/library/references/first-reception/README.md) before placement. Existing office chairs, side tables, portrait artwork and structural glazing/wall finishes are reused. All object positions, scale, yaw and IDs remain editable; saving the viewer updates only `objects.json`.
+Seven dark brown leather chairs, five pale stone/brass pedestal tables, one fire extinguisher and one bin give 14 editable objects. No sofa is visible. Each external seat/table identity occurs once. Brown leather is supported by these cameras; default blue lounge chairs in other blocks are unaffected. Tissue boxes are table context; transient drinks, food and ashtrays are omitted.
 
-Local +X runs toward the open aisle and +Z toward the reception staff side. Floor and ceiling dimensions, cabinet/storage spacing, stone pattern, slot ordering and global alignment remain provisional. Background buffet, reflected furniture and loose construction tools/cables are excluded. Open `/?layout=first/g48-g45` for a relative connected draft; source blocks remain independent.
+Two rounded gold-framed reeded partitions separate the three individual seats. Pale side panels, timber end wall and reeded glazing with an estimated glass doorway bound a provisional 5.4 × 7.2 m crop. The central aisle is dark tile, with no pale rug. Ceiling uses the shared 4.1 m visualization estimate and is hidden by default. Hardware, dimensions, screen height, chair poses and table pairing need owner review.
+
+Local +X goes from the three privacy seats to the opposing four-seat row; +Z goes from the glazing end to the timber end. This is a standalone block with no automatic merge or inferred link to H45 reception. The four JSON files are authoritative; the editor saves furniture with revision checks/backups.
+
+Validation on 2026-11-04: all 91 project tests pass. Isometric, top and full-wall views were reviewed; the real editor Save button and reload preserved all 14 objects and architectural records. The central floor stays dark, fixtures remain within their footprint, and only H15/H16 are exposed as this block’s camera evidence.

@@ -24,7 +24,7 @@
       "yaw": 0
     },
     {
-      "block": "first/g45",
+      "block": "first/g45-reception",
       "position": [
         0,
         0,
@@ -47,6 +47,7 @@
     "Owner-selected H51/H49 banquette area and H45 reception are composed as a provisional connected part of the first floor. H51 sees the reception beyond the covered seating; the map establishes relative topology, not scale.",
     "G48 remains at origin with the owner's complete X=0 side swap: the sofa/storage bank moves to the left in the supplied top view. G45 translates +6.8 m on Z without furniture changes. Floors meet at Z=4.0 and the clear approach now continues at X=-1.65..-0.65.",
     "G48 keeps four CV seat IDs and two table IDs. G45 uses three explicitly temporary staff-chair slots; H15/H16 historical g45 seating ROIs are outside this camera-defined reconstruction.",
-    "Construction objects, wall geometry, relative shell widths, printed portrait matching and all dimensions/global camera calibration require owner/site review. Buffet and wider lobby remain outside this layout."
+    "Construction objects, wall geometry, relative shell widths, printed portrait matching and all dimensions/global camera calibration require owner/site review. Buffet and wider lobby remain outside this layout.",
+    "Merge naming correction: first/g45 now retains the separate H15/H16 privacy lounge. This composition still uses the original H45 service desk through first/g45-reception; every reception object and its transform is preserved."
   ]
 }

@@ -1,64 +1,146 @@
 {
   "format": "altanfeethi-block-evidence",
   "version": 1,
-  "blockId": "first-h-reception-045",
+  "blockId": "first-h-privacy-lounge-045",
   "cameras": [
-    "H45"
+    "H15",
+    "H16"
   ],
   "snapshots": {
-    "H45": "evidence/camera-snapshots/H45.jpg"
+    "H15": "evidence/camera-snapshots/H15.jpg",
+    "H16": "evidence/camera-snapshots/H16.jpg"
   },
   "wideSnapshots": {
-    "H45": "evidence/wide capture snapshots/H45.jpg"
+    "H15": "evidence/wide capture snapshots/H15.jpg",
+    "H16": "evidence/wide capture snapshots/H16.jpg"
   },
   "wideCaptureContext": {
-    "mountPosition": "Same mounts with wider zoom per project guide",
-    "roiUsage": "Existing ROIs apply only to normal detection views; not projected onto wide captures",
+    "mountPosition": "Unchanged per owner",
+    "zoom": "Wider framing",
+    "roiUsage": "Chair/table ROIs apply only to the normal detection images.",
     "capturedAt": null
   },
   "rois": {
-    "H45": {
-      "reception": "evidence/rois/reception-rois/g45/H45.json"
+    "H15": {
+      "chairs": "evidence/rois/chair-rois/g45/H15_to_g45.json",
+      "tables": "evidence/rois/table-rois/g45/H15_to_g45.json"
+    },
+    "H16": {
+      "chairs": "evidence/rois/chair-rois/g45/H16_to_g45.json",
+      "tables": "evidence/rois/table-rois/g45/H16_to_g45.json"
     }
   },
-  "seatMappings": {
-    "Seat_G45_RECEPTION_TMP_01": "g45-staff-chair-1",
-    "Seat_G45_RECEPTION_TMP_02": "g45-staff-chair-2",
-    "Seat_G45_RECEPTION_TMP_03": "g45-staff-chair-3"
-  },
-  "tableMappings": {},
-  "roiReview": {
-    "normalCanvas": [
-      1920,
-      1080
-    ],
-    "reviewCanvas": [
-      1200,
-      675
-    ],
-    "displayScale": [
-      0.625,
-      0.625
-    ],
-    "status": "H45 R1 reception polygon inspected on the normal snapshot. It is a region annotation, not staff seat data.",
-    "worldCoordinates": "None; image-space polygons support identities, not meter-based placement."
-  },
   "notes": [
-    "H45 depicts the branded reception, not the H15/H16 seating found in historical g45 chair/table ROI files. Those observations are excluded from this requested camera-defined block.",
-    "Three visible staff chairs use explicit temporary editor IDs Seat_G45_RECEPTION_TMP_01–03. No certified CV staff-chair identities are claimed.",
-    "Counter, three portraits, branded veined backdrop, two vases and portable folding screen are reconstructed using shared assets. Buffet counters, directory signage and distant dining area are outside scope."
+    "Owner confirms lounge-only scope. All H15/H16 normal/wide images and their four normal-image chair/table ROI files were reviewed.",
+    "H15 identifies partition-row seats H39/H38/H37 from glazing end to wood end, with Table_H14/H13/H12 respectively. H16 identifies facing-row H33/H34/H35/H36 from wood end to glazing end.",
+    "H16 repeats Table_H12/H13/H14 on the opposite side of the aisle and supplies Table_H10/H11 between its facing chair pairs. Five physical tables are authored once.",
+    "Brown leather, dark legs, pale stone tops, brass drum supports, gold rounded privacy partitions and dark tiled floor are visible. The opt-in leather chair variant differs from the default blue fabric chair without changing that default.",
+    "A single bin and fire extinguisher approximate the end-wall fixtures. Cups, ashtrays, bottles, food and exact decorative textures are omitted.",
+    "H45 normal/wide and reception ROI were inspected only to confirm exclusion; its stored group assignment and registered position remain unchanged."
+  ],
+  "correspondence": {
+    "Seat_H39": "g45-chair-39",
+    "Seat_H38": "g45-chair-38",
+    "Seat_H37": "g45-chair-37",
+    "Seat_H33": "g45-chair-33",
+    "Seat_H34": "g45-chair-34",
+    "Seat_H35": "g45-chair-35",
+    "Seat_H36": "g45-chair-36",
+    "Table_H14": "g45-table-14",
+    "Table_H13": "g45-table-13",
+    "Table_H12": "g45-table-12",
+    "Table_H10": "g45-table-10",
+    "Table_H11": "g45-table-11"
+  },
+  "observations": [
+    {
+      "camera": "H15",
+      "seats": [
+        "Seat_H37",
+        "Seat_H38",
+        "Seat_H39"
+      ],
+      "tables": [
+        "Table_H14",
+        "Table_H13",
+        "Table_H12"
+      ],
+      "interpretation": "Three individual screened chairs; pale door/glazing end to image left."
+    },
+    {
+      "camera": "H16",
+      "seats": [
+        "Seat_H33",
+        "Seat_H34",
+        "Seat_H35",
+        "Seat_H36"
+      ],
+      "tables": [
+        "Table_H10",
+        "Table_H11",
+        "Table_H12",
+        "Table_H13",
+        "Table_H14"
+      ],
+      "interpretation": "Reverse view of four opposing chairs, all five tables, screens, timber end and fire fixture."
+    }
+  ],
+  "sourceImages": {
+    "H15": {
+      "normal": {
+        "path": "evidence/camera-snapshots/H15.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "wide": {
+        "path": "evidence/wide capture snapshots/H15.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "roiCoordinateSystem": "Historical normal-image ROI authoring resolution unrecorded; reviewed against 1920×1080 normal views; not a metric transform."
+    },
+    "H16": {
+      "normal": {
+        "path": "evidence/camera-snapshots/H16.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "wide": {
+        "path": "evidence/wide capture snapshots/H16.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "roiCoordinateSystem": "Historical normal-image ROI authoring resolution unrecorded; reviewed against 1920×1080 normal views; not a metric transform."
+    }
+  },
+  "excludedAssociations": [
+    {
+      "camera": "H45",
+      "registeredGroup": "g45",
+      "registeredPosition": [
+        3367,
+        795
+      ],
+      "heading": 151,
+      "normal": "evidence/camera-snapshots/H45.jpg",
+      "wide": "evidence/wide capture snapshots/H45.jpg",
+      "roi": "evidence/rois/reception-rois/g45/H45.json",
+      "status": "owner-excluded-reception",
+      "reason": "Remote reception/buffet view, no direct lounge overlap. Owner explicitly selected only lounge; no R1 counter or reception staff chairs are included."
+    }
   ],
   "reviewItems": [
-    "Confirm the banquette slot order and side-table end correspondence with the owner.",
-    "Review construction-state storage locations, exact counter dimensions, protective film shape, stone patterns, shelving count and object ownership.",
-    "First-floor map placement, wall spans, ceiling height, floor extents and the G48/G45 connecting transform are unmeasured estimates.",
-    "Existing shared portrait artwork is a visual approximation; exact H45 printed portrait/order correspondence remains unconfirmed."
-  ],
-  "accuracy": {
-    "identity": "reception-region-only-staff-slots-temporary",
-    "position": "estimated-local",
-    "dimensions": "unmeasured",
-    "appearance": "shared-procedural-draft",
-    "globalAlignment": "unresolved"
-  }
+    "Confirm seat order, shared table pairing and exact chair/table spacing against the physical lounge.",
+    "Measure footprint/height and verify the glass entrance width, hardware and operating mechanism.",
+    "Review rounded privacy screen size/profile, pale panel finish and contextual bin/extinguisher pose.",
+    "Global floor alignment, neighboring seams and first-floor elevation remain unresolved."
+  ]
 }

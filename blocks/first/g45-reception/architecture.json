@@ -1,0 +1,178 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-reception-045",
+  "floorSize": [
+    7.2,
+    5.4
+  ],
+  "floorCenter": [
+    0,
+    -0.1
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "estimated-local-not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-03T07:14:37.307Z",
+    "anchors": [
+      {
+        "camera": "H45",
+        "pixel": [
+          3367,
+          795
+        ],
+        "heading": 151,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "Across the counter from its left return toward the folding-screen side",
+      "z": "From visitor / G48 approach toward the counter staff side and branded backdrop",
+      "y": "Up; first-floor structural elevation unresolved"
+    },
+    "sourceMapCrop": [
+      2100,
+      150,
+      4100,
+      1550
+    ],
+    "mapReview": "H45's registered first-floor reception is distinct from H15/H16 seating despite the reused g45 ROI folder name. The latter seating is outside this block.",
+    "mergeReview": "Separated from first/g45 (H15/H16 privacy lounge) during add/add conflict repair. This H45 reception retains its existing block/object/seat identities and G48 placement."
+  },
+  "footprint": [
+    [
+      -3.6,
+      -2.8
+    ],
+    [
+      3.6,
+      -2.8
+    ],
+    [
+      3.6,
+      2.6
+    ],
+    [
+      -3.6,
+      2.6
+    ]
+  ],
+  "floorSections": [
+    {
+      "center": [
+        0,
+        -0.1
+      ],
+      "size": [
+        7.2,
+        5.4
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [],
+  "walls": [
+    {
+      "id": "g45-back-wall",
+      "kind": "solid",
+      "start": [
+        -3.4,
+        2.52
+      ],
+      "end": [
+        1.95,
+        2.52
+      ],
+      "height": 4.1,
+      "thickness": 0.12,
+      "color": "#292d2f",
+      "owner": "first/g45-reception",
+      "sources": [
+        "H45",
+        "H51"
+      ],
+      "confidence": "Back wall behind the branded panel is visible; right-side opening and circulation to buffet kept open."
+    },
+    {
+      "id": "g45-left-return",
+      "kind": "solid",
+      "start": [
+        -3.4,
+        -2.8
+      ],
+      "end": [
+        -3.4,
+        2.52
+      ],
+      "height": 4.1,
+      "thickness": 0.12,
+      "color": "#b0a99a",
+      "finish": "warm-wood",
+      "interiorSide": 1,
+      "owner": "first/g45-reception",
+      "sources": [
+        "H45"
+      ],
+      "confidence": "Paneled left boundary visible in close camera foreground; wall span and curve simplified."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "circulation": {
+    "id": "g45-visitor-approach",
+    "polygon": [
+      [
+        -0.65,
+        -0.25
+      ],
+      [
+        -1.65,
+        -0.25
+      ],
+      [
+        -1.65,
+        -2.8
+      ],
+      [
+        -0.65,
+        -2.8
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "estimated-open-visitor-approach",
+    "sources": [
+      "H45",
+      "H51"
+    ],
+    "notes": "The visitor approach joins G48's owner-corrected left-side arrangement through the open strip X=-1.65..-0.65. Reception furniture is unchanged."
+  },
+  "boundaryReview": [
+    {
+      "id": "g45-buffet-side",
+      "kind": "open-corridor",
+      "sources": [
+        "H45"
+      ],
+      "status": "buffet-visible-outside-reception-crop"
+    },
+    {
+      "id": "g45-old-roi-group-conflict",
+      "kind": "unknown",
+      "status": "H15-H16-chair-and-table-files-excluded",
+      "notes": "Those cameras are registered far from H45 and show another seating zone; R1 is a reception polygon, not a chair identity."
+    }
+  ],
+  "ceiling": {
+    "size": [
+      7.2,
+      5.4
+    ],
+    "center": [
+      0,
+      -0.1
+    ],
+    "height": 4.1,
+    "status": "provisional-visualization-only"
+  }
+}

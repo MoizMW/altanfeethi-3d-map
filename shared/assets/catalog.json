@@ -91,9 +91,9 @@
         "grand-piano",
         "ring-pedestal",
         "i-zone-end-console",
+        "window-sculpture",
         "pierced-ornament",
-        "patterned-vase",
-        "window-sculpture"
+        "patterned-vase"
       ]
     },
     "sofa": {
@@ -118,6 +118,7 @@
         "armless",
         "egg-swivel",
         "shell-lounge",
+        "leather-privacy",
         "tub-chair"
       ],
       "defaultColor": "#3d4a55",
@@ -149,8 +150,8 @@
       "variants": [
         "open-shelving",
         "teal-gold-panel",
-        "folding-louver",
-        "curved-bronze"
+        "curved-bronze",
+        "folding-louver"
       ]
     },
     "plant": {
@@ -198,8 +199,8 @@
         "drawer-pedestal",
         "access-reader",
         "plain-planter",
-        "stored-shelving",
-        "window-sill"
+        "window-sill",
+        "stored-shelving"
       ]
     },
     "display": {
@@ -230,11 +231,11 @@
         "teal-service-door",
         "timber-office-door",
         "pleated-curtain",
-        "branded-marble",
-        "leaning-glass-panel",
         "oval-mirror",
         "cylindrical-display",
-        "window-drapery"
+        "window-drapery",
+        "branded-marble",
+        "leaning-glass-panel"
       ]
     },
     "luggage-scale": {

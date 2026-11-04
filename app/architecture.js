@@ -110,6 +110,26 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
       continue;
     }
     if (wall.kind === 'glass') {
+      if(wall.variant==='rounded-reeded-divider'){
+        const radius=Math.min(.18,length/4,height/4),outline=new THREE.Shape();
+        outline.moveTo(0,0);outline.lineTo(length,0);outline.lineTo(length,height-radius);
+        outline.quadraticCurveTo(length,height,length-radius,height);outline.lineTo(radius,height);
+        outline.quadraticCurveTo(0,height,0,height-radius);outline.closePath();
+        const panel=new THREE.ExtrudeGeometry(outline,{depth:wall.thickness,bevelEnabled:false,curveSegments:32});panel.translate(0,0,-wall.thickness/2);
+        add(group,panel,material(wall.color||'#a8aaa3',{transparent:true,opacity:.32,roughness:.4,depthWrite:false,side:THREE.DoubleSide}),0,0,0).name='Rounded privacy glazing';
+        const points=outline.getPoints(64).map(p=>new THREE.Vector3(p.x,p.y,0)),path=new THREE.CurvePath();
+        for(let i=1;i<points.length;i++)path.add(new THREE.LineCurve3(points[i-1],points[i]));
+        const brass=material('#b1a064',{metalness:.6,roughness:.35});
+        add(group,new THREE.TubeGeometry(path,256,.018,8,false),brass,0,0,0).name='Rounded brass screen frame';
+        for(const y of [.42,.58,.74])if(y<height-.1)add(group,new THREE.BoxGeometry(length,.018,.04),brass,length/2,y,0);
+        const lines=[];
+        for(let x=.04;x<length;x+=.045){
+          const edge=Math.min(x,length-x),top=edge<radius?height-radius+Math.sqrt(Math.max(0,radius*radius-(radius-edge)**2)):height;
+          for(const z of [-wall.thickness/2-.002,wall.thickness/2+.002])lines.push(new THREE.Vector3(x,.04,z),new THREE.Vector3(x,top-.025,z));
+        }
+        group.add(new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(lines),new THREE.LineBasicMaterial({color:'#8b8975',transparent:true,opacity:.6})));
+        continue;
+      }
       if(wall.variant==='frosted-cream'&&wall.automaticSliding){
         const pillar=wall.pillarWidth,door=wall.doors[0],half=door.width/2;
         const cream=material('#dedbd2'),glass=material(wall.color,{roughness:.85}),dark=material('#454b4b',{roughness:.35,metalness:.3});
@@ -380,7 +400,14 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
           depthWrite:frosted,roughness:frosted?.85:.65,side:THREE.DoubleSide});
         const frame=material(wall.frameColor||'#717a78',{metalness:.45,roughness:.4});
         const pane=(width,h,x,y,target=group)=>{
-          if(width>.001&&h>.001)add(target,new THREE.BoxGeometry(width,h,wall.thickness),glass,x,y,0);
+          if(width>.001&&h>.001){
+            add(target,new THREE.BoxGeometry(width,h,wall.thickness),glass,x,y,0);
+            if(wall.variant==='reeded-entry'){
+              const lines=[];
+              for(let at=.035;at<width;at+=.045)for(const side of [-1,1])lines.push(new THREE.Vector3(x-width/2+at,y-h/2+.02,side*(wall.thickness/2+.002)),new THREE.Vector3(x-width/2+at,y+h/2-.02,side*(wall.thickness/2+.002)));
+              target.add(new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(lines),new THREE.LineBasicMaterial({color:'#8b8975',transparent:true,opacity:.5})));
+            }
+          }
         };
         const doors=wall.doors.slice().sort((a,b)=>a.offset-b.offset);
         let cursor=0;

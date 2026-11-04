@@ -1,9 +1,9 @@
 {
   "format": "altanfeethi-spatial-block",
   "version": 1,
-  "id": "first-h-reception-045",
+  "id": "first-h-privacy-lounge-045",
   "slug": "g45",
-  "name": "G45 · First-floor reception",
+  "name": "G45 · Privacy lounge",
   "floor": "first",
   "groups": [
     "g45"
@@ -12,7 +12,6 @@
   "status": "draft-needs-human-review",
   "units": "provisional-meters",
   "owner": null,
-  "viewer": {"cameraOffset": [6, 6, -7]},
   "files": {
     "architecture": "architecture.json",
     "objects": "objects.json",

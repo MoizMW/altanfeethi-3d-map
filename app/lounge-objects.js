@@ -1,5 +1,17 @@
 import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
+import {buildCurvedArmchair} from './curved-armchair.js';
+
+// Same connected chair/support contract, with the observed G45 leather finish.
+export function buildLeatherPrivacyChair(color='#4c4140'){
+  const group=buildCurvedArmchair({color,pillow:false});
+  group.name='Leather privacy lounge chair';
+  const leather=new THREE.MeshPhysicalMaterial({color,roughness:.48,metalness:0,sheen:0,clearcoat:.06,clearcoatRoughness:.65});
+  const replaced=new Set();
+  group.traverse(node=>{if(node.isMesh&&node.material?.isMeshPhysicalMaterial){replaced.add(node.material);node.material=leather;}});
+  for(const material of replaced)material.dispose();
+  return group;
+}
 
 // Reuse the curved shell and star base with separate upholstery and shell finishes.
 export function buildShellLoungeChair({color='#eeeadd',shellColor='#a48246'}={}) {

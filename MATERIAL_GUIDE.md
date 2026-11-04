@@ -1,5 +1,7 @@
 # Shared materials and visual standard
 
+G45 uses the opt-in `leather-privacy` armchair finish: dark brown leather `#4c4140`, roughness 0.48, no woven bump or decorative pillow, supported by H15/H16 normal and wide views. The connected shared curved-chair geometry and dark legs are reused; default blue fabric chairs keep their established finish.
+
 Every block uses one project-wide rendering style. Choose materials by the physical surface: the same stone, fabric or metal should have the same material definition wherever it appears. Different areas can have different furniture and finishes when the camera evidence supports them.
 
 ## Source of truth
