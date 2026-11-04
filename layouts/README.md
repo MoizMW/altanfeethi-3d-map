@@ -1,5 +1,12 @@
 # Composing spatial blocks
 
+
+
+## First-floor G48/G45 banquette and reception
+
+Open `/?layout=first/g48-g45`. H51/H49 show a covered four-seat banquette with stored shelving and leaning glazing; H51 sees the H45 reception beyond it. Owner correction mirrors G48 across X=0, moving the full sofa/storage bank from right to left in the supplied top view, with boundaries following it. G48 stays at the origin; G45 furniture remains fixed at +6.8 provisional meters on Z, yaw 0. Floors meet at Z=4, with an open approach now at X=-1.65..-0.65. Longitudinal seat positions and all furniture dimensions are retained; the reception floor widens independently. Relative adjacency and shell dimensions still need owner/site review.
+
+Four Seat_H104–H107 IDs and Table_H41/H42 belong to G48. H45 has only a reception-region polygon, so its three staff chairs use temporary Seat_G45_RECEPTION_TMP_01–03 slots. The H15/H16 privacy lounge remains at `first/g45`; this H45 reception is preserved separately at `first/g45-reception`. G48's stored cabinets obscure H51's detections; use H49 to review the banquette correspondence. Photos show construction/fit-out storage, not a confirmed final seating arrangement. Buffet, reflected furniture and loose tools/cables stay outside this reconstruction. Edit each source block and refresh the layout.
 ## First-floor private-room row
 
 Open `/?layout=first/private-lounges` for G39 → G40 → G41. H13 [4567,1496], H11 [4931,1711] and H12 [5249,1914] establish the increasing-X/down-right row on the registered first-floor map. All source furniture keeps its local dimensions, finish and IDs. The repeated room spacing remains an estimate.

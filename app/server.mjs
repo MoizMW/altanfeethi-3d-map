@@ -111,6 +111,9 @@ export const server=createServer(async(req,res)=>{
     if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','security-objects.js','passport-objects.js','styles.css','editor.css','lounge-tables.js','lobby-fixtures.js','vertical-circulation.js','dining-objects.js','object-builders.js','private-lounge-objects.js','library.html','library.js','library.css'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='curved-armchair.js')target=resolve(appRoot,relative);
     else if(relative==='cylindrical-display.js'||relative==='editor-ui.js')target=resolve(appRoot,relative);
+    else if(relative==='first-floor-reception.js')target=resolve(appRoot,relative);
+    else if(relative==='shared/assets/branding/altanfeethi-reception.svg')target=resolve(projectRoot,relative);
+    else if(relative==='shared/materials/textures/reception-marble/charcoal-veined.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/materials/textures/window-display/campaign-atlas.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/materials/textures/lounge-pillow/pillow-reference.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/materials/textures/lounge-pillow/pillow-botanical-clean.png')target=resolve(projectRoot,relative);

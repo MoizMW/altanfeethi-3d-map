@@ -3,6 +3,7 @@
   "version": 1,
   "materials": {
     "privacy-lounge-leather": {"color": "#4c4140", "roughness": 0.48, "metalness": 0, "source": "H15/H16 normal and wide G45 lounge evidence", "detail": "Opt-in leather-privacy chair variant; no fabric weave or botanical pillow. Default blue lounge upholstery is unchanged."},
+    "charcoal-reception-marble": {"color": "#ffffff", "roughness": 0.32, "metalness": 0.06, "textures": {"baseColor": "shared/materials/textures/reception-marble/charcoal-veined.png"}, "source": "Built-in ImageGen recreation of H45's charcoal marble with irregular fine cream/gold veins; see generation-prompt.txt. Explicitly loaded by app/first-floor-reception.js; not original photographed stone or a measured material."},
     "slate-lounge-upholstery": {"color": "#3d4a55", "roughness": 0.94, "metalness": 0, "sheen": 0.4, "source": "Owner chair-with-pillow and side-angle photographs; shared/assets/library/references/curved-armchair/", "detail": "Fine woven-fabric bump and soft cloth sheen, loaded by app/curved-armchair.js"},
     "botanical-lounge-pillow": {"color": "#ffffff", "roughness": 0.96, "metalness": 0, "textures": {"baseColor": "shared/materials/textures/lounge-pillow/pillow-botanical-clean.png"}, "source": "Built-in ImageGen: clean slate-blue and ivory botanical fabric, generated at the owner's request to replace the distorted photo texture. Direct UV mapping; see generation-prompt.txt in the same directory."},
     "security-blue": {"color": "#294b81", "roughness": 0.45, "metalness": 0},
