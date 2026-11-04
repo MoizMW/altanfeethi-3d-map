@@ -4,164 +4,98 @@
   "types": {
     "passport-booth": {
       "builder": "procedural-passport-booth",
-      "defaultSize": [
-        1.35,
-        1.7,
-        2.25
-      ]
+      "defaultSize": [1.35, 1.7, 2.25]
     },
     "passport-gate": {
       "builder": "procedural-passport-gate",
-      "defaultSize": [
-        1.925,
-        1.1,
-        0.24
-      ]
+      "defaultSize": [1.925, 1.1, 0.24]
     },
     "passport-totem": {
       "builder": "procedural-passport-totem",
-      "defaultSize": [
-        0.6,
-        1.9,
-        0.24
-      ],
-      "variants": [
-        "digital-immigration-device"
-      ]
+      "defaultSize": [0.6, 1.9, 0.24],
+      "variants": ["digital-immigration-device"]
     },
     "security-scanner": {
       "builder": "procedural-security-scanner",
-      "defaultSize": [
-        1.15,
-        1.5,
-        4.6
-      ]
+      "defaultSize": [1.15, 1.5, 4.6]
     },
     "security-detector": {
       "builder": "procedural-security-detector",
-      "defaultSize": [
-        1.05,
-        2.3,
-        0.45
-      ]
+      "defaultSize": [1.05, 2.3, 0.45]
     },
     "security-console": {
       "builder": "procedural-security-console",
-      "defaultSize": [
-        1.1,
-        1.65,
-        0.5
-      ]
+      "defaultSize": [1.1, 1.65, 0.5]
     },
     "security-kiosk": {
       "builder": "procedural-security-kiosk",
-      "defaultSize": [
-        0.62,
-        1.5,
-        0.5
-      ]
+      "defaultSize": [0.62, 1.5, 0.5]
     },
     "security-barrier": {
       "builder": "procedural-security-barrier",
-      "defaultSize": [
-        4.4,
-        1.15,
-        0.28
-      ]
+      "defaultSize": [4.4, 1.15, 0.28]
     },
     "floor-lamp": {
       "builder": "procedural-floor-lamp",
-      "defaultSize": [
-        0.46,
-        1.85,
-        0.46
-      ],
-      "variants": [
-        "pendant"
-      ]
+      "defaultSize": [0.46, 1.85, 0.46],
+      "variants": ["pendant"]
     },
     "display-console": {
       "builder": "procedural-display-console",
-      "defaultSize": [
-        3.1,
-        0.9,
-        0.4
-      ],
+      "defaultSize": [3.1, 0.9, 0.4],
       "variants": [
         "grand-piano",
         "ring-pedestal",
-        "i-zone-end-console"
+        "i-zone-end-console",
+        "window-sculpture"
       ]
     },
     "sofa": {
       "builder": "procedural-sofa",
-      "defaultSize": [
-        2.05,
-        0.88,
-        0.9
-      ]
+      "defaultSize": [2.05, 0.88, 0.9]
     },
     "armchair": {
       "builder": "procedural-armchair",
-      "defaultSize": [
-        0.88,
-        0.9,
-        0.92
-      ],
+      "defaultSize": [0.88, 0.9, 0.92],
       "variants": [
         "armless",
         "egg-swivel",
         "shell-lounge",
-        "leather-privacy"
+        "leather-privacy",
+        "tub-chair"
       ],
       "defaultColor": "#3d4a55",
       "notes": "Default armchairs use the owner's curved bucket-back chair, slate-blue upholstery, tapered dark timber legs and botanical-print pillow. Existing egg-swivel and shell-lounge variants retain their designs. See shared/assets/library/references/curved-armchair/. Retired green chair overrides are rejected by block validation."
     },
     "table": {
       "builder": "procedural-oval-table",
-      "defaultSize": [
-        1.5,
-        0.42,
-        0.78
-      ],
+      "defaultSize": [1.5, 0.42, 0.78],
       "variants": [
         "square-stone",
         "round-glass",
         "rectangular",
         "round-pedestal",
-        "nested-stone"
+        "nested-stone",
+        "organic-stone"
       ]
     },
     "screen": {
       "builder": "procedural-screen",
-      "defaultSize": [
-        3.8,
-        2.3,
-        0.07
-      ],
+      "defaultSize": [3.8, 2.3, 0.07],
       "variants": [
         "open-shelving",
-        "teal-gold-panel"
+        "teal-gold-panel",
+        "curved-bronze"
       ]
     },
     "plant": {
       "builder": "procedural-plant",
-      "defaultSize": [
-        0.5,
-        1.7,
-        0.5
-      ],
-      "variants": [
-        "rectangular-planter"
-      ]
+      "defaultSize": [0.5, 1.7, 0.5],
+      "variants": ["rectangular-planter"]
     },
     "counter": {
       "builder": "procedural-reception-counter",
-      "defaultSize": [
-        2.45,
-        1.18,
-        0.86
-      ],
+      "defaultSize": [2.45, 1.18, 0.86],
       "variants": [
         "food-buffet",
         "unused-glass-counter"
@@ -169,33 +103,22 @@
     },
     "office-chair": {
       "builder": "procedural-office-chair",
-      "defaultSize": [
-        0.64,
-        1.22,
-        0.68
-      ]
+      "defaultSize": [0.64, 1.22, 0.68]
     },
     "cabinet": {
       "builder": "procedural-cabinet",
-      "defaultSize": [
-        2.45,
-        0.78,
-        0.42
-      ],
+      "defaultSize": [2.45, 0.78, 0.42],
       "variants": [
         "checkin-kiosk",
         "drawer-pedestal",
         "access-reader",
-        "plain-planter"
+        "plain-planter",
+        "window-sill"
       ]
     },
     "display": {
       "builder": "procedural-display",
-      "defaultSize": [
-        0.58,
-        0.42,
-        0.18
-      ],
+      "defaultSize": [0.58, 0.42, 0.18],
       "variants": [
         "framed-art",
         "desk-reader"
@@ -203,11 +126,7 @@
     },
     "wall-panel": {
       "builder": "procedural-wall-panel",
-      "defaultSize": [
-        12.2,
-        4.1,
-        0.12
-      ],
+      "defaultSize": [12.2, 4.1, 0.12],
       "variants": [
         "plain",
         "air-curtain",
@@ -216,37 +135,26 @@
         "stone-relief",
         "teal-service-door",
         "timber-office-door",
-        "pleated-curtain"
+        "pleated-curtain",
+        "oval-mirror",
+        "cylindrical-display",
+        "window-drapery"
       ]
     },
     "luggage-scale": {
       "builder": "procedural-luggage-scale",
-      "defaultSize": [
-        0.6,
-        1.65,
-        0.75
-      ]
+      "defaultSize": [0.6, 1.65, 0.75]
     },
     "privacy-pod": {
       "builder": "procedural-privacy-pod",
-      "defaultSize": [
-        1.35,
-        2.35,
-        1.35
-      ],
+      "defaultSize": [1.35, 2.35, 1.35],
       "notes": "Glazed work pod, no occupancy chair ID; local +Z faces door"
     },
     "automatic-glass-gate": {
       "builder": "procedural-automatic-glass-gate",
-      "defaultSize": [
-        8.4,
-        2.8,
-        0.16
-      ],
+      "defaultSize": [8.4, 2.8, 0.16],
       "notes": "Double sliding leaves and fixed side glazing, no scanner stand; openFraction 0..1 controls static opening preview. Overall size includes header.",
-      "variants": [
-        "swing-turnstile"
-      ]
+      "variants": ["swing-turnstile"]
     }
   }
 }

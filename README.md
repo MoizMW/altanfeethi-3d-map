@@ -1,6 +1,10 @@
 # Altanfeethi spatial twin
 
+Editor shortcuts: search the object list by name, seat/table ID or source room (`/` focuses search); use **Reset view** or **Home** to recenter. Apply adjustments, then use **Save block** or **Ctrl/Cmd+S**. **Ctrl/Cmd+Z** undoes applied edits outside text fields. The header shows saved/unsaved/saving state. In a combined view, select an object and use **Edit in source room** to open that exact object for editing.
+
 G45 privacy lounge: `http://127.0.0.1:4209/?block=first/g45` — seven leather chairs, five stone pedestal tables and rounded privacy screens. Lounge-only scope excludes H45 reception; see [G45 evidence and review notes](blocks/first/g45/README.md).
+
+G39 → G40 → G41 private-room row: `http://127.0.0.1:4209/?layout=first/private-lounges` — three independent rooms composed in registered map order, with 12 seats, three table identities, shared dividing walls and an entrance corridor. Individual rooms remain editable at `/?block=first/g39`, `/?block=first/g40` and `/?block=first/g41`.
 
 Shared object library: `http://127.0.0.1:4209/library.html` — searchable 3D inventory of saved furniture and fixtures, with size/finish configurations and source-room links. Refresh the saved directory inventory with `npm run library:refresh`. See [library workflow](shared/assets/library/README.md).
 
@@ -17,6 +21,8 @@ Departure_Reception: `http://127.0.0.1:4209/?block=ground/departure-reception` �
 Small I-zone lounges: `/?block=ground/g60` (I37/I42) and `/?block=ground/i33-lounge` (I33). Two blue chairs and one white two-seat sofa each; both included after G63 in the main combined layout.
 
 G63 portrait lounge: `http://127.0.0.1:4209/?block=ground/g63` — [evidence and review notes](blocks/ground/g63/README.md). Four armchairs, four two-seat sofas, 12 owner-authorized temporary seat IDs; 7.4 m width, half the G12/G14 span.
+
+G41 first-floor private lounge: `http://127.0.0.1:4209/?block=first/g41` — [evidence and review notes](blocks/first/g41/README.md). White sofa, two blue chairs, Table_H5, TV, mirror and flag stand; four unique seats H21–H24.
 
 G12 + G14 shared C-zone lounge: `http://127.0.0.1:4209/?block=ground/g12-g14` — [evidence and review notes](blocks/ground/g12-g14/README.md). One editable space for both groups, with 21 unique seat IDs.
 
