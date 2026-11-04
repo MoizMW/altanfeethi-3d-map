@@ -1,0 +1,304 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-privacy-lounge-045",
+  "floorSize": [
+    5.4,
+    7.2
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-03T07:14:37.307Z",
+    "anchors": [
+      {
+        "camera": "H15",
+        "pixel": [
+          3785,
+          2516
+        ],
+        "heading": 275,
+        "status": "verified"
+      },
+      {
+        "camera": "H16",
+        "pixel": [
+          3091,
+          2585
+        ],
+        "heading": 71,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      2850,
+      2200,
+      4050,
+      2950
+    ],
+    "localAxes": {
+      "x": "From the three partition-side chairs toward the opposing row of four chairs",
+      "z": "From the reeded glazing/entrance end toward the warm wood end wall",
+      "y": "Up; first-floor elevation unresolved"
+    },
+    "mapReview": "Map and H15/H16 anchors show one bounded seven-seat lounge. H45 is a remote reception/buffet camera and is excluded from geometry per owner lounge-only instruction."
+  },
+  "footprint": [
+    [
+      -2.7,
+      -3.6
+    ],
+    [
+      2.7,
+      -3.6
+    ],
+    [
+      2.7,
+      3.6
+    ],
+    [
+      -2.7,
+      3.6
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g45-dark-floor",
+      "center": [
+        0,
+        0
+      ],
+      "size": [
+        5.4,
+        7.2
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulation": {
+    "id": "g45-central-access",
+    "polygon": [
+      [
+        -0.35,
+        -3.15
+      ],
+      [
+        0.35,
+        -3.15
+      ],
+      [
+        0.35,
+        3.22
+      ],
+      [
+        -0.35,
+        3.22
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "estimated-clear-strip",
+    "notes": "Keep the central dark tiled route clear between the two table rows. No pale rug is visible."
+  },
+  "walls": [
+    {
+      "id": "g45-partition-side-wall",
+      "kind": "solid",
+      "start": [
+        -2.55,
+        -3.35
+      ],
+      "end": [
+        -2.55,
+        3.35
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#b9aa8c",
+      "owner": "first/g45",
+      "sources": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Visible local boundary; dimensions and material approximation require review.",
+      "notes": "Pale beige striated panels behind the three privacy seats in H15."
+    },
+    {
+      "id": "g45-facing-side-wall",
+      "kind": "solid",
+      "start": [
+        2.55,
+        -3.35
+      ],
+      "end": [
+        2.55,
+        3.35
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c8c4b6",
+      "owner": "first/g45",
+      "sources": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Visible local boundary; dimensions and material approximation require review.",
+      "notes": "Pale vertically striated wall behind the four opposing chairs in H16."
+    },
+    {
+      "id": "g45-wood-end-wall",
+      "kind": "solid",
+      "start": [
+        -2.55,
+        3.35
+      ],
+      "end": [
+        2.55,
+        3.35
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#856746",
+      "owner": "first/g45",
+      "sources": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Visible local boundary; dimensions and material approximation require review.",
+      "finish": "warm-wood",
+      "interiorSide": -1,
+      "notes": "Warm timber end cladding visible behind the end pair in H16; extent estimated."
+    },
+    {
+      "id": "g45-glazed-entry",
+      "kind": "glass",
+      "start": [
+        -2.55,
+        -3.35
+      ],
+      "end": [
+        2.55,
+        -3.35
+      ],
+      "height": 3.3,
+      "thickness": 0.055,
+      "color": "#a8aaa3",
+      "owner": "first/g45",
+      "sources": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Visible local boundary; dimensions and material approximation require review.",
+      "variant": "reeded-entry",
+      "frameColor": "#8b8975",
+      "opacity": 0.25,
+      "doors": [
+        {
+          "id": "g45-glass-entry-door",
+          "offset": 2.55,
+          "width": 1.1,
+          "height": 2.9,
+          "handleHeight": 1.1,
+          "handleLength": 0.55
+        }
+      ],
+      "notes": "Reeded glazing and framed entrance hardware visible in H15. Door width/location and opening mechanism remain provisional; no automation is inferred."
+    },
+    {
+      "id": "g45-privacy-screen-1",
+      "kind": "glass",
+      "start": [
+        -2.55,
+        -1.025
+      ],
+      "end": [
+        -1.05,
+        -1.025
+      ],
+      "height": 2.8,
+      "thickness": 0.05,
+      "color": "#a8aaa3",
+      "owner": "first/g45",
+      "sources": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Visible local boundary; dimensions and material approximation require review.",
+      "variant": "rounded-reeded-divider",
+      "notes": "One rounded gold-framed privacy screen between each adjacent pair of the three H15 chairs. Height, corner radius and exact reed pattern are estimates."
+    },
+    {
+      "id": "g45-privacy-screen-2",
+      "kind": "glass",
+      "start": [
+        -2.55,
+        1.025
+      ],
+      "end": [
+        -1.05,
+        1.025
+      ],
+      "height": 2.8,
+      "thickness": 0.05,
+      "color": "#a8aaa3",
+      "owner": "first/g45",
+      "sources": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Visible local boundary; dimensions and material approximation require review.",
+      "variant": "rounded-reeded-divider",
+      "notes": "One rounded gold-framed privacy screen between each adjacent pair of the three H15 chairs. Height, corner radius and exact reed pattern are estimates."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "size": [
+      5.4,
+      7.2
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "visualization-height-estimate-hidden-by-default"
+  },
+  "boundaryReview": [
+    {
+      "id": "g45-entrance",
+      "kind": "glass-door",
+      "start": [
+        -0.55,
+        -3.35
+      ],
+      "end": [
+        0.55,
+        -3.35
+      ],
+      "sources": [
+        "H15"
+      ],
+      "status": "door-hardware-observed-dimensions-and-mechanism-estimated"
+    },
+    {
+      "id": "g45-neighbors",
+      "kind": "unknown",
+      "sources": [
+        "H15",
+        "H16"
+      ],
+      "status": "standalone-group-no-global-join-assigned"
+    }
+  ],
+  "notes": [
+    "Owner explicitly requests only the lounge. H45 reception/buffet is remote on the first-floor map and is not modeled or spatially merged.",
+    "Seven chairs and five stone pedestal tables follow H15/H16, with two privacy partitions and a clear central aisle.",
+    "The 5.4 × 7.2 m extent, ceiling estimate and hardware dimensions are provisional; no metric camera calibration or first-floor height is implied."
+  ]
+}

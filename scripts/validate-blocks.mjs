@@ -14,6 +14,8 @@ for(const floor of ['ground','first']){
   for(const entry of entries){
     if(!entry.isDirectory())continue;
     const directory=resolve(floorPath,entry.name);
+    // Branch switches can leave ignored backups without an authored block.
+    if((await readdir(directory)).every(name=>name==='backups'))continue;
     const [manifest,architecture,objects,evidence]=await Promise.all(['manifest.json','architecture.json','objects.json','evidence.json'].map(async file=>JSON.parse(await readFile(resolve(directory,file),'utf8'))));
     if(manifest.floor!==floor)throw new Error(`${floor}/${entry.name}: manifest floor does not match its directory`);
     if(manifest.slug!==entry.name)throw new Error(`${floor}/${entry.name}: manifest slug does not match its directory`);

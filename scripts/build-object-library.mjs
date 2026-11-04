@@ -30,6 +30,7 @@ export async function collectObjectLibrary(root = projectRoot) {
       .filter(entry => entry.isDirectory()).sort((a, b) => a.name.localeCompare(b.name));
     for (const directory of directories) {
       const block = `${floor}/${directory.name}`, base = resolve(root, 'blocks', block);
+      if ((await readdir(base)).every(name => name === 'backups')) continue;
       const [manifest, file] = await Promise.all(['manifest.json', 'objects.json']
         .map(async name => JSON.parse(await readFile(resolve(base, name), 'utf8'))));
       blocks.push({key: block, name: manifest.name, count: file.objects.length});

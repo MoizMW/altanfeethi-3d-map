@@ -3,10 +3,10 @@
   "version": 1,
   "scope": "Saved ground and first-floor block objects; excludes architecture and composed layout copies.",
   "totals": {
-    "blocks": 35,
-    "designs": 60,
-    "configurations": 190,
-    "placements": 570
+    "blocks": 36,
+    "designs": 63,
+    "configurations": 194,
+    "placements": 584
   },
   "blocks": [
     {
@@ -183,6 +183,11 @@
       "key": "first/g42",
       "name": "G42 · First-floor paired seating",
       "count": 6
+    },
+    {
+      "key": "first/g45",
+      "name": "G45 · Privacy lounge",
+      "count": 14
     }
   ],
   "assets": [
@@ -2340,6 +2345,143 @@
                 "I25",
                 "I27",
                 "I28"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armchair-2339bb660c11",
+      "name": "Armchair · Leather Privacy",
+      "category": "Seating",
+      "design": {
+        "type": "armchair",
+        "variant": "leather-privacy"
+      },
+      "count": 7,
+      "configurations": [
+        {
+          "id": "f59486f87bb4",
+          "appearance": {
+            "size": [
+              1,
+              1.04,
+              1.05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#4c4140",
+            "pillow": false
+          },
+          "preview": {
+            "type": "armchair",
+            "variant": "leather-privacy",
+            "size": [
+              1,
+              1.04,
+              1.05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#4c4140",
+            "pillow": false,
+            "id": "g45-chair-39",
+            "name": "Armchair · Leather Privacy",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-chair-39",
+              "name": "Partition-side leather chair · H39",
+              "seats": [
+                "Seat_H39"
+              ],
+              "cameras": [
+                "H15",
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-chair-38",
+              "name": "Partition-side leather chair · H38",
+              "seats": [
+                "Seat_H38"
+              ],
+              "cameras": [
+                "H15",
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-chair-37",
+              "name": "Partition-side leather chair · H37",
+              "seats": [
+                "Seat_H37"
+              ],
+              "cameras": [
+                "H15",
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-chair-33",
+              "name": "Facing leather chair · H33",
+              "seats": [
+                "Seat_H33"
+              ],
+              "cameras": [
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-chair-34",
+              "name": "Facing leather chair · H34",
+              "seats": [
+                "Seat_H34"
+              ],
+              "cameras": [
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-chair-35",
+              "name": "Facing leather chair · H35",
+              "seats": [
+                "Seat_H35"
+              ],
+              "cameras": [
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-chair-36",
+              "name": "Facing leather chair · H36",
+              "seats": [
+                "Seat_H36"
+              ],
+              "cameras": [
+                "H16"
               ]
             }
           ]
@@ -6960,7 +7102,7 @@
         "type": "table",
         "variant": "round-pedestal"
       },
-      "count": 12,
+      "count": 17,
       "configurations": [
         {
           "id": "6eb7d739fc03",
@@ -7275,6 +7417,97 @@
               "seats": [],
               "cameras": [
                 "H18"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "33eb35c61299",
+          "appearance": {
+            "size": [
+              0.62,
+              0.55,
+              0.62
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e5e1d5"
+          },
+          "preview": {
+            "type": "table",
+            "variant": "round-pedestal",
+            "size": [
+              0.62,
+              0.55,
+              0.62
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e5e1d5",
+            "id": "g45-table-14",
+            "name": "Table · Round Pedestal",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-table-14",
+              "name": "Round stone pedestal table · H14",
+              "seats": [],
+              "cameras": [
+                "H15",
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-table-13",
+              "name": "Round stone pedestal table · H13",
+              "seats": [],
+              "cameras": [
+                "H15",
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-table-12",
+              "name": "Round stone pedestal table · H12",
+              "seats": [],
+              "cameras": [
+                "H15",
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-table-10",
+              "name": "Round stone pedestal table · H10",
+              "seats": [],
+              "cameras": [
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-table-11",
+              "name": "Round stone pedestal table · H11",
+              "seats": [],
+              "cameras": [
+                "H16"
               ]
             }
           ]
@@ -12386,6 +12619,71 @@
       ]
     },
     {
+      "id": "wall-panel-00df83b6fb6a",
+      "name": "Wall Panel · Fire Extinguisher",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "wall-panel",
+        "variant": "fire-extinguisher"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "f38b79ce7cef",
+          "appearance": {
+            "size": [
+              0.3,
+              0.92,
+              0.3
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ab342b"
+          },
+          "preview": {
+            "type": "wall-panel",
+            "variant": "fire-extinguisher",
+            "size": [
+              0.3,
+              0.92,
+              0.3
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ab342b",
+            "id": "g45-extinguisher",
+            "name": "Wall Panel · Fire Extinguisher",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-extinguisher",
+              "name": "Fire extinguisher on red stand",
+              "seats": [],
+              "cameras": [
+                "H15",
+                "H16"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "wall-panel-15487b0b519b",
       "name": "Wall Panel · Plain",
       "category": "Decor & fixtures",
@@ -13070,6 +13368,71 @@
               "cameras": [
                 "A1",
                 "A3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall-panel-64eee1eed254",
+      "name": "Wall Panel · Waste Bin",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "wall-panel",
+        "variant": "waste-bin"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "e0582a0553b7",
+          "appearance": {
+            "size": [
+              0.26,
+              0.42,
+              0.26
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8d918a"
+          },
+          "preview": {
+            "type": "wall-panel",
+            "variant": "waste-bin",
+            "size": [
+              0.26,
+              0.42,
+              0.26
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8d918a",
+            "id": "g45-waste-bin",
+            "name": "Wall Panel · Waste Bin",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-waste-bin",
+              "name": "Small metal waste bin",
+              "seats": [],
+              "cameras": [
+                "H15",
+                "H16"
               ]
             }
           ]

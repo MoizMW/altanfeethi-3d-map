@@ -1,5 +1,7 @@
 # Altanfeethi spatial twin
 
+G45 privacy lounge: `http://127.0.0.1:4209/?block=first/g45` — seven leather chairs, five stone pedestal tables and rounded privacy screens. Lounge-only scope excludes H45 reception; see [G45 evidence and review notes](blocks/first/g45/README.md).
+
 Shared object library: `http://127.0.0.1:4209/library.html` — searchable 3D inventory of saved furniture and fixtures, with size/finish configurations and source-room links. Refresh the saved directory inventory with `npm run library:refresh`. See [library workflow](shared/assets/library/README.md).
 
 Combined G15/G13: `http://127.0.0.1:4209/?layout=ground/g15-g13` — checkpoint, two offices and passport control, with a provisional connecting approach. Both source blocks load live with their saved furniture and gate sizes.

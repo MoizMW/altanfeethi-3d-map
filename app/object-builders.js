@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 import {receptionSizes, buildReceptionObject} from './reception-objects.js';
 import {buildDiningObject} from './dining-objects.js';
-import {buildEggChair,buildShellLoungeChair} from './lounge-objects.js';
+import {buildEggChair,buildShellLoungeChair,buildLeatherPrivacyChair} from './lounge-objects.js';
 import {buildCurvedArmchair} from './curved-armchair.js';
 import {buildNestedStoneTable} from './lounge-tables.js';
 import {buildLobbyFixture} from './lobby-fixtures.js';
@@ -22,6 +22,7 @@ export function buildObject(o){const g=new THREE.Group(),[w,h,d]=referenceSize[o
  else if(passportSizes[o.type])buildPassportObject(g,o,{box,mesh,rod,mat});
  else if(o.type==='armchair'&&o.variant==='egg-swivel')g.add(buildEggChair(o.color));
  else if(o.type==='armchair'&&o.variant==='shell-lounge')g.add(buildShellLoungeChair(o));
+ else if(o.type==='armchair'&&o.variant==='leather-privacy')g.add(buildLeatherPrivacyChair(o.color));
  else if(o.type==='armchair'&&(!o.variant||o.variant==='default'))g.add(buildCurvedArmchair(o));
  else if(o.type==='sofa'||o.type==='armchair'){
   const n=o.type==='sofa'?2:1;

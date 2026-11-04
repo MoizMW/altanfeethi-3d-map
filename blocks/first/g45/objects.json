@@ -1,0 +1,447 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-privacy-lounge-045",
+  "objects": [
+    {
+      "id": "g45-chair-39",
+      "type": "armchair",
+      "name": "Partition-side leather chair · H39",
+      "position": [
+        -1.75,
+        0,
+        -2.05
+      ],
+      "yaw": 90,
+      "size": [
+        1,
+        1.04,
+        1.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c4140",
+      "seats": [
+        "Seat_H39"
+      ],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "leather-privacy",
+      "pillow": false,
+      "notes": "One of three individual chairs with gold-framed privacy screens between adjacent seats; brown leather finish observed in H15."
+    },
+    {
+      "id": "g45-chair-38",
+      "type": "armchair",
+      "name": "Partition-side leather chair · H38",
+      "position": [
+        -1.75,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        1,
+        1.04,
+        1.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c4140",
+      "seats": [
+        "Seat_H38"
+      ],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "leather-privacy",
+      "pillow": false,
+      "notes": "One of three individual chairs with gold-framed privacy screens between adjacent seats; brown leather finish observed in H15."
+    },
+    {
+      "id": "g45-chair-37",
+      "type": "armchair",
+      "name": "Partition-side leather chair · H37",
+      "position": [
+        -1.75,
+        0,
+        2.05
+      ],
+      "yaw": 90,
+      "size": [
+        1,
+        1.04,
+        1.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c4140",
+      "seats": [
+        "Seat_H37"
+      ],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "leather-privacy",
+      "pillow": false,
+      "notes": "One of three individual chairs with gold-framed privacy screens between adjacent seats; brown leather finish observed in H15."
+    },
+    {
+      "id": "g45-chair-33",
+      "type": "armchair",
+      "name": "Facing leather chair · H33",
+      "position": [
+        1.75,
+        0,
+        2.35
+      ],
+      "yaw": 270,
+      "size": [
+        1,
+        1.04,
+        1.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c4140",
+      "seats": [
+        "Seat_H33"
+      ],
+      "cameras": [
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "leather-privacy",
+      "pillow": false,
+      "notes": "One of the four opposing chairs along the plain wall, facing the three privacy seats. No decorative pillow is visible."
+    },
+    {
+      "id": "g45-chair-34",
+      "type": "armchair",
+      "name": "Facing leather chair · H34",
+      "position": [
+        1.75,
+        0,
+        0.8
+      ],
+      "yaw": 270,
+      "size": [
+        1,
+        1.04,
+        1.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c4140",
+      "seats": [
+        "Seat_H34"
+      ],
+      "cameras": [
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "leather-privacy",
+      "pillow": false,
+      "notes": "One of the four opposing chairs along the plain wall, facing the three privacy seats. No decorative pillow is visible."
+    },
+    {
+      "id": "g45-chair-35",
+      "type": "armchair",
+      "name": "Facing leather chair · H35",
+      "position": [
+        1.75,
+        0,
+        -0.8
+      ],
+      "yaw": 270,
+      "size": [
+        1,
+        1.04,
+        1.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c4140",
+      "seats": [
+        "Seat_H35"
+      ],
+      "cameras": [
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "leather-privacy",
+      "pillow": false,
+      "notes": "One of the four opposing chairs along the plain wall, facing the three privacy seats. No decorative pillow is visible."
+    },
+    {
+      "id": "g45-chair-36",
+      "type": "armchair",
+      "name": "Facing leather chair · H36",
+      "position": [
+        1.75,
+        0,
+        -2.35
+      ],
+      "yaw": 270,
+      "size": [
+        1,
+        1.04,
+        1.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c4140",
+      "seats": [
+        "Seat_H36"
+      ],
+      "cameras": [
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "leather-privacy",
+      "pillow": false,
+      "notes": "One of the four opposing chairs along the plain wall, facing the three privacy seats. No decorative pillow is visible."
+    },
+    {
+      "id": "g45-table-14",
+      "type": "table",
+      "name": "Round stone pedestal table · H14",
+      "position": [
+        -0.68,
+        0,
+        -2.05
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.55,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H14",
+      "notes": "Individual privacy-seat table, seen again from the opposite camera. Repeated observations create one table only."
+    },
+    {
+      "id": "g45-table-13",
+      "type": "table",
+      "name": "Round stone pedestal table · H13",
+      "position": [
+        -0.68,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.55,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H13",
+      "notes": "Individual privacy-seat table, seen again from the opposite camera. Repeated observations create one table only."
+    },
+    {
+      "id": "g45-table-12",
+      "type": "table",
+      "name": "Round stone pedestal table · H12",
+      "position": [
+        -0.68,
+        0,
+        2.05
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.55,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H12",
+      "notes": "Individual privacy-seat table, seen again from the opposite camera. Repeated observations create one table only."
+    },
+    {
+      "id": "g45-table-10",
+      "type": "table",
+      "name": "Round stone pedestal table · H10",
+      "position": [
+        0.68,
+        0,
+        1.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.55,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H10",
+      "notes": "Shared table between two opposing-row chairs; stone top and brass drum support are approximate."
+    },
+    {
+      "id": "g45-table-11",
+      "type": "table",
+      "name": "Round stone pedestal table · H11",
+      "position": [
+        0.68,
+        0,
+        -1.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.55,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H11",
+      "notes": "Shared table between two opposing-row chairs; stone top and brass drum support are approximate."
+    },
+    {
+      "id": "g45-extinguisher",
+      "type": "wall-panel",
+      "name": "Fire extinguisher on red stand",
+      "position": [
+        -1.5,
+        0,
+        3.05
+      ],
+      "yaw": 0,
+      "size": [
+        0.3,
+        0.92,
+        0.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab342b",
+      "seats": [],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "fire-extinguisher",
+      "notes": "Visible beside the wood-end seating in H16 and at the edge of H15-wide; same fixture is not duplicated."
+    },
+    {
+      "id": "g45-waste-bin",
+      "type": "wall-panel",
+      "name": "Small metal waste bin",
+      "position": [
+        -0.92,
+        0,
+        3.06
+      ],
+      "yaw": 0,
+      "size": [
+        0.26,
+        0.42,
+        0.26
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8d918a",
+      "seats": [],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
+      "variant": "waste-bin",
+      "notes": "One small bin beside the end wall; cross-view correspondence and exact position estimated."
+    }
+  ]
+}

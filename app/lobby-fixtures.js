@@ -1,7 +1,11 @@
 // Builders use the existing type reference sizes so resize/selection keep working.
 export function buildLobbyFixture(g,o,{box,mesh,rod,mat,referenceSize,THREE}) {
   if(!['waste-bin','fire-extinguisher','sanitizer','lift-doors'].includes(o.variant))return false;
-  const [w,h,d]=referenceSize[o.type],body=mat(o.color,.45,.25),metal=mat('#a6acab',.3,.65),black=mat('#242a2b');
+  // Build fixtures in physical units so circular rods stay round after the
+  // outer object builder applies its type's nonuniform reference scaling.
+  const reference=referenceSize[o.type],[w,h,d]=o.size,assembly=new THREE.Group();
+  assembly.scale.fromArray(reference.map((value,i)=>value/o.size[i]));g.add(assembly);g=assembly;
+  const body=mat(o.color,.45,.25),metal=mat('#a6acab',.3,.65),black=mat('#242a2b');
   const cylinder=(sx,sy,sz,p,m)=>{const part=mesh(g,new THREE.CylinderGeometry(1,1,1,32),m,p);part.scale.set(sx,sy,sz);return part;};
   if(o.variant==='waste-bin'){
     cylinder(w*.43,h,d*.43,[0,h/2,0],body);
