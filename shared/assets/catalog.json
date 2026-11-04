@@ -111,7 +111,8 @@
       "variants": [
         "armless",
         "egg-swivel",
-        "shell-lounge"
+        "shell-lounge",
+        "tub-chair"
       ],
       "defaultColor": "#3d4a55",
       "notes": "Default armchairs use the owner's curved bucket-back chair, slate-blue upholstery, tapered dark timber legs and botanical-print pillow. Existing egg-swivel and shell-lounge variants retain their designs. See shared/assets/library/references/curved-armchair/. Retired green chair overrides are rejected by block validation."
@@ -128,7 +129,8 @@
         "round-glass",
         "rectangular",
         "round-pedestal",
-        "nested-stone"
+        "nested-stone",
+        "organic-stone"
       ]
     },
     "screen": {
@@ -215,7 +217,8 @@
         "stone-relief",
         "teal-service-door",
         "timber-office-door",
-        "pleated-curtain"
+        "pleated-curtain",
+        "oval-mirror"
       ]
     },
     "luggage-scale": {

@@ -16,6 +16,8 @@ Small I-zone lounges: `/?block=ground/g60` (I37/I42) and `/?block=ground/i33-lou
 
 G63 portrait lounge: `http://127.0.0.1:4209/?block=ground/g63` — [evidence and review notes](blocks/ground/g63/README.md). Four armchairs, four two-seat sofas, 12 owner-authorized temporary seat IDs; 7.4 m width, half the G12/G14 span.
 
+G41 first-floor private lounge: `http://127.0.0.1:4209/?block=first/g41` — [evidence and review notes](blocks/first/g41/README.md). White sofa, two blue chairs, Table_H5, TV, mirror and flag stand; four unique seats H21–H24.
+
 G12 + G14 shared C-zone lounge: `http://127.0.0.1:4209/?block=ground/g12-g14` — [evidence and review notes](blocks/ground/g12-g14/README.md). One editable space for both groups, with 21 unique seat IDs.
 
 Zone C pods and approach: `http://127.0.0.1:4209/?block=ground/zone-c-pods`.

@@ -14,6 +14,7 @@ export function validateBlock(b) {
     for(const d of w.doors.slice().sort((a,b)=>a.offset-b.offset)){
       if(typeof d.id!=='string'||!d.id||doorIds.has(d.id)||![d.offset,d.width,d.height].every(Number.isFinite)||d.width<=.1||d.height<=.1||d.height>w.height||d.offset-d.width/2<0||d.offset+d.width/2>length||d.offset-d.width/2<=previousEnd)fail('Invalid or overlapping glass door.');
       if((d.handleHeight!=null&&(!Number.isFinite(d.handleHeight)||d.handleHeight<=0||d.handleHeight>=d.height))||(d.handleLength!=null&&(!Number.isFinite(d.handleLength)||d.handleLength<=0)))fail('Invalid glass door handle.');
+      if(d.kind==='sliding'&&(!Number.isFinite(d.openFraction??0)||(d.openFraction??0)<0||(d.openFraction??0)>1||![-1,1].includes(d.slideDirection??-1)))fail('Invalid sliding glass door travel.');
       previousEnd=d.offset+d.width/2;doorIds.add(d.id);
     }
   }

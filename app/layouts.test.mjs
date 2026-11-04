@@ -1,13 +1,14 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
 import * as THREE from 'three';
 import {composeLayout} from './layouts.mjs';
 import {buildArchitecture} from './architecture.js';
 import {buildPassportObject,passportSizes} from './passport-objects.js';
 import {server} from './server.mjs';
 
-const root=new URL('../',import.meta.url).pathname;
+const root=fileURLToPath(new URL('../',import.meta.url));
 const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
 const sourceFiles=['ground/g15','ground/g13'].flatMap(key=>['manifest','architecture','objects','evidence'].map(f=>new URL(`../blocks/${key}/${f}.json`,import.meta.url)));
 const sourceBytes=()=>Promise.all(sourceFiles.map(file=>readFile(file,'utf8')));

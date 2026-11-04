@@ -6,7 +6,7 @@ import {createHash} from 'node:crypto';
 const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 const categories = ['Seating', 'Tables & consoles', 'Decor & fixtures', 'Reception & equipment'];
 const designFields = ['type', 'variant', 'shape', 'mount', 'flagDesign', 'serviceStyle'];
-const appearanceFields = ['size', 'scale', 'color', 'shellColor', 'pillow', 'accessories', 'workstations',
+const appearanceFields = ['size', 'scale', 'color', 'shellColor', 'cushionColor', 'pillow', 'accessories', 'workstations',
   'openFraction', 'leafCount', 'hingeSide', 'omitLeftPartition', 'omitRightPartition', 'beltClosed', 'screenScale'];
 const select = (object, fields) => Object.fromEntries(fields.filter(key => object[key] !== undefined).map(key => [key, object[key]]));
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex').slice(0, 12);

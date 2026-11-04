@@ -138,6 +138,38 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
         continue;
       }
       if(wall.variant==='reeded-divider'){
+        if(wall.doors?.some(door=>door.kind==='sliding')){
+          const metal=material('#a69b80',{metalness:.45,roughness:.4});
+          const reeded=material('#a8a999',{transparent:true,opacity:.32,roughness:.4,depthWrite:false,side:THREE.DoubleSide});
+          const pane=(target,width,h,x)=>{
+            if(width<.001||h<.001)return;
+            add(target,new THREE.BoxGeometry(width,h,wall.thickness),reeded,x,h/2,0);
+            for(const edge of [-1,1])add(target,new THREE.BoxGeometry(.035,h,.05),metal,x+edge*width/2,h/2,0);
+            for(const y of [.035,h-.0175])add(target,new THREE.BoxGeometry(width,.035,.05),metal,x,y,0);
+            const lines=[];
+            for(let at=.04;at<width;at+=.055)for(const z of [-wall.thickness/2-.002,wall.thickness/2+.002])lines.push(new THREE.Vector3(x-width/2+at,.06,z),new THREE.Vector3(x-width/2+at,h-.03,z));
+            target.add(new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(lines),new THREE.LineBasicMaterial({color:'#8b8975',transparent:true,opacity:.65})));
+          };
+          let cursor=0;
+          for(const door of wall.doors.slice().sort((a,b)=>a.offset-b.offset)){
+            const left=door.offset-door.width/2,right=door.offset+door.width/2,h=Math.min(height,door.height);
+            pane(group,left-cursor,height,(cursor+left)/2);
+            const leaf=new THREE.Group();leaf.name='Sliding reeded glass door';leaf.userData.doorId=door.id;
+            leaf.position.set(door.offset+(door.slideDirection??-1)*door.width*(door.openFraction??0),0,wall.thickness+.025);group.add(leaf);
+            pane(leaf,door.width,h,0);
+            if(height>door.height){const transom=new THREE.Group();transom.position.y=door.height;group.add(transom);pane(transom,door.width,height-door.height,door.offset);}
+            const handleY=Math.min(door.handleHeight??1.1,h-.2),handleLength=door.handleLength??.32;
+            if(handleY>handleLength/2)for(const side of [-1,1]){
+              const handle=add(leaf,new THREE.BoxGeometry(.025,handleLength,.035),metal,-(door.slideDirection??-1)*door.width*.36,handleY,side*(wall.thickness/2+.055));handle.name='Sliding door pull handle';
+              for(const y of [handleY-handleLength/2,handleY+handleLength/2])add(leaf,new THREE.BoxGeometry(.025,.025,.055),metal,handle.position.x,y,side*(wall.thickness/2+.0275));
+            }
+            const travel=door.width*(door.slideDirection??-1),trackStart=Math.min(left,left+travel),trackEnd=Math.max(right,right+travel);
+            const track=add(group,new THREE.BoxGeometry(trackEnd-trackStart+.06,.075,.11),metal,(trackStart+trackEnd)/2,h+.0375,wall.thickness+.025);track.name='Sliding entrance track';
+            cursor=right;
+          }
+          pane(group,length-cursor,height,(length+cursor)/2);
+          continue;
+        }
         add(group,new THREE.BoxGeometry(length,height,wall.thickness),material('#a8a999',{transparent:true,opacity:.32,roughness:.4,depthWrite:false,side:THREE.DoubleSide}),length/2,height/2,0);
         const metal=material('#a69b80',{metalness:.45,roughness:.4});
         for(const x of [0,length])add(group,new THREE.BoxGeometry(.035,height,.05),metal,x,height/2,0);

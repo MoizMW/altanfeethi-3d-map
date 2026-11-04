@@ -4,6 +4,7 @@ import {receptionSizes, buildReceptionObject} from './reception-objects.js';
 import {buildDiningObject} from './dining-objects.js';
 import {buildEggChair,buildShellLoungeChair} from './lounge-objects.js';
 import {buildCurvedArmchair} from './curved-armchair.js';
+import {buildPrivateLoungeObject,privateLoungeSizes} from './private-lounge-objects.js';
 import {buildNestedStoneTable} from './lounge-tables.js';
 import {buildLobbyFixture} from './lobby-fixtures.js';
 import {securitySizes, buildSecurityObject} from './security-objects.js';
@@ -14,8 +15,9 @@ function mesh(group,geometry,material,p){const m=new THREE.Mesh(geometry,materia
 export function box(g,dim,p,m,r=.04){return mesh(g,new RoundedBoxGeometry(...dim,3,Math.min(r,...dim.map(d=>d/3))),m,p);}
 function rod(g,a,b,r,m){const d=new THREE.Vector3(...b).sub(new THREE.Vector3(...a));const s=mesh(g,new THREE.CylinderGeometry(r,r,d.length(),6),m,new THREE.Vector3(...a).addScaledVector(d,.5).toArray());s.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),d.normalize());return s;}
 export const referenceSize={sofa:[2.05,.88,.9],armchair:[.88,.9,.92],table:[1.5,.42,.78],screen:[3.8,2.3,.07],plant:[.5,1.7,.5],...receptionSizes,...securitySizes,...passportSizes};
-export function buildObject(o){const g=new THREE.Group(),[w,h,d]=referenceSize[o.type], fabric=mat(o.color),dark=mat('#303b3a',.4),gold=mat('#ab9564',.35,.6);g.userData.objectId=o.id;
- if((o.type==='counter'&&o.variant==='food-buffet')||(o.type==='display-console'&&o.variant==='grand-piano'))buildDiningObject(g,o,{box,mesh,rod,mat});
+export function buildObject(o){const g=new THREE.Group(),nativeSize=privateLoungeSizes[o.variant]||referenceSize[o.type],[w,h,d]=nativeSize, fabric=mat(o.color),dark=mat('#303b3a',.4),gold=mat('#ab9564',.35,.6);g.userData.objectId=o.id;
+ if(privateLoungeSizes[o.variant])g.add(buildPrivateLoungeObject(o));
+ else if((o.type==='counter'&&o.variant==='food-buffet')||(o.type==='display-console'&&o.variant==='grand-piano'))buildDiningObject(g,o,{box,mesh,rod,mat});
  else if(buildLobbyFixture(g,o,{box,mesh,rod,mat,referenceSize,THREE})){}
  else if(receptionSizes[o.type])buildReceptionObject(g,o,{box,mesh,rod,mat});
  else if(securitySizes[o.type])buildSecurityObject(g,o,{box,mesh,rod,mat});
@@ -28,7 +30,7 @@ export function buildObject(o){const g=new THREE.Group(),[w,h,d]=referenceSize[o
   box(g,[w,.22,d],[0,.29,0],fabric,.09);
   box(g,[w,.47,.2],[0,h-.25,-d/2+.09],fabric,.09);
   if(o.variant!=='armless')for(const x of [-w/2+.09,w/2-.09])box(g,[.18,.43,d*.91],[x,.52,0],fabric,.08);
-  for(let i=0;i<n;i++){const x=(i-(n-1)/2)*(w-.35)/n;box(g,[(w-.38)/n,.16,d*.71],[x,.47,.08],fabric,.065);if(o.variant!=='armless'){const cushion=box(g,[(w-.4)/n*.78,.39,.14],[x,.73,-d*.19],mat(o.type==='sofa'?'#9fafab':'#889fa3'),.055);cushion.rotation.x=-.17;}}
+  for(let i=0;i<n;i++){const x=(i-(n-1)/2)*(w-.35)/n;box(g,[(w-.38)/n,.16,d*.71],[x,.47,.08],fabric,.065);if(o.variant!=='armless'){const cushion=box(g,[(w-.4)/n*.78,.39,.14],[x,.73,-d*.19],mat(o.cushionColor||(o.type==='sofa'?'#9fafab':'#889fa3')),.055);cushion.rotation.x=-.17;}}
   for(const x of [-w/2+.14,w/2-.14])for(const z of [-d/2+.15,d/2-.15])box(g,[.045,.18,.045],[x,.09,z],dark,.008);
  }else if(o.type==='table'&&o.variant==='nested-stone'){
   buildNestedStoneTable(g,o);
@@ -99,5 +101,5 @@ export function buildObject(o){const g=new THREE.Group(),[w,h,d]=referenceSize[o
   else mesh(g,new THREE.CylinderGeometry(w*.46,w*.32,.5,24),mat('#d7d8cf'),[0,.25,0]);
   for(let i=0;i<11;i++){const a=i*2.4,x=Math.cos(a)*w*.47,z=Math.sin(a)*d*.47,y=.9+(i%4)*.19;rod(g,[0,.4,0],[x,y,z],.013,dark);const leaf=mesh(g,new THREE.SphereGeometry(1,10,8),fabric,[x,y,z]);leaf.scale.set(.13,.35,.065);leaf.rotation.set(.3,a,.6);}
  }
- g.position.fromArray(o.position);g.rotation.y=THREE.MathUtils.degToRad(o.yaw);g.scale.fromArray(o.size.map((v,i)=>v/referenceSize[o.type][i]*(o.scale?.[i]??1)));return g;
+ g.position.fromArray(o.position);g.rotation.y=THREE.MathUtils.degToRad(o.yaw);g.scale.fromArray(o.size.map((v,i)=>v/nativeSize[i]*(o.scale?.[i]??1)));return g;
 }
