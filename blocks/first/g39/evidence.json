@@ -1,0 +1,97 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-private-lounge-039",
+  "cameras": [
+    "H13"
+  ],
+  "snapshots": {
+    "H13": "evidence/camera-snapshots/H13.jpg"
+  },
+  "wideSnapshots": {
+    "H13": "evidence/wide capture snapshots/H13.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per owner",
+    "zoom": "Wider framing",
+    "roiUsage": "Saved rectangles belong to the normal images only; never projected onto wide captures.",
+    "capturedAt": null
+  },
+  "rois": {
+    "H13": {
+      "chairs": "evidence/rois/chair-rois/g39/H13_to_g39.json",
+      "tables": "evidence/rois/table-rois/g39/H13_to_g39.json"
+    }
+  },
+  "notes": [
+    "G39 has one white sofa, two blue tub chairs and one Table_H7 nested stone set, matching G41's room family.",
+    "Available H13 normal and wide views were inspected. Pale walls, reeded entrance, TV and Saudi flag are visible. A rear mirror is not authored without its missing reverse view.",
+    "Chair labels H29–H32 are four occupancy slots, with two slots on one sofa. All repeated observations are reconciled to physical objects.",
+    "Entrance uses a provisional G41-style sliding leaf with handle/track. Dimensions, exact door travel, sofa-slot order and global registration remain review items."
+  ],
+  "correspondence": {
+    "Seat_H31": "g39-sofa-01",
+    "Seat_H30": "g39-sofa-01",
+    "Seat_H29": "g39-chair-29",
+    "Seat_H32": "g39-chair-32",
+    "Table_H7": "g39-coffee-table-7"
+  },
+  "observations": [
+    {
+      "camera": "H13",
+      "seats": [
+        "Seat_H32",
+        "Seat_H31",
+        "Seat_H30"
+      ],
+      "tables": [
+        "Table_H7"
+      ],
+      "status": "available-normal-and-wide-reviewed"
+    },
+    {
+      "camera": "H10",
+      "seats": [
+        "Seat_H31",
+        "Seat_H30",
+        "Seat_H29",
+        "Seat_H32"
+      ],
+      "tables": [
+        "Table_H7"
+      ],
+      "status": "historical-rois-only-image-and-registration-missing"
+    }
+  ],
+  "reviewItems": [
+    "Confirm sofa slot order and G39 dimensions against the physical room.",
+    "Confirm sliding entrance hardware and travel; preserve the clear TV-side access.",
+    "Supply/identify the historical H10 image to confirm H29 rear-chair pose and rear wall; no H10 pixel anchor has been invented.",
+    "Map-guided composition preserves local furniture; common-floor metric calibration is unresolved."
+  ],
+  "historicalRois": {
+    "H10": {
+      "chairs": "evidence/rois/chair-rois/g39/H10_to_g39.json",
+      "tables": "evidence/rois/table-rois/g39/H10_to_g39.json"
+    }
+  },
+  "sourceImages": {
+    "H13": {
+      "normal": {
+        "path": "evidence/camera-snapshots/H13.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "wide": {
+        "path": "evidence/wide capture snapshots/H13.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "roiCoordinateSystem": "Normal detection image; historical authoring resolution uncertain. No pixel-to-meter conversion."
+    }
+  }
+}

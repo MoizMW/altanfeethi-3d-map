@@ -1,0 +1,113 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-private-lounge-040",
+  "cameras": [
+    "H11",
+    "H20"
+  ],
+  "snapshots": {
+    "H11": "evidence/camera-snapshots/H11.jpg",
+    "H20": "evidence/camera-snapshots/H20.jpg"
+  },
+  "wideSnapshots": {
+    "H11": "evidence/wide capture snapshots/H11.jpg",
+    "H20": "evidence/wide capture snapshots/H20.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per owner",
+    "zoom": "Wider framing",
+    "roiUsage": "Saved rectangles belong to the normal images only; never projected onto wide captures.",
+    "capturedAt": null
+  },
+  "rois": {
+    "H11": {
+      "chairs": "evidence/rois/chair-rois/g40/H11_to_g40.json",
+      "tables": "evidence/rois/table-rois/g40/H11_to_g40.json"
+    },
+    "H20": {
+      "chairs": "evidence/rois/chair-rois/g40/H20_to_g40.json",
+      "tables": "evidence/rois/table-rois/g40/H20_to_g40.json"
+    }
+  },
+  "notes": [
+    "G40 has one white sofa, two blue tub chairs and one Table_H6 nested stone set, matching G41's room family.",
+    "Available H11/H20 normal and wide views were inspected. Pale walls, reeded entrance, TV and Saudi flag are visible. H20 also confirms the rear mirror.",
+    "Chair labels H25–H28 are four occupancy slots, with two slots on one sofa. All repeated observations are reconciled to physical objects.",
+    "Entrance uses a provisional G41-style sliding leaf with handle/track. Dimensions, exact door travel, sofa-slot order and global registration remain review items."
+  ],
+  "correspondence": {
+    "Seat_H27": "g40-sofa-01",
+    "Seat_H26": "g40-sofa-01",
+    "Seat_H25": "g40-chair-25",
+    "Seat_H28": "g40-chair-28",
+    "Table_H6": "g40-coffee-table-6"
+  },
+  "observations": [
+    {
+      "camera": "H11",
+      "seats": [
+        "Seat_H28",
+        "Seat_H27",
+        "Seat_H26"
+      ],
+      "tables": [
+        "Table_H6"
+      ],
+      "status": "available-normal-and-wide-reviewed"
+    },
+    {
+      "camera": "H20",
+      "seats": [
+        "Seat_H27",
+        "Seat_H26",
+        "Seat_H25"
+      ],
+      "tables": [
+        "Table_H6"
+      ],
+      "status": "available-normal-and-wide-reviewed"
+    }
+  ],
+  "reviewItems": [
+    "Confirm sofa slot order and G40 dimensions against the physical room.",
+    "Confirm sliding entrance hardware and travel; preserve the clear TV-side access.",
+    "Map-guided composition preserves local furniture; common-floor metric calibration is unresolved."
+  ],
+  "sourceImages": {
+    "H11": {
+      "normal": {
+        "path": "evidence/camera-snapshots/H11.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "wide": {
+        "path": "evidence/wide capture snapshots/H11.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "roiCoordinateSystem": "Normal detection image; historical authoring resolution uncertain. No pixel-to-meter conversion."
+    },
+    "H20": {
+      "normal": {
+        "path": "evidence/camera-snapshots/H20.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "wide": {
+        "path": "evidence/wide capture snapshots/H20.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "roiCoordinateSystem": "Normal detection image; historical authoring resolution uncertain. No pixel-to-meter conversion."
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-window-51",
+  "floorSize": [
+    4.8,
+    6.2
+  ],
+  "floorCenter": [
+    0,
+    0.3
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "relative-row-estimate-not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-03T07:14:37.307Z",
+    "anchors": [
+      {
+        "camera": "H27",
+        "pixel": [
+          1684,
+          1727
+        ],
+        "heading": 175,
+        "status": "verified"
+      },
+      {
+        "camera": "H30",
+        "pixel": [
+          1996,
+          1906
+        ],
+        "heading": 277,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "From window glazing toward the open interior aisle",
+      "z": "Along the window row from the wood-paneled end toward the display and G51",
+      "y": "Up; local floor zero does not establish building elevation"
+    },
+    "sourceMapCrop": [
+      0,
+      600,
+      2300,
+      2500
+    ],
+    "mapReview": "Registered camera anchors and the illustrated first-floor map establish the window-side row. Photographs supersede generic map furniture. Dimensions and global map transform remain unmeasured."
+  },
+  "footprint": [
+    [
+      -2.4,
+      -2.8
+    ],
+    [
+      2.4,
+      -2.8
+    ],
+    [
+      2.4,
+      3.4
+    ],
+    [
+      -2.4,
+      3.4
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g51-dark-floor",
+      "size": [
+        4.8,
+        6.2
+      ],
+      "center": [
+        0,
+        0.3
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [
+    {
+      "id": "g51-rug-1",
+      "polygon": [
+        [
+          -1.95,
+          -1.85
+        ],
+        [
+          0.95,
+          -1.85
+        ],
+        [
+          0.95,
+          1.85
+        ],
+        [
+          -1.95,
+          1.85
+        ]
+      ],
+      "notes": "Pale rug visible in normal/wide views; extent and texture estimated."
+    }
+  ],
+  "circulation": {
+    "id": "g51-interior-aisle",
+    "polygon": [
+      [
+        1.05,
+        -2.8
+      ],
+      [
+        2.4,
+        -2.8
+      ],
+      [
+        2.4,
+        3.4
+      ],
+      [
+        1.05,
+        3.4
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "open-interior-access-width-estimated",
+    "sources": [
+      "H27",
+      "H30"
+    ],
+    "notes": "Dark tiled aisle remains open. Decorative hanging fixtures and seating across the aisle are outside this crop."
+  },
+  "walls": [
+    {
+      "id": "g51-window-glazing",
+      "kind": "glass",
+      "start": [
+        -2.3,
+        -2.8
+      ],
+      "end": [
+        -2.3,
+        3.4
+      ],
+      "height": 4.1,
+      "thickness": 0.05,
+      "privacyBand": false,
+      "owner": "first/g51",
+      "sources": [
+        "H27",
+        "H30"
+      ],
+      "confidence": "Exterior window line visible in normal/wide views; mullion spacing and all dimensions estimated.",
+      "color": "#c6dce1",
+      "opacity": 0.12,
+      "frameColor": "#68716e",
+      "frameSpacing": 3.1,
+      "horizontalSplit": 0.38,
+      "notes": "Clear full-height glazing with slim metal mullions and a horizontal transom. Separate gathered sheer curtains leave the glass visible; all bay spacings are provisional."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [
+    {
+      "id": "g50-display-column-boundary",
+      "neighbor": "first/g50",
+      "objectId": "g50-display-column",
+      "ownsWall": false,
+      "status": "neighboring-display-owned-by-g50",
+      "sources": [
+        "H26",
+        "H27",
+        "H30"
+      ],
+      "notes": "Display column is rendered once in G50. The connecting floor remains open."
+    }
+  ],
+  "boundaryReview": [
+    {
+      "id": "g51-aisle-edge",
+      "kind": "open-corridor",
+      "sources": [
+        "H27",
+        "H30"
+      ],
+      "status": "open-access-neighboring-interior-row-outside-crop"
+    },
+    {
+      "id": "g51-far-end",
+      "kind": "open-corridor",
+      "sources": [
+        "H27",
+        "H30"
+      ],
+      "status": "continuation-unresolved-no-inferred-end-wall"
+    }
+  ],
+  "ceiling": {
+    "size": [
+      4.8,
+      6.2
+    ],
+    "center": [
+      0,
+      0.3
+    ],
+    "height": 4.1,
+    "status": "provisional-plain-visualization-only"
+  }
+}

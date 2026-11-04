@@ -1,0 +1,273 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-private-lounge-040",
+  "floorSize": [
+    4,
+    4.8
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-03T07:14:37.307Z",
+    "anchors": [
+      {
+        "camera": "H11",
+        "pixel": [
+          4931,
+          1711
+        ],
+        "heading": 270,
+        "status": "verified"
+      },
+      {
+        "camera": "H20",
+        "pixel": [
+          4598,
+          1887
+        ],
+        "heading": 31,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      4400,
+      1450,
+      5150,
+      2150
+    ],
+    "localAxes": {
+      "x": "From the pale sofa backing toward the TV wall",
+      "z": "From the rear mirror/flag wall toward the reeded entrance",
+      "y": "Up; local first-floor elevation unresolved"
+    },
+    "mapReview": "First-floor map and H11/H20 anchors place G40 in the private-room row between G39 and G41. Repeated room proportions follow G41; dimensions are not surveyed."
+  },
+  "footprint": [
+    [
+      -2,
+      -2.4
+    ],
+    [
+      2,
+      -2.4
+    ],
+    [
+      2,
+      2.4
+    ],
+    [
+      -2,
+      2.4
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g40-dark-floor",
+      "center": [
+        0,
+        0
+      ],
+      "size": [
+        4,
+        4.8
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [
+    {
+      "id": "g40-pale-rug",
+      "polygon": [
+        [
+          -1.7,
+          -2.08
+        ],
+        [
+          1.55,
+          -2.08
+        ],
+        [
+          1.55,
+          2.08
+        ],
+        [
+          -1.7,
+          2.08
+        ]
+      ],
+      "notes": "Pale grey rug below the complete seating set; flat shared pale surface is schematic."
+    }
+  ],
+  "circulation": {
+    "id": "g40-tv-side-access",
+    "polygon": [
+      [
+        0.78,
+        -1.9
+      ],
+      [
+        1.55,
+        -1.9
+      ],
+      [
+        1.55,
+        2.2
+      ],
+      [
+        0.78,
+        2.2
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "provisional-clear-route",
+    "notes": "Clear TV-side route to the sliding entrance; dimensions estimated from the repeated room family."
+  },
+  "walls": [
+    {
+      "id": "g40-sofa-wall",
+      "kind": "solid",
+      "start": [
+        -1.8,
+        -2.25
+      ],
+      "end": [
+        -1.8,
+        2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "first/g40",
+      "sources": [
+        "H11",
+        "H20"
+      ],
+      "confidence": "Local boundary supported by available camera views; endpoints and dimensions estimated.",
+      "notes": "Pale panelled wall behind the white sofa."
+    },
+    {
+      "id": "g40-rear-wall",
+      "kind": "solid",
+      "start": [
+        -1.8,
+        -2.25
+      ],
+      "end": [
+        1.8,
+        -2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "first/g40",
+      "sources": [
+        "H11",
+        "H20"
+      ],
+      "confidence": "Local boundary supported by available camera views; endpoints and dimensions estimated.",
+      "notes": "Pale rear wall with oval mirror and Saudi flag stand, supported by H20."
+    },
+    {
+      "id": "g40-tv-wall",
+      "kind": "solid",
+      "start": [
+        1.8,
+        -2.25
+      ],
+      "end": [
+        1.8,
+        2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "first/g40",
+      "sources": [
+        "H11",
+        "H20"
+      ],
+      "confidence": "Local boundary supported by available camera views; endpoints and dimensions estimated.",
+      "notes": "Pale wall opposite sofa carrying the television."
+    },
+    {
+      "id": "g40-entrance-screen",
+      "kind": "glass",
+      "start": [
+        -1.8,
+        2.25
+      ],
+      "end": [
+        1.8,
+        2.25
+      ],
+      "height": 3.2,
+      "thickness": 0.055,
+      "color": "#a8aaa3",
+      "owner": "first/g40",
+      "sources": [
+        "H11",
+        "H20"
+      ],
+      "confidence": "Local boundary supported by available camera views; endpoints and dimensions estimated.",
+      "variant": "reeded-divider",
+      "notes": "Reeded entrance frontage visible in H11 normal/wide. Matching G41 sliding-leaf topology is used provisionally; exact travel, handle and track profile require review.",
+      "doors": [
+        {
+          "id": "g40-sliding-entrance",
+          "kind": "sliding",
+          "offset": 2.925,
+          "width": 1.35,
+          "height": 3.2,
+          "openFraction": 0,
+          "slideDirection": -1,
+          "handleHeight": 1.1,
+          "handleLength": 0.32
+        }
+      ]
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "size": [
+      4,
+      4.8
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "status": "visualization-height-estimate-hidden-by-default"
+  },
+  "boundaryReview": [
+    {
+      "id": "g40-entrance",
+      "kind": "sliding-glass-door",
+      "start": [
+        0.45,
+        2.25
+      ],
+      "end": [
+        1.8,
+        2.25
+      ],
+      "sources": [
+        "H11",
+        "H20"
+      ],
+      "status": "sliding-entry-family-inferred-dimensions-estimated",
+      "notes": "Entry and privacy glazing observed; single sliding-leaf arrangement follows owner-confirmed G41. Verify the travel direction and hardware in this room."
+    }
+  ],
+  "notes": [
+    "Independent G40 reconstruction from H11/H20 normal/wide images and normal-image ROIs. Local proportions reuse the accepted G41 room family.",
+    "Private-row composition owns adjoining walls once. The standalone block remains editable and retains its own four seat slots and one table identity."
+  ]
+}

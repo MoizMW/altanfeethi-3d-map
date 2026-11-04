@@ -82,6 +82,8 @@ function frame(view, model) {
 const textureWaiters = new Set();
 THREE.DefaultLoadingManager.onLoad = () => { for (const resolve of textureWaiters) resolve(); textureWaiters.clear(); };
 async function waitForTextures(model) {
+  const ready=[];model.traverse(node=>{for(const material of node.material?(Array.isArray(node.material)?node.material:[node.material]):[])if(material.map?.userData.ready)ready.push(material.map.userData.ready);});
+  await Promise.all(ready);
   let pending = false;
   model.traverse(node => { if (node.material?.map && !node.material.map.image) pending = true; });
   if (!pending) return;

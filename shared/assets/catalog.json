@@ -92,7 +92,8 @@
         "ring-pedestal",
         "i-zone-end-console",
         "pierced-ornament",
-        "patterned-vase"
+        "patterned-vase",
+        "window-sculpture"
       ]
     },
     "sofa": {
@@ -116,7 +117,8 @@
       "variants": [
         "armless",
         "egg-swivel",
-        "shell-lounge"
+        "shell-lounge",
+        "tub-chair"
       ],
       "defaultColor": "#3d4a55",
       "notes": "Default armchairs use the owner's curved bucket-back chair, slate-blue upholstery, tapered dark timber legs and botanical-print pillow. Existing egg-swivel and shell-lounge variants retain their designs. See shared/assets/library/references/curved-armchair/. Retired green chair overrides are rejected by block validation."
@@ -133,7 +135,8 @@
         "round-glass",
         "rectangular",
         "round-pedestal",
-        "nested-stone"
+        "nested-stone",
+        "organic-stone"
       ]
     },
     "screen": {
@@ -146,7 +149,8 @@
       "variants": [
         "open-shelving",
         "teal-gold-panel",
-        "folding-louver"
+        "folding-louver",
+        "curved-bronze"
       ]
     },
     "plant": {
@@ -194,7 +198,8 @@
         "drawer-pedestal",
         "access-reader",
         "plain-planter",
-        "stored-shelving"
+        "stored-shelving",
+        "window-sill"
       ]
     },
     "display": {
@@ -226,7 +231,10 @@
         "timber-office-door",
         "pleated-curtain",
         "branded-marble",
-        "leaning-glass-panel"
+        "leaning-glass-panel",
+        "oval-mirror",
+        "cylindrical-display",
+        "window-drapery"
       ]
     },
     "luggage-scale": {

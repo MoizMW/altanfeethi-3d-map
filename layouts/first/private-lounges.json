@@ -1,0 +1,233 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "first-private-lounges-g39-g40-g41",
+  "displayCode": "G39 → G40 → G41",
+  "name": "First-floor private lounges · G39 / G40 / G41",
+  "floor": "first",
+  "status": "draft-needs-human-review",
+  "floorSize": [
+    10.8,
+    6.2
+  ],
+  "floorCenter": [
+    -3.6,
+    0.7
+  ],
+  "components": [
+    {
+      "block": "first/g39",
+      "position": [
+        -7.2,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g39-tv-wall"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          3.6,
+          4.8
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g40",
+      "position": [
+        -3.6,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g40-sofa-wall",
+        "g40-tv-wall"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          3.6,
+          4.8
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g41",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g41-sofa-wall"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          3.6,
+          4.8
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "walls": [
+    {
+      "id": "private-row-g39-g40-partition",
+      "kind": "solid",
+      "start": [
+        -5.4,
+        -2.25
+      ],
+      "end": [
+        -5.4,
+        2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "layout/first/private-lounges",
+      "sources": [
+        "H13",
+        "H11",
+        "H20"
+      ],
+      "neighborBlocks": [
+        "first/g39",
+        "first/g40"
+      ],
+      "confidence": "Map-guided adjacency; single shared boundary, dimensions estimated."
+    },
+    {
+      "id": "private-row-g40-g41-partition",
+      "kind": "solid",
+      "start": [
+        -1.8,
+        -2.25
+      ],
+      "end": [
+        -1.8,
+        2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "layout/first/private-lounges",
+      "sources": [
+        "H11",
+        "H20",
+        "H12",
+        "H14"
+      ],
+      "neighborBlocks": [
+        "first/g40",
+        "first/g41"
+      ],
+      "confidence": "Map-guided adjacency; single shared boundary, dimensions estimated."
+    }
+  ],
+  "openings": [],
+  "corridor": {
+    "id": "private-row-front-corridor",
+    "center": [
+      -3.6,
+      3.1
+    ],
+    "size": [
+      10.8,
+      1.4
+    ],
+    "color": "#424747"
+  },
+  "integration": {
+    "request": "Create G40 and G39 similarly to G41 and merge as shown on the map.",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-03T07:14:37.307Z",
+    "mapOrder": {
+      "direction": "Increasing image X and Y along the private-room row; world +X",
+      "blocks": [
+        "first/g39",
+        "first/g40",
+        "first/g41"
+      ],
+      "pixelAnchors": [
+        {
+          "block": "first/g39",
+          "camera": "H13",
+          "pixel": [
+            4567,
+            1496
+          ]
+        },
+        {
+          "block": "first/g40",
+          "camera": "H11",
+          "pixel": [
+            4931,
+            1711
+          ]
+        },
+        {
+          "block": "first/g41",
+          "camera": "H12",
+          "pixel": [
+            5249,
+            1914
+          ]
+        }
+      ]
+    },
+    "sharedBoundaries": [
+      {
+        "wallId": "private-row-g39-g40-partition",
+        "replaces": [
+          "g39-tv-wall",
+          "g40-sofa-wall"
+        ]
+      },
+      {
+        "wallId": "private-row-g40-g41-partition",
+        "replaces": [
+          "g40-tv-wall",
+          "g41-sofa-wall"
+        ]
+      }
+    ],
+    "access": {
+      "corridorZ": [
+        2.4,
+        3.8
+      ],
+      "doors": [
+        "g39-sliding-entrance",
+        "g40-sliding-entrance",
+        "g41-sliding-entrance"
+      ],
+      "notes": "Independent room entrances open into one continuous external corridor; no passage is cut through private-room dividers."
+    },
+    "reviewItems": [
+      "Row order comes from the registered map; spacing is a repeated-room estimate, not a calibrated projection.",
+      "H10 is historical ROI evidence only; G39 rear-chair pose remains lower confidence.",
+      "Review doorway dimensions/hardware, shared-wall finishes and corridor width."
+    ]
+  },
+  "notes": [
+    "Owner requests the three-room row G39 → G40 → G41 as in the first-floor map. The relative order uses H13/H11/H12 anchors increasing down and right in the image.",
+    "Three source blocks load live without stretching or relabeling furniture. G41 source data is retained. Two shared solid walls replace four standalone copies.",
+    "Each reeded sliding entrance opens toward the common front corridor. Closed doors are the default preview; opening them preserves the TV-side route.",
+    "G39 has six objects; G40 and G41 have seven each. Twelve unique seats and Table_H7/Table_H6/Table_H5 resolve once. H10 image is absent; no unavailable camera image is linked.",
+    "Only this row is composed. Existing stair-lobby and other layouts remain independent. Dimensions, door travel and common-floor calibration are provisional."
+  ]
+}

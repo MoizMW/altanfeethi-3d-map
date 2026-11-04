@@ -6,6 +6,19 @@ Open `/?layout=first/g48-g45`. H51/H49 show a covered four-seat banquette with s
 
 Four Seat_H104–H107 IDs and Table_H41/H42 belong to G48. H45 has only a reception-region polygon, so its three staff chairs use temporary Seat_G45_RECEPTION_TMP_01–03 slots. Historical H15/H16 g45 seating ROIs belong to a different map location and are excluded. G48's stored cabinets obscure H51's detections; use H49 to review the banquette correspondence. Photos show construction/fit-out storage, not a confirmed final seating arrangement. Buffet, reflected furniture and loose tools/cables stay outside this reconstruction. Edit each source block and refresh the layout.
 
+## First-floor private-room row
+
+Open `/?layout=first/private-lounges` for G39 → G40 → G41. H13 [4567,1496], H11 [4931,1711] and H12 [5249,1914] establish the increasing-X/down-right row on the registered first-floor map. All source furniture keeps its local dimensions, finish and IDs. The repeated room spacing remains an estimate.
+
+G39 is at [-7.2,0,0], G40 at [-3.6,0,0], and G41 at [0,0,0], all with yaw 0. Layout-only floor widths of 3.6 m replace the standalone 4 m working crops, so slabs meet at the wall centers. Two layout-owned solid partitions at X=-5.4 and -1.8 replace both copies of each adjoining wall. Three rear walls and three sliding entrance frontages remain source-owned.
+
+A 1.4 m provisional common corridor at Z=2.4..3.8 connects the front entrances. Sliding doors default closed; open previews leave each TV-side access clear. Private-room partitions stay closed. The assembly has 20 objects, 12 unique seats H21–H32, and Table_H5/H6/H7. G39's missing H10 snapshot/registration is documented; its historical ROIs retain H29, with rear placement inferred. An unobserved G39 mirror is omitted. This row remains separate from the stair-lobby assembly.
+## First-floor G50/G51 window row
+
+Open `/?layout=first/g50-g51`. From the wood-paneled end toward the cylindrical display and onward, G50 owns the shell-chair bay (H100–H103), two pale sofas (H96–H99), and another shell-chair bay (H92–H95); G51 adds tan bucket chairs H88–H91. G50 owns the display column once. H30 sees G50's H94/H95 and Table_H36 in the background; they are not duplicated in G51.
+
+G50 stays at [0,0,0], yaw 0; G51 translates to [0,0,9.6], yaw 0. Floor/window endpoints meet at Z=6.8 with continuous open interior circulation at X=1.05..2.4. Furniture is loaded live without scaling or offsets. The supplied map plus all six normal/wide views support the ordering; dimensions, rug spans, glazing, camera poses and global alignment remain provisional. Edit the source blocks independently and refresh the composition.
+
 ## G15/G13 checkpoint and passport control
 
 Open `http://127.0.0.1:4209/?layout=ground/g15-g13`. Owner correction places G13 above G15 in top view, with staff chairs on the right (+X) and passenger gates on the left. G15 stays at [0,0,0], yaw 0; G13 uses [1.3,0,-13.75], yaw -90. The latest owner correction aligns both right walls at X=5, with a layout-owned wall joining their ends. A 0.1 m floor-only extension on G13 aligns all right floor edges at X=5.2; furniture is unchanged. A layout-owned 2 m circulation section joins G15's open top approach at Z=-4.8 to G13's floor at Z=-6.8, leading to the public side of the passport gates. Source walls are retained once; the layout owns only the right-side wall connection. The earlier bottom-end join is superseded. Connection width and global calibration remain estimated; C8/C15/C16/C13/C17/C18/C21 remain the supporting neighboring views.

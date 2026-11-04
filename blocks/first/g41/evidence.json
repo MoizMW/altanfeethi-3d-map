@@ -1,0 +1,128 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-private-lounge-041",
+  "cameras": [
+    "H14",
+    "H12"
+  ],
+  "snapshots": {
+    "H14": "evidence/camera-snapshots/H14.jpg",
+    "H12": "evidence/camera-snapshots/H12.jpg"
+  },
+  "wideSnapshots": {
+    "H14": "evidence/wide capture snapshots/H14.jpg",
+    "H12": "evidence/wide capture snapshots/H12.jpg"
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Unchanged per owner",
+    "zoom": "Wider framing",
+    "roiUsage": "ROIs refer only to the normal images; not projected onto wide views.",
+    "capturedAt": null
+  },
+  "rois": {
+    "H14": {
+      "chairs": "evidence/rois/chair-rois/g41/H14_to_g41.json",
+      "tables": "evidence/rois/table-rois/g41/H14_to_g41.json"
+    },
+    "H12": {
+      "chairs": "evidence/rois/chair-rois/g41/H12_to_g41.json",
+      "tables": "evidence/rois/table-rois/g41/H12_to_g41.json"
+    }
+  },
+  "notes": [
+    "Private lounge G41 has one white sofa, two blue tub chairs and one shared Table_H5 set, resolving Seat_H21–Seat_H24 once.",
+    "H12 normal is severely underexposed; H14 normal gives the clearest furniture and finish evidence. Both available wide images were inspected and remain dark.",
+    "Use the shared G18/G20 blue #627d86 for the small chairs and pale upholstery for the long sofa.",
+    "H14 shows sofa H22/H23, rear chair H21 and the entrance chair in foreground; H12 supplies H24. Repeated sofa/table observations are reconciled.",
+    "Visible context includes TV opposite sofa, oval mirror on rear wall and green flag on chrome stand. Mirror/reflections add no furniture.",
+    "All dimensions, doorway span, rug shade, upholstery detail and global placement are provisional. Camera registrations are unchanged.",
+    "Owner correction on 2026-11-04 confirms a sliding door beside the reeded entrance panel. A matching single sliding glass leaf, pull handles and top track replace the prior open entrance gap. Door span, height, direction and hardware profile are visualization estimates."
+  ],
+  "observations": [
+    {
+      "camera": "H12",
+      "seats": [
+        "Seat_H24",
+        "Seat_H23",
+        "Seat_H22"
+      ],
+      "tables": [
+        "Table_H5"
+      ],
+      "interpretation": "Entrance chair, two sofa occupancy slots and the single table set; normal image very dark."
+    },
+    {
+      "camera": "H14",
+      "seats": [
+        "Seat_H23",
+        "Seat_H22",
+        "Seat_H21"
+      ],
+      "tables": [
+        "Table_H5"
+      ],
+      "interpretation": "Reverse view of sofa/table, rear chair and mirror/flag wall. Foreground entrance chair has no H14 ROI."
+    }
+  ],
+  "correspondence": {
+    "Seat_H21": "g41-chair-21",
+    "Seat_H22": "g41-sofa-01",
+    "Seat_H23": "g41-sofa-01",
+    "Seat_H24": "g41-chair-24",
+    "Table_H5": "g41-coffee-table-5"
+  },
+  "sourceImages": {
+    "H14": {
+      "normal": {
+        "path": "evidence/camera-snapshots/H14.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "wide": {
+        "path": "evidence/wide capture snapshots/H14.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "roiCoordinateSystem": "Historical normal-image ROI resolution; rectangles visually reconciled with H14; H12 pixel interpretation limited by darkness. No metric conversion."
+    },
+    "H12": {
+      "normal": {
+        "path": "evidence/camera-snapshots/H12.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "wide": {
+        "path": "evidence/wide capture snapshots/H12.jpg",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "roiCoordinateSystem": "Historical normal-image ROI resolution; rectangles visually reconciled with H14; H12 pixel interpretation limited by darkness. No metric conversion."
+    }
+  },
+  "reviewItems": [
+    "Confirm H22/H23 slot order against the physical room.",
+    "Measure room footprint, furniture spacing, ceiling, sliding-door width/height/travel and screen height; sliding mechanism is owner-confirmed.",
+    "Confirm mirror shape/flag placement; emblems, lettering, TV content and precise textures are not reproduced.",
+    "Align this independent group to neighboring first-floor blocks only in a later owner-requested composition."
+  ],
+  "ownerCorrections": [
+    {
+      "date": "2026-11-04",
+      "source": "Owner screenshot and description: there is a sliding door here",
+      "boundary": "g41-entrance-screen",
+      "door": "g41-sliding-entrance",
+      "confirmed": "Sliding entrance door",
+      "estimated": "Leaf dimensions, reeded finish continuity, leftward travel and handle/track profile",
+      "preview": "Closed by default; architecture.walls[].doors[].openFraction 0..1 controls the static preview."
+    }
+  ]
+}

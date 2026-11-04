@@ -1,0 +1,223 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-private-lounge-041",
+  "objects": [
+    {
+      "id": "g41-sofa-01",
+      "type": "sofa",
+      "name": "White two-seat sofa · H23 / H22",
+      "position": [
+        -1.16,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.88,
+        0.9
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [
+        "Seat_H23",
+        "Seat_H22"
+      ],
+      "cameras": [
+        "H14",
+        "H12"
+      ],
+      "confidence": "Cross-view identity; local dimensions, position and yaw are visual estimates pending owner review.",
+      "cushionColor": "#e2e2d8",
+      "notes": "H23 is nearer the reeded entrance; H22 is nearer the rear mirror wall. Slot order provisional."
+    },
+    {
+      "id": "g41-chair-21",
+      "type": "armchair",
+      "name": "Rear blue tub chair · H21",
+      "position": [
+        0.05,
+        0,
+        -1.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_H21"
+      ],
+      "cameras": [
+        "H14"
+      ],
+      "confidence": "Cross-view identity; local dimensions, position and yaw are visual estimates pending owner review.",
+      "variant": "tub-chair",
+      "notes": "Rounded upholstered back and four short dark legs, facing the table."
+    },
+    {
+      "id": "g41-chair-24",
+      "type": "armchair",
+      "name": "Entrance blue tub chair · H24",
+      "position": [
+        0.05,
+        0,
+        1.55
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627d86",
+      "seats": [
+        "Seat_H24"
+      ],
+      "cameras": [
+        "H14",
+        "H12"
+      ],
+      "confidence": "Cross-view identity; local dimensions, position and yaw are visual estimates pending owner review.",
+      "variant": "tub-chair",
+      "notes": "H12 ROI identifies the entrance-side chair; H14 foreground shows its reverse side."
+    },
+    {
+      "id": "g41-coffee-table-5",
+      "type": "table",
+      "name": "Organic nested stone table · H5",
+      "position": [
+        0.03,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        1.5,
+        0.42,
+        0.95
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H14",
+        "H12"
+      ],
+      "confidence": "Cross-view identity; local dimensions, position and yaw are visual estimates pending owner review.",
+      "variant": "organic-stone",
+      "externalId": "Table_H5",
+      "notes": "One physical table set with kidney-shaped main stone top, smaller lower disc, brass supports and tissue box. Repeated H12/H14 observation is not a second table."
+    },
+    {
+      "id": "g41-tv",
+      "type": "display",
+      "name": "Wall-mounted television",
+      "position": [
+        1.7,
+        1.23,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        1.55,
+        0.88,
+        0.09
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#1d272a",
+      "seats": [],
+      "cameras": [
+        "H14",
+        "H12"
+      ],
+      "confidence": "Cross-view identity; local dimensions, position and yaw are visual estimates pending owner review.",
+      "mount": "wall",
+      "notes": "Single screen opposite the sofa, shown edge-on in H14; content/branding omitted."
+    },
+    {
+      "id": "g41-rear-mirror",
+      "type": "wall-panel",
+      "name": "Oval mirror with dark surround",
+      "position": [
+        0.55,
+        1.25,
+        -2.16
+      ],
+      "yaw": 0,
+      "size": [
+        0.85,
+        1.2,
+        0.08
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#5a5149",
+      "seats": [],
+      "cameras": [
+        "H14"
+      ],
+      "confidence": "Cross-view identity; local dimensions, position and yaw are visual estimates pending owner review.",
+      "variant": "oval-mirror",
+      "notes": "Approximate oval reflective insert; static metallic material, not a live reflected scene."
+    },
+    {
+      "id": "g41-flag-stand",
+      "type": "wall-panel",
+      "name": "Green flag on chrome floor stand",
+      "position": [
+        -1.1,
+        0,
+        -1.89
+      ],
+      "yaw": 0,
+      "size": [
+        0.6,
+        2.05,
+        0.36
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#155b47",
+      "seats": [],
+      "cameras": [
+        "H14",
+        "H12"
+      ],
+      "confidence": "Cross-view identity; local dimensions, position and yaw are visual estimates pending owner review.",
+      "variant": "standing-flag",
+      "notes": "Green fabric, pole, finial and round floor base seen in both directions. Exact emblem, lettering and fabric folds are omitted."
+    }
+  ]
+}

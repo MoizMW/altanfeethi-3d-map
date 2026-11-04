@@ -1,0 +1,285 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-window-50",
+  "floorSize": [
+    4.8,
+    13.55
+  ],
+  "floorCenter": [
+    0,
+    0.025
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "relative-row-estimate-not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-03T07:14:37.307Z",
+    "anchors": [
+      {
+        "camera": "H56",
+        "pixel": [
+          377,
+          1151
+        ],
+        "heading": 133,
+        "status": "verified"
+      },
+      {
+        "camera": "H23",
+        "pixel": [
+          801,
+          1194
+        ],
+        "heading": 272,
+        "status": "verified"
+      },
+      {
+        "camera": "H25",
+        "pixel": [
+          1488,
+          1592
+        ],
+        "heading": 275,
+        "status": "verified"
+      },
+      {
+        "camera": "H26",
+        "pixel": [
+          1456,
+          1596
+        ],
+        "heading": 231,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "From window glazing toward the open interior aisle",
+      "z": "Along the window row from the wood-paneled end toward the display and G51",
+      "y": "Up; local floor zero does not establish building elevation"
+    },
+    "sourceMapCrop": [
+      0,
+      600,
+      2300,
+      2500
+    ],
+    "mapReview": "Registered camera anchors and the illustrated first-floor map establish the window-side row. Photographs supersede generic map furniture. Dimensions and global map transform remain unmeasured."
+  },
+  "footprint": [
+    [
+      -2.4,
+      -6.75
+    ],
+    [
+      2.4,
+      -6.75
+    ],
+    [
+      2.4,
+      6.8
+    ],
+    [
+      -2.4,
+      6.8
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g50-dark-floor",
+      "size": [
+        4.8,
+        13.55
+      ],
+      "center": [
+        0,
+        0.025
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [
+    {
+      "id": "g50-rug-1",
+      "polygon": [
+        [
+          -1.95,
+          -6.5
+        ],
+        [
+          0.95,
+          -6.5
+        ],
+        [
+          0.95,
+          -3.2
+        ],
+        [
+          -1.95,
+          -3.2
+        ]
+      ],
+      "notes": "Pale rug visible in normal/wide views; extent and texture estimated."
+    },
+    {
+      "id": "g50-rug-2",
+      "polygon": [
+        [
+          -1.95,
+          -2.9
+        ],
+        [
+          0.95,
+          -2.9
+        ],
+        [
+          0.95,
+          1.25
+        ],
+        [
+          -1.95,
+          1.25
+        ]
+      ],
+      "notes": "Pale rug visible in normal/wide views; extent and texture estimated."
+    },
+    {
+      "id": "g50-rug-3",
+      "polygon": [
+        [
+          -1.95,
+          1.7
+        ],
+        [
+          0.95,
+          1.7
+        ],
+        [
+          0.95,
+          5.05
+        ],
+        [
+          -1.95,
+          5.05
+        ]
+      ],
+      "notes": "Pale rug visible in normal/wide views; extent and texture estimated."
+    }
+  ],
+  "circulation": {
+    "id": "g50-interior-aisle",
+    "polygon": [
+      [
+        1.05,
+        -6.75
+      ],
+      [
+        2.4,
+        -6.75
+      ],
+      [
+        2.4,
+        6.8
+      ],
+      [
+        1.05,
+        6.8
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "open-interior-access-width-estimated",
+    "sources": [
+      "H56",
+      "H23",
+      "H25",
+      "H26"
+    ],
+    "notes": "Dark tiled aisle remains open. Decorative hanging fixtures and seating across the aisle are outside this crop."
+  },
+  "walls": [
+    {
+      "id": "g50-window-glazing",
+      "kind": "glass",
+      "start": [
+        -2.3,
+        -6.75
+      ],
+      "end": [
+        -2.3,
+        6.8
+      ],
+      "height": 4.1,
+      "thickness": 0.05,
+      "privacyBand": false,
+      "owner": "first/g50",
+      "sources": [
+        "H56",
+        "H23",
+        "H25",
+        "H26"
+      ],
+      "confidence": "Exterior window line visible in normal/wide views; mullion spacing and all dimensions estimated.",
+      "color": "#c6dce1",
+      "opacity": 0.12,
+      "frameColor": "#68716e",
+      "frameSpacing": 2.71,
+      "horizontalSplit": 0.38,
+      "notes": "Clear full-height glazing with slim metal mullions and a horizontal transom. Separate gathered sheer curtains leave the glass visible; all bay spacings are provisional."
+    },
+    {
+      "id": "g50-wood-end-return",
+      "kind": "solid",
+      "start": [
+        -2.3,
+        -6.65
+      ],
+      "end": [
+        1,
+        -6.65
+      ],
+      "height": 4.1,
+      "thickness": 0.12,
+      "color": "#856746",
+      "finish": "warm-wood",
+      "interiorSide": 1,
+      "owner": "first/g50",
+      "sources": [
+        "H23"
+      ],
+      "confidence": "Visible wood-paneled end return; simplified planar crop of curved cladding. Extent, curvature and height unresolved."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "boundaryReview": [
+    {
+      "id": "g50-aisle-edge",
+      "kind": "open-corridor",
+      "sources": [
+        "H56",
+        "H23",
+        "H25",
+        "H26"
+      ],
+      "status": "open-access-neighboring-interior-row-outside-crop"
+    },
+    {
+      "id": "g50-display-column-boundary",
+      "objectId": "g50-display-column",
+      "kind": "decorative-column",
+      "status": "visible-shared-landmark-owned-once"
+    }
+  ],
+  "ceiling": {
+    "size": [
+      4.8,
+      13.55
+    ],
+    "center": [
+      0,
+      0.025
+    ],
+    "height": 4.1,
+    "status": "provisional-plain-visualization-only"
+  }
+}
