@@ -1,0 +1,759 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-i-lounge-063",
+  "objects": [
+    {
+      "id": "g63-chair-rear-left",
+      "type": "armchair",
+      "name": "Rear Left armchair · temporary ID",
+      "position": [
+        -0.92,
+        0,
+        -3.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.94,
+        1.02,
+        0.98
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3d4a55",
+      "seats": [
+        "Seat_G63_TMP_01"
+      ],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "identityStatus": "temporary-no-source-roi"
+    },
+    {
+      "id": "g63-chair-rear-right",
+      "type": "armchair",
+      "name": "Rear Right armchair · temporary ID",
+      "position": [
+        0.92,
+        0,
+        -3.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.94,
+        1.02,
+        0.98
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3d4a55",
+      "seats": [
+        "Seat_G63_TMP_02"
+      ],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "identityStatus": "temporary-no-source-roi"
+    },
+    {
+      "id": "g63-chair-corner-left",
+      "type": "armchair",
+      "name": "Corner Left armchair · temporary ID",
+      "position": [
+        -2.95,
+        0,
+        -2.7
+      ],
+      "yaw": 90,
+      "size": [
+        0.94,
+        1.02,
+        0.98
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3d4a55",
+      "seats": [
+        "Seat_G63_TMP_03"
+      ],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "identityStatus": "temporary-no-source-roi"
+    },
+    {
+      "id": "g63-chair-corner-right",
+      "type": "armchair",
+      "name": "Corner Right armchair · temporary ID",
+      "position": [
+        2.95,
+        0,
+        -2.7
+      ],
+      "yaw": -90,
+      "size": [
+        0.94,
+        1.02,
+        0.98
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3d4a55",
+      "seats": [
+        "Seat_G63_TMP_04"
+      ],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "identityStatus": "temporary-no-source-roi"
+    },
+    {
+      "id": "g63-sofa-left-1",
+      "type": "sofa",
+      "name": "Left wall two-seat sofa 1 · temporary IDs",
+      "position": [
+        -3.05,
+        0,
+        -0.85
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.95,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d5d0c2",
+      "seats": [
+        "Seat_G63_TMP_05",
+        "Seat_G63_TMP_06"
+      ],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "identityStatus": "temporary-no-source-roi"
+    },
+    {
+      "id": "g63-sofa-left-2",
+      "type": "sofa",
+      "name": "Left wall two-seat sofa 2 · temporary IDs",
+      "position": [
+        -3.05,
+        0,
+        1.45
+      ],
+      "yaw": 90,
+      "size": [
+        2.05,
+        0.95,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d5d0c2",
+      "seats": [
+        "Seat_G63_TMP_07",
+        "Seat_G63_TMP_08"
+      ],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "identityStatus": "temporary-no-source-roi"
+    },
+    {
+      "id": "g63-sofa-right-1",
+      "type": "sofa",
+      "name": "Right wall two-seat sofa 1 · temporary IDs",
+      "position": [
+        3.05,
+        0,
+        -0.85
+      ],
+      "yaw": -90,
+      "size": [
+        2.05,
+        0.95,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d5d0c2",
+      "seats": [
+        "Seat_G63_TMP_09",
+        "Seat_G63_TMP_10"
+      ],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "identityStatus": "temporary-no-source-roi"
+    },
+    {
+      "id": "g63-sofa-right-2",
+      "type": "sofa",
+      "name": "Right wall two-seat sofa 2 · temporary IDs",
+      "position": [
+        3.05,
+        0,
+        1.45
+      ],
+      "yaw": -90,
+      "size": [
+        2.05,
+        0.95,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d5d0c2",
+      "seats": [
+        "Seat_G63_TMP_11",
+        "Seat_G63_TMP_12"
+      ],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "identityStatus": "temporary-no-source-roi"
+    },
+    {
+      "id": "g63-coffee-table-01",
+      "type": "table",
+      "name": "Round marble/brass coffee table 1 · unmapped",
+      "position": [
+        0,
+        0,
+        -2.55
+      ],
+      "yaw": 0,
+      "size": [
+        1.04,
+        0.46,
+        1.04
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "round-pedestal",
+      "identityStatus": "unmapped-no-source-roi"
+    },
+    {
+      "id": "g63-coffee-table-02",
+      "type": "table",
+      "name": "Round marble/brass coffee table 2 · unmapped",
+      "position": [
+        -1.85,
+        0,
+        -0.85
+      ],
+      "yaw": 0,
+      "size": [
+        1.04,
+        0.46,
+        1.04
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "round-pedestal",
+      "identityStatus": "unmapped-no-source-roi"
+    },
+    {
+      "id": "g63-coffee-table-03",
+      "type": "table",
+      "name": "Round marble/brass coffee table 3 · unmapped",
+      "position": [
+        -1.85,
+        0,
+        1.45
+      ],
+      "yaw": 0,
+      "size": [
+        1.04,
+        0.46,
+        1.04
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "round-pedestal",
+      "identityStatus": "unmapped-no-source-roi"
+    },
+    {
+      "id": "g63-coffee-table-04",
+      "type": "table",
+      "name": "Round marble/brass coffee table 4 · unmapped",
+      "position": [
+        1.85,
+        0,
+        -0.85
+      ],
+      "yaw": 0,
+      "size": [
+        1.04,
+        0.46,
+        1.04
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "round-pedestal",
+      "identityStatus": "unmapped-no-source-roi"
+    },
+    {
+      "id": "g63-coffee-table-05",
+      "type": "table",
+      "name": "Round marble/brass coffee table 5 · unmapped",
+      "position": [
+        1.85,
+        0,
+        1.45
+      ],
+      "yaw": 0,
+      "size": [
+        1.04,
+        0.46,
+        1.04
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "round-pedestal",
+      "identityStatus": "unmapped-no-source-roi"
+    },
+    {
+      "id": "g63-side-table-01",
+      "type": "table",
+      "name": "Small marble/brass side table 1 · unmapped",
+      "position": [
+        -2.05,
+        0,
+        -3.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.56,
+        0.57,
+        0.56
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "round-pedestal",
+      "accessories": false,
+      "identityStatus": "unmapped-no-source-roi"
+    },
+    {
+      "id": "g63-side-table-02",
+      "type": "table",
+      "name": "Small marble/brass side table 2 · unmapped",
+      "position": [
+        0,
+        0,
+        -3.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.56,
+        0.57,
+        0.56
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "round-pedestal",
+      "accessories": false,
+      "identityStatus": "unmapped-no-source-roi"
+    },
+    {
+      "id": "g63-side-table-03",
+      "type": "table",
+      "name": "Small marble/brass side table 3 · unmapped",
+      "position": [
+        2.05,
+        0,
+        -3.55
+      ],
+      "yaw": 0,
+      "size": [
+        0.56,
+        0.57,
+        0.56
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "round-pedestal",
+      "accessories": false,
+      "identityStatus": "unmapped-no-source-roi"
+    },
+    {
+      "id": "g63-plant-left",
+      "type": "plant",
+      "name": "Left entrance plant",
+      "position": [
+        -3,
+        0,
+        3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        2.5,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#54714c",
+      "seats": [],
+      "cameras": [
+        "I30"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated"
+    },
+    {
+      "id": "g63-plant-right",
+      "type": "plant",
+      "name": "Right entrance plant",
+      "position": [
+        3,
+        0,
+        3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        2.5,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#54714c",
+      "seats": [],
+      "cameras": [
+        "I34"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated"
+    },
+    {
+      "id": "g63-flag-1",
+      "type": "wall-panel",
+      "name": "Saudi standing flag",
+      "position": [
+        -2.75,
+        0,
+        -3.92
+      ],
+      "yaw": 0,
+      "size": [
+        0.65,
+        2.8,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I31",
+        "I32"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "standing-flag",
+      "flagDesign": "saudi"
+    },
+    {
+      "id": "g63-flag-2",
+      "type": "wall-panel",
+      "name": "Altanfeethi standing flag",
+      "position": [
+        2.75,
+        0,
+        -3.92
+      ],
+      "yaw": 0,
+      "size": [
+        0.65,
+        2.8,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I31",
+        "I32"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "standing-flag",
+      "flagDesign": "altanfeethi"
+    },
+    {
+      "id": "g63-portrait-1",
+      "type": "display",
+      "name": "Framed royal portrait 1",
+      "position": [
+        -0.64,
+        2.95,
+        -4.18
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        0.73,
+        0.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8a8170",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I31",
+        "I32"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "reception-portrait",
+      "mount": "wall"
+    },
+    {
+      "id": "g63-portrait-2",
+      "type": "display",
+      "name": "Framed royal portrait 2",
+      "position": [
+        0,
+        2.95,
+        -4.18
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        0.73,
+        0.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8a8170",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I31",
+        "I32"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "reception-portrait",
+      "mount": "wall"
+    },
+    {
+      "id": "g63-portrait-3",
+      "type": "display",
+      "name": "Framed royal portrait 3",
+      "position": [
+        0.64,
+        2.95,
+        -4.18
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        0.73,
+        0.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8a8170",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I31",
+        "I32"
+      ],
+      "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
+      "variant": "reception-portrait",
+      "mount": "wall"
+    }
+  ]
+}

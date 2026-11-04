@@ -34,3 +34,6 @@ Owner map-proportion correction: the G9/G16 paired bay is now 5.2 m wide, with d
 Latest owner rebalance: G9/G16 bay width is 5.8 m (G9 passage 2.2 m); G10/G18 composed width is 7.4 m. Combined outer edges and 13.2 m dining width remain fixed; shared seam is X=-5.98. Dining length stays 15.6 m. G9/G16 and dining chairs are slightly larger at 0.94 × 0.94 × 0.98 m, with dining chairs moved 0.12 m back from their tables. Source seat IDs, yaw and manual edits are retained.
 
 Latest owner trial: G9/G16 width restored to 7.4 m; length unchanged, G10/G18 also remain 7.4 m in composition. G9 passage is 3.0 m and seating compartment 4.4 m. Dining is 14.8 m wide × 15.6 m long (source floor 18.2 × 14.8 m), with chairs 1.06 × 1.00 × 1.10 m, tables 1.50 × 0.50 × 0.84 m, wider pair spacing, and slightly larger food counters/piano. Both route ends stay open. Combined span X=-13.38..1.42.
+
+
+Owner correction (2026-11-03): the access side now has one broad rounded arch with end piers only, superseding earlier two-arch notes. This applies to standalone and combined views; furniture stays in place.

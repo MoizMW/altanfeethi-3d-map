@@ -16,7 +16,8 @@ export async function composeLayout(projectRoot,key,loadBlock){
       a.floorSections=structuredClone(sections);
     }
     for(const group of block.groups||[])groups.add(group);if(block.zone)zones.add(block.zone);
-    for(const wall of a.walls||[]){const endpoints=part.architectureOverrides?.wallEndpoints?.[wall.id];if(endpoints){wall.start=endpoints.start;wall.end=endpoints.end;}}
+    for(const wall of a.walls||[]){const endpoints=part.architectureOverrides?.wallEndpoints?.[wall.id];if(endpoints){wall.start=endpoints.start;wall.end=endpoints.end;}const doors=part.architectureOverrides?.wallDoors?.[wall.id];if(doors)wall.doors=doors.map(d=>({...structuredClone(wall.doors?.find(source=>source.id===d.id)||{}),...structuredClone(d)}));}
+    for(const room of a.rooms||[]){const footprint=part.architectureOverrides?.roomFootprints?.[room.id];if(footprint)room.footprint=structuredClone(footprint);}
     for(const opening of a.openings||[]){const correction=part.architectureOverrides?.openings?.[opening.id];if(correction)Object.assign(opening,correction);}
     if(part.architectureOverrides?.circulationPolygon)a.circulation={...a.circulation,polygon:part.architectureOverrides.circulationPolygon};
     const point=([x,z])=>[c*x+s*z+part.position[0],-s*x+c*z+part.position[2]];

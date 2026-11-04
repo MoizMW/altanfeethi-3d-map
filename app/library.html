@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Object Library · Altanfeethi</title>
+  <link rel="stylesheet" href="library.css">
+  <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <header><a class="wordmark" href="/">A<span>ALTANFEETHI<small>SPATIAL TWIN</small></span></a><span class="local-label">PROJECT LIBRARY</span><a class="back" href="/">Open lounge editor ↗</a></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">A COLLECTION TO BUILD ON</p><h1>Every object.<br>One shared library.</h1><p class="lede">Explore the furniture, finishes and fixtures already in your spaces. Choose a design to inspect it in 3D and see where it is used.</p></div><div class="stats" id="stats" aria-live="polite"></div></section>
+    <section class="collection" aria-label="Object collection">
+      <div class="toolbar"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Find a chair, table, finish or room…" aria-label="Search objects"></label><label class="block-filter">Location<select id="block"><option value="">All locations</option></select></label><button id="refresh" class="quiet">Refresh</button><button id="download" class="quiet">Download inventory ↓</button></div>
+      <div id="categories" class="categories" aria-label="Object categories"></div>
+      <div class="collection-heading"><h2 id="collection-title">All designs</h2><span id="result-count" role="status">Loading collection…</span></div>
+      <p class="notice">One card per design. Sizes, colors and construction options are collected inside each card. Counts refer to saved placements.</p>
+      <div id="grid" class="grid"></div><p id="empty" hidden>No designs match these filters. Try another name or location.</p>
+    </section>
+    <footer>Saved in <code>shared/assets/library/</code><span>Furniture & fixtures · Architecture is maintained separately</span></footer>
+  </main>
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="detail-header"><span class="eyebrow">DESIGN INSPECTOR</span><button id="close" aria-label="Close object inspector">Close ×</button></div>
+    <div class="detail-layout"><section class="model-panel"><div id="model"></div><div class="model-tools"><span>Drag to rotate · Scroll to zoom</span><label id="pillow-option" hidden><input id="show-pillow" type="checkbox" checked> Pillow</label><button id="reset-view">Reset view</button></div></section>
+    <section class="detail-info"><p class="eyebrow" id="detail-category"></p><h2 id="detail-title"></h2><p id="detail-summary"></p><label class="configuration-label">Size & finish<select id="configuration"></select></label><dl id="specifications"></dl><h3>Used in these spaces</h3><p class="usage-note">Links open the source room with this object selected.</p><ul id="usages"></ul></section></div>
+  </dialog>
+  <script type="module" src="library.js"></script>
+</body>
+</html>

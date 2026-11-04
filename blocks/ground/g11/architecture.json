@@ -169,29 +169,15 @@
       "id": "g11-access-c5",
       "wallId": "g11-access-wall",
       "kind": "rounded-passage",
-      "offset": 1.6,
-      "width": 2.15,
+      "offset": 3.6,
+      "width": 6.2,
       "springHeight": 1.85,
       "height": 3.15,
-      "behindSeat": "Seat_C5",
-      "confidence": "Access confirmed by user; separate arch interpretation and dimensions estimated",
-      "sources": [
-        "C2-wide",
-        "user-description"
-      ]
-    },
-    {
-      "id": "g11-access-c1",
-      "wallId": "g11-access-wall",
-      "kind": "rounded-passage",
-      "offset": 5.6,
-      "width": 2.15,
-      "springHeight": 1.85,
-      "height": 3.15,
-      "behindSeat": "Seat_C1",
-      "confidence": "Access confirmed by user; separate arch interpretation and dimensions estimated",
+      "confidence": "Owner requests one broad arch across this side, replacing the two-arch interpretation; dimensions remain provisional",
       "sources": [
         "C1-wide",
+        "C2-wide",
+        "owner-single-arch-2026-11-03",
         "user-description"
       ]
     }
@@ -202,7 +188,8 @@
     "Opposite access side is local -X behind the human-corrected Seat_C1 and Seat_C5. Two rounded passages around a central pier are an estimated interpretation of C1/C2 wide views.",
     "The footprint, wall height, thickness, opening shape/width and glass panel divisions are provisional. Existing furniture edits are retained; floor-to-wall offsets require review.",
     "Ceiling is a plain visualization plane, hidden by default. Captures do not establish exact ceiling profile or dimensions.",
-    "Side finishes refined from C3-wide: camera-left dark reflective paneling with metal trim; camera-right teal/gold geometric cladding and a projecting pale pier near front glazing. Relief depths and motif are approximations; no measured wall curvature is inferred."
+    "Side finishes refined from C3-wide: camera-left dark reflective paneling with metal trim; camera-right teal/gold geometric cladding and a projecting pale pier near front glazing. Relief depths and motif are approximations; no measured wall curvature is inferred.",
+    "Owner correction 2026-11-03 supersedes the two-arch interpretation: one centered broad rounded opening, with end piers only and no central pier. Furniture and other boundaries unchanged."
   ],
   "ceiling": {
     "height": 4.1,

@@ -47,7 +47,8 @@
     "Added provisional closed +Z glazing, -Z rounded corridor entrances, +X teal/gold TV wall and -X reflective wall, one TV and one console. Left/right finishes confirmed by owner from B6; room dimensions remain estimated.",
     "Reflections and corridor seating are excluded from object counts. Normal ROIs remain specific to the detection snapshots.",
     "Measured dimensions, updated map alignment, G9 shared seams, full ceiling fixture reconstruction and exact upholstery/side-table finishes remain unresolved.",
-    "Owner correction: swap side finishes to match B6 camera-left blue/teal design and camera-right black design. TV and console follow the blue wall; seating transforms and IDs retained."
+    "Owner correction: swap side finishes to match B6 camera-left blue/teal design and camera-right black design. TV and console follow the blue wall; seating transforms and IDs retained.",
+    "Owner requests one broad arch on the access side; prior two-arch/central-pier interpretation is superseded. Existing furniture poses and identities retained."
   ],
   "wideSnapshots": {
     "B4": "evidence/wide capture snapshots/B4.jpg",
@@ -61,7 +62,7 @@
     "capturedAt": null
   },
   "reviewItems": [
-    "Confirm two access arches and central pier widths",
+    "Confirm the estimated width/profile of the owner-requested single access arch",
     "Confirm floor footprint and map alignment before global merge",
     "Confirm sofa seat order; current contributor IDs retained"
   ]

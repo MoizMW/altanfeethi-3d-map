@@ -11,7 +11,7 @@
       "yaw": 0,
       "size": [0.88, 0.95, 0.88],
       "scale": [1, 1, 1],
-      "color": "#627d86",
+      "color": "#3d4a55",
       "seats": ["Seat_I1"],
       "cameras": ["I17", "I26"],
       "confidence": "I17 ROI identifies the wall-side chair; I26 wide corroborates the opposing pair. Curved back and wood supports are approximated by the shared lounge builder."
@@ -24,7 +24,7 @@
       "yaw": 0,
       "size": [0.88, 0.95, 0.88],
       "scale": [1, 1, 1],
-      "color": "#627d86",
+      "color": "#3d4a55",
       "seats": ["Seat_I2"],
       "cameras": ["I17", "I26"],
       "confidence": "I17 ROI identifies the aisle-side chair; I26 wide corroborates the opposing pair. Dimensions and spacing estimated."

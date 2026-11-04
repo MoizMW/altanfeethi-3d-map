@@ -113,7 +113,16 @@
             "C8",
             "C15"
           ],
-          "confidence": "Owner-requested glass leaf and dark vertical pull handle based on camera views; dimensions and placement estimated."
+          "confidence": "Owner-requested glass leaf and dark vertical pull handle based on camera views; dimensions and placement estimated.",
+          "sign": {
+            "text": "Customs Office",
+            "icon": "customs",
+            "color": "#684633",
+            "textColor": "#f5ecd4",
+            "width": 0.52,
+            "height": 0.64,
+            "elevation": 2.1
+          }
         }
       ]
     },
@@ -257,12 +266,98 @@
             "C8",
             "C15"
           ],
-          "confidence": "Owner-requested glass leaf and dark vertical pull handle based on camera views; dimensions and placement estimated."
+          "confidence": "Owner-requested glass leaf and dark vertical pull handle based on camera views; dimensions and placement estimated.",
+          "sign": {
+            "text": "Passport Office",
+            "icon": "passport",
+            "color": "#684633",
+            "textColor": "#f5ecd4",
+            "width": 0.52,
+            "height": 0.64,
+            "elevation": 2.1
+          }
         }
+      ]
+    },
+    {
+      "id": "g15-lobby-arch-partition",
+      "kind": "solid",
+      "start": [
+        -3.9,
+        4.5
+      ],
+      "end": [
+        3.9,
+        4.5
+      ],
+      "height": 4.1,
+      "thickness": 0.18,
+      "color": "#e6e3db",
+      "owner": "ground/g15",
+      "sources": [
+        "C15",
+        "C16"
+      ],
+      "confidence": "Owner identifies partial-width arched partition beyond the security belts. Broad central opening and short side glazing inferred from overlapping views; dimensions estimated."
+    },
+    {
+      "id": "g15-lobby-glass-office",
+      "kind": "glass",
+      "start": [
+        -5,
+        4.5
+      ],
+      "end": [
+        -3.9,
+        4.5
+      ],
+      "height": 4.1,
+      "thickness": 0.035,
+      "color": "#b0bdb6",
+      "opacity": 0.24,
+      "frameColor": "#65716b",
+      "privacyBand": false,
+      "owner": "ground/g15",
+      "sources": [
+        "C15",
+        "C16"
+      ]
+    },
+    {
+      "id": "g15-lobby-glass-wall",
+      "kind": "glass",
+      "start": [
+        3.9,
+        4.5
+      ],
+      "end": [
+        5,
+        4.5
+      ],
+      "height": 4.1,
+      "thickness": 0.035,
+      "color": "#b0bdb6",
+      "opacity": 0.24,
+      "frameColor": "#65716b",
+      "privacyBand": false,
+      "owner": "ground/g15",
+      "sources": [
+        "C15",
+        "C16"
       ]
     }
   ],
-  "openings": [],
+  "openings": [
+    {
+      "id": "g15-lobby-arched-opening",
+      "wallId": "g15-lobby-arch-partition",
+      "kind": "rounded-passage",
+      "offset": 3.9,
+      "width": 7.0,
+      "springHeight": 2.15,
+      "height": 3.65
+    }
+  ],
   "sharedBoundaries": [],
   "ceiling": {
     "size": [
@@ -316,13 +411,13 @@
     },
     {
       "id": "g15-lobby-end",
-      "kind": "open-corridor",
+      "kind": "partial-width-arch-with-side-glass",
       "sources": [
         "C15",
         "C16"
       ],
-      "status": "neighbor-and-seam-unresolved",
-      "notes": "Pale adjoining circulation and distant turnstiles/entrance controls are beyond this equipment crop; their extents and ownership are unresolved."
+      "status": "owner-confirmed-topology-dimensions-estimated",
+      "notes": "Central arched passage, short glass sections at each end; C15/C16 reference, exact dimensions unmeasured."
     },
     {
       "id": "g15-curtain-return",
@@ -395,7 +490,7 @@
   "rooms": [
     {
       "id": "g15-passport-office",
-      "name": "Passport Office",
+      "name": "Customs Office",
       "footprint": [
         [
           -11,
@@ -420,7 +515,7 @@
     },
     {
       "id": "g15-customs-office",
-      "name": "Customs Office",
+      "name": "Passport Office",
       "footprint": [
         [
           -11,
@@ -451,5 +546,9 @@
     "source": "Owner explicit 80% ratio and top-side extension correction; visualization dimensions remain estimates.",
     "alignedEnd": 4.5,
     "extensionSide": "negative-Z (top in Top view)"
-  }
+  },
+  "notes": [
+    "Owner front-view naming: left office is Passport Office; right office is Customs Office. Brown door plaques have ivory text and passport / customs suitcase icons. Existing room, wall and door IDs remain stable; source signs follow door overrides into combined layouts.",
+    "Owner C15/C16 correction: +Z/lobby end has a partial-width pale arch (X=-3.9..3.9) with short fixed glass returns to both side boundaries (X=\u00b15). Clear central opening is 7 m wide, with 2.15 m spring and 3.65 m crown; dimensions approximate. Saved checkpoint equipment unchanged. Source shell propagates into both combined layouts."
+  ]
 }

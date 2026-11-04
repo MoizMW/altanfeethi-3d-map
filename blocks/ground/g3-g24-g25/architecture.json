@@ -216,7 +216,7 @@
         -7.4
       ],
       "end": [
-        0.61659,
+        2.148387,
         -7.4
       ],
       "height": 4.1,
@@ -247,7 +247,7 @@
         -7.4
       ],
       "end": [
-        8.1,
+        10.6,
         -7.4
       ],
       "height": 4.1,
@@ -371,7 +371,7 @@
       "B12",
       "B14"
     ],
-    "notes": "Two seating-bank table centerlines are now Z=+/-2.8 m, with slightly larger chairs/tables and increased within-pair separation. The checked TV-side path is 2.5 m wide at local X=8.1..10.6, open at both ends. Existing footprint and arch-side corridor remain unchanged.",
+    "notes": "TV-side checked passage remains clear internally and opens only at +Z toward I-zone extension; north (-Z) end closed by owner.",
     "routes": [
       {
         "id": "arch-side",
@@ -414,7 +414,7 @@
             7.4
           ]
         ],
-        "destination": "another zone; connection awaits global alignment"
+        "destination": "I-zone extension through +Z end only"
       }
     ]
   },
@@ -455,6 +455,7 @@
     }
   ],
   "notes": [
+    "Owner correction: top-left/north blue wall is fully closed, including the middle gap and TV-side end gap. Only the opposite TV-side passage at Z=+7.4 remains open to the I-zone extension. Arch entrances retained.",
     "Owner confirms shared G3/G24/G25 area width equals G9 + G10: 7.2 + 8.0 = 15.2 provisional meters. Includes 2.6 m clear corridor at the arch side. Depth 10.6 m and all furniture placement are estimates pending owner review.",
     "Thirty ROI seat IDs and fifteen table IDs deduplicated across eleven normal views. G3 is overlapping evidence, not a separate enclosure.",
     "Buffet counters, framed art, plants and wall displays are schematic context without invented occupancy IDs. Decorative glass pattern, diamond floor inlays, serving equipment, signage, exact chair shell and ceiling fittings are unresolved.",

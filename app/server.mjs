@@ -5,6 +5,7 @@ import {resolve,extname,basename} from 'node:path';
 import {createHash,randomUUID} from 'node:crypto';
 import {validateBlock} from '../shared/schema/block-schema.js';
 import {composeLayout} from './layouts.mjs';
+import {collectObjectLibrary} from '../scripts/build-object-library.mjs';
 
 const appRoot=fileURLToPath(new URL('./',import.meta.url));
 const projectRoot=resolve(appRoot,'..');
@@ -73,6 +74,7 @@ async function saveObjects(req,res,key){
 export const server=createServer(async(req,res)=>{
   try{
     const url=new URL(req.url,'http://localhost');
+    if(url.pathname==='/api/object-library'&&req.method==='GET')return send(res,200,await collectObjectLibrary(projectRoot));
     if(url.pathname==='/api/blocks'&&req.method==='GET')return send(res,200,{blocks:await listBlocks()});
     if(url.pathname==='/api/block'){
       const key=blockKey(url.searchParams.get('block')||undefined);
@@ -106,7 +108,11 @@ export const server=createServer(async(req,res)=>{
     }
     if(req.method!=='GET')return send(res,405,{error:'Method not allowed'});
     const relative=decodeURIComponent(url.pathname).slice(1)||'index.html';let target;
-    if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','security-objects.js','passport-objects.js','styles.css','editor.css','lounge-tables.js','lobby-fixtures.js','vertical-circulation.js','dining-objects.js'].includes(relative))target=resolve(appRoot,relative);
+    if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','security-objects.js','passport-objects.js','styles.css','editor.css','lounge-tables.js','lobby-fixtures.js','vertical-circulation.js','dining-objects.js','object-builders.js','library.html','library.js','library.css'].includes(relative))target=resolve(appRoot,relative);
+    else if(relative==='curved-armchair.js')target=resolve(appRoot,relative);
+    else if(relative==='shared/materials/textures/lounge-pillow/pillow-reference.png')target=resolve(projectRoot,relative);
+    else if(relative==='shared/materials/textures/lounge-pillow/pillow-botanical-clean.png')target=resolve(projectRoot,relative);
+    else if(relative==='shared/assets/library/inventory.json')target=resolve(projectRoot,relative);
     else if(relative==='shared/schema/block-schema.js')target=resolve(projectRoot,relative);
     else if(/^shared\/assets\/flags\/(saudi|altanfeethi)\.svg$/.test(relative))target=resolve(projectRoot,relative);
     else if(/^shared\/assets\/portraits\/reception-[123]\.png$/.test(relative))target=resolve(projectRoot,relative);

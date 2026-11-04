@@ -1,5 +1,7 @@
 # Altanfeethi spatial twin
 
+Shared object library: `http://127.0.0.1:4209/library.html` — searchable 3D inventory of saved furniture and fixtures, with size/finish configurations and source-room links. Refresh the saved directory inventory with `npm run library:refresh`. See [library workflow](shared/assets/library/README.md).
+
 Combined G15/G13: `http://127.0.0.1:4209/?layout=ground/g15-g13` — checkpoint, two offices and passport control, with a provisional connecting approach. Both source blocks load live with their saved furniture and gate sizes.
 
 G13 arrival passport control: `http://127.0.0.1:4209/?block=ground/g13` — [booth evidence and review notes](blocks/ground/g13/README.md).
@@ -9,6 +11,10 @@ First-floor lounges and stair lobby: `http://127.0.0.1:4209/?layout=first/bottom
 Reception + SGS shared security/unused-counter bays: `http://127.0.0.1:4209/?layout=ground/departure-sgs`.
 
 Departure_Reception: `http://127.0.0.1:4209/?block=ground/departure-reception` — [reception, entrance, e-gate and side-camera evidence](blocks/ground/departure-reception/README.md).
+
+Small I-zone lounges: `/?block=ground/g60` (I37/I42) and `/?block=ground/i33-lounge` (I33). Two blue chairs and one white two-seat sofa each; both included after G63 in the main combined layout.
+
+G63 portrait lounge: `http://127.0.0.1:4209/?block=ground/g63` — [evidence and review notes](blocks/ground/g63/README.md). Four armchairs, four two-seat sofas, 12 owner-authorized temporary seat IDs; 7.4 m width, half the G12/G14 span.
 
 G12 + G14 shared C-zone lounge: `http://127.0.0.1:4209/?block=ground/g12-g14` — [evidence and review notes](blocks/ground/g12-g14/README.md). One editable space for both groups, with 21 unique seat IDs.
 

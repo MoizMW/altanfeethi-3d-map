@@ -1,0 +1,18 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-i-small-i33-lounge",
+  "slug": "i33-lounge",
+  "name": "I33 · Small lounge",
+  "floor": "ground",
+  "groups": [],
+  "zone": "I",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

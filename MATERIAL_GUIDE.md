@@ -31,7 +31,7 @@ Camera exposure, white balance and reflections can make one material look differ
 
 ## Texture asset format for future detail
 
-Current blocks use procedural geometry and flat PBR colors; there are no photographic texture maps yet. Wood grooves, chair mesh lines and floor grids are geometry/detail, not a complete texture system.
+Most blocks use procedural geometry and flat PBR colors. The default curved armchair uses a fine procedural upholstery bump, fabric sheen and a clean generated botanical pillow fabric through `app/curved-armchair.js`. Its shared texture is `shared/materials/textures/lounge-pillow/pillow-botanical-clean.png`, mapped directly without photographed perspective or folds. Wood grooves, chair mesh lines and floor grids remain geometry/detail, not a complete texture system.
 
 When adding texture images, keep each reusable set in `shared/materials/textures/<material-id>/` and extend that material's catalog entry with this proposed metadata:
 
@@ -51,7 +51,7 @@ When adding texture images, keep each reusable set in `shared/materials/textures
 }
 ```
 
-This texture metadata is a future extension and is not currently loaded by the renderer. Implement its loader once in the shared renderer before using it in blocks. Base-color images use sRGB; normal/roughness maps use linear data. Start with 1024px reusable maps, no more than 2048px without a demonstrated need. Keep physical tile/grain size consistent across meshes and block seams. Do not bake camera shadows, reflections, perspective or people into a reusable surface.
+Generic catalog-driven texture loading remains a future extension. The botanical pillow entry is explicitly connected by the shared armchair builder; arbitrary catalog texture entries are not automatically loaded. Base-color images use sRGB; normal/roughness maps use linear data. Start with 1024px reusable maps, no more than 2048px without a demonstrated need. Keep physical tile/grain size consistent across meshes and block seams. Do not bake camera shadows, reflections, perspective or people into a reusable surface. The original owner-provided pillow screenshot is retained only as evidence; the active pillow uses the generated flat fabric texture and its recorded prompt.
 
 ## Contributor review
 
@@ -66,4 +66,4 @@ G9 and G32 should share this visual language while retaining their observed loun
 
 Architectural glass variant `blue-gold-geometric` uses translucent blue glazing, brass edging and a procedural gold twelve-point rosette/lattice approximation from the owner's Zone C reference. Reuse it through `architecture.walls[].variant` for the same observed finish; do not replace clear or smoked glazing elsewhere without evidence. The motif is geometry, not a photographic texture.
 
-Owner lounge-chair standard: G18/G20 blue `#627d86` is the default for new lounge chairs. The former G27 green overrides are retired and rejected for armchairs by shared block validation, including imported or saved drafts. Other physical materials and editable colors remain available.
+Owner lounge-chair standard (3 November 2026): default armchairs use the reference curved back/low arms, shaped seat, dark tapered timber legs, slate-blue upholstery `#3d4a55` and a botanical pillow using a clean generated fabric pattern, replacing the earlier screenshot texture at the owner's request. All matching placements share that builder regardless of saved dimensions. See `shared/assets/library/references/curved-armchair/README.md`. This supersedes the previous G18/G20 blue standard. Egg-swivel and shell-lounge variants retain their designs. The former G27 green overrides remain retired and rejected by shared block validation. Other physical materials and editable colors remain available.

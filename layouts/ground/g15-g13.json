@@ -3,24 +3,47 @@
   "version": 1,
   "id": "ground-g15-g13",
   "displayCode": "G15 + G13",
-  "name": "G15 + G13 · Checkpoint and passport control",
+  "name": "G15 + G13 \u00b7 Checkpoint and passport control",
   "floor": "ground",
   "status": "evidence-led-draft",
   "components": [
-    {"block": "ground/g15", "position": [0, 0, 0], "yaw": 0},
+    {
+      "block": "ground/g15",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0
+    },
     {
       "block": "ground/g13",
-      "position": [1.3, 0, -13.75],
-      "yaw": -90,
-      "architectureOverrides": {"floorCenter": [1.2, -0.05], "floorSize": [11.5, 7.7]}
+      "position": [
+        1.3,
+        0,
+        -13.75
+      ],
+      "yaw": -90
     }
   ],
-  "floorSize": [16.2, 22.8],
-  "floorCenter": [-2.9, -6.9],
+  "floorSize": [
+    16.2,
+    23
+  ],
+  "floorCenter": [
+    -2.9,
+    -7
+  ],
   "corridor": {
     "id": "g15-g13-connection-floor",
-    "center": [0.1, -5.8],
-    "size": [10.2, 2],
+    "center": [
+      0.1,
+      -5.8
+    ],
+    "size": [
+      10.2,
+      2
+    ],
     "color": "#424747",
     "owner": "layout:ground/g15-g13"
   },
@@ -28,8 +51,14 @@
     {
       "id": "g15-g13-right-connection",
       "kind": "solid",
-      "start": [5, -6.95],
-      "end": [5, -4.8],
+      "start": [
+        5,
+        -6.95
+      ],
+      "end": [
+        5,
+        -4.8
+      ],
       "height": 4.1,
       "thickness": 0.16,
       "owner": "layout:ground/g15-g13",
@@ -42,16 +71,41 @@
       "from": "ground/g15",
       "to": "ground/g13",
       "fromBoundary": "g15-approach-end",
-      "floorSeams": [-4.8, -6.8],
-      "approachWaypoints": [[1.45, -4.7], [1.45, -5.8], [-1, -5.8], [-1, -8.6625]],
-      "status": "provisional-open-circulation-to-passport-gates"
+      "floorSeams": [
+        -4.8,
+        -6.8
+      ],
+      "approachWaypoints": [
+        [
+          1.45,
+          -4.7
+        ],
+        [
+          1.45,
+          -5.8
+        ],
+        [
+          -2.35,
+          -5.8
+        ],
+        [
+          -2.35,
+          -6.8
+        ]
+      ],
+      "status": "provisional-public-approach-to-digital-immigration-gate"
     }
   ],
   "notes": [
-    "Combined G15 security checkpoint and G13 arrival passport control. All 29 source objects, their IDs, sizes and saved local poses load live from the original blocks.",
+    "Digital immigration entry correction: public approach now ends at the closed opening glass gate; adjoining fixed glazing prevents the previous side bypass. Gate opening is a preview only, without live access control.",
+    "G13 source owns C10 end enclosure and expanded dark floor, shared by individual G15/G13 and main preview. Earlier G13 floor overrides superseded.",
+    "Combined G15 security checkpoint and G13 arrival passport control. All 31 source objects, their IDs, sizes and saved local poses load live from the original blocks.",
     "Owner correction: G13 connects above G15 at its -Z/top approach end, rotated -90 degrees so staff chairs are on the right (+X) and passenger gates on the left. G15 stays in place. The 2 m circulation span and exact global calibration remain estimated; the earlier bottom-end placement is superseded.",
     "Owner right-edge correction: G13 shifts left 1.7 m as one block. Both right walls align at X=5 and the layout owns their connecting wall. A 0.1 m floor-only extension aligns G13, the connection and G15 floor edges at X=5.2; furniture sizes and local poses are unchanged.",
     "G15 retains its two office boxes, handled glass doors, separate floor sections and top-side extension: checkpoint length is 80% of the combined office row. G13 retains its two half-width single gates, one double gate and screen beside the double booth.",
     "The layout owns the connection floor. No source wall or furniture is removed, offset or scaled. Passenger gates retain their static closed reference state; the connection leads to their public approach rather than implying live access."
+  ],
+  "evidenceCameras": [
+    "C10"
   ]
 }

@@ -40,3 +40,6 @@ Local +X follows the sofa backs/shelving. +Z crosses the divider toward the Tabl
 Glazing, floor lamps, columns and neighboring seats are excluded until structural ownership and boundaries are reviewed. Dimensions, foliage and shelf ornaments are estimates. The floor rectangle is not a measured room boundary.
 
 Move, rotate, resize and scale each object in the editor. Armchair IDs and each sofa slot ID are editable there. Tables expose an optional table ID, saved as `externalId`. Apply adjustment, then Save block to persist edits. Human-reviewed IDs in `objects.json` supersede the original correspondence table above; the owner has corrected the C5/C8 armchair assignment. Follow `CONTRIBUTING.md` for sharing and merges.
+
+
+Owner correction (2026-11-03): the access side now has one broad rounded arch with end piers only, superseding earlier two-arch notes. This applies to standalone and combined views; furniture stays in place.

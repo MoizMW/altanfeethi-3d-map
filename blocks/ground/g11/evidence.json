@@ -38,7 +38,8 @@
     "ROI authoring resolution is unrecorded; image-space labels support correspondence only. Dimensions, world yaw and block-to-map alignment are provisional.",
     "Human-reviewed furniture positions and seat assignments in objects.json supersede initial ROI-side guesses. All current object records were preserved.",
     "Front glass boundary is local +X behind Seat_C4/C8. Side walls are local +/-Z. Axis assignment follows the corrected chair positions, not camera image left/right.",
-    "C3-wide shows suspended lighting but does not establish the full ceiling geometry; fixture reconstruction is deferred."
+    "C3-wide shows suspended lighting but does not establish the full ceiling geometry; fixture reconstruction is deferred.",
+    "Owner requests one broad arch on the access side; prior two-arch/central-pier interpretation is superseded. Existing furniture poses and identities retained."
   ],
   "reviewItems": [
     "Confirm two separate rounded openings versus one continuous curved access boundary; verify central pier and wall extents.",

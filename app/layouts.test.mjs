@@ -4,6 +4,7 @@ import {readFile} from 'node:fs/promises';
 import * as THREE from 'three';
 import {composeLayout} from './layouts.mjs';
 import {buildArchitecture} from './architecture.js';
+import {buildPassportObject,passportSizes} from './passport-objects.js';
 import {server} from './server.mjs';
 
 const root=new URL('../',import.meta.url).pathname;
@@ -11,14 +12,34 @@ const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architectu
 const sourceFiles=['ground/g15','ground/g13'].flatMap(key=>['manifest','architecture','objects','evidence'].map(f=>new URL(`../blocks/${key}/${f}.json`,import.meta.url)));
 const sourceBytes=()=>Promise.all(sourceFiles.map(file=>readFile(file,'utf8')));
 
+test('Digital immigration gate opens while adjoining fixed glass closes the bypass',async()=>{
+  const source=(await load('ground/g13')).block;
+  const gate=source.objects.find(o=>o.id==='g13-digital-entry-gate');
+  const fixed=source.architecture.walls.filter(w=>w.id.startsWith('g13-digital-entry-'));
+  const shell=buildArchitecture({walls:fixed});
+  const box=(parent,size,position,material)=>{const m=new THREE.Mesh(new THREE.BoxGeometry(...size),material);m.position.fromArray(position);parent.add(m);return m;};
+  const helpers={box,mesh:(parent,geometry,material,position)=>{const m=new THREE.Mesh(geometry,material);m.position.fromArray(position);parent.add(m);return m;},mat:color=>new THREE.MeshStandardMaterial({color})};
+  const hit=(scene,z)=>new THREE.Raycaster(new THREE.Vector3(6.9,.6,z),new THREE.Vector3(-1,0,0),0,.8).intersectObject(scene,true).length>0;
+  const start=gate.position[2]-gate.size[0]/2,end=gate.position[2]+gate.size[0]/2;
+  assert.deepEqual(fixed[0].start,[6.5,.625]);assert.ok(Math.abs(fixed[0].end[1]-start)<1e-8);
+  assert.ok(Math.abs(fixed[1].start[1]-end)<1e-8);assert.deepEqual(fixed[1].end,[6.5,5.15]);
+  for(const openFraction of [0,1]){
+    const scene=new THREE.Group(),moving=new THREE.Group();scene.add(shell.clone(true),moving);
+    buildPassportObject(moving,{...gate,openFraction},helpers);
+    moving.scale.fromArray(gate.size.map((v,i)=>v/passportSizes[gate.type][i]));moving.rotation.y=gate.yaw*Math.PI/180;moving.position.fromArray(gate.position);scene.updateMatrixWorld(true);
+    assert.equal(hit(scene,gate.position[2]),openFraction===0,'Only the scanner entry clears when its leaf opens');
+    for(const z of [1,2.4,4.8,5.05])assert.ok(hit(scene,z),'Fixed panels stay closed beside the opening');
+  }
+});
+
 test('G15/G13 preserves every saved object and wall under rigid component placement',async()=>{
   const before=await sourceBytes();
   const layout=JSON.parse(await readFile(new URL('../layouts/ground/g15-g13.json',import.meta.url)));
   const {block}=await composeLayout(root,'ground/g15-g13',load);
-  assert.equal(block.readOnly,true);assert.equal(block.objects.length,29);
-  assert.equal(new Set(block.objects.map(o=>o.id)).size,29);
+  assert.equal(block.readOnly,true);assert.equal(block.objects.length,31);
+  assert.equal(new Set(block.objects.map(o=>o.id)).size,31);
   assert.equal(block.objects.flatMap(o=>o.seats).length,6);
-  const staff=block.objects.filter(o=>o.sourceBlock==='ground/g13'&&o.type==='office-chair'),gates=block.objects.filter(o=>o.type==='passport-gate');
+  const staff=block.objects.filter(o=>o.sourceBlock==='ground/g13'&&o.type==='office-chair'),gates=block.objects.filter(o=>o.type==='passport-gate'&&o.id!=='g13-digital-entry-gate');
   assert.equal(staff.length,4);assert.equal(gates.length,3);
   assert.ok(Math.min(...staff.map(o=>o.position[0]))>Math.max(...gates.map(o=>o.position[0])),'G13 staff chairs must be on the right of the gates in top view');
   for(const part of layout.components){
@@ -41,7 +62,7 @@ test('G15/G13 retains office floors and doors with a continuous unobstructed joi
   assert.equal(block.architecture.floorSections.length,5);
   for(const section of g15.architecture.floorSections)assert.deepEqual(block.architecture.floorSections.find(f=>f.id===section.id),{...section,yaw:0,sourceBlock:'ground/g15'});
   assert.deepEqual(block.architecture.rooms,g15.architecture.rooms.map(room=>({...room,sourceBlock:'ground/g15'})));
-  assert.equal(block.architecture.walls.flatMap(w=>w.doors||[]).length,2);
+  assert.equal(block.architecture.walls.filter(w=>w.owner==='ground/g15').flatMap(w=>w.doors||[]).length,2);
   assert.equal(g15.architecture.proportions.checkpointLength/g15.architecture.proportions.officeRowLength,.8);
   const covers=([x,z])=>block.architecture.floorSections.some(f=>{const r=f.yaw*Math.PI/180,dx=x-f.center[0],dz=z-f.center[1];return Math.abs(Math.cos(r)*dx-Math.sin(r)*dz)<=f.size[0]/2+1e-8&&Math.abs(Math.sin(r)*dx+Math.cos(r)*dz)<=f.size[1]/2+1e-8;});
   assert.equal(covers([-5.01,-7]),true);assert.equal(covers([-4.99,-7]),false,'Do not fill the empty area beside the office extension');
@@ -75,10 +96,104 @@ test('G15/G13 API lists the layout, serves all evidence and rejects source saves
   try{
     const listing=await (await fetch(`${origin}/api/blocks`)).json();assert.ok(listing.blocks.some(b=>b.key==='layout:ground/g15-g13'));
     const response=await fetch(`${origin}/api/block${query}`);assert.equal(response.status,200);
-    const {block}=await response.json();assert.equal(block.objects.length,29);assert.equal(block.architecture.floorSections.length,5);assert.equal(block.readOnly,true);
-    assert.deepEqual(new Set(block.evidence.cameras),new Set(['C8','C15','C16','C13','C17','C18','C21']));
+    const {block}=await response.json();assert.equal(block.objects.length,31);assert.equal(block.architecture.floorSections.length,5);assert.equal(block.readOnly,true);
+    assert.deepEqual(new Set(block.evidence.cameras),new Set(['C8','C15','C16','C13','C17','C18','C21','C10']));
     for(const id of block.evidence.cameras)for(const wide of [false,true]){const photo=await fetch(`${origin}/api/evidence/camera/${id}${query}${wide?'&wide=1':''}`);assert.equal(photo.status,200);assert.equal(photo.headers.get('content-type'),'image/jpeg');await photo.arrayBuffer();}
     assert.equal((await fetch(`${origin}/api/block${query}`,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({block})})).status,405);
     assert.deepEqual(await sourceBytes(),before);
   }finally{await new Promise(resolve=>server.close(resolve));}
+});
+
+test('G63 faces the C-lounge corridor and joins the immigration/checkpoint partition once',async()=>{
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  const source=(await load('ground/g63')).block;
+  const merged=block.objects.filter(o=>o.sourceBlock==='ground/g63');
+  assert.equal(merged.length,source.objects.length);
+  assert.deepEqual(merged.flatMap(o=>o.seats),source.objects.flatMap(o=>o.seats));
+  const arch=block.architecture.walls.find(w=>w.id==='g63-entrance-arch');
+  for(const p of [arch.start,arch.end])assert.ok(Math.abs(p[1]-5.6)<1e-8);
+  assert.ok(Math.abs(Math.max(arch.start[0],arch.end[0])+29.18)<1e-8);
+  assert.ok(!block.architecture.walls.some(w=>['g63-left-wall','g63-left-cladding'].includes(w.id)));
+  assert.equal(block.architecture.walls.filter(w=>w.id==='g15-solid-side').length,1);
+  for(const section of block.architecture.floorSections.filter(f=>f.sourceBlock==='ground/g63')){
+    assert.ok(section.center[0]+section.size[0]/2<=-29.38+1e-8,'G15 owns the adjoining floor margin');
+  }
+  const shell=buildArchitecture({walls:[arch],openings:block.architecture.openings.filter(o=>o.wallId===arch.id)});
+  shell.updateMatrixWorld(true);
+  assert.equal(new THREE.Raycaster(new THREE.Vector3(-32.88,.7,4.3),new THREE.Vector3(0,0,1),0,2).intersectObject(shell,true).length,0);
+});
+
+test('G9 G10 and G11 each have one clear centered access arch in source and main views',async()=>{
+  const main=(await composeLayout(root,'ground/b-g-lounges',load)).block;
+  for(const key of ['g9','g10','g11']){
+    const source=(await load(`ground/${key}`)).block;
+    assert.equal(source.architecture.openings.length,1);
+    for(const a of [source.architecture,main.architecture]){
+      const openings=a.openings.filter(o=>o.id.startsWith(key+'-'));
+      assert.equal(openings.length,1);
+      const opening=openings[0],wall=a.walls.find(w=>w.id===opening.wallId);
+      const dx=wall.end[0]-wall.start[0],dz=wall.end[1]-wall.start[1],length=Math.hypot(dx,dz);
+      assert.ok(Math.abs(opening.offset-length/2)<1e-8);
+      const normal=new THREE.Vector3(-dz/length,0,dx/length);
+      const origin=new THREE.Vector3((wall.start[0]+wall.end[0])/2,.7,(wall.start[1]+wall.end[1])/2).add(normal);
+      const shell=buildArchitecture({walls:[wall],openings});shell.updateMatrixWorld(true);
+      assert.equal(new THREE.Raycaster(origin,normal.clone().negate(),0,2).intersectObject(shell,true).length,0,'No central pier should obstruct the single entrance');
+    }
+  }
+});
+
+test('Two compact I lounges fill the remaining half frontage after G63 with eight distinct seats',async()=>{
+  const layout=JSON.parse(await readFile(new URL('../layouts/ground/b-g-lounges.json',import.meta.url)));
+  const main=(await composeLayout(root,'ground/b-g-lounges',load)).block;
+  const parts=['ground/g60','ground/i33-lounge'].map(key=>layout.components.find(p=>p.block===key));
+  const sources=await Promise.all(parts.map(async p=>(await load(p.block)).block));
+  const reference=(await load('ground/g12-g14')).block;
+  assert.equal(sources.reduce((n,b)=>n+b.floorSize[1],0),reference.floorSize[1]/2);
+  for(let i=0;i<2;i++){
+    const source=sources[i],part=parts[i],objects=main.objects.filter(o=>o.sourceBlock===part.block);
+    assert.equal(source.objects.filter(o=>o.type==='armchair').length,2);
+    assert.equal(source.objects.filter(o=>o.type==='sofa').length,1);
+    assert.equal(objects.flatMap(o=>o.seats).length,4);
+    assert.deepEqual(objects.flatMap(o=>o.seats),source.objects.flatMap(o=>o.seats));
+    assert.equal(objects.length,source.objects.length);
+    assert.ok(Math.abs(part.position[2]-source.floorSize[0]/2-5.6)<1e-8);
+    assert.ok(!main.architecture.walls.some(w=>w.id===source.slug+'-side-positive-z'));
+  }
+  assert.ok(Math.abs(parts[0].position[0]-parts[1].position[0]-3.7)<1e-8);
+  const g60=sources[0],observed=new Set();
+  for(const camera of g60.evidence.cameras){const r=JSON.parse(await readFile(new URL('../'+g60.evidence.rois[camera].chairs,import.meta.url)));Object.keys(r).forEach(id=>observed.add(id));}
+  assert.deepEqual([...observed].sort(),g60.objects.flatMap(o=>o.seats).sort());
+  assert.ok(sources[1].objects.flatMap(o=>o.seats).every(s=>s.startsWith('Seat_I33_TMP_')));
+});
+
+test('Small I lounges use supported sliding frosted entries and a cream shared wall with a grey window',async()=>{
+  for(const key of ['g60','i33-lounge']){
+    const source=(await load('ground/'+key)).block,a=source.architecture;
+    const entry=a.walls.find(w=>w.id===key+'-entry-glass');
+    assert.equal(entry.variant,'frosted-cream');assert.equal(entry.kind,'glass');
+    assert.equal(entry.doors.length,1);assert.equal(entry.doors[0].width+2*entry.pillarWidth,source.floorSize[1]);assert.equal(entry.automaticSliding,true);
+    assert.ok(!a.walls.some(w=>/entry-(left-return|right-return|header)$/.test(w.id)));
+    const black=a.walls.find(w=>w.variant==='cream-grey-window');assert.ok(black);assert.equal(black.kind,'solid');assert.ok(black.window.width<source.floorSize[0]);
+    const sofa=source.objects.find(o=>o.type==='sofa');
+    assert.ok(black.start[1]*sofa.position[2]<0,'Grey window must be opposite the saved sofa');
+    const shell=buildArchitecture(a);
+    for(const wall of [entry,black]){
+      const group=shell.children.find(g=>g.userData.boundaryId===wall.id);
+      const surfaces=[];group.traverse(n=>{if(n.isMesh)surfaces.push(n.material);});
+      assert.ok(surfaces.length);assert.ok(surfaces.every(m=>!m.transparent&&m.opacity===1));
+      if(wall===entry){
+        assert.ok(surfaces.some(m=>m.roughness===.85),'Cream glass must have a frosted finish');
+        assert.equal(group.children.filter(n=>n.name==='Door support pillar').length,2);
+        assert.ok(group.getObjectByName('Fixed frosted panel'));assert.ok(group.getObjectByName('Sliding frosted panel'));
+        assert.ok(group.getObjectByName('Automatic door button'));assert.ok(group.getObjectByName('Subtle blue button ring'));
+        assert.ok(!group.getObjectByName('Door pull handle'));
+      }else{
+        const pane=group.getObjectByName('Opaque grey window');assert.ok(pane);assert.equal(pane.geometry.parameters.width,1.9);
+        assert.equal(pane.material.color.getHexString(),'73797b');
+      }
+    }
+  }
+  const main=(await composeLayout(root,'ground/b-g-lounges',load)).block;
+  assert.equal(main.architecture.walls.filter(w=>w.variant==='cream-grey-window').length,1);
+  assert.equal(main.architecture.walls.filter(w=>w.variant==='frosted-cream').length,2);
 });

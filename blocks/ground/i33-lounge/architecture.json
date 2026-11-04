@@ -1,0 +1,204 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-i-small-i33-lounge",
+  "floorSize": [
+    4.2,
+    3.7
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "owner-relative-placement-only",
+    "map": "evidence/maps/ground-floor.png",
+    "anchors": [],
+    "localAxes": {
+      "x": "From sofa backing toward the open corridor entrance",
+      "z": "From first end chair toward second end chair",
+      "y": "Up"
+    },
+    "mapReview": "Owner locates the two rooms consecutively after G63 along the remaining half of G12/G14. Cameras are unplaced in registration; no mount coordinates/headings are invented."
+  },
+  "dimensionBasis": {
+    "referenceBlock": "ground/g12-g14",
+    "sharedRemainingWidth": 7.4,
+    "blockFrontage": 3.7,
+    "frontageAxis": "local-z",
+    "depth": 4.2,
+    "notes": "Two equal rooms use 14.8 / 2 / 2 m frontage; compact depth is provisional."
+  },
+  "walls": [
+    {
+      "id": "i33-lounge-sofa-backing",
+      "kind": "solid",
+      "start": [
+        -2.1,
+        -1.85
+      ],
+      "end": [
+        -2.1,
+        1.85
+      ],
+      "height": 4.1,
+      "thickness": 0.12,
+      "color": "#dedbd2",
+      "owner": "ground/i33-lounge",
+      "sources": [
+        "I33"
+      ],
+      "confidence": "Camera/owner-supported room topology; exact spans and heights estimated",
+      "finish": "cream-panel-joints",
+      "finishSides": [
+        -1,
+        1
+      ]
+    },
+    {
+      "id": "i33-lounge-side-negative-z",
+      "kind": "solid",
+      "start": [
+        -2.1,
+        -1.85
+      ],
+      "end": [
+        2.1,
+        -1.85
+      ],
+      "height": 4.1,
+      "thickness": 0.12,
+      "color": "#dedbd2",
+      "owner": "ground/i33-lounge",
+      "sources": [
+        "I33"
+      ],
+      "confidence": "Camera/owner-supported room topology; exact spans and heights estimated",
+      "finish": "cream-panel-joints",
+      "finishSides": [
+        -1,
+        1
+      ]
+    },
+    {
+      "id": "i33-lounge-side-positive-z",
+      "kind": "solid",
+      "start": [
+        -2.1,
+        1.85
+      ],
+      "end": [
+        2.1,
+        1.85
+      ],
+      "height": 4.1,
+      "thickness": 0.12,
+      "color": "#dedbd2",
+      "owner": "ground/i33-lounge",
+      "sources": [
+        "I33"
+      ],
+      "confidence": "Owner confirms normal cream partition with centered opaque grey-glass window, replacing full black glazing; window dimensions estimated",
+      "variant": "cream-grey-window",
+      "window": {
+        "width": 1.9,
+        "height": 1.45,
+        "sill": 1.1
+      }
+    },
+    {
+      "id": "i33-lounge-entry-glass",
+      "kind": "glass",
+      "variant": "frosted-cream",
+      "start": [
+        2.1,
+        -1.85
+      ],
+      "end": [
+        2.1,
+        1.85
+      ],
+      "height": 4.1,
+      "thickness": 0.035,
+      "color": "#ded9c8",
+      "frameColor": "#454b4b",
+      "opacity": 1,
+      "privacyBand": false,
+      "doors": [
+        {
+          "id": "i33-lounge-full-width-glass-door",
+          "offset": 1.85,
+          "width": 3.18,
+          "height": 4.1
+        }
+      ],
+      "owner": "ground/i33-lounge",
+      "sources": [
+        "owner-correction",
+        "I33"
+      ],
+      "confidence": "Owner confirms full-width non-see-through frosted cream glass door frontage, replacing all solid entry returns and header; dimensions schematic",
+      "automaticSliding": true,
+      "pillarWidth": 0.26,
+      "openFraction": 0
+    }
+  ],
+  "openings": [],
+  "footprint": [
+    [
+      -2.1,
+      -1.85
+    ],
+    [
+      2.1,
+      -1.85
+    ],
+    [
+      2.1,
+      1.85
+    ],
+    [
+      -2.1,
+      1.85
+    ]
+  ],
+  "ceiling": {
+    "size": [
+      4.2,
+      3.7
+    ],
+    "height": 4.1,
+    "defaultVisible": false
+  },
+  "circulation": {
+    "polygon": [
+      [
+        0.85,
+        -0.85
+      ],
+      [
+        2.1,
+        -0.85
+      ],
+      [
+        2.1,
+        0.85
+      ],
+      [
+        0.85,
+        0.85
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "Open rectangular entry and clear route beside the central table"
+  },
+  "notes": [
+    "Compact dark-floor lounge with a white two-seat sofa along the backing and two project-standard blue chairs at its ends.",
+    "Normal and wide snapshots reviewed; I42 wide is poorly exposed and only supports limited structural detail.",
+    "Owner confirms four seats per room. Sofa slot correspondence and all dimensions require review.",
+    "Entry is kept rectangular as seen in snapshots; no arch or glass door is invented. The adjacent G63 arch remains unchanged.",
+    "Owner finish correction supersedes the initial rectangular wall opening: full-width opaque frosted cream glass entry with no solid returns/header; black opaque glass opposite the saved sofa. Remaining pale wall panel seams follow camera views. All saved furniture records preserved.",
+    "Owner refinement: shared partition is cream with centered opaque grey-glass window, not a full black wall. Each entry has two frosted panels (one sliding over the fixed half), dark center stile/track, two cream support pillars and a dark round automatic-open button with a subdued blue ring. Closed preview; precise dimensions provisional. Furniture unchanged."
+  ]
+}

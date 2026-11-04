@@ -12,7 +12,24 @@ export function buildPassportObject(g, o, {box, mesh, rod, mat}) {
   const metal=mat('#a7afb0',.3,.65);
   const glass=new THREE.MeshStandardMaterial({color:'#a7c3bc',transparent:true,opacity:.2,
     roughness:.18,depthWrite:false,side:THREE.DoubleSide});
-  if(o.type==='passport-booth'){
+  if(o.type==='passport-totem'&&o.variant==='digital-immigration-device'){
+    const unit=new THREE.Group(),[w,h,d]=o.size;
+    unit.scale.fromArray(passportSizes[o.type].map((v,i)=>v/o.size[i]));g.add(unit);
+    const white=mat('#e8e7de',.48),trim=mat('#b7bbb5',.35,.35);
+    box(unit,[w,.045,d],[0,.0225,0],trim,.012);
+    for(const side of [-1,1]){
+      box(unit,[.17,h-.045,d*.48],[side*(w/2-.10),h/2,0],white,.035).name='Digital immigration upright';
+      box(unit,[.20,.06,d*.52],[side*(w/2-.10),h-.03,0],trim,.012);
+    }
+    box(unit,[w,.20,d*.48],[0,h-.10,0],white,.04).name='Digital immigration overhead beam';
+    box(unit,[w-.34,.075,d*.55],[0,h-.225,0],trim,.01);
+    const x=w/2-.10;
+    box(unit,[.18,h*.64,d*.56],[x,h*.34,d*.03],white,.018).name='Digital immigration screen column';
+    box(unit,[.145,h*.28,.012],[x,h*.48,d*.31],dark,.008).name='Digital immigration display';
+    box(unit,[.11,.045,.04],[x,h*.68,d*.31],dark,.005).name='Biometric camera';
+    box(unit,[.14,.025,.18],[x,h*.28,d*.35],trim,.008).name='Passport reader shelf';
+    // The separate front swing gate controls entry; no fixed leaf blocks the scanner.
+  }else if(o.type==='passport-booth'){
     box(g,[1.35,.07,1.45],[0,.035,-.4],mat('#d0c7af',.5),.006).name='Staff platform';
     box(g,[1.35,.82,.15],[0,.49,1.05],navy,.01);
     box(g,[1.35,.10,.17],[0,.05,1.035],brass,.005);

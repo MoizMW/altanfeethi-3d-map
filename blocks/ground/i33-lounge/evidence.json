@@ -1,0 +1,53 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-i-small-i33-lounge",
+  "cameras": [
+    "I33"
+  ],
+  "snapshots": {
+    "I33": "evidence/camera-snapshots/I33.jpg"
+  },
+  "wideSnapshots": {
+    "I33": "evidence/wide capture snapshots/I33.jpg"
+  },
+  "rois": {},
+  "seatMappings": {},
+  "unmappedSeats": [
+    {
+      "temporarySeatId": "Seat_I33_TMP_01",
+      "objectId": "i33-lounge-chair-01",
+      "reason": "No I33 ROIs; owner confirms two chairs and two sofa slots"
+    },
+    {
+      "temporarySeatId": "Seat_I33_TMP_02",
+      "objectId": "i33-lounge-sofa-01",
+      "reason": "No I33 ROIs; owner confirms two chairs and two sofa slots"
+    },
+    {
+      "temporarySeatId": "Seat_I33_TMP_03",
+      "objectId": "i33-lounge-sofa-01",
+      "reason": "No I33 ROIs; owner confirms two chairs and two sofa slots"
+    },
+    {
+      "temporarySeatId": "Seat_I33_TMP_04",
+      "objectId": "i33-lounge-chair-02",
+      "reason": "No I33 ROIs; owner confirms two chairs and two sofa slots"
+    }
+  ],
+  "tableMappings": {},
+  "notes": [
+    "All normal/wide pairs reviewed. Normal images 3840×2160; G60 ROI overlay aligns on a 1920×1080 review canvas. ROI coordinates are never transferred to wide captures.",
+    "I33 is the only active camera supplied for this room. One chair is visible; its opposite is supplied by the owner-confirmed four-seat room description, not an invented ROI identity.",
+    "No group number is invented for I33. Temporary IDs are scoped to I33.",
+    "Two small blocks occupy 7.4 m total after G63; ordering follows the owner listed I37/I42 then I33. 4.2 m depth, wall ownership, positions and furniture dimensions are estimates.",
+    "Shared lounge, glass table, stone side table, flag and bin builders are reused; reeded screen in I37 is a schematic inset, not proof of a full glazed room boundary.",
+    "Owner updated furniture poses and confirms full-width frosted cream glass entry (not transparent, no solid wall returns) and opaque black glass opposite each sofa. G60 negative-Z and I33 positive-Z represent the two faces of the same shared black partition. Initial reeded inset is superseded. Pale walls use restrained horizontal panel joints from the snapshots. Furniture remains byte-for-byte unchanged.",
+    "Owner refinement: shared partition is cream with centered opaque grey-glass window, not a full black wall. Each entry has two frosted panels (one sliding over the fixed half), dark center stile/track, two cream support pillars and a dark round automatic-open button with a subdued blue ring. Closed preview; precise dimensions provisional. Furniture unchanged."
+  ],
+  "accuracy": {
+    "identity": "temporary-owner-confirmed-count",
+    "dimensions": "owner-relative-width-other-dimensions-estimated",
+    "globalAlignment": "owner-relative-not-calibrated"
+  }
+}

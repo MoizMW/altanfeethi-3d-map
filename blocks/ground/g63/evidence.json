@@ -1,0 +1,116 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-i-lounge-063",
+  "cameras": [
+    "I29",
+    "I30",
+    "I31",
+    "I32",
+    "I34"
+  ],
+  "snapshots": {
+    "I29": "evidence/camera-snapshots/I29.jpg",
+    "I30": "evidence/camera-snapshots/I30.jpg",
+    "I31": "evidence/camera-snapshots/I31.jpg",
+    "I32": "evidence/camera-snapshots/I32.jpg",
+    "I34": "evidence/camera-snapshots/I34.jpg"
+  },
+  "wideSnapshots": {
+    "I29": "evidence/wide capture snapshots/I29.jpg",
+    "I30": "evidence/wide capture snapshots/I30.jpg",
+    "I31": "evidence/wide capture snapshots/I31.jpg",
+    "I32": "evidence/wide capture snapshots/I32.jpg",
+    "I34": "evidence/wide capture snapshots/I34.jpg"
+  },
+  "rois": {},
+  "roiAvailability": {
+    "status": "missing-source-files",
+    "checkedLocations": [
+      "evidence/rois/chair-rois/g63/",
+      "evidence/rois/table-rois/g63/",
+      "altanfeethi-cv/src/ChairOccupancy/Chair_ROIs/g63/",
+      "altanfeethi-cv/src/TableOccupancy/Table_ROIs/g63/"
+    ],
+    "notes": "Owner confirms 2026-11-03 that no G63 ROIs exist and authorizes temporary IDs, with counts based on the ground-floor PNG map and camera snapshots. No official Seat_I or Table_I identity is inferred. Table external IDs remain unset."
+  },
+  "unmappedSeats": [
+    {
+      "temporarySeatId": "Seat_G63_TMP_01",
+      "objectId": "g63-chair-rear-left",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_02",
+      "objectId": "g63-chair-rear-right",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_03",
+      "objectId": "g63-chair-corner-left",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_04",
+      "objectId": "g63-chair-corner-right",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_05",
+      "objectId": "g63-sofa-left-1",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_06",
+      "objectId": "g63-sofa-left-1",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_07",
+      "objectId": "g63-sofa-left-2",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_08",
+      "objectId": "g63-sofa-left-2",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_09",
+      "objectId": "g63-sofa-right-1",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_10",
+      "objectId": "g63-sofa-right-1",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_11",
+      "objectId": "g63-sofa-right-2",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    },
+    {
+      "temporarySeatId": "Seat_G63_TMP_12",
+      "objectId": "g63-sofa-right-2",
+      "reason": "G63 ROI evidence absent; visual seat count only"
+    }
+  ],
+  "seatMappings": {},
+  "tableMappings": {},
+  "notes": [
+    "Ground-floor map crop and all five registered camera positions/headings inspected. Existing registration left unchanged.",
+    "All five normal 3840×2160 and wide 1920×1080 images inspected. No coordinates transferred between normal and wide frames.",
+    "Four armchairs form the portrait-end group. Two two-seat sofas line each side wall: eight sofa slots plus four chair slots, twelve seats total. Five main tables and three small side tables are reconciled once across overlapping views.",
+    "I30 and I34 show opposite sides of one open rounded entrance. Pale marble floor, wood/stone wall sections, central bookmatched backdrop, flags, three portraits and two entrance plants are permanent context.",
+    "Objects visible beyond the arch, neighboring glass, people, service dishes and temporary clutter are excluded. Shared tissue-box table accessory is schematic.",
+    "Owner width rule applied as 14.8/2 = 7.4 m across G63, retaining 8.6 m depth for half the reference area. Other dimensions, seat-slot ordering and seam alignment need owner review.",
+    "Backdrop uses existing shared portrait artwork and flags as schematic references; exact crops, veining and finishes are not photogrammetry.",
+    "Owner explicitly confirms temporary IDs because no G63 ROIs exist; map and snapshots are the count evidence."
+  ],
+  "accuracy": {
+    "identity": "temporary-identities-missing-rois",
+    "dimensions": "owner-relative-width-other-dimensions-estimated",
+    "globalAlignment": "registered-map-topology-only"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-i-small-g60",
+  "cameras": [
+    "I37",
+    "I42"
+  ],
+  "snapshots": {
+    "I37": "evidence/camera-snapshots/I37.jpg",
+    "I42": "evidence/camera-snapshots/I42.jpg"
+  },
+  "wideSnapshots": {
+    "I37": "evidence/wide capture snapshots/I37.jpg",
+    "I42": "evidence/wide capture snapshots/I42.jpg"
+  },
+  "rois": {
+    "I37": {
+      "chairs": "evidence/rois/chair-rois/g60/I37_to_g60.json",
+      "tables": "evidence/rois/table-rois/g60/I37_to_g60.json"
+    },
+    "I42": {
+      "chairs": "evidence/rois/chair-rois/g60/I42_to_g60.json",
+      "tables": "evidence/rois/table-rois/g60/I42_to_g60.json"
+    }
+  },
+  "seatMappings": {
+    "Seat_I26": "g60-chair-01",
+    "Seat_I27": "g60-sofa-01",
+    "Seat_I28": "g60-sofa-01",
+    "Seat_I29": "g60-chair-02"
+  },
+  "unmappedSeats": [],
+  "tableMappings": {
+    "Table_I4": "g60-coffee-table-01"
+  },
+  "notes": [
+    "All normal/wide pairs reviewed. Normal images 3840×2160; G60 ROI overlay aligns on a 1920×1080 review canvas. ROI coordinates are never transferred to wide captures.",
+    "I37/I42 reconcile G60 I26 and I29 chairs plus I27/I28 sofa slots and Table_I4 once.",
+    "G60 association is based on existing ROI folders; camera registration group/position remain unassigned and unchanged.",
+    "Two small blocks occupy 7.4 m total after G63; ordering follows the owner listed I37/I42 then I33. 4.2 m depth, wall ownership, positions and furniture dimensions are estimates.",
+    "Shared lounge, glass table, stone side table, flag and bin builders are reused; reeded screen in I37 is a schematic inset, not proof of a full glazed room boundary.",
+    "Owner updated furniture poses and confirms full-width frosted cream glass entry (not transparent, no solid wall returns) and opaque black glass opposite each sofa. G60 negative-Z and I33 positive-Z represent the two faces of the same shared black partition. Initial reeded inset is superseded. Pale walls use restrained horizontal panel joints from the snapshots. Furniture remains byte-for-byte unchanged.",
+    "Owner refinement: shared partition is cream with centered opaque grey-glass window, not a full black wall. Each entry has two frosted panels (one sliding over the fixed half), dark center stile/track, two cream support pillars and a dark round automatic-open button with a subdued blue ring. Closed preview; precise dimensions provisional. Furniture unchanged."
+  ],
+  "accuracy": {
+    "identity": "ROI-derived-slot-order-provisional",
+    "dimensions": "owner-relative-width-other-dimensions-estimated",
+    "globalAlignment": "owner-relative-not-calibrated"
+  }
+}

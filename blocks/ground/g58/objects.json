@@ -24,7 +24,7 @@
       "yaw": 0,
       "size": [0.88, 0.95, 0.88],
       "scale": [1, 1, 1],
-      "color": "#627d86",
+      "color": "#3d4a55",
       "seats": ["Seat_I7"],
       "cameras": ["I22"],
       "confidence": "Wall-side chair identified by I22 ROI. Shared lounge builder simplifies curved upholstery and timber supports."
@@ -37,7 +37,7 @@
       "yaw": 0,
       "size": [0.88, 0.95, 0.88],
       "scale": [1, 1, 1],
-      "color": "#627d86",
+      "color": "#3d4a55",
       "seats": ["Seat_I8"],
       "cameras": ["I22"],
       "confidence": "Aisle-side chair identified by I22 ROI; dimensions and spacing estimated."

@@ -11,7 +11,7 @@
       "yaw": 0,
       "size": [0.88, 0.95, 0.88],
       "scale": [1, 1, 1],
-      "color": "#627d86",
+      "color": "#3d4a55",
       "seats": ["Seat_I9"],
       "cameras": ["I13"],
       "confidence": "Wall-side chair identified by I13 ROI; shared builder simplifies the curved shell and timber supports. Dimensions and placement estimated."
@@ -24,7 +24,7 @@
       "yaw": 0,
       "size": [0.88, 0.95, 0.88],
       "scale": [1, 1, 1],
-      "color": "#627d86",
+      "color": "#3d4a55",
       "seats": ["Seat_I10"],
       "cameras": ["I13"],
       "confidence": "Aisle-side chair identified by I13 ROI; dimensions, angle and spacing need owner review."

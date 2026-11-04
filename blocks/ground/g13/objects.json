@@ -192,7 +192,7 @@
       "type": "passport-booth",
       "name": "Middle single booth",
       "position": [
-        0.25,
+        -0.24017561682138622,
         0,
         -0.5
       ],
@@ -225,7 +225,7 @@
       "type": "office-chair",
       "name": "Officer chair · temporary slot 3",
       "position": [
-        0.25,
+        -0.2108725506239666,
         0.07,
         -0.98
       ],
@@ -290,7 +290,7 @@
       "type": "passport-booth",
       "name": "End single booth",
       "position": [
-        -3.05,
+        -3.875588401216297,
         0,
         -0.5
       ],
@@ -321,7 +321,7 @@
       "type": "office-chair",
       "name": "Officer chair · temporary slot 4",
       "position": [
-        -3.05,
+        -3.8832755061102064,
         0.07,
         -0.98
       ],
@@ -382,7 +382,7 @@
       "type": "passport-gate",
       "name": "Glass passenger gate · passage 1",
       "position": [
-        1.4125,
+        1.123117883768013,
         0,
         0.625
       ],
@@ -393,7 +393,7 @@
         0.24
       ],
       "scale": [
-        1,
+        1.2899346286940108,
         1,
         1
       ],
@@ -414,7 +414,7 @@
       "type": "passport-gate",
       "name": "Glass passenger gate · passage 2",
       "position": [
-        -1.4,
+        -2.080987049534623,
         0,
         0.625
       ],
@@ -425,9 +425,9 @@
         0.24
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.1354504664985932,
+        0.9400072456292551,
+        1.3150501358318385
       ],
       "color": "#a7afb0",
       "seats": [],
@@ -445,11 +445,11 @@
       "type": "passport-totem",
       "name": "Passport information display",
       "position": [
-        4.95,
+        4.97022980417199,
         0,
-        -0.5
+        -3.2918569505408843
       ],
-      "yaw": 0,
+      "yaw": -29.83191133181377,
       "size": [
         0.6,
         1.9,
@@ -504,6 +504,67 @@
       "notes": "Single-leaf opening is half the double-leaf opening width, per owner. Full-size round post, slim top rail and existing hinge side retained. Adjoining booth groups are translated together so no extra gap remains.",
       "leafCount": 1,
       "hingeSide": "left"
+    },
+    {
+      "id": "g13-digital-immigration-device",
+      "type": "passport-totem",
+      "variant": "digital-immigration-device",
+      "name": "Digital immigration device · white frame and screen column",
+      "position": [
+        3.1491801127145918,
+        0,
+        3.65
+      ],
+      "yaw": -89.42670282748182,
+      "size": [
+        1.3,
+        2.3,
+        1.7
+      ],
+      "scale": [
+        1.4888407940477304,
+        1.2285194715660255,
+        1.8776927114528903
+      ],
+      "color": "#e8e7de",
+      "seats": [],
+      "cameras": [
+        "C10",
+        "C8"
+      ],
+      "confidence": "Owner identifies white digital immigration device on traveller side. C10/C8 wide support frame, dark display and glass. Placement and dimensions estimated; no occupancy ID."
+    },
+    {
+      "id": "g13-digital-entry-gate",
+      "type": "passport-gate",
+      "name": "Digital immigration · opening glass gate",
+      "position": [
+        6.5,
+        0,
+        3.65
+      ],
+      "yaw": 90,
+      "size": [
+        1.584622,
+        1.15,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a7afb0",
+      "seats": [],
+      "cameras": [
+        "C10",
+        "C8"
+      ],
+      "leafCount": 1,
+      "hingeSide": "left",
+      "openFraction": 0,
+      "confidence": "Owner confirms opening glass gate in front of the digital scanner, with fixed glass beside it to the existing side glazing. Dimensions estimated.",
+      "notes": "Closed by default. Gate opening percentage previews the swing leaf; fixed side glass stays in place. No live immigration or access-control integration."
     }
   ]
 }

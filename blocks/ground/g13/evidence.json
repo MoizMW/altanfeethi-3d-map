@@ -6,19 +6,25 @@
     "C13",
     "C17",
     "C18",
-    "C21"
+    "C21",
+    "C10",
+    "C8"
   ],
   "snapshots": {
     "C13": "evidence/camera-snapshots/C13.jpg",
     "C17": "evidence/camera-snapshots/C17.jpg",
     "C18": "evidence/camera-snapshots/C18.jpg",
-    "C21": "evidence/camera-snapshots/C21.jpg"
+    "C21": "evidence/camera-snapshots/C21.jpg",
+    "C10": "evidence/camera-snapshots/C10.jpg",
+    "C8": "evidence/camera-snapshots/C8.jpg"
   },
   "wideSnapshots": {
     "C13": "evidence/wide capture snapshots/C13.jpg",
     "C17": "evidence/wide capture snapshots/C17.jpg",
     "C18": "evidence/wide capture snapshots/C18.jpg",
-    "C21": "evidence/wide capture snapshots/C21.jpg"
+    "C21": "evidence/wide capture snapshots/C21.jpg",
+    "C10": "evidence/wide capture snapshots/C10.jpg",
+    "C8": "evidence/wide capture snapshots/C8.jpg"
   },
   "wideCaptureContext": {
     "mountPosition": "Unchanged per project context",
@@ -46,9 +52,11 @@
   ],
   "roiCoordinateStatus": "All four R1 overlays inspected on the 1920x1080 normal snapshots. All polygon vertices fit the image. Region polygons cover overlapping desk/passenger areas, not individual chair identities. They are not projected onto wide views or interpreted as 3D coordinates.",
   "notes": [
+    "Owner confirms the digital immigration front barrier is an opening glass gate, with fixed glass beside it up to the existing side glazing. Scanner saved placement/scale retained; no live access-control integration.",
+    "C10 wide supports white end wall, broad patterned-glass gate and dark floor with immigration counters at right. Registration remains g26; no camera reassignment, occupancy IDs or C10 ROI projection.",
     "Owner/C13 correction: right-to-left order is fixed glass, third glass passenger door, two-officer bank, gate, single booth, gate, end single booth. Four officer positions are retained once; the row is mirrored from the initial draft.",
     "C17 R1 primarily covers the paired staff positions. C13 R1 includes the pair and neighboring single; C18 R1 covers the end-single passage; C21 R1 covers the middle/end-single side. The repeated R1 label is local to each camera and is not a shared physical desk ID.",
-    "Sixteen editable objects comprise four booths, four officer chairs, four monitors, three glass passenger gates and one portrait information display. Booths include reader towers, keyboards, glass/brass dividers, platforms and accessory cues.",
+    "Eighteen editable objects comprise four booths, four officer chairs, four monitors, four glass passenger gates (including the digital entry), one portrait information display and one white digital immigration device. Booths include reader towers, keyboards, glass/brass dividers, platforms and accessory cues.",
     "No G13 chair or table ROI identities are supplied. Seat_G13_TMP_01 through Seat_G13_TMP_04 are temporary editor slots, not approved occupancy IDs. Confirm slot order and correspondence before telemetry integration.",
     "The central partition of the double bank is generated once by booth 2; booth 1 omits its left partition. Rear staff access and the continuous aisle remain open. Exact rear staff gates, waste bins, flag inscriptions, labels and detailed reader hardware are not reproduced.",
     "All four normal/wide pairs, four reception polygons and the annotated map crop were reviewed. Dimensions, gate widths, floor extents, side-return correspondence and world yaw remain estimates; raw registered headings were not used directly as world yaw.",

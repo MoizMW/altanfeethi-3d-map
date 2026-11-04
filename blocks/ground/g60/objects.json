@@ -1,0 +1,220 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-i-small-g60",
+  "objects": [
+    {
+      "id": "g60-chair-01",
+      "type": "armchair",
+      "name": "First end blue chair",
+      "position": [
+        -1.3858430567333262,
+        0,
+        -0.056498079641145615
+      ],
+      "yaw": 89.8731166739515,
+      "size": [
+        0.94,
+        1.02,
+        0.98
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3d4a55",
+      "seats": [
+        "Seat_I26"
+      ],
+      "cameras": [
+        "I37",
+        "I42"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "identityStatus": "roi-derived"
+    },
+    {
+      "id": "g60-sofa-01",
+      "type": "sofa",
+      "name": "White two-seat sofa",
+      "position": [
+        -0.032,
+        0,
+        1.047
+      ],
+      "yaw": 180,
+      "size": [
+        2.05,
+        0.95,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#dedbd1",
+      "seats": [
+        "Seat_I27",
+        "Seat_I28"
+      ],
+      "cameras": [
+        "I37",
+        "I42"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "identityStatus": "roi-derived-slot-order-provisional"
+    },
+    {
+      "id": "g60-chair-02",
+      "type": "armchair",
+      "name": "Second end blue chair",
+      "position": [
+        1.3309478497201188,
+        0,
+        -0.06180403403995849
+      ],
+      "yaw": -89.77016124366249,
+      "size": [
+        0.94,
+        1.02,
+        0.98
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3d4a55",
+      "seats": [
+        "Seat_I29"
+      ],
+      "cameras": [
+        "I37",
+        "I42"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "identityStatus": "roi-derived"
+    },
+    {
+      "id": "g60-coffee-table-01",
+      "type": "table",
+      "name": "Oval glass/brass coffee table",
+      "position": [
+        -0.05,
+        0,
+        -0.04719258371801607
+      ],
+      "yaw": 0.25690470825943285,
+      "size": [
+        1.35,
+        0.43,
+        0.65
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I37",
+        "I42"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "variant": "round-glass",
+      "externalId": "Table_I4"
+    },
+    {
+      "id": "g60-side-table-01",
+      "type": "table",
+      "name": "Small pale stone/brass side table",
+      "position": [
+        -1.4082416618711124,
+        0,
+        0.8938745661440172
+      ],
+      "yaw": 0,
+      "size": [
+        0.48,
+        0.54,
+        0.48
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I37",
+        "I42"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "variant": "round-pedestal",
+      "accessories": false
+    },
+    {
+      "id": "g60-saudi-flag",
+      "type": "wall-panel",
+      "name": "Saudi standing flag",
+      "position": [
+        -1.7,
+        0,
+        1.48
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        2.5,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I37",
+        "I42"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "variant": "standing-flag",
+      "flagDesign": "saudi"
+    },
+    {
+      "id": "g60-bin",
+      "type": "cabinet",
+      "name": "Small cylindrical bin",
+      "position": [
+        1.396234529201583,
+        0,
+        1.1225206949274327
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.46,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b7ae96",
+      "seats": [],
+      "cameras": [
+        "I37",
+        "I42"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "variant": "plain-planter"
+    }
+  ]
+}

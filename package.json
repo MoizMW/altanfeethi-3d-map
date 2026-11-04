@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "library:refresh": "node scripts/build-object-library.mjs",
     "install:app": "npm ci --prefix app",
     "start": "npm start --prefix app",
     "test": "node scripts/validate-blocks.mjs && npm test --prefix app",

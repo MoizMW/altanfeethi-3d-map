@@ -1,0 +1,212 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "ground-i-small-i33-lounge",
+  "objects": [
+    {
+      "id": "i33-lounge-chair-01",
+      "type": "armchair",
+      "name": "First end blue chair",
+      "position": [
+        1.4007198339757108,
+        0,
+        -0.03
+      ],
+      "yaw": -90,
+      "size": [
+        0.94,
+        1.02,
+        0.98
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3d4a55",
+      "seats": [
+        "Seat_I33_TMP_01"
+      ],
+      "cameras": [
+        "I33"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "identityStatus": "temporary-visible-in-I33"
+    },
+    {
+      "id": "i33-lounge-sofa-01",
+      "type": "sofa",
+      "name": "White two-seat sofa",
+      "position": [
+        0.07614069374445409,
+        0,
+        -1.1188674861616013
+      ],
+      "yaw": 0,
+      "size": [
+        2.05,
+        0.95,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#dedbd1",
+      "seats": [
+        "Seat_I33_TMP_02",
+        "Seat_I33_TMP_03"
+      ],
+      "cameras": [
+        "I33"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "identityStatus": "temporary-owner-confirmed-two-slots"
+    },
+    {
+      "id": "i33-lounge-chair-02",
+      "type": "armchair",
+      "name": "Second end blue chair",
+      "position": [
+        -1.254,
+        0,
+        -0.042
+      ],
+      "yaw": 90,
+      "size": [
+        0.94,
+        1.02,
+        0.98
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3d4a55",
+      "seats": [
+        "Seat_I33_TMP_04"
+      ],
+      "cameras": [
+        "I33"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "identityStatus": "temporary-owner-confirmed-outside-camera-view"
+    },
+    {
+      "id": "i33-lounge-coffee-table-01",
+      "type": "table",
+      "name": "Oval glass/brass coffee table",
+      "position": [
+        0.07369065615307274,
+        0,
+        -0.04135221734220923
+      ],
+      "yaw": 0,
+      "size": [
+        1.35,
+        0.43,
+        0.65
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I33"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "variant": "round-glass"
+    },
+    {
+      "id": "i33-lounge-side-table-01",
+      "type": "table",
+      "name": "Small pale stone/brass side table",
+      "position": [
+        -1.2402201988230617,
+        0,
+        -0.9364002798348241
+      ],
+      "yaw": 0,
+      "size": [
+        0.48,
+        0.54,
+        0.48
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I33"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "variant": "round-pedestal",
+      "accessories": false
+    },
+    {
+      "id": "i33-lounge-saudi-flag",
+      "type": "wall-panel",
+      "name": "Saudi standing flag",
+      "position": [
+        -1.7,
+        0,
+        -1.5800640833234862
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        2.5,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "I33"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "variant": "standing-flag",
+      "flagDesign": "saudi"
+    },
+    {
+      "id": "i33-lounge-bin",
+      "type": "cabinet",
+      "name": "Small cylindrical bin",
+      "position": [
+        1.4218711850887724,
+        0,
+        -1.3
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.46,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b7ae96",
+      "seats": [],
+      "cameras": [
+        "I33"
+      ],
+      "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
+      "variant": "plain-planter"
+    }
+  ]
+}

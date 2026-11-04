@@ -1,0 +1,441 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-i-lounge-063",
+  "floorSize": [
+    7.4,
+    8.6
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-03T07:14:37.307Z",
+    "registrationSha256": "16c78190317d31af930762f860974dd12a22f8c7c10e980976d85cc00c4ce042",
+    "anchors": [
+      {
+        "camera": "I29",
+        "pixel": [
+          8312,
+          5065
+        ],
+        "heading": 53,
+        "status": "verified"
+      },
+      {
+        "camera": "I30",
+        "pixel": [
+          8280,
+          4738
+        ],
+        "heading": 188,
+        "status": "verified"
+      },
+      {
+        "camera": "I31",
+        "pixel": [
+          7740,
+          5040
+        ],
+        "heading": 91,
+        "status": "verified"
+      },
+      {
+        "camera": "I32",
+        "pixel": [
+          8375,
+          5424
+        ],
+        "heading": 5,
+        "status": "verified"
+      },
+      {
+        "camera": "I34",
+        "pixel": [
+          8858,
+          5143
+        ],
+        "heading": 288,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      7500,
+      4500,
+      9150,
+      5650
+    ],
+    "localAxes": {
+      "x": "Across the lounge, from the I30/I32 sofa wall toward the I34 sofa wall",
+      "z": "From the portrait/flag backdrop toward the open arched corridor entrance",
+      "y": "Up"
+    },
+    "mapReview": "Registered G63 anchors identify the U-shaped lounge beside Custom Check Point / Zone C. Current camera images supersede illustrated furniture. Pixel anchors are retained as evidence, not calibrated metric mounts."
+  },
+  "dimensionBasis": {
+    "source": "Owner instruction 2026-11-03",
+    "referenceBlock": "ground/g12-g14",
+    "referenceFloorSize": [
+      8.6,
+      14.8
+    ],
+    "referenceSpanAxis": "z",
+    "width": 7.4,
+    "depth": 8.6,
+    "areaRatio": 0.5,
+    "notes": "G63 width is half the current 14.8 m C-lounge span; retain its 8.6 m cross-room depth, giving half its floor area. Dimensions remain provisional."
+  },
+  "footprint": [
+    [
+      -3.7,
+      -4.3
+    ],
+    [
+      3.7,
+      -4.3
+    ],
+    [
+      3.7,
+      4.3
+    ],
+    [
+      -3.7,
+      4.3
+    ]
+  ],
+  "walls": [
+    {
+      "id": "g63-backdrop",
+      "kind": "solid",
+      "start": [
+        -2.45,
+        -4.3
+      ],
+      "end": [
+        2.45,
+        -4.3
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e0dfd8",
+      "owner": "ground/g63",
+      "sources": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Visible boundary in normal/wide views; dimensions and endpoints estimated",
+      "finish": "bookmatched-marble"
+    },
+    {
+      "id": "g63-back-left-timber",
+      "kind": "solid",
+      "start": [
+        -3.7,
+        -4.3
+      ],
+      "end": [
+        -2.45,
+        -4.3
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#856746",
+      "owner": "ground/g63",
+      "sources": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Visible boundary in normal/wide views; dimensions and endpoints estimated",
+      "finish": "warm-wood",
+      "interiorSide": 1
+    },
+    {
+      "id": "g63-back-right-timber",
+      "kind": "solid",
+      "start": [
+        2.45,
+        -4.3
+      ],
+      "end": [
+        3.7,
+        -4.3
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#856746",
+      "owner": "ground/g63",
+      "sources": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Visible boundary in normal/wide views; dimensions and endpoints estimated",
+      "finish": "warm-wood",
+      "interiorSide": 1
+    },
+    {
+      "id": "g63-left-cladding",
+      "kind": "solid",
+      "start": [
+        -3.7,
+        -4.3
+      ],
+      "end": [
+        -3.7,
+        -0.6
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#c6bda8",
+      "owner": "ground/g63",
+      "sources": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Visible boundary in normal/wide views; dimensions and endpoints estimated",
+      "finish": "i-zone-wood-panels"
+    },
+    {
+      "id": "g63-left-wall",
+      "kind": "solid",
+      "start": [
+        -3.7,
+        -0.6
+      ],
+      "end": [
+        -3.7,
+        4.3
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e2dfd5",
+      "owner": "ground/g63",
+      "sources": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Visible boundary in normal/wide views; dimensions and endpoints estimated"
+    },
+    {
+      "id": "g63-right-cladding",
+      "kind": "solid",
+      "start": [
+        3.7,
+        -4.3
+      ],
+      "end": [
+        3.7,
+        -0.6
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#c6bda8",
+      "owner": "ground/g63",
+      "sources": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Visible boundary in normal/wide views; dimensions and endpoints estimated",
+      "finish": "i-zone-wood-panels"
+    },
+    {
+      "id": "g63-right-wall",
+      "kind": "solid",
+      "start": [
+        3.7,
+        -0.6
+      ],
+      "end": [
+        3.7,
+        4.3
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e2dfd5",
+      "owner": "ground/g63",
+      "sources": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Visible boundary in normal/wide views; dimensions and endpoints estimated"
+    },
+    {
+      "id": "g63-entrance-arch",
+      "kind": "solid",
+      "start": [
+        -3.7,
+        4.3
+      ],
+      "end": [
+        3.7,
+        4.3
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e2dfd5",
+      "owner": "ground/g63",
+      "sources": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Visible boundary in normal/wide views; dimensions and endpoints estimated"
+    }
+  ],
+  "openings": [
+    {
+      "id": "g63-corridor-opening",
+      "wallId": "g63-entrance-arch",
+      "kind": "rounded-passage",
+      "offset": 3.7,
+      "width": 6.3,
+      "springHeight": 1.55,
+      "height": 3.65,
+      "sources": [
+        "I30",
+        "I34"
+      ],
+      "confidence": "Wide views show broad rounded access; exact span/profile estimated"
+    }
+  ],
+  "floorSections": [
+    {
+      "center": [
+        0,
+        -0.17
+      ],
+      "size": [
+        7.4,
+        8.26
+      ],
+      "yaw": 0,
+      "color": "#dedbd1"
+    },
+    {
+      "center": [
+        0,
+        4.1
+      ],
+      "size": [
+        6.3,
+        0.28
+      ],
+      "yaw": 0,
+      "color": "#403b39"
+    },
+    {
+      "center": [
+        -3.425,
+        4.1
+      ],
+      "size": [
+        0.55,
+        0.28
+      ],
+      "yaw": 0,
+      "color": "#dedbd1"
+    },
+    {
+      "center": [
+        3.425,
+        4.1
+      ],
+      "size": [
+        0.55,
+        0.28
+      ],
+      "yaw": 0,
+      "color": "#dedbd1"
+    },
+    {
+      "center": [
+        0,
+        4.27
+      ],
+      "size": [
+        7.4,
+        0.06
+      ],
+      "yaw": 0,
+      "color": "#dedbd1"
+    }
+  ],
+  "circulation": {
+    "id": "g63-open-central-approach",
+    "polygon": [
+      [
+        -1.05,
+        -1.8
+      ],
+      [
+        1.05,
+        -1.8
+      ],
+      [
+        1.05,
+        3.96
+      ],
+      [
+        -1.05,
+        3.96
+      ]
+    ],
+    "surfaceMaterial": "same-as-seating",
+    "status": "Clear central approach from corridor to the rear seating; no glass door evidenced"
+  },
+  "sharedBoundaries": [
+    {
+      "id": "g63-corridor-interface",
+      "kind": "open-corridor",
+      "neighbor": null,
+      "owner": "ground/g63",
+      "status": "Standalone arch surround owned locally; neighbor/seam alignment unresolved"
+    }
+  ],
+  "ceiling": {
+    "size": [
+      7.4,
+      8.6
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "defaultVisible": false
+  },
+  "notes": [
+    "All five normal and wide camera pairs reviewed. I29 faces the four-chair portrait end; I30/I34 show opposing sofa walls and the same arched corridor connection.",
+    "Backdrop marble veining is a procedural bookmatched approximation; side cladding, arch profile, floor tiles and finishes are schematic.",
+    "Shared lounge chairs use the project-standard blue finish; dark green cast in camera images is not introduced as a retired shared override.",
+    "No window or glass door is drawn inside G63: blue glazing visible through the arch belongs to the neighboring lounge. Neighbor furniture is not duplicated.",
+    "Width is half the current G12/G14 span, with the same cross-room depth. No global composition transform is claimed.",
+    "Entrance flicker correction: floor sections meet edge-to-edge around the brown threshold, with no overlapping floor faces. Pale circulation ends at its inner edge."
+  ]
+}

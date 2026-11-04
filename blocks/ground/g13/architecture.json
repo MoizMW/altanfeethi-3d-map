@@ -3,12 +3,12 @@
   "version": 1,
   "blockId": "ground-c-passport-013",
   "floorSize": [
-    11.5,
-    7.6
+    11.7,
+    9.05
   ],
   "floorCenter": [
-    1.2,
-    0
+    1.1,
+    0.625
   ],
   "ceilingHeight": 4.1,
   "placement": {
@@ -69,20 +69,20 @@
   },
   "footprint": [
     [
-      -4.55,
-      -3.8
+      -4.75,
+      -3.9
     ],
     [
       6.95,
-      -3.8
+      -3.9
     ],
     [
       6.95,
-      3.8
+      5.15
     ],
     [
-      -4.55,
-      3.8
+      -4.75,
+      5.15
     ]
   ],
   "walls": [
@@ -90,7 +90,7 @@
       "id": "g13-rear-wall",
       "kind": "solid",
       "start": [
-        -4.2,
+        -4.75,
         -3.7
       ],
       "end": [
@@ -111,11 +111,11 @@
       "id": "g13-end-return",
       "kind": "solid",
       "start": [
-        -4.2,
+        -4.75,
         -3.7
       ],
       "end": [
-        -4.2,
+        -4.75,
         1.4
       ],
       "height": 4.1,
@@ -151,18 +151,119 @@
         "C17"
       ],
       "confidence": "Fixed glass panel beyond the right-hand third passenger door, per owner sequence. Width, height and framing are estimates."
+    },
+    {
+      "id": "g13-c10-frosted-entry",
+      "kind": "glass",
+      "variant": "frosted-diagonal",
+      "start": [
+        -4.75,
+        1.4
+      ],
+      "end": [
+        -4.75,
+        5.25
+      ],
+      "height": 3.3,
+      "thickness": 0.035,
+      "color": "#b5c9bc",
+      "privacyBand": false,
+      "owner": "ground/g13",
+      "sources": [
+        "C10",
+        "owner-g13-end-gate"
+      ],
+      "doors": [
+        {
+          "id": "g13-c10-entry-door",
+          "offset": 1.925,
+          "width": 2.1,
+          "height": 3.0
+        }
+      ],
+      "confidence": "C10 wide shows broad patterned/frosted glazing beside the white wall and immigration booths. Static reference; exact panel widths and door operation unmeasured."
+    },
+    {
+      "id": "g13-c10-entry-header",
+      "kind": "solid",
+      "start": [
+        -4.75,
+        1.4
+      ],
+      "end": [
+        -4.75,
+        5.25
+      ],
+      "elevation": 3.3,
+      "height": 0.8,
+      "thickness": 0.16,
+      "color": "#e1ddd1",
+      "owner": "ground/g13",
+      "sources": [
+        "C10"
+      ]
+    },
+    {
+      "id": "g13-digital-entry-glass",
+      "kind": "glass",
+      "start": [
+        6.5,
+        0.625
+      ],
+      "end": [
+        6.5,
+        2.857689
+      ],
+      "height": 1.15,
+      "thickness": 0.018,
+      "color": "#b6cbc5",
+      "privacyBand": false,
+      "frameColor": "#919c95",
+      "owner": "ground/g13",
+      "sources": [
+        "C8",
+        "C10",
+        "owner-digital-immigration-device"
+      ],
+      "opacity": 0.16,
+      "confidence": "Fixed glass adjoining the digital immigration swing gate; joins the existing side glass and floor boundary to close the bypass."
+    },
+    {
+      "id": "g13-digital-entry-fixed-end",
+      "kind": "glass",
+      "start": [
+        6.5,
+        4.442311
+      ],
+      "end": [
+        6.5,
+        5.15
+      ],
+      "height": 1.15,
+      "thickness": 0.018,
+      "color": "#b6cbc5",
+      "privacyBand": false,
+      "frameColor": "#919c95",
+      "owner": "ground/g13",
+      "sources": [
+        "C8",
+        "C10",
+        "owner-digital-immigration-device"
+      ],
+      "opacity": 0.16,
+      "confidence": "Fixed glass adjoining the digital immigration swing gate; joins the existing side glass and floor boundary to close the bypass."
     }
   ],
   "openings": [],
   "sharedBoundaries": [],
   "ceiling": {
     "size": [
-      11.5,
-      7.6
+      11.7,
+      9.05
     ],
     "center": [
-      1.2,
-      0
+      1.1,
+      0.625
     ],
     "height": 4.1,
     "status": "estimated-plain-visualization-only"
@@ -246,5 +347,9 @@
     "double": 1.95,
     "ratio": 0.5,
     "source": "Owner explicit half-width correction; dimensions remain provisional."
-  }
+  },
+  "notes": [
+    "Owner correction: front barrier has one opening glass gate aligned with the saved digital scanner, with fixed glass on either side. Barrier at local X=6.5 runs from existing side glass Z=0.625 to floor edge Z=5.15. Saved scanner pose and scale retained. Source-owned geometry appears in both combined previews; gate is closed by default and can preview an open leaf.",
+    "Owner C10 correction: G13 source now owns expanded dark floor, white end wall and broad frosted patterned entrance. Local X=-4.75; white Z=-3.7..1.4, glazing Z=1.4..5.25. Immigration row retained. C10 remains registered to g26 and is supporting evidence only. Dimensions and static door appearance estimated."
+  ]
 }

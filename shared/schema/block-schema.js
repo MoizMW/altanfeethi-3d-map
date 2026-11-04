@@ -25,7 +25,7 @@ export function validateBlock(b) {
   for(const o of b.objects){
     if(typeof o.id!=='string'||ids.has(o.id)||!['sofa','armchair','table','screen','plant','counter','office-chair','cabinet','display','wall-panel','luggage-scale','floor-lamp','display-console','privacy-pod','automatic-glass-gate','security-scanner','security-detector','security-console','security-kiosk','security-barrier','passport-booth','passport-gate','passport-totem'].includes(o.type)||typeof o.name!=='string'||!vector(o.position,3)||!vector(o.size,3)||o.size.some(x=>x<0.05||x>100)||!vector(o.scale??[1,1,1],3)||(o.scale??[1,1,1]).some(x=>x<0.05||x>10)||!Number.isFinite(o.yaw)||!/^#[0-9a-f]{6}$/i.test(o.color)||!Array.isArray(o.seats)||!Array.isArray(o.cameras)||o.cameras.some(c=>typeof c!=='string'||c.length>80)) fail();
     if(['armchair','office-chair'].includes(o.type)&&o.seats.length!==1)fail();
-    if(o.type==='armchair'&&['#637d79','#3f5c59'].includes(o.color.toLowerCase()))fail('This green lounge-chair finish is retired. Use the shared G18/G20 blue (#627d86).');
+    if(o.type==='armchair'&&['#637d79','#3f5c59'].includes(o.color.toLowerCase()))fail('This green lounge-chair finish is retired. Use the shared reference slate-blue (#3d4a55).');
     if(o.type==='sofa'&&o.seats.length<1)fail();
     if(o.type==='table'&&o.externalId!=null&&o.externalId!==''){
       if(typeof o.externalId!=='string'||!/^[A-Za-z0-9_-]{1,80}$/.test(o.externalId))fail('Table ID must use letters, numbers, _ or - (up to 80 characters).');

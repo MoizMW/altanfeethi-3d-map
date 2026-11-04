@@ -1,0 +1,6 @@
+Generated with the built-in ImageGen tool, 3 November 2026.
+Saved asset: pillow-botanical-clean.png
+Purpose: replace the photographed pillow fabric with a clean, simple generated design on the shared lounge-chair pillow.
+
+Exact prompt:
+Use case: stylized-concept. Asset type: square, flat 3D pillow fabric base-color texture. Create a clean, refined seamless upholstery textile pattern, viewed perfectly straight-on, filling the entire square edge to edge. Muted slate blue background, warm ivory sparse small stylized ginkgo leaves and very simple delicate botanical sprigs, evenly distributed, restrained hotel lounge aesthetic. Only two or three harmonious muted colors. Fine subtle woven fabric grain, crisp clean motifs. The pattern should be calm and legible on one 45cm square pillow, with approximately six to eight small motifs across the whole square. It must be a flat albedo texture, not a photograph of a pillow: no cushion, no folds, no creases, no seams, no borders, no gradients, no shadows, no perspective, no furniture, no scene, no lettering, no watermark. Square 1024px texture with perfectly even neutral illumination.
