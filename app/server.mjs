@@ -110,6 +110,8 @@ export const server=createServer(async(req,res)=>{
     const relative=decodeURIComponent(url.pathname).slice(1)||'index.html';let target;
     if(['index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','security-objects.js','passport-objects.js','styles.css','editor.css','lounge-tables.js','lobby-fixtures.js','vertical-circulation.js','dining-objects.js','object-builders.js','library.html','library.js','library.css'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='curved-armchair.js')target=resolve(appRoot,relative);
+    else if(relative==='cylindrical-display.js')target=resolve(appRoot,relative);
+    else if(relative==='shared/materials/textures/window-display/campaign-atlas.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/materials/textures/lounge-pillow/pillow-reference.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/materials/textures/lounge-pillow/pillow-botanical-clean.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/assets/library/inventory.json')target=resolve(projectRoot,relative);

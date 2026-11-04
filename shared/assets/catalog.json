@@ -90,7 +90,8 @@
       "variants": [
         "grand-piano",
         "ring-pedestal",
-        "i-zone-end-console"
+        "i-zone-end-console",
+        "window-sculpture"
       ]
     },
     "sofa": {
@@ -140,7 +141,8 @@
       ],
       "variants": [
         "open-shelving",
-        "teal-gold-panel"
+        "teal-gold-panel",
+        "curved-bronze"
       ]
     },
     "plant": {
@@ -185,7 +187,8 @@
         "checkin-kiosk",
         "drawer-pedestal",
         "access-reader",
-        "plain-planter"
+        "plain-planter",
+        "window-sill"
       ]
     },
     "display": {
@@ -215,7 +218,9 @@
         "stone-relief",
         "teal-service-door",
         "timber-office-door",
-        "pleated-curtain"
+        "pleated-curtain",
+        "cylindrical-display",
+        "window-drapery"
       ]
     },
     "luggage-scale": {

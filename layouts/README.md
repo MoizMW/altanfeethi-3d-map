@@ -1,5 +1,11 @@
 # Composing spatial blocks
 
+## First-floor G50/G51 window row
+
+Open `/?layout=first/g50-g51`. From the wood-paneled end toward the cylindrical display and onward, G50 owns the shell-chair bay (H100–H103), two pale sofas (H96–H99), and another shell-chair bay (H92–H95); G51 adds tan bucket chairs H88–H91. G50 owns the display column once. H30 sees G50's H94/H95 and Table_H36 in the background; they are not duplicated in G51.
+
+G50 stays at [0,0,0], yaw 0; G51 translates to [0,0,9.6], yaw 0. Floor/window endpoints meet at Z=6.8 with continuous open interior circulation at X=1.05..2.4. Furniture is loaded live without scaling or offsets. The supplied map plus all six normal/wide views support the ordering; dimensions, rug spans, glazing, camera poses and global alignment remain provisional. Edit the source blocks independently and refresh the composition.
+
 ## G15/G13 checkpoint and passport control
 
 Open `http://127.0.0.1:4209/?layout=ground/g15-g13`. Owner correction places G13 above G15 in top view, with staff chairs on the right (+X) and passenger gates on the left. G15 stays at [0,0,0], yaw 0; G13 uses [1.3,0,-13.75], yaw -90. The latest owner correction aligns both right walls at X=5, with a layout-owned wall joining their ends. A 0.1 m floor-only extension on G13 aligns all right floor edges at X=5.2; furniture is unchanged. A layout-owned 2 m circulation section joins G15's open top approach at Z=-4.8 to G13's floor at Z=-6.8, leading to the public side of the passport gates. Source walls are retained once; the layout owns only the right-side wall connection. The earlier bottom-end join is superseded. Connection width and global calibration remain estimated; C8/C15/C16/C13/C17/C18/C21 remain the supporting neighboring views.

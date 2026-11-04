@@ -1,0 +1,892 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-window-50",
+  "objects": [
+    {
+      "id": "g50-chair-103",
+      "type": "armchair",
+      "name": "Pale upholstery / tan shell · H103",
+      "position": [
+        -1.2,
+        0,
+        -6
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H103"
+      ],
+      "cameras": [
+        "H23",
+        "H25"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "shell-lounge",
+      "shellColor": "#a48246"
+    },
+    {
+      "id": "g50-chair-102",
+      "type": "armchair",
+      "name": "Pale upholstery / tan shell · H102",
+      "position": [
+        0.15,
+        0,
+        -6
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H102"
+      ],
+      "cameras": [
+        "H23",
+        "H25"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "shell-lounge",
+      "shellColor": "#a48246"
+    },
+    {
+      "id": "g50-chair-101",
+      "type": "armchair",
+      "name": "Pale upholstery / tan shell · H101",
+      "position": [
+        -1.2,
+        0,
+        -3.6
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H101"
+      ],
+      "cameras": [
+        "H56"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "shell-lounge",
+      "shellColor": "#a48246"
+    },
+    {
+      "id": "g50-chair-100",
+      "type": "armchair",
+      "name": "Pale upholstery / tan shell · H100",
+      "position": [
+        0.15,
+        0,
+        -3.6
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H100"
+      ],
+      "cameras": [
+        "H56"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "shell-lounge",
+      "shellColor": "#a48246"
+    },
+    {
+      "id": "g50-table-39",
+      "type": "table",
+      "name": "Stone table · H39",
+      "position": [
+        -0.52,
+        0,
+        -4.8
+      ],
+      "yaw": 0,
+      "size": [
+        1.05,
+        0.48,
+        1.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H23",
+        "H56"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H39"
+    },
+    {
+      "id": "g50-sofa-98-99",
+      "type": "sofa",
+      "name": "Pale sofa · H99 / H98",
+      "position": [
+        -0.52,
+        0,
+        -2.3
+      ],
+      "yaw": 0,
+      "size": [
+        2.3,
+        0.9,
+        0.95
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H99",
+        "Seat_H98"
+      ],
+      "cameras": [
+        "H25",
+        "H56"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review."
+    },
+    {
+      "id": "g50-sofa-96-97",
+      "type": "sofa",
+      "name": "Pale sofa · H96 / H97",
+      "position": [
+        -0.52,
+        0,
+        0.65
+      ],
+      "yaw": 180,
+      "size": [
+        2.3,
+        0.9,
+        0.95
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H96",
+        "Seat_H97"
+      ],
+      "cameras": [
+        "H56",
+        "H25"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review."
+    },
+    {
+      "id": "g50-table-38",
+      "type": "table",
+      "name": "Stone table · H38",
+      "position": [
+        -0.52,
+        0,
+        -0.85
+      ],
+      "yaw": 0,
+      "size": [
+        1.6,
+        0.48,
+        1.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H25",
+        "H56"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "nested-stone",
+      "externalId": "Table_H38"
+    },
+    {
+      "id": "g50-chair-95",
+      "type": "armchair",
+      "name": "Pale upholstery / tan shell · H95",
+      "position": [
+        -1.2,
+        0,
+        2.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H95"
+      ],
+      "cameras": [
+        "H25",
+        "H26"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "shell-lounge",
+      "shellColor": "#a48246"
+    },
+    {
+      "id": "g50-chair-94",
+      "type": "armchair",
+      "name": "Pale upholstery / tan shell · H94",
+      "position": [
+        0.15,
+        0,
+        2.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H94"
+      ],
+      "cameras": [
+        "H25",
+        "H26"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "shell-lounge",
+      "shellColor": "#a48246"
+    },
+    {
+      "id": "g50-chair-93",
+      "type": "armchair",
+      "name": "Pale upholstery / tan shell · H93",
+      "position": [
+        -1.2,
+        0,
+        4.4
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H93"
+      ],
+      "cameras": [
+        "H26"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "shell-lounge",
+      "shellColor": "#a48246"
+    },
+    {
+      "id": "g50-chair-92",
+      "type": "armchair",
+      "name": "Pale upholstery / tan shell · H92",
+      "position": [
+        0.15,
+        0,
+        4.4
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [
+        "Seat_H92"
+      ],
+      "cameras": [
+        "H26"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "shell-lounge",
+      "shellColor": "#a48246"
+    },
+    {
+      "id": "g50-table-36",
+      "type": "table",
+      "name": "Stone table · H36",
+      "position": [
+        -0.52,
+        0,
+        3.25
+      ],
+      "yaw": 0,
+      "size": [
+        1.05,
+        0.48,
+        1.05
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H25",
+        "H26"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H36"
+    },
+    {
+      "id": "g50-sofa-divider-wood-end",
+      "type": "screen",
+      "name": "Curved bronze divider · wood-end sofa",
+      "position": [
+        -0.5,
+        0,
+        -3
+      ],
+      "yaw": 0,
+      "size": [
+        2.9,
+        1.65,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a48246",
+      "seats": [],
+      "cameras": [
+        "H56",
+        "H25"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "curved-bronze"
+    },
+    {
+      "id": "g50-sofa-divider-display-end",
+      "type": "screen",
+      "name": "Curved bronze divider · display-end sofa",
+      "position": [
+        -0.5,
+        0,
+        1.4
+      ],
+      "yaw": 180,
+      "size": [
+        2.9,
+        1.65,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a48246",
+      "seats": [],
+      "cameras": [
+        "H56",
+        "H25"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "curved-bronze"
+    },
+    {
+      "id": "g50-display-column",
+      "type": "wall-panel",
+      "name": "Cylindrical digital display · shared G50/G51 landmark",
+      "position": [
+        -1.02,
+        0,
+        6
+      ],
+      "yaw": 0,
+      "size": [
+        1.35,
+        4.1,
+        1.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#344a83",
+      "seats": [],
+      "cameras": [
+        "H26"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "cylindrical-display"
+    },
+    {
+      "id": "g50-window-lamp-1",
+      "type": "floor-lamp",
+      "name": "Window-side floor lamp",
+      "position": [
+        -1.85,
+        0,
+        -5.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "H23"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review."
+    },
+    {
+      "id": "g50-window-lamp-2",
+      "type": "floor-lamp",
+      "name": "Window-side floor lamp",
+      "position": [
+        -1.85,
+        0,
+        -0.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "H25",
+        "H56"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review."
+    },
+    {
+      "id": "g50-window-lamp-3",
+      "type": "floor-lamp",
+      "name": "Window-side floor lamp",
+      "position": [
+        -1.85,
+        0,
+        4.9
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "H26"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review."
+    },
+    {
+      "id": "g50-wood-end-plant-1",
+      "type": "plant",
+      "name": "Tree beside wood-paneled return",
+      "position": [
+        -1.75,
+        0,
+        -6.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        2.15,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#496647",
+      "seats": [],
+      "cameras": [
+        "H23"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review."
+    },
+    {
+      "id": "g50-wood-end-plant-2",
+      "type": "plant",
+      "name": "Tree beside wood-paneled return",
+      "position": [
+        0.8,
+        0,
+        -6.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.22,
+        2.15,
+        0.22
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#496647",
+      "seats": [],
+      "cameras": [
+        "H23"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review."
+    },
+    {
+      "id": "g50-window-curtain",
+      "type": "wall-panel",
+      "name": "Gathered sheer curtains · open window bays",
+      "position": [
+        -2.13,
+        0.22,
+        0.025
+      ],
+      "yaw": 90,
+      "size": [
+        13.55,
+        3.8,
+        0.055
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [],
+      "cameras": [
+        "H56",
+        "H23",
+        "H25",
+        "H26"
+      ],
+      "confidence": "Wide captures show sheer curtains gathered along window divisions, with clear openings between folds. Density, bay count and spacing are estimated.",
+      "variant": "window-drapery"
+    },
+    {
+      "id": "g50-wood-end-bin",
+      "type": "cabinet",
+      "name": "Waste bin beside Table_H39",
+      "position": [
+        0.38,
+        0,
+        -4.8
+      ],
+      "yaw": 0,
+      "size": [
+        0.28,
+        0.42,
+        0.28
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b8171",
+      "seats": [],
+      "cameras": [
+        "H23"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g50-display-end-bin",
+      "type": "cabinet",
+      "name": "Waste bin beside Table_H36",
+      "position": [
+        0.38,
+        0,
+        3.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.28,
+        0.42,
+        0.28
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b8171",
+      "seats": [],
+      "cameras": [
+        "H26"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g50-wood-end-extinguisher",
+      "type": "cabinet",
+      "name": "Fire extinguisher at wood return",
+      "position": [
+        -0.52,
+        0,
+        -6.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.32,
+        0.9,
+        0.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b22d26",
+      "seats": [],
+      "cameras": [
+        "H23"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "fire-extinguisher"
+    },
+    {
+      "id": "g50-display-end-extinguisher",
+      "type": "cabinet",
+      "name": "Fire extinguisher beside display",
+      "position": [
+        -1.9,
+        0,
+        5.3
+      ],
+      "yaw": 0,
+      "size": [
+        0.32,
+        0.9,
+        0.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b22d26",
+      "seats": [],
+      "cameras": [
+        "H26"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "fire-extinguisher"
+    },
+    {
+      "id": "g50-window-sill",
+      "type": "cabinet",
+      "variant": "window-sill",
+      "name": "Low stone window sill",
+      "position": [
+        -2.23,
+        0,
+        0.025
+      ],
+      "yaw": 90,
+      "size": [
+        13.55,
+        0.24,
+        0.26
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d4d1c5",
+      "seats": [],
+      "cameras": [
+        "H56",
+        "H23",
+        "H25",
+        "H26"
+      ],
+      "confidence": "Visible in normal/wide window references. Shared procedural detail; dimensions, spacing and exact correspondence estimated."
+    },
+    {
+      "id": "g50-window-sculpture-1",
+      "type": "display-console",
+      "variant": "window-sculpture",
+      "name": "Abstract pierced sculpture on window sill",
+      "position": [
+        -2.07,
+        0.24,
+        -5.395
+      ],
+      "yaw": 90,
+      "size": [
+        0.32,
+        1.3,
+        0.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#343c3b",
+      "seats": [],
+      "cameras": [
+        "H23"
+      ],
+      "confidence": "Visible in normal/wide window references. Shared procedural detail; dimensions, spacing and exact correspondence estimated."
+    },
+    {
+      "id": "g50-window-sculpture-2",
+      "type": "display-console",
+      "variant": "window-sculpture",
+      "name": "Abstract pierced sculpture on window sill",
+      "position": [
+        -2.07,
+        0.24,
+        0.025
+      ],
+      "yaw": 90,
+      "size": [
+        0.32,
+        1.3,
+        0.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#343c3b",
+      "seats": [],
+      "cameras": [
+        "H25",
+        "H56"
+      ],
+      "confidence": "Visible in normal/wide window references. Shared procedural detail; dimensions, spacing and exact correspondence estimated."
+    },
+    {
+      "id": "g50-window-sculpture-3",
+      "type": "display-console",
+      "variant": "window-sculpture",
+      "name": "Abstract pierced sculpture on window sill",
+      "position": [
+        -2.07,
+        0.24,
+        5.445
+      ],
+      "yaw": 90,
+      "size": [
+        0.32,
+        1.3,
+        0.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#343c3b",
+      "seats": [],
+      "cameras": [
+        "H26"
+      ],
+      "confidence": "Visible in normal/wide window references. Shared procedural detail; dimensions, spacing and exact correspondence estimated."
+    }
+  ]
+}

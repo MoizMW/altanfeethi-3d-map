@@ -1,0 +1,330 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-window-51",
+  "objects": [
+    {
+      "id": "g51-chair-91",
+      "type": "armchair",
+      "name": "Tan swivel bucket chair · H91",
+      "position": [
+        -1.2,
+        0,
+        -1.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a17b59",
+      "seats": [
+        "Seat_H91"
+      ],
+      "cameras": [
+        "H27",
+        "H30"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g51-chair-90",
+      "type": "armchair",
+      "name": "Tan swivel bucket chair · H90",
+      "position": [
+        0.15,
+        0,
+        -1.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a17b59",
+      "seats": [
+        "Seat_H90"
+      ],
+      "cameras": [
+        "H27",
+        "H30"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g51-chair-89",
+      "type": "armchair",
+      "name": "Tan swivel bucket chair · H89",
+      "position": [
+        -1.2,
+        0,
+        1.1
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a17b59",
+      "seats": [
+        "Seat_H89"
+      ],
+      "cameras": [
+        "H27"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g51-chair-88",
+      "type": "armchair",
+      "name": "Tan swivel bucket chair · H88",
+      "position": [
+        0.15,
+        0,
+        1.1
+      ],
+      "yaw": 180,
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a17b59",
+      "seats": [
+        "Seat_H88"
+      ],
+      "cameras": [
+        "H27"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "egg-swivel"
+    },
+    {
+      "id": "g51-table-34",
+      "type": "table",
+      "name": "Stone table · H34",
+      "position": [
+        -1.2,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.48,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H27",
+        "H30"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H34"
+    },
+    {
+      "id": "g51-table-35",
+      "type": "table",
+      "name": "Stone table · H35",
+      "position": [
+        0.15,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.62,
+        0.48,
+        0.62
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H27"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "round-pedestal",
+      "externalId": "Table_H35"
+    },
+    {
+      "id": "g51-window-lamp",
+      "type": "floor-lamp",
+      "name": "Window-side floor lamp",
+      "position": [
+        -1.85,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ab9564",
+      "seats": [],
+      "cameras": [
+        "H27",
+        "H30"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review."
+    },
+    {
+      "id": "g51-bin",
+      "type": "cabinet",
+      "name": "Waste bin between side tables",
+      "position": [
+        -0.52,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.28,
+        0.42,
+        0.28
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b8171",
+      "seats": [],
+      "cameras": [
+        "H27"
+      ],
+      "confidence": "Observed in the listed normal/wide views; local position, orientation and dimensions are provisional and require owner review.",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g51-window-curtain",
+      "type": "wall-panel",
+      "name": "Gathered sheer curtains · open window bays",
+      "position": [
+        -2.13,
+        0.22,
+        0.3
+      ],
+      "yaw": 90,
+      "size": [
+        6.2,
+        3.8,
+        0.055
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#eeeadd",
+      "seats": [],
+      "cameras": [
+        "H27",
+        "H30"
+      ],
+      "confidence": "Wide captures show sheer curtains gathered along window divisions, with clear openings between folds. Density, bay count and spacing are estimated.",
+      "variant": "window-drapery"
+    },
+    {
+      "id": "g51-window-sill",
+      "type": "cabinet",
+      "variant": "window-sill",
+      "name": "Low stone window sill",
+      "position": [
+        -2.23,
+        0,
+        0.3
+      ],
+      "yaw": 90,
+      "size": [
+        6.2,
+        0.24,
+        0.26
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d4d1c5",
+      "seats": [],
+      "cameras": [
+        "H27",
+        "H30"
+      ],
+      "confidence": "Visible in normal/wide window references. Shared procedural detail; dimensions, spacing and exact correspondence estimated."
+    },
+    {
+      "id": "g51-window-sculpture-1",
+      "type": "display-console",
+      "variant": "window-sculpture",
+      "name": "Abstract pierced sculpture on window sill",
+      "position": [
+        -2.07,
+        0.24,
+        1.85
+      ],
+      "yaw": 90,
+      "size": [
+        0.32,
+        1.3,
+        0.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#343c3b",
+      "seats": [],
+      "cameras": [
+        "H30"
+      ],
+      "confidence": "Visible in normal/wide window references. Shared procedural detail; dimensions, spacing and exact correspondence estimated."
+    }
+  ]
+}
