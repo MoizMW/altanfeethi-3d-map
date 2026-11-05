@@ -95,3 +95,11 @@ Before building a block, check [wide capture snapshots](evidence/wide%20capture%
 Table drawing references: place PNGs named after table IDs (for example `B1.png` for `Table_B1`) in `evidence/tables_drawing/`. The editor adds matching `B1 drawing` buttons beside normal/wide camera views, including combined layouts. Missing drawings are omitted. These files are owner visual references for checking chair names; they do not modify or calibrate the model.
 
 G19 construction shell: `/?block=ground/g19` — floors, supported walls/glazing, corridor glass gate and the visible lower escalator from F2, with no furniture. Close connection to G17 and its empty front room: `/?layout=ground/g17-g19`; also included in the main ground-floor layout. Uses normal E5/E8/F1/F2 views only, per owner. See [G19 evidence and provisional joins](blocks/ground/g19/README.md).
+
+## Unified building dashboard
+
+Open `/building.html` for the connected ground + first-floor experience. Ground, First, Building and Exploded modes have animated camera/floor transitions, searchable rooms/seats/tables, click-to-focus spaces, a stair-connection close-up, top/full-wall controls and source-room links. The floor editor header also links here. Small screens use **Find a space** to open the room drawer; reduced-motion preferences are respected.
+
+The viewer reads the saved `ground/b-g-lounges` and `first/center-right` layouts live through read-only `/api/building`. It rigidly aligns the first-floor lower escalator landing with G19, using a provisional 3.8 m elevation. One shared 7.6 m flight uses G19's lane widths, plus an upper landing bridge filling the unused part of the original opening. These are building-view estimates, not surveyed measurements. Original floor layouts, room furniture and standalone stairs remain unchanged. Existing rooms retain their source editor links.
+
+Implementation: `app/building.mjs` composes alignment; `app/building.js` renders the dashboard using the shared builders/materials and static instancing. Test alignment, shared-flight/wall clearance, upper-bridge continuity, source preservation and read-only API with `node app/building.test.mjs` (also included in `npm test`).
