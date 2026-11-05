@@ -31,7 +31,8 @@
         "B10",
         "C11"
       ],
-      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "pillow": false
     },
     {
       "id": "g3-g24-g25-chair-23",
@@ -61,7 +62,8 @@
         "B7",
         "C11"
       ],
-      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "pillow": false
     },
     {
       "id": "g3-g24-g25-table-17",
@@ -306,7 +308,8 @@
       "cameras": [
         "B10"
       ],
-      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
+      "pillow": false
     },
     {
       "id": "g3-g24-g25-chair-36",
@@ -1414,7 +1417,7 @@
     {
       "id": "g3-g24-g25-buffet-north",
       "type": "counter",
-      "name": "Food counter · illuminated niches, coffee equipment and side fridge",
+      "name": "Food counter \u00b7 illuminated niches, coffee equipment and side fridge",
       "position": [
         5.594930875576,
         0,
@@ -1454,7 +1457,7 @@
     {
       "id": "g3-g24-g25-buffet-display-north",
       "type": "tv",
-      "name": "Buffet wall display · content omitted",
+      "name": "Buffet wall display \u00b7 content omitted",
       "position": [
         5.594930875576,
         2.15,
@@ -1492,7 +1495,7 @@
     {
       "id": "g3-g24-g25-plant-north",
       "type": "plant",
-      "name": "Slender topiary in ivory pot · B41/B42",
+      "name": "Slender topiary in ivory pot \u00b7 B41/B42",
       "position": [
         -4.65,
         0,
@@ -1522,7 +1525,7 @@
     {
       "id": "g3-g24-g25-art-north",
       "type": "display",
-      "name": "Framed artwork · schematic",
+      "name": "Framed artwork \u00b7 schematic",
       "position": [
         -2.290317693076,
         2.15,
@@ -1560,7 +1563,7 @@
     {
       "id": "g3-g24-g25-buffet-south",
       "type": "counter",
-      "name": "Food counter · illuminated niches, coffee equipment and side fridge",
+      "name": "Food counter \u00b7 illuminated niches, coffee equipment and side fridge",
       "position": [
         4.3846107097387765,
         0,
@@ -1600,7 +1603,7 @@
     {
       "id": "g3-g24-g25-buffet-display-south",
       "type": "tv",
-      "name": "Buffet wall display · content omitted",
+      "name": "Buffet wall display \u00b7 content omitted",
       "position": [
         4.414167084834945,
         2.15,
@@ -1638,7 +1641,7 @@
     {
       "id": "g3-g24-g25-plant-south",
       "type": "plant",
-      "name": "Tall dracaena in ivory planter · coffee-side cream pier",
+      "name": "Tall dracaena in ivory planter \u00b7 coffee-side cream pier",
       "position": [
         0.4022614934518204,
         0,
@@ -1669,7 +1672,7 @@
     {
       "id": "g3-g24-g25-art-south",
       "type": "display",
-      "name": "Geometric botanical print · cream pier",
+      "name": "Geometric botanical print \u00b7 cream pier",
       "position": [
         -1.04,
         1.6,
@@ -1700,7 +1703,7 @@
     {
       "id": "g3-g24-g25-large-wall-display",
       "type": "tv",
-      "name": "Large dark wall display · schematic",
+      "name": "Large dark wall display \u00b7 schematic",
       "position": [
         10.4736622902883,
         1.3695414134768744,
@@ -1739,7 +1742,7 @@
       "id": "g3-g24-g25-grand-piano",
       "type": "display-console",
       "variant": "grand-piano",
-      "name": "Grand piano and bench · B7 wide",
+      "name": "Grand piano and bench \u00b7 B7 wide",
       "position": [
         -3.7554961588857863,
         0,
@@ -1768,7 +1771,7 @@
       "id": "g3-g24-g25-piano-palm",
       "type": "plant",
       "variant": "dining-palm",
-      "name": "Areca palm in ivory planter · beside piano",
+      "name": "Areca palm in ivory planter \u00b7 beside piano",
       "position": [
         -2.431738084044416,
         0,
@@ -1799,7 +1802,7 @@
       "id": "g3-g24-g25-lantern-stand",
       "type": "display-console",
       "variant": "dining-lantern-stand",
-      "name": "Slim brass lantern stand with woven base · cream pier",
+      "name": "Slim brass lantern stand with woven base \u00b7 cream pier",
       "position": [
         -0.1359158907861343,
         0,
@@ -1829,7 +1832,7 @@
       "id": "g3-g24-g25-cream-pier-planter",
       "type": "cabinet",
       "variant": "plain-planter",
-      "name": "Tall ivory planter · juice-side cream pier",
+      "name": "Tall ivory planter \u00b7 juice-side cream pier",
       "position": [
         0.31794448446435464,
         0,
@@ -2015,7 +2018,7 @@
       "id": "g3-g24-g25-menu-stand",
       "type": "display-console",
       "variant": "dining-menu-stand",
-      "name": "Dark angled menu pedestal · arch-side aisle",
+      "name": "Dark angled menu pedestal \u00b7 arch-side aisle",
       "position": [
         -4.55,
         0,
@@ -2498,6 +2501,87 @@
         "B14"
       ],
       "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-demo-avatar-1",
+      "type": "human-avatar",
+      "variant": "saudi-thobe-seated",
+      "name": "Seated man \u00b7 white thobe and ghutra \u00b7 demo 1",
+      "position": [
+        -3.710769585253,
+        0,
+        -3.967575757576
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.45,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#f1eee5",
+      "seats": [],
+      "cameras": [],
+      "seatedOn": "g3-g24-g25-chair-17",
+      "confidence": "Owner-requested fictional display avatar; not camera evidence or live occupancy."
+    },
+    {
+      "id": "g3-g24-g25-demo-avatar-2",
+      "type": "human-avatar",
+      "variant": "saudi-abaya-seated",
+      "name": "Seated woman \u00b7 abaya and hijab \u00b7 demo 2",
+      "position": [
+        -3.710769585253,
+        0,
+        -1.632424242425
+      ],
+      "yaw": 180,
+      "size": [
+        0.64,
+        1.45,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#20232a",
+      "seats": [],
+      "cameras": [],
+      "seatedOn": "g3-g24-g25-chair-23",
+      "confidence": "Owner-requested fictional display avatar; not camera evidence or live occupancy."
+    },
+    {
+      "id": "g3-g24-g25-demo-avatar-3",
+      "type": "human-avatar",
+      "variant": "saudi-thobe-seated",
+      "name": "Seated man \u00b7 white thobe and ghutra \u00b7 demo 3",
+      "position": [
+        -1.908112304147,
+        0,
+        1.632424242425
+      ],
+      "yaw": 0,
+      "size": [
+        0.64,
+        1.45,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#f1eee5",
+      "seats": [],
+      "cameras": [],
+      "seatedOn": "g3-g24-g25-chair-30",
+      "confidence": "Owner-requested fictional display avatar; not camera evidence or live occupancy."
     }
   ]
 }

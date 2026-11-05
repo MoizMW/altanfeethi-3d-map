@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {buildHumanAvatar,avatarSize} from './human-avatars.js';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 import {receptionSizes, buildReceptionObject} from './reception-objects.js';
 import {buildBuffetObject} from './buffet-objects.js';
@@ -18,10 +19,11 @@ export const mat=(color,roughness=.65,metalness=0)=>new THREE.MeshStandardMateri
 function mesh(group,geometry,material,p){const m=new THREE.Mesh(geometry,material);m.position.set(...p);m.castShadow=true;m.receiveShadow=true;group.add(m);return m;}
 export function box(g,dim,p,m,r=.04){return mesh(g,new RoundedBoxGeometry(...dim,3,Math.min(r,...dim.map(d=>d/3))),m,p);}
 function rod(g,a,b,r,m){const d=new THREE.Vector3(...b).sub(new THREE.Vector3(...a));const s=mesh(g,new THREE.CylinderGeometry(r,r,d.length(),6),m,new THREE.Vector3(...a).addScaledVector(d,.5).toArray());s.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),d.normalize());return s;}
-export const referenceSize={sofa:[2.05,.88,.9],armchair:[.88,.9,.92],table:[1.5,.42,.78],screen:[3.8,2.3,.07],plant:[.5,1.7,.5],...receptionSizes,...securitySizes,...passportSizes};
+export const referenceSize={'human-avatar':avatarSize,sofa:[2.05,.88,.9],armchair:[.88,.9,.92],table:[1.5,.42,.78],screen:[3.8,2.3,.07],plant:[.5,1.7,.5],...receptionSizes,...securitySizes,...passportSizes};
 export const objectReferenceSize=o=>privateLoungeSizes[o.variant]||referenceSize[o.type];
 export function buildObject(o){const g=new THREE.Group(),nativeSize=objectReferenceSize(o),[w,h,d]=nativeSize, fabric=mat(o.color),dark=mat('#303b3a',.4),gold=mat('#ab9564',.35,.6);g.userData.objectId=o.id;
- if(privateLoungeSizes[o.variant])g.add(buildPrivateLoungeObject(o));
+ if(o.type==='human-avatar')g.add(buildHumanAvatar(o));
+ else if(privateLoungeSizes[o.variant])g.add(buildPrivateLoungeObject(o));
  else if(buildBuffetObject(g,o,{box,mesh,rod,mat,referenceSize})){}
  else if(buildCenterLounge(g,o,{box,mesh,rod,mat,referenceSize})){}
  else if((o.type==='counter'&&o.variant==='food-buffet')||(o.type==='display-console'&&o.variant==='grand-piano')||['dining-palm','dining-dracaena','dining-topiary','dining-lantern-stand','dining-botanical-print','dining-menu-stand'].includes(o.variant))buildDiningObject(g,o,{box,mesh,rod,mat,referenceSize});

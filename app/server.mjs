@@ -117,7 +117,7 @@ export const server=createServer(async(req,res)=>{
     else if(relative==='shared/materials/textures/reception-marble/charcoal-veined.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/materials/textures/window-display/campaign-atlas.png')target=resolve(projectRoot,relative);
     else if(['curved-armchair.js','center-lounge.js','carpet.js'].includes(relative))target=resolve(appRoot,relative);
-    else if(['floors.js','floor-materials.js','floor-reflections.js','room-mirror.js','render-profile.js','render-loop.js','static-instances.js','contact-shadows.js'].includes(relative))target=resolve(appRoot,relative);
+    else if(['human-avatars.js','walk-mode.js','floors.js','floor-materials.js','floor-reflections.js','room-mirror.js','render-profile.js','render-loop.js','static-instances.js','contact-shadows.js'].includes(relative))target=resolve(appRoot,relative);
     else if(/^shared\/materials\/textures\/(dark-stone-floor|pale-stone-floor)\/basecolor\.png$/.test(relative))target=resolve(projectRoot,relative);
     else if(relative==='lounge-sofa.js')target=resolve(appRoot,relative);
     else if(relative==='shared/materials/textures/lounge-pillow/pillow-reference.png')target=resolve(projectRoot,relative);

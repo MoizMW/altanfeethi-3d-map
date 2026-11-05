@@ -4,9 +4,9 @@
   "scope": "Saved ground and first-floor block objects; excludes architecture and composed layout copies.",
   "totals": {
     "blocks": 48,
-    "designs": 106,
-    "configurations": 291,
-    "placements": 902
+    "designs": 108,
+    "configurations": 295,
+    "placements": 905
   },
   "blocks": [
     {
@@ -107,7 +107,7 @@
     {
       "key": "ground/g3-g24-g25",
       "name": "G3 + G24 + G25 · Shared B-zone dining lounge",
-      "count": 79
+      "count": 82
     },
     {
       "key": "ground/g32",
@@ -1444,7 +1444,7 @@
           ]
         },
         {
-          "id": "cc4dce11ba0d",
+          "id": "d3cfacb166cb",
           "appearance": {
             "size": [
               1.12,
@@ -1456,7 +1456,8 @@
               1,
               1
             ],
-            "color": "#3d4a55"
+            "color": "#3d4a55",
+            "pillow": false
           },
           "preview": {
             "type": "armchair",
@@ -1472,6 +1473,7 @@
               1
             ],
             "color": "#3d4a55",
+            "pillow": false,
             "id": "g3-g24-g25-chair-17",
             "name": "Armchair",
             "position": [
@@ -1508,6 +1510,60 @@
                 "C11"
               ]
             },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-chair-30",
+              "name": "Chair 30",
+              "seats": [
+                "Seat_B24"
+              ],
+              "cameras": [
+                "B10"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cc4dce11ba0d",
+          "appearance": {
+            "size": [
+              1.12,
+              1.03,
+              1.16
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#3d4a55"
+          },
+          "preview": {
+            "type": "armchair",
+            "variant": "default",
+            "size": [
+              1.12,
+              1.03,
+              1.16
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#3d4a55",
+            "id": "g3-g24-g25-chair-29",
+            "name": "Armchair",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
             {
               "block": "ground/g3-g24-g25",
               "objectId": "g3-g24-g25-chair-29",
@@ -1555,17 +1611,6 @@
               "cameras": [
                 "B7",
                 "C11"
-              ]
-            },
-            {
-              "block": "ground/g3-g24-g25",
-              "objectId": "g3-g24-g25-chair-30",
-              "name": "Chair 30",
-              "seats": [
-                "Seat_B24"
-              ],
-              "cameras": [
-                "B10"
               ]
             },
             {
@@ -13026,6 +13071,137 @@
       ]
     },
     {
+      "id": "human-avatar-a91456dde7d5",
+      "name": "Human Avatar · Saudi Abaya Seated",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "human-avatar",
+        "variant": "saudi-abaya-seated"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "1f615573db8a",
+          "appearance": {
+            "size": [
+              0.64,
+              1.45,
+              0.92
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#20232a"
+          },
+          "preview": {
+            "type": "human-avatar",
+            "variant": "saudi-abaya-seated",
+            "size": [
+              0.64,
+              1.45,
+              0.92
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#20232a",
+            "id": "g3-g24-g25-demo-avatar-2",
+            "name": "Human Avatar · Saudi Abaya Seated",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-demo-avatar-2",
+              "name": "Seated woman · abaya and hijab · demo 2",
+              "seats": [],
+              "cameras": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "human-avatar-32cec9cee144",
+      "name": "Human Avatar · Saudi Thobe Seated",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "human-avatar",
+        "variant": "saudi-thobe-seated"
+      },
+      "count": 2,
+      "configurations": [
+        {
+          "id": "234627170d2d",
+          "appearance": {
+            "size": [
+              0.64,
+              1.45,
+              0.92
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#f1eee5"
+          },
+          "preview": {
+            "type": "human-avatar",
+            "variant": "saudi-thobe-seated",
+            "size": [
+              0.64,
+              1.45,
+              0.92
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#f1eee5",
+            "id": "g3-g24-g25-demo-avatar-1",
+            "name": "Human Avatar · Saudi Thobe Seated",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-demo-avatar-1",
+              "name": "Seated man · white thobe and ghutra · demo 1",
+              "seats": [],
+              "cameras": []
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-demo-avatar-3",
+              "name": "Seated man · white thobe and ghutra · demo 3",
+              "seats": [],
+              "cameras": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "plant-14922e031f31",
       "name": "Plant",
       "category": "Decor & fixtures",
@@ -18555,7 +18731,51 @@
                 "B5",
                 "B6"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "9beb20de80dd",
+          "appearance": {
+            "size": [
+              1.45,
+              0.86,
+              0.08
+            ],
+            "scale": [
+              1.2612987613638462,
+              1.1334254632335807,
+              1
+            ],
+            "color": "#20282a"
+          },
+          "preview": {
+            "type": "tv",
+            "variant": "default",
+            "mount": "wall",
+            "size": [
+              1.45,
+              0.86,
+              0.08
+            ],
+            "scale": [
+              1.2612987613638462,
+              1.1334254632335807,
+              1
+            ],
+            "color": "#20282a",
+            "id": "ground-c-lounge-011-634ca121fd274b35",
+            "name": "TV · Wall",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
             {
               "block": "ground/g11",
               "objectId": "ground-c-lounge-011-634ca121fd274b35",

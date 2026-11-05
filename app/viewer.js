@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import {placeAvatarOnChair} from './human-avatars.js';
+import {createWalkMode} from './walk-mode.js';
 import {buildObject as build, objectReferenceSize, referenceSize} from './object-builders.js';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {TransformControls} from 'three/addons/controls/TransformControls.js';
@@ -104,7 +106,16 @@ function refreshArchitecture(){
  fitSceneShadows(light,root);
 }
 function applyVisibility(){invalidateScene();for(const o of block.objects){if(['screen','wall-panel','security-barrier'].includes(o.type))objects.get(o.id).visible=$('screen').checked;if(o.type==='passport-booth')objects.get(o.id).getObjectByName('Booth partitions').visible=$('screen').checked;if(o.variant==='side-wall-light')objects.get(o.id).visible=$('walls').checked&&!$('wall-cutaway').checked;}staticFurniture?.sync();selection.visible=selected?(objects.get(selected)?.visible??false):false;}
-function setView(mode){renderLoop?.invalidate();view=mode;camera=mode==='orbit'?perspective:ortho;controls.object=camera;transform.camera=camera;camera.up.set(0,1,0);const size=Math.max(...(block?.floorSize||[4.8,4.8])),factor=Math.max(1,size/5.2);camera.far=Math.max(100,size*10);camera.updateProjectionMatrix();const offset=block?.viewer?.cameraOffset||[6,6,7];camera.position.set(...(mode==='top'?[0,Math.max(10,size*2),.001]:offset.map(value=>value*factor)));const center=block?.architecture?.floorCenter||[0,0];camera.position.x+=center[0];camera.position.z+=center[1];controls.target.set(center[0],mode==='top'?0:Math.min(1,size*.07),center[1]);controls.maxDistance=Math.max(25,size*5);controls.enableRotate=mode!=='top';camera.zoom=1;controls.update();resize();document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===mode));}
+const walking=createWalkMode({canvas:renderer.domElement,getCamera:()=>camera,controls,invalidate:()=>renderLoop?.invalidate(),onEnter:()=>{camera=perspective;controls.object=camera;transform.camera=camera;transform.detach();transformHelper.visible=false;selection.visible=false;$('wall-cutaway').checked=false;refreshArchitecture();},onExit:()=>{if(selected&&objects.has(selected))select(selected);}});
+function startWalking(event){
+ if(!block||walking.active)return;
+ const center=block.architecture?.floorCenter||[0,0],point=new THREE.Vector3(center[0],1.65,center[1]);
+ if(event){const rect=renderer.domElement.getBoundingClientRect(),ray=new THREE.Raycaster();ray.setFromCamera(new THREE.Vector2((event.clientX-rect.left)/rect.width*2-1,-(event.clientY-rect.top)/rect.height*2+1),camera);const hit=ray.ray.intersectPlane(new THREE.Plane(new THREE.Vector3(0,1,0),0),new THREE.Vector3());if(hit){point.copy(hit);point.y=1.65;}}
+ walking.enter(point);status('Walking · WASD or arrows to move · Drag to look · Esc to exit');
+}
+$('walk').onclick=()=>walking.active?walking.exit():startWalking();
+renderer.domElement.addEventListener('dblclick',startWalking);
+function setView(mode){walking.exit();renderLoop?.invalidate();view=mode;camera=mode==='orbit'?perspective:ortho;controls.object=camera;transform.camera=camera;camera.up.set(0,1,0);const size=Math.max(...(block?.floorSize||[4.8,4.8])),factor=Math.max(1,size/5.2);camera.far=Math.max(100,size*10);camera.updateProjectionMatrix();const offset=block?.viewer?.cameraOffset||[6,6,7];camera.position.set(...(mode==='top'?[0,Math.max(10,size*2),.001]:offset.map(value=>value*factor)));const center=block?.architecture?.floorCenter||[0,0];camera.position.x+=center[0];camera.position.z+=center[1];controls.target.set(center[0],mode==='top'?0:Math.min(1,size*.07),center[1]);controls.maxDistance=Math.max(25,size*5);controls.enableRotate=mode!=='top';camera.zoom=1;controls.update();resize();document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===mode));}
 function focusSelected(){
  const object=block.objects.find(o=>o.id===selected);if(!object)return;
  const bounds=new THREE.Box3().setFromObject(objects.get(selected)),center=bounds.getCenter(new THREE.Vector3());center.y=Math.max(1,center.y);
@@ -130,7 +141,7 @@ function resize(){renderLoop?.invalidate();const w=viewport.clientWidth,h=viewpo
 new ResizeObserver(resize).observe(viewport);
 new ResizeObserver(entries=>document.documentElement.style.setProperty('--editor-header-height',entries[0].target.getBoundingClientRect().height+'px')).observe(document.querySelector('header'));
 const ray=new THREE.Raycaster();ray.layers.enable(1);let down;
-renderer.domElement.addEventListener('pointerdown',e=>down=[e.clientX,e.clientY]);renderer.domElement.addEventListener('pointerup',e=>{if(!block||!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>5)return;const r=renderer.domElement.getBoundingClientRect();ray.setFromCamera(new THREE.Vector2((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1),camera);for(const hit of ray.intersectObjects([...objects.values()].filter(g=>g.visible&&(!layoutKey||ray.ray.intersectsBox(g.userData.pickBounds))),true)){let o=hit.object;while(o&&!o.userData.objectId)o=o.parent;if(o){select(o.userData.objectId);break;}}});
+renderer.domElement.addEventListener('pointerdown',e=>down=[e.clientX,e.clientY]);renderer.domElement.addEventListener('pointerup',e=>{if(walking.active||!block||!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>5)return;const r=renderer.domElement.getBoundingClientRect();ray.setFromCamera(new THREE.Vector2((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1),camera);for(const hit of ray.intersectObjects([...objects.values()].filter(g=>g.visible&&(!layoutKey||ray.ray.intersectsBox(g.userData.pickBounds))),true)){let o=hit.object;while(o&&!o.userData.objectId)o=o.parent;if(o){select(o.userData.objectId);break;}}});
 const checkpoint=()=>{history.push(structuredClone(block));if(history.length>50)history.shift();dirty=true;status('Unsaved changes');};
 transform.addEventListener('mouseDown',()=>{if(block&&selected)dragStart=structuredClone(block);});
 transform.addEventListener('mouseUp',()=>{if(!dragStart||!selected)return;const o=block.objects.find(o=>o.id===selected),g=objects.get(selected);if(!o||!g){dragStart=null;return;}const previous=dragStart;dragStart=null;
@@ -175,8 +186,9 @@ $('place-asset').onclick=()=>{
  if(!block||readOnly()||saving)return;
  try{
   const asset=assetChoice(),config=asset?.configurations.find(config=>config.id===$('asset-config').value);if(!config)throw Error('Choose an asset first.');
-  const object=createAssetPlacement(block,asset,config,crypto.randomUUID().replaceAll('-','').slice(0,16));
-  const next={...block,objects:[...block.objects,object]};validateBlock(next);checkpoint();block=next;selected=object.id;$('object-search').value='';
+  let object=createAssetPlacement(block,asset,config,crypto.randomUUID().replaceAll('-','').slice(0,16));
+  const chair=block.objects.find(item=>item.id===selected);if(object.type==='human-avatar'&&['armchair','office-chair'].includes(chair?.type)){if(block.objects.some(item=>item.type==='human-avatar'&&item.seatedOn===chair.id))throw Error('This chair already has a display avatar. Select another chair.');object=placeAvatarOnChair(object,chair);}
+  const next={...block,objects:[...block.objects.map(item=>object.seatedOn===item.id?{...item,pillow:false}:item),object]};validateBlock(next);checkpoint();block=next;selected=object.id;$('object-search').value='';
   rebuild();setTool('translate');$('asset-dialog').close();status('Asset added · Drag to position, then Save block');
  }catch(error){status(error.message);$('asset-details').textContent=error.message;}
 };
@@ -237,7 +249,7 @@ function updateLabels() {
   }
  }
 }
-renderLoop=createRenderLoop({update:()=>controls.update(),needsAnimation:needsDisplayAnimation,render:({moving})=>{
+renderLoop=createRenderLoop({update:()=>walking.active?false:controls.update(),needsAnimation:needsDisplayAnimation,render:({moving})=>{
  if(!block||document.hidden)return;
  renderProfile.begin();
  const span=camera.isOrthographicCamera?(camera.right-camera.left)/camera.zoom:camera.position.distanceTo(controls.target)*2*Math.tan(THREE.MathUtils.degToRad(camera.fov/2));

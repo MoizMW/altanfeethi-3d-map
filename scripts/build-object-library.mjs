@@ -19,7 +19,7 @@ export function objectDesign(object) {
 export function categoryFor(type) {
   if (['armchair', 'sofa', 'office-chair', 'privacy-pod'].includes(type)) return 'Seating';
   if (['table', 'display-console'].includes(type)) return 'Tables & consoles';
-  if (['plant', 'floor-lamp', 'screen', 'display', 'tissue-box', 'tv', 'wall-panel'].includes(type)) return 'Decor & fixtures';
+  if (['human-avatar', 'plant', 'floor-lamp', 'screen', 'display', 'tissue-box', 'tv', 'wall-panel'].includes(type)) return 'Decor & fixtures';
   return 'Reception & equipment';
 }
 

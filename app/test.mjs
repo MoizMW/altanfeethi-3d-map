@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import './floors.test.mjs';
 import './dining-detail.test.mjs';
+import './human-avatars.test.mjs';
 import '../blocks/first/g52-g55/validate.test.mjs';
 import '../blocks/first/g46-g47-g49/validate.test.mjs';
 import './render-performance.test.mjs';
