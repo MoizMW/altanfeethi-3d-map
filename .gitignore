@@ -1,4 +1,6 @@
 app/node_modules/
+node_modules/
+.husky/_/
 blocks/*/*/backups/
 blocks/*/*/.objects-*.tmp
 evidence/registration/.camera-placements.json.tmp

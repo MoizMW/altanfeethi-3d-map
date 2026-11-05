@@ -15,9 +15,12 @@ The destination ref is checked, so pushing another branch into `main` is blocked
 as well. The hook blocks the owner by default too; there is no username-based or
 environment-variable exemption.
 
-Every clone must enable the hook with `npm run hooks:install` before work/pushes.
-`npm run install:app` includes this step. Cloning alone does not activate Git
-hooks. Verify `git config --get core.hooksPath` prints `.githooks`.
+Run `npm run install:app` in each clone to install dependencies and activate
+Husky automatically. Root `npm install` or `npm ci` also activates it through
+`prepare`; no separate `npm run hooks:install` is needed. Installing only inside
+`app/` does not install the root tooling. Cloning alone does not activate Git
+hooks. Verify `git config --get core.hooksPath` prints `.husky/_`.
+`.husky/pre-push` delegates to the existing `.githooks/pre-push` guard.
 
 Codex must never retry a rejected push using `--no-verify`, altered hook settings,
 removed hooks, another clone/remote, or GitHub API/UI. A normal request to push or

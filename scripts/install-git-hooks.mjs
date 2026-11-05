@@ -1,4 +1,4 @@
-import {chmodSync} from 'node:fs';
+import husky from 'husky';
 import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 
@@ -10,10 +10,12 @@ function git(args){
 }
 const existing=git(['config','--get','core.hooksPath']);
 if(existing.status!==0&&existing.status!==1)throw Error(existing.stderr||'Could not inspect Git hooks configuration.');
-if(existing.stdout.trim()&&existing.stdout.trim()!=='.githooks'){
+if(existing.stdout.trim()&&!['.githooks','.husky/_'].includes(existing.stdout.trim())){
   throw Error('An existing hooks path is configured. Stop and ask the maintainer to reconcile it; do not replace or disable existing hooks.');
 }
-chmodSync(new URL('../.githooks/pre-push',import.meta.url),0o755);
-const installed=git(['config','--local','core.hooksPath','.githooks']);
-if(installed.status!==0)throw Error(installed.stderr||'Could not enable repository hooks.');
-console.log('Repository pre-push hook enabled. Direct pushes to main are blocked for everyone by default.');
+process.chdir(cwd);
+const error=husky();
+if(error)throw Error(error);
+const installed=git(['config','--get','core.hooksPath']);
+if(installed.status!==0||installed.stdout.trim()!=='.husky/_')throw Error('Husky was not enabled. Do not push until hook installation succeeds.');
+console.log('Husky pre-push hook enabled. Direct pushes to main are blocked for everyone by default.');

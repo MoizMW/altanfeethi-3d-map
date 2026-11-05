@@ -26,11 +26,13 @@ agent working anywhere in this repository.
 
 ## Install and preserve the safeguard
 
-Before working or pushing in a fresh clone, run `npm run hooks:install`.
-Confirm `git config --get core.hooksPath` returns `.githooks` and
-`.githooks/pre-push` is executable. If installation fails, report it and resolve
+Before working or pushing in a fresh clone, run `npm run install:app`.
+Root `npm install` and `npm ci` activate Husky automatically through `prepare`;
+no separate `npm run hooks:install` is needed.
+Confirm `git config --get core.hooksPath` returns `.husky/_` and
+`.husky/_/pre-push` is executable. If installation fails, report it and resolve
 installation without bypassing protection. Do not push until it is enabled.
-`npm run install:app` also installs the hook. Run
+The Husky hook delegates to the existing `.githooks/pre-push` guard. Run
 `node scripts/pre-push-hook.test.mjs` when changing hook-related code.
 
 The hook blocks everyone by default, including MoizMW. There is no automatic
