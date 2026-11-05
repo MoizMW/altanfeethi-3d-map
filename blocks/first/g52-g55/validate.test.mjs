@@ -63,6 +63,7 @@ test('center furniture builds finite supported geometry with correct edit transf
     const bounds=new THREE.Box3().setFromObject(built);assert.ok(!bounds.isEmpty(),object.id);
     assert.ok([...bounds.min.toArray(),...bounds.max.toArray()].every(Number.isFinite),object.id);
     if(object.variant==='center-pendant')assert.ok(bounds.min.y>2.4&&bounds.max.y<=3.56,'Pendant hangs from the frame above walking height');
+    else if(object.type==='tissue-box')assert.ok(bounds.min.y>0,'Tissue box rests on a table');
     else assert.ok(bounds.min.y>=-.04&&bounds.min.y<.1,`${object.id}: supported on floor`);
     if(object.type==='armchair')assert.ok(built.getObjectByName('Wrapped barrel back and arms'));
     if(object.type==='sofa')for(let i=1;i<=3;i++)assert.ok(built.getObjectByName(`Curved seat cushion ${i}`));

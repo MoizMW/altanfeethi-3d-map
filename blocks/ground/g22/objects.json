@@ -871,6 +871,106 @@
         "G10"
       ],
       "confidence": "Observed across normal/wide views; local position, orientation and dimensions estimated"
+    },
+    {
+      "id": "g22-coffee-table-15-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.5,
+        0.455,
+        -1.5
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g22-coffee-table-16-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.5,
+        0.455,
+        1.2999999999999998
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G8",
+        "G9",
+        "G10"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g22-coffee-table-17-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2.5,
+        0.455,
+        -1.5
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8",
+        "G9"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g22-coffee-table-18-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2.5,
+        0.455,
+        1.2999999999999998
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G7",
+        "G8",
+        "G9"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

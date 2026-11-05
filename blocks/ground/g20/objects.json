@@ -716,6 +716,104 @@
       ],
       "confidence": "visual correspondence; position, orientation and dimensions estimated; needs human review",
       "notes": "Shared procedural plant approximates visible foliage; dimensions and species are estimates."
+    },
+    {
+      "id": "g20-coffee-table-7-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.45,
+        0.455,
+        -1.6
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G22",
+        "G26",
+        "G27"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g20-coffee-table-8-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.45,
+        0.455,
+        1.4
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G22",
+        "G27"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g20-coffee-table-9-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2.45,
+        0.455,
+        -1.6
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G21",
+        "G26",
+        "G27"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g20-coffee-table-10-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2.45,
+        0.455,
+        1.4
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G21",
+        "G27"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

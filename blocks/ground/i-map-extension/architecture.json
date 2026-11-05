@@ -134,17 +134,32 @@
       ],
       "height": 4.1,
       "thickness": 0.16,
-      "color": "#d8d3c7",
-      "finish": "i-zone-stone-panels",
+      "color": "#60483f",
+      "finish": "i-zone-wood-panels",
       "owner": "ground/i-map-extension",
       "sources": [
-        "owner-map-extension-2026-11-03"
+        "owner-map-extension-2026-11-03",
+        "I24",
+        "owner-extension-finishes-2026-11-05"
       ],
-      "confidence": "Owner-requested map-based outline; dimensions estimated, no camera reconstruction claimed"
+      "confidence": "Owner identifies dark brown paneled wall behind TMP_04/13/14. I24 wide and owner crop support wood finish and metallic wall artifacts; ornament shapes, spacing and dimensions are approximate.",
+      "interiorSide": -1,
+      "decorativeDiscs": [
+        {
+          "offset": 7.5,
+          "elevation": 2.85
+        },
+        {
+          "offset": 10.2,
+          "elevation": 2.7
+        }
+      ],
+      "plainSide": 1,
+      "plainColor": "#f0efeb"
     },
     {
       "id": "i-extension-outer-side",
-      "kind": "solid",
+      "kind": "glass",
       "start": [
         5.9,
         24.55
@@ -154,14 +169,18 @@
         10.16
       ],
       "height": 4.1,
-      "thickness": 0.16,
-      "color": "#d8d3c7",
-      "finish": "i-zone-stone-panels",
+      "thickness": 0.025,
+      "color": "#c9d9d8",
       "owner": "ground/i-map-extension",
       "sources": [
-        "owner-map-extension-2026-11-03"
+        "owner-map-extension-2026-11-03",
+        "I24",
+        "I25",
+        "owner-extension-finishes-2026-11-05"
       ],
-      "confidence": "Owner-requested map-based outline; dimensions estimated, no camera reconstruction claimed"
+      "confidence": "Owner places glazing beside TMP_01/02; reuse G62 glazing specification. Existing endpoints retained; dimensions estimated.",
+      "privacyBand": false,
+      "frameColor": "#a2aaa7"
     },
     {
       "id": "i-extension-return-end",
@@ -294,6 +313,8 @@
     "One opening on the short return points toward the existing G24/G25 gap; width matches that source gap (1.531797 m). The main B/C/E/G composition is not moved or merged. Exact global alignment between the I extension and that opening remains pending a future composition.",
     "Owner saved furniture arrangement retained exactly. Combined G59 now ends at Z=17.7 in the empty strip; its screen is Z=17.48. White extension walk starts immediately beyond that screen, meeting the I-zone aisle and the existing branch toward the extension sofas/G24-G25. Empty source crop is neighbor context; combined view crops it to avoid duplicate floors.",
     "Owner right-edge trim: outer floor ends at Z=24.65 with wall center Z=24.55, just beyond the saved sofas. Walk doglegs into X=0.6..1.75 after Z=21 so it avoids the moved blue chair; all furniture poses retained.",
-    "Owner correction: entire extension uses the dark seating floor, with no white walkway inlays. Opening and furniture are retained."
+    "Owner correction: entire extension uses the dark seating floor, with no white walkway inlays. Opening and furniture are retained.",
+    "5 November 2026 owner finish update: outer-side glazing beside TMP_01/02 matches G62; outer-end wall behind TMP_04/13/14 uses dark brown wood panels with approximate metallic wall artifacts. Supersedes the all-pale-wall finish note. Furniture, footprint and openings retained.",
+    "Owner shared-boundary correction: brown wood and ornaments face the I-extension interior only; the opposite face toward G13 is plain white."
   ]
 }

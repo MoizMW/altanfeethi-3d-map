@@ -774,6 +774,103 @@
       ],
       "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
       "notes": "Visible near-end plant; exact spacing, pot and foliage are schematic and need review."
+    },
+    {
+      "id": "g27-coffee-table-19-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.35,
+        0.455,
+        -2.4
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G12",
+        "G13"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g27-coffee-table-20-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.35,
+        0.455,
+        2.0567406289498154
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G13"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g27-coffee-table-21-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2.45,
+        0.455,
+        -2.3000000000000003
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G12",
+        "G14"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g27-coffee-table-22-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2.45,
+        0.455,
+        2.1
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G6",
+        "G14"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

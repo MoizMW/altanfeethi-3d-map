@@ -325,6 +325,53 @@
         "H30"
       ],
       "confidence": "Visible in normal/wide window references. Shared procedural detail; dimensions, spacing and exact correspondence estimated."
+    },
+    {
+      "id": "g51-table-34-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -1.2,
+        0.517142857142857,
+        0
+      ],
+      "size": [
+        0.07026666666666667,
+        0.27428571428571424,
+        0.13512820512820514
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "H27",
+        "H30"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g51-table-35-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.15,
+        0.517142857142857,
+        0
+      ],
+      "size": [
+        0.07026666666666667,
+        0.27428571428571424,
+        0.13512820512820514
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "H27"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

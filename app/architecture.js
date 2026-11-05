@@ -133,10 +133,59 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
       continue;
     }
     if(wall.variant==='opaque-blue-panel') {
-      const finish=material(wall.color||'#245968',{roughness:.18,metalness:.28});
-      add(group,new THREE.BoxGeometry(length,height,wall.thickness),finish,length/2,height/2,0);
-      const seam=material('#486d73',{roughness:.25,metalness:.45});
-      for(let x=0;x<=length+.001;x+=length/Math.ceil(length/1.2))add(group,new THREE.BoxGeometry(.012,height,.008),seam,x,height/2,wall.thickness/2+.004);
+      const detailed=wall.surfacePattern==='white-geometric';
+      const patterned=detailed||wall.surfacePattern==='etched-sweeps';
+      const finish=patterned?new THREE.MeshPhysicalMaterial({color:wall.color||'#245968',roughness:.10,metalness:.08,clearcoat:1,clearcoatRoughness:.06}):material(wall.color||'#245968',{roughness:.18,metalness:.28});
+      const cream=material('#eee9dc',{roughness:.38}),gold=material('#c5ab70',{roughness:.22,metalness:.75});
+      const plain=wall.plainColor?material(wall.plainColor,{roughness:.65}):null;
+      const seams=material(detailed?'#eceee7':'#486d73',{roughness:.26,metalness:detailed?.12:.45});
+      const cuts=[0,length,...(wall.creamSections||[]).flatMap(section=>[section.start,section.end])].filter(x=>x>=0&&x<=length).sort((a,b)=>a-b);
+      for(let section=1;section<cuts.length;section++){
+        const left=cuts[section-1],right=cuts[section],width=right-left;if(width<.001)continue;
+        const isCream=(wall.creamSections||[]).some(s=>(left+right)/2>=s.start&&(left+right)/2<=s.end);
+        const surface=isCream?cream:finish;
+        const faces=plain?[surface,surface,surface,surface,wall.plainSide===1?plain:surface,wall.plainSide===-1?plain:surface]:surface;
+        add(group,new THREE.BoxGeometry(width,height,wall.thickness),faces,(left+right)/2,height/2,0).name=isCream?'Cream wall break':'Glossy blue glass cladding';
+        if(isCream){
+          for(const side of [-1,1])add(group,new THREE.BoxGeometry(width,.13,.012),material('#514a40'),(left+right)/2,.065,side*(wall.thickness/2+.006)).name='Cream pier stone skirting';
+          continue;
+        }
+        for(const side of (patterned?[-1,1]:[1])){
+          if(plain&&side===wall.plainSide)continue;
+          const face=side*(wall.thickness/2+.007);
+          const panels=Math.ceil(width/1.2);
+          for(let i=1;i<panels;i++)add(group,new THREE.BoxGeometry(detailed?.007:.012,height,.005),seams,left+width*i/panels,height/2,face).name='Thin ivory glass joint';
+          if(detailed){
+            for(const x of [left+.012,right-.012])add(group,new THREE.BoxGeometry(.024,height,.018),gold,x,height/2,face).name='Gold glass edge';
+            for(const y of [.014,height-.014])add(group,new THREE.BoxGeometry(width,.028,.018),gold,(left+right)/2,y,face).name='Gold glass border';
+            // Fine straight-line art-deco fans, clipped to each blue bay. No rounded scallops.
+            const points=[];
+            for(let bay=left;bay<right;bay+=3.2)for(let band=-5;band<9;band++){
+              let previous;
+              for(let i=0;i<=64;i++){
+                const x=bay+i/64*3.2,y=band*.50+1.18*(1-Math.abs(i/64*2-1));
+                const point=new THREE.Vector3(x,y,face+side*.006);
+                if(previous&&x<right-.035&&previous.x>left+.035&&y>.04&&y<height-.04&&previous.y>.04&&previous.y<height-.04)points.push(previous,point);
+                previous=point;
+              }
+            }
+            const etching=new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(points),new THREE.LineBasicMaterial({color:'#f5f5eb',transparent:true,opacity:.19}));
+            etching.name='Fine white geometric glass etching';etching.raycast=()=>{};group.add(etching);
+          }else if(patterned){
+            const points=[];
+            for(let bay=left;bay<right;bay+=4.8)for(let band=-4;band<11;band++){
+              let previous;
+              for(let i=0;i<=96;i++){
+                const x=bay+i/96*4.8,y=band*.55+2.2*Math.sin(i/96*Math.PI*.85),point=new THREE.Vector3(x,y,face+side*.005);
+                if(previous&&x<=right&&y>=.02&&y<=height-.02&&previous.y>=.02&&previous.y<=height-.02)points.push(previous,point);
+                previous=point;
+              }
+            }
+            const etching=new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(points),new THREE.LineBasicMaterial({color:'#71949b',transparent:true,opacity:.14}));
+            etching.name='Fine curved cladding etching';etching.raycast=()=>{};group.add(etching);
+          }
+        }
+      }
       continue;
     }
     if (wall.kind === 'glass') {
@@ -540,9 +589,33 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
       ?material('#ffffff',{map:bookmatchedMarbleTexture(length,wall.height),roughness:.3})
       :iZoneFinish?material('#ffffff',{map:iZoneWallTexture(wall.color||'#d8d3c7',wood),roughness:wood?.48:.72}):material(wall.color||'#e2dfd5');
     add(group,geometry,wallMaterial,0,0,0);
+    for(const panel of wall.facePanels||[]){
+      const width=panel.end-panel.start,center=(panel.start+panel.end)/2;
+      const faceMaterial=material('#ffffff',{map:iZoneWallTexture(panel.color,true),roughness:.48});
+      add(group,new THREE.BoxGeometry(width,height,.008),faceMaterial,center,height/2,panel.side*(wall.thickness/2+.004)).name='Shared wall room cladding';
+      const seam=material('#604938',{roughness:.85}),z=panel.side*(wall.thickness/2+.009);
+      for(let x=panel.start+2.2;x<panel.end;x+=2.2)add(group,new THREE.BoxGeometry(.006,height,.003),seam,x,height/2,z);
+      for(const y of [1.6,3.2])if(y<height)add(group,new THREE.BoxGeometry(width,.006,.003),seam,center,y,z);
+    }
     if(iZoneFinish){
+      if(wall.plainColor){
+        const face=add(group,new THREE.PlaneGeometry(length,height),material(wall.plainColor,{roughness:.72}),length/2,height/2,wall.plainSide*(wall.thickness/2+.002));
+        if(wall.plainSide<0)face.rotation.y=Math.PI;
+        face.name='Plain exterior wall face';
+      }
+      // Small sculptural metal plates stand off the wood on the room-facing side.
+      for(const decor of wall.decorativeDiscs||[]){
+        const side=wall.interiorSide||1;
+        for(const [dx,dy,r,color] of [[-.24,-.12,.12,'#a18a5c'],[.04,.12,.22,'#777d79'],[.32,-.04,.15,'#c0a879']]){
+          const y=decor.elevation+dy;if(y+r>height)continue;
+          const plate=add(group,new THREE.SphereGeometry(r,24,12),material(color,{roughness:.38,metalness:.65}),decor.offset+dx,y,side*(wall.thickness/2+.035));
+          plate.scale.z=.20;plate.name='Sculptural wall artifact';
+          add(group,new THREE.TorusGeometry(r*.88,.007,6,32),material(color,{roughness:.3,metalness:.7}),decor.offset+dx,y,side*(wall.thickness/2+.065)).name='Wall artifact rim';
+        }
+      }
       const joint=material(wood?'#604938':'#55594f',{roughness:.85});
       for(const side of [-1,1]){
+        if(wall.plainColor&&side===wall.plainSide)continue;
         const z=side*(wall.thickness/2+.0015),pitch=wood?2.2:1.15;
         for(let x=pitch;x<length-.05;x+=pitch)add(group,new THREE.BoxGeometry(wood?.006:.009,height,.003),joint,x,height/2,z);
         for(const y of (wood?[1.6,3.2]:[1.15,1.8,2.95]))if(y<height-.025)add(group,new THREE.BoxGeometry(length,wood?.006:.009,.003),joint,length/2,y,z);

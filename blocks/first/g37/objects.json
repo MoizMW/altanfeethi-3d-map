@@ -154,6 +154,30 @@
       ],
       "confidence": "Observed correspondence; local position, orientation and dimensions estimated; needs owner review",
       "notes": "H4 shows the lamp beside the wood-side chair; its shade is partly visible at the lower left of H5-wide."
+    },
+    {
+      "id": "g37-table-03-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -0.44333333333333336,
+        0.5428571428571428,
+        0.33333333333333337
+      ],
+      "size": [
+        0.18133333333333335,
+        0.27428571428571424,
+        0.2833333333333334
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "H4",
+        "H5"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

@@ -4,9 +4,9 @@
   "scope": "Saved ground and first-floor block objects; excludes architecture and composed layout copies.",
   "totals": {
     "blocks": 48,
-    "designs": 100,
-    "configurations": 261,
-    "placements": 775
+    "designs": 106,
+    "configurations": 291,
+    "placements": 902
   },
   "blocks": [
     {
@@ -22,17 +22,17 @@
     {
       "key": "ground/g10",
       "name": "G10 · Divider seating",
-      "count": 17
+      "count": 19
     },
     {
       "key": "ground/g11",
       "name": "G11 · C-zone lounge",
-      "count": 17
+      "count": 20
     },
     {
       "key": "ground/g12-g14",
       "name": "G12 + G14 · Shared C-zone lounge",
-      "count": 33
+      "count": 39
     },
     {
       "key": "ground/g13",
@@ -47,12 +47,12 @@
     {
       "key": "ground/g16",
       "name": "G16 · Window lounge",
-      "count": 14
+      "count": 16
     },
     {
       "key": "ground/g17",
       "name": "G17 · Diriyah Majlis",
-      "count": 13
+      "count": 17
     },
     {
       "key": "ground/g17-front",
@@ -62,7 +62,7 @@
     {
       "key": "ground/g18",
       "name": "G18 · G-zone passage lounge",
-      "count": 22
+      "count": 26
     },
     {
       "key": "ground/g19",
@@ -77,37 +77,37 @@
     {
       "key": "ground/g20",
       "name": "G20 · G-zone passage lounge",
-      "count": 24
+      "count": 28
     },
     {
       "key": "ground/g21",
       "name": "G21 · G-zone mixed seating lounge",
-      "count": 23
+      "count": 27
     },
     {
       "key": "ground/g22",
       "name": "G22 · Window passage lounge",
-      "count": 29
+      "count": 33
     },
     {
       "key": "ground/g27",
       "name": "G27 · G-zone mixed seating lounge",
-      "count": 26
+      "count": 30
     },
     {
       "key": "ground/g28",
       "name": "G28 · G-zone shelf lounge",
-      "count": 22
+      "count": 26
     },
     {
       "key": "ground/g29",
       "name": "G29 · G-zone window lounge",
-      "count": 9
+      "count": 10
     },
     {
       "key": "ground/g3-g24-g25",
       "name": "G3 + G24 + G25 · Shared B-zone dining lounge",
-      "count": 55
+      "count": 79
     },
     {
       "key": "ground/g32",
@@ -117,52 +117,52 @@
     {
       "key": "ground/g57",
       "name": "G57 · I-zone planter lounge",
-      "count": 10
+      "count": 11
     },
     {
       "key": "ground/g58",
       "name": "G58 · I-zone screened lounge",
-      "count": 5
+      "count": 6
     },
     {
       "key": "ground/g59",
       "name": "G59 · I-zone screened lounge",
-      "count": 5
+      "count": 6
     },
     {
       "key": "ground/g60",
       "name": "G60 · I37 / I42 small lounge",
-      "count": 7
+      "count": 8
     },
     {
       "key": "ground/g61",
       "name": "G61 · I-zone end corner and window lounge",
-      "count": 16
+      "count": 21
     },
     {
       "key": "ground/g62",
       "name": "G62 · I-zone window lounge",
-      "count": 12
+      "count": 18
     },
     {
       "key": "ground/g63",
       "name": "G63 · I-zone portrait lounge",
-      "count": 23
+      "count": 28
     },
     {
       "key": "ground/g9",
       "name": "G9 · Private seating",
-      "count": 9
+      "count": 10
     },
     {
       "key": "ground/i-map-extension",
       "name": "I-zone extension · L-shaped map lounge",
-      "count": 15
+      "count": 20
     },
     {
       "key": "ground/i33-lounge",
       "name": "I33 · Small lounge",
-      "count": 7
+      "count": 8
     },
     {
       "key": "ground/zone-c-pods",
@@ -172,47 +172,47 @@
     {
       "key": "first/g35",
       "name": "G35 · First-floor escalator lounge",
-      "count": 6
+      "count": 7
     },
     {
       "key": "first/g36",
       "name": "G36 · First-floor escalator lounge",
-      "count": 5
+      "count": 6
     },
     {
       "key": "first/g37",
       "name": "G37 · First-floor escalator lounge",
-      "count": 5
+      "count": 6
     },
     {
       "key": "first/g38",
       "name": "G38 · First-floor corner lounge",
-      "count": 5
+      "count": 6
     },
     {
       "key": "first/g39",
       "name": "G39 · Private lounge",
-      "count": 6
+      "count": 7
     },
     {
       "key": "first/g40",
       "name": "G40 · Private lounge",
-      "count": 7
+      "count": 8
     },
     {
       "key": "first/g41",
       "name": "G41 · Private lounge",
-      "count": 7
+      "count": 8
     },
     {
       "key": "first/g42",
       "name": "G42 · First-floor paired seating",
-      "count": 6
+      "count": 8
     },
     {
       "key": "first/g45",
       "name": "G45 · Privacy lounge",
-      "count": 14
+      "count": 19
     },
     {
       "key": "first/g45-reception",
@@ -222,7 +222,7 @@
     {
       "key": "first/g46-g47-g49",
       "name": "G46 + G47 + G49 · First-floor right lounges",
-      "count": 43
+      "count": 48
     },
     {
       "key": "first/g48",
@@ -232,17 +232,17 @@
     {
       "key": "first/g50",
       "name": "G50 · First-floor window lounge row",
-      "count": 30
+      "count": 33
     },
     {
       "key": "first/g51",
       "name": "G51 · First-floor window bucket-chair lounge",
-      "count": 11
+      "count": 13
     },
     {
       "key": "first/g52-g55",
       "name": "G52–G55 · First-floor center lounge",
-      "count": 58
+      "count": 68
     },
     {
       "key": "first/g56",
@@ -259,7 +259,7 @@
         "type": "armchair",
         "variant": "default"
       },
-      "count": 134,
+      "count": 140,
       "configurations": [
         {
           "id": "cfa857a5d3ed",
@@ -1132,6 +1132,60 @@
                 "H7",
                 "H6"
               ]
+            },
+            {
+              "block": "first/g39",
+              "objectId": "first-h-private-lounge-039-e10ad4a67bd2412b",
+              "name": "Armchair",
+              "seats": [
+                "Seat_H29"
+              ],
+              "cameras": []
+            },
+            {
+              "block": "first/g39",
+              "objectId": "first-h-private-lounge-039-d5fd177d8b95469c",
+              "name": "Armchair",
+              "seats": [
+                "Seat_H32"
+              ],
+              "cameras": []
+            },
+            {
+              "block": "first/g40",
+              "objectId": "first-h-private-lounge-040-f59231b5a1f24100",
+              "name": "Armchair",
+              "seats": [
+                "Seat_H25"
+              ],
+              "cameras": []
+            },
+            {
+              "block": "first/g40",
+              "objectId": "first-h-private-lounge-040-8347d3d902644f0b",
+              "name": "Armchair",
+              "seats": [
+                "Seat_H28"
+              ],
+              "cameras": []
+            },
+            {
+              "block": "first/g41",
+              "objectId": "first-h-private-lounge-041-bf1f873e0b6d4a81",
+              "name": "Armchair",
+              "seats": [
+                "Seat_H21"
+              ],
+              "cameras": []
+            },
+            {
+              "block": "first/g41",
+              "objectId": "first-h-private-lounge-041-44a96d14cd654357",
+              "name": "Armchair",
+              "seats": [
+                "Seat_H24"
+              ],
+              "cameras": []
             }
           ]
         },
@@ -3393,130 +3447,6 @@
               ],
               "cameras": [
                 "H54"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "armchair-3bae26395022",
-      "name": "Armchair · Tub Chair",
-      "category": "Seating",
-      "design": {
-        "type": "armchair",
-        "variant": "tub-chair"
-      },
-      "count": 6,
-      "configurations": [
-        {
-          "id": "5a604f374883",
-          "appearance": {
-            "size": [
-              0.88,
-              0.9,
-              0.92
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#627d86"
-          },
-          "preview": {
-            "type": "armchair",
-            "variant": "tub-chair",
-            "size": [
-              0.88,
-              0.9,
-              0.92
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#627d86",
-            "id": "g39-chair-29",
-            "name": "Armchair · Tub Chair",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "first/g39",
-              "objectId": "g39-chair-29",
-              "name": "Rear blue tub chair · H29",
-              "seats": [
-                "Seat_H29"
-              ],
-              "cameras": [
-                "H13"
-              ]
-            },
-            {
-              "block": "first/g39",
-              "objectId": "g39-chair-32",
-              "name": "Entrance blue tub chair · H32",
-              "seats": [
-                "Seat_H32"
-              ],
-              "cameras": [
-                "H13"
-              ]
-            },
-            {
-              "block": "first/g40",
-              "objectId": "g40-chair-25",
-              "name": "Rear blue tub chair · H25",
-              "seats": [
-                "Seat_H25"
-              ],
-              "cameras": [
-                "H11",
-                "H20"
-              ]
-            },
-            {
-              "block": "first/g40",
-              "objectId": "g40-chair-28",
-              "name": "Entrance blue tub chair · H28",
-              "seats": [
-                "Seat_H28"
-              ],
-              "cameras": [
-                "H11",
-                "H20"
-              ]
-            },
-            {
-              "block": "first/g41",
-              "objectId": "g41-chair-21",
-              "name": "Rear blue tub chair · H21",
-              "seats": [
-                "Seat_H21"
-              ],
-              "cameras": [
-                "H14"
-              ]
-            },
-            {
-              "block": "first/g41",
-              "objectId": "g41-chair-24",
-              "name": "Entrance blue tub chair · H24",
-              "seats": [
-                "Seat_H24"
-              ],
-              "cameras": [
-                "H14",
-                "H12"
               ]
             }
           ]
@@ -5824,6 +5754,139 @@
       ]
     },
     {
+      "id": "display-console-df63d10613ec",
+      "name": "Display Console · Dining Lantern Stand",
+      "category": "Tables & consoles",
+      "design": {
+        "type": "display-console",
+        "variant": "dining-lantern-stand"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "6db286317ef3",
+          "appearance": {
+            "size": [
+              0.24,
+              1.7,
+              0.24
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b9a06d"
+          },
+          "preview": {
+            "type": "display-console",
+            "variant": "dining-lantern-stand",
+            "size": [
+              0.24,
+              1.7,
+              0.24
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b9a06d",
+            "id": "g3-g24-g25-lantern-stand",
+            "name": "Display Console · Dining Lantern Stand",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-lantern-stand",
+              "name": "Slim brass lantern stand with woven base · cream pier",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B9"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "display-console-6674c14c4420",
+      "name": "Display Console · Dining Menu Stand",
+      "category": "Tables & consoles",
+      "design": {
+        "type": "display-console",
+        "variant": "dining-menu-stand"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "4601ef0437ef",
+          "appearance": {
+            "size": [
+              0.6,
+              1.15,
+              0.42
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#303638"
+          },
+          "preview": {
+            "type": "display-console",
+            "variant": "dining-menu-stand",
+            "size": [
+              0.6,
+              1.15,
+              0.42
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#303638",
+            "id": "g3-g24-g25-menu-stand",
+            "name": "Display Console · Dining Menu Stand",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-menu-stand",
+              "name": "Dark angled menu pedestal · arch-side aisle",
+              "seats": [],
+              "cameras": [
+                "C11",
+                "C14",
+                "B7",
+                "B8"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "display-console-e0e19445443b",
       "name": "Display Console · Grand Piano",
       "category": "Tables & consoles",
@@ -7800,7 +7863,7 @@
           ]
         },
         {
-          "id": "9c29c43657c6",
+          "id": "867cd1876c1a",
           "appearance": {
             "size": [
               1.58,
@@ -7812,7 +7875,8 @@
               1,
               1
             ],
-            "color": "#e8e5d9"
+            "color": "#e8e5d9",
+            "accessories": "dining-service"
           },
           "preview": {
             "type": "table",
@@ -7828,6 +7892,7 @@
               1
             ],
             "color": "#e8e5d9",
+            "accessories": "dining-service",
             "id": "g3-g24-g25-table-17",
             "name": "Table",
             "position": [
@@ -10414,6 +10479,73 @@
       ]
     },
     {
+      "id": "display-132001652314",
+      "name": "Display · Dining Botanical Print",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "display",
+        "variant": "dining-botanical-print"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "5a38c7538071",
+          "appearance": {
+            "size": [
+              0.8,
+              1.5,
+              0.07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e4dfd1"
+          },
+          "preview": {
+            "type": "display",
+            "variant": "dining-botanical-print",
+            "size": [
+              0.8,
+              1.5,
+              0.07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e4dfd1",
+            "id": "g3-g24-g25-art-south",
+            "name": "Display · Dining Botanical Print",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-art-south",
+              "name": "Geometric botanical print · cream pier",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B9",
+                "B13"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "display-2ad43454008c",
       "name": "Display · Fire Extinguisher",
       "category": "Decor & fixtures",
@@ -10497,7 +10629,7 @@
         "type": "display",
         "variant": "framed-art"
       },
-      "count": 2,
+      "count": 1,
       "configurations": [
         {
           "id": "4ec9a74ae251",
@@ -10543,25 +10675,6 @@
             {
               "block": "ground/g3-g24-g25",
               "objectId": "g3-g24-g25-art-north",
-              "name": "Framed artwork · schematic",
-              "seats": [],
-              "cameras": [
-                "B2",
-                "C11",
-                "C14",
-                "B13",
-                "B7",
-                "B8",
-                "B9",
-                "B10",
-                "B11",
-                "B12",
-                "B14"
-              ]
-            },
-            {
-              "block": "ground/g3-g24-g25",
-              "objectId": "g3-g24-g25-art-south",
               "name": "Framed artwork · schematic",
               "seats": [],
               "cameras": [
@@ -11308,7 +11421,7 @@
         "variant": "default",
         "mount": "wall"
       },
-      "count": 21,
+      "count": 13,
       "configurations": [
         {
           "id": "4e90a83d2677",
@@ -11361,205 +11474,6 @@
                 "ReceptionCam1",
                 "ReceptionCam2",
                 "ReceptionCam3"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "e387ac5583c0",
-          "appearance": {
-            "size": [
-              1.45,
-              0.86,
-              0.08
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#20282a"
-          },
-          "preview": {
-            "type": "display",
-            "variant": "default",
-            "mount": "wall",
-            "size": [
-              1.45,
-              0.86,
-              0.08
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#20282a",
-            "id": "g10-tv-01",
-            "name": "Display · Wall",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "ground/g10",
-              "objectId": "g10-tv-01",
-              "name": "Wall-mounted TV",
-              "seats": [],
-              "cameras": [
-                "B5",
-                "B6"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "51b157e226fc",
-          "appearance": {
-            "size": [
-              1.55,
-              0.9,
-              0.08
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#202c2e"
-          },
-          "preview": {
-            "type": "display",
-            "variant": "default",
-            "mount": "wall",
-            "size": [
-              1.55,
-              0.9,
-              0.08
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#202c2e",
-            "id": "g3-g24-g25-buffet-display-north",
-            "name": "Display · Wall",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "ground/g3-g24-g25",
-              "objectId": "g3-g24-g25-buffet-display-north",
-              "name": "Buffet wall display · content omitted",
-              "seats": [],
-              "cameras": [
-                "B2",
-                "C11",
-                "C14",
-                "B13",
-                "B7",
-                "B8",
-                "B9",
-                "B10",
-                "B11",
-                "B12",
-                "B14"
-              ]
-            },
-            {
-              "block": "ground/g3-g24-g25",
-              "objectId": "g3-g24-g25-buffet-display-south",
-              "name": "Buffet wall display · content omitted",
-              "seats": [],
-              "cameras": [
-                "B2",
-                "C11",
-                "C14",
-                "B13",
-                "B7",
-                "B8",
-                "B9",
-                "B10",
-                "B11",
-                "B12",
-                "B14"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2f2f2ee79006",
-          "appearance": {
-            "size": [
-              3.8,
-              1.5,
-              0.08
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#20292d"
-          },
-          "preview": {
-            "type": "display",
-            "variant": "default",
-            "mount": "wall",
-            "size": [
-              3.8,
-              1.5,
-              0.08
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#20292d",
-            "id": "g3-g24-g25-large-wall-display",
-            "name": "Display · Wall",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "ground/g3-g24-g25",
-              "objectId": "g3-g24-g25-large-wall-display",
-              "name": "Large dark wall display · schematic",
-              "seats": [],
-              "cameras": [
-                "B2",
-                "C11",
-                "C14",
-                "B13",
-                "B7",
-                "B8",
-                "B9",
-                "B10",
-                "B11",
-                "B12",
-                "B14"
               ]
             }
           ]
@@ -11989,133 +11903,6 @@
               "cameras": [
                 "SGSCam1",
                 "SGSCam3"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "07d4ab7338f4",
-          "appearance": {
-            "size": [
-              1.5,
-              0.92,
-              0.08
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#161f24"
-          },
-          "preview": {
-            "type": "display",
-            "variant": "default",
-            "mount": "wall",
-            "size": [
-              1.5,
-              0.92,
-              0.08
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#161f24",
-            "id": "g9-tv-01",
-            "name": "Display · Wall",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "ground/g9",
-              "objectId": "g9-tv-01",
-              "name": "TV · seating wall",
-              "seats": [],
-              "cameras": [
-                "B1",
-                "B3"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "fdcef298fa7b",
-          "appearance": {
-            "size": [
-              1.55,
-              0.88,
-              0.09
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#1d272a"
-          },
-          "preview": {
-            "type": "display",
-            "variant": "default",
-            "mount": "wall",
-            "size": [
-              1.55,
-              0.88,
-              0.09
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#1d272a",
-            "id": "g39-tv",
-            "name": "Display · Wall",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "first/g39",
-              "objectId": "g39-tv",
-              "name": "Wall-mounted television",
-              "seats": [],
-              "cameras": [
-                "H13"
-              ]
-            },
-            {
-              "block": "first/g40",
-              "objectId": "g40-tv",
-              "name": "Wall-mounted television",
-              "seats": [],
-              "cameras": [
-                "H11",
-                "H20"
-              ]
-            },
-            {
-              "block": "first/g41",
-              "objectId": "g41-tv",
-              "name": "Wall-mounted television",
-              "seats": [],
-              "cameras": [
-                "H14",
-                "H12"
               ]
             }
           ]
@@ -13246,7 +13033,7 @@
         "type": "plant",
         "variant": "default"
       },
-      "count": 53,
+      "count": 51,
       "configurations": [
         {
           "id": "ef99dae94b5c",
@@ -14412,87 +14199,6 @@
           ]
         },
         {
-          "id": "3e4ad1d1c6f3",
-          "appearance": {
-            "size": [
-              0.52,
-              1.75,
-              0.52
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#416340"
-          },
-          "preview": {
-            "type": "plant",
-            "variant": "default",
-            "size": [
-              0.52,
-              1.75,
-              0.52
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#416340",
-            "id": "g3-g24-g25-plant-north",
-            "name": "Plant",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "ground/g3-g24-g25",
-              "objectId": "g3-g24-g25-plant-north",
-              "name": "Plant North",
-              "seats": [],
-              "cameras": [
-                "B2",
-                "C11",
-                "C14",
-                "B13",
-                "B7",
-                "B8",
-                "B9",
-                "B10",
-                "B11",
-                "B12",
-                "B14"
-              ]
-            },
-            {
-              "block": "ground/g3-g24-g25",
-              "objectId": "g3-g24-g25-plant-south",
-              "name": "Plant South",
-              "seats": [],
-              "cameras": [
-                "B2",
-                "C11",
-                "C14",
-                "B13",
-                "B7",
-                "B8",
-                "B9",
-                "B10",
-                "B11",
-                "B12",
-                "B14"
-              ]
-            }
-          ]
-        },
-        {
           "id": "c82ae7bd9f34",
           "appearance": {
             "size": [
@@ -15483,6 +15189,261 @@
       ]
     },
     {
+      "id": "plant-f5b1605956b3",
+      "name": "Plant · Dining Dracaena",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "plant",
+        "variant": "dining-dracaena"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "b399dcdadb93",
+          "appearance": {
+            "size": [
+              0.72,
+              2.35,
+              0.72
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#416340"
+          },
+          "preview": {
+            "type": "plant",
+            "variant": "dining-dracaena",
+            "size": [
+              0.72,
+              2.35,
+              0.72
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#416340",
+            "id": "g3-g24-g25-plant-south",
+            "name": "Plant · Dining Dracaena",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-plant-south",
+              "name": "Tall dracaena in ivory planter · coffee-side cream pier",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B9",
+                "B13"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plant-c8263655e72c",
+      "name": "Plant · Dining Palm",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "plant",
+        "variant": "dining-palm"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "41fdb9030b96",
+          "appearance": {
+            "size": [
+              1,
+              2.55,
+              0.85
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#41663c"
+          },
+          "preview": {
+            "type": "plant",
+            "variant": "dining-palm",
+            "size": [
+              1,
+              2.55,
+              0.85
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#41663c",
+            "id": "g3-g24-g25-piano-palm",
+            "name": "Plant · Dining Palm",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-piano-palm",
+              "name": "Areca palm in ivory planter · beside piano",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B9",
+                "B13"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plant-938c9ac24e6d",
+      "name": "Plant · Dining Topiary",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "plant",
+        "variant": "dining-topiary"
+      },
+      "count": 2,
+      "configurations": [
+        {
+          "id": "d894baafdd0f",
+          "appearance": {
+            "size": [
+              0.6,
+              1.95,
+              0.6
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#416340"
+          },
+          "preview": {
+            "type": "plant",
+            "variant": "dining-topiary",
+            "size": [
+              0.6,
+              1.95,
+              0.6
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#416340",
+            "id": "g3-g24-g25-plant-north",
+            "name": "Plant · Dining Topiary",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-plant-north",
+              "name": "Slender topiary in ivory pot · B41/B42",
+              "seats": [],
+              "cameras": [
+                "B2",
+                "C11",
+                "B10"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1f10337fdfbd",
+          "appearance": {
+            "size": [
+              0.35,
+              0.42,
+              0.35
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8b4858"
+          },
+          "preview": {
+            "type": "plant",
+            "variant": "dining-topiary",
+            "size": [
+              0.35,
+              0.42,
+              0.35
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8b4858",
+            "id": "g3-g24-g25-cream-pier-flowers",
+            "name": "Plant · Dining Topiary",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-cream-pier-flowers",
+              "name": "Flowers above juice-side planter",
+              "seats": [],
+              "cameras": [
+                "B10",
+                "B11",
+                "B12",
+                "B14"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "plant-57d382c07484",
       "name": "Plant · Pampas Trough",
       "category": "Decor & fixtures",
@@ -16244,6 +16205,2641 @@
       ]
     },
     {
+      "id": "tissue-box-18ae4305b21c",
+      "name": "Tissue Box",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "tissue-box",
+        "variant": "default"
+      },
+      "count": 117,
+      "configurations": [
+        {
+          "id": "29924841ca39",
+          "appearance": {
+            "size": [
+              0.17,
+              0.24,
+              0.17
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.17,
+              0.24,
+              0.17
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g10-table-01-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g10",
+              "objectId": "g10-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B4",
+                "B5",
+                "B6"
+              ]
+            },
+            {
+              "block": "ground/g10",
+              "objectId": "g10-table-02-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B4",
+                "B5",
+                "B6"
+              ]
+            },
+            {
+              "block": "ground/g11",
+              "objectId": "g11-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "C1",
+                "C2",
+                "C3"
+              ]
+            },
+            {
+              "block": "ground/g11",
+              "objectId": "g11-table-02-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "C1",
+                "C2",
+                "C3"
+              ]
+            },
+            {
+              "block": "ground/g12-g14",
+              "objectId": "g12-g14-table-22-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "C12",
+                "C24",
+                "F18"
+              ]
+            },
+            {
+              "block": "ground/g12-g14",
+              "objectId": "g12-g14-table-23-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "C22",
+                "C23",
+                "C24",
+                "C25",
+                "E3",
+                "F18"
+              ]
+            },
+            {
+              "block": "ground/g12-g14",
+              "objectId": "g12-g14-table-24-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "C22",
+                "C23",
+                "C25",
+                "C26",
+                "E3"
+              ]
+            },
+            {
+              "block": "ground/g18",
+              "objectId": "g18-coffee-table-3-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G24",
+                "G25",
+                "G28"
+              ]
+            },
+            {
+              "block": "ground/g18",
+              "objectId": "g18-coffee-table-4-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G24",
+                "G28"
+              ]
+            },
+            {
+              "block": "ground/g18",
+              "objectId": "g18-coffee-table-5-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G24",
+                "G25",
+                "G29"
+              ]
+            },
+            {
+              "block": "ground/g18",
+              "objectId": "g18-coffee-table-6-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G24",
+                "G29"
+              ]
+            },
+            {
+              "block": "ground/g20",
+              "objectId": "g20-coffee-table-7-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G22",
+                "G26",
+                "G27"
+              ]
+            },
+            {
+              "block": "ground/g20",
+              "objectId": "g20-coffee-table-8-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G22",
+                "G27"
+              ]
+            },
+            {
+              "block": "ground/g20",
+              "objectId": "g20-coffee-table-9-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G21",
+                "G26",
+                "G27"
+              ]
+            },
+            {
+              "block": "ground/g20",
+              "objectId": "g20-coffee-table-10-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G21",
+                "G27"
+              ]
+            },
+            {
+              "block": "ground/g21",
+              "objectId": "g21-coffee-table-11-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G2",
+                "G5"
+              ]
+            },
+            {
+              "block": "ground/g21",
+              "objectId": "g21-coffee-table-12-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G4",
+                "G5"
+              ]
+            },
+            {
+              "block": "ground/g21",
+              "objectId": "g21-coffee-table-13-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G1",
+                "G2"
+              ]
+            },
+            {
+              "block": "ground/g21",
+              "objectId": "g21-coffee-table-14-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G1",
+                "G4"
+              ]
+            },
+            {
+              "block": "ground/g22",
+              "objectId": "g22-coffee-table-15-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G8",
+                "G9",
+                "G10"
+              ]
+            },
+            {
+              "block": "ground/g22",
+              "objectId": "g22-coffee-table-16-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G8",
+                "G9",
+                "G10"
+              ]
+            },
+            {
+              "block": "ground/g22",
+              "objectId": "g22-coffee-table-17-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G7",
+                "G8",
+                "G9"
+              ]
+            },
+            {
+              "block": "ground/g22",
+              "objectId": "g22-coffee-table-18-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G7",
+                "G8",
+                "G9"
+              ]
+            },
+            {
+              "block": "ground/g27",
+              "objectId": "g27-coffee-table-19-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G12",
+                "G13"
+              ]
+            },
+            {
+              "block": "ground/g27",
+              "objectId": "g27-coffee-table-20-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G6",
+                "G13"
+              ]
+            },
+            {
+              "block": "ground/g27",
+              "objectId": "g27-coffee-table-21-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G6",
+                "G12",
+                "G14"
+              ]
+            },
+            {
+              "block": "ground/g27",
+              "objectId": "g27-coffee-table-22-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G6",
+                "G14"
+              ]
+            },
+            {
+              "block": "ground/g28",
+              "objectId": "g28-coffee-table-23-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G11",
+                "G15",
+                "G18"
+              ]
+            },
+            {
+              "block": "ground/g28",
+              "objectId": "g28-coffee-table-24-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G11",
+                "G15"
+              ]
+            },
+            {
+              "block": "ground/g28",
+              "objectId": "g28-coffee-table-25-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G11",
+                "G18",
+                "G19"
+              ]
+            },
+            {
+              "block": "ground/g28",
+              "objectId": "g28-coffee-table-26-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G11",
+                "G18",
+                "G19"
+              ]
+            },
+            {
+              "block": "ground/g9",
+              "objectId": "g9-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B1",
+                "B3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ea49534ae814",
+          "appearance": {
+            "size": [
+              0.136,
+              0.24,
+              0.1482051282051282
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.136,
+              0.24,
+              0.1482051282051282
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g12-g14-table-25-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g12-g14",
+              "objectId": "g12-g14-table-25-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "C12",
+                "C22",
+                "C24",
+                "F18"
+              ]
+            },
+            {
+              "block": "ground/g12-g14",
+              "objectId": "g12-g14-table-26-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "C22",
+                "C23",
+                "C24",
+                "C25",
+                "F18"
+              ]
+            },
+            {
+              "block": "ground/g12-g14",
+              "objectId": "g12-g14-table-27-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "C22",
+                "C23",
+                "C25",
+                "C26",
+                "E3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "12d1e8e92d85",
+          "appearance": {
+            "size": [
+              0.1416666666666667,
+              0.24,
+              0.23974358974358978
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.1416666666666667,
+              0.24,
+              0.23974358974358978
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g16-table-02-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g16",
+              "objectId": "g16-table-02-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G20",
+                "G23"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "85768795c792",
+          "appearance": {
+            "size": [
+              0.10766666666666667,
+              0.24,
+              0.1482051282051282
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.10766666666666667,
+              0.24,
+              0.1482051282051282
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g16-table-01-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g16",
+              "objectId": "g16-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G20",
+                "G23"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e5bb7bda8738",
+          "appearance": {
+            "size": [
+              0.15866666666666665,
+              0.24,
+              0.15692307692307692
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.15866666666666665,
+              0.24,
+              0.15692307692307692
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g17-coffee-table-1-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g17",
+              "objectId": "g17-coffee-table-1-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "E1",
+                "E4"
+              ]
+            },
+            {
+              "block": "ground/g17",
+              "objectId": "g17-coffee-table-2-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "E1",
+                "E4"
+              ]
+            },
+            {
+              "block": "ground/g17",
+              "objectId": "g17-coffee-table-4-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "E2",
+                "E4"
+              ]
+            },
+            {
+              "block": "ground/g17",
+              "objectId": "g17-coffee-table-5-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "E2",
+                "E4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4ee35cf631ca",
+          "appearance": {
+            "size": [
+              0.15866666666666665,
+              0.2457142857142857,
+              0.36830695787246115
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.15866666666666665,
+              0.2457142857142857,
+              0.36830695787246115
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g29-coffee-table-01-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g29",
+              "objectId": "g29-coffee-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "G16",
+                "G17"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8c3298acf891",
+          "appearance": {
+            "size": [
+              0.1790666666666667,
+              0.29714285714285715,
+              0.19615384615384615
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.1790666666666667,
+              0.29714285714285715,
+              0.19615384615384615
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g3-g24-g25-table-17-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-17-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "C11",
+                "B7",
+                "B10"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-11-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "C14",
+                "B7",
+                "B10"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-16-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B2",
+                "C11",
+                "B7",
+                "B10",
+                "B11"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-10-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B10"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-15-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B10",
+                "B11"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-9-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B9",
+                "B10",
+                "B11"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-14-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B8",
+                "B9",
+                "B10",
+                "B11",
+                "B12"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-8-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B9",
+                "B10",
+                "B11",
+                "B12"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-13-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B8",
+                "B9",
+                "B10",
+                "B11",
+                "B12",
+                "B14"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-7-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B13",
+                "B7",
+                "B8",
+                "B9",
+                "B11",
+                "B12"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-12-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B13",
+                "B8",
+                "B9",
+                "B12",
+                "B14"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-6-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B13",
+                "B9",
+                "B11",
+                "B12",
+                "B14"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-20-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B2",
+                "C11",
+                "B10"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-21-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B13",
+                "B9",
+                "B12",
+                "B14"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-table-23-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "B13",
+                "B9",
+                "B12",
+                "B14"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "18aedf7c0322",
+          "appearance": {
+            "size": [
+              0.1756666666666667,
+              0.2457142857142857,
+              0.1743589743589744
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.1756666666666667,
+              0.2457142857142857,
+              0.1743589743589744
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g57-coffee-table-01-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g57",
+              "objectId": "g57-coffee-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I17",
+                "I26"
+              ]
+            },
+            {
+              "block": "ground/g58",
+              "objectId": "g58-coffee-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I18",
+                "I22"
+              ]
+            },
+            {
+              "block": "ground/g59",
+              "objectId": "g59-coffee-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I13",
+                "I24"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0d742590938f",
+          "appearance": {
+            "size": [
+              0.15300000000000002,
+              0.2457142857142857,
+              0.1416666666666667
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.15300000000000002,
+              0.2457142857142857,
+              0.1416666666666667
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g60-coffee-table-01-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g60",
+              "objectId": "g60-coffee-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I37",
+                "I42"
+              ]
+            },
+            {
+              "block": "ground/i33-lounge",
+              "objectId": "i33-lounge-coffee-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I33"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "367c1f7bbcda",
+          "appearance": {
+            "size": [
+              0.07026666666666667,
+              0.3085714285714286,
+              0.13512820512820514
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.07026666666666667,
+              0.3085714285714286,
+              0.13512820512820514
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g61-table-5-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g61",
+              "objectId": "g61-table-5-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I14",
+                "I15",
+                "I16"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7ace0522fc00",
+          "appearance": {
+            "size": [
+              0.07253333333333334,
+              0.31428571428571433,
+              0.13948717948717948
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.07253333333333334,
+              0.31428571428571433,
+              0.13948717948717948
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g61-table-6-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g61",
+              "objectId": "g61-table-6-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I14",
+                "I15",
+                "I16"
+              ]
+            },
+            {
+              "block": "ground/g61",
+              "objectId": "g61-table-7-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I14",
+                "I15",
+                "I16"
+              ]
+            },
+            {
+              "block": "ground/g61",
+              "objectId": "g61-table-8-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I14",
+                "I15",
+                "I16"
+              ]
+            },
+            {
+              "block": "ground/g61",
+              "objectId": "g61-table-9-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I14",
+                "I15",
+                "I16"
+              ]
+            },
+            {
+              "block": "ground/g62",
+              "objectId": "g62-table-10-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I25",
+                "I27",
+                "I28"
+              ]
+            },
+            {
+              "block": "ground/g62",
+              "objectId": "g62-table-11-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I25",
+                "I27",
+                "I28"
+              ]
+            },
+            {
+              "block": "ground/g62",
+              "objectId": "g62-table-12-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I25",
+                "I27",
+                "I28"
+              ]
+            },
+            {
+              "block": "ground/g62",
+              "objectId": "g62-table-13-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I25",
+                "I27",
+                "I28"
+              ]
+            },
+            {
+              "block": "ground/g62",
+              "objectId": "g62-table-14-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I25",
+                "I27",
+                "I28"
+              ]
+            },
+            {
+              "block": "ground/g62",
+              "objectId": "g62-table-15-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I25",
+                "I27",
+                "I28"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5ed562f847aa",
+          "appearance": {
+            "size": [
+              0.11786666666666668,
+              0.2628571428571429,
+              0.22666666666666668
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.11786666666666668,
+              0.2628571428571429,
+              0.22666666666666668
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g63-coffee-table-01-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g63",
+              "objectId": "g63-coffee-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I29",
+                "I30",
+                "I31",
+                "I32",
+                "I34"
+              ]
+            },
+            {
+              "block": "ground/g63",
+              "objectId": "g63-coffee-table-02-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I29",
+                "I30",
+                "I31",
+                "I32",
+                "I34"
+              ]
+            },
+            {
+              "block": "ground/g63",
+              "objectId": "g63-coffee-table-03-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I29",
+                "I30",
+                "I31",
+                "I32",
+                "I34"
+              ]
+            },
+            {
+              "block": "ground/g63",
+              "objectId": "g63-coffee-table-04-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I29",
+                "I30",
+                "I31",
+                "I32",
+                "I34"
+              ]
+            },
+            {
+              "block": "ground/g63",
+              "objectId": "g63-coffee-table-05-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "I29",
+                "I30",
+                "I31",
+                "I32",
+                "I34"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "edd80076df9a",
+          "appearance": {
+            "size": [
+              0.136,
+              0.2457142857142857,
+              0.15256410256410255
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.136,
+              0.2457142857142857,
+              0.15256410256410255
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "i-extension-table-1-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/i-map-extension",
+              "objectId": "i-extension-table-1-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": []
+            },
+            {
+              "block": "ground/i-map-extension",
+              "objectId": "i-extension-table-3-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": []
+            },
+            {
+              "block": "ground/i-map-extension",
+              "objectId": "i-extension-table-4-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": []
+            }
+          ]
+        },
+        {
+          "id": "919352443aef",
+          "appearance": {
+            "size": [
+              0.13599999999999998,
+              0.2457142857142857,
+              0.15256410256410255
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.13599999999999998,
+              0.2457142857142857,
+              0.15256410256410255
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "i-extension-table-2-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/i-map-extension",
+              "objectId": "i-extension-table-2-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": []
+            }
+          ]
+        },
+        {
+          "id": "c0dee7f9ae2f",
+          "appearance": {
+            "size": [
+              0.136,
+              0.2457142857142857,
+              0.15256410256410258
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.136,
+              0.2457142857142857,
+              0.15256410256410258
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "i-extension-table-5-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/i-map-extension",
+              "objectId": "i-extension-table-5-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": []
+            }
+          ]
+        },
+        {
+          "id": "4a44080cd49d",
+          "appearance": {
+            "size": [
+              0.18133333333333335,
+              0.27428571428571424,
+              0.2833333333333334
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.18133333333333335,
+              0.27428571428571424,
+              0.2833333333333334
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g35-table-01-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g35",
+              "objectId": "g35-table-01-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H1",
+                "H2"
+              ]
+            },
+            {
+              "block": "first/g36",
+              "objectId": "g36-table-02-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H3",
+                "H8"
+              ]
+            },
+            {
+              "block": "first/g37",
+              "objectId": "g37-table-03-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H4",
+                "H5"
+              ]
+            },
+            {
+              "block": "first/g38",
+              "objectId": "g38-table-04-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H6",
+                "H7"
+              ]
+            },
+            {
+              "block": "first/g50",
+              "objectId": "g50-table-38-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H25",
+                "H56"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e245e08eecbc",
+          "appearance": {
+            "size": [
+              0.17,
+              0.24,
+              0.20705128205128204
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.17,
+              0.24,
+              0.20705128205128204
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g39-coffee-table-7-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g39",
+              "objectId": "g39-coffee-table-7-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H13"
+              ]
+            },
+            {
+              "block": "first/g40",
+              "objectId": "g40-coffee-table-6-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H11",
+                "H20"
+              ]
+            },
+            {
+              "block": "first/g41",
+              "objectId": "g41-coffee-table-5-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H14",
+                "H12"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3f344e03a555",
+          "appearance": {
+            "size": [
+              0.0816,
+              0.27428571428571424,
+              0.15692307692307692
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.0816,
+              0.27428571428571424,
+              0.15692307692307692
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g42-table-9-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g42",
+              "objectId": "g42-table-9-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H19"
+              ]
+            },
+            {
+              "block": "first/g42",
+              "objectId": "g42-table-8-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H18"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "da2fbdfc1146",
+          "appearance": {
+            "size": [
+              0.07026666666666667,
+              0.31428571428571433,
+              0.13512820512820514
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.07026666666666667,
+              0.31428571428571433,
+              0.13512820512820514
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g45-table-14-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g45",
+              "objectId": "g45-table-14-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H15",
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-table-13-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H15",
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-table-12-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H15",
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-table-10-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H16"
+              ]
+            },
+            {
+              "block": "first/g45",
+              "objectId": "g45-table-11-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H16"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9e2dc3700d57",
+          "appearance": {
+            "size": [
+              0.09406666666666667,
+              0.3028571428571429,
+              0.1808974358974359
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.09406666666666667,
+              0.3028571428571429,
+              0.1808974358974359
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g46-g47-g49-table-20-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-table-20-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H48",
+                "H36",
+                "H53"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-table-17-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H50",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-table-15-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H46",
+                "H55"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-table-16-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H46",
+                "H55"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b618345286d0",
+          "appearance": {
+            "size": [
+              0.17,
+              0.2628571428571429,
+              0.20705128205128204
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.17,
+              0.2628571428571429,
+              0.20705128205128204
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g46-g47-g49-table-19-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-table-19-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H48",
+                "H53"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2747f9e5ffc0",
+          "appearance": {
+            "size": [
+              0.11900000000000002,
+              0.27428571428571424,
+              0.2288461538461539
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.11900000000000002,
+              0.27428571428571424,
+              0.2288461538461539
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g50-table-39-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g50",
+              "objectId": "g50-table-39-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H23",
+                "H56"
+              ]
+            },
+            {
+              "block": "first/g50",
+              "objectId": "g50-table-36-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H25",
+                "H26"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "69a572f31d7d",
+          "appearance": {
+            "size": [
+              0.07026666666666667,
+              0.27428571428571424,
+              0.13512820512820514
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.07026666666666667,
+              0.27428571428571424,
+              0.13512820512820514
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g51-table-34-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g51",
+              "objectId": "g51-table-34-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H27",
+                "H30"
+              ]
+            },
+            {
+              "block": "first/g51",
+              "objectId": "g51-table-35-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8f01d1f2b0bc",
+          "appearance": {
+            "size": [
+              0.09519999999999999,
+              0.3028571428571429,
+              0.18307692307692308
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437"
+          },
+          "preview": {
+            "type": "tissue-box",
+            "variant": "default",
+            "size": [
+              0.09519999999999999,
+              0.3028571428571429,
+              0.18307692307692308
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8a5437",
+            "id": "g52-g55-table-27-tissue-box",
+            "name": "Tissue Box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-27-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H32",
+                "H37"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-28-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H32",
+                "H37"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-22-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H41",
+                "H44"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-33-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H41"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-26-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H32",
+                "H34"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-29-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H24"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-23-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H38",
+                "H44"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-32-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H39",
+                "H29"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-24-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H34",
+                "H38"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-31-tissue-box",
+              "name": "Altanfeethi tissue box",
+              "seats": [],
+              "cameras": [
+                "H24",
+                "H39",
+                "H29"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv-7f3eea14c417",
+      "name": "TV · Wall",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "tv",
+        "variant": "default",
+        "mount": "wall"
+      },
+      "count": 9,
+      "configurations": [
+        {
+          "id": "1f0938851d77",
+          "appearance": {
+            "size": [
+              1.45,
+              0.86,
+              0.08
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#20282a"
+          },
+          "preview": {
+            "type": "tv",
+            "variant": "default",
+            "mount": "wall",
+            "size": [
+              1.45,
+              0.86,
+              0.08
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#20282a",
+            "id": "g10-tv-01",
+            "name": "TV · Wall",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g10",
+              "objectId": "g10-tv-01",
+              "name": "Wall-mounted TV",
+              "seats": [],
+              "cameras": [
+                "B5",
+                "B6"
+              ]
+            },
+            {
+              "block": "ground/g11",
+              "objectId": "ground-c-lounge-011-634ca121fd274b35",
+              "name": "TV · Wall",
+              "seats": [],
+              "cameras": []
+            }
+          ]
+        },
+        {
+          "id": "8f78ba26fd10",
+          "appearance": {
+            "size": [
+              1.55,
+              0.9,
+              0.08
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#202c2e"
+          },
+          "preview": {
+            "type": "tv",
+            "variant": "default",
+            "mount": "wall",
+            "size": [
+              1.55,
+              0.9,
+              0.08
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#202c2e",
+            "id": "g3-g24-g25-buffet-display-north",
+            "name": "TV · Wall",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-buffet-display-north",
+              "name": "Buffet wall display · content omitted",
+              "seats": [],
+              "cameras": [
+                "B2",
+                "C11",
+                "C14",
+                "B13",
+                "B7",
+                "B8",
+                "B9",
+                "B10",
+                "B11",
+                "B12",
+                "B14"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-buffet-display-south",
+              "name": "Buffet wall display · content omitted",
+              "seats": [],
+              "cameras": [
+                "B2",
+                "C11",
+                "C14",
+                "B13",
+                "B7",
+                "B8",
+                "B9",
+                "B10",
+                "B11",
+                "B12",
+                "B14"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f8aa0eb268f9",
+          "appearance": {
+            "size": [
+              3.8,
+              1.5,
+              0.08
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#20292d"
+          },
+          "preview": {
+            "type": "tv",
+            "variant": "default",
+            "mount": "wall",
+            "size": [
+              3.8,
+              1.5,
+              0.08
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#20292d",
+            "id": "g3-g24-g25-large-wall-display",
+            "name": "TV · Wall",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-large-wall-display",
+              "name": "Large dark wall display · schematic",
+              "seats": [],
+              "cameras": [
+                "B2",
+                "C11",
+                "C14",
+                "B13",
+                "B7",
+                "B8",
+                "B9",
+                "B10",
+                "B11",
+                "B12",
+                "B14"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7cf39b2792f8",
+          "appearance": {
+            "size": [
+              1.5,
+              0.92,
+              0.08
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#161f24"
+          },
+          "preview": {
+            "type": "tv",
+            "variant": "default",
+            "mount": "wall",
+            "size": [
+              1.5,
+              0.92,
+              0.08
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#161f24",
+            "id": "g9-tv-01",
+            "name": "TV · Wall",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g9",
+              "objectId": "g9-tv-01",
+              "name": "TV · seating wall",
+              "seats": [],
+              "cameras": [
+                "B1",
+                "B3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3e411ceac4c3",
+          "appearance": {
+            "size": [
+              1.55,
+              0.88,
+              0.09
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#1d272a"
+          },
+          "preview": {
+            "type": "tv",
+            "variant": "default",
+            "mount": "wall",
+            "size": [
+              1.55,
+              0.88,
+              0.09
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#1d272a",
+            "id": "g39-tv",
+            "name": "TV · Wall",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g39",
+              "objectId": "g39-tv",
+              "name": "Wall-mounted television",
+              "seats": [],
+              "cameras": [
+                "H13"
+              ]
+            },
+            {
+              "block": "first/g40",
+              "objectId": "g40-tv",
+              "name": "Wall-mounted television",
+              "seats": [],
+              "cameras": [
+                "H11",
+                "H20"
+              ]
+            },
+            {
+              "block": "first/g41",
+              "objectId": "g41-tv",
+              "name": "Wall-mounted television",
+              "seats": [],
+              "cameras": [
+                "H14",
+                "H12"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "wall-panel-bd508a1296c6",
       "name": "Wall Panel",
       "category": "Decor & fixtures",
@@ -16896,71 +19492,6 @@
       ]
     },
     {
-      "id": "wall-panel-f6f8140c8db5",
-      "name": "Wall Panel · Standing Flag",
-      "category": "Decor & fixtures",
-      "design": {
-        "type": "wall-panel",
-        "variant": "standing-flag"
-      },
-      "count": 1,
-      "configurations": [
-        {
-          "id": "30d483ad9ade",
-          "appearance": {
-            "size": [
-              0.6,
-              2.05,
-              0.36
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#155b47"
-          },
-          "preview": {
-            "type": "wall-panel",
-            "variant": "standing-flag",
-            "size": [
-              0.6,
-              2.05,
-              0.36
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#155b47",
-            "id": "g41-flag-stand",
-            "name": "Wall Panel · Standing Flag",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "first/g41",
-              "objectId": "g41-flag-stand",
-              "name": "Green flag on chrome floor stand",
-              "seats": [],
-              "cameras": [
-                "H14",
-                "H12"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "wall-panel-90f88ad2c73c",
       "name": "Wall Panel · Standing Flag · Altanfeethi",
       "category": "Decor & fixtures",
@@ -17091,7 +19622,7 @@
         "variant": "standing-flag",
         "flagDesign": "saudi"
       },
-      "count": 6,
+      "count": 7,
       "configurations": [
         {
           "id": "dc6dfddd14b2",
@@ -17144,6 +19675,13 @@
                 "ReceptionCam1",
                 "ReceptionCam3"
               ]
+            },
+            {
+              "block": "first/g41",
+              "objectId": "first-h-private-lounge-041-198dc4f423a44f27",
+              "name": "Wall Panel · Standing Flag · Saudi",
+              "seats": [],
+              "cameras": []
             }
           ]
         },
@@ -18871,8 +21409,63 @@
         "type": "cabinet",
         "variant": "plain-planter"
       },
-      "count": 3,
+      "count": 4,
       "configurations": [
+        {
+          "id": "76d897b4831d",
+          "appearance": {
+            "size": [
+              0.42,
+              0.82,
+              0.42
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e7e3d6"
+          },
+          "preview": {
+            "type": "cabinet",
+            "variant": "plain-planter",
+            "size": [
+              0.42,
+              0.82,
+              0.42
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e7e3d6",
+            "id": "g3-g24-g25-cream-pier-planter",
+            "name": "Cabinet · Plain Planter",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-cream-pier-planter",
+              "name": "Tall ivory planter · juice-side cream pier",
+              "seats": [],
+              "cameras": [
+                "B10",
+                "B11",
+                "B12",
+                "B14"
+              ]
+            }
+          ]
+        },
         {
           "id": "1420607fe31a",
           "appearance": {
@@ -19149,8 +21742,99 @@
         "type": "cabinet",
         "variant": "waste-bin"
       },
-      "count": 18,
+      "count": 22,
       "configurations": [
+        {
+          "id": "bc6d2253067e",
+          "appearance": {
+            "size": [
+              0.25,
+              0.4,
+              0.25
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b7a16d"
+          },
+          "preview": {
+            "type": "cabinet",
+            "variant": "waste-bin",
+            "size": [
+              0.25,
+              0.4,
+              0.25
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b7a16d",
+            "id": "g3-g24-g25-brass-bin-1",
+            "name": "Cabinet · Waste Bin",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-brass-bin-1",
+              "name": "Small brass waste bin 1",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B10",
+                "B12"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-brass-bin-2",
+              "name": "Small brass waste bin 2",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B10",
+                "B12"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-brass-bin-3",
+              "name": "Small brass waste bin 3",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B10",
+                "B12"
+              ]
+            },
+            {
+              "block": "ground/g3-g24-g25",
+              "objectId": "g3-g24-g25-brass-bin-4",
+              "name": "Small brass waste bin 4",
+              "seats": [],
+              "cameras": [
+                "B7",
+                "B8",
+                "B10",
+                "B12"
+              ]
+            }
+          ]
+        },
         {
           "id": "57d5ab8948e9",
           "appearance": {
@@ -20143,7 +22827,7 @@
       "count": 1,
       "configurations": [
         {
-          "id": "14ab54ea9a55",
+          "id": "36ea657648e2",
           "appearance": {
             "size": [
               3.9,
@@ -20155,7 +22839,8 @@
               1,
               1
             ],
-            "color": "#e8e3d5"
+            "color": "#e8e3d5",
+            "detailLevel": "dining-reviewed"
           },
           "preview": {
             "type": "counter",
@@ -20172,6 +22857,7 @@
               1
             ],
             "color": "#e8e3d5",
+            "detailLevel": "dining-reviewed",
             "id": "g3-g24-g25-buffet-south",
             "name": "Counter · Food Buffet · Coffee",
             "position": [
@@ -20219,7 +22905,7 @@
       "count": 1,
       "configurations": [
         {
-          "id": "7e6dd9d477bb",
+          "id": "e7dd9a713403",
           "appearance": {
             "size": [
               3.9,
@@ -20231,7 +22917,8 @@
               1,
               1
             ],
-            "color": "#e8e3d5"
+            "color": "#e8e3d5",
+            "detailLevel": "dining-reviewed"
           },
           "preview": {
             "type": "counter",
@@ -20248,6 +22935,7 @@
               1
             ],
             "color": "#e8e3d5",
+            "detailLevel": "dining-reviewed",
             "id": "g3-g24-g25-buffet-north",
             "name": "Counter · Food Buffet · Juice",
             "position": [

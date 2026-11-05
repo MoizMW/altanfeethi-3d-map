@@ -10,7 +10,7 @@ import {createRenderProfile} from './render-profile.js';
 import {buildContactShadows,fitSceneShadows} from './contact-shadows.js';
 import {createRenderLoop,renderQuality} from './render-loop.js';
 import {buildStaticInstances,createObjectCache} from './static-instances.js';
-import {filterObjects,sourceObjectLink} from './editor-ui.js';
+import {filterObjects,sourceObjectLink,createAssetPlacement,removeAsset} from './editor-ui.js';
 const $=id=>document.getElementById(id), status=message=>{$('status').textContent=message;syncEditorState();};
 let block, revision, selected, dirty=false, history=[], view='iso', tool='select', dragStart, saving=false, savedSnapshot=null;
 const blockKey=new URLSearchParams(location.search).get('block')||'ground/g9';
@@ -21,7 +21,7 @@ const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(
 const renderProfile=createRenderProfile(renderer,new URLSearchParams(location.search).has('profile'));
 const ortho=new THREE.OrthographicCamera(-4,4,4,-4,.1,100), perspective=new THREE.PerspectiveCamera(40,1,.1,100);let camera=ortho;
 const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.maxPolarAngle=Math.PI/2-.02;controls.minDistance=3;controls.maxDistance=25;
-const transform=new TransformControls(camera,renderer.domElement),transformHelper=transform.getHelper();scene.add(transformHelper);transformHelper.visible=false;transform.showY=false;transform.enabled=false;
+const transform=new TransformControls(camera,renderer.domElement),transformHelper=transform.getHelper();scene.add(transformHelper);transformHelper.visible=false;transform.showY=true;transform.enabled=false;
 transform.addEventListener('dragging-changed',e=>{controls.enabled=!e.value;renderLoop?.setActive(e.value);});
 scene.add(new THREE.HemisphereLight('#fff7e6','#66706b',2.3));const light=new THREE.DirectionalLight('#fff5df',3.3);light.position.set(3,8,5);light.castShadow=true;light.shadow.mapSize.setScalar(Math.min(layoutKey?4096:2048,renderer.capabilities.maxTextureSize));Object.assign(light.shadow.camera,{left:-5,right:5,top:5,bottom:-5});light.shadow.bias=-.0004;scene.add(light,light.target);
 const root=new THREE.Group();scene.add(root);let objects=new Map(),labelNodes=[],staticFurniture,architectureInstances,contactShadows,meshCount=0,sceneChanged=true;const selection=new THREE.BoxHelper(undefined,'#ad8f50');selection.visible=false;scene.add(selection);
@@ -61,6 +61,8 @@ function syncEditorState(){
  $('undo').disabled=locked||!history.length;
  $('import').disabled=locked;
  $('object-fields').disabled=locked||!selected;
+ $('add-asset').disabled=!block||locked||saving;
+ $('delete-asset').disabled=!block||locked||saving||!selected;
  if(block)document.title=(dirty?'• ':'')+block.name+' — Altanfeethi Spatial Twin';
  const object=block?.objects.find(o=>o.id===selected),link=locked?sourceObjectLink(object):null;
  $('source-edit').hidden=!locked||!object;
@@ -87,7 +89,7 @@ function rebuild(){invalidateScene();transform.detach();staticFurniture?.dispose
  root.updateMatrixWorld(true);fitSceneShadows(light,root);meshCount=0;root.traverse(node=>{if(node.isMesh&&node.visible&&node.layers.isEnabled(0))meshCount++;});
  if(layoutKey)root.traverse(node=>{node.matrixAutoUpdate=false;node.matrixWorldAutoUpdate=false;});
  for(const g of objects.values())g.userData.pickBounds=new THREE.Box3().setFromObject(g);
- renderObjectList();const next=selected&&objects.has(selected)?selected:block.objects[0]?.id;if(next)select(next);else{selected=null;selection.visible=false;transform.detach();transformHelper.visible=false;$('object-name').textContent='No objects yet';$('object-info').textContent='Add a supported object to objects.json, then reload.';}applyVisibility();syncEditorState();}
+ updateAssetSummary();renderObjectList();const next=selected&&objects.has(selected)?selected:block.objects[0]?.id;if(next)select(next);else{selected=null;selection.visible=false;transform.detach();transformHelper.visible=false;$('object-name').textContent='No objects yet';$('object-info').textContent='Use Add asset to furnish this block.';}applyVisibility();syncEditorState();}
 function select(id){renderLoop?.invalidate();selected=id;const o=block.objects.find(o=>o.id===id),display=v=>Number(v.toFixed(3));$('object-name').textContent=objectLabel(o);$('object-info').textContent=[o.seats.join(' / ')||o.externalId||'Context object',o.confidence].join(' · ');$('x').value=display(o.position[0]);$('y').value=display(o.position[1]);$('z').value=display(o.position[2]);$('yaw').value=display(o.yaw);['width','height','depth'].forEach((id,i)=>$(id).value=display(o.size[i]));['scale-x','scale-y','scale-z'].forEach((id,i)=>$(id).value=display(o.scale?.[i]??1));$('color').value=o.color;$('seat-field').hidden=!isChair(o);$('seat-id').value=isChair(o)?o.seats[0]:'';$('sofa-seat-field').hidden=o.type!=='sofa';$('sofa-seat-inputs').replaceChildren();if(o.type==='sofa')o.seats.forEach((seat,i)=>{const label=document.createElement('label');label.textContent=`Seat slot ${i+1} · local ${i===0?'left':i===o.seats.length-1?'right':'middle'}`;const input=document.createElement('input');input.type='text';input.value=seat;input.spellcheck=false;input.dataset.seatSlot=i;label.append(input);$('sofa-seat-inputs').append(label);});$('gate-field').hidden=!['automatic-glass-gate','passport-gate'].includes(o.type);$('gate-opening').value=Math.round((o.openFraction??0)*100);$('table-field').hidden=o.type!=='table';$('table-id').value=o.type==='table'?(o.externalId||''):'';document.querySelectorAll('[data-id]').forEach(b=>b.classList.toggle('active',b.dataset.id===id));selection.setFromObject(objects.get(id));selection.visible=true;transform.attach(objects.get(id));transformHelper.visible=tool!=='select';syncEditorState();}
 function refreshArchitecture(){
  invalidateScene();architectureInstances?.dispose();architectureInstances=null;
@@ -113,7 +115,7 @@ function focusSelected(){
  }
  renderLoop.invalidate();
 }
-function setTool(mode){renderLoop?.invalidate();if(readOnly()&&mode!=='select')return;tool=mode;transform.enabled=mode!=='select';transformHelper.visible=mode!=='select';if(mode!=='select')transform.setMode(mode);transform.showY=mode!=='translate';transform.showX=mode!=='rotate';transform.showZ=mode!=='rotate';document.querySelectorAll('[data-tool]').forEach(b=>b.classList.toggle('active',b.dataset.tool===mode));}
+function setTool(mode){renderLoop?.invalidate();if(readOnly()&&mode!=='select')return;tool=mode;transform.enabled=mode!=='select';transformHelper.visible=mode!=='select';if(mode!=='select')transform.setMode(mode);transform.showY=true;transform.showX=mode!=='rotate';transform.showZ=mode!=='rotate';document.querySelectorAll('[data-tool]').forEach(b=>b.classList.toggle('active',b.dataset.tool===mode));}
 function resize(){renderLoop?.invalidate();const w=viewport.clientWidth,h=viewport.clientHeight;renderer.setSize(w,h);perspective.aspect=w/h;perspective.updateProjectionMatrix();let span=3.6;
  if(block&&Math.max(...block.floorSize)>5.2){
   // Fit all eight scene bounds in the current camera axes, including tall panels.
@@ -136,6 +138,52 @@ transform.addEventListener('mouseUp',()=>{if(!dragStart||!selected)return;const 
  try{validateBlock(block);if(JSON.stringify(o)!==before){history.push(previous);if(history.length>50)history.shift();dirty=true;status('Unsaved changes');}else select(selected);}catch(e){block=previous;rebuild();status(e.message);return;}select(selected);
 });
 $('apply').onclick=()=>{try{const next=structuredClone(block),o=next.objects.find(o=>o.id===selected);const ids=['x','y','z','yaw','width','height','depth','scale-x','scale-y','scale-z'];if(ids.some(id=>$(id).value.trim()===''))throw Error('Fill all numeric fields.');o.position=['x','y','z'].map(id=>Number($(id).value));o.yaw=Number($('yaw').value);o.size=['width','height','depth'].map(id=>Number($(id).value));o.scale=['scale-x','scale-y','scale-z'].map(id=>Number($(id).value));o.color=$('color').value;if(['automatic-glass-gate','passport-gate'].includes(o.type)){if($('gate-opening').value.trim()==='')throw Error('Enter the gate opening percentage.');o.openFraction=Number($('gate-opening').value)/100;}if(isChair(o))o.seats=[$('seat-id').value.trim()];if(o.type==='sofa')o.seats=[...$('sofa-seat-inputs').querySelectorAll('input')].map(input=>input.value.trim());if(o.type==='table'){const tableId=$('table-id').value.trim();if(tableId)o.externalId=tableId;else delete o.externalId;}validateBlock(next);checkpoint();block=next;rebuild();}catch(e){status(e.message);}};
+let assetLibrary;
+function updateAssetSummary(){
+ const seats=block.objects.reduce((count,o)=>count+o.seats.length,0);
+ $('block-summary').textContent=`${block.objects.length} assets · ${seats} seats`;
+}
+function assetChoice(){return assetLibrary?.assets.find(asset=>asset.id===$('asset-design').value);}
+function showAssetConfigurations(){
+ const asset=assetChoice();$('asset-config').replaceChildren();
+ for(const [i,config] of (asset?.configurations||[]).entries()){
+  const option=document.createElement('option');option.value=config.id;
+  option.textContent=`${i+1} · ${config.appearance.color} · ${config.appearance.size.map((v,j)=>+(v*(config.appearance.scale?.[j]??1)).toFixed(2)).join(' × ')} m`;
+  $('asset-config').append(option);
+ }
+ $('place-asset').disabled=!asset;
+ $('asset-details').textContent=asset?`${asset.category} · New seating receives temporary seat IDs you can edit.`:'No matching designs.';
+}
+function filterAssetDesigns(){
+ const previous=$('asset-design').value,query=$('asset-search').value.toLowerCase().trim();$('asset-design').replaceChildren();
+ for(const asset of assetLibrary.assets.filter(asset=>(asset.name+' '+asset.category).toLowerCase().includes(query))){
+  const option=document.createElement('option');option.value=asset.id;option.textContent=asset.name;$('asset-design').append(option);
+ }
+ if([...$('asset-design').options].some(option=>option.value===previous))$('asset-design').value=previous;
+ showAssetConfigurations();
+}
+$('add-asset').onclick=async()=>{
+ if(!block||readOnly()||saving)return;
+ try{
+  if(!assetLibrary){status('Loading asset library…');const response=await fetch('/api/object-library');if(!response.ok)throw Error('Unable to load assets. Try again.');assetLibrary=await response.json();}
+  if(readOnly())return;
+  $('asset-search').value='';filterAssetDesigns();$('asset-dialog').showModal();$('asset-search').focus();status('Choose an asset from the shared library');
+ }catch(error){status(error.message);}
+};
+$('asset-search').oninput=filterAssetDesigns;$('asset-design').onchange=showAssetConfigurations;
+$('place-asset').onclick=()=>{
+ if(!block||readOnly()||saving)return;
+ try{
+  const asset=assetChoice(),config=asset?.configurations.find(config=>config.id===$('asset-config').value);if(!config)throw Error('Choose an asset first.');
+  const object=createAssetPlacement(block,asset,config,crypto.randomUUID().replaceAll('-','').slice(0,16));
+  const next={...block,objects:[...block.objects,object]};validateBlock(next);checkpoint();block=next;selected=object.id;$('object-search').value='';
+  rebuild();setTool('translate');$('asset-dialog').close();status('Asset added · Drag to position, then Save block');
+ }catch(error){status(error.message);$('asset-details').textContent=error.message;}
+};
+$('delete-asset').onclick=()=>{
+ if(!block||readOnly()||saving||!selected)return;
+ try{const next=removeAsset(block,selected);validateBlock(next);checkpoint();block=next;selected=null;rebuild();status('Asset deleted · Undo to restore, or Save block');}catch(error){status(error.message);}
+};
 $('undo').onclick=()=>{if(history.length){block=history.pop();dirty=true;rebuild();status(dirty?'Undone · unsaved changes':'Undone · back to saved state');}};
 $('save').onclick=async()=>{
  if(!block||readOnly()||saving||!dirty)return;

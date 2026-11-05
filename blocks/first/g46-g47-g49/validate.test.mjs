@@ -47,6 +47,7 @@ test('right furniture uses finite geometry with grounded seating and attached di
     assert.ok(!bounds.isEmpty()&&[...bounds.min.toArray(),...bounds.max.toArray()].every(Number.isFinite),object.id);
     assert.deepEqual(model.position.toArray(),object.position);
     if(object.variant==='side-wall-light')assert.ok(bounds.min.y>=1.7&&bounds.max.y<=2.9);
+    else if(object.type==='tissue-box')assert.ok(bounds.min.y>0,'Tissue box rests on a table');
     else assert.ok(bounds.min.y>=-.04&&bounds.min.y<.1,`${object.id}: must contact floor`);
     if(object.variant==='side-shell-chair')assert.ok(model.getObjectByName('Wrapped barrel back and arms'));
     if(object.variant==='side-curved-divider'){

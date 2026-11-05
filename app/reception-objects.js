@@ -1,7 +1,17 @@
 import * as THREE from 'three';
 
 let receptionBrandTexture;
-function receptionBrand(){
+let tissueLabelTexture;
+function tissueLabel(){
+ if(typeof document==='undefined')return null;
+ if(!tissueLabelTexture){
+  const canvas=document.createElement('canvas');canvas.width=1024;canvas.height=256;
+  const ctx=canvas.getContext('2d');ctx.fillStyle='#fff5df';ctx.font='500 122px Georgia';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('Altanfeethi',512,128,980);
+  tissueLabelTexture=new THREE.CanvasTexture(canvas);tissueLabelTexture.colorSpace=THREE.SRGBColorSpace;tissueLabelTexture.userData.shared=true;
+ }
+ return tissueLabelTexture;
+}
+export function receptionBrand(){
  if(typeof document==='undefined')return null;
  if(!receptionBrandTexture){receptionBrandTexture=new THREE.TextureLoader().load('/shared/assets/branding/reception-wall.svg');receptionBrandTexture.colorSpace=THREE.SRGBColorSpace;receptionBrandTexture.anisotropy=8;receptionBrandTexture.userData.shared=true;}
  return receptionBrandTexture;
@@ -17,6 +27,8 @@ export const receptionSizes = {
   'office-chair': [.64, 1.22, .68],
   cabinet: [2.45, .78, .42],
   display: [.58, .42, .18],
+  tv: [1.55, .9, .08],
+  'tissue-box': [.17,.24,.17],
   'wall-panel': [12.2, 4.1, .12],
   'luggage-scale': [.6, 1.65, .75],
 };
@@ -24,7 +36,12 @@ export const receptionSizes = {
 export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
   const [w,h,d] = receptionSizes[o.type];
   const body=mat(o.color), wood=mat('#856746'), charcoal=mat('#242a2c'), metal=mat('#a7afb0',.3,.65);
-  if(o.type==='automatic-glass-gate'&&o.variant==='swing-turnstile'){
+  if(o.type==='tissue-box'){
+    box(g,[w,.15,d],[0,.075,0],mat(o.color,.55),.01).name='Orange tissue box';
+    box(g,[.075,.003,.035],[0,.151,0],mat('#49382c'),.008).name='Tissue opening';
+    const tissue=box(g,[.06,.087,.012],[0,.196,0],mat('#f5f1e7',.9),.004);tissue.rotation.z=-.08;tissue.name='Paper tissue';
+    mesh(g,new THREE.PlaneGeometry(.145,.036),new THREE.MeshBasicMaterial({map:tissueLabel(),transparent:true,depthWrite:false}),[0,.077,d/2+.001]).name='Altanfeethi English label';
+  }else if(o.type==='automatic-glass-gate'&&o.variant==='swing-turnstile'){
     // Rotate leaves in physical units before the viewer's nonuniform reference scaling.
     const assembly=new THREE.Group();assembly.scale.fromArray(receptionSizes[o.type].map((v,i)=>v/o.size[i]));g.add(assembly);g=assembly;
     const [w,h,d]=o.size;
@@ -200,6 +217,13 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
     box(g,[w,h,d],[0,h/2,0],body,.008);
     box(g,[w+.02,.04,d+.025],[0,h,0],wood,.008);
     for(let i=1;i<4;i++) box(g,[.008,h-.06,.006],[-w/2+i*w/4,h/2,d/2+.004],mat('#64513d'),.001);
+  } else if(o.type==='tv') {
+    box(g,[w*.3,h*.28,d*.35],[0,h/2,-d*.325],charcoal,.004).name='TV wall mount';
+    box(g,[w,h,d*.75],[0,h/2,d*.125],mat('#171c1d',.4),.008).name='TV frame';
+    box(g,[w-.03,h-.03,.003],[0,h/2,d*.5+.0015],mat('#080e10',.16,.15),.002).name='TV screen';
+    const scaleX=(o.size?.[0]??w)/w,scaleY=(o.size?.[1]??h)/h,aspect=400/289.62;
+    const logoHeight=Math.min((h-.03)*scaleY*.78,(w-.03)*scaleX*.78/aspect);
+    mesh(g,new THREE.PlaneGeometry(logoHeight*aspect/scaleX,logoHeight/scaleY),new THREE.MeshBasicMaterial({map:receptionBrand(),transparent:true,depthWrite:false}),[0,h/2,d*.5+.004]).name='TV screen · Altanfeethi bilingual identity';
   } else if(o.type==='display'&&o.variant==='desk-reader') {
     box(g,[w*.8,h*.045,d*.8],[0,h*.022,0],charcoal,.008);
     box(g,[w*.14,h*.55,d*.18],[0,h*.3,0],charcoal,.006);
@@ -207,8 +231,15 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
     box(g,[w*.48,h*.3,d*.025],[0,h*.75,d*.23],body,.003);
   } else if(o.type==='display'&&o.variant==='reception-portrait') {
     const index=o.id.match(/portrait-([123])$/)?.[1]||'1';
-    const texture=typeof document!=='undefined'?new THREE.TextureLoader().load(`/shared/assets/portraits/reception-${index}.png`):null;
+    const texture=typeof document!=='undefined'?new THREE.TextureLoader().load(`/shared/assets/portraits/reception-${index}.png${index==='3'?'?v=salman-20261105':index==='2'?'?v=abdulaziz-20261105':''}`):null;
     if(texture){texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=8;}
+    const cropPortrait=aspect=>{
+      if(!texture||!['2','3'].includes(index))return;
+      const sourceAspect=index==='2'?1650/2057:1500/1044;
+      // Fit supplied photographs to the existing frame without stretching.
+      texture.repeat.set(Math.min(1,aspect/sourceAspect),Math.min(1,sourceAspect/aspect));
+      texture.offset.set((1-texture.repeat.x)/2,(1-texture.repeat.y)/2);
+    };
     const print=new THREE.MeshBasicMaterial({color:'#ffffff',map:texture});
     if(o.frameStyle==='slim-brass'){
       // Build frame widths in physical units to preserve photo proportions after resizing.
@@ -218,10 +249,13 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
       box(frame,[W-border*2,H-border*2,.008],[0,H/2,D/2],mat('#e6e2d7',.85),.002);
       for(const x of [-W/2+border/2,W/2-border/2])box(frame,[border,H,D],[x,H/2,.003],edge,.003);
       for(const y of [border/2,H-border/2])box(frame,[W-border*2,border,D],[0,y,.003],edge,.003);
-      const aspect=(index==='2'?640:639)/820,photoWidth=Math.min(W-.07,(H-.07)*aspect),photoHeight=photoWidth/aspect;
+      const aspect=index==='3'?(W-.07)/(H-.07):(index==='2'?1650/2057:639/820),photoWidth=Math.min(W-.07,(H-.07)*aspect),photoHeight=photoWidth/aspect;
+      cropPortrait(aspect);
       mesh(frame,new THREE.PlaneGeometry(photoWidth,photoHeight),print,[0,H/2,D/2+.006]).name='Matted portrait print';
     }else{
-      box(g,[w,h,.035],[0,h/2,0],charcoal,.004);
+      // The exposed perimeter around each print is the shared gold portrait frame.
+      box(g,[w,h,.035],[0,h/2,0],mat('#ab9564',.35,.6),.004);
+      cropPortrait((w-.025)*((o.size?.[0]??w)/w)/((h-.025)*((o.size?.[1]??h)/h)));
       for(const side of [-1,1]){
         const face=mesh(g,new THREE.PlaneGeometry(w-.025,h-.025),print,[0,h/2,side*.023]);
         if(side<0)face.rotation.y=Math.PI;
@@ -229,17 +263,26 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
     }
   } else if(o.type==='display'&&o.variant==='framed-art') {
     box(g,[w,h,.035],[0,h/2,0],charcoal,.004);
+    const texture=typeof document!=='undefined'?new THREE.TextureLoader().load('/shared/assets/artwork/three-saudi-men-teal.png'):null;
+    if(texture){texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=8;}
+    const print=new THREE.MeshBasicMaterial({color:'#ffffff',map:texture});
+    const sx=(o.size?.[0]??w)/w,sy=(o.size?.[1]??h)/h,aspect=2/3;
+    const photoHeight=Math.min((h-.025)*sy,(w-.025)*sx/aspect);
     for(const side of [-1,1]){
       box(g,[w-.025,h-.025,.008],[0,h/2,side*.023],body,.003);
-      for(let i=0;i<4;i++){
-        const ring=mesh(g,new THREE.TorusGeometry(1,.012,4,32),mat('#78766d'),[(i-1.5)*w*.12,h*(.38+(i%2)*.22),side*.03]);
-        ring.scale.set(w*(.16+i*.015),h*(.25-i*.025),.4);ring.rotation.z=i*.6;
-      }
+      const face=mesh(g,new THREE.PlaneGeometry(photoHeight*aspect/sx,photoHeight/sy),print,[0,h/2,side*.028]);
+      face.name='Three Saudi Men in Teal · painting';if(side<0)face.rotation.y=Math.PI;
     }
   } else if(o.type==='display') {
     box(g,[w,h-.07,.035],[0,h/2+.035,0],charcoal,.008);
     box(g,[w-.035,h-.105,.008],[0,h/2+.035,.024],body,.003);
     if(o.mount!=='wall') {
+      // Fit the wall's official bilingual identity to the screen in physical units.
+      const scaleX=(o.size?.[0]??w)/w,scaleY=(o.size?.[1]??h)/h;
+      const aspect=400/289.62;
+      const logoHeight=Math.min((h-.105)*scaleY*.78,(w-.035)*scaleX*.78/aspect);
+      const identity=mesh(g,new THREE.PlaneGeometry(logoHeight*aspect/scaleX,logoHeight/scaleY),new THREE.MeshBasicMaterial({map:receptionBrand(),transparent:true,depthWrite:false}),[0,h/2+.035,.029]);
+      identity.name='Desk screen · Altanfeethi bilingual identity';
       box(g,[.04,.14,.035],[0,.08,0],charcoal,.005);
       box(g,[.24,.015,d],[0,.012,0],charcoal,.005);
     }
@@ -301,7 +344,7 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
       const y=h*(.12+row*.105);points.push(new THREE.Vector3(center,y,d*.55),new THREE.Vector3(center+sign*w*.12,y+h*.1,d*.55));
     }
     g.add(new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(points),new THREE.LineBasicMaterial({color:'#6c9495',transparent:true,opacity:.35})));
-    const identity=mesh(g,new THREE.PlaneGeometry(w*.4,h*.46),new THREE.MeshBasicMaterial({map:receptionBrand(),transparent:true,depthWrite:false}),[0,h*.52,d*.6]);
+    const identity=mesh(g,new THREE.PlaneGeometry(w*.3,h*.345),new THREE.MeshBasicMaterial({map:receptionBrand(),transparent:true,depthWrite:false}),[0,h*.46,d*.6]);
     identity.name='Official reception identity · Arabic, English and logo';
     identity.castShadow=false;identity.receiveShadow=false;
   } else if(o.type==='wall-panel'&&o.variant==='stone-relief') {

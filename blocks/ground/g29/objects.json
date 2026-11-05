@@ -262,6 +262,30 @@
         "G17"
       ],
       "confidence": "Pale floor lamp observed beside plant; shade and position schematic"
+    },
+    {
+      "id": "g29-coffee-table-01-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.22770326758076564,
+        0.46583333333333327,
+        0.22856490354946024
+      ],
+      "size": [
+        0.15866666666666665,
+        0.2457142857142857,
+        0.36830695787246115
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G16",
+        "G17"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

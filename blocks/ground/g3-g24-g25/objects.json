@@ -91,7 +91,8 @@
         "B10"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B11"
+      "externalId": "Table_B11",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-29",
@@ -181,7 +182,8 @@
         "B10"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B17"
+      "externalId": "Table_B17",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-18",
@@ -274,7 +276,8 @@
         "B11"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B10"
+      "externalId": "Table_B10",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-30",
@@ -363,7 +366,8 @@
         "B10"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B16"
+      "externalId": "Table_B16",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-19",
@@ -455,7 +459,8 @@
         "B11"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B9"
+      "externalId": "Table_B9",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-31",
@@ -548,7 +553,8 @@
         "B11"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B15"
+      "externalId": "Table_B15",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-20",
@@ -643,7 +649,8 @@
         "B12"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B8"
+      "externalId": "Table_B8",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-32",
@@ -739,7 +746,8 @@
         "B12"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B14"
+      "externalId": "Table_B14",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-21",
@@ -834,7 +842,8 @@
         "B14"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B7"
+      "externalId": "Table_B7",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-33",
@@ -930,7 +939,8 @@
         "B12"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B13"
+      "externalId": "Table_B13",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-22",
@@ -1024,7 +1034,8 @@
         "B14"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B12"
+      "externalId": "Table_B12",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-34",
@@ -1118,7 +1129,8 @@
         "B14"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B"
+      "externalId": "Table_B",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-41",
@@ -1210,7 +1222,8 @@
         "B10"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B20"
+      "externalId": "Table_B20",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-44",
@@ -1302,7 +1315,8 @@
         "B14"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B23"
+      "externalId": "Table_B23",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-chair-49",
@@ -1394,7 +1408,8 @@
         "B14"
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "externalId": "Table_B21"
+      "externalId": "Table_B21",
+      "accessories": "dining-service"
     },
     {
       "id": "g3-g24-g25-buffet-north",
@@ -1433,11 +1448,12 @@
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
       "variant": "food-buffet",
-      "serviceStyle": "juice"
+      "serviceStyle": "juice",
+      "detailLevel": "dining-reviewed"
     },
     {
       "id": "g3-g24-g25-buffet-display-north",
-      "type": "display",
+      "type": "tv",
       "name": "Buffet wall display · content omitted",
       "position": [
         5.594930875576,
@@ -1476,17 +1492,17 @@
     {
       "id": "g3-g24-g25-plant-north",
       "type": "plant",
-      "name": "Plant North",
+      "name": "Slender topiary in ivory pot · B41/B42",
       "position": [
-        0.239920769366,
+        -4.65,
         0,
-        -6.846604855488
+        -6.8
       ],
       "yaw": 0,
       "size": [
-        0.52,
-        1.75,
-        0.52
+        0.6,
+        1.95,
+        0.6
       ],
       "scale": [
         1,
@@ -1498,17 +1514,10 @@
       "cameras": [
         "B2",
         "C11",
-        "C14",
-        "B13",
-        "B7",
-        "B8",
-        "B9",
-        "B10",
-        "B11",
-        "B12",
-        "B14"
+        "B10"
       ],
-      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+      "confidence": "Small tree next to B41/B42 and arch in B2/C11 normal and wide views; position estimated.",
+      "variant": "dining-topiary"
     },
     {
       "id": "g3-g24-g25-art-north",
@@ -1517,7 +1526,7 @@
       "position": [
         -2.290317693076,
         2.15,
-        -7.281059743618291
+        -7.309939318513029
       ],
       "yaw": 0,
       "size": [
@@ -1553,7 +1562,7 @@
       "type": "counter",
       "name": "Food counter · illuminated niches, coffee equipment and side fridge",
       "position": [
-        5.594930875576,
+        4.3846107097387765,
         0,
         6.615151515152
       ],
@@ -1585,14 +1594,15 @@
       ],
       "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
       "variant": "food-buffet",
-      "serviceStyle": "coffee"
+      "serviceStyle": "coffee",
+      "detailLevel": "dining-reviewed"
     },
     {
       "id": "g3-g24-g25-buffet-display-south",
-      "type": "display",
+      "type": "tv",
       "name": "Buffet wall display · content omitted",
       "position": [
-        5.594930875576,
+        4.414167084834945,
         2.15,
         7.337212121212
       ],
@@ -1628,17 +1638,17 @@
     {
       "id": "g3-g24-g25-plant-south",
       "type": "plant",
-      "name": "Plant South",
+      "name": "Tall dracaena in ivory planter · coffee-side cream pier",
       "position": [
-        -0.213133640553,
+        0.4022614934518204,
         0,
-        6.615151515152
+        6.8
       ],
       "yaw": 0,
       "size": [
-        0.52,
-        1.75,
-        0.52
+        0.72,
+        2.35,
+        0.72
       ],
       "scale": [
         1,
@@ -1648,34 +1658,28 @@
       "color": "#416340",
       "seats": [],
       "cameras": [
-        "B2",
-        "C11",
-        "C14",
-        "B13",
         "B7",
         "B8",
         "B9",
-        "B10",
-        "B11",
-        "B12",
-        "B14"
+        "B13"
       ],
-      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated"
+      "confidence": "Coffee-side tall narrow-leaf plant seen on cream pier in normal and wide views; dimensions estimated.",
+      "variant": "dining-dracaena"
     },
     {
       "id": "g3-g24-g25-art-south",
       "type": "display",
-      "name": "Framed artwork · schematic",
+      "name": "Geometric botanical print · cream pier",
       "position": [
-        -1.042857142857,
-        2.15,
+        -1.04,
+        1.6,
         7.337212121212
       ],
       "yaw": 180,
       "size": [
-        0.7,
-        1.15,
-        0.08
+        0.8,
+        1.5,
+        0.07
       ],
       "scale": [
         1,
@@ -1685,28 +1689,21 @@
       "color": "#e4dfd1",
       "seats": [],
       "cameras": [
-        "B2",
-        "C11",
-        "C14",
-        "B13",
         "B7",
         "B8",
         "B9",
-        "B10",
-        "B11",
-        "B12",
-        "B14"
+        "B13"
       ],
-      "confidence": "Cross-view visual correspondence; position, dimensions and shared finish estimated",
-      "variant": "framed-art"
+      "confidence": "Dark frame, ivory mount, teal geometric lower print and striped botanical form seen in B7/B8 wide views. Procedural approximation, not an identified artwork.",
+      "variant": "dining-botanical-print"
     },
     {
       "id": "g3-g24-g25-large-wall-display",
-      "type": "display",
+      "type": "tv",
       "name": "Large dark wall display · schematic",
       "position": [
         10.4736622902883,
-        2.15,
+        1.3695414134768744,
         0
       ],
       "yaw": 270,
@@ -1744,11 +1741,11 @@
       "variant": "grand-piano",
       "name": "Grand piano and bench · B7 wide",
       "position": [
-        -3.340552995392,
+        -3.7554961588857863,
         0,
-        6.054545454545
+        6.3943249178133135
       ],
-      "yaw": 180,
+      "yaw": 90,
       "size": [
         1.9,
         1.05,
@@ -1766,6 +1763,741 @@
         "B13"
       ],
       "confidence": "Black closed-lid grand piano visible behind B17 in wide captures; body and bench dimensions estimated"
+    },
+    {
+      "id": "g3-g24-g25-piano-palm",
+      "type": "plant",
+      "variant": "dining-palm",
+      "name": "Areca palm in ivory planter · beside piano",
+      "position": [
+        -2.431738084044416,
+        0,
+        6.85
+      ],
+      "yaw": 0,
+      "size": [
+        1,
+        2.55,
+        0.85
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#41663c",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B9",
+        "B13"
+      ],
+      "confidence": "Reviewed against normal and wide camera views. One physical object; size and local position estimated."
+    },
+    {
+      "id": "g3-g24-g25-lantern-stand",
+      "type": "display-console",
+      "variant": "dining-lantern-stand",
+      "name": "Slim brass lantern stand with woven base · cream pier",
+      "position": [
+        -0.1359158907861343,
+        0,
+        6.95
+      ],
+      "yaw": 0,
+      "size": [
+        0.24,
+        1.7,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b9a06d",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "confidence": "Reviewed against normal and wide camera views. One physical object; size and local position estimated."
+    },
+    {
+      "id": "g3-g24-g25-cream-pier-planter",
+      "type": "cabinet",
+      "variant": "plain-planter",
+      "name": "Tall ivory planter · juice-side cream pier",
+      "position": [
+        0.31794448446435464,
+        0,
+        -7.122888473628967
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        0.82,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e7e3d6",
+      "seats": [],
+      "cameras": [
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Reviewed against normal and wide camera views. One physical object; size and local position estimated."
+    },
+    {
+      "id": "g3-g24-g25-cream-pier-flowers",
+      "type": "plant",
+      "variant": "dining-topiary",
+      "name": "Flowers above juice-side planter",
+      "position": [
+        0.251643186817361,
+        0.66,
+        -7.159945188512425
+      ],
+      "yaw": 0,
+      "size": [
+        0.35,
+        0.42,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b4858",
+      "seats": [],
+      "cameras": [
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Reviewed against normal and wide camera views. One physical object; size and local position estimated."
+    },
+    {
+      "id": "g3-g24-g25-brass-bin-1",
+      "type": "cabinet",
+      "variant": "waste-bin",
+      "name": "Small brass waste bin 1",
+      "position": [
+        -2.29,
+        0,
+        -5.6
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.4,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b7a16d",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B10",
+        "B12"
+      ],
+      "confidence": "Reviewed against normal and wide camera views. One physical object; size and local position estimated."
+    },
+    {
+      "id": "g3-g24-g25-brass-bin-2",
+      "type": "cabinet",
+      "variant": "waste-bin",
+      "name": "Small brass waste bin 2",
+      "position": [
+        -0.92,
+        0,
+        2.8
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.4,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b7a16d",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B10",
+        "B12"
+      ],
+      "confidence": "Reviewed against normal and wide camera views. One physical object; size and local position estimated."
+    },
+    {
+      "id": "g3-g24-g25-brass-bin-3",
+      "type": "cabinet",
+      "variant": "waste-bin",
+      "name": "Small brass waste bin 3",
+      "position": [
+        2.52,
+        0,
+        -2.8
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.4,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b7a16d",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B10",
+        "B12"
+      ],
+      "confidence": "Reviewed against normal and wide camera views. One physical object; size and local position estimated."
+    },
+    {
+      "id": "g3-g24-g25-brass-bin-4",
+      "type": "cabinet",
+      "variant": "waste-bin",
+      "name": "Small brass waste bin 4",
+      "position": [
+        6.22,
+        0,
+        2.8
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.4,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b7a16d",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B10",
+        "B12"
+      ],
+      "confidence": "Reviewed against normal and wide camera views. One physical object; size and local position estimated."
+    },
+    {
+      "id": "g3-g24-g25-menu-stand",
+      "type": "display-console",
+      "variant": "dining-menu-stand",
+      "name": "Dark angled menu pedestal · arch-side aisle",
+      "position": [
+        -4.55,
+        0,
+        0.15
+      ],
+      "yaw": 90,
+      "size": [
+        0.6,
+        1.15,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#303638",
+      "seats": [],
+      "cameras": [
+        "C11",
+        "C14",
+        "B7",
+        "B8"
+      ],
+      "confidence": "Dark angled pedestal visible beside the arch-side aisle in wide views. Provisional position and dimensions; no occupancy ID."
+    },
+    {
+      "id": "g3-g24-g25-table-17-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -3.6054362519196665,
+        0.5633333333333334,
+        -2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "C11",
+        "B7",
+        "B10"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-11-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -3.6054362519196665,
+        0.5633333333333334,
+        2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "C14",
+        "B7",
+        "B10"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-16-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -1.8027789708136668,
+        0.5633333333333334,
+        -2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "B7",
+        "B10",
+        "B11"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-10-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -1.8027789708136668,
+        0.5633333333333334,
+        2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B10"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-15-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -0.00012168970866664741,
+        0.5633333333333334,
+        -2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B10",
+        "B11"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-9-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -0.00012168970866664741,
+        0.5633333333333334,
+        2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-14-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        1.8025355913973333,
+        0.5633333333333334,
+        -2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-8-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        1.8025355913973333,
+        0.5633333333333334,
+        2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-13-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        3.6051928725033333,
+        0.5633333333333334,
+        -2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-7-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        3.6051928725033333,
+        0.5633333333333334,
+        2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B13",
+        "B7",
+        "B8",
+        "B9",
+        "B11",
+        "B12"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-12-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        5.407850153610333,
+        0.5633333333333334,
+        -2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B13",
+        "B8",
+        "B9",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-6-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        5.407850153610333,
+        0.5633333333333334,
+        2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B13",
+        "B9",
+        "B11",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-20-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.290317693089,
+        0.5633333333333334,
+        -6.328060606060333
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B2",
+        "C11",
+        "B10"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-21-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        7.210507434716333,
+        0.5633333333333334,
+        -2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B13",
+        "B9",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g3-g24-g25-table-23-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        7.210507434716333,
+        0.5633333333333334,
+        2.8
+      ],
+      "size": [
+        0.1790666666666667,
+        0.29714285714285715,
+        0.19615384615384615
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B13",
+        "B9",
+        "B12",
+        "B14"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

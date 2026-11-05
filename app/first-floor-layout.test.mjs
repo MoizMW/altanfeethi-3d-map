@@ -15,7 +15,7 @@ const layout=JSON.parse(await readFile(new URL('../layouts/first/bottom-right.js
 test('first-floor bottom-right row preserves source identities and places G35 rightmost',async()=>{
   const {block}=await composeLayout(root,'first/bottom-right',load);
   assert.equal(block.floor,'first');assert.equal(block.readOnly,true);
-  assert.equal(block.objects.length,21);
+  assert.equal(block.objects.filter(item=>item.type!=='tissue-box').length,21);
   const seats=block.objects.flatMap(o=>o.seats);assert.equal(seats.length,16);assert.equal(new Set(seats).size,16);
   const tables=block.objects.filter(o=>o.externalId).map(o=>o.externalId).sort();assert.deepEqual(tables,['Table_H1','Table_H2','Table_H3','Table_H4']);
   const ordered=[...layout.components].sort((a,b)=>a.position[0]-b.position[0]);

@@ -150,6 +150,9 @@
     "Table_B21": "g3-g24-g25-table-23"
   },
   "notes": [
+    "All eleven wide snapshots and matching normal views re-reviewed on 5 November 2026 for decoration. Added cream wall breaks, gold glass edges, ivory joints and owner-authorized fine white geometric motif. Coffee-side palm, narrow-leaf plant, botanical-style print, slim lantern stand and larger spiral ornament are photo-supported approximations. B41/B42 royal artwork remains unidentified. Dining settings and small brass bins are context; no new seat/table IDs. Existing floor reversal retained.",
+    "Owner close-up supplied 5 November 2026 shows glossy teal-blue cladding, nested sweeping line decoration and a narrow dark-framed royal-themed artwork above B41/B42. Cladding motif is approximated procedurally; no exact online artwork match or artist attribution has been verified. Existing artwork placeholder retained.",
+    "Owner design instruction (5 November 2026): reverse the G3/G24/G25 floor finishes from pale base/dark bands and passage to dark base/pale bands and passage. This is an owner-requested design change; existing camera evidence records the earlier finish. Geometry and furniture are preserved.",
     "All eleven normal views and matching wide captures reviewed. Normal chair/table ROI overlays identify thirty seats and fifteen tables once.",
     "Map crop and registered camera headings establish relative topology only. Wide images are not ROI coordinate maps.",
     "Seat_B41/B42 and Table_B20 form the isolated decorative-blue-wall pair visible in B2/C11/B10. C14 Seat_B17/B23 and Table_B17 link G3 to the main banks.",
@@ -161,6 +164,20 @@
   "assumptions": [
     "15.2 m width uses owner equality with G9+G10; depth and corridor position estimated from wide captures.",
     "No sofas inferred from illustrated map: current normal/wide images show separate blue chairs.",
-    "Counter contents, piano proportions and marble bands are procedural approximations of wide captures; no real-time reflected scene is claimed. TV-side route has no assigned global neighbor yet."
-  ]
+    "Counter contents, piano proportions and marble bands are procedural approximations of wide captures; no real-time reflected scene is claimed. TV-side route has no assigned global neighbor yet.",
+    "Cream sections are estimated finish extents on existing closed boundaries. Gold/ivory line widths and angular geometric motif are design approximations authorized by owner. Decorative print is procedural; royal artwork still unresolved. Tableware is representative, not a claim about current service setup. Lantern stand interpretation and plant species are provisional."
+  ],
+  "detailReview": {
+    "B2": "B41/B42 pair, tall narrow framed royal-themed print on blue cladding, topiary by arch, fine pale glass lines. Artwork identity unresolved.",
+    "C11": "Confirms B41/B42, ivory pot/topiary, framed royal-themed print, arch-side aisle and reflective blue cladding; no separate enclosure.",
+    "C14": "Arch piers, clear cross-aisle, flower planters and dark pedestal visible. Adjacent-room objects excluded from this block.",
+    "B13": "Coffee counter with urn, machine, side fridge and spiral ornament. Cream pier with narrow framed print and plant; palm and piano beside blue panel. Metric extents estimated.",
+    "B7": "Coffee side: gold panel border, pale vertical joints, cream pier, narrow botanical/geometric print, dracaena, slender lantern stand, palm and piano.",
+    "B8": "Overlapping coffee-side details deduplicated; confirms lantern stand and large gold spiral ornament. Tableware and small brass bins visible.",
+    "B9": "Confirms coffee urn/machine, ring ornament, lit serving niches, side fridge, cream art pier, plant and piano. No new wall opening inferred.",
+    "B10": "Opposite blue side: B41/B42 royal print, topiary, cream break/planter and juice buffet with display; wall closure follows owner instruction.",
+    "B11": "Juice counter, dispensers, serving items, side equipment, cream section and tall planter. No duplicate artwork inferred.",
+    "B12": "Juice-side gold edges, white joints, cream finish break, vase/planter and illuminated niches. Table settings and brass bins support added context.",
+    "B14": "Confirms juice-side finish, planter, service display, fridge, corridor-side wall and doors; distant areas excluded."
+  }
 }

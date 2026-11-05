@@ -5,6 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {composeBuilding,transformPoint} from './building.mjs';
 import {buildArchitecture} from './architecture.js';
 import * as THREE from 'three';
+import {clipBelowUpperFloor,floorCeilingHeight} from './building-visibility.js';
 import {server} from './server.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
@@ -44,7 +45,48 @@ test('Building loads saved furniture without rewriting source floor files or sca
 test('Dashboard API and static assets load and the building endpoint is read-only',async()=>{
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  try{const url=`http://127.0.0.1:${server.address().port}`;
- for(const path of ['/building.html','/building.js','/building.css','/api/building']){const r=await fetch(url+path);assert.equal(r.status,200);if(path==='/api/building')assert.equal((await r.json()).floors.length,2);else await r.text();}
+ for(const path of ['/building.html','/building.js','/building.css','/building-visibility.js','/api/building']){const r=await fetch(url+path);assert.equal(r.status,200);if(path==='/api/building')assert.equal((await r.json()).floors.length,2);else await r.text();}
  assert.equal((await fetch(url+'/api/building',{method:'POST'})).status,405);
  }finally{await new Promise(resolve=>server.close(resolve));}
+});
+
+
+test('Ground architecture is clipped below the upper slab in full and low wall modes',async()=>{
+ const data=await composeBuilding(root,load);
+ for(const cutaway of [false,true]){
+  const shell=buildArchitecture(data.floors[0].block.architecture,{cutaway});
+  const plane=clipBelowUpperFloor(shell,data.elevation);
+  assert.ok(floorCeilingHeight(data.elevation)<data.elevation-.14);
+  assert.ok(plane.distanceToPoint(new THREE.Vector3(0,data.elevation,0))<0,'Fragments at first-floor level must be discarded');
+  assert.ok(plane.distanceToPoint(new THREE.Vector3(0,1,0))>0,'Ground walls below the cap remain visible');
+  shell.traverse(mesh=>{if(mesh.isMesh)for(const m of Array.isArray(mesh.material)?mesh.material:[mesh.material]){
+   assert.ok(m.clippingPlanes.includes(plane));assert.equal(m.clipShadows,true);
+  }});
+ }
+});
+
+test('Clipping ground materials preserves upper-floor and source materials, arrays and shader hooks',()=>{
+ const material=new THREE.MeshStandardMaterial(),custom=()=>{};
+ material.onBeforeCompile=custom;
+ const geometry=new THREE.BoxGeometry(1,4.1,1),ground=new THREE.Group();
+ const a=new THREE.Mesh(geometry,material),b=new THREE.Mesh(geometry,[material,material]);ground.add(a,b);
+ const upper=new THREE.Mesh(geometry,material),flight=new THREE.Mesh(geometry,material);
+ clipBelowUpperFloor(ground,3.8);
+ assert.notEqual(a.material,material);assert.equal(b.material[0],a.material);assert.equal(b.material[1],a.material);
+ assert.equal(a.material.onBeforeCompile,custom);
+ assert.equal(upper.material.clippingPlanes,null);assert.equal(flight.material.clippingPlanes,null);
+ assert.equal(material.clippingPlanes,null);
+});
+
+test('reception portraits and smaller branding fit below the existing upper slab',async()=>{
+ const {buildObject}=await import('./object-builders.js');
+ const data=await composeBuilding(root,load),source=(await load('ground/departure-reception')).block;
+ assert.equal(source.architecture.ceilingHeight,4.1);
+ const portraits=source.objects.filter(o=>o.variant==='reception-portrait');assert.equal(portraits.length,3);
+ for(const o of portraits){const model=buildObject(o);model.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(model);assert.ok(bounds.max.y<floorCeilingHeight(data.elevation)-.1);}
+ const backdrop=buildObject(source.objects.find(o=>o.variant==='teal-reception-backdrop'));backdrop.updateMatrixWorld(true);
+ const brand=backdrop.getObjectByName('Official reception identity · Arabic, English and logo');
+ const bounds=new THREE.Box3().setFromObject(brand);
+ assert.ok(bounds.max.y<Math.min(...portraits.map(o=>o.position[1]))-.1);
+ assert.ok(bounds.getSize(new THREE.Vector3()).x<2.1);
 });

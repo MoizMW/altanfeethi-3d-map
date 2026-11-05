@@ -13,7 +13,7 @@ const layout=await json('layouts/first/bottom-lobby.json');
 
 test('lobby combines eight groups once and retains bottom-right furniture and G42 source data',async()=>{
   const {block}=await composeLayout(root,'first/bottom-lobby',load);
-  assert.equal(block.objects.length,59);
+  assert.equal(block.objects.filter(item=>item.type!=='tissue-box').length,59);
   const seats=block.objects.flatMap(o=>o.seats);assert.equal(seats.length,32);assert.equal(new Set(seats).size,32);
   const tables=block.objects.filter(o=>o.externalId).map(o=>o.externalId);assert.equal(tables.length,9);assert.equal(new Set(tables).size,9);
   for(const part of layout.components){

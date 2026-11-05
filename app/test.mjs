@@ -1,5 +1,6 @@
 import {test} from 'node:test';
 import './floors.test.mjs';
+import './dining-detail.test.mjs';
 import '../blocks/first/g52-g55/validate.test.mjs';
 import '../blocks/first/g46-g47-g49/validate.test.mjs';
 import './render-performance.test.mjs';
@@ -106,7 +107,7 @@ test('G21 and G27 arches preserve the walking route and have an overhead crown',
         assert.equal(ray(.7).length,0,'Arch must leave the walking route open');
         if(!cutaway)assert.ok(ray(3.7).length,'Partition crown must remain above the opening');
       }
-      shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+      shell.traverse(n=>{n.geometry?.dispose();for(const material of (Array.isArray(n.material)?n.material:[n.material]))material?.dispose();});
     }
   }
   const g27=JSON.parse(await readFile(new URL('../blocks/ground/g27/objects.json',import.meta.url)));
@@ -238,7 +239,7 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     assert.equal((await fetch(`${origin}/api/block?layout=first/bottom-lobby`,{method:'PUT',body:'{}'})).status,405);
     assert.ok(listing.blocks.some(b=>b.key==='layout:first/bottom-right'));
     const firstResponse=await fetch(`${origin}/api/block?layout=first/bottom-right`);assert.equal(firstResponse.status,200);
-    const first=(await firstResponse.json()).block;validateBlock(first);assert.equal(first.objects.length,21);assert.equal(first.readOnly,true);
+    const first=(await firstResponse.json()).block;validateBlock(first);assert.equal(first.objects.filter(item=>item.type!=='tissue-box').length,21);assert.equal(first.readOnly,true);
     for(let i=1;i<=8;i++)for(const wide of [0,1])assert.equal((await fetch(`${origin}/api/evidence/camera/H${i}?layout=first/bottom-right&wide=${wide}`)).status,200);
     assert.equal((await fetch(`${origin}/api/evidence/map?layout=first/bottom-right`)).status,200);
     assert.equal((await fetch(`${origin}/lounge-tables.js`)).status,200);
@@ -251,6 +252,10 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
       assert.equal(photo.status,200);assert.equal(photo.headers.get('content-type'),'image/jpeg');
     }
     assert.equal((await fetch(`${origin}/private-lounge-objects.js`)).status,200);
+    const painting=await fetch(`${origin}/shared/assets/artwork/three-saudi-men-teal.png`);
+    assert.equal(painting.status,200);assert.equal(painting.headers.get('content-type'),'image/png');
+    assert.deepEqual([...new Uint8Array(await painting.arrayBuffer()).slice(0,8)],[137,80,78,71,13,10,26,10]);
+    assert.equal((await fetch(`${origin}/room-mirror.js`)).status,200);
     assert.equal((await fetch(`${origin}/editor-ui.js`)).status,200);
     for(const group of ['g39','g40']){
       assert.ok(listing.blocks.some(b=>b.key===`first/${group}`));
@@ -259,7 +264,7 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     }
     const privateRow=await(await fetch(`${origin}/api/block?layout=first/private-lounges`)).json();validateBlock(privateRow.block);
     assert.equal(privateRow.block.objects.flatMap(o=>o.seats).length,12);
-    assert.equal(privateRow.block.objects.length,20);
+    assert.equal(privateRow.block.objects.filter(item=>item.type!=='tissue-box').length,20);
     assert.equal((await fetch(`${origin}/api/block?layout=first/private-lounges`,{method:'PUT',body:'{}'})).status,405);
     for(const slug of ['g18','g20','g21','g27','g28','g61','g62']){
       assert.ok(listing.blocks.some(b=>b.key===`ground/${slug}`));
@@ -433,7 +438,7 @@ test('G22, G21 and G2 join in owner order with one arch per seam and a continuou
     const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
     for(const z of [-8.5,-7.2,-5.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-46.8,.7,z),new THREE.Vector3(1,0,0),0,25.7).intersectObject(shell,true).length,0,'Walking route must connect G22 through G21 into G2');
     if(!cutaway)for(const x of [-44.18,-36.78,-29.38])assert.ok(new THREE.Raycaster(new THREE.Vector3(x-1,3.8,-7.2),new THREE.Vector3(1,0,0),0,2).intersectObject(shell,true).length,'All new connections have overhead arch surrounds');
-    shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+    shell.traverse(n=>{n.geometry?.dispose();for(const material of (Array.isArray(n.material)?n.material:[n.material]))material?.dispose();});
   }
 });
 
@@ -482,7 +487,7 @@ test('G12/G14 fills both G21/G22 bays and connects its C19 end to Zone C without
     assert.equal(cast([-25.5,.7,4.5],[0,0,-1],4).length,0,'Existing Zone C approach arch must remain open');
     assert.equal(cast([-36.78,.7,4.5],[0,0,-1],4).length,0,'Central lounge frontage arch must remain open');
     assert.ok(cast([-30.5,.7,0],[1,0,0],2).length,'Decorative C19 end backing stays closed beside Zone C');
-    shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+    shell.traverse(n=>{n.geometry?.dispose();for(const material of (Array.isArray(n.material)?n.material:[n.material]))material?.dispose();});
   }
 });
 
@@ -504,7 +509,7 @@ test('G27 G69/G63 end joins G22 G56/G62 with matching shell dimensions and one s
     const shell=buildArchitecture(block.architecture,{cutaway});shell.updateMatrixWorld(true);
     for(const z of [-8.5,-7.2,-5.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-56.4,.7,z),new THREE.Vector3(1,0,0),0,34).intersectObject(shell,true).length,0,'Route must continue from G27 through G22/G21 into G2');
     if(!cutaway)assert.ok(new THREE.Raycaster(new THREE.Vector3(-44.7,3.8,-7.2),new THREE.Vector3(1,0,0),0,1).intersectObject(shell,true).length,'Shared arch must retain its overhead surround');
-    shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+    shell.traverse(n=>{n.geometry?.dispose();for(const material of (Array.isArray(n.material)?n.material:[n.material]))material?.dispose();});
   }
 });
 
@@ -521,7 +526,7 @@ test('G28 G84/G76 end joins G27 with aligned floors and a clear single arch',asy
   const shell=buildArchitecture(block.architecture);shell.updateMatrixWorld(true);
   for(const z of [-8.5,-7.2,-5.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-64,.7,z),new THREE.Vector3(1,0,0),0,41).intersectObject(shell,true).length,0);
   assert.ok(new THREE.Raycaster(new THREE.Vector3(-54.2,3.8,-7.2),new THREE.Vector3(1,0,0),0,1).intersectObject(shell,true).length);
-  shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+  shell.traverse(n=>{n.geometry?.dispose();for(const material of (Array.isArray(n.material)?n.material:[n.material]))material?.dispose();});
 });
 
 test('G29 joins the G28 end through one clear arch and uses dark flooring',async()=>{
@@ -538,7 +543,7 @@ test('G29 joins the G28 end through one clear arch and uses dark flooring',async
   const shell=buildArchitecture(block.architecture);shell.updateMatrixWorld(true);
   for(const z of [-8.5,-7.2,-5.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-61.9,.7,z),new THREE.Vector3(1,0,0),0,2).intersectObject(shell,true).length,0);
   for(const z of [-10.5,-3.9])assert.equal(new THREE.Raycaster(new THREE.Vector3(-61.9,.7,z),new THREE.Vector3(1,0,0),0,2).intersectObject(shell,true).length,0,'Full-width arch must stay clear across the matching bays');
-  shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+  shell.traverse(n=>{n.geometry?.dispose();for(const material of (Array.isArray(n.material)?n.material:[n.material]))material?.dispose();});
 });
 
 test('Shared G3/G24/G25 fits in front of G9/G10 and keeps the front corridor and dining entrances open',async()=>{
@@ -561,7 +566,7 @@ test('Shared G3/G24/G25 fits in front of G9/G10 and keeps the front corridor and
     assert.equal(new THREE.Raycaster(new THREE.Vector3(-20,.7,4.3),new THREE.Vector3(1,0,0),0,21).intersectObject(shell,true).length,0,'Existing front corridor must stay continuous');
     for(const x of [-8.43,-3.13])assert.equal(new THREE.Raycaster(new THREE.Vector3(x,.7,4.3),new THREE.Vector3(0,0,1),0,2.5).intersectObject(shell,true).length,0,'Dining entry must connect across the floor seam');
     assert.equal(new THREE.Raycaster(new THREE.Vector3(-14,.7,20.2),new THREE.Vector3(1,0,0),0,15).intersectObject(shell,true).length,0,'TV-side path must remain clear from I-zone extension to closed north end');
-    shell.traverse(n=>{n.geometry?.dispose();n.material?.dispose();});
+    shell.traverse(n=>{n.geometry?.dispose();for(const material of (Array.isArray(n.material)?n.material:[n.material]))material?.dispose();});
   }
 });
 

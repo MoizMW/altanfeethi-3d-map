@@ -30,3 +30,34 @@ test('custom-object transform normalization preserves authored scale',()=>{
   const restored=model.scale.toArray().map((value,i)=>value/(mirror.size[i]/reference[i]));
   restored.forEach((value,i)=>assert.ok(Math.abs(value-mirror.scale[i])<1e-8));
 });
+
+test('all library configurations create valid independent placements with fresh local IDs',async()=>{
+  const {collectObjectLibrary}=await import('../scripts/build-object-library.mjs');
+  const {createAssetPlacement,removeAsset}=await import('./editor-ui.js');
+  const {validateBlock}=await import('../shared/schema/block-schema.js');
+  const library=await collectObjectLibrary();
+  const block={format:'altanfeethi-spatial-block',version:1,id:'test-room',floor:'ground',floorSize:[10,10],ceilingHeight:4,architecture:{floorCenter:[2,3]},objects:[]};
+  for(const asset of library.assets)for(const config of asset.configurations){
+    const before=JSON.stringify(config),token=String(block.objects.length).padStart(16,'0');
+    const object=createAssetPlacement(block,asset,config,token);
+    assert.deepEqual(object.position,[2,object.type==='tv'?Math.max(0,Math.min(1.4,(block.ceilingHeight??4.1)-object.size[1]*(object.scale?.[1]??1)-.15)):0,3]);assert.deepEqual(object.cameras,[]);
+    assert.ok(object.id.startsWith('test-room-'));assert.equal(object.externalId,undefined);
+    assert.equal(object.sourceBlock,undefined);assert.equal(JSON.stringify(config),before);
+    block.objects.push(object);validateBlock(block);
+  }
+  const object=block.objects[0],before=JSON.stringify(block),next=removeAsset(block,object.id);
+  assert.equal(next.objects.length,block.objects.length-1);assert.equal(JSON.stringify(block),before);
+  assert.throws(()=>removeAsset(block,'missing'),/Select an asset/);
+  assert.throws(()=>removeAsset({...block,readOnly:true},object.id),/source room/);
+  assert.throws(()=>createAssetPlacement({...block,readOnly:true},library.assets[0],library.assets[0].configurations[0],'new'),/source room/);
+  assert.throws(()=>createAssetPlacement(block,library.assets[0],library.assets[0].configurations[0],'0000000000000000'),/already exists/);
+});
+
+ test('new TVs start raised and fit beneath the room ceiling',async()=>{
+  const {createAssetPlacement}=await import('./editor-ui.js');
+  const config={preview:{type:'tv',size:[1.55,.9,.08],scale:[1,1,1]}};
+  const block={id:'test-room',objects:[],ceilingHeight:2.2,architecture:{floorCenter:[2,3]}};
+  const tv=createAssetPlacement(block,{name:'TV'},config,'tv');
+  assert.ok(tv.position[1]>0);assert.ok(tv.position[1]+tv.size[1]<block.ceilingHeight);
+  assert.deepEqual([tv.position[0],tv.position[2]],[2,3]);
+ });

@@ -11,7 +11,7 @@ const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence
 const block={...m,architecture:a,placement:a.placement,floorSize:a.floorSize,ceilingHeight:a.ceilingHeight,objects:o.objects,evidence:e};
 
 test('G42 retains four chairs and two distinct table identities from original first-floor evidence',async()=>{
-  validateBlock(block);assert.equal(block.floor,'first');assert.equal(block.objects.length,6);
+  validateBlock(block);assert.equal(block.floor,'first');assert.equal(block.objects.filter(item=>item.type!=='tissue-box').length,6);
   const seats=new Set(),tables=new Set(),registration=await read('evidence/registration/camera-placements.json');
   for(const camera of e.cameras){
     for(const [kind,labels] of [['chairs',seats],['tables',tables]])for(const label of Object.keys(await read(e.rois[camera][kind])))labels.add(label);

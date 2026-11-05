@@ -18,7 +18,7 @@ test('G45 reconciles H15/H16 into seven unique chairs and five tables, excluding
   }
   assert.deepEqual(o.objects.flatMap(x=>x.seats).sort(),[...seats].sort());
   assert.deepEqual(o.objects.filter(x=>x.externalId).map(x=>x.externalId).sort(),[...tables].sort());
-  assert.equal(seats.size,7);assert.equal(tables.size,5);assert.equal(o.objects.length,14);
+  assert.equal(seats.size,7);assert.equal(tables.size,5);assert.equal(o.objects.filter(item=>item.type!=='tissue-box').length,14);
   assert.ok(!o.objects.some(x=>['sofa','counter','office-chair'].includes(x.type)));
   assert.deepEqual(e.cameras,['H15','H16']);assert.ok(!e.snapshots.H45);
   assert.equal(e.excludedAssociations[0].camera,'H45');
@@ -33,7 +33,7 @@ test('G45 reconciles H15/H16 into seven unique chairs and five tables, excluding
 test('G45 facing chair rows and privacy screens preserve the central dark aisle',()=>{
   assert.equal(o.objects.filter(x=>x.type==='armchair'&&x.position[0]<0).length,3);
   assert.equal(o.objects.filter(x=>x.type==='armchair'&&x.position[0]>0).length,4);
-  const bounds=o.objects.map(x=>{
+  const bounds=o.objects.filter(x=>x.type!=='tissue-box').map(x=>{
     const r=x.yaw*Math.PI/180,w=(Math.abs(Math.cos(r))*x.size[0]+Math.abs(Math.sin(r))*x.size[2])/2;
     const d=(Math.abs(Math.sin(r))*x.size[0]+Math.abs(Math.cos(r))*x.size[2])/2;
     const b={id:x.id,minX:x.position[0]-w,maxX:x.position[0]+w,minZ:x.position[2]-d,maxZ:x.position[2]+d};

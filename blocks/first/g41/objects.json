@@ -37,69 +37,6 @@
       "notes": "H23 is nearer the reeded entrance; H22 is nearer the rear mirror wall. Slot order provisional."
     },
     {
-      "id": "g41-chair-21",
-      "type": "armchair",
-      "name": "Rear blue tub chair · H21",
-      "position": [
-        0.05,
-        0,
-        -1.55
-      ],
-      "yaw": 0,
-      "size": [
-        0.88,
-        0.9,
-        0.92
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "color": "#627d86",
-      "seats": [
-        "Seat_H21"
-      ],
-      "cameras": [
-        "H14"
-      ],
-      "confidence": "Cross-view identity; local dimensions, position and yaw are visual estimates pending owner review.",
-      "variant": "tub-chair",
-      "notes": "Rounded upholstered back and four short dark legs, facing the table."
-    },
-    {
-      "id": "g41-chair-24",
-      "type": "armchair",
-      "name": "Entrance blue tub chair · H24",
-      "position": [
-        0.05,
-        0,
-        1.55
-      ],
-      "yaw": 180,
-      "size": [
-        0.88,
-        0.9,
-        0.92
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "color": "#627d86",
-      "seats": [
-        "Seat_H24"
-      ],
-      "cameras": [
-        "H14",
-        "H12"
-      ],
-      "confidence": "Cross-view identity; local dimensions, position and yaw are visual estimates pending owner review.",
-      "variant": "tub-chair",
-      "notes": "H12 ROI identifies the entrance-side chair; H14 foreground shows its reverse side."
-    },
-    {
       "id": "g41-coffee-table-5",
       "type": "table",
       "name": "Organic nested stone table · H5",
@@ -132,7 +69,7 @@
     },
     {
       "id": "g41-tv",
-      "type": "display",
+      "type": "tv",
       "name": "Wall-mounted television",
       "position": [
         1.7,
@@ -190,34 +127,111 @@
       "notes": "Approximate oval reflective insert; static metallic material, not a live reflected scene."
     },
     {
-      "id": "g41-flag-stand",
       "type": "wall-panel",
-      "name": "Green flag on chrome floor stand",
-      "position": [
-        -1.1,
-        0,
-        -1.89
-      ],
-      "yaw": 0,
+      "variant": "standing-flag",
+      "flagDesign": "saudi",
       "size": [
-        0.6,
-        2.05,
-        0.36
+        0.62,
+        2.65,
+        0.4
       ],
       "scale": [
         1,
         1,
         1
       ],
-      "color": "#155b47",
+      "color": "#005430",
+      "id": "first-h-private-lounge-041-198dc4f423a44f27",
+      "name": "Wall Panel · Standing Flag · Saudi",
+      "position": [
+        -1.0824898244125503,
+        0,
+        -1.6897625904792282
+      ],
+      "yaw": 0,
+      "seats": [],
+      "cameras": [],
+      "confidence": "Manually added from shared library; placement and seat IDs pending review."
+    },
+    {
+      "type": "armchair",
+      "variant": "default",
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3d4a55",
+      "id": "first-h-private-lounge-041-bf1f873e0b6d4a81",
+      "name": "Armchair",
+      "position": [
+        0,
+        0,
+        -1.548
+      ],
+      "yaw": 0,
+      "seats": [
+        "Seat_H21"
+      ],
+      "cameras": [],
+      "confidence": "Manually added from shared library; placement and seat IDs pending review."
+    },
+    {
+      "type": "armchair",
+      "variant": "default",
+      "size": [
+        0.88,
+        0.9,
+        0.92
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#3d4a55",
+      "id": "first-h-private-lounge-041-44a96d14cd654357",
+      "name": "Armchair",
+      "position": [
+        0,
+        0,
+        1.4403666276239546
+      ],
+      "yaw": 180,
+      "seats": [
+        "Seat_H24"
+      ],
+      "cameras": [],
+      "confidence": "Manually added from shared library; placement and seat IDs pending review."
+    },
+    {
+      "id": "g41-coffee-table-5-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -0.09179487179487177,
+        0.455,
+        -0.10000000000000003
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.20705128205128204
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
       "seats": [],
       "cameras": [
         "H14",
         "H12"
       ],
-      "confidence": "Cross-view identity; local dimensions, position and yaw are visual estimates pending owner review.",
-      "variant": "standing-flag",
-      "notes": "Green fabric, pole, finial and round floor base seen in both directions. Exact emblem, lettering and fabric folds are omitted."
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

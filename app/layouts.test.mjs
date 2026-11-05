@@ -282,3 +282,55 @@ test('I-zone patterned backing owns the dining seam without a plain overlapping 
   for(let i=1;i<spans.length;i++)assert.ok(Math.abs(spans[i][0]-spans[i-1][1])<1e-8,'Patterned wall segments must meet without overlaps or gaps');
   assert.ok(spans.at(-1)[1]>=1.42);
 });
+
+test('dining shared wall presents a plain white face to G15 and blue cladding to dining',async()=>{
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  const wall=block.architecture.walls.find(w=>w.id==='g3-g24-g25-south-blue-left');
+  assert.equal(wall.plainSide,1);assert.equal(wall.plainColor,'#f0efeb');
+  assert.ok(!block.architecture.walls.some(w=>w.id==='g15-office-rear'));
+  const model=buildArchitecture({walls:[wall]});
+  let count=0;
+  model.traverse(node=>{if(node.name==='Glossy blue glass cladding'){
+    count++;assert.equal(node.material[4].color.getHexString(),'f0efeb');
+    assert.equal(node.material[5].color.getHexString(),'245968');
+  }});
+  assert.ok(count>0);
+  const source=(await load('ground/g3-g24-g25')).block.architecture.walls.find(w=>w.id===wall.id);
+  assert.equal(source.plainColor,undefined);
+});
+
+test('I extension glazing matches G62 and wood ornaments face seats 04/13/14',async()=>{
+  const source=(await load('ground/i-map-extension')).block;
+  const glass=source.architecture.walls.find(w=>w.id==='i-extension-outer-side');
+  const reference=(await load('ground/g62')).block.architecture.walls.find(w=>w.kind==='glass');
+  for(const field of ['kind','color','frameColor','privacyBand','thickness','height'])assert.equal(glass[field],reference[field]);
+  const wood=source.architecture.walls.find(w=>w.id==='i-extension-outer-end');
+  assert.equal(wood.finish,'i-zone-wood-panels');assert.equal(wood.interiorSide,-1);
+  assert.equal(wood.decorativeDiscs.length,2);
+  const model=buildArchitecture({walls:[wood]});let artifacts=0;
+  model.traverse(node=>{if(node.name==='Sculptural wall artifact'){artifacts++;assert.ok(node.position.z<0);}});
+  assert.equal(artifacts,6);
+  const {block}=await composeLayout(root,'ground/i-zone-extension',load);
+  assert.equal(block.architecture.walls.find(w=>w.id===glass.id).kind,'glass');
+  for(const o of source.objects)assert.ok(block.objects.some(x=>x.id===o.id));
+});
+
+test('I extension brown wall has a plain white exterior toward G13',async()=>{
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  const wall=block.architecture.walls.find(w=>w.id==='i-extension-outer-end');
+  assert.equal(wall.plainSide,1);assert.equal(wall.plainColor,'#f0efeb');assert.equal(wall.interiorSide,-1);
+  const model=buildArchitecture({walls:[wall]});const face=model.getObjectByName('Plain exterior wall face');
+  assert.ok(face);assert.equal(face.material.color.getHexString(),'f0efeb');assert.ok(face.position.z>wall.thickness/2);
+  const artifacts=[];model.traverse(n=>{if(n.name==='Sculptural wall artifact')artifacts.push(n);});
+  assert.equal(artifacts.length,6);assert.ok(artifacts.every(n=>n.position.z<0));
+});
+
+test('shared G15 wall retains G63 rear cladding on the G63-facing side only',async()=>{
+  const {block}=await composeLayout(root,'ground/b-g-lounges',load);
+  const wall=block.architecture.walls.find(w=>w.id==='g15-solid-side');
+  assert.deepEqual(wall.facePanels,[{side:-1,start:.7,end:4.4,color:'#c6bda8',finish:'i-zone-wood-panels'}]);
+  assert.ok(!block.architecture.walls.some(w=>w.id==='g63-left-cladding'));
+  const model=buildArchitecture({walls:[wall]});const cladding=model.getObjectByName('Shared wall room cladding');
+  assert.ok(cladding);assert.ok(cladding.position.z<0);assert.ok(Math.abs(cladding.geometry.parameters.width-3.7)<1e-8);
+  assert.equal((await load('ground/g15')).block.architecture.walls.find(w=>w.id===wall.id).facePanels,undefined);
+});

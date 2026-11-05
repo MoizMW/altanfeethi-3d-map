@@ -1007,6 +1007,166 @@
         "E3"
       ],
       "confidence": "Cross-view identity supported by normal ROIs; position, dimensions and yaw estimated"
+    },
+    {
+      "id": "g12-g14-table-22-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        1.05,
+        0.455,
+        -5.35
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "C12",
+        "C24",
+        "F18"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g12-g14-table-23-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        1.05,
+        0.455,
+        0
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "E3",
+        "F18"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g12-g14-table-24-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        1.05,
+        0.455,
+        5.35
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g12-g14-table-25-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.65,
+        0.455,
+        -5.43
+      ],
+      "size": [
+        0.136,
+        0.24,
+        0.1482051282051282
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "C12",
+        "C22",
+        "C24",
+        "F18"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g12-g14-table-26-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.65,
+        0.455,
+        -0.08
+      ],
+      "size": [
+        0.136,
+        0.24,
+        0.1482051282051282
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "F18"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g12-g14-table-27-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.65,
+        0.455,
+        5.27
+      ],
+      "size": [
+        0.136,
+        0.24,
+        0.1482051282051282
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "C22",
+        "C23",
+        "C25",
+        "C26",
+        "E3"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {receptionBrand} from './reception-objects.js';
 
 export const securitySizes = {
   'security-scanner': [1.15, 1.5, 4.6],
@@ -58,6 +59,9 @@ export function buildSecurityObject(g, o, {box, mesh, rod, mat}) {
       const panel=new THREE.Group();panel.position.set(x,1.45,0);panel.rotation.y=-Math.sign(x)*.12;g.add(panel);
       box(panel, [.53, .38, .045], [0, 0, 0], dark, .012);
       box(panel, [.485, .33, .008], [0, 0, .027], mat(o.color, .4), .004).name='Screen face';
+      const scaleX=(o.size?.[0]??1.1)/1.1,scaleY=(o.size?.[1]??1.65)/1.65;
+      const aspect=400/289.62,logoHeight=Math.min(.33*scaleY*.78,.485*scaleX*.78/aspect);
+      mesh(panel,new THREE.PlaneGeometry(logoHeight*aspect/scaleX,logoHeight/scaleY),new THREE.MeshBasicMaterial({map:receptionBrand(),transparent:true,depthWrite:false}),[0,0,.032]).name='Security screen · Altanfeethi bilingual identity';
     }
     box(g, [.62, .035, .27], [0, 1.02, .10], dark, .006);
     box(g, [.42, .018, .15], [-.06, 1.045, .13], mat('#586467'), .004);

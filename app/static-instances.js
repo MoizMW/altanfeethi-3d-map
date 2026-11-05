@@ -88,6 +88,8 @@ export function buildStaticInstances(root,models) {
 export function createObjectCache(build) {
   const templates=new Map();
   return object=>{
+    // A mirror's render callback and capture must belong to its physical placement.
+    if(object.variant==='oval-mirror')return build(object);
     const {id,name,seats,position,yaw,scale,confidence,sourceBlock,externalId,...appearance}=object;
     // Portrait fallback derives its source image from the saved object ID.
     const key=JSON.stringify({...appearance,portraitFallback:id.match(/portrait-([123])$/)?.[1]});

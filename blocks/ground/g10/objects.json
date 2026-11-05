@@ -469,7 +469,7 @@
     },
     {
       "id": "g10-tv-01",
-      "type": "display",
+      "type": "tv",
       "name": "Wall-mounted TV",
       "position": [
         3.14,
@@ -495,6 +495,56 @@
       ],
       "confidence": "Visible TV/console context; dimensions and local placement estimated",
       "mount": "wall"
+    },
+    {
+      "id": "g10-table-01-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2,
+        0.455,
+        -0.1
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g10-table-02-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2,
+        0.455,
+        -0.1
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

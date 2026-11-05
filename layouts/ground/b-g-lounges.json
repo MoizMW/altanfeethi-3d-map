@@ -697,7 +697,17 @@
           0,
           0
         ],
+        "g22-coffee-table-15-tissue-box": [
+          0.3,
+          0,
+          0
+        ],
         "g22-coffee-table-16": [
+          0.3,
+          0,
+          0
+        ],
+        "g22-coffee-table-16-tissue-box": [
           0.3,
           0,
           0
@@ -707,7 +717,17 @@
           0,
           0
         ],
+        "g22-coffee-table-17-tissue-box": [
+          -0.3,
+          0,
+          0
+        ],
         "g22-coffee-table-18": [
+          -0.3,
+          0,
+          0
+        ],
+        "g22-coffee-table-18-tissue-box": [
           -0.3,
           0,
           0
@@ -1000,6 +1020,9 @@
       ],
       "yaw": -90,
       "architectureOverrides": {
+        "wallPlainFaces": {
+          "g3-g24-g25-south-blue-left": {"side": 1, "color": "#f0efeb"}
+        },
         "floorSize": [
           15.6,
           14.8
@@ -1313,6 +1336,9 @@
       ],
       "yaw": 180,
       "architectureOverrides": {
+        "wallFacePanels": {
+          "g15-solid-side": [{"side": -1, "start": 0.7, "end": 4.4, "color": "#c6bda8", "finish": "i-zone-wood-panels"}]
+        },
         "floorSections": [
           {
             "id": "g15-checkpoint-floor",
@@ -1830,7 +1856,7 @@
   "registrationRevision": "2026-11-01T10:33:43.748Z",
   "notes": [
     "C10 end correction is now authored once in G13 source: widened dark floor, white return and broad patterned frosted entrance. Main-only narrow clear door, duplicate floor strip and wall/floor overrides removed. Individual G15/G13 and main layout share the source geometry.",
-    "Shared dining/office wall correction: dining south blue wall owns the common X=-13.38 boundary. Exclude duplicate white g15-office-rear in this composition so it cannot cover the blue cladding; standalone G15 enclosure retained.",
+    "Shared dining/office wall correction: dining south wall owns the common X=-13.38 boundary, with blue cladding toward dining and a plain white face toward G15. Exclude duplicate g15-office-rear; standalone G15 enclosure retained.",
     "Owner map-fit correction: G15/G13 moves right 7.15 m in global X to assembly position [-24.18,0,10.1], retaining yaw 180. Full checkpoint-plus-offices frontage now matches G11 + Zone C pods exactly: X=-29.38..-13.38 (16 m). Offices sit directly in front of G11 and below I extension, between main corridor Z=5.6 and extension Z=15.1. Only composed office shell is fitted: outer local X=-10.8 and passport end Z=-5; its door offset and room/floor footprints follow that boundary. Source objects and standalone G15/G13 remain unchanged. Reviewed ground map with C1/C2, C8/C15/C16 and C13 camera registrations; absolute dimensions remain estimated. Composed connector floor ends at the I-extension edge X=-20.33 and meets the passport-control floor at Z=17.1, avoiding duplicate floor slabs.",
     "Owner alignment correction: trim entire passage floor to office end X=23.2 and move the opposite dining-wall proxy to the same X. In main layout shift the whole departure assembly 3 m toward G9, preserving reception/SGS/passage joins and eliminating the office gap.",
     "Owner adds completed I zone and L extension. B13 shows the end passage beside the buffet and behind B44 on the piano-side (+Z) wall, not the separate small north-wall gap. Apply one rigid transform to the accepted I assembly: yaw -90 degrees, translation [4.32,0,22.7]. Extension inner wall Z=17.7 meets dining +Z=7.4 at global X=-13.38; dining TV-side end opening spans global Z=18.7..21.2. Dining owns the common wall; omit both duplicate extension inner-wall segments so the 2.5 m end passage stays clear. All source furniture poses and individual previews retained.",

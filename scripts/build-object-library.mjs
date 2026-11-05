@@ -7,10 +7,10 @@ const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 const categories = ['Seating', 'Tables & consoles', 'Decor & fixtures', 'Reception & equipment'];
 const designFields = ['type', 'variant', 'shape', 'mount', 'flagDesign', 'serviceStyle'];
 const appearanceFields = ['size', 'scale', 'color', 'shellColor', 'cushionColor', 'pillow', 'accessories', 'workstations',
-  'openFraction', 'leafCount', 'hingeSide', 'omitLeftPartition', 'omitRightPartition', 'beltClosed', 'screenScale', 'constructionCover', 'frameStyle'];
+  'openFraction', 'leafCount', 'hingeSide', 'omitLeftPartition', 'omitRightPartition', 'beltClosed', 'screenScale', 'constructionCover', 'frameStyle', 'detailLevel'];
 const select = (object, fields) => Object.fromEntries(fields.filter(key => object[key] !== undefined).map(key => [key, object[key]]));
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex').slice(0, 12);
-const title = value => value.replaceAll('-', ' ').replace(/\b\w/g, c => c.toUpperCase());
+const title = value => value === 'tv' ? 'TV' : value.replaceAll('-', ' ').replace(/\b\w/g, c => c.toUpperCase());
 
 export function objectDesign(object) {
   return {type: object.type, variant: object.variant || 'default', ...select(object, designFields.slice(2))};
@@ -19,7 +19,7 @@ export function objectDesign(object) {
 export function categoryFor(type) {
   if (['armchair', 'sofa', 'office-chair', 'privacy-pod'].includes(type)) return 'Seating';
   if (['table', 'display-console'].includes(type)) return 'Tables & consoles';
-  if (['plant', 'floor-lamp', 'screen', 'display', 'wall-panel'].includes(type)) return 'Decor & fixtures';
+  if (['plant', 'floor-lamp', 'screen', 'display', 'tissue-box', 'tv', 'wall-panel'].includes(type)) return 'Decor & fixtures';
   return 'Reception & equipment';
 }
 

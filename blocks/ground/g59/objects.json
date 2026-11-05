@@ -69,6 +69,30 @@
       "seats": [],
       "cameras": ["I24"],
       "confidence": "Ribbed/slatted partition visible behind I11/I12; existing grooved panel is an opaque approximation with estimated height and width."
+    },
+    {
+      "id": "g59-coffee-table-01-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.003333333333333341,
+        0.46583333333333327,
+        0.02
+      ],
+      "size": [
+        0.1756666666666667,
+        0.2457142857142857,
+        0.1743589743589744
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "I13",
+        "I24"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

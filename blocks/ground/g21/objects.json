@@ -686,6 +686,102 @@
       ],
       "confidence": "visual correspondence; positions, orientations and dimensions estimated; needs human review",
       "notes": "Separate dark pot visible beside the near arch in G2; correspondence/extent require review. Shared pale pot and foliage are schematic."
+    },
+    {
+      "id": "g21-coffee-table-11-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2.35,
+        0.455,
+        -1.7999999999999998
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 270,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G2",
+        "G5"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g21-coffee-table-12-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2.35,
+        0.455,
+        1.85
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 270,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G4",
+        "G5"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g21-coffee-table-13-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.45,
+        0.455,
+        -1.7999999999999998
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 270,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G1",
+        "G2"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g21-coffee-table-14-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.45,
+        0.455,
+        2
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 270,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G1",
+        "G4"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

@@ -668,7 +668,7 @@
       "name": "Framed royal portrait 1",
       "position": [
         -0.64,
-        2.95,
+        2.537319895534636,
         -4.18
       ],
       "yaw": 0,
@@ -699,7 +699,7 @@
       "name": "Framed royal portrait 2",
       "position": [
         0,
-        2.95,
+        2.531721126136195,
         -4.18
       ],
       "yaw": 0,
@@ -730,7 +730,7 @@
       "name": "Framed royal portrait 3",
       "position": [
         0.64,
-        2.95,
+        2.536894224176228,
         -4.18
       ],
       "yaw": 0,
@@ -754,6 +754,161 @@
       "confidence": "Observed across normal/wide camera views; local pose and dimensions estimated",
       "variant": "reception-portrait",
       "mount": "wall"
+    },
+    {
+      "id": "g63-coffee-table-01-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0,
+        0.49559523809523814,
+        -2.55
+      ],
+      "size": [
+        0.11786666666666668,
+        0.2628571428571429,
+        0.22666666666666668
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g63-coffee-table-02-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -1.85,
+        0.49559523809523814,
+        -0.85
+      ],
+      "size": [
+        0.11786666666666668,
+        0.2628571428571429,
+        0.22666666666666668
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g63-coffee-table-03-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -1.85,
+        0.49559523809523814,
+        1.45
+      ],
+      "size": [
+        0.11786666666666668,
+        0.2628571428571429,
+        0.22666666666666668
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g63-coffee-table-04-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        1.85,
+        0.49559523809523814,
+        -0.85
+      ],
+      "size": [
+        0.11786666666666668,
+        0.2628571428571429,
+        0.22666666666666668
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g63-coffee-table-05-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        1.85,
+        0.49559523809523814,
+        1.45
+      ],
+      "size": [
+        0.11786666666666668,
+        0.2628571428571429,
+        0.22666666666666668
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "I29",
+        "I30",
+        "I31",
+        "I32",
+        "I34"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

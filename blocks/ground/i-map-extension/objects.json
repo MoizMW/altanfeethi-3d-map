@@ -420,6 +420,111 @@
       "seats": [],
       "cameras": [],
       "confidence": "One table per pair as drawn on the map; glass/brass style reused from adjacent I-zone, not photographically confirmed"
+    },
+    {
+      "id": "i-extension-table-1-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        4.8791808871630975,
+        0.46583333333333327,
+        20.122117929832662
+      ],
+      "size": [
+        0.136,
+        0.2457142857142857,
+        0.15256410256410255
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "i-extension-table-2-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        3.615722231235698,
+        0.46583333333333327,
+        23.21564188998983
+      ],
+      "size": [
+        0.13599999999999998,
+        0.2457142857142857,
+        0.15256410256410255
+      ],
+      "scale": [1, 1, 1],
+      "yaw": -87.65760792693466,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "i-extension-table-3-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -5.424095154016638,
+        0.46583333333333327,
+        20.124315603164515
+      ],
+      "size": [
+        0.136,
+        0.2457142857142857,
+        0.15256410256410255
+      ],
+      "scale": [1, 1, 1],
+      "yaw": -88.80889516506349,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "i-extension-table-4-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -5.235500562784232,
+        0.46583333333333327,
+        22.927061343757234
+      ],
+      "size": [
+        0.136,
+        0.2457142857142857,
+        0.15256410256410255
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 86.57056369310472,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "i-extension-table-5-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -1.1349894243863432,
+        0.46583333333333327,
+        23.14829211966766
+      ],
+      "size": [
+        0.136,
+        0.2457142857142857,
+        0.15256410256410258
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 88.37820195687473,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

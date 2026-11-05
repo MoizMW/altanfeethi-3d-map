@@ -184,6 +184,52 @@
         "H18"
       ],
       "confidence": "ROI identity; paired-chair correspondence and dimensions provisional; brass pedestal and pale round top visible"
+    },
+    {
+      "id": "g42-table-9-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.35,
+        0.517142857142857,
+        -2.075
+      ],
+      "size": [
+        0.0816,
+        0.27428571428571424,
+        0.15692307692307692
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "H19"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g42-table-8-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.35,
+        0.517142857142857,
+        2.075
+      ],
+      "size": [
+        0.0816,
+        0.27428571428571424,
+        0.15692307692307692
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "H18"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

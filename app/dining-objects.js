@@ -1,9 +1,70 @@
 import * as THREE from 'three';
 
 // Opt-in variants use the existing counter/display-console size contracts.
-export function buildDiningObject(g,o,{box,mesh,rod,mat}) {
+export function buildDiningObject(g,o,{box,mesh,rod,mat,referenceSize}) {
   const parent=g;g=new THREE.Group();parent.add(g);
-  if(o.variant==='food-buffet') {
+  if(['dining-palm','dining-dracaena','dining-topiary'].includes(o.variant)){
+    const [w,h,d]=referenceSize[o.type],pot=mat('#eee9dc',.3),soil=mat('#3c3024'),stem=mat('#625443'),leaf=mat(o.color,.62);
+    mesh(g,new THREE.CylinderGeometry(w*.35,w*.26,.38,32),pot,[0,.19,0]);
+    mesh(g,new THREE.CylinderGeometry(w*.32,w*.32,.015,24),soil,[0,.382,0]);
+    if(o.variant==='dining-palm'){
+      for(let i=0;i<9;i++){
+        const a=i*2.4,top=.98+(i%4)*.16,cx=Math.cos(a)*w*.12,cz=Math.sin(a)*d*.12;
+        rod(g,[0,.36,0],[cx,top,cz],.009,stem);
+        const tip=[Math.cos(a)*w*.48,top+.05,Math.sin(a)*d*.48];rod(g,[cx,top,cz],tip,.005,leaf);
+        for(let j=1;j<=8;j++)for(const side of [-1,1]){
+          const t=j/9,x=cx+(tip[0]-cx)*t,z=cz+(tip[2]-cz)*t,y=top+.13*Math.sin(t*Math.PI);
+          const blade=mesh(g,new THREE.SphereGeometry(1,8,6),leaf,[x+side*Math.sin(a)*.035,y-.035,z-side*Math.cos(a)*.035]);blade.scale.set(.018,.13*(1-t*.65),.007);blade.rotation.set(.4,a,side*.65);
+        }
+      }
+    }else{
+      for(let i=0;i<3;i++){
+        const x=(i-1)*w*.16,top=h-.13-i*.20;rod(g,[x,.36,0],[x,top,0],.012,stem);
+        for(let j=0;j<9;j++){
+          const a=j*2.4,y=top-(o.variant==='dining-topiary'?j%3*.035:j%3*.08),r=w*(o.variant==='dining-topiary'?.17:.29);
+          const blade=mesh(g,new THREE.SphereGeometry(1,8,6),leaf,[x+Math.cos(a)*r,y,Math.sin(a)*r]);blade.scale.set(.032,o.variant==='dining-topiary'?.07:.19,.015);blade.rotation.set(.7,a,.55);
+        }
+      }
+    }
+  }else if(o.variant==='dining-menu-stand'){
+    g.scale.set(3.1/.60,.9/1.15,.4/.42);
+    const dark=mat('#303638',.28),paper=mat('#d6d8cd',.7);
+    box(g,[.46,.045,.38],[0,.0225,0],dark,.008);
+    box(g,[.15,1.0,.13],[0,.54,0],dark,.006);
+    const head=new THREE.Group();head.position.y=1.08;head.rotation.x=-.24;g.add(head);
+    box(head,[.60,.045,.42],[0,0,0],dark,.006);
+    box(head,[.45,.004,.29],[0,.026,0],paper,.002);
+    for(let i=0;i<5;i++)box(head,[.31,.003,.009],[0,.030,-.09+i*.04],dark,.001);
+  }else if(o.variant==='dining-lantern-stand'){
+    g.scale.set(3.1/.24,.9/1.7,.4/.24);
+    const brass=mat('#bca16b',.25,.7),stone=mat('#bba986',.65);
+    mesh(g,new THREE.CylinderGeometry(.065,.105,.47,24),stone,[0,.235,0]);
+    for(let i=0;i<18;i++){const a=i/18*Math.PI*2;rod(g,[Math.cos(a)*.098,.03,Math.sin(a)*.098],[Math.cos(a)*.066,.45,Math.sin(a)*.066],.0025,brass);}
+    rod(g,[0,.46,0],[0,1.24,0],.012,brass);
+    mesh(g,new THREE.CylinderGeometry(.115,.115,.018,32),brass,[0,1.17,0]);
+    const glass=mat('#e9eee2',.1);glass.transparent=true;glass.opacity=.22;glass.depthWrite=false;
+    mesh(g,new THREE.CylinderGeometry(.065,.065,.27,24,1,true),glass,[0,1.4,0]);
+    for(const y of [1.26,1.55])mesh(g,new THREE.CylinderGeometry(.075,.075,.018,24),brass,[0,y,0]);
+    mesh(g,new THREE.CylinderGeometry(.026,.026,.15,16),mat('#fff6dc'),[0,1.34,0]);
+    rod(g,[0,1.56,0],[0,1.7,0],.007,brass);
+  }else if(o.variant==='dining-botanical-print'){
+    g.scale.set(.58/.8,.42/1.5,.18/.07);
+    const frame=mat('#282927',.3),paper=mat('#f1eee3'),ink=mat('#264d51'),gold=mat('#ad9867',.32,.5);
+    box(g,[.8,1.5,.035],[0,.75,0],frame,.003);
+    for(const side of [-1,1]){
+      box(g,[.755,1.45,.008],[0,.75,side*.023],paper,.002);
+      box(g,[.40,1.05,.005],[0,.75,side*.03],ink,.001);
+      for(let row=0;row<5;row++)for(let col=0;col<3;col++){
+        const x=-.13+col*.13,y=.35+row*.15;
+        const shape=new THREE.Shape();shape.moveTo(x-.055,y);shape.lineTo(x+.055,y);shape.lineTo(x+(row%2?.055:-.055),y+.13);shape.closePath();
+        mesh(g,new THREE.ShapeGeometry(shape),mat((row+col)%2?'#82998b':'#d4d7bd'),[0,0,side*.035]).material.side=THREE.DoubleSide;
+      }
+      for(let i=0;i<7;i++){
+        const curve=new THREE.EllipseCurve(0,1.04,.04+i*.018,.19,0,Math.PI*2),points=curve.getPoints(48).map(p=>new THREE.Vector3(p.x,p.y,side*.037));
+        const line=new THREE.Line(new THREE.BufferGeometry().setFromPoints(points),new THREE.LineBasicMaterial({color:'#ad9867'}));line.raycast=()=>{};g.add(line);
+      }
+    }
+  }else if(o.variant==='food-buffet') {
     const stone=mat('#eeeade',.24),dark=mat('#232a2b',.25),steel=mat('#aeb6b4',.22,.7);
     const light=mat('#fffde8',.45);light.emissive=new THREE.Color('#fff5ce');light.emissiveIntensity=.8;
     // Two open illuminated front niches, stone uprights and continuous worktop.
@@ -41,7 +102,14 @@ export function buildDiningObject(g,o,{box,mesh,rod,mat}) {
       mesh(g,new THREE.CylinderGeometry(.07,.07,.025,20),steel,[x,1.33,-.13]);
     }
     else {
-      for(const r of [.11,.075]) {const ring=mesh(g,new THREE.TorusGeometry(r,.008,8,40),gold,[.94,1.19,-.24]);ring.rotation.y=.15;}
+      for(const [r,dx] of [[.20,0],[.14,-.07]]) {const ring=mesh(g,new THREE.TorusGeometry(r,.008,8,48),gold,[.91+dx,1.27,-.24]);ring.rotation.y=.15;}
+      box(g,[.36,.025,.14],[.88,1.02,-.24],gold,.004);
+    }
+    if(o.detailLevel==='dining-reviewed'){
+      // Stacked crockery and glasses seen through the illuminated buffet niches.
+      for(const x of [-.94,-.68,.25,.51,.77])for(let k=0;k<4;k++)mesh(g,new THREE.CylinderGeometry(.065,.065,.012,16),stone,[x,.20+k*.015,.18]);
+      for(const x of [-.36,-.18,.10,.92])mesh(g,new THREE.CylinderGeometry(.035,.028,.09,16),stone,[x,.22,.15]);
+      for(let i=0;i<5;i++)mesh(g,new THREE.CylinderGeometry(.024,.024,.11,12),steel,[-.48+i*.07,1.055,.26]);
     }
     // Side refrigerator with dark glazed door, lit interior and handle.
     box(g,[.34,.82,.65],[1.41,.45,-.03],dark,.012);

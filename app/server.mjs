@@ -110,20 +110,21 @@ export const server=createServer(async(req,res)=>{
     }
     if(req.method!=='GET')return send(res,405,{error:'Method not allowed'});
     const relative=decodeURIComponent(url.pathname).slice(1)||'index.html';let target;
-    if(['building.html','building.js','building.css','index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','security-objects.js','passport-objects.js','styles.css','editor.css','lounge-tables.js','lobby-fixtures.js','vertical-circulation.js','dining-objects.js','object-builders.js','private-lounge-objects.js','library.html','library.js','library.css'].includes(relative))target=resolve(appRoot,relative);
+    if(['building.html','building.js','building.css','building-visibility.js','index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','security-objects.js','passport-objects.js','styles.css','editor.css','lounge-tables.js','lobby-fixtures.js','vertical-circulation.js','dining-objects.js','object-builders.js','private-lounge-objects.js','library.html','library.js','library.css'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='cylindrical-display.js'||relative==='editor-ui.js')target=resolve(appRoot,relative);
     else if(['first-floor-reception.js','buffet-objects.js'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='shared/assets/branding/altanfeethi-reception.svg')target=resolve(projectRoot,relative);
     else if(relative==='shared/materials/textures/reception-marble/charcoal-veined.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/materials/textures/window-display/campaign-atlas.png')target=resolve(projectRoot,relative);
     else if(['curved-armchair.js','center-lounge.js','carpet.js'].includes(relative))target=resolve(appRoot,relative);
-    else if(['floors.js','floor-materials.js','floor-reflections.js','render-profile.js','render-loop.js','static-instances.js','contact-shadows.js'].includes(relative))target=resolve(appRoot,relative);
+    else if(['floors.js','floor-materials.js','floor-reflections.js','room-mirror.js','render-profile.js','render-loop.js','static-instances.js','contact-shadows.js'].includes(relative))target=resolve(appRoot,relative);
     else if(/^shared\/materials\/textures\/(dark-stone-floor|pale-stone-floor)\/basecolor\.png$/.test(relative))target=resolve(projectRoot,relative);
     else if(relative==='lounge-sofa.js')target=resolve(appRoot,relative);
     else if(relative==='shared/materials/textures/lounge-pillow/pillow-reference.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/materials/textures/lounge-pillow/pillow-botanical-clean.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/assets/library/inventory.json')target=resolve(projectRoot,relative);
     else if(relative==='shared/schema/block-schema.js')target=resolve(projectRoot,relative);
+    else if(relative==='shared/assets/artwork/three-saudi-men-teal.png')target=resolve(projectRoot,relative);
     else if(relative==='shared/assets/branding/reception-wall.svg')target=resolve(projectRoot,relative);
     else if(/^shared\/assets\/flags\/(saudi|altanfeethi)\.svg$/.test(relative))target=resolve(projectRoot,relative);
     else if(/^shared\/assets\/portraits\/reception-[123]\.png$/.test(relative))target=resolve(projectRoot,relative);

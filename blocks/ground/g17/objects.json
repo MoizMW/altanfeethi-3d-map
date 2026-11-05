@@ -398,6 +398,102 @@
       ],
       "confidence": "Cross-view/ROI correspondence; local position, orientation and dimensions estimated; needs human review",
       "notes": "Simplified foliage and pale planter; the same corner plant is not duplicated across cameras."
+    },
+    {
+      "id": "g17-coffee-table-1-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.417173307182793,
+        0.455,
+        1.9566666666666666
+      ],
+      "size": [
+        0.15866666666666665,
+        0.24,
+        0.15692307692307692
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "E1",
+        "E4"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g17-coffee-table-2-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -2.417215076829644,
+        0.455,
+        -0.19333333333333333
+      ],
+      "size": [
+        0.15866666666666665,
+        0.24,
+        0.15692307692307692
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "E1",
+        "E4"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g17-coffee-table-4-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2.3853524069535337,
+        0.455,
+        -0.18204038145708673
+      ],
+      "size": [
+        0.15866666666666665,
+        0.24,
+        0.15692307692307692
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "E2",
+        "E4"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g17-coffee-table-5-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        2.4756960218409674,
+        0.455,
+        2.0244243779241455
+      ],
+      "size": [
+        0.15866666666666665,
+        0.24,
+        0.15692307692307692
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 90,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "E2",
+        "E4"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

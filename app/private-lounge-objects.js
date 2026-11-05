@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
+import {attachRoomMirror} from './room-mirror.js';
 
 // Opt-in variants reuse existing object types and the shared placement/save contract.
 export const privateLoungeSizes={
@@ -28,24 +29,24 @@ export function buildPrivateLoungeObject(o){
     for(const x of [-.29,.29])for(const z of [-.28,.29])box([.045,.23,.045],[x,.115,z],dark,.008);
   }else if(o.type==='table'&&o.variant==='organic-stone'){
     const stone=material(o.color,{roughness:.28}),outline=new THREE.Shape();
-    outline.moveTo(-.70,-.12);
-    outline.bezierCurveTo(-.85,.05,-.61,.32,-.36,.33);
-    outline.bezierCurveTo(.05,.43,.73,.31,.72,.04);
-    outline.bezierCurveTo(.71,-.28,.40,-.33,.22,-.13);
-    outline.bezierCurveTo(.02,.08,-.37,-.26,-.70,-.12);
-    const top=new THREE.ExtrudeGeometry(outline,{depth:.055,bevelEnabled:true,bevelThickness:.008,bevelSize:.008,bevelSegments:2,curveSegments:32});top.rotateX(-Math.PI/2);
-    add(top,stone,[0,.39,.02]);
+    // Tangent-matched curves give both lobes and the shallow inset a soft edge.
+    outline.moveTo(-.74,0);
+    outline.bezierCurveTo(-.74,.22,-.48,.34,-.20,.34);
+    outline.bezierCurveTo(.08,.34,.38,.34,.57,.23);
+    outline.bezierCurveTo(.76,.12,.79,-.12,.62,-.23);
+    outline.bezierCurveTo(.45,-.34,.26,-.10,.08,-.10);
+    outline.bezierCurveTo(-.10,-.10,-.25,-.30,-.45,-.27);
+    outline.bezierCurveTo(-.65,-.24,-.74,-.22,-.74,0);
+    const top=new THREE.ExtrudeGeometry(outline,{depth:.05,bevelEnabled:true,bevelThickness:.009,bevelSize:.012,bevelSegments:5,curveSegments:64});top.rotateX(-Math.PI/2);
+    add(top,stone,[0,.39,.02]).name='Refined organic stone top';
     for(const x of [-.36,.36])add(new THREE.CylinderGeometry(.17,.17,.39,32),brass,[x,.195,-.02]);
     add(new THREE.CylinderGeometry(.235,.235,.05,48),stone,[-.08,.31,.23]);
     add(new THREE.CylinderGeometry(.18,.18,.285,32),brass,[-.08,.1425,.23]);
-    if(o.accessories!==false){
-      box([.17,.15,.17],[.10,.53,-.10],material('#8a5437'),.012);
-      box([.06,.09,.035],[.10,.64,-.10],material('#f1eee3'),.01);
-    }
+
   }else if(o.type==='wall-panel'&&o.variant==='oval-mirror'){
     const surround=add(new THREE.CylinderGeometry(1,1,.055,64),material(o.color),[0,.6,0]);
     surround.rotation.x=Math.PI/2;surround.scale.set(.4,1,.6);
-    const mirror=add(new THREE.CylinderGeometry(1,1,.008,64),material('#aebfbd',{metalness:.92,roughness:.13}),[0,.6,.033]);
+    const mirror=attachRoomMirror(add(new THREE.CylinderGeometry(1,1,.008,64),material('#ffffff',{metalness:.95,roughness:.06}),[0,.6,.033]));
     mirror.rotation.x=Math.PI/2;mirror.scale.set(.345,1,.535);
   }
   return group;

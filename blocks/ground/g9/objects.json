@@ -178,7 +178,7 @@
     },
     {
       "id": "g9-tv-01",
-      "type": "display",
+      "type": "tv",
       "name": "TV \u00b7 seating wall",
       "position": [
         1.260276923538,
@@ -260,6 +260,30 @@
         "B3"
       ],
       "confidence": "Appearance observed in wide frames; dimensions and local placement estimated"
+    },
+    {
+      "id": "g9-table-01-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -0.7000000000000001,
+        0.455,
+        0
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "B1",
+        "B3"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

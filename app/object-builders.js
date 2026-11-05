@@ -24,7 +24,7 @@ export function buildObject(o){const g=new THREE.Group(),nativeSize=objectRefere
  if(privateLoungeSizes[o.variant])g.add(buildPrivateLoungeObject(o));
  else if(buildBuffetObject(g,o,{box,mesh,rod,mat,referenceSize})){}
  else if(buildCenterLounge(g,o,{box,mesh,rod,mat,referenceSize})){}
- else if((o.type==='counter'&&o.variant==='food-buffet')||(o.type==='display-console'&&o.variant==='grand-piano'))buildDiningObject(g,o,{box,mesh,rod,mat});
+ else if((o.type==='counter'&&o.variant==='food-buffet')||(o.type==='display-console'&&o.variant==='grand-piano')||['dining-palm','dining-dracaena','dining-topiary','dining-lantern-stand','dining-botanical-print','dining-menu-stand'].includes(o.variant))buildDiningObject(g,o,{box,mesh,rod,mat,referenceSize});
  else if(buildLobbyFixture(g,o,{box,mesh,rod,mat,referenceSize,THREE})){}
  else if(buildFirstFloorReceptionObject(g,o,{box,mesh,rod,mat,referenceSize})){}
  else if(receptionSizes[o.type])buildReceptionObject(g,o,{box,mesh,rod,mat});
@@ -47,7 +47,6 @@ export function buildObject(o){const g=new THREE.Group(),nativeSize=objectRefere
  }else if(o.type==='table'&&o.variant==='round-pedestal'){
   const top=mesh(g,new THREE.CylinderGeometry(1,1,.065,48),mat(o.color,.28),[0,h,0]);top.scale.set(w/2,1,d/2);
   const support=mesh(g,new THREE.CylinderGeometry(1,1,1,32),gold,[0,h/2,0]);support.scale.set(w*.3,h,d*.3);
-  if(o.accessories!==false){box(g,[.17,.15,.17],[0,h+.1075,0],mat('#8a5437'),.012);box(g,[.06,.09,.035],[0,h+.2275,0],mat('#f1eee3'),.01);}
  }else if(o.type==='table'){
   if (
     o.shape === 'square' ||
@@ -88,7 +87,15 @@ export function buildObject(o){const g=new THREE.Group(),nativeSize=objectRefere
         o.variant === 'round-glass' ? gold : dark, .007);
     }
   }
-  if(o.accessories!==false){box(g,[.17,.15,.17],[.1,h+.11,0],mat('#8a5437'),.012);box(g,[.06,.09,.035],[.1,h+.2,0],mat('#f1eee3'),.01);}
+  if(o.accessories==='dining-service'){
+    const porcelain=mat('#f5f1e7',.22),steel=mat('#c1c9c7',.2,.72),glass=new THREE.MeshPhysicalMaterial({color:'#e2efeb',roughness:.08,transparent:true,opacity:.35,clearcoat:1});
+    for(const x of [-.40,.43]){
+      box(g,[.37,.004,.34],[x,h+.038,0],mat('#a7afa9',.7),.005);
+      mesh(g,new THREE.CylinderGeometry(.12,.10,.012,32),porcelain,[x,h+.048,0]);
+      mesh(g,new THREE.CylinderGeometry(.033,.027,.095,16,1,true),glass,[x-.11,h+.09,-.23]);
+      box(g,[.012,.007,.20],[x+.15,h+.049,0],steel,.002);
+    }
+  }
  }else if(o.type==='screen'&&o.variant==='open-shelving'){
   // A shared divider variant; reference dimensions still use the screen contract.
   const finish=mat(o.color,.6);
@@ -107,9 +114,48 @@ export function buildObject(o){const g=new THREE.Group(),nativeSize=objectRefere
   box(g,[w,.035,.035],[0,h,0],gold,.005);
   const step=w/10;for(let i=0;i<10;i++){const x=-w/2+i*step;for(let j=0;j<4;j++){const y=.45+j*(h-.45)/4,dy=(h-.45)/4;rod(g,[x,y,0],[x+step,y+dy,0],.009,gold);rod(g,[x+step,y,0],[x,y+dy,0],.009,gold);}}
  }else if(o.type==='plant'){
-  if(o.variant==='rectangular-planter')box(g,[w,.5,d],[0,.25,0],mat('#d7d8cf'),.025);
-  else mesh(g,new THREE.CylinderGeometry(w*.46,w*.32,.5,24),mat('#d7d8cf'),[0,.25,0]);
-  for(let i=0;i<11;i++){const a=i*2.4,x=Math.cos(a)*w*.47,z=Math.sin(a)*d*.47,y=.9+(i%4)*.19;rod(g,[0,.4,0],[x,y,z],.013,dark);const leaf=mesh(g,new THREE.SphereGeometry(1,10,8),fabric,[x,y,z]);leaf.scale.set(.13,.35,.065);leaf.rotation.set(.3,a,.6);}
+  const ceramic=mat('#d7d8cf',.42),soil=mat('#34291f',.95),stem=mat('#4a5137',.8);
+  if(o.variant==='rectangular-planter'){
+    box(g,[w,.5,d],[0,.25,0],ceramic,.025);
+    box(g,[w-.035,.012,d-.035],[0,.497,0],soil,.012);
+  }else{
+    // A hollow ceramic lip and recessed soil replace the sealed flat pot cap.
+    const profile=[[w*.31,0],[w*.33,.018],[w*.445,.46],[w*.46,.48],[w*.46,.50],[w*.415,.50],[w*.407,.465]];
+    mesh(g,new THREE.LatheGeometry(profile.map(p=>new THREE.Vector2(...p)),48),ceramic,[0,0,0]);
+    mesh(g,new THREE.CylinderGeometry(w*.405,w*.405,.015,40),soil,[0,.465,0]);
+  }
+  const greens=[0,.07,-.06].map(delta=>{
+    const color=new THREE.Color(o.color);color.offsetHSL(delta*.15,delta*.4,delta);
+    return new THREE.MeshStandardMaterial({color,roughness:.62,side:THREE.DoubleSide});
+  });
+  // Thin, tapered leaf blades with a raised midrib and gently curled edges.
+  const leafGeometry=new THREE.BufferGeometry(),positions=[],uvs=[],indices=[],rows=14,columns=6;
+  for(let row=0;row<=rows;row++){
+    const t=row/rows,halfWidth=.068*Math.pow(Math.sin(Math.PI*t),.8);
+    for(let col=0;col<=columns;col++){
+      const across=col/columns*2-1;
+      positions.push(across*halfWidth,t*.32,.030*Math.sin(t*Math.PI)-.020*t*t+.010*(1-across*across)*Math.sin(t*Math.PI));
+      uvs.push(col/columns,t);
+      if(row<rows&&col<columns){const a=row*(columns+1)+col,b=a+columns+1;indices.push(a,b,a+1,a+1,b,b+1);}
+    }
+  }
+  leafGeometry.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));
+  leafGeometry.setAttribute('uv',new THREE.Float32BufferAttribute(uvs,2));leafGeometry.setIndex(indices);leafGeometry.computeVertexNormals();
+  for(let branch=0;branch<3;branch++){
+    const angle=branch*Math.PI*2/3,tip=[Math.cos(angle)*w*.12,1.43+branch*.055,Math.sin(angle)*d*.12];
+    rod(g,[Math.cos(angle)*w*.08,.46,Math.sin(angle)*d*.08],tip,.007,stem);
+    for(let i=0;i<10;i++){
+      const a=angle+i*2.39996,y=.66+i*.085+branch*.055;
+      const base=new THREE.Vector3(tip[0]*(y-.46),y,tip[2]*(y-.46));
+      const direction=new THREE.Vector3(Math.cos(a)*.85,.25+(i/10)*.65,Math.sin(a)*.85).normalize();
+      const attachment=base.clone().addScaledVector(direction,.045);
+      rod(g,base.toArray(),attachment.toArray(),.0025,stem);
+      const leaf=mesh(g,leafGeometry,greens[(i+branch)%greens.length],attachment.toArray());
+      leaf.name='Curved botanical leaf';leaf.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),direction);
+      leaf.rotateY(a);leaf.scale.setScalar(.72+(i%4)*.085);
+    }
+  }
+
  }
  g.position.fromArray(o.position);g.rotation.y=THREE.MathUtils.degToRad(o.yaw);g.scale.fromArray(o.size.map((v,i)=>v/nativeSize[i]*(o.scale?.[i]??1)));return g;
 }

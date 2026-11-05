@@ -42,7 +42,7 @@ test('G39 and G40 reconcile available and historical ROIs without linking the mi
 
 test('private-room row follows map order and preserves every source object under rigid placement',async()=>{
   const {block}=await composeLayout(root,'first/private-lounges',load);validateBlock(block);
-  assert.equal(block.objects.length,20);assert.equal(block.readOnly,true);
+  assert.equal(block.objects.filter(item=>item.type!=='tissue-box').length,20);assert.equal(block.readOnly,true);
   const seats=block.objects.flatMap(o=>o.seats),tables=block.objects.filter(o=>o.externalId).map(o=>o.externalId);
   assert.equal(seats.length,12);assert.equal(new Set(seats).size,12);
   assert.deepEqual(tables.sort(),['Table_H5','Table_H6','Table_H7']);

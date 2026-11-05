@@ -499,6 +499,91 @@
         "C3"
       ],
       "confidence": "Visible in wide C3 and corroborating C1/C2; dimensions and placement estimated; ornaments simplified"
+    },
+    {
+      "id": "g11-table-01-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.1,
+        0.455,
+        1.95
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g11-table-02-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.1,
+        0.455,
+        -1.95
+      ],
+      "size": [
+        0.17,
+        0.24,
+        0.17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "type": "tv",
+      "variant": "default",
+      "mount": "wall",
+      "size": [
+        1.45,
+        0.86,
+        0.08
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#20282a",
+      "id": "ground-c-lounge-011-634ca121fd274b35",
+      "name": "TV · Wall",
+      "position": [
+        -0.129,
+        1.685,
+        3.369
+      ],
+      "yaw": 180,
+      "seats": [],
+      "cameras": [],
+      "confidence": "Manually added from shared library; placement and seat IDs pending review."
     }
   ]
 }

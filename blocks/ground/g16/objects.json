@@ -414,6 +414,54 @@
       "confidence": "Observed in normal/wide G20/G23; dimensions, placement and slot order estimated",
       "mount": "wall",
       "variant": "framed-art"
+    },
+    {
+      "id": "g16-table-02-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.08333333333333334,
+        0.455,
+        -0.2786551511778491
+      ],
+      "size": [
+        0.1416666666666667,
+        0.24,
+        0.23974358974358978
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g16-table-01-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        1.1133333333333333,
+        0.455,
+        3.3
+      ],
+      "size": [
+        0.10766666666666667,
+        0.24,
+        0.1482051282051282
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "G20",
+        "G23"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

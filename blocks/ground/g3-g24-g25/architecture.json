@@ -235,9 +235,16 @@
         "B12",
         "B14"
       ],
-      "confidence": "Owner confirms opaque blue reflective cladding; finish sheen estimated from wide images",
+      "confidence": "Owner cream/blue/gold finish correction and B7-B14 wide views; cream span and pattern repeat are estimated; wall remains solid and closed.",
       "color": "#245968",
-      "variant": "opaque-blue-panel"
+      "variant": "opaque-blue-panel",
+      "surfacePattern": "white-geometric",
+      "creamSections": [
+        {
+          "start": 5.6,
+          "end": 7.148387
+        }
+      ]
     },
     {
       "id": "g3-g24-g25-north-blue-right",
@@ -266,9 +273,16 @@
         "B12",
         "B14"
       ],
-      "confidence": "Owner confirms opaque blue reflective cladding; finish sheen estimated from wide images",
+      "confidence": "Owner cream/blue/gold finish correction and B7-B14 wide views; cream span and pattern repeat are estimated; wall remains solid and closed.",
       "color": "#245968",
-      "variant": "opaque-blue-panel"
+      "variant": "opaque-blue-panel",
+      "surfacePattern": "white-geometric",
+      "creamSections": [
+        {
+          "start": 0.0,
+          "end": 0.651613
+        }
+      ]
     },
     {
       "id": "g3-g24-g25-south-blue-left",
@@ -297,9 +311,16 @@
         "B12",
         "B14"
       ],
-      "confidence": "Owner confirms continuous opaque blue wall on piano side; only the TV-side end passage stays open",
+      "confidence": "Owner cream/blue/gold finish correction and B7-B14 wide views; cream span and pattern repeat are estimated; wall remains solid and closed.",
       "color": "#245968",
-      "variant": "opaque-blue-panel"
+      "variant": "opaque-blue-panel",
+      "surfacePattern": "white-geometric",
+      "creamSections": [
+        {
+          "start": 2.95,
+          "end": 5.7
+        }
+      ]
     }
   ],
   "openings": [
@@ -357,7 +378,7 @@
         7.4
       ]
     ],
-    "surfaceMaterial": "pale-stone",
+    "surfaceMaterial": "same-as-seating",
     "sources": [
       "B2",
       "C11",
@@ -455,6 +476,9 @@
     }
   ],
   "notes": [
+    "Owner detail review (5 November 2026): cream piers break up the blue cladding on both sides. Blue bays have gold perimeter edging, thin ivory panel joints and fine straight geometric etching replacing the rejected rounded sweeps. White areas are wall finishes, not new openings. Preserve owner dark-base/pale-band floor reversal. Cream spans and decorative motif are estimates from the eleven wide captures; pale geometric design is an owner-authorized interpretation.",
+    "Owner close-up (5 November 2026): glossy teal-blue opaque cladding behind B41/B42 carries fine curved sweep etching. Apply matching finish to this room blue cladding; exact repeat spacing is estimated. Royal-themed painting identification remains unresolved after online search; retain its placeholder until an exact source is confirmed.",
+    "Owner finish reversal (5 November 2026): use the existing dark stone seating floor across this block, with pale stone diamond bands and a pale TV-side walking strip. Pattern geometry, room boundaries and furniture stay unchanged. Supersedes earlier pale-base/dark-band finish notes.",
     "Owner correction: top-left/north blue wall is fully closed, including the middle gap and TV-side end gap. Only the opposite TV-side passage at Z=+7.4 remains open to the I-zone extension. Arch entrances retained.",
     "Owner confirms shared G3/G24/G25 area width equals G9 + G10: 7.2 + 8.0 = 15.2 provisional meters. Includes 2.6 m clear corridor at the arch side. Depth 10.6 m and all furniture placement are estimates pending owner review.",
     "Thirty ROI seat IDs and fifteen table IDs deduplicated across eleven normal views. G3 is overlapping evidence, not a separate enclosure.",
@@ -489,7 +513,7 @@
           -5.703585
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -512,7 +536,7 @@
           -2.073396
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -535,7 +559,7 @@
           1.556793
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -558,7 +582,7 @@
           5.186982
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -581,7 +605,7 @@
           7.4
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -604,7 +628,7 @@
           7.4
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -627,7 +651,7 @@
           7.4
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -650,7 +674,7 @@
           -7.4
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -673,7 +697,7 @@
           -7.4
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -696,7 +720,7 @@
           -7.4
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -719,7 +743,7 @@
           -4.865849
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -742,7 +766,7 @@
           -1.235661
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -765,7 +789,7 @@
           2.394528
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -788,7 +812,7 @@
           6.024717
         ]
       ],
-      "color": "#4a4540",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {
@@ -811,7 +835,7 @@
           7.4
         ]
       ],
-      "color": "#424747",
+      "color": "#d7d4c9",
       "layer": 0
     },
     {

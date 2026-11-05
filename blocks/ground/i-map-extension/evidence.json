@@ -3,13 +3,16 @@
   "version": 1,
   "blockId": "ground-i-map-extension",
   "cameras": [
-    "I24"
+    "I24",
+    "I25"
   ],
   "snapshots": {
-    "I24": "evidence/camera-snapshots/I24.jpg"
+    "I24": "evidence/camera-snapshots/I24.jpg",
+    "I25": "evidence/camera-snapshots/I25.jpg"
   },
   "wideSnapshots": {
-    "I24": "evidence/wide capture snapshots/I24.jpg"
+    "I24": "evidence/wide capture snapshots/I24.jpg",
+    "I25": "evidence/wide capture snapshots/I25.jpg"
   },
   "seatMappings": {
     "Seat_IExt_TMP_01": "i-extension-pair-1-0",
@@ -33,13 +36,15 @@
     "I24 wide provides distant partial support for a two-chair pair beyond G59. Remaining seating and L-shaped wall positions follow the map and owner request, not unseen camera evidence.",
     "New seat IDs Seat_IExt_TMP_01\u201314 are temporary editable identities, not ROI-approved IDs. No official I-zone seat or table numbers are inferred.",
     "Off-white striated panel walls reuse the accepted I-zone finish. Absolute dimensions, chair poses, sofa sizes and the rectangular opening are provisional.",
-    "One opening on the short return points toward the existing G24/G25 gap; width matches that source gap (1.531797 m). The main B/C/E/G composition is not moved or merged. Exact global alignment between the I extension and that opening remains pending a future composition."
+    "One opening on the short return points toward the existing G24/G25 gap; width matches that source gap (1.531797 m). The main B/C/E/G composition is not moved or merged. Exact global alignment between the I extension and that opening remains pending a future composition.",
+    "5 November 2026: owner screenshot locates glass at the left of TMP_01/02 and dark brown wall with artifacts behind TMP_04/13/14. Reviewed I24 and I25 normal/wide views: I24 wide supports brown paneling, a nearby window and metallic relief; I25 supports the G62 metal-framed glazing style. Owner maps these finishes to the extension; no new camera calibration or official seat identity is inferred. Decorative shapes and spacing remain estimates.",
+    "Owner correction: I-extension brown wall was visible into G13. Keep the wood and artifacts on the interior (-Z) face and finish the G13-facing (+Z) exterior in plain white; boundary and furniture positions unchanged."
   ],
   "accuracy": {
     "identity": "temporary-map-only",
     "position": "estimated-from-map-topology",
     "dimensions": "unmeasured-estimates",
-    "appearance": "adjacent-I-zone-style",
+    "appearance": "owner-directed finishes supported by I24/I25 normal and wide views; ornament detail approximate",
     "cameraCoverage": "I24-wide distant pair only; remaining area map-only per owner"
   }
 }

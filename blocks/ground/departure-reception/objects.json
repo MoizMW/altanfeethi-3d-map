@@ -274,8 +274,8 @@
       "type": "display",
       "name": "Upper framed royal portrait 1",
       "position": [
-        -1.2,
-        3.15,
+        -0.7525303186528514,
+        2.78,
         -3.33
       ],
       "yaw": 0,
@@ -304,7 +304,7 @@
       "name": "Upper framed royal portrait 2",
       "position": [
         0,
-        3.15,
+        2.78,
         -3.33
       ],
       "yaw": 0,
@@ -332,8 +332,8 @@
       "type": "display",
       "name": "Upper framed royal portrait 3",
       "position": [
-        1.2,
-        3.15,
+        0.7490600910017549,
+        2.783846161216147,
         -3.33
       ],
       "yaw": 0,

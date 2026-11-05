@@ -215,6 +215,30 @@
       ],
       "confidence": "Dimensions and local pose estimated from snapshots and owner room description",
       "variant": "plain-planter"
+    },
+    {
+      "id": "g60-coffee-table-01-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.03999909528737974,
+        0.46583333333333327,
+        -0.04759612733789196
+      ],
+      "size": [
+        0.15300000000000002,
+        0.2457142857142857,
+        0.1416666666666667
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0.25690470825943285,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "I37",
+        "I42"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }

@@ -7,6 +7,25 @@ import {buildObject} from './object-builders.js';
 import {server} from './server.mjs';
 import {buildLoungeSofa, loungeSofaColor, sofaPillowColor} from './lounge-sofa.js';
 
+test('wall televisions share one TV asset and build a framed screen at each saved size',async()=>{
+  const library=await collectObjectLibrary(),assets=library.assets.filter(a=>a.design.type==='tv');
+  assert.equal(assets.length,1);assert.equal(assets[0].name,'TV · Wall');
+  assert.equal(assets[0].count,8);
+  for(const config of assets[0].configurations){
+    const model=buildObject(config.preview);
+    assert.ok(model.getObjectByName('TV frame'));assert.ok(model.getObjectByName('TV screen'));
+    const identity=model.getObjectByName('TV screen · Altanfeethi bilingual identity');
+    assert.ok(identity);
+    const {width,height}=identity.geometry.parameters,[W,H]=config.preview.size;
+    assert.ok(Math.abs((width*W/1.55)/(height*H/.9)-400/289.62)<1e-6);
+    assert.equal(model.getObjectByName('Desk screen · Altanfeethi bilingual identity'),undefined);
+    model.updateMatrixWorld(true);
+    const bounds=new THREE.Box3().setFromObject(model).getSize(new THREE.Vector3());
+    assert.ok(Math.abs(bounds.x-config.preview.size[0])<.001);
+    assert.ok(Math.abs(bounds.y-config.preview.size[1])<.001);
+  }
+});
+
 test('shared sofa has full upholstery, light blue piped pillows and connected feet', () => {
   const sofa = buildLoungeSofa(); sofa.updateMatrixWorld(true);
   const bounds = new THREE.Box3().setFromObject(sofa), size = bounds.getSize(new THREE.Vector3());
@@ -177,4 +196,34 @@ test('server serves the live library and preview dependencies without exposing p
       assert.equal((await fetch(`${origin}/${path}`)).status, 404, path);
     }
   } finally { await new Promise(resolve => server.close(resolve)); }
+});
+
+test('tissue boxes are separate branded assets and no longer embedded in tables',async()=>{
+  const library=await collectObjectLibrary(),asset=library.assets.find(a=>a.design.type==='tissue-box');
+  assert.ok(asset);assert.equal(asset.count,117);
+  for(const config of asset.configurations){
+    const model=buildObject(config.preview);
+    assert.ok(model.getObjectByName('Altanfeethi English label'));
+    assert.ok(model.getObjectByName('Paper tissue'));
+  }
+  for(const asset of library.assets.filter(a=>a.design.type==='table'))for(const config of asset.configurations){
+    const model=buildObject(config.preview);
+    model.traverse(node=>assert.notEqual(node.material?.color?.getHexString(),'8a5437'));
+  }
+});
+
+test('shared plants use thin curved leaves and remain grounded across saved sizes',async()=>{
+  const library=await collectObjectLibrary();
+  for(const asset of library.assets.filter(a=>a.design.type==='plant'&&['default','rectangular-planter'].includes(a.design.variant)))for(const config of asset.configurations){
+    const model=buildObject(config.preview);model.updateMatrixWorld(true);
+    let leaves=0;
+    model.traverse(node=>{if(node.name==='Curved botanical leaf'){
+      leaves++;assert.equal(node.material.side,THREE.DoubleSide);
+      for(const attr of Object.values(node.geometry.attributes))assert.ok([...attr.array].every(Number.isFinite));
+      node.geometry.computeBoundingBox();const size=node.geometry.boundingBox.getSize(new THREE.Vector3());
+      assert.ok(size.z<size.y*.25,'Leaf blade stays thin');
+    }});
+    assert.equal(leaves,30);
+    assert.ok(Math.abs(new THREE.Box3().setFromObject(model).min.y)<1e-5);
+  }
 });

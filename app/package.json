@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
-    "test": "node --test test.mjs layouts.test.mjs library.test.mjs building.test.mjs"
+    "test": "node --test test.mjs layouts.test.mjs library.test.mjs building.test.mjs room-mirror.test.mjs"
   },
   "dependencies": {
     "three": "0.180.0"

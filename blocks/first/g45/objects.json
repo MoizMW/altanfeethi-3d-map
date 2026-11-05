@@ -442,6 +442,124 @@
       "confidence": "Normal/wide camera evidence and ROI identity; pose and dimensions estimated.",
       "variant": "waste-bin",
       "notes": "One small bin beside the end wall; cross-view correspondence and exact position estimated."
+    },
+    {
+      "id": "g45-table-14-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -0.68,
+        0.5925595238095239,
+        -2.05
+      ],
+      "size": [
+        0.07026666666666667,
+        0.31428571428571433,
+        0.13512820512820514
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g45-table-13-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -0.68,
+        0.5925595238095239,
+        0
+      ],
+      "size": [
+        0.07026666666666667,
+        0.31428571428571433,
+        0.13512820512820514
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g45-table-12-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        -0.68,
+        0.5925595238095239,
+        2.05
+      ],
+      "size": [
+        0.07026666666666667,
+        0.31428571428571433,
+        0.13512820512820514
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "H15",
+        "H16"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g45-table-10-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.68,
+        0.5925595238095239,
+        1.55
+      ],
+      "size": [
+        0.07026666666666667,
+        0.31428571428571433,
+        0.13512820512820514
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "H16"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
+    },
+    {
+      "id": "g45-table-11-tissue-box",
+      "name": "Altanfeethi tissue box",
+      "type": "tissue-box",
+      "position": [
+        0.68,
+        0.5925595238095239,
+        -1.55
+      ],
+      "size": [
+        0.07026666666666667,
+        0.31428571428571433,
+        0.13512820512820514
+      ],
+      "scale": [1, 1, 1],
+      "yaw": 0,
+      "color": "#8a5437",
+      "seats": [],
+      "cameras": [
+        "H16"
+      ],
+      "confidence": "Separated from the existing table accessory; inherited placement and estimated dimensions."
     }
   ]
 }
