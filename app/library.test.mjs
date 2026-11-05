@@ -5,6 +5,28 @@ import * as THREE from 'three';
 import {collectObjectLibrary, objectDesign} from '../scripts/build-object-library.mjs';
 import {buildObject} from './object-builders.js';
 import {server} from './server.mjs';
+import {buildLoungeSofa, loungeSofaColor, sofaPillowColor} from './lounge-sofa.js';
+
+test('shared sofa has full upholstery, light blue piped pillows and connected feet', () => {
+  const sofa = buildLoungeSofa(); sofa.updateMatrixWorld(true);
+  const bounds = new THREE.Box3().setFromObject(sofa), size = bounds.getSize(new THREE.Vector3());
+  for (const [actual, expected] of [[size.x, 2.05], [size.y, .88], [size.z, .9], [bounds.min.y, 0]]) assert.ok(Math.abs(actual - expected) < 1e-5);
+  assert.equal(sofa.getObjectByName('Upholstered lower frame').material.color.getHexString(), loungeSofaColor.slice(1));
+  const pillows = sofa.getObjectByName('Decorative pillow'); assert.equal(pillows.children.length, 2);
+  for (const pillow of pillows.children) {
+    const face = pillow.getObjectByName('Plain light blue woven fabric');
+    assert.equal(face.material.color.getHexString(), sofaPillowColor.slice(1));
+    assert.equal(face.material.map, null);
+    assert.ok(pillow.getObjectByName('Dark contrast pillow piping'));
+  }
+  const frame = sofa.getObjectByName('Upholstered lower frame');
+  for (const leg of sofa.children.filter(node => node.name.startsWith('Connected sofa foot'))) {
+    const tip = leg.localToWorld(new THREE.Vector3(0, .075, 0));
+    const probe = new THREE.Raycaster(tip.clone().add(new THREE.Vector3(0, -.05, 0)), new THREE.Vector3(0, 1, 0), 0, .06);
+    assert.ok(probe.intersectObject(frame).length > 0, 'Foot must enter the upholstered frame');
+  }
+  assert.equal(buildLoungeSofa({pillow:false}).getObjectByName('Decorative pillow'), undefined);
+});
 import {buildCurvedArmchair, loungeChairColor, pillowFabricUV, loungePillowTexturePath} from './curved-armchair.js';
 
 test('curved chair preserves the reference envelope and connects cushions to supports', () => {
@@ -148,7 +170,7 @@ test('server serves the live library and preview dependencies without exposing p
     const response = await fetch(`${origin}/api/object-library`);
     assert.equal(response.status, 200);
     assert.deepEqual(await response.json(), await collectObjectLibrary());
-    for (const path of ['library.html', 'library.js', 'library.css', 'object-builders.js', 'curved-armchair.js', 'shared/materials/textures/lounge-pillow/pillow-botanical-clean.png', 'shared/assets/library/inventory.json']) {
+    for (const path of ['library.html', 'library.js', 'library.css', 'object-builders.js', 'curved-armchair.js', 'lounge-sofa.js', 'floors.js', 'floor-materials.js', 'floor-reflections.js', 'render-profile.js', 'render-loop.js', 'static-instances.js', 'contact-shadows.js', 'shared/assets/branding/reception-wall.svg', 'shared/materials/textures/dark-stone-floor/basecolor.png', 'shared/materials/textures/pale-stone-floor/basecolor.png', 'shared/materials/textures/lounge-pillow/pillow-botanical-clean.png', 'shared/assets/library/inventory.json']) {
       assert.equal((await fetch(`${origin}/${path}`)).status, 200, path);
     }
     for (const path of ['scripts/build-object-library.mjs', 'shared/assets/library/README.md', 'server.mjs']) {

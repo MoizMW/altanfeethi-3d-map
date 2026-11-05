@@ -1,0 +1,2023 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "first-center-right-lounges",
+  "displayCode": "G35–G56",
+  "name": "First-floor merged lounges + stair lobby",
+  "floor": "first",
+  "status": "draft-needs-human-review",
+  "floorSize": [
+    24.9,
+    58.65
+  ],
+  "floorCenter": [
+    2.35,
+    18.725
+  ],
+  "components": [
+    {
+      "block": "first/g52-g55",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "first/g46-g47-g49",
+      "position": [
+        7.8,
+        0,
+        0
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "first/g50",
+      "position": [
+        -7.7,
+        0,
+        -3.85
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "wallEndpoints": {
+          "g50-wood-end-return": {
+            "start": [
+              -2.3,
+              -6.75
+            ],
+            "end": [
+              2.4,
+              -6.75
+            ]
+          }
+        }
+      }
+    },
+    {
+      "block": "first/g51",
+      "position": [
+        -7.7,
+        0,
+        5.75
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "first/g48",
+      "position": [
+        12.4,
+        0,
+        7.4
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g48-reflective-side"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          4.6,
+          8
+        ],
+        "floorCenter": [
+          0.1,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g45-reception",
+      "position": [
+        12.4,
+        0,
+        14.2
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "wallEndpoints": {
+          "g45-back-wall": {
+            "start": [
+              -2.25,
+              2.52
+            ],
+            "end": [
+              2.25,
+              2.52
+            ]
+          }
+        }
+      },
+      "objectOffsets": {
+        "g45-branded-backdrop": [
+          0.6,
+          0,
+          0
+        ],
+        "g45-portrait-1": [
+          0.6,
+          0,
+          0
+        ],
+        "g45-portrait-2": [
+          0.6,
+          0,
+          0
+        ],
+        "g45-portrait-3": [
+          0.6,
+          0,
+          0
+        ]
+      },
+      "objectSizes": {
+        "g45-branded-backdrop": [
+          4.5,
+          3.4,
+          0.08
+        ]
+      }
+    },
+    {
+      "block": "first/g56",
+      "position": [
+        1.8,
+        0,
+        17.2
+      ],
+      "yaw": 0,
+      "architectureOverrides": {
+        "floorSections": [
+          {
+            "id": "g56-reception-join-floor",
+            "center": [
+              -0.8,
+              -4.3
+            ],
+            "size": [
+              12.4,
+              2.2
+            ],
+            "color": "#424747"
+          },
+          {
+            "id": "g56-private-corridor-side-floor",
+            "center": [
+              -0.8,
+              1.0
+            ],
+            "size": [
+              12.4,
+              8.4
+            ],
+            "color": "#424747"
+          }
+        ],
+        "wallEndpoints": {
+          "g56-rear-service-wall": {
+            "start": [
+              -6.85,
+              5.2
+            ],
+            "end": [
+              5.25,
+              5.2
+            ]
+          }
+        }
+      },
+      "objectOffsets": {
+        "g56-hot-counter": [
+          -0.6,
+          0,
+          0
+        ],
+        "g56-rear-shelves": [
+          -0.4,
+          0,
+          0
+        ],
+        "g56-service-door": [
+          -0.6,
+          0,
+          0
+        ]
+      },
+      "excludeWalls": [
+        "g56-window-side"
+      ]
+    },
+    {
+      "block": "first/g35",
+      "position": [
+        12.4,
+        0,
+        45.25
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g35-long-wood-backing",
+        "g35-chair-divider",
+        "g35-escalator-balustrade"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          4.8,
+          5.3
+        ],
+        "floorCenter": [
+          0,
+          0.15
+        ]
+      }
+    },
+    {
+      "block": "first/g36",
+      "position": [
+        12.4,
+        0,
+        40.25
+      ],
+      "yaw": -180,
+      "excludeWalls": [
+        "g36-long-wood-wall",
+        "g36-chair-divider",
+        "g36-sofa-divider",
+        "g36-escalator-balustrade"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          4.8,
+          5
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g37",
+      "position": [
+        12.4,
+        0,
+        35.25
+      ],
+      "yaw": -180,
+      "excludeWalls": [
+        "g37-long-wood-wall",
+        "g37-chair-divider",
+        "g37-sofa-divider",
+        "g37-escalator-balustrade"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          4.8,
+          5
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g38",
+      "position": [
+        12.4,
+        0,
+        30.25
+      ],
+      "yaw": -180,
+      "excludeWalls": [
+        "g38-long-wood-wall",
+        "g38-chair-divider",
+        "g38-escalator-side-guard"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          4.8,
+          5.3
+        ],
+        "floorCenter": [
+          0,
+          0.15
+        ]
+      }
+    },
+    {
+      "block": "first/g42",
+      "position": [
+        2.2,
+        0,
+        40.25
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "first/g39",
+      "position": [
+        12.4,
+        0,
+        18.6
+      ],
+      "yaw": -90,
+      "excludeWalls": [
+        "g39-tv-wall",
+        "g39-sofa-wall"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          3.6,
+          4.8
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g40",
+      "position": [
+        12.4,
+        0,
+        22.2
+      ],
+      "yaw": -90,
+      "excludeWalls": [
+        "g40-sofa-wall",
+        "g40-tv-wall"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          3.6,
+          4.8
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g41",
+      "position": [
+        12.4,
+        0,
+        25.8
+      ],
+      "yaw": -90,
+      "excludeWalls": [
+        "g41-sofa-wall"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          3.6,
+          4.8
+        ],
+        "floorCenter": [
+          0,
+          0
+        ],
+        "wallEndpoints": {
+          "g41-tv-wall": {
+            "start": [
+              1.8,
+              1.15
+            ],
+            "end": [
+              1.8,
+              2.25
+            ]
+          }
+        }
+      }
+    },
+    {
+      "block": "first/g45",
+      "position": [
+        -1.7,
+        0,
+        29.25
+      ],
+      "yaw": -90,
+      "excludeWalls": [
+        "g45-facing-side-wall",
+        "g45-partition-side-wall"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          5.1,
+          7.2
+        ],
+        "floorCenter": [
+          0.15,
+          0
+        ],
+        "wallEndpoints": {
+          "g45-glazed-entry": {
+            "start": [
+              -2.55,
+              3.35
+            ],
+            "end": [
+              2.55,
+              3.35
+            ]
+          },
+          "g45-wood-end-wall": {
+            "start": [
+              2.55,
+              -3.35
+            ],
+            "end": [
+              -2.55,
+              -3.35
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "walls": [
+    {
+      "id": "first-bottom-right-shared-screen-1",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        14.65,
+        42.75
+      ],
+      "end": [
+        11.25,
+        42.75
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H3",
+        "H1"
+      ],
+      "confidence": "Owner adjacency/order; provisional screen profile and dimensions",
+      "replaces": [
+        "g36-chair-divider",
+        "g35-chair-divider"
+      ],
+      "neighborBlocks": [
+        "first/g36",
+        "first/g35"
+      ]
+    },
+    {
+      "id": "first-bottom-right-shared-screen-2",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        14.65,
+        37.75
+      ],
+      "end": [
+        11.25,
+        37.75
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H4",
+        "H8"
+      ],
+      "confidence": "Owner adjacency/order; provisional screen profile and dimensions",
+      "replaces": [
+        "g37-chair-divider",
+        "g36-sofa-divider"
+      ],
+      "neighborBlocks": [
+        "first/g37",
+        "first/g36"
+      ]
+    },
+    {
+      "id": "first-bottom-right-shared-screen-3",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        14.65,
+        32.75
+      ],
+      "end": [
+        11.25,
+        32.75
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H7",
+        "H5"
+      ],
+      "confidence": "Owner adjacency/order; provisional screen profile and dimensions",
+      "replaces": [
+        "g38-chair-divider",
+        "g37-sofa-divider"
+      ],
+      "neighborBlocks": [
+        "first/g38",
+        "first/g37"
+      ]
+    },
+    {
+      "id": "first-bottom-right-wood-back",
+      "kind": "solid",
+      "start": [
+        14.65,
+        27.6
+      ],
+      "end": [
+        14.65,
+        47.9
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#856746",
+      "finish": "warm-wood",
+      "interiorSide": 1,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H1",
+        "H2",
+        "H3",
+        "H8",
+        "H4",
+        "H5",
+        "H6",
+        "H7"
+      ],
+      "confidence": "Continuous wood finish across owner-ordered row; provisional span",
+      "replaces": [
+        "g35-long-wood-backing",
+        "g36-long-wood-wall",
+        "g37-long-wood-wall",
+        "g38-long-wood-wall"
+      ]
+    },
+    {
+      "id": "lobby-blue-side-void-guard",
+      "kind": "glass",
+      "start": [
+        10.2,
+        35.25
+      ],
+      "end": [
+        10.2,
+        47.82
+      ],
+      "height": 1.1,
+      "thickness": 0.04,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Observed topology; provisional dimensions and placement",
+      "privacyBand": false,
+      "frameSpacing": 1.4
+    },
+    {
+      "id": "lobby-console-wall",
+      "kind": "solid",
+      "start": [
+        -2.95,
+        31.8
+      ],
+      "end": [
+        -2.95,
+        47.9
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Observed topology; provisional dimensions and placement",
+      "color": "#c5bfac"
+    },
+    {
+      "id": "lobby-lift-wall",
+      "kind": "solid",
+      "start": [
+        -2.95,
+        47.9
+      ],
+      "end": [
+        3.8,
+        47.9
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Observed topology; provisional dimensions and placement",
+      "color": "#c5bfac",
+      "notes": "Aligned with the H2 outer wall extension to complete the right perimeter."
+    },
+    {
+      "id": "lobby-left-decorative-screen",
+      "kind": "glass",
+      "start": [
+        -5.05,
+        31.8
+      ],
+      "end": [
+        1.9,
+        31.8
+      ],
+      "height": 3,
+      "thickness": 0.055,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Observed topology; provisional dimensions and placement",
+      "variant": "reeded-divider",
+      "notes": "Owner correction: G45 sits behind this reeded glass. This layout owns the widened shared glass boundary, replacing G45 facing-side wall."
+    },
+    {
+      "id": "lobby-g42-guard-left-extension",
+      "kind": "glass",
+      "start": [
+        3.65,
+        35.25
+      ],
+      "end": [
+        3.65,
+        36.1
+      ],
+      "height": 1.1,
+      "thickness": 0.04,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Provisional guard extension joining G42 to the owner-corrected opening.",
+      "privacyBand": false,
+      "frameSpacing": 1.4
+    },
+    {
+      "id": "lobby-g42-guard-right-extension",
+      "kind": "glass",
+      "start": [
+        3.65,
+        44.4
+      ],
+      "end": [
+        3.65,
+        47.82
+      ],
+      "height": 1.1,
+      "thickness": 0.04,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Provisional guard extension joining G42 to the owner-corrected opening.",
+      "privacyBand": false,
+      "frameSpacing": 1.4
+    },
+    {
+      "id": "lobby-h2-outer-wall-extension",
+      "kind": "solid",
+      "start": [
+        11.25,
+        47.9
+      ],
+      "end": [
+        3.8,
+        47.9
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#856746",
+      "finish": "warm-wood",
+      "interiorSide": 1,
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H2"
+      ],
+      "confidence": "Owner-requested continuous right perimeter; dimensions remain provisional.",
+      "notes": "Continues the G35/H2 sofa return to the lobby side wall, closing the outer edge."
+    },
+    {
+      "id": "private-row-g39-g40-partition",
+      "kind": "solid",
+      "start": [
+        14.65,
+        20.4
+      ],
+      "end": [
+        10.15,
+        20.4
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H13",
+        "H11",
+        "H20"
+      ],
+      "neighborBlocks": [
+        "first/g39",
+        "first/g40"
+      ],
+      "confidence": "Map-guided adjacency; single shared boundary, dimensions estimated."
+    },
+    {
+      "id": "private-row-g40-g41-partition",
+      "kind": "solid",
+      "start": [
+        14.65,
+        24.0
+      ],
+      "end": [
+        10.15,
+        24.0
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "layout/first/center-right",
+      "sources": [
+        "H11",
+        "H20",
+        "H12",
+        "H14"
+      ],
+      "neighborBlocks": [
+        "first/g40",
+        "first/g41"
+      ],
+      "confidence": "Map-guided adjacency; single shared boundary, dimensions estimated."
+    },
+    {
+      "id": "empty-buffet-width-room-left",
+      "kind": "solid",
+      "start": [
+        -5.05,
+        22.4
+      ],
+      "end": [
+        -5.05,
+        26.7
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c8c4b6",
+      "owner": "layout/first/center-right",
+      "sources": [
+        "owner-empty-room-correction"
+      ],
+      "confidence": "Owner-requested empty closed room; dimensions estimated"
+    },
+    {
+      "id": "empty-buffet-width-room-right",
+      "kind": "solid",
+      "start": [
+        7.05,
+        22.4
+      ],
+      "end": [
+        7.05,
+        26.7
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c8c4b6",
+      "owner": "layout/first/center-right",
+      "sources": [
+        "owner-empty-room-correction"
+      ],
+      "confidence": "Owner-requested empty closed room; dimensions estimated"
+    },
+    {
+      "id": "empty-buffet-width-room-front",
+      "kind": "solid",
+      "start": [
+        -5.05,
+        26.7
+      ],
+      "end": [
+        5.15,
+        26.7
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c8c4b6",
+      "owner": "layout/first/center-right",
+      "sources": [
+        "owner-empty-room-correction"
+      ],
+      "confidence": "Owner-requested empty closed room; dimensions estimated"
+    },
+    {
+      "id": "empty-room-front-right",
+      "kind": "solid",
+      "start": [
+        6.25,
+        26.7
+      ],
+      "end": [
+        7.05,
+        26.7
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c8c4b6",
+      "owner": "layout/first/center-right",
+      "sources": [
+        "owner-empty-room-correction"
+      ],
+      "confidence": "Owner-requested empty closed room; dimensions estimated"
+    },
+    {
+      "id": "empty-room-door-header",
+      "kind": "solid",
+      "start": [
+        5.15,
+        26.7
+      ],
+      "end": [
+        6.25,
+        26.7
+      ],
+      "height": 1.4,
+      "thickness": 0.14,
+      "color": "#c8c4b6",
+      "owner": "layout/first/center-right",
+      "sources": [
+        "owner-empty-room-correction"
+      ],
+      "confidence": "Owner-requested empty closed room; dimensions estimated",
+      "elevation": 2.7
+    },
+    {
+      "id": "window-row-privacy-lobby-glazing",
+      "kind": "glass",
+      "start": [
+        -10,
+        9.15
+      ],
+      "end": [
+        -10,
+        31.8
+      ],
+      "height": 4.1,
+      "thickness": 0.05,
+      "privacyBand": false,
+      "owner": "layout:first/center-right",
+      "sources": [
+        "owner-correction",
+        "H27",
+        "H30",
+        "H31"
+      ],
+      "confidence": "Owner locates glass at the outer lobby floor edge; continuation length follows the privacy-room end",
+      "color": "#c6dce1",
+      "opacity": 0.12,
+      "frameColor": "#68716e",
+      "frameSpacing": 3.1,
+      "horizontalSplit": 0.38,
+      "notes": "Continues the G51 window line at X=-10; replaces the inset G56 glass only in the full merge."
+    },
+    {
+      "id": "privacy-lobby-glass-to-solid-return",
+      "kind": "solid",
+      "start": [
+        -10,
+        31.8
+      ],
+      "end": [
+        -5.05,
+        31.8
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#dedbd2",
+      "owner": "layout:first/center-right",
+      "sources": [
+        "owner-correction"
+      ],
+      "confidence": "Owner requests glazing continue to privacy-room end then join solid wall; closure is aligned to the room corner"
+    }
+  ],
+  "openings": [],
+  "integration": {
+    "relationship": "Owner screenshot confirms side row on the right (+X) of fixed G52–G55 center, with backing wall on the outside right.",
+    "rowPlacement": {
+      "position": [
+        7.8,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "status": "provisional-relative-layout"
+    },
+    "floorSeam": {
+      "x": 5.3,
+      "z": [
+        -10.6,
+        11.4
+      ]
+    },
+    "route": {
+      "x": 5.5,
+      "z": [
+        -9.6,
+        11.1
+      ],
+      "status": "Dark through aisle between source seating and existing center dividers"
+    },
+    "registrationRevision": "2026-11-04T09:04:17.858Z",
+    "ownerCorrection": {
+      "date": "2026-11-04",
+      "source": "Owner screenshot in chat",
+      "side": "right in supplied center/front view (+X)",
+      "outsideWallX": 10.2,
+      "sourceCorrection": "Side row mirrored across local X only; G49-to-G46 Z order is retained."
+    },
+    "windowRow": {
+      "ownerInstruction": "Merge the saved G50/G51 area on the left of the existing center + right, as shown in the owner screenshots.",
+      "side": "left in owner plan view (-X)",
+      "sourceLayout": "first/g50-g51",
+      "assemblyTranslation": [
+        -7.7,
+        0,
+        -3.85
+      ],
+      "yaw": 0,
+      "sourceRelativeG51": [
+        0,
+        0,
+        9.6
+      ],
+      "floorSeam": {
+        "x": -5.3,
+        "z": [
+          -10.6,
+          9.15
+        ]
+      },
+      "windowLineX": -10.0,
+      "route": {
+        "x": -5.5,
+        "z": [
+          -9.5,
+          11.1
+        ],
+        "status": "Open dark through aisle between window row and center"
+      },
+      "endWallJoin": {
+        "wallId": "g50-wood-end-return",
+        "globalStart": [
+          -10,
+          -10.6
+        ],
+        "globalEnd": [
+          -5.3,
+          -10.6
+        ],
+        "status": "Composition-only endpoint alignment and extension; center owns the next wall segment"
+      },
+      "endApproach": {
+        "fromZ": 9.15,
+        "toZ": 11.4,
+        "status": "Estimated dark floor-only continuation; no new glazing or enclosing wall"
+      },
+      "evidenceCameras": [
+        "H56",
+        "H23",
+        "H25",
+        "H26",
+        "H27",
+        "H30",
+        "H22",
+        "H24",
+        "H29"
+      ],
+      "roiUsage": "Normal ROIs remain source identity evidence; all six normal/wide pairs reviewed independently. No ROI projected into 3D or onto wide images."
+    },
+    "reception": {
+      "sourceLayout": "first/g48-g45",
+      "translation": [
+        12.4,
+        0,
+        7.4
+      ],
+      "yaw": 0,
+      "side": "Outside the H40/H44/H50 backing wall (+X), left in the owner combined-lounge screenshot",
+      "sharedBoundary": {
+        "x": 10.2,
+        "owner": "first/g46-g47-g49",
+        "excludedWall": "g48-reflective-side",
+        "notes": "Existing lounge wood/stone backing owns the common boundary once. G48 glazing and corrected reception wall align on outside X=14.6."
+      },
+      "opening": {
+        "aroundWallEndZ": 11.4,
+        "foldingScreen": "g45-folding-screen",
+        "route": [
+          [
+            5.5,
+            11
+          ],
+          [
+            9.4,
+            11
+          ],
+          [
+            9.4,
+            11.9
+          ],
+          [
+            11.2,
+            11.9
+          ],
+          [
+            11.2,
+            10.5
+          ]
+        ],
+        "notes": "Reception is beyond the end of the lounge backing. Its folding screen faces the lounge approach; the clear route passes around the wall end in front of the screen."
+      },
+      "status": "owner-confirmed-adjacency-provisional-spacing",
+      "backWallAlignment": {
+        "spanX": [
+          10.15,
+          14.65
+        ],
+        "brandedPanelWidth": 4.5,
+        "panelAndPortraitShiftX": 0.6,
+        "scope": "combined-view-only"
+      }
+    },
+    "buffet": {
+      "source": "first/g56",
+      "evidence": [
+        "H31 normal",
+        "H31 wide",
+        "evidence/maps/first-floor.png"
+      ],
+      "position": [
+        1.8,
+        0,
+        17.2
+      ],
+      "receptionSide": "+X, left when facing the buffet from the lounges",
+      "lobby": {
+        "bounds": [
+          8.6,
+          16.8,
+          10,
+          27.45
+        ],
+        "destination": "first/private-lounges",
+        "route": [
+          [
+            5.5,
+            11
+          ],
+          [
+            5.5,
+            12.3
+          ],
+          [
+            8.2,
+            12.3
+          ],
+          [
+            8.2,
+            18
+          ],
+          [
+            9.3,
+            18
+          ],
+          [
+            9.3,
+            26
+          ]
+        ],
+        "status": "Joined to the saved G39–G41 front corridor and stair-lobby landing"
+      },
+      "notes": "Owner-directed topology. Existing lounge/reception transforms stay fixed. Buffet front remains open across the common approach, and the side lobby runs beyond reception without cutting its back wall.",
+      "ownerWidthCorrection": {
+        "towardSeatingZ": -1.4,
+        "previousLeftEdgeX": 8.6,
+        "leftEdgeX": 7.2,
+        "buffetWidth": 12.4,
+        "emptyRoomWidth": 13.8,
+        "emptyRoomDepthBefore": 3.05,
+        "emptyRoomDepthAfter": 4.45,
+        "notes": "Trim the owner-image left side (+X) while retaining the window boundary. Move buffet toward H56 by 1.4 m. The shared rear wall moves from Z=23.8 to Z=22.4, giving the recovered depth to the empty closed room. Individual buffet furniture offsets keep clearances within the narrowed footprint; seating/reception remain fixed."
+      },
+      "emptyRoomCorridorCorrection": {
+        "previousRoomWidth": 13.8,
+        "roomWidth": 12.4,
+        "rightWallX": 7.05,
+        "clearWallToWallCorridorWidth": 3.1,
+        "floorCorridorSpanX": [
+          7.2,
+          10
+        ],
+        "notes": "Recovered 1.4 m belongs to the corridor; the empty room right edge matches the buffet footprint."
+      }
+    },
+    "bottomLobbyMerge": {
+      "sourceLayout": "first/bottom-lobby",
+      "yaw": -90,
+      "translation": [
+        12.4,
+        0,
+        45.25
+      ],
+      "join": {
+        "ownerText": "g32 will touch combined lounge reception",
+        "interpretedSeat": "Seat_H32",
+        "sourceGroup": "first/g39",
+        "receptionBackWallZ": 16.72,
+        "floorSeamZ": 16.8,
+        "privateRoomFloorX": [
+          10,
+          14.8
+        ],
+        "excludedWall": "g39-sofa-wall",
+        "ownerWall": "g45-back-wall",
+        "notes": "H32/G39 end directly abuts reception. Reception owns the back/shared wall; a composition-only 0.05 m endpoint extension reaches the private-room rear corner."
+      },
+      "routes": {
+        "privateCorridor": [
+          [
+            9.3,
+            18
+          ],
+          [
+            9.3,
+            26
+          ],
+          [
+            9.3,
+            32.4
+          ]
+        ],
+        "lobbyLoop": [
+          [
+            9.3,
+            32.4
+          ],
+          [
+            2.7,
+            32.4
+          ],
+          [
+            1.1,
+            32.4
+          ],
+          [
+            1.1,
+            44.05
+          ]
+        ],
+        "buffetJoin": [
+          [
+            8.2,
+            18
+          ],
+          [
+            9.3,
+            18
+          ]
+        ]
+      },
+      "preservation": "All eight bottom-lobby source components and layout-owned context rotate/translate together. Furniture, local room partitions, doors, floor inlay, stair run/drop and void remain unchanged in their source layouts.",
+      "status": "Owner-directed relative integration; dimensions remain estimated"
+    },
+    "privacyLoungeG45": {
+      "block": "first/g45",
+      "position": [
+        -1.7,
+        0,
+        29.25
+      ],
+      "yaw": -90,
+      "orderFromBuffet": [
+        "first/g56",
+        "empty-closed-room",
+        "first/g45-sharing-empty-room-front-wall"
+      ],
+      "loungeBounds": [
+        -5.3,
+        26.85,
+        1.9,
+        31.95
+      ],
+      "stairOpeningStartZ": 35.25,
+      "routes": {
+        "crossLobby": [
+          [
+            9.3,
+            32.4
+          ],
+          [
+            2.7,
+            32.4
+          ],
+          [
+            1.1,
+            32.4
+          ]
+        ],
+        "loungeEntryApproach": [
+          [
+            -7.6,
+            11.1
+          ],
+          [
+            -7.6,
+            29.25
+          ],
+          [
+            -5.45,
+            29.25
+          ]
+        ],
+        "emptyRoomDoorApproach": [
+          [
+            5.7,
+            27.75
+          ],
+          [
+            5.7,
+            27.0
+          ]
+        ]
+      },
+      "notes": "Owner closes the gap: privacy lounge shifts +1.35 X and -1.5 Z. Wood wall aligns with the empty buffet-width room left wall at X=-5.05; near wall meets its front at Z=26.7. Empty-room front owns the common wall once, with G45 duplicate excluded. Shared rear glazing and console-wall start follow the moved lounge. Source furniture remains unchanged. Owner swaps entrance glass and timber end wall by composition-only endpoints; glass now faces the extended H88/H89-side lobby at X=-5.05 and timber is at X=1.65. Wood segment direction reverses to keep cladding facing inside.",
+      "status": "Owner-directed placement; room dimensions provisional",
+      "emptyRoomBounds": [
+        -5.2,
+        22.4,
+        7.2,
+        26.85
+      ],
+      "emptyRoomWidth": 12.4,
+      "sharedGlass": "lobby-left-decorative-screen",
+      "excludedWall": "g45-facing-side-wall",
+      "excludedWalls": [
+        "g45-facing-side-wall",
+        "g45-partition-side-wall"
+      ],
+      "sharedBuffetSideWall": {
+        "x": -5.05,
+        "wallJoinZ": 26.7,
+        "owner": "layout:first/center-right",
+        "sharedFrontWall": "empty-buffet-width-room-front",
+        "excludedDuplicate": "g45-partition-side-wall"
+      },
+      "lobbyFromH88H89": {
+        "sourceSeats": [
+          "Seat_H88",
+          "Seat_H89"
+        ],
+        "route": [
+          [
+            -7.6,
+            7.8
+          ],
+          [
+            -7.6,
+            29.25
+          ],
+          [
+            -5.45,
+            29.25
+          ]
+        ],
+        "floorStartZ": 11.8,
+        "floorEndZ": 31.95,
+        "notes": "Existing row floor and end/common approaches connect to the new dark open lobby along the buffet-room side. No additional furniture or exterior walls inferred.",
+        "outerGlass": {
+          "wallId": "window-row-privacy-lobby-glazing",
+          "x": -10,
+          "fromZ": 9.15,
+          "toZ": 31.8,
+          "solidReturn": "privacy-lobby-glass-to-solid-return",
+          "excludedInsetGlass": "g56-window-side"
+        }
+      },
+      "swappedWalls": {
+        "glass": "g45-glazed-entry",
+        "glassGlobalX": -5.05,
+        "brown": "g45-wood-end-wall",
+        "brownGlobalX": 1.65,
+        "scope": "full merged first floor only"
+      }
+    }
+  },
+  "notes": [
+    "Owner buffet correction narrows the image-left edge and moves the buffet 1.4 m closer to H56 seating. The recovered depth enlarges the empty closed room, which stays 13.8 m wide while the buffet becomes 12.4 m wide. G45 behind the lobby glass, existing seating, reception and stair placements remain fixed.",
+    "Center stays at [0,0,0], right row at [7.8,0,0]. The window pair uses G50 [-7.7,0,-3.85] and G51 [-7.7,0,5.75], yaw 0, retaining its accepted +9.6 m relative Z placement. Shared aisles remain open and the outside glazing stays on the left.",
+    "The original center/right 48 saved seat IDs and 15 table identities remain source-owned. G50/G51 contributes 16 seats and five table identities. Background observations across camera groups are not duplicated.",
+    "Dark floor crops meet at X=5.3. Existing center owns low reeded dividers and brass frames once. Side row owns outside wood/stone backing at X=10.2, end return, curved ring dividers and media column. No wall closes the aisle or buffet end.",
+    "All dimensions, relative alignment and source bay lengths remain estimates. Existing stair-lobby layouts are retained; no global first-floor transform is claimed.",
+    "Owner merge: add the saved G50/G51 window row on the left (-X) of the accepted center + right. Existing center/right component placements remain fixed. G50 moves to [-7.7,0,-3.85], G51 to [-7.7,0,5.75], yaw 0; their saved +9.6 m relative Z placement is retained.",
+    "All 64 saved seat IDs and 20 table identities (including owner-edited labels) load live from four source blocks. Saved furniture poses, dimensions, scales, colors, variants and slot order are retained. G50 owns its display column once; G51 background H94/H95/Table_H36 observations are not copied.",
+    "The window-row floor joins the center at X=-5.3. Glazing stays on the outside left at X=-10.0. A composition-only correction aligns G50's wood end return to Z=-10.6 and extends its aisle end to the existing center back-wall endpoint X=-5.3. There is no full-height divider along the shared aisle.",
+    "The saved window row is 19.75 m long. A 2.25 m dark floor-only common approach completes the working crop to Z=11.4, without stretching furniture, glazing or curtains. The far exterior boundary remains unresolved. Standalone G50/G51 and their separate combined preview remain available.",
+    "Owner merge adds saved G48/G45 outside the H40/H44/H50 backing, on the left in the supplied combined-lounge view (+X). G48 translates to [12.4,0,7.4], G45 to [12.4,0,14.2], yaw 0; the saved 6.8 m relative reception offset and all furniture are preserved. Existing lounge backing replaces G48 reflective boundary once. Reception begins beyond its Z=11.4 end, with the folding louver side open toward the lounge approach. Corrected outer wall aligns with patterned glazing at X=14.6. All 71 seat slots (including three temporary reception slots) and 22 table identities load once. Relative spacing remains provisional.",
+    "H31 normal/wide guide the rounded tree island, hot station, illuminated rear shelves, curved coffee counter, stone finish and warm base lighting. G56 joins at [1.8,0,18.6], beyond the common lounge end. Reception remains to its left when facing the buffet; an open lobby beside it extends toward the separately saved G39/G40/G41 rooms. Room dimensions, buffet spacing and final private-room connection remain provisional.",
+    "Owner merge: interpret g32 as Seat_H32 at the G39 end, because G32 is the separate ground-floor SGS block. The full saved bottom-lobby assembly rotates -90 degrees and translates [12.4,0,45.25]. Existing combined source furniture stays fixed. G39 abuts reception, sharing its back wall once; the earlier placeholder lobby floor is replaced by the actual private-room corridor and landing. A 0.2 m buffet floor-only crop avoids overlap at X=8.6. Existing bottom-lobby and private-room URLs remain independent; camera registration is unchanged.",
+    "Owner G45 infill: the saved privacy lounge translates to [5.7,0,31.65], yaw 0, with no furniture changes. A small buffet room occupies X=3..8.4, Z=24..26.85, followed by a clear cross-lobby and G45 at Z=28.05..35.25 beside the stair glass. Existing floor panels are trimmed only under the new lounge. The connecting route crosses at Z=27.75 and continues along X=1.1 to the stair lobby, avoiding both rooms. New room details and dimensions remain approximate.",
+    "Owner correction supersedes the small-buffet-room infill: remove its service counter, widen the empty closed room to the 13.8 m buffet width, and reuse the existing buffet rear wall as its back boundary. A closed plain door serves the room. G45 moves to [-3.05,0,30.75], yaw -90, behind the reeded lobby screen; its duplicate facing wall is excluded and the shared glass is extended once. Lobby floors are recut for this position, and stair/private corridor routes remain clear. Furniture in G45 retains its original local geometry.",
+    "Buffet correction: G56 now translates to [1.8,0,17.2]. Its image-left edge trims to X=7.2, keeping the window side fixed. The island/tree, hot counter and rear display shift locally for clearance, with all object sizes unchanged. The empty room expands forward to Z=22.4 and is 4.45 m deep instead of 3.05 m, receiving the area released by moving the buffet. Its full width, closed door and empty interior are retained. Side approach panels fill the narrowed edge without blocking the private corridor.",
+    "Owner no-gap alignment: G45 now at [-1.7,0,29.25], yaw -90. Its wood side aligns X=-5.05 with the empty buffet-width room; both walls meet at Z=26.7. Empty-room front owns the common wall; G45 duplicate near wall excluded. Source furniture moves rigidly with its block. Shared glass shifts to Z=31.8 and lobby floors are recut without overlap; approach routes run beside/behind the relocated room.",
+    "Owner H88/H89 lobby update: extend the existing window-row end approach as dark open lobby beside the buffet-width room to G45. New floor runs Z=11.8..31.95, joined edge-to-edge with existing floors. Swap G45 glazed entry and timber end wall in composition only: glass X=-5.05, timber X=1.65. Room placement, source furniture and standalone shell remain unchanged.",
+    "Owner outer-glass correction: in the full first-floor merge, remove the inset G56 buffet-side glazing at X=-5 and continue the existing G51 window line instead along the outer lobby floor edge X=-10, Z=9.15..31.8. At the privacy-room end, a solid return closes X=-10..-5.05 and meets the privacy-room rear corner. Saved furniture, lobby floors and standalone buffet shell remain unchanged.",
+    "Owner reception/corridor correction: align reception back wall and branded panel with the adjoining private-room wall span X=10.15..14.65. Panel width is 4.5 m and its center/portraits shift +0.6 m in composition only. Reception counter, chairs, folding screen and source records stay saved. Narrow the empty buffet-width room from 13.8 to 12.4 m, right floor edge X=7.2/right wall X=7.05; reclaimed 1.4 m becomes corridor floor. Rear/front/right boundaries meet without duplicate returns; the existing left-side privacy-room and outer glazing stay aligned."
+  ],
+  "floorSections": [
+    {
+      "id": "first-window-row-end-approach",
+      "center": [
+        -7.7,
+        10.275
+      ],
+      "size": [
+        4.8,
+        2.25
+      ],
+      "color": "#424747",
+      "owner": "layout/first/center-right",
+      "status": "estimated-floor-only-approach",
+      "notes": "Existing window row is 19.75 m long versus 22 m center/right crop. This dark floor-only continuation fills the final 2.25 m of common approach; furniture, glazing and curtain lengths remain saved source dimensions. No new exterior wall is inferred."
+    },
+    {
+      "id": "buffet-common-approach",
+      "center": [
+        -0.65,
+        11.6
+      ],
+      "size": [
+        18.9,
+        0.4
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "lobby-right-lobby-floor",
+      "center": [
+        0.4,
+        46.3
+      ],
+      "size": [
+        3.5,
+        6.8
+      ],
+      "color": "#424747",
+      "yaw": -90
+    },
+    {
+      "id": "lobby-patterned-walk",
+      "center": [
+        -1.2,
+        40.25
+      ],
+      "size": [
+        8.6,
+        3.6
+      ],
+      "color": "#e4e1d7",
+      "pattern": "inset-checker",
+      "columns": 12,
+      "rows": 4,
+      "yaw": -90
+    },
+    {
+      "id": "lobby-right-enclosure-floor",
+      "center": [
+        6.9,
+        47.935
+      ],
+      "size": [
+        0.23,
+        6.2
+      ],
+      "color": "#424747",
+      "yaw": -90
+    },
+    {
+      "id": "private-row-front-corridor",
+      "center": [
+        9.3,
+        22.125
+      ],
+      "size": [
+        10.65,
+        1.4
+      ],
+      "color": "#424747",
+      "yaw": -90
+    },
+    {
+      "id": "empty-buffet-width-room-floor",
+      "center": [
+        1,
+        24.625
+      ],
+      "size": [
+        12.4,
+        4.45
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "buffet-narrowed-left-approach",
+      "center": [
+        8.0,
+        14.3
+      ],
+      "size": [
+        1.6,
+        5.0
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "buffet-narrowed-private-corridor-approach",
+      "center": [
+        7.9,
+        19.6
+      ],
+      "size": [
+        1.4,
+        5.6
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "lobby-upper-landing",
+      "center": [
+        6.9,
+        31.35
+      ],
+      "size": [
+        6.2,
+        7.8
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "lobby-left-landing-g45-aligned-1",
+      "center": [
+        0.3999999999999999,
+        33.95
+      ],
+      "size": [
+        6.8,
+        4.0000000000000036
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "lobby-left-landing-g45-aligned-3",
+      "center": [
+        2.8499999999999996,
+        29.7
+      ],
+      "size": [
+        1.9,
+        4.5
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "empty-room-cross-lobby-g45-aligned-3",
+      "center": [
+        5.25,
+        27.15
+      ],
+      "size": [
+        6.699999999999999,
+        0.5999999999999979
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "h88-privacy-lobby-long-floor",
+      "center": [
+        -7.65,
+        19.325
+      ],
+      "size": [
+        4.9,
+        15.05
+      ],
+      "color": "#424747",
+      "owner": "layout:first/center-right"
+    },
+    {
+      "id": "h88-privacy-lobby-entry-floor",
+      "center": [
+        -7.7,
+        29.4
+      ],
+      "size": [
+        4.8,
+        5.1
+      ],
+      "color": "#424747",
+      "owner": "layout:first/center-right"
+    },
+    {
+      "id": "empty-room-narrowed-corridor-infill",
+      "center": [
+        7.9,
+        24.625
+      ],
+      "size": [
+        1.4,
+        4.45
+      ],
+      "color": "#424747",
+      "owner": "layout:first/center-right"
+    }
+  ],
+  "objects": [
+    {
+      "id": "first-lobby-console",
+      "type": "display-console",
+      "name": "Stone and brass console with ornaments",
+      "position": [
+        -2.55,
+        0,
+        38.65
+      ],
+      "yaw": 90,
+      "size": [
+        3.2,
+        0.9,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "notes": "Shared console builder approximates stone top, metal supports, two vases and ring ornament seen in H18/H19; lower storage profile and object shapes simplified."
+    },
+    {
+      "id": "first-lobby-lift-doors",
+      "type": "wall-panel",
+      "name": "Closed lift doors and frame",
+      "position": [
+        0.1,
+        0,
+        47.78
+      ],
+      "yaw": 180,
+      "size": [
+        1.8,
+        2.6,
+        0.14
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#858b8a",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "variant": "lift-doors",
+      "notes": "Static closed doors with panel seam, display and call plate; no lift operation or shaft geometry claimed."
+    },
+    {
+      "id": "first-lobby-plant-lift-wall",
+      "type": "plant",
+      "name": "Plant beside lift wall",
+      "position": [
+        -2.25,
+        0,
+        47.1
+      ],
+      "yaw": -90,
+      "size": [
+        0.65,
+        1.9,
+        0.65
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c6d45",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "notes": "Plant beside lift/console-side corner in H19/H9-wide; pot/foliage schematic."
+    },
+    {
+      "id": "first-lobby-plant-lift-guard",
+      "type": "plant",
+      "name": "Plant beside far guard landing",
+      "position": [
+        3.3,
+        0,
+        44.95
+      ],
+      "yaw": -90,
+      "size": [
+        0.6,
+        1.8,
+        0.6
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#4c6d45",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "notes": "Plant near lift-side guard in H19; avoids the clear route."
+    },
+    {
+      "id": "first-lobby-extinguisher",
+      "type": "display",
+      "name": "Fire extinguisher and stand",
+      "position": [
+        -2.55,
+        0,
+        43.0
+      ],
+      "yaw": 90,
+      "size": [
+        0.38,
+        1,
+        0.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b32d2a",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "variant": "fire-extinguisher",
+      "notes": "Approximation of visible red extinguisher with support stand, label and hose."
+    },
+    {
+      "id": "first-lobby-sanitizer",
+      "type": "cabinet",
+      "name": "Sanitizer stand",
+      "position": [
+        -2.55,
+        0,
+        41.15
+      ],
+      "yaw": 90,
+      "size": [
+        0.28,
+        0.65,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8d8264",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "variant": "sanitizer",
+      "notes": "Small floor-standing dispenser near the console wall; logo and exact profile excluded."
+    },
+    {
+      "id": "first-lobby-bin-1",
+      "type": "cabinet",
+      "name": "Waste bin",
+      "position": [
+        3.0,
+        0,
+        38.175
+      ],
+      "yaw": -90,
+      "size": [
+        0.28,
+        0.5,
+        0.28
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#726b59",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "variant": "waste-bin",
+      "notes": "Round bin seen beside seating/table; individual placement provisional, no occupancy identity."
+    },
+    {
+      "id": "first-lobby-bin-2",
+      "type": "cabinet",
+      "name": "Waste bin",
+      "position": [
+        3.0,
+        0,
+        42.325
+      ],
+      "yaw": -90,
+      "size": [
+        0.28,
+        0.5,
+        0.28
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#726b59",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "variant": "waste-bin",
+      "notes": "Round bin seen beside seating/table; individual placement provisional, no occupancy identity."
+    },
+    {
+      "id": "first-lobby-bin-3",
+      "type": "cabinet",
+      "name": "Waste bin",
+      "position": [
+        12.05,
+        0,
+        29.95
+      ],
+      "yaw": -90,
+      "size": [
+        0.28,
+        0.5,
+        0.28
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#726b59",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "variant": "waste-bin",
+      "notes": "Round bin seen beside seating/table; individual placement provisional, no occupancy identity."
+    },
+    {
+      "id": "first-lobby-bin-4",
+      "type": "cabinet",
+      "name": "Waste bin",
+      "position": [
+        12.05,
+        0,
+        34.95
+      ],
+      "yaw": -90,
+      "size": [
+        0.28,
+        0.5,
+        0.28
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#726b59",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "variant": "waste-bin",
+      "notes": "Round bin seen beside seating/table; individual placement provisional, no occupancy identity."
+    },
+    {
+      "id": "first-lobby-bin-5",
+      "type": "cabinet",
+      "name": "Waste bin",
+      "position": [
+        12.05,
+        0,
+        39.95
+      ],
+      "yaw": -90,
+      "size": [
+        0.28,
+        0.5,
+        0.28
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#726b59",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "variant": "waste-bin",
+      "notes": "Round bin seen beside seating/table; individual placement provisional, no occupancy identity."
+    },
+    {
+      "id": "first-lobby-bin-6",
+      "type": "cabinet",
+      "name": "Waste bin",
+      "position": [
+        12.05,
+        0,
+        45.55
+      ],
+      "yaw": -90,
+      "size": [
+        0.28,
+        0.5,
+        0.28
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#726b59",
+      "seats": [],
+      "cameras": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "confidence": "Visible context; approximate dimensions, material and placement",
+      "variant": "waste-bin",
+      "notes": "Round bin seen beside seating/table; individual placement provisional, no occupancy identity."
+    },
+    {
+      "id": "empty-room-closed-door",
+      "type": "wall-panel",
+      "name": "Closed door to empty room",
+      "position": [
+        5.7,
+        0,
+        26.7
+      ],
+      "yaw": 0,
+      "size": [
+        1.1,
+        2.7,
+        0.09
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#a99d85",
+      "seats": [],
+      "cameras": [],
+      "confidence": "Owner-requested empty closed room; schematic closed door",
+      "variant": "timber-office-door"
+    }
+  ],
+  "voids": [
+    {
+      "id": "stair-escalator-opening",
+      "bounds": [
+        3.8,
+        35.25,
+        10.0,
+        47.82
+      ],
+      "sources": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "status": "owner-aligned-extents-estimated",
+      "notes": "No first-floor slab spans this rectangle. The opening reaches the inner face of the H2 outer wall; the duplicate inner end wall and intervening strip are removed."
+    }
+  ],
+  "structures": [
+    {
+      "id": "first-lobby-stair-and-escalator",
+      "kind": "stair-escalator",
+      "startX": -10,
+      "endX": 2.57,
+      "drop": 3.8,
+      "stairZ": 6.8,
+      "stairWidth": 3,
+      "escalatorZ": 3.9,
+      "escalatorWidth": 2.2,
+      "steps": 26,
+      "sources": [
+        "H9",
+        "H18",
+        "H19"
+      ],
+      "status": "schematic-unmeasured",
+      "notes": "Owner alignment: upper start beside G37 (third from bottom), lower end beside G35 (first from bottom), at the inner face of the continuous H2 outer wall. Drop 3.8 m and 26 treads are visualization priors. Static escalator; no exterior lower landing projects beyond the wall.",
+      "lowerLandingLength": 0,
+      "position": [
+        12.4,
+        0,
+        45.25
+      ],
+      "yaw": -90
+    }
+  ],
+  "evidenceCameras": [
+    "H9"
+  ],
+  "snapshots": {
+    "H9": "evidence/camera-snapshots/H9.jpg"
+  },
+  "wideSnapshots": {
+    "H9": "evidence/wide capture snapshots/H9.jpg"
+  }
+}

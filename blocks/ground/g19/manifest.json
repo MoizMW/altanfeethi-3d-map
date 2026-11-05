@@ -1,0 +1,20 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-ef-construction-019",
+  "slug": "g19",
+  "name": "G19 \u00b7 Construction shell and escalator approach",
+  "floor": "ground",
+  "groups": [
+    "g19"
+  ],
+  "zone": "E / F",
+  "status": "blocked-construction-shell-draft",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

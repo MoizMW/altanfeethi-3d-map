@@ -4,7 +4,7 @@ export const loungeChairColor = '#3d4a55';
 export const loungePillowTexturePath = '/shared/materials/textures/lounge-pillow/pillow-botanical-clean.png';
 
 let weaveTexture, pillowTexture;
-function fabricWeave() {
+export function fabricWeave() {
   if (weaveTexture) return weaveTexture;
   const size = 128, data = new Uint8Array(size * size * 4);
   for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) {
@@ -47,7 +47,7 @@ function addMesh(group, name, geometry, material, position = [0, 0, 0]) {
 
 // Extrusions duplicate vertices at bevels, and the shell has a UV seam. Average
 // normals by position across those splits so the upholstery shades continuously.
-function smoothUpholsteryNormals(geometry) {
+export function smoothUpholsteryNormals(geometry) {
   const positions = geometry.attributes.position, indices = geometry.index;
   const keys = [], sums = new Map();
   for (let i = 0; i < positions.count; i++) {
@@ -79,10 +79,11 @@ function curvedShellGeometry() {
   // A padded capsule section gives the top a proper rolled edge rather than
   // tapering the entire back into the thin edge of an ellipse.
   const section = [];
-  for (let i = 0; i < 14; i++) section.push({t: i / 14, offset: 1 + .20 * Math.sin(Math.PI * i / 14) ** 2, end: 0});
-  for (let i = 0; i < 18; i++) section.push({t: 1, offset: Math.cos(Math.PI * i / 18), end: Math.sin(Math.PI * i / 18)});
-  for (let i = 0; i < 14; i++) section.push({t: 1 - i / 14, offset: -1 - .32 * Math.sin(Math.PI * i / 14) ** 2, end: 0});
-  for (let i = 0; i < 18; i++) section.push({t: 0, offset: Math.cos(Math.PI + Math.PI * i / 18), end: Math.sin(Math.PI + Math.PI * i / 18)});
+  const flat=14,rolls=18;
+  for (let i = 0; i < flat; i++) section.push({t: i / flat, offset: 1 + .20 * Math.sin(Math.PI * i / flat) ** 2, end: 0});
+  for (let i = 0; i < rolls; i++) section.push({t: 1, offset: Math.cos(Math.PI * i / rolls), end: Math.sin(Math.PI * i / rolls)});
+  for (let i = 0; i < flat; i++) section.push({t: 1 - i / flat, offset: -1 - .32 * Math.sin(Math.PI * i / flat) ** 2, end: 0});
+  for (let i = 0; i < rolls; i++) section.push({t: 0, offset: Math.cos(Math.PI + Math.PI * i / rolls), end: Math.sin(Math.PI + Math.PI * i / rolls)});
   const rings = section.length;
   for (let column = 0; column <= columns; column++) {
     const u = column / columns * 2 - 1, angle = u * 2.20, end = Math.abs(u);
@@ -185,7 +186,7 @@ function softSeatGeometry() {
   return smoothUpholsteryNormals(geometry);
 }
 
-function pillowPoint(u, v, side = 0) {
+export function pillowPoint(u, v, side = 0) {
   const sx = Math.sin(Math.PI * u), sy = Math.sin(Math.PI * v);
   const x = (u - .5) * .45 * (1 - .055 * sy) * Math.sqrt(1 - .10 * (2 * v - 1) ** 6);
   const y = (v - .5) * .43 * (1 - .045 * sx) * Math.sqrt(1 - .10 * (2 * u - 1) ** 6) - .010 * sx ** 14 * (v > .5 ? 1 : -1);
@@ -194,7 +195,7 @@ function pillowPoint(u, v, side = 0) {
   return new THREE.Vector3(x, y, side * (.006 + puff + creases));
 }
 
-function pillowGeometry() {
+export function pillowGeometry() {
   const segments = 40, stride = segments + 1, sideSize = stride * stride;
   const positions = [], uvs = [], indices = [];
   for (const side of [1, -1]) for (let row = 0; row <= segments; row++) for (let column = 0; column <= segments; column++) {

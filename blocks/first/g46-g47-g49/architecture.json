@@ -1,0 +1,470 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-right-046-047-049",
+  "floorSize": [
+    5,
+    22
+  ],
+  "floorCenter": [
+    0,
+    0.4
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-04T09:04:17.858Z",
+    "anchors": [
+      {
+        "camera": "H33",
+        "pixel": [
+          1346,
+          862
+        ],
+        "heading": 122,
+        "status": "verified"
+      },
+      {
+        "camera": "H34",
+        "pixel": [
+          1759,
+          1398
+        ],
+        "heading": 348,
+        "status": "verified"
+      },
+      {
+        "camera": "H35",
+        "pixel": [
+          2152,
+          1328
+        ],
+        "heading": 15,
+        "status": "verified"
+      },
+      {
+        "camera": "H36",
+        "pixel": [
+          1604,
+          1006
+        ],
+        "heading": 0,
+        "status": "verified"
+      },
+      {
+        "camera": "H38",
+        "pixel": [
+          1443,
+          1140
+        ],
+        "heading": 106,
+        "status": "verified"
+      },
+      {
+        "camera": "H41",
+        "pixel": [
+          2003,
+          1500
+        ],
+        "heading": 131,
+        "status": "verified"
+      },
+      {
+        "camera": "H43",
+        "pixel": [
+          2501,
+          1531
+        ],
+        "heading": 304,
+        "status": "verified"
+      },
+      {
+        "camera": "H46",
+        "pixel": [
+          2926,
+          1420
+        ],
+        "heading": 279,
+        "status": "verified"
+      },
+      {
+        "camera": "H48",
+        "pixel": [
+          2091,
+          929
+        ],
+        "heading": 277,
+        "status": "verified"
+      },
+      {
+        "camera": "H50",
+        "pixel": [
+          1861,
+          803
+        ],
+        "heading": 159,
+        "status": "verified"
+      },
+      {
+        "camera": "H52",
+        "pixel": [
+          1688,
+          691
+        ],
+        "heading": 266,
+        "status": "verified"
+      },
+      {
+        "camera": "H53",
+        "pixel": [
+          1397,
+          630
+        ],
+        "heading": 129,
+        "status": "verified"
+      },
+      {
+        "camera": "H54",
+        "pixel": [
+          2459,
+          1243
+        ],
+        "heading": 304,
+        "status": "verified"
+      },
+      {
+        "camera": "H55",
+        "pixel": [
+          2616,
+          1209
+        ],
+        "heading": 159,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      1250,
+      500,
+      3100,
+      1650
+    ],
+    "localAxes": {
+      "x": "From the center-facing passage (-X) toward the outside wood/stone backing (+X), per owner screenshot correction",
+      "z": "From the H53/G49 end (-Z), through sofas and G47 chair bay, toward G46/buffet (+Z)",
+      "y": "Up; floor zero does not establish first-floor elevation"
+    },
+    "mapReview": "Owner screenshot correction places this row to the right (+X) of the fixed center, with wood/stone backing on the outside right. Camera registration is evidence only; earlier left-side interpretation is superseded."
+  },
+  "footprint": [
+    [
+      2.5,
+      11.4
+    ],
+    [
+      -2.5,
+      11.4
+    ],
+    [
+      -2.5,
+      -10.6
+    ],
+    [
+      2.5,
+      -10.6
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g46-g47-g49-dark-floor",
+      "size": [
+        5,
+        22
+      ],
+      "center": [
+        0,
+        0.4
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [
+    {
+      "id": "g46-g47-g49-carpet-g49",
+      "polygon": [
+        [
+          2.25,
+          -5.3
+        ],
+        [
+          -1.7,
+          -5.3
+        ],
+        [
+          -1.7,
+          -10.3
+        ],
+        [
+          2.25,
+          -10.3
+        ]
+      ],
+      "surfaceMaterial": "carpet",
+      "color": "#c9c5b8"
+    },
+    {
+      "id": "g46-g47-g49-carpet-sofas",
+      "polygon": [
+        [
+          2.25,
+          -0.7
+        ],
+        [
+          -1.7,
+          -0.7
+        ],
+        [
+          -1.7,
+          -5.3
+        ],
+        [
+          2.25,
+          -5.3
+        ]
+      ],
+      "surfaceMaterial": "carpet",
+      "color": "#c9c5b8"
+    },
+    {
+      "id": "g46-g47-g49-carpet-g47",
+      "polygon": [
+        [
+          2.25,
+          4.25
+        ],
+        [
+          -1.7,
+          4.25
+        ],
+        [
+          -1.7,
+          -0.7
+        ],
+        [
+          2.25,
+          -0.7
+        ]
+      ],
+      "surfaceMaterial": "carpet",
+      "color": "#c9c5b8"
+    },
+    {
+      "id": "g46-g47-g49-carpet-g46",
+      "polygon": [
+        [
+          2.25,
+          10.65
+        ],
+        [
+          -1.7,
+          10.65
+        ],
+        [
+          -1.7,
+          6.5
+        ],
+        [
+          2.25,
+          6.5
+        ]
+      ],
+      "surfaceMaterial": "carpet",
+      "color": "#c9c5b8"
+    }
+  ],
+  "walls": [
+    {
+      "id": "g46-g47-g49-wood-backing",
+      "kind": "solid",
+      "start": [
+        2.4,
+        -10.6
+      ],
+      "end": [
+        2.4,
+        4.8
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "finish": "i-zone-wood-panels",
+      "color": "#8e6b51",
+      "owner": "first/g46-g47-g49",
+      "sources": [
+        "H36",
+        "H52",
+        "H53",
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Visible backing/return; extent, segmented finish and height estimated"
+    },
+    {
+      "id": "g46-g47-g49-g46-stone-backing",
+      "kind": "solid",
+      "start": [
+        2.4,
+        4.8
+      ],
+      "end": [
+        2.4,
+        11.4
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "finish": "i-zone-stone-panels",
+      "color": "#b7b2a4",
+      "owner": "first/g46-g47-g49",
+      "sources": [
+        "H46",
+        "H55"
+      ],
+      "confidence": "Visible backing/return; extent, segmented finish and height estimated"
+    },
+    {
+      "id": "g46-g47-g49-wood-end-return",
+      "kind": "solid",
+      "start": [
+        2.4,
+        -10.6
+      ],
+      "end": [
+        -2.5,
+        -10.6
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "finish": "i-zone-wood-panels",
+      "color": "#8e6b51",
+      "owner": "first/g46-g47-g49",
+      "sources": [
+        "H53",
+        "H36"
+      ],
+      "confidence": "Visible backing/return; extent, segmented finish and height estimated"
+    },
+    {
+      "id": "g46-g47-g49-stone-wall-strip-0",
+      "kind": "solid",
+      "start": [
+        2.305,
+        -6.04
+      ],
+      "end": [
+        2.305,
+        -5.36
+      ],
+      "height": 4.1,
+      "thickness": 0.025,
+      "finish": "i-zone-stone-panels",
+      "color": "#bfc0b3",
+      "owner": "first/g46-g47-g49",
+      "sources": [
+        "H36",
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Pale vertical insets visible in wood backing; profile approximate"
+    },
+    {
+      "id": "g46-g47-g49-stone-wall-strip-1",
+      "kind": "solid",
+      "start": [
+        2.305,
+        -0.54
+      ],
+      "end": [
+        2.305,
+        0.14
+      ],
+      "height": 4.1,
+      "thickness": 0.025,
+      "finish": "i-zone-stone-panels",
+      "color": "#bfc0b3",
+      "owner": "first/g46-g47-g49",
+      "sources": [
+        "H36",
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Pale vertical insets visible in wood backing; profile approximate"
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [
+    {
+      "id": "g52-g55-right-side-low-dividers",
+      "neighbor": "first/g52-g55",
+      "owner": "first/g52-g55",
+      "status": "Existing center owns its reeded dividers and lighting frames. No copies in this row; combined view joins floor crops only."
+    }
+  ],
+  "boundaryReview": [
+    {
+      "id": "center-facing-side",
+      "kind": "open-corridor",
+      "start": [
+        -2.5,
+        -10.6
+      ],
+      "end": [
+        -2.5,
+        11.4
+      ],
+      "sources": [
+        "H48",
+        "H50",
+        "H54",
+        "H53",
+        "H46"
+      ],
+      "status": "Open dark tiled passage; no tall partition between this row and the center"
+    },
+    {
+      "id": "buffet-end",
+      "kind": "open-corridor",
+      "start": [
+        2.5,
+        11.4
+      ],
+      "end": [
+        -2.5,
+        11.4
+      ],
+      "sources": [
+        "H55",
+        "H41"
+      ],
+      "status": "Buffet remains beyond requested group boundary; no invented end closure"
+    }
+  ],
+  "ceiling": {
+    "size": [
+      5,
+      22
+    ],
+    "center": [
+      0,
+      0.4
+    ],
+    "height": 4.1,
+    "status": "Provisional visualization height; structural and column extents estimated"
+  },
+  "ownerCorrection": {
+    "date": "2026-11-04",
+    "request": "Move G46/G47/G49 to the right of the center in the supplied screenshot, changing the wall also.",
+    "operation": "Reflect side-row X coordinates and yaw while preserving Z order. Outside backing now +X, open aisle -X. Center source is unchanged."
+  }
+}

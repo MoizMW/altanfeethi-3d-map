@@ -1,0 +1,618 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-center-052-055",
+  "cameras": [
+    "H22",
+    "H32",
+    "H37",
+    "H34",
+    "H38",
+    "H24",
+    "H39",
+    "H29",
+    "H41",
+    "H44",
+    "H23",
+    "H33",
+    "H36",
+    "H40",
+    "H35",
+    "H43"
+  ],
+  "primaryCameras": [
+    "H22",
+    "H32",
+    "H37",
+    "H34",
+    "H38",
+    "H24",
+    "H39",
+    "H29",
+    "H41",
+    "H44"
+  ],
+  "supportingCameras": [
+    "H23",
+    "H33",
+    "H36",
+    "H40",
+    "H35",
+    "H43"
+  ],
+  "snapshots": {
+    "H22": "evidence/camera-snapshots/H22.jpg",
+    "H32": "evidence/camera-snapshots/H32.jpg",
+    "H37": "evidence/camera-snapshots/H37.jpg",
+    "H34": "evidence/camera-snapshots/H34.jpg",
+    "H38": "evidence/camera-snapshots/H38.jpg",
+    "H24": "evidence/camera-snapshots/H24.jpg",
+    "H39": "evidence/camera-snapshots/H39.jpg",
+    "H29": "evidence/camera-snapshots/H29.jpg",
+    "H41": "evidence/camera-snapshots/H41.jpg",
+    "H44": "evidence/camera-snapshots/H44.jpg",
+    "H23": "evidence/camera-snapshots/H23.jpg",
+    "H33": "evidence/camera-snapshots/H33.jpg",
+    "H36": "evidence/camera-snapshots/H36.jpg",
+    "H40": "evidence/camera-snapshots/H40.jpg",
+    "H35": "evidence/camera-snapshots/H35.jpg",
+    "H43": "evidence/camera-snapshots/H43.jpg"
+  },
+  "wideSnapshots": {
+    "H22": "evidence/wide capture snapshots/H22.jpg",
+    "H32": "evidence/wide capture snapshots/H32.jpg",
+    "H37": "evidence/wide capture snapshots/H37.jpg",
+    "H34": "evidence/wide capture snapshots/H34.jpg",
+    "H38": "evidence/wide capture snapshots/H38.jpg",
+    "H24": "evidence/wide capture snapshots/H24.jpg",
+    "H39": "evidence/wide capture snapshots/H39.jpg",
+    "H29": "evidence/wide capture snapshots/H29.jpg",
+    "H41": "evidence/wide capture snapshots/H41.jpg",
+    "H44": "evidence/wide capture snapshots/H44.jpg",
+    "H23": "evidence/wide capture snapshots/H23.jpg",
+    "H33": "evidence/wide capture snapshots/H33.jpg",
+    "H36": "evidence/wide capture snapshots/H36.jpg",
+    "H40": "evidence/wide capture snapshots/H40.jpg",
+    "H35": "evidence/wide capture snapshots/H35.jpg",
+    "H43": "evidence/wide capture snapshots/H43.jpg"
+  },
+  "rois": {
+    "H22": {
+      "chairs": "evidence/rois/chair-rois/g52/H22_to_g52.json",
+      "tables": "evidence/rois/table-rois/g52/H22_to_g52.json"
+    },
+    "H32": {
+      "chairs": "evidence/rois/chair-rois/g52/H32_to_g52.json",
+      "tables": "evidence/rois/table-rois/g52/H32_to_g52.json"
+    },
+    "H37": {
+      "chairs": "evidence/rois/chair-rois/g52/H37_to_g52.json",
+      "tables": "evidence/rois/table-rois/g52/H37_to_g52.json"
+    },
+    "H34": {
+      "chairs": "evidence/rois/chair-rois/g53/H34_to_g53.json",
+      "tables": "evidence/rois/table-rois/g53/H34_to_g53.json"
+    },
+    "H38": {
+      "chairs": "evidence/rois/chair-rois/g53/H38_to_g53.json",
+      "tables": "evidence/rois/table-rois/g53/H38_to_g53.json"
+    },
+    "H24": {
+      "chairs": "evidence/rois/chair-rois/g54/H24_to_g54.json",
+      "tables": "evidence/rois/table-rois/g54/H24_to_g54.json"
+    },
+    "H39": {
+      "chairs": "evidence/rois/chair-rois/g54/H39_to_g54.json",
+      "tables": "evidence/rois/table-rois/g54/H39_to_g54.json"
+    },
+    "H29": {
+      "chairs": "evidence/rois/chair-rois/g55/H29_to_g55.json",
+      "tables": "evidence/rois/table-rois/g55/H29_to_g55.json"
+    },
+    "H41": {
+      "chairs": "evidence/rois/chair-rois/g55/H41_to_g55.json",
+      "tables": "evidence/rois/table-rois/g55/H41_to_g55.json"
+    },
+    "H44": {
+      "chairs": "evidence/rois/chair-rois/g55/H44_to_g55.json",
+      "tables": "evidence/rois/table-rois/g55/H44_to_g55.json"
+    }
+  },
+  "wideCaptureContext": {
+    "mountPosition": "Same mounts per owner",
+    "zoom": "Wider supplementary framing; several files show little framing difference",
+    "roiUsage": "Normal snapshots only; never applied to wide captures",
+    "capturedAt": null
+  },
+  "sourceImageSizes": {
+    "H22": [
+      1920,
+      1080
+    ],
+    "H32": [
+      1920,
+      1080
+    ],
+    "H37": [
+      1920,
+      1080
+    ],
+    "H34": [
+      1920,
+      1080
+    ],
+    "H38": [
+      1920,
+      1080
+    ],
+    "H24": [
+      1920,
+      1080
+    ],
+    "H39": [
+      1920,
+      1080
+    ],
+    "H29": [
+      1920,
+      1080
+    ],
+    "H41": [
+      1920,
+      1080
+    ],
+    "H44": [
+      3840,
+      2160
+    ]
+  },
+  "roiCoordinateStatus": "H44 normal snapshot is 3840×2160 while its ROI boxes visually align at a 1920×1080 authoring basis: 2× display scaling used for visual comparison only. Other normal snapshots are 1920×1080. No ROI pixels converted into world coordinates.",
+  "notes": [
+    "Owner requests the whole center area supported by G52/G53/G54/G55, allowing adjacent cameras. One editable multi-group block avoids duplicated seats/tables across group ROI files. Existing first-floor blocks/layouts are retained.",
+    "32 seats: H56–H87 exactly once, comprising four three-seat curved teal sofas, twelve cream barrel chairs and eight dark leather chairs. Ten separate round pale-marble/brass tables: H22/H23/H24/H26/H27/H28/H29/H31/H32/H33.",
+    "Groups are camera evidence collections, not room boundaries: H22 observes H96/H97, H34 observes H50/H51, H29 observes H90/H94/H95, and H44 observes H43. These belong to neighboring bays and are explicitly excluded. Table_H36 is also excluded.",
+    "H37 fixes the continuous wood end wall, two curved sofas, flanking potted plants, shaded lamp and central abstract sculpture. H41 fixes the opposite sofa pair and open buffet approach.",
+    "H33/H43 reverse side views establish dark-tile circulation between central carpet and neighboring seating; H36/H35 distinguish neighboring sofa/armchair bays from the central room. H40 supports the opposing cream cluster, central tree and far-end arrangement. H23 supports the wood end and side-window return context; its chairs are outside this block.",
+    "Two trees occupy flush gravel/underplanting beds along the carpet centerline. Paired dark chairs sit against low ribbed brass/glass side dividers. Brass arch frames and pleated hanging shades follow the visible long-side lighting system; their exact spans/count/height remain provisional.",
+    "The side windows and tall structural columns belong beyond the excluded adjacent seating, so no full-height side walls or window enclosure are invented along the center crop. Buffet counters are beyond the open end and not reconstructed under these group IDs.",
+    "Specific curved sofas, cream barrel chairs, brown leather barrel chairs, tree beds and pendant/frame variants are opt-in procedural approximations. Other saved furniture keeps existing builders. Carpet uses a matte woven procedural material with tree-bed cutouts.",
+    "All lengths, furniture yaw, exact seat-slot orientation, tree/fixture geometry and map alignment remain unmeasured estimates. H44 remains unplaced in registration; it is used only for visual overlap."
+  ],
+  "supportingViewUse": {
+    "H23": "Wood end wall/window corner and potted plants; adjacent seating excluded",
+    "H33": "Wood-side passage, low divider, first dark pair and full center continuation",
+    "H36": "Adjacent bay side of divider; cream sofas excluded",
+    "H40": "Tree bed, cream cluster and reverse view to wood-end sofas",
+    "H35": "Adjacent sofa/chair bays beyond dark passage; boundaries stay open",
+    "H43": "Reverse view of dark pair H60/H61, tree bed and side passage"
+  },
+  "excludedObservations": {
+    "seats": [
+      {
+        "id": "Seat_H96",
+        "cameras": [
+          "H22"
+        ],
+        "reason": "Physical seating in an adjacent bay beyond the center side walkway, visible in the normal snapshots; excluded from this center block"
+      },
+      {
+        "id": "Seat_H97",
+        "cameras": [
+          "H22"
+        ],
+        "reason": "Physical seating in an adjacent bay beyond the center side walkway, visible in the normal snapshots; excluded from this center block"
+      },
+      {
+        "id": "Seat_H51",
+        "cameras": [
+          "H34"
+        ],
+        "reason": "Physical seating in an adjacent bay beyond the center side walkway, visible in the normal snapshots; excluded from this center block"
+      },
+      {
+        "id": "Seat_H50",
+        "cameras": [
+          "H34"
+        ],
+        "reason": "Physical seating in an adjacent bay beyond the center side walkway, visible in the normal snapshots; excluded from this center block"
+      },
+      {
+        "id": "Seat_H95",
+        "cameras": [
+          "H29"
+        ],
+        "reason": "Physical seating in an adjacent bay beyond the center side walkway, visible in the normal snapshots; excluded from this center block"
+      },
+      {
+        "id": "Seat_H94",
+        "cameras": [
+          "H29"
+        ],
+        "reason": "Physical seating in an adjacent bay beyond the center side walkway, visible in the normal snapshots; excluded from this center block"
+      },
+      {
+        "id": "Seat_H90",
+        "cameras": [
+          "H29"
+        ],
+        "reason": "Physical seating in an adjacent bay beyond the center side walkway, visible in the normal snapshots; excluded from this center block"
+      },
+      {
+        "id": "Seat_H43",
+        "cameras": [
+          "H44"
+        ],
+        "reason": "Physical seating in an adjacent bay beyond the center side walkway, visible in the normal snapshots; excluded from this center block"
+      }
+    ],
+    "tables": [
+      {
+        "id": "Table_H36",
+        "cameras": [
+          "H29"
+        ],
+        "reason": "Table in adjacent window-side bay, across the dark side passage; excluded from center block"
+      }
+    ]
+  },
+  "seatCorrespondence": [
+    {
+      "objectId": "g52-g55-sofa-69",
+      "seats": [
+        "Seat_H69",
+        "Seat_H70",
+        "Seat_H71"
+      ],
+      "sources": [
+        "H37"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-sofa-73",
+      "seats": [
+        "Seat_H73",
+        "Seat_H74",
+        "Seat_H75"
+      ],
+      "sources": [
+        "H32",
+        "H37"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-sofa-56",
+      "seats": [
+        "Seat_H56",
+        "Seat_H57",
+        "Seat_H58"
+      ],
+      "sources": [
+        "H41"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-sofa-84",
+      "seats": [
+        "Seat_H84",
+        "Seat_H85",
+        "Seat_H86"
+      ],
+      "sources": [
+        "H41"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-68",
+      "seats": [
+        "Seat_H68"
+      ],
+      "sources": [
+        "H32"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-72",
+      "seats": [
+        "Seat_H72"
+      ],
+      "sources": [
+        "H22"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-59",
+      "seats": [
+        "Seat_H59"
+      ],
+      "sources": [
+        "H44"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-87",
+      "seats": [
+        "Seat_H87"
+      ],
+      "sources": [
+        "H29"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-66",
+      "seats": [
+        "Seat_H66"
+      ],
+      "sources": [
+        "H32"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-67",
+      "seats": [
+        "Seat_H67"
+      ],
+      "sources": [
+        "H34"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-76",
+      "seats": [
+        "Seat_H76"
+      ],
+      "sources": [
+        "H24"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-77",
+      "seats": [
+        "Seat_H77"
+      ],
+      "sources": [
+        "H22"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-60",
+      "seats": [
+        "Seat_H60"
+      ],
+      "sources": [
+        "H38"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-61",
+      "seats": [
+        "Seat_H61"
+      ],
+      "sources": [
+        "H44"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-83",
+      "seats": [
+        "Seat_H83"
+      ],
+      "sources": [
+        "H39"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-82",
+      "seats": [
+        "Seat_H82"
+      ],
+      "sources": [
+        "H29",
+        "H44"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-62",
+      "seats": [
+        "Seat_H62"
+      ],
+      "sources": [
+        "H38"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-63",
+      "seats": [
+        "Seat_H63"
+      ],
+      "sources": [
+        "H38"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-64",
+      "seats": [
+        "Seat_H64"
+      ],
+      "sources": [
+        "H34",
+        "H38"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-65",
+      "seats": [
+        "Seat_H65"
+      ],
+      "sources": [
+        "H34"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-78",
+      "seats": [
+        "Seat_H78"
+      ],
+      "sources": [
+        "H24"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-79",
+      "seats": [
+        "Seat_H79"
+      ],
+      "sources": [
+        "H24"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-80",
+      "seats": [
+        "Seat_H80"
+      ],
+      "sources": [
+        "H39"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    },
+    {
+      "objectId": "g52-g55-chair-81",
+      "seats": [
+        "Seat_H81"
+      ],
+      "sources": [
+        "H24",
+        "H39"
+      ],
+      "status": "Normal ROI identity; reconciled across views; provisional pose"
+    }
+  ],
+  "tableCorrespondence": [
+    {
+      "objectId": "g52-g55-table-27",
+      "externalId": "Table_H27",
+      "sources": [
+        "H32",
+        "H37"
+      ],
+      "status": "Normal ROI identity; reconciled once across groups"
+    },
+    {
+      "objectId": "g52-g55-table-28",
+      "externalId": "Table_H28",
+      "sources": [
+        "H32",
+        "H37"
+      ],
+      "status": "Normal ROI identity; reconciled once across groups"
+    },
+    {
+      "objectId": "g52-g55-table-22",
+      "externalId": "Table_H22",
+      "sources": [
+        "H41",
+        "H44"
+      ],
+      "status": "Normal ROI identity; reconciled once across groups"
+    },
+    {
+      "objectId": "g52-g55-table-33",
+      "externalId": "Table_H33",
+      "sources": [
+        "H41"
+      ],
+      "status": "Normal ROI identity; reconciled once across groups"
+    },
+    {
+      "objectId": "g52-g55-table-26",
+      "externalId": "Table_H26",
+      "sources": [
+        "H22",
+        "H32",
+        "H34"
+      ],
+      "status": "Normal ROI identity; reconciled once across groups"
+    },
+    {
+      "objectId": "g52-g55-table-29",
+      "externalId": "Table_H29",
+      "sources": [
+        "H22",
+        "H24"
+      ],
+      "status": "Normal ROI identity; reconciled once across groups"
+    },
+    {
+      "objectId": "g52-g55-table-23",
+      "externalId": "Table_H23",
+      "sources": [
+        "H38",
+        "H44"
+      ],
+      "status": "Normal ROI identity; reconciled once across groups"
+    },
+    {
+      "objectId": "g52-g55-table-32",
+      "externalId": "Table_H32",
+      "sources": [
+        "H39",
+        "H29"
+      ],
+      "status": "Normal ROI identity; reconciled once across groups"
+    },
+    {
+      "objectId": "g52-g55-table-24",
+      "externalId": "Table_H24",
+      "sources": [
+        "H34",
+        "H38"
+      ],
+      "status": "Normal ROI identity; reconciled once across groups"
+    },
+    {
+      "objectId": "g52-g55-table-31",
+      "externalId": "Table_H31",
+      "sources": [
+        "H24",
+        "H39",
+        "H29"
+      ],
+      "status": "Normal ROI identity; reconciled once across groups"
+    }
+  ],
+  "reviewItems": [
+    "Review chair yaw, three-slot sofa order and provisional room proportions.",
+    "Measure full carpet/frame span, canopy sizes, floor-to-floor elevation and ceiling height.",
+    "Confirm lamp/shade positions and the exact low-divider endpoints.",
+    "Fit global first-floor transform and resolve adjoining group ownership during a later merge."
+  ],
+  "accuracy": {
+    "position": "estimated-local",
+    "orientation": "estimated-multiview",
+    "dimensions": "unmeasured-estimates",
+    "identity": "ROI-supported H56–H87; adjacent observations excluded explicitly",
+    "globalAlignment": "unresolved"
+  }
+}

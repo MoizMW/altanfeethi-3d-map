@@ -121,7 +121,24 @@
         "E1",
         "E4"
       ],
-      "confidence": "Pale wall with Diriyah Majlis signage visible in E1-wide/E4-wide; estimated span and height. Lettering is not reproduced."
+      "confidence": "Pale wall with gold Arabic/English Diriyah Majlis name, diamond/floral motif and diriyah.sa from E1/E4 wide views; wall/sign dimensions estimated.",
+      "sign": {
+        "variant": "diriyah-majlis",
+        "arabic": "مجلس الدرعية",
+        "english": "DIRIYAH MAJLIS",
+        "website": "diriyah.sa",
+        "width": 2.85,
+        "height": 1.8,
+        "offset": 3.0,
+        "centerHeight": 2.85,
+        "interiorSide": -1,
+        "motif": "two-diamonds-and-central-four-lobed-flower",
+        "sources": [
+          "E1-wide",
+          "E4-wide"
+        ],
+        "confidence": "Lettering and website transcribed from camera views; font, gold relief and motif are schematic approximations"
+      }
     },
     {
       "id": "g17-plain-wall",
@@ -226,6 +243,7 @@
     }
   ],
   "notes": [
-    "Owner requests individual G17 match the combined layout: floor 9.6 by 8.6 m, center [0,1.2], open front walkway. Composition furniture offsets are baked into source positions once; furniture dimensions and labels are retained. Saved source edits flow directly into the combined view."
+    "Owner requests individual G17 match the combined layout: floor 9.6 by 8.6 m, center [0,1.2], open front walkway. Composition furniture offsets are baked into source positions once; furniture dimensions and labels are retained. Saved source edits flow directly into the combined view.",
+    "Owner requests the sign on the left wall: Arabic مجلس الدرعية, English DIRIYAH MAJLIS, two diamond/floral motifs and diriyah.sa recreated from E1/E4. Sign uses an interior-facing transparent gold lettering layer, hidden with structural cutaway. Fonts, placement and shallow relief are approximate; existing wall and furniture positions retained."
   ]
 }

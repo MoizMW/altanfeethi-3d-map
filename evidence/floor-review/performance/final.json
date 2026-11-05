@@ -1,0 +1,691 @@
+{
+  "frames": 29,
+  "geometries": 1158,
+  "textures": 23,
+  "pixelRatio": 1,
+  "moving": true,
+  "overview": true,
+  "reflectionPasses": 0,
+  "meshCount": 2278,
+  "instancing": {
+    "sourceMeshes": 6729,
+    "instancedMeshes": 6172,
+    "batches": 1208,
+    "savedCalls": 4964
+  },
+  "architectureInstancing": {
+    "sourceMeshes": 801,
+    "instancedMeshes": 626,
+    "batches": 119,
+    "savedCalls": 507
+  },
+  "samples": [
+    {
+      "submitMs": 702.9000000003725,
+      "intervalMs": 0,
+      "calls": 4067,
+      "triangles": 5463094,
+      "pixelRatio": 1,
+      "moving": false,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 368.80000000074506,
+      "intervalMs": 762.0999999996275,
+      "calls": 4067,
+      "triangles": 5463094,
+      "pixelRatio": 1,
+      "moving": false,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 59.200000000186265,
+      "intervalMs": 767,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 36.59999999962747,
+      "intervalMs": 83.6000000005588,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 22.300000000745058,
+      "intervalMs": 41.39999999944121,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 30.40000000037253,
+      "intervalMs": 27,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 39.09999999962747,
+      "intervalMs": 37.60000000055879,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 36.60000000055879,
+      "intervalMs": 47.09999999962747,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 33,
+      "intervalMs": 39.799999999813735,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 24.300000000745058,
+      "intervalMs": 36.5,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 27.100000000558794,
+      "intervalMs": 36.5,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 34.299999999813735,
+      "intervalMs": 44.200000000186265,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 19.699999999254942,
+      "intervalMs": 50.60000000055879,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 20,
+      "intervalMs": 35.09999999962747,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 32.90000000037253,
+      "intervalMs": 32,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 23.90000000037253,
+      "intervalMs": 58.799999999813735,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 27.09999999962747,
+      "intervalMs": 28.90000000037253,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 28.59999999962747,
+      "intervalMs": 41.5,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 24.09999999962747,
+      "intervalMs": 42,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 27.5,
+      "intervalMs": 43.09999999962747,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 24.299999999813735,
+      "intervalMs": 53.200000000186265,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 31.399999999441206,
+      "intervalMs": 27.40000000037253,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 32.299999999813735,
+      "intervalMs": 46.09999999962747,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 28,
+      "intervalMs": 37.90000000037253,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 24.700000000186265,
+      "intervalMs": 44.299999999813735,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 25.699999999254942,
+      "intervalMs": 91.20000000018626,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 21.5,
+      "intervalMs": 31.199999999254942,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 38.200000000186265,
+      "intervalMs": 29.600000000558794,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    },
+    {
+      "submitMs": 34.09999999962747,
+      "intervalMs": 57.5,
+      "calls": 2391,
+      "triangles": 3016398,
+      "pixelRatio": 1,
+      "moving": true,
+      "overview": true,
+      "reflectionPasses": 0,
+      "meshCount": 2278,
+      "instancing": {
+        "sourceMeshes": 6729,
+        "instancedMeshes": 6172,
+        "batches": 1208,
+        "savedCalls": 4964
+      },
+      "architectureInstancing": {
+        "sourceMeshes": 801,
+        "instancedMeshes": 626,
+        "batches": 119,
+        "savedCalls": 507
+      }
+    }
+  ]
+}

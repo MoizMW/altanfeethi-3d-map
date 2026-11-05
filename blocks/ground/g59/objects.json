@@ -37,7 +37,7 @@
       "yaw": 180,
       "size": [2.05, 0.88, 0.9],
       "scale": [1, 1, 1],
-      "color": "#ddd9cf",
+      "color": "#aaa59c",
       "seats": ["Seat_I12", "Seat_I11"],
       "cameras": ["I24"],
       "confidence": "I24 ROIs identify I12 on image-left and I11 on image-right of one sofa. Slot order, dimensions and finish need owner review."

@@ -23,7 +23,7 @@
         1,
         1
       ],
-      "color": "#bcb6a7",
+      "color": "#aaa59c",
       "seats": [
         "Seat_E3",
         "Seat_E4"
@@ -54,7 +54,7 @@
         1.141675035221719,
         1
       ],
-      "color": "#a8a5a0",
+      "color": "#aaa59c",
       "seats": [
         "Seat_E5",
         "Seat_E6"
@@ -85,7 +85,7 @@
         1.1467748037859287,
         1
       ],
-      "color": "#a8a5a0",
+      "color": "#aaa59c",
       "seats": [
         "Seat_E7",
         "Seat_E8"
@@ -116,7 +116,7 @@
         1,
         1
       ],
-      "color": "#bcb6a7",
+      "color": "#aaa59c",
       "seats": [
         "Seat_E9",
         "Seat_E10"

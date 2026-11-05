@@ -37,7 +37,7 @@
       "yaw": 180,
       "size": [2.05, 0.88, 0.9],
       "scale": [1, 1, 1],
-      "color": "#ddd9cf",
+      "color": "#aaa59c",
       "seats": ["Seat_I4", "Seat_I3"],
       "cameras": ["I17", "I26"],
       "confidence": "I26 ROIs map I4 to image-left and I3 to image-right on one sofa. Slot order is provisional; I17 wide shows its opposite side."

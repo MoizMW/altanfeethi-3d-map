@@ -1,0 +1,109 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-food-buffet-056",
+  "floorSize": [
+    14,
+    10.8
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "estimated-local-not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "anchors": [
+      {
+        "camera": "H31",
+        "pixel": [
+          2073,
+          1878
+        ],
+        "heading": 122,
+        "status": "verified"
+      }
+    ],
+    "localAxes": {
+      "x": "From window/coffee side toward hot counter and reception side",
+      "z": "From combined-lounge approach toward rear service wall",
+      "y": "Up"
+    }
+  },
+  "floorSections": [
+    {
+      "id": "g56-stone-floor",
+      "center": [
+        0,
+        0
+      ],
+      "size": [
+        14,
+        10.8
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [],
+  "walls": [
+    {
+      "id": "g56-rear-service-wall",
+      "kind": "solid",
+      "start": [
+        -6.8,
+        5.2
+      ],
+      "end": [
+        6.8,
+        5.2
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "owner": "first/g56",
+      "sources": [
+        "H31"
+      ],
+      "confidence": "H31 normal/wide topology; dimensions estimated",
+      "color": "#bdb9a9",
+      "finish": "i-zone-stone-panels"
+    },
+    {
+      "id": "g56-window-side",
+      "kind": "glass",
+      "start": [
+        -6.8,
+        -5.4
+      ],
+      "end": [
+        -6.8,
+        5.2
+      ],
+      "height": 4.1,
+      "thickness": 0.045,
+      "owner": "first/g56",
+      "sources": [
+        "H31"
+      ],
+      "confidence": "H31 normal/wide topology; dimensions estimated",
+      "privacyBand": false,
+      "frameSpacing": 1.4
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "ceiling": {
+    "size": [
+      14,
+      10.8
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1
+  },
+  "notes": [
+    "H31 normal and wide show the island with tree, hot station, rear display/cold station and curved beverage counter. Counter dimensions, service doorway location and equipment shapes are visual estimates. Approach and reception-facing side remain open."
+  ]
+}

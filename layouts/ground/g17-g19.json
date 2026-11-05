@@ -1,0 +1,121 @@
+{
+  "format": "altanfeethi-floor-layout",
+  "version": 1,
+  "id": "ground-g17-g19",
+  "name": "G17 + front room + G19 \u00b7 Construction connection",
+  "floor": "ground",
+  "status": "draft-needs-human-review",
+  "components": [
+    {
+      "block": "ground/g17",
+      "position": [
+        -48.98,
+        0,
+        0.1
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "ground/g17-front",
+      "position": [
+        -48.98,
+        0,
+        7.7
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "ground/g19",
+      "position": [
+        -59.63,
+        0,
+        3.4
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g19-g17-side-context",
+        "g19-front-room-side-context"
+      ]
+    }
+  ],
+  "floorSize": [
+    21.3,
+    12.8
+  ],
+  "floorCenter": [
+    -54.83,
+    3.4
+  ],
+  "walls": [],
+  "sharedBoundaries": [
+    {
+      "id": "g19-g17-side",
+      "kind": "shared-solid-wall",
+      "neighbors": [
+        "ground/g19",
+        "ground/g17"
+      ],
+      "owner": "ground/g17",
+      "wallIds": [
+        "g17-sign-wall",
+        "g19-g17-side-context"
+      ],
+      "start": [
+        -53.78,
+        -3.0000000000000004
+      ],
+      "end": [
+        -53.78,
+        3.0
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g19-front-room-side",
+      "kind": "shared-solid-wall",
+      "neighbors": [
+        "ground/g19",
+        "ground/g17-front"
+      ],
+      "owner": "ground/g17-front",
+      "wallIds": [
+        "g17-front-left-wall",
+        "g19-front-room-side-context"
+      ],
+      "start": [
+        -53.78,
+        5.6
+      ],
+      "end": [
+        -53.78,
+        9.8
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g19-g17-corridor-gate",
+      "kind": "glass-gate",
+      "neighbors": [
+        "ground/g19",
+        "ground/g17"
+      ],
+      "owner": "ground/g19",
+      "wallIds": [
+        "g19-connecting-glass-gate"
+      ],
+      "start": [
+        -53.78,
+        3.0
+      ],
+      "end": [
+        -53.78,
+        5.6
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    }
+  ],
+  "notes": [
+    "G19 connects alongside G17 and its empty front room. The pale corridor meets the structural glass gate; existing G17/front-room partitions own the other shared spans.",
+    "G19 remains unfurnished and uses normal F2/F1/E5/E8 evidence only. Lower escalator section rises schematically toward the first floor; hidden upper flight and inter-floor alignment remain unresolved."
+  ]
+}

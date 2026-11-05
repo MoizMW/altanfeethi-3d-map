@@ -1,0 +1,175 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-food-buffet-056",
+  "objects": [
+    {
+      "id": "g56-island",
+      "type": "counter",
+      "name": "Rounded stone buffet island with recessed serving trays",
+      "position": [
+        0.09997973426010534,
+        0,
+        1.8139544529960572
+      ],
+      "yaw": 0,
+      "size": [
+        4,
+        1.15,
+        2.6
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c5b6",
+      "seats": [],
+      "cameras": [
+        "H31"
+      ],
+      "confidence": "H31 normal/wide observed form; unmeasured procedural reconstruction",
+      "variant": "buffet-tree-island"
+    },
+    {
+      "id": "g56-island-tree",
+      "type": "plant",
+      "name": "Living tree through buffet island",
+      "position": [
+        0.1,
+        1.06,
+        1.8292954238618468
+      ],
+      "yaw": 0,
+      "size": [
+        1.6,
+        3.1,
+        1.6
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#496445",
+      "seats": [],
+      "cameras": [
+        "H31"
+      ],
+      "confidence": "H31 normal/wide observed form; unmeasured procedural reconstruction",
+      "variant": "center-tree-bed"
+    },
+    {
+      "id": "g56-hot-counter",
+      "type": "counter",
+      "name": "Rounded hot-food station and heat-lamp rail",
+      "position": [
+        4.8,
+        0,
+        1.8820407634998193
+      ],
+      "yaw": 90,
+      "size": [
+        4.8,
+        1.7,
+        1.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c5b6",
+      "seats": [],
+      "cameras": [
+        "H31"
+      ],
+      "confidence": "H31 normal/wide observed form; unmeasured procedural reconstruction",
+      "variant": "buffet-hot-station"
+    },
+    {
+      "id": "g56-rear-shelves",
+      "type": "cabinet",
+      "name": "Illuminated display shelves and cold-service counter",
+      "position": [
+        -0.3,
+        0,
+        4.66
+      ],
+      "yaw": 180,
+      "size": [
+        5.4,
+        3.5,
+        0.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c5b6",
+      "seats": [],
+      "cameras": [
+        "H31"
+      ],
+      "confidence": "H31 normal/wide observed form; unmeasured procedural reconstruction",
+      "variant": "buffet-display-shelves"
+    },
+    {
+      "id": "g56-coffee-counter",
+      "type": "counter",
+      "name": "Curved coffee counter with espresso machine and beverage urns",
+      "position": [
+        -4.4,
+        0,
+        2.214601935936482
+      ],
+      "yaw": 180,
+      "size": [
+        3.5,
+        1.65,
+        2.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c5b6",
+      "seats": [],
+      "cameras": [
+        "H31"
+      ],
+      "confidence": "H31 normal/wide observed form; unmeasured procedural reconstruction",
+      "variant": "buffet-coffee-station"
+    },
+    {
+      "id": "g56-service-door",
+      "type": "wall-panel",
+      "name": "Timber service door beside rear display",
+      "position": [
+        3.6,
+        0,
+        5.08
+      ],
+      "yaw": 180,
+      "size": [
+        1.2,
+        2.7,
+        0.09
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#87715b",
+      "seats": [],
+      "cameras": [
+        "H31"
+      ],
+      "confidence": "H31 normal/wide observed form; unmeasured procedural reconstruction",
+      "variant": "timber-office-door"
+    }
+  ]
+}

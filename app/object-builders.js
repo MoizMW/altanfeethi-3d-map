@@ -1,13 +1,16 @@
 import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 import {receptionSizes, buildReceptionObject} from './reception-objects.js';
+import {buildBuffetObject} from './buffet-objects.js';
 import {buildDiningObject} from './dining-objects.js';
 import {buildEggChair,buildShellLoungeChair,buildLeatherPrivacyChair} from './lounge-objects.js';
 import {buildCurvedArmchair} from './curved-armchair.js';
 import {buildPrivateLoungeObject,privateLoungeSizes} from './private-lounge-objects.js';
+import {buildLoungeSofa} from './lounge-sofa.js';
 import {buildNestedStoneTable} from './lounge-tables.js';
 import {buildLobbyFixture} from './lobby-fixtures.js';
 import {buildFirstFloorReceptionObject} from './first-floor-reception.js';
+import {buildCenterLounge} from './center-lounge.js';
 import {securitySizes, buildSecurityObject} from './security-objects.js';
 import {passportSizes, buildPassportObject} from './passport-objects.js';
 
@@ -19,6 +22,8 @@ export const referenceSize={sofa:[2.05,.88,.9],armchair:[.88,.9,.92],table:[1.5,
 export const objectReferenceSize=o=>privateLoungeSizes[o.variant]||referenceSize[o.type];
 export function buildObject(o){const g=new THREE.Group(),nativeSize=objectReferenceSize(o),[w,h,d]=nativeSize, fabric=mat(o.color),dark=mat('#303b3a',.4),gold=mat('#ab9564',.35,.6);g.userData.objectId=o.id;
  if(privateLoungeSizes[o.variant])g.add(buildPrivateLoungeObject(o));
+ else if(buildBuffetObject(g,o,{box,mesh,rod,mat,referenceSize})){}
+ else if(buildCenterLounge(g,o,{box,mesh,rod,mat,referenceSize})){}
  else if((o.type==='counter'&&o.variant==='food-buffet')||(o.type==='display-console'&&o.variant==='grand-piano'))buildDiningObject(g,o,{box,mesh,rod,mat});
  else if(buildLobbyFixture(g,o,{box,mesh,rod,mat,referenceSize,THREE})){}
  else if(buildFirstFloorReceptionObject(g,o,{box,mesh,rod,mat,referenceSize})){}
@@ -29,6 +34,7 @@ export function buildObject(o){const g=new THREE.Group(),nativeSize=objectRefere
  else if(o.type==='armchair'&&o.variant==='shell-lounge')g.add(buildShellLoungeChair(o));
  else if(o.type==='armchair'&&o.variant==='leather-privacy')g.add(buildLeatherPrivacyChair(o.color));
  else if(o.type==='armchair'&&(!o.variant||o.variant==='default'))g.add(buildCurvedArmchair(o));
+ else if(o.type==='sofa')g.add(buildLoungeSofa(o));
  else if(o.type==='sofa'||o.type==='armchair'){
   const n=o.type==='sofa'?2:1;
   box(g,[w,.22,d],[0,.29,0],fabric,.09);

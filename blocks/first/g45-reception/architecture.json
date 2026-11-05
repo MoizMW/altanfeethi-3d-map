@@ -3,11 +3,11 @@
   "version": 1,
   "blockId": "first-h-reception-045",
   "floorSize": [
-    7.2,
+    6,
     5.4
   ],
   "floorCenter": [
-    0,
+    -0.6,
     -0.1
   ],
   "ceilingHeight": 4.1,
@@ -27,7 +27,7 @@
       }
     ],
     "localAxes": {
-      "x": "Across the counter from its left return toward the folding-screen side",
+      "x": "From the folding-louver opening toward the solid left return (+X is screen-left in the reception-facing view)",
       "z": "From visitor / G48 approach toward the counter staff side and branded backdrop",
       "y": "Up; first-floor structural elevation unresolved"
     },
@@ -37,8 +37,7 @@
       4100,
       1550
     ],
-    "mapReview": "H45's registered first-floor reception is distinct from H15/H16 seating despite the reused g45 ROI folder name. The latter seating is outside this block.",
-    "mergeReview": "Separated from first/g45 (H15/H16 privacy lounge) during add/add conflict repair. This H45 reception retains its existing block/object/seat identities and G48 placement."
+    "mapReview": "H45's registered first-floor reception is distinct from H15/H16 seating despite the reused g45 ROI folder name. The latter seating is outside this block."
   },
   "footprint": [
     [
@@ -46,11 +45,11 @@
       -2.8
     ],
     [
-      3.6,
+      2.4,
       -2.8
     ],
     [
-      3.6,
+      2.4,
       2.6
     ],
     [
@@ -61,11 +60,11 @@
   "floorSections": [
     {
       "center": [
-        0,
+        -0.6,
         -0.1
       ],
       "size": [
-        7.2,
+        6,
         5.4
       ],
       "color": "#424747"
@@ -81,7 +80,7 @@
         2.52
       ],
       "end": [
-        1.95,
+        2.2,
         2.52
       ],
       "height": 4.1,
@@ -92,29 +91,29 @@
         "H45",
         "H51"
       ],
-      "confidence": "Back wall behind the branded panel is visible; right-side opening and circulation to buffet kept open."
+      "confidence": "Owner-corrected back wall joins the left return at the G48 patterned-glass line; dimensions estimated."
     },
     {
       "id": "g45-left-return",
       "kind": "solid",
       "start": [
-        -3.4,
+        2.2,
         -2.8
       ],
       "end": [
-        -3.4,
+        2.2,
         2.52
       ],
       "height": 4.1,
       "thickness": 0.12,
       "color": "#b0a99a",
       "finish": "warm-wood",
-      "interiorSide": 1,
+      "interiorSide": -1,
       "owner": "first/g45-reception",
       "sources": [
         "H45"
       ],
-      "confidence": "Paneled left boundary visible in close camera foreground; wall span and curve simplified."
+      "confidence": "Owner correction: left in the reception-facing view, aligned with G48 patterned glazing and continuous to the reception back wall."
     }
   ],
   "openings": [],
@@ -154,7 +153,8 @@
       "sources": [
         "H45"
       ],
-      "status": "buffet-visible-outside-reception-crop"
+      "status": "owner-confirmed-opening-to-first-floor-combined-lounges",
+      "notes": "Opening is on local -X, screen-right when facing reception. Folding louver screen remains portable; no solid wall closes this side. G48/G45 is outside the H40/H44/H50 backing wall, on its left in the owner combined-lounge screenshot."
     },
     {
       "id": "g45-old-roi-group-conflict",
@@ -165,14 +165,17 @@
   ],
   "ceiling": {
     "size": [
-      7.2,
+      6,
       5.4
     ],
     "center": [
-      0,
+      -0.6,
       -0.1
     ],
     "height": 4.1,
     "status": "provisional-visualization-only"
-  }
+  },
+  "notes": [
+    "Owner correction: move reception return to local X=2.2, matching G48 patterned glazing, from the front join to the back wall. The local -X side opens through the folding louver screen toward the combined lounges. Relative building placement remains uncalibrated."
+  ]
 }

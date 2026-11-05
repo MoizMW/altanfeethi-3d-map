@@ -1,0 +1,18 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "ground-g17-front-empty",
+  "slug": "g17-front",
+  "name": "G17 front · Empty block",
+  "floor": "ground",
+  "groups": [],
+  "zone": "E",
+  "status": "owner-requested-placeholder",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

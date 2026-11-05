@@ -1,0 +1,1308 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-right-046-047-049",
+  "objects": [
+    {
+      "id": "g46-g47-g49-chair-52",
+      "type": "armchair",
+      "name": "Tan shell / ivory cushion chair · H52",
+      "position": [
+        1.4,
+        0,
+        -6.5
+      ],
+      "yaw": 225,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d1ccbc",
+      "seats": [
+        "Seat_H52"
+      ],
+      "cameras": [
+        "H53"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "shellColor": "#ad8952",
+      "variant": "side-shell-chair"
+    },
+    {
+      "id": "g46-g47-g49-chair-53",
+      "type": "armchair",
+      "name": "Tan shell / ivory cushion chair · H53",
+      "position": [
+        -0.9,
+        0,
+        -6.5
+      ],
+      "yaw": 135,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d1ccbc",
+      "seats": [
+        "Seat_H53"
+      ],
+      "cameras": [
+        "H53"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "shellColor": "#ad8952",
+      "variant": "side-shell-chair"
+    },
+    {
+      "id": "g46-g47-g49-chair-54",
+      "type": "armchair",
+      "name": "Tan shell / ivory cushion chair · H54",
+      "position": [
+        1.4,
+        0,
+        -8.8
+      ],
+      "yaw": 315,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d1ccbc",
+      "seats": [
+        "Seat_H54"
+      ],
+      "cameras": [
+        "H48",
+        "H36"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "shellColor": "#ad8952",
+      "variant": "side-shell-chair"
+    },
+    {
+      "id": "g46-g47-g49-chair-55",
+      "type": "armchair",
+      "name": "Tan shell / ivory cushion chair · H55",
+      "position": [
+        -0.9,
+        0,
+        -8.8
+      ],
+      "yaw": 45,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d1ccbc",
+      "seats": [
+        "Seat_H55"
+      ],
+      "cameras": [
+        "H48",
+        "H36"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "shellColor": "#ad8952",
+      "variant": "side-shell-chair"
+    },
+    {
+      "id": "g46-g47-g49-table-20",
+      "type": "table",
+      "name": "Round marble / brass table · H20",
+      "position": [
+        0.25,
+        0,
+        -7.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.83,
+        0.53,
+        0.83
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H48",
+        "H36",
+        "H53"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "externalId": "Table_H20",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g46-g47-g49-sofa-50",
+      "type": "sofa",
+      "name": "Ivory two-seat sofa · H50 / H51",
+      "position": [
+        0.25,
+        0,
+        -4.05
+      ],
+      "yaw": 0,
+      "size": [
+        2.25,
+        0.9,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c5b8",
+      "seats": [
+        "Seat_H51",
+        "Seat_H50"
+      ],
+      "cameras": [
+        "H36",
+        "H48",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "pillow": false
+    },
+    {
+      "id": "g46-g47-g49-sofa-48",
+      "type": "sofa",
+      "name": "Ivory two-seat sofa · H49 / H48",
+      "position": [
+        0.25,
+        0,
+        -1.95
+      ],
+      "yaw": 180,
+      "size": [
+        2.25,
+        0.9,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c5b8",
+      "seats": [
+        "Seat_H48",
+        "Seat_H49"
+      ],
+      "cameras": [
+        "H50"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "pillow": false
+    },
+    {
+      "id": "g46-g47-g49-table-19",
+      "type": "table",
+      "name": "Nested marble set · H19",
+      "position": [
+        0.25,
+        0,
+        -3
+      ],
+      "yaw": 0,
+      "size": [
+        1.5,
+        0.46,
+        0.95
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H48",
+        "H53"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "externalId": "Table_H19",
+      "variant": "nested-stone"
+    },
+    {
+      "id": "g46-g47-g49-chair-44",
+      "type": "armchair",
+      "name": "Tan shell / ivory cushion chair · H44",
+      "position": [
+        1.4,
+        0,
+        2.95
+      ],
+      "yaw": 225,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d1ccbc",
+      "seats": [
+        "Seat_H44"
+      ],
+      "cameras": [
+        "H50"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "shellColor": "#ad8952",
+      "variant": "side-shell-chair"
+    },
+    {
+      "id": "g46-g47-g49-chair-45",
+      "type": "armchair",
+      "name": "Tan shell / ivory cushion chair · H45",
+      "position": [
+        -0.9,
+        0,
+        2.95
+      ],
+      "yaw": 135,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d1ccbc",
+      "seats": [
+        "Seat_H45"
+      ],
+      "cameras": [
+        "H50",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "shellColor": "#ad8952",
+      "variant": "side-shell-chair"
+    },
+    {
+      "id": "g46-g47-g49-chair-46",
+      "type": "armchair",
+      "name": "Tan shell / ivory cushion chair · H46",
+      "position": [
+        1.4,
+        0,
+        0.65
+      ],
+      "yaw": 315,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d1ccbc",
+      "seats": [
+        "Seat_H46"
+      ],
+      "cameras": [
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "shellColor": "#ad8952",
+      "variant": "side-shell-chair"
+    },
+    {
+      "id": "g46-g47-g49-chair-47",
+      "type": "armchair",
+      "name": "Tan shell / ivory cushion chair · H47",
+      "position": [
+        -0.9,
+        0,
+        0.65
+      ],
+      "yaw": 45,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d1ccbc",
+      "seats": [
+        "Seat_H47"
+      ],
+      "cameras": [
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "shellColor": "#ad8952",
+      "variant": "side-shell-chair"
+    },
+    {
+      "id": "g46-g47-g49-table-17",
+      "type": "table",
+      "name": "Round marble / brass table · H17",
+      "position": [
+        0.25,
+        0,
+        1.8
+      ],
+      "yaw": 0,
+      "size": [
+        0.83,
+        0.53,
+        0.83
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H50",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "externalId": "Table_H17",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g46-g47-g49-chair-40",
+      "type": "armchair",
+      "name": "Caramel leather chair · H40",
+      "position": [
+        1.4,
+        0,
+        9.75
+      ],
+      "yaw": 180,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b48a57",
+      "seats": [
+        "Seat_H40"
+      ],
+      "cameras": [
+        "H55"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g46-g47-g49-chair-42",
+      "type": "armchair",
+      "name": "Caramel leather chair · H42",
+      "position": [
+        1.4,
+        0,
+        7.45
+      ],
+      "yaw": 0,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b48a57",
+      "seats": [
+        "Seat_H42"
+      ],
+      "cameras": [
+        "H46"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g46-g47-g49-chair-41",
+      "type": "armchair",
+      "name": "Caramel leather chair · H41",
+      "position": [
+        -0.9,
+        0,
+        9.75
+      ],
+      "yaw": 180,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b48a57",
+      "seats": [
+        "Seat_H41"
+      ],
+      "cameras": [
+        "H46",
+        "H55"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g46-g47-g49-chair-43",
+      "type": "armchair",
+      "name": "Caramel leather chair · H43",
+      "position": [
+        -0.9,
+        0,
+        7.45
+      ],
+      "yaw": 0,
+      "size": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b48a57",
+      "seats": [
+        "Seat_H43"
+      ],
+      "cameras": [
+        "H46"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g46-g47-g49-table-15",
+      "type": "table",
+      "name": "Round marble / brass table · H15",
+      "position": [
+        1.4,
+        0,
+        8.6
+      ],
+      "yaw": 0,
+      "size": [
+        0.83,
+        0.53,
+        0.83
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H46",
+        "H55"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "externalId": "Table_H15",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g46-g47-g49-table-16",
+      "type": "table",
+      "name": "Round marble / brass table · H16",
+      "position": [
+        -0.9,
+        0,
+        8.6
+      ],
+      "yaw": 0,
+      "size": [
+        0.83,
+        0.53,
+        0.83
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H46",
+        "H55"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "externalId": "Table_H16",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g46-g47-g49-g46-console",
+      "type": "display-console",
+      "name": "Long marble-topped brass console",
+      "position": [
+        0.25,
+        0,
+        8.6
+      ],
+      "yaw": 0,
+      "size": [
+        0.48,
+        1.1,
+        3.2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b39b6a",
+      "seats": [],
+      "cameras": [
+        "H46",
+        "H55"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "side-marble-console"
+    },
+    {
+      "id": "g46-g47-g49-divider-g49-sofas",
+      "type": "screen",
+      "name": "Curved brass divider, stone cap and ring ornament",
+      "position": [
+        0.25,
+        0,
+        -5.3
+      ],
+      "yaw": 0,
+      "size": [
+        3.8,
+        1.9,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ac9362",
+      "seats": [],
+      "cameras": [
+        "H36",
+        "H52",
+        "H53",
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "side-curved-divider"
+    },
+    {
+      "id": "g46-g47-g49-divider-sofas-g47",
+      "type": "screen",
+      "name": "Curved brass divider, stone cap and ring ornament",
+      "position": [
+        0.25,
+        0,
+        -0.7
+      ],
+      "yaw": 0,
+      "size": [
+        3.8,
+        1.9,
+        0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ac9362",
+      "seats": [],
+      "cameras": [
+        "H36",
+        "H52",
+        "H53",
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "side-curved-divider"
+    },
+    {
+      "id": "g46-g47-g49-media-column",
+      "type": "wall-panel",
+      "name": "Cylindrical digital display · matching G50 pillar",
+      "position": [
+        -0.10351181074859661,
+        0,
+        5.431753494495655
+      ],
+      "yaw": -5.068916294476985,
+      "size": [
+        0.95,
+        4.1,
+        0.95
+      ],
+      "scale": [
+        1.8925934127327306,
+        1,
+        1.8755718245218334
+      ],
+      "color": "#344a83",
+      "seats": [],
+      "cameras": [
+        "H50",
+        "H54",
+        "H46",
+        "H55",
+        "H43",
+        "H44"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "cylindrical-display",
+      "notes": "Owner requests the same full-wrap animated display design as the left G50 pillar. Saved position, yaw, dimensions and manual scale are retained."
+    },
+    {
+      "id": "g46-g47-g49-plant-0-wall",
+      "type": "plant",
+      "name": "Potted plant beside chair bay",
+      "position": [
+        1.95,
+        0,
+        -9.9
+      ],
+      "yaw": 0,
+      "size": [
+        0.43,
+        1.85,
+        0.43
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#5b704b",
+      "seats": [],
+      "cameras": [
+        "H36",
+        "H52",
+        "H53"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending"
+    },
+    {
+      "id": "g46-g47-g49-plant-0-aisle",
+      "type": "plant",
+      "name": "Potted plant beside chair bay",
+      "position": [
+        -1.3,
+        0,
+        -9.9
+      ],
+      "yaw": 0,
+      "size": [
+        0.43,
+        1.85,
+        0.43
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#5b704b",
+      "seats": [],
+      "cameras": [
+        "H36",
+        "H52",
+        "H53"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending"
+    },
+    {
+      "id": "g46-g47-g49-plant-1-wall",
+      "type": "plant",
+      "name": "Potted plant beside chair bay",
+      "position": [
+        1.95,
+        0,
+        3.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.43,
+        1.85,
+        0.43
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#5b704b",
+      "seats": [],
+      "cameras": [
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending"
+    },
+    {
+      "id": "g46-g47-g49-plant-1-aisle",
+      "type": "plant",
+      "name": "Potted plant beside chair bay",
+      "position": [
+        -1.3,
+        0,
+        3.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.43,
+        1.85,
+        0.43
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#5b704b",
+      "seats": [],
+      "cameras": [
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending"
+    },
+    {
+      "id": "g46-g47-g49-shaded-lamp-0",
+      "type": "floor-lamp",
+      "name": "Brass standing lamp with ivory shade",
+      "position": [
+        2.02,
+        0,
+        -5.9
+      ],
+      "yaw": 0,
+      "size": [
+        0.4,
+        1.8,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e6dfcd",
+      "seats": [],
+      "cameras": [
+        "H36",
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending"
+    },
+    {
+      "id": "g46-g47-g49-shaded-lamp-1",
+      "type": "floor-lamp",
+      "name": "Brass standing lamp with ivory shade",
+      "position": [
+        2.02,
+        0,
+        -0.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.4,
+        1.8,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e6dfcd",
+      "seats": [],
+      "cameras": [
+        "H36",
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending"
+    },
+    {
+      "id": "g46-g47-g49-shaded-lamp-2",
+      "type": "floor-lamp",
+      "name": "Brass standing lamp with ivory shade",
+      "position": [
+        2.02,
+        0,
+        3.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.4,
+        1.8,
+        0.4
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e6dfcd",
+      "seats": [],
+      "cameras": [
+        "H36",
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending"
+    },
+    {
+      "id": "g46-g47-g49-wall-light-0",
+      "type": "display",
+      "name": "Warm sculptural wall light",
+      "position": [
+        2.29,
+        1.75,
+        -9.3
+      ],
+      "yaw": 270,
+      "size": [
+        0.12,
+        1.1,
+        0.12
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b99c61",
+      "seats": [],
+      "cameras": [
+        "H52",
+        "H53",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "side-wall-light"
+    },
+    {
+      "id": "g46-g47-g49-wall-light-1",
+      "type": "display",
+      "name": "Warm sculptural wall light",
+      "position": [
+        2.29,
+        1.75,
+        -6.2
+      ],
+      "yaw": 270,
+      "size": [
+        0.12,
+        1.1,
+        0.12
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b99c61",
+      "seats": [],
+      "cameras": [
+        "H52",
+        "H53",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "side-wall-light"
+    },
+    {
+      "id": "g46-g47-g49-wall-light-2",
+      "type": "display",
+      "name": "Warm sculptural wall light",
+      "position": [
+        2.29,
+        1.75,
+        -4.1
+      ],
+      "yaw": 270,
+      "size": [
+        0.12,
+        1.1,
+        0.12
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b99c61",
+      "seats": [],
+      "cameras": [
+        "H52",
+        "H53",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "side-wall-light"
+    },
+    {
+      "id": "g46-g47-g49-wall-light-3",
+      "type": "display",
+      "name": "Warm sculptural wall light",
+      "position": [
+        2.29,
+        1.75,
+        -1.8
+      ],
+      "yaw": 270,
+      "size": [
+        0.12,
+        1.1,
+        0.12
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b99c61",
+      "seats": [],
+      "cameras": [
+        "H52",
+        "H53",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "side-wall-light"
+    },
+    {
+      "id": "g46-g47-g49-wall-light-4",
+      "type": "display",
+      "name": "Warm sculptural wall light",
+      "position": [
+        2.29,
+        1.75,
+        1.4
+      ],
+      "yaw": 270,
+      "size": [
+        0.12,
+        1.1,
+        0.12
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b99c61",
+      "seats": [],
+      "cameras": [
+        "H52",
+        "H53",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "side-wall-light"
+    },
+    {
+      "id": "g46-g47-g49-wall-light-5",
+      "type": "display",
+      "name": "Warm sculptural wall light",
+      "position": [
+        2.29,
+        1.75,
+        3.7
+      ],
+      "yaw": 270,
+      "size": [
+        0.12,
+        1.1,
+        0.12
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b99c61",
+      "seats": [],
+      "cameras": [
+        "H52",
+        "H53",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "side-wall-light"
+    },
+    {
+      "id": "g46-g47-g49-extinguisher-0",
+      "type": "display",
+      "name": "Fire extinguisher beside wall",
+      "position": [
+        2.03,
+        0,
+        -9.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.28,
+        0.9,
+        0.26
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b32d2a",
+      "seats": [],
+      "cameras": [
+        "H36",
+        "H52"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "fire-extinguisher"
+    },
+    {
+      "id": "g46-g47-g49-extinguisher-1",
+      "type": "display",
+      "name": "Fire extinguisher beside wall",
+      "position": [
+        2.03,
+        0,
+        3.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.28,
+        0.9,
+        0.26
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b32d2a",
+      "seats": [],
+      "cameras": [
+        "H48",
+        "H50",
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "fire-extinguisher"
+    },
+    {
+      "id": "g46-g47-g49-bin-0",
+      "type": "cabinet",
+      "name": "Brass waste bin",
+      "position": [
+        0.25,
+        0,
+        -7.1
+      ],
+      "yaw": 0,
+      "size": [
+        0.24,
+        0.4,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H36"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g46-g47-g49-bin-1",
+      "type": "cabinet",
+      "name": "Brass waste bin",
+      "position": [
+        -0.6,
+        0,
+        -2.9
+      ],
+      "yaw": 0,
+      "size": [
+        0.24,
+        0.4,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H48"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g46-g47-g49-bin-2",
+      "type": "cabinet",
+      "name": "Brass waste bin",
+      "position": [
+        0.25,
+        0,
+        2.4
+      ],
+      "yaw": 0,
+      "size": [
+        0.24,
+        0.4,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H54"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g46-g47-g49-bin-3",
+      "type": "cabinet",
+      "name": "Brass waste bin",
+      "position": [
+        1.9,
+        0,
+        8.6
+      ],
+      "yaw": 0,
+      "size": [
+        0.24,
+        0.4,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H55"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g46-g47-g49-bin-4",
+      "type": "cabinet",
+      "name": "Brass waste bin",
+      "position": [
+        -0.4,
+        0,
+        8.6
+      ],
+      "yaw": 0,
+      "size": [
+        0.24,
+        0.4,
+        0.24
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H46"
+      ],
+      "confidence": "Normal/wide image correspondence; unmeasured size, yaw and spacing; owner review pending",
+      "variant": "waste-bin"
+    }
+  ]
+}

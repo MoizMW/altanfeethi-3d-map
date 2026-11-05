@@ -1,8 +1,13 @@
 import {test} from 'node:test';
+import './floors.test.mjs';
+import '../blocks/first/g52-g55/validate.test.mjs';
+import '../blocks/first/g46-g47-g49/validate.test.mjs';
+import './render-performance.test.mjs';
 import '../blocks/first/g42/validate.test.mjs';
 import './lobby-layout.test.mjs';
 import {fileURLToPath} from 'node:url';
 import './first-floor-layout.test.mjs';
+import './window-row-merge.test.mjs';
 import '../blocks/first/g35/validate.test.mjs';
 import '../blocks/first/g36/validate.test.mjs';
 import '../blocks/first/g37/validate.test.mjs';
@@ -225,7 +230,7 @@ test('server lists and serves blocks, evidence, shared schema and stale-write pr
     assert.equal((await fetch(`${origin}/api/evidence/camera/H45?block=first/g45`)).status,404);
     assert.ok(listing.blocks.some(b=>b.key==='layout:first/bottom-lobby'));
     const lobby=await(await fetch(`${origin}/api/block?layout=first/bottom-lobby`)).json();validateBlock(lobby.block);
-    assert.equal(lobby.block.objects.flatMap(o=>o.seats).length,20);
+    assert.equal(lobby.block.objects.flatMap(o=>o.seats).length,32);
     for(const camera of ['H9','H18','H19'])assert.equal((await fetch(`${origin}/api/evidence/camera/${camera}?layout=first/bottom-lobby`)).status,200);
     for(const camera of ['H9','H18'])assert.equal((await fetch(`${origin}/api/evidence/camera/${camera}?layout=first/bottom-lobby&wide=1`)).status,200);
     assert.equal((await fetch(`${origin}/api/evidence/camera/H19?layout=first/bottom-lobby&wide=1`)).status,404);

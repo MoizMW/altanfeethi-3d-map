@@ -1,0 +1,466 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "first-h-center-052-055",
+  "floorSize": [
+    10.6,
+    22
+  ],
+  "floorCenter": [
+    0,
+    0.4
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "not-globally-calibrated",
+    "map": "evidence/maps/first-floor.png",
+    "registrationRevision": "2026-11-03T07:14:37.307Z",
+    "anchors": [
+      {
+        "camera": "H22",
+        "pixel": [
+          625,
+          1097
+        ],
+        "heading": 111,
+        "status": "verified"
+      },
+      {
+        "camera": "H23",
+        "pixel": [
+          801,
+          1194
+        ],
+        "heading": 272,
+        "status": "verified"
+      },
+      {
+        "camera": "H24",
+        "pixel": [
+          1471,
+          1523
+        ],
+        "heading": 335,
+        "status": "verified"
+      },
+      {
+        "camera": "H29",
+        "pixel": [
+          2028,
+          1848
+        ],
+        "heading": 315,
+        "status": "verified"
+      },
+      {
+        "camera": "H32",
+        "pixel": [
+          1146,
+          746
+        ],
+        "heading": 149,
+        "status": "verified"
+      },
+      {
+        "camera": "H33",
+        "pixel": [
+          1346,
+          862
+        ],
+        "heading": 122,
+        "status": "verified"
+      },
+      {
+        "camera": "H34",
+        "pixel": [
+          1759,
+          1398
+        ],
+        "heading": 348,
+        "status": "verified"
+      },
+      {
+        "camera": "H35",
+        "pixel": [
+          2152,
+          1328
+        ],
+        "heading": 15,
+        "status": "verified"
+      },
+      {
+        "camera": "H36",
+        "pixel": [
+          1604,
+          1006
+        ],
+        "heading": 0,
+        "status": "verified"
+      },
+      {
+        "camera": "H37",
+        "pixel": [
+          1194,
+          1102
+        ],
+        "heading": 310,
+        "status": "verified"
+      },
+      {
+        "camera": "H38",
+        "pixel": [
+          1443,
+          1140
+        ],
+        "heading": 106,
+        "status": "verified"
+      },
+      {
+        "camera": "H39",
+        "pixel": [
+          1409,
+          1232
+        ],
+        "heading": 155,
+        "status": "verified"
+      },
+      {
+        "camera": "H40",
+        "pixel": [
+          1681,
+          1385
+        ],
+        "heading": 273,
+        "status": "verified"
+      },
+      {
+        "camera": "H41",
+        "pixel": [
+          2003,
+          1500
+        ],
+        "heading": 131,
+        "status": "verified"
+      },
+      {
+        "camera": "H43",
+        "pixel": [
+          2501,
+          1531
+        ],
+        "heading": 304,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      500,
+      500,
+      2450,
+      2100
+    ],
+    "localAxes": {
+      "x": "From wood-side adjacent bays (-X) toward window-side adjacent bays (+X)",
+      "z": "From H37 wood end (-Z) toward H41 buffet approach (+Z)",
+      "y": "Up; local floor zero is not building first-floor elevation"
+    },
+    "mapReview": "Map establishes relative area and camera directions, not metric calibration. H44 remains unplaced."
+  },
+  "footprint": [
+    [
+      -5.3,
+      -10.6
+    ],
+    [
+      5.3,
+      -10.6
+    ],
+    [
+      5.3,
+      11.4
+    ],
+    [
+      -5.3,
+      11.4
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g52-g55-continuous-dark-floor",
+      "size": [
+        10.6,
+        22
+      ],
+      "center": [
+        0,
+        0.4
+      ],
+      "color": "#424747"
+    }
+  ],
+  "circulations": [
+    {
+      "id": "g52-g55-distressed-carpet",
+      "polygon": [
+        [
+          -4.2,
+          -10.3
+        ],
+        [
+          4.2,
+          -10.3
+        ],
+        [
+          4.2,
+          10.3
+        ],
+        [
+          -4.2,
+          10.3
+        ]
+      ],
+      "surfaceMaterial": "carpet",
+      "color": "#c9c5b8",
+      "holes": [
+        [
+          [
+            -0.725,
+            -5.425
+          ],
+          [
+            0.725,
+            -5.425
+          ],
+          [
+            0.725,
+            -3.975
+          ],
+          [
+            -0.725,
+            -3.975
+          ]
+        ],
+        [
+          [
+            -0.725,
+            3.975
+          ],
+          [
+            0.725,
+            3.975
+          ],
+          [
+            0.725,
+            5.425
+          ],
+          [
+            -0.725,
+            5.425
+          ]
+        ]
+      ],
+      "notes": "One continuous pale distressed rug with two flush planted tree beds; no invented internal room walls."
+    }
+  ],
+  "walls": [
+    {
+      "id": "g52-g55-wood-end-wall",
+      "kind": "solid",
+      "start": [
+        -5.3,
+        -10.6
+      ],
+      "end": [
+        5.3,
+        -10.6
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "finish": "i-zone-wood-panels",
+      "color": "#8d6650",
+      "owner": "first/g52-g55",
+      "sources": [
+        "H37",
+        "H23"
+      ],
+      "confidence": "Continuous wood end backing visible in H37; estimated endpoints and height"
+    },
+    {
+      "id": "g52-g55-wood-low-divider-1",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        -4.45,
+        -6.45
+      ],
+      "end": [
+        -4.45,
+        -2.95
+      ],
+      "height": 0.94,
+      "thickness": 0.045,
+      "privacyBand": false,
+      "owner": "first/g52-g55",
+      "sources": [
+        "H22",
+        "H33",
+        "H34",
+        "H38",
+        "H39",
+        "H29",
+        "H43"
+      ],
+      "confidence": "Low ribbed dividers behind dark chair pairs visible; spans and rib spacing estimated"
+    },
+    {
+      "id": "g52-g55-wood-low-divider-2",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        -4.45,
+        2.95
+      ],
+      "end": [
+        -4.45,
+        6.45
+      ],
+      "height": 0.94,
+      "thickness": 0.045,
+      "privacyBand": false,
+      "owner": "first/g52-g55",
+      "sources": [
+        "H22",
+        "H33",
+        "H34",
+        "H38",
+        "H39",
+        "H29",
+        "H43"
+      ],
+      "confidence": "Low ribbed dividers behind dark chair pairs visible; spans and rib spacing estimated"
+    },
+    {
+      "id": "g52-g55-window-low-divider-1",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        4.45,
+        -6.45
+      ],
+      "end": [
+        4.45,
+        -2.95
+      ],
+      "height": 0.94,
+      "thickness": 0.045,
+      "privacyBand": false,
+      "owner": "first/g52-g55",
+      "sources": [
+        "H22",
+        "H33",
+        "H34",
+        "H38",
+        "H39",
+        "H29",
+        "H43"
+      ],
+      "confidence": "Low ribbed dividers behind dark chair pairs visible; spans and rib spacing estimated"
+    },
+    {
+      "id": "g52-g55-window-low-divider-2",
+      "kind": "glass",
+      "variant": "reeded-divider",
+      "start": [
+        4.45,
+        2.95
+      ],
+      "end": [
+        4.45,
+        6.45
+      ],
+      "height": 0.94,
+      "thickness": 0.045,
+      "privacyBand": false,
+      "owner": "first/g52-g55",
+      "sources": [
+        "H22",
+        "H33",
+        "H34",
+        "H38",
+        "H39",
+        "H29",
+        "H43"
+      ],
+      "confidence": "Low ribbed dividers behind dark chair pairs visible; spans and rib spacing estimated"
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "boundaryReview": [
+    {
+      "id": "g52-g55-wood-side-walk",
+      "kind": "open-corridor",
+      "start": [
+        -5.3,
+        -10.5
+      ],
+      "end": [
+        -5.3,
+        11.4
+      ],
+      "sources": [
+        "H33",
+        "H38",
+        "H43"
+      ],
+      "status": "Open dark-tiled side passage; neighboring bays excluded"
+    },
+    {
+      "id": "g52-g55-window-side-walk",
+      "kind": "open-corridor",
+      "start": [
+        5.3,
+        -10.5
+      ],
+      "end": [
+        5.3,
+        11.4
+      ],
+      "sources": [
+        "H22",
+        "H32",
+        "H39",
+        "H29"
+      ],
+      "status": "Open dark-tiled side passage; glazing belongs beyond neighboring bays and is not placed at this crop edge"
+    },
+    {
+      "id": "g52-g55-buffet-approach",
+      "kind": "open-corridor",
+      "start": [
+        -5.3,
+        11.4
+      ],
+      "end": [
+        5.3,
+        11.4
+      ],
+      "sources": [
+        "H41",
+        "H38"
+      ],
+      "status": "Open continuation to buffet; buffet furnishings beyond the four requested groups are excluded"
+    }
+  ],
+  "ceiling": {
+    "size": [
+      10.6,
+      22
+    ],
+    "center": [
+      0,
+      0.4
+    ],
+    "height": 4.1,
+    "status": "Estimated visualization height; pendant hanging heights provisional"
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-g17-front-empty",
+  "floorSize": [
+    9.6,
+    4.2
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "owner-relative-placement-only",
+    "map": "evidence/maps/ground-floor.png",
+    "anchors": [],
+    "localAxes": {
+      "x": "Across the block, matching G17 width",
+      "z": "From G17 frontage toward the new outer edge",
+      "y": "Up"
+    }
+  },
+  "dimensionBasis": {
+    "widthReference": "ground/g17",
+    "depthReference": [
+      "ground/g60",
+      "ground/i33-lounge"
+    ],
+    "width": 9.6,
+    "depth": 4.2,
+    "notes": "Owner requests an empty block matching G17 width; depth follows the neighboring small lounges. Provisional meters."
+  },
+  "walls": [
+    {
+      "id": "g17-front-left-wall",
+      "kind": "solid",
+      "start": [
+        -4.8,
+        -2.1
+      ],
+      "end": [
+        -4.8,
+        2.1
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e2dfd5",
+      "owner": "ground/g17-front",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner requests an enclosed block; height, thickness and entrance dimensions are provisional"
+    },
+    {
+      "id": "g17-front-outer-wall",
+      "kind": "solid",
+      "start": [
+        -4.8,
+        2.1
+      ],
+      "end": [
+        4.8,
+        2.1
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e2dfd5",
+      "owner": "ground/g17-front",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner requests an enclosed block; height, thickness and entrance dimensions are provisional"
+    },
+    {
+      "id": "g17-front-right-wall",
+      "kind": "solid",
+      "start": [
+        4.8,
+        2.1
+      ],
+      "end": [
+        4.8,
+        -2.1
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e2dfd5",
+      "owner": "ground/g17-front",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner requests an enclosed block; height, thickness and entrance dimensions are provisional"
+    },
+    {
+      "id": "g17-front-entry-left-return",
+      "kind": "solid",
+      "start": [
+        -4.8,
+        -2.1
+      ],
+      "end": [
+        -0.8,
+        -2.1
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e2dfd5",
+      "owner": "ground/g17-front",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner requests an enclosed block; height, thickness and entrance dimensions are provisional"
+    },
+    {
+      "id": "g17-front-entry-right-return",
+      "kind": "solid",
+      "start": [
+        0.8,
+        -2.1
+      ],
+      "end": [
+        4.8,
+        -2.1
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "color": "#e2dfd5",
+      "owner": "ground/g17-front",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner requests an enclosed block; height, thickness and entrance dimensions are provisional"
+    },
+    {
+      "id": "g17-front-entry-header",
+      "kind": "solid",
+      "start": [
+        -0.8,
+        -2.1
+      ],
+      "end": [
+        0.8,
+        -2.1
+      ],
+      "height": 1.3,
+      "thickness": 0.16,
+      "color": "#e2dfd5",
+      "owner": "ground/g17-front",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner requests an enclosed block; height, thickness and entrance dimensions are provisional",
+      "elevation": 2.8
+    },
+    {
+      "id": "g17-front-glass-gate",
+      "kind": "glass",
+      "start": [
+        -0.8,
+        -2.1
+      ],
+      "end": [
+        0.8,
+        -2.1
+      ],
+      "height": 2.8,
+      "thickness": 0.035,
+      "color": "#c6dce1",
+      "frameColor": "#68716e",
+      "opacity": 0.16,
+      "privacyBand": false,
+      "doors": [
+        {
+          "id": "g17-front-entry-door",
+          "offset": 0.8,
+          "width": 1.5,
+          "height": 2.8,
+          "handleColor": "#444b49",
+          "handleHeight": 1.15,
+          "handleLength": 0.7
+        }
+      ],
+      "owner": "ground/g17-front",
+      "sources": [
+        "owner-request"
+      ],
+      "confidence": "Owner requests a centered glass gate facing the white corridor; 1.6 × 2.8 m frontage with a 1.5 m leaf and narrow glazed jamb margins, dimensions estimated."
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [],
+  "footprint": [
+    [
+      -4.8,
+      -2.1
+    ],
+    [
+      4.8,
+      -2.1
+    ],
+    [
+      4.8,
+      2.1
+    ],
+    [
+      -4.8,
+      2.1
+    ]
+  ],
+  "floorSections": [
+    {
+      "center": [
+        0,
+        0
+      ],
+      "size": [
+        9.6,
+        4.2
+      ],
+      "color": "#424747",
+      "yaw": 0
+    }
+  ],
+  "ceiling": {
+    "size": [
+      9.6,
+      4.2
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "defaultVisible": false
+  },
+  "notes": [
+    "Empty floor-only placeholder requested by owner in front of G17. No furniture, seats, cameras or enclosing boundaries are inferred.",
+    "Full main layout places this block at [-48.98,0,7.7], yaw 0, so its rear edge Z=5.6 meets G17 front floor exactly. Width is G17 9.6 m and depth is the nearby G60/I33 4.2 m.",
+    "Owner enclosure update supersedes the floor-only draft: four pale perimeter sides with a centered glass entrance facing the white G17 corridor (local -Z/global Z=5.6). Entry is 1.6 m wide × 2.8 m high, with separate solid returns and header so no wall face covers the glass. Room remains unfurnished; source footprint and placement unchanged."
+  ],
+  "perimeterSides": {
+    "left": [
+      "g17-front-left-wall"
+    ],
+    "outer": [
+      "g17-front-outer-wall"
+    ],
+    "right": [
+      "g17-front-right-wall"
+    ],
+    "corridor": [
+      "g17-front-entry-left-return",
+      "g17-front-glass-gate",
+      "g17-front-entry-right-return",
+      "g17-front-entry-header"
+    ]
+  }
+}

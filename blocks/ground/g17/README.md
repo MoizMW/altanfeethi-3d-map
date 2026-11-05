@@ -40,3 +40,6 @@ Initial validation passed, including ROI identity reconciliation and entrance/ce
 G17 is included in the B + C + E + G combined layout beside G12/G14, with its E9/E10/E11 side against the C lounge. Its 9.6 m span matches G27 directly behind it; the open entrance faces the continuous front walkway. G27 owns rear glazing and the C lounge owns the side partition. Individual G17 now shares the combined 9.6 × 8.6 m shell and furniture positions. Composition uses source positions directly without extra offsets; saved furniture edits appear in both views. Dimensions are provisional.
 
 Individual G17 uses a 9.6 × 8.6 m floor centered at [0,1.2], including its open front walkway. The combined layout applies only placement and shared-wall exclusions. Resize or move furniture in individual G17 and save, then refresh the combined view.
+
+
+The left sign wall now reproduces the E1/E4 gold Arabic and English Diriyah Majlis name, diamond/floral motif and diriyah.sa website. Letterforms, relief and placement are approximate. The sign is structural wall detail, visible in standalone and main combined views with full walls, and hidden in low-wall cutaway. Furniture is preserved.

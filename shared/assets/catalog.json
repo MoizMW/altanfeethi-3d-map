@@ -98,6 +98,8 @@
     },
     "sofa": {
       "builder": "procedural-sofa",
+      "defaultColor": "#aaa59c",
+      "notes": "Shared warm off-white woven sofa with two full seat/back cushions, padded arms and light-blue pillows with dark piping. Builder: app/lounge-sofa.js; owner references: shared/assets/library/references/lounge-sofa/.",
       "defaultSize": [
         2.05,
         0.88,
@@ -176,7 +178,10 @@
       "variants": [
         "food-buffet",
         "unused-glass-counter",
-        "stone-reception"
+        "stone-reception",
+        "buffet-tree-island",
+        "buffet-hot-station",
+        "buffet-coffee-station"
       ]
     },
     "office-chair": {
@@ -199,8 +204,9 @@
         "drawer-pedestal",
         "access-reader",
         "plain-planter",
+        "stored-shelving",
         "window-sill",
-        "stored-shelving"
+        "buffet-display-shelves"
       ]
     },
     "display": {

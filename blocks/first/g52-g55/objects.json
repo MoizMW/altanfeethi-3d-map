@@ -1,0 +1,1776 @@
+{
+  "format": "altanfeethi-block-objects",
+  "version": 1,
+  "blockId": "first-h-center-052-055",
+  "objects": [
+    {
+      "id": "g52-g55-sofa-69",
+      "type": "sofa",
+      "name": "Curved teal sofa · H69 / H70 / H71",
+      "position": [
+        -2.9649536342234595,
+        0,
+        -9.25
+      ],
+      "yaw": 34.8736241610832,
+      "size": [
+        2.8,
+        0.9,
+        1.5
+      ],
+      "scale": [
+        1.1353407025801607,
+        1.4308911215471067,
+        1.120724418308852
+      ],
+      "color": "#24545c",
+      "seats": [
+        "Seat_H75",
+        "Seat_H74",
+        "Seat_H73"
+      ],
+      "cameras": [
+        "H37"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-curved-sofa"
+    },
+    {
+      "id": "g52-g55-sofa-73",
+      "type": "sofa",
+      "name": "Curved teal sofa · H73 / H74 / H75",
+      "position": [
+        2.978309843708871,
+        0,
+        -9.25
+      ],
+      "yaw": -32.63765820214946,
+      "size": [
+        2.8,
+        0.9,
+        1.5
+      ],
+      "scale": [
+        1.1889248448405951,
+        1.1222973509325709,
+        1.0218121718041608
+      ],
+      "color": "#24545c",
+      "seats": [
+        "Seat_H71",
+        "Seat_H70",
+        "Seat_H69"
+      ],
+      "cameras": [
+        "H32",
+        "H37"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-curved-sofa"
+    },
+    {
+      "id": "g52-g55-sofa-56",
+      "type": "sofa",
+      "name": "Curved teal sofa · H56 / H57 / H58",
+      "position": [
+        -3.004,
+        0,
+        9.333
+      ],
+      "yaw": 150,
+      "size": [
+        2.8,
+        0.9,
+        1.5
+      ],
+      "scale": [
+        1.167,
+        0.943,
+        0.94
+      ],
+      "color": "#24545c",
+      "seats": [
+        "Seat_H86",
+        "Seat_H85",
+        "Seat_H84"
+      ],
+      "cameras": [
+        "H41"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-curved-sofa"
+    },
+    {
+      "id": "g52-g55-sofa-84",
+      "type": "sofa",
+      "name": "Curved teal sofa · H84 / H85 / H86",
+      "position": [
+        2.943,
+        0,
+        9.247
+      ],
+      "yaw": 220,
+      "size": [
+        2.8,
+        0.9,
+        1.5
+      ],
+      "scale": [
+        1.271,
+        1.118,
+        1.11
+      ],
+      "color": "#24545c",
+      "seats": [
+        "Seat_H58",
+        "Seat_H57",
+        "Seat_H56"
+      ],
+      "cameras": [
+        "H41"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-curved-sofa"
+    },
+    {
+      "id": "g52-g55-chair-68",
+      "type": "armchair",
+      "name": "Cream barrel chair · H68",
+      "position": [
+        -1.97867301324716,
+        0,
+        -7.491252300690715
+      ],
+      "yaw": -23.52492598321184,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H72"
+      ],
+      "cameras": [
+        "H32"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-chair-72",
+      "type": "armchair",
+      "name": "Cream barrel chair · H72",
+      "position": [
+        1.9691647779423045,
+        0,
+        -7.598949694313046
+      ],
+      "yaw": 25.68058066156305,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H68"
+      ],
+      "cameras": [
+        "H22"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-chair-59",
+      "type": "armchair",
+      "name": "Cream barrel chair · H59",
+      "position": [
+        -1.9807178314607492,
+        0,
+        7.516404790631923
+      ],
+      "yaw": -22.93263530485053,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H87"
+      ],
+      "cameras": [
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-chair-87",
+      "type": "armchair",
+      "name": "Cream barrel chair · H87",
+      "position": [
+        1.6807242348744411,
+        0,
+        7.77852209428269
+      ],
+      "yaw": 35.95716639190562,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H59"
+      ],
+      "cameras": [
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-table-27",
+      "type": "table",
+      "name": "Round marble / brass table · H27",
+      "position": [
+        -2.45,
+        0,
+        -8.433853730027556
+      ],
+      "yaw": 0,
+      "size": [
+        0.84,
+        0.53,
+        0.84
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H32",
+        "H37"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "externalId": "Table_H28",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g52-g55-table-28",
+      "type": "table",
+      "name": "Round marble / brass table · H28",
+      "position": [
+        2.45,
+        0,
+        -8.50840233695867
+      ],
+      "yaw": 0,
+      "size": [
+        0.84,
+        0.53,
+        0.84
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H32",
+        "H37"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "externalId": "Table_H27",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g52-g55-table-22",
+      "type": "table",
+      "name": "Round marble / brass table · H22",
+      "position": [
+        -2.45,
+        0,
+        8.626545953979017
+      ],
+      "yaw": 0,
+      "size": [
+        0.84,
+        0.53,
+        0.84
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H41",
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "externalId": "Table_H33",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g52-g55-table-33",
+      "type": "table",
+      "name": "Round marble / brass table · H33",
+      "position": [
+        2.3086133520038485,
+        0,
+        8.572503540767652
+      ],
+      "yaw": 0,
+      "size": [
+        0.84,
+        0.53,
+        0.84
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H41"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "externalId": "Table_H22",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g52-g55-chair-66",
+      "type": "armchair",
+      "name": "Dark leather chair · H66",
+      "position": [
+        -3.05,
+        0,
+        -5.75
+      ],
+      "yaw": 0,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#49433e",
+      "seats": [
+        "Seat_H76"
+      ],
+      "cameras": [
+        "H32"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g52-g55-chair-67",
+      "type": "armchair",
+      "name": "Dark leather chair · H67",
+      "position": [
+        -3.05,
+        0,
+        -3.65
+      ],
+      "yaw": 180,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#49433e",
+      "seats": [
+        "Seat_H77"
+      ],
+      "cameras": [
+        "H34"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g52-g55-chair-76",
+      "type": "armchair",
+      "name": "Dark leather chair · H76",
+      "position": [
+        3.05,
+        0,
+        -5.75
+      ],
+      "yaw": 0,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#49433e",
+      "seats": [
+        "Seat_H67"
+      ],
+      "cameras": [
+        "H24"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g52-g55-chair-77",
+      "type": "armchair",
+      "name": "Dark leather chair · H77",
+      "position": [
+        3.05,
+        0,
+        -3.65
+      ],
+      "yaw": 180,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#49433e",
+      "seats": [
+        "Seat_H66"
+      ],
+      "cameras": [
+        "H22"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g52-g55-chair-60",
+      "type": "armchair",
+      "name": "Dark leather chair · H60",
+      "position": [
+        -3.05,
+        0,
+        3.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#49433e",
+      "seats": [
+        "Seat_H82"
+      ],
+      "cameras": [
+        "H38"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g52-g55-chair-61",
+      "type": "armchair",
+      "name": "Dark leather chair · H61",
+      "position": [
+        -3.05,
+        0,
+        5.75
+      ],
+      "yaw": 180,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#49433e",
+      "seats": [
+        "Seat_H83"
+      ],
+      "cameras": [
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g52-g55-chair-83",
+      "type": "armchair",
+      "name": "Dark leather chair · H83",
+      "position": [
+        3.05,
+        0,
+        3.65
+      ],
+      "yaw": 0,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#49433e",
+      "seats": [
+        "Seat_H61"
+      ],
+      "cameras": [
+        "H39"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g52-g55-chair-82",
+      "type": "armchair",
+      "name": "Dark leather chair · H82",
+      "position": [
+        3.05,
+        0,
+        5.75
+      ],
+      "yaw": 180,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#49433e",
+      "seats": [
+        "Seat_H60"
+      ],
+      "cameras": [
+        "H29",
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-leather-chair"
+    },
+    {
+      "id": "g52-g55-table-26",
+      "type": "table",
+      "name": "Round marble / brass table · H26",
+      "position": [
+        -3.05,
+        0,
+        -4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.84,
+        0.53,
+        0.84
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H32",
+        "H34"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "externalId": "Table_H29",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g52-g55-table-29",
+      "type": "table",
+      "name": "Round marble / brass table · H29",
+      "position": [
+        3.05,
+        0,
+        -4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.84,
+        0.53,
+        0.84
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H24"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "externalId": "Table_H26",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g52-g55-table-23",
+      "type": "table",
+      "name": "Round marble / brass table · H23",
+      "position": [
+        -3.05,
+        0,
+        4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.84,
+        0.53,
+        0.84
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H38",
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "externalId": "Table_H32",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g52-g55-table-32",
+      "type": "table",
+      "name": "Round marble / brass table · H32",
+      "position": [
+        3.05,
+        0,
+        4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.84,
+        0.53,
+        0.84
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H39",
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "externalId": "Table_H23",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g52-g55-chair-62",
+      "type": "armchair",
+      "name": "Cream barrel chair · H62",
+      "position": [
+        -2.65,
+        0,
+        1.25
+      ],
+      "yaw": 180,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H81"
+      ],
+      "cameras": [
+        "H38"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-chair-63",
+      "type": "armchair",
+      "name": "Cream barrel chair · H63",
+      "position": [
+        -1.4,
+        0,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H78"
+      ],
+      "cameras": [
+        "H38"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-chair-64",
+      "type": "armchair",
+      "name": "Cream barrel chair · H64",
+      "position": [
+        -2.65,
+        0,
+        -1.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H79"
+      ],
+      "cameras": [
+        "H34",
+        "H38"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-chair-65",
+      "type": "armchair",
+      "name": "Cream barrel chair · H65",
+      "position": [
+        -3.9,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H80"
+      ],
+      "cameras": [
+        "H34"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-chair-78",
+      "type": "armchair",
+      "name": "Cream barrel chair · H78",
+      "position": [
+        3.9,
+        0,
+        0
+      ],
+      "yaw": 270,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H62"
+      ],
+      "cameras": [
+        "H24"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-chair-79",
+      "type": "armchair",
+      "name": "Cream barrel chair · H79",
+      "position": [
+        2.65,
+        0,
+        -1.25
+      ],
+      "yaw": 0,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H65"
+      ],
+      "cameras": [
+        "H24"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-chair-80",
+      "type": "armchair",
+      "name": "Cream barrel chair · H80",
+      "position": [
+        1.4,
+        0,
+        0
+      ],
+      "yaw": 90,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H64"
+      ],
+      "cameras": [
+        "H39"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-chair-81",
+      "type": "armchair",
+      "name": "Cream barrel chair · H81",
+      "position": [
+        2.65,
+        0,
+        1.25
+      ],
+      "yaw": 180,
+      "size": [
+        0.94,
+        0.96,
+        0.96
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#c9c0ad",
+      "seats": [
+        "Seat_H63p"
+      ],
+      "cameras": [
+        "H24",
+        "H39"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-barrel-chair"
+    },
+    {
+      "id": "g52-g55-table-24",
+      "type": "table",
+      "name": "Round marble / brass table · H24",
+      "position": [
+        -2.65,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.84,
+        0.53,
+        0.84
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H34",
+        "H38"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "externalId": "Table_H31",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g52-g55-table-31",
+      "type": "table",
+      "name": "Round marble / brass table · H31",
+      "position": [
+        2.65,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.84,
+        0.53,
+        0.84
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#e5e1d5",
+      "seats": [],
+      "cameras": [
+        "H24",
+        "H39",
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "externalId": "Table_H24",
+      "variant": "round-pedestal"
+    },
+    {
+      "id": "g52-g55-tree-bed-1",
+      "type": "plant",
+      "name": "Indoor tree and flush planted gravel bed · 1",
+      "position": [
+        0,
+        0,
+        -4.7
+      ],
+      "yaw": 0,
+      "size": [
+        1.8,
+        3.25,
+        1.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#496445",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H32",
+        "H34",
+        "H38",
+        "H39",
+        "H29",
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-tree-bed"
+    },
+    {
+      "id": "g52-g55-tree-bed-2",
+      "type": "plant",
+      "name": "Indoor tree and flush planted gravel bed · 2",
+      "position": [
+        0,
+        0,
+        4.7
+      ],
+      "yaw": 0,
+      "size": [
+        1.8,
+        3.25,
+        1.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#496445",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H32",
+        "H34",
+        "H38",
+        "H39",
+        "H29",
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-tree-bed"
+    },
+    {
+      "id": "g52-g55-light-frame-wood",
+      "type": "floor-lamp",
+      "name": "Rounded brass lighting frame · wood",
+      "position": [
+        -4.45,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.22,
+        3.6,
+        18.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ac9362",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H32",
+        "H34",
+        "H38",
+        "H24",
+        "H29",
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-light-frame"
+    },
+    {
+      "id": "g52-g55-pendant-wood-0",
+      "type": "floor-lamp",
+      "name": "Pleated brass pendant · wood",
+      "position": [
+        -4.45,
+        0,
+        -4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        3.55,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ecdb9f",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H34",
+        "H38",
+        "H24",
+        "H39",
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-pendant"
+    },
+    {
+      "id": "g52-g55-pendant-wood-1",
+      "type": "floor-lamp",
+      "name": "Pleated brass pendant · wood",
+      "position": [
+        -4.45,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        3.55,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ecdb9f",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H34",
+        "H38",
+        "H24",
+        "H39",
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-pendant"
+    },
+    {
+      "id": "g52-g55-pendant-wood-2",
+      "type": "floor-lamp",
+      "name": "Pleated brass pendant · wood",
+      "position": [
+        -4.45,
+        0,
+        4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        3.55,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ecdb9f",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H34",
+        "H38",
+        "H24",
+        "H39",
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-pendant"
+    },
+    {
+      "id": "g52-g55-light-frame-window",
+      "type": "floor-lamp",
+      "name": "Rounded brass lighting frame · window",
+      "position": [
+        4.45,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.22,
+        3.6,
+        18.8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ac9362",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H32",
+        "H34",
+        "H38",
+        "H24",
+        "H29",
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-light-frame"
+    },
+    {
+      "id": "g52-g55-pendant-window-0",
+      "type": "floor-lamp",
+      "name": "Pleated brass pendant · window",
+      "position": [
+        4.45,
+        0,
+        -4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        3.55,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ecdb9f",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H34",
+        "H38",
+        "H24",
+        "H39",
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-pendant"
+    },
+    {
+      "id": "g52-g55-pendant-window-1",
+      "type": "floor-lamp",
+      "name": "Pleated brass pendant · window",
+      "position": [
+        4.45,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        3.55,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ecdb9f",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H34",
+        "H38",
+        "H24",
+        "H39",
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-pendant"
+    },
+    {
+      "id": "g52-g55-pendant-window-2",
+      "type": "floor-lamp",
+      "name": "Pleated brass pendant · window",
+      "position": [
+        4.45,
+        0,
+        4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.68,
+        3.55,
+        0.68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ecdb9f",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H34",
+        "H38",
+        "H24",
+        "H39",
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-pendant"
+    },
+    {
+      "id": "g52-g55-bin-1",
+      "type": "cabinet",
+      "name": "Brass waste bin beside Table_H27",
+      "position": [
+        -1.8800000000000003,
+        0,
+        -8.456379772522777
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.42,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H32",
+        "H37"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g52-g55-bin-2",
+      "type": "cabinet",
+      "name": "Brass waste bin beside Table_H28",
+      "position": [
+        1.8800000000000003,
+        0,
+        -8.513176849150678
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.42,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H32",
+        "H37"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g52-g55-bin-3",
+      "type": "cabinet",
+      "name": "Brass waste bin beside Table_H22",
+      "position": [
+        -1.8800000000000003,
+        0,
+        8.769409107394164
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.42,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H41",
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g52-g55-bin-4",
+      "type": "cabinet",
+      "name": "Brass waste bin beside Table_H33",
+      "position": [
+        1.6763191318040387,
+        0,
+        8.744856199976232
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.42,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H41"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g52-g55-bin-5",
+      "type": "cabinet",
+      "name": "Brass waste bin beside Table_H26",
+      "position": [
+        -2.48,
+        0,
+        -4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.42,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H32",
+        "H34"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g52-g55-bin-6",
+      "type": "cabinet",
+      "name": "Brass waste bin beside Table_H29",
+      "position": [
+        2.48,
+        0,
+        -4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.42,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H22",
+        "H24"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g52-g55-bin-7",
+      "type": "cabinet",
+      "name": "Brass waste bin beside Table_H23",
+      "position": [
+        -2.48,
+        0,
+        4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.42,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H38",
+        "H44"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g52-g55-bin-8",
+      "type": "cabinet",
+      "name": "Brass waste bin beside Table_H32",
+      "position": [
+        2.48,
+        0,
+        4.7
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.42,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H39",
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g52-g55-bin-9",
+      "type": "cabinet",
+      "name": "Brass waste bin beside Table_H24",
+      "position": [
+        -2.08,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.42,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H34",
+        "H38"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g52-g55-bin-10",
+      "type": "cabinet",
+      "name": "Brass waste bin beside Table_H31",
+      "position": [
+        2.08,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "size": [
+        0.25,
+        0.42,
+        0.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#8b7b59",
+      "seats": [],
+      "cameras": [
+        "H24",
+        "H39",
+        "H29"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "waste-bin"
+    },
+    {
+      "id": "g52-g55-wood-end-sculpture",
+      "type": "display",
+      "name": "Twisting sculpture between the end sofas",
+      "position": [
+        0,
+        0,
+        -10.12
+      ],
+      "yaw": 0,
+      "size": [
+        0.42,
+        1.45,
+        0.42
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#627278",
+      "seats": [],
+      "cameras": [
+        "H37"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending",
+      "variant": "center-sculpture"
+    },
+    {
+      "id": "g52-g55-wood-end-standing-lamp",
+      "type": "floor-lamp",
+      "name": "Shaded floor lamp beside wood-end sofa",
+      "position": [
+        -3.8574388757161846,
+        0,
+        -9.923018928229336
+      ],
+      "yaw": 0,
+      "size": [
+        0.46,
+        1.85,
+        0.46
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#ded7c7",
+      "seats": [],
+      "cameras": [
+        "H37"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending"
+    },
+    {
+      "id": "g52-g55-wood-corner-plant-0",
+      "type": "plant",
+      "name": "Potted tree beside end wall",
+      "position": [
+        -4.5,
+        0,
+        -10.03
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        2,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#56704d",
+      "seats": [],
+      "cameras": [
+        "H37",
+        "H23"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending"
+    },
+    {
+      "id": "g52-g55-wood-corner-plant-1",
+      "type": "plant",
+      "name": "Potted tree beside end wall",
+      "position": [
+        4.5,
+        0,
+        -10.03
+      ],
+      "yaw": 0,
+      "size": [
+        0.55,
+        2,
+        0.55
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#56704d",
+      "seats": [],
+      "cameras": [
+        "H37",
+        "H23"
+      ],
+      "confidence": "Cross-view reconstruction; dimensions and local placement estimated; owner review pending"
+    }
+  ]
+}

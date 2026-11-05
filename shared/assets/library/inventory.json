@@ -3,10 +3,10 @@
   "version": 1,
   "scope": "Saved ground and first-floor block objects; excludes architecture and composed layout copies.",
   "totals": {
-    "blocks": 43,
-    "designs": 84,
-    "configurations": 232,
-    "placements": 668
+    "blocks": 48,
+    "designs": 100,
+    "configurations": 261,
+    "placements": 775
   },
   "blocks": [
     {
@@ -55,9 +55,19 @@
       "count": 13
     },
     {
+      "key": "ground/g17-front",
+      "name": "G17 front · Empty block",
+      "count": 0
+    },
+    {
       "key": "ground/g18",
       "name": "G18 · G-zone passage lounge",
       "count": 22
+    },
+    {
+      "key": "ground/g19",
+      "name": "G19 · Construction shell and escalator approach",
+      "count": 0
     },
     {
       "key": "ground/g2",
@@ -210,6 +220,11 @@
       "count": 11
     },
     {
+      "key": "first/g46-g47-g49",
+      "name": "G46 + G47 + G49 · First-floor right lounges",
+      "count": 43
+    },
+    {
       "key": "first/g48",
       "name": "G48 · Covered banquette and stored fit-out",
       "count": 12
@@ -223,6 +238,16 @@
       "key": "first/g51",
       "name": "G51 · First-floor window bucket-chair lounge",
       "count": 11
+    },
+    {
+      "key": "first/g52-g55",
+      "name": "G52–G55 · First-floor center lounge",
+      "count": 58
+    },
+    {
+      "key": "first/g56",
+      "name": "G56 · First-floor food buffet",
+      "count": 6
     }
   ],
   "assets": [
@@ -2135,6 +2160,427 @@
       ]
     },
     {
+      "id": "armchair-700f6bed642f",
+      "name": "Armchair · Center Barrel Chair",
+      "category": "Seating",
+      "design": {
+        "type": "armchair",
+        "variant": "center-barrel-chair"
+      },
+      "count": 12,
+      "configurations": [
+        {
+          "id": "e8524501d9ca",
+          "appearance": {
+            "size": [
+              0.94,
+              0.96,
+              0.96
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c0ad"
+          },
+          "preview": {
+            "type": "armchair",
+            "variant": "center-barrel-chair",
+            "size": [
+              0.94,
+              0.96,
+              0.96
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c0ad",
+            "id": "g52-g55-chair-68",
+            "name": "Armchair · Center Barrel Chair",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-68",
+              "name": "Cream barrel chair · H68",
+              "seats": [
+                "Seat_H72"
+              ],
+              "cameras": [
+                "H32"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-72",
+              "name": "Cream barrel chair · H72",
+              "seats": [
+                "Seat_H68"
+              ],
+              "cameras": [
+                "H22"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-59",
+              "name": "Cream barrel chair · H59",
+              "seats": [
+                "Seat_H87"
+              ],
+              "cameras": [
+                "H44"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-87",
+              "name": "Cream barrel chair · H87",
+              "seats": [
+                "Seat_H59"
+              ],
+              "cameras": [
+                "H29"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-62",
+              "name": "Cream barrel chair · H62",
+              "seats": [
+                "Seat_H81"
+              ],
+              "cameras": [
+                "H38"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-63",
+              "name": "Cream barrel chair · H63",
+              "seats": [
+                "Seat_H78"
+              ],
+              "cameras": [
+                "H38"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-64",
+              "name": "Cream barrel chair · H64",
+              "seats": [
+                "Seat_H79"
+              ],
+              "cameras": [
+                "H34",
+                "H38"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-65",
+              "name": "Cream barrel chair · H65",
+              "seats": [
+                "Seat_H80"
+              ],
+              "cameras": [
+                "H34"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-78",
+              "name": "Cream barrel chair · H78",
+              "seats": [
+                "Seat_H62"
+              ],
+              "cameras": [
+                "H24"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-79",
+              "name": "Cream barrel chair · H79",
+              "seats": [
+                "Seat_H65"
+              ],
+              "cameras": [
+                "H24"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-80",
+              "name": "Cream barrel chair · H80",
+              "seats": [
+                "Seat_H64"
+              ],
+              "cameras": [
+                "H39"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-81",
+              "name": "Cream barrel chair · H81",
+              "seats": [
+                "Seat_H63p"
+              ],
+              "cameras": [
+                "H24",
+                "H39"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armchair-c22b8d2ad178",
+      "name": "Armchair · Center Leather Chair",
+      "category": "Seating",
+      "design": {
+        "type": "armchair",
+        "variant": "center-leather-chair"
+      },
+      "count": 12,
+      "configurations": [
+        {
+          "id": "31174260f80e",
+          "appearance": {
+            "size": [
+              0.9,
+              0.92,
+              0.94
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b48a57"
+          },
+          "preview": {
+            "type": "armchair",
+            "variant": "center-leather-chair",
+            "size": [
+              0.9,
+              0.92,
+              0.94
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b48a57",
+            "id": "g46-g47-g49-chair-40",
+            "name": "Armchair · Center Leather Chair",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-40",
+              "name": "Caramel leather chair · H40",
+              "seats": [
+                "Seat_H40"
+              ],
+              "cameras": [
+                "H55"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-42",
+              "name": "Caramel leather chair · H42",
+              "seats": [
+                "Seat_H42"
+              ],
+              "cameras": [
+                "H46"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-41",
+              "name": "Caramel leather chair · H41",
+              "seats": [
+                "Seat_H41"
+              ],
+              "cameras": [
+                "H46",
+                "H55"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-43",
+              "name": "Caramel leather chair · H43",
+              "seats": [
+                "Seat_H43"
+              ],
+              "cameras": [
+                "H46"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9c57932f5bf5",
+          "appearance": {
+            "size": [
+              0.94,
+              0.96,
+              0.96
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#49433e"
+          },
+          "preview": {
+            "type": "armchair",
+            "variant": "center-leather-chair",
+            "size": [
+              0.94,
+              0.96,
+              0.96
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#49433e",
+            "id": "g52-g55-chair-66",
+            "name": "Armchair · Center Leather Chair",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-66",
+              "name": "Dark leather chair · H66",
+              "seats": [
+                "Seat_H76"
+              ],
+              "cameras": [
+                "H32"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-67",
+              "name": "Dark leather chair · H67",
+              "seats": [
+                "Seat_H77"
+              ],
+              "cameras": [
+                "H34"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-76",
+              "name": "Dark leather chair · H76",
+              "seats": [
+                "Seat_H67"
+              ],
+              "cameras": [
+                "H24"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-77",
+              "name": "Dark leather chair · H77",
+              "seats": [
+                "Seat_H66"
+              ],
+              "cameras": [
+                "H22"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-60",
+              "name": "Dark leather chair · H60",
+              "seats": [
+                "Seat_H82"
+              ],
+              "cameras": [
+                "H38"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-61",
+              "name": "Dark leather chair · H61",
+              "seats": [
+                "Seat_H83"
+              ],
+              "cameras": [
+                "H44"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-83",
+              "name": "Dark leather chair · H83",
+              "seats": [
+                "Seat_H61"
+              ],
+              "cameras": [
+                "H39"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-chair-82",
+              "name": "Dark leather chair · H82",
+              "seats": [
+                "Seat_H60"
+              ],
+              "cameras": [
+                "H29",
+                "H44"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "armchair-0823b928878e",
       "name": "Armchair · Egg Swivel",
       "category": "Seating",
@@ -2806,6 +3252,154 @@
       ]
     },
     {
+      "id": "armchair-63a6e09152b5",
+      "name": "Armchair · Side Shell Chair",
+      "category": "Seating",
+      "design": {
+        "type": "armchair",
+        "variant": "side-shell-chair"
+      },
+      "count": 8,
+      "configurations": [
+        {
+          "id": "f3eb6be13175",
+          "appearance": {
+            "size": [
+              0.9,
+              0.92,
+              0.94
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#d1ccbc",
+            "shellColor": "#ad8952"
+          },
+          "preview": {
+            "type": "armchair",
+            "variant": "side-shell-chair",
+            "size": [
+              0.9,
+              0.92,
+              0.94
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#d1ccbc",
+            "shellColor": "#ad8952",
+            "id": "g46-g47-g49-chair-52",
+            "name": "Armchair · Side Shell Chair",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-52",
+              "name": "Tan shell / ivory cushion chair · H52",
+              "seats": [
+                "Seat_H52"
+              ],
+              "cameras": [
+                "H53"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-53",
+              "name": "Tan shell / ivory cushion chair · H53",
+              "seats": [
+                "Seat_H53"
+              ],
+              "cameras": [
+                "H53"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-54",
+              "name": "Tan shell / ivory cushion chair · H54",
+              "seats": [
+                "Seat_H54"
+              ],
+              "cameras": [
+                "H48",
+                "H36"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-55",
+              "name": "Tan shell / ivory cushion chair · H55",
+              "seats": [
+                "Seat_H55"
+              ],
+              "cameras": [
+                "H48",
+                "H36"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-44",
+              "name": "Tan shell / ivory cushion chair · H44",
+              "seats": [
+                "Seat_H44"
+              ],
+              "cameras": [
+                "H50"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-45",
+              "name": "Tan shell / ivory cushion chair · H45",
+              "seats": [
+                "Seat_H45"
+              ],
+              "cameras": [
+                "H50",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-46",
+              "name": "Tan shell / ivory cushion chair · H46",
+              "seats": [
+                "Seat_H46"
+              ],
+              "cameras": [
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-chair-47",
+              "name": "Tan shell / ivory cushion chair · H47",
+              "seats": [
+                "Seat_H47"
+              ],
+              "cameras": [
+                "H54"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "armchair-3bae26395022",
       "name": "Armchair · Tub Chair",
       "category": "Seating",
@@ -3458,10 +4052,10 @@
         "type": "sofa",
         "variant": "default"
       },
-      "count": 55,
+      "count": 57,
       "configurations": [
         {
-          "id": "61fba18b6369",
+          "id": "09725536be15",
           "appearance": {
             "size": [
               2.05,
@@ -3473,7 +4067,7 @@
               1,
               1
             ],
-            "color": "#bcb6a7"
+            "color": "#aaa59c"
           },
           "preview": {
             "type": "sofa",
@@ -3488,7 +4082,7 @@
               1,
               1
             ],
-            "color": "#bcb6a7",
+            "color": "#aaa59c",
             "id": "g10-sofa-01",
             "name": "Sofa",
             "position": [
@@ -3776,198 +4370,6 @@
               ]
             },
             {
-              "block": "ground/g27",
-              "objectId": "g27-sofa-01",
-              "name": "Two-seat sofa · G70 / G71",
-              "seats": [
-                "Seat_G74",
-                "Seat_G73"
-              ],
-              "cameras": [
-                "G14"
-              ]
-            },
-            {
-              "block": "ground/g27",
-              "objectId": "g27-sofa-02",
-              "name": "Two-seat sofa · G73 / G74",
-              "seats": [
-                "Seat_G71",
-                "Seat_G70"
-              ],
-              "cameras": [
-                "G6",
-                "G14"
-              ]
-            },
-            {
-              "block": "ground/g9",
-              "objectId": "g9-sofa-01",
-              "name": "Two-seat sofa",
-              "seats": [
-                "Seat_B4",
-                "Seat_B3"
-              ],
-              "cameras": [
-                "B3"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "83eabcb53a2f",
-          "appearance": {
-            "size": [
-              2.05,
-              0.88,
-              0.9
-            ],
-            "scale": [
-              1.2685121838330213,
-              1.141675035221719,
-              1
-            ],
-            "color": "#a8a5a0"
-          },
-          "preview": {
-            "type": "sofa",
-            "variant": "default",
-            "size": [
-              2.05,
-              0.88,
-              0.9
-            ],
-            "scale": [
-              1.2685121838330213,
-              1.141675035221719,
-              1
-            ],
-            "color": "#a8a5a0",
-            "id": "g17-sofa-02",
-            "name": "Sofa",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "ground/g17",
-              "objectId": "g17-sofa-02",
-              "name": "Rear left sofa · E5 / E6",
-              "seats": [
-                "Seat_E5",
-                "Seat_E6"
-              ],
-              "cameras": [
-                "E1",
-                "E4"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "f64dddeb64a1",
-          "appearance": {
-            "size": [
-              2.05,
-              0.88,
-              0.9
-            ],
-            "scale": [
-              1.1987536762199835,
-              1.1467748037859287,
-              1
-            ],
-            "color": "#a8a5a0"
-          },
-          "preview": {
-            "type": "sofa",
-            "variant": "default",
-            "size": [
-              2.05,
-              0.88,
-              0.9
-            ],
-            "scale": [
-              1.1987536762199835,
-              1.1467748037859287,
-              1
-            ],
-            "color": "#a8a5a0",
-            "id": "g17-sofa-03",
-            "name": "Sofa",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "ground/g17",
-              "objectId": "g17-sofa-03",
-              "name": "Rear right sofa · E7 / E8",
-              "seats": [
-                "Seat_E7",
-                "Seat_E8"
-              ],
-              "cameras": [
-                "E2",
-                "E4"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "c0463fbff6e3",
-          "appearance": {
-            "size": [
-              2.05,
-              0.88,
-              0.9
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#d6cebd"
-          },
-          "preview": {
-            "type": "sofa",
-            "variant": "default",
-            "size": [
-              2.05,
-              0.88,
-              0.9
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#d6cebd",
-            "id": "g22-sofa-01",
-            "name": "Sofa",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
               "block": "ground/g22",
               "objectId": "g22-sofa-01",
               "name": "Cream sofa · G50 / G51",
@@ -3993,50 +4395,32 @@
                 "G8",
                 "G10"
               ]
-            }
-          ]
-        },
-        {
-          "id": "0a68d2db9f15",
-          "appearance": {
-            "size": [
-              2.05,
-              0.88,
-              0.9
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#eeeadd"
-          },
-          "preview": {
-            "type": "sofa",
-            "variant": "default",
-            "size": [
-              2.05,
-              0.88,
-              0.9
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#eeeadd",
-            "id": "g28-sofa-01",
-            "name": "Sofa",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
+            },
+            {
+              "block": "ground/g27",
+              "objectId": "g27-sofa-01",
+              "name": "Two-seat sofa · G70 / G71",
+              "seats": [
+                "Seat_G74",
+                "Seat_G73"
+              ],
+              "cameras": [
+                "G14"
+              ]
+            },
+            {
+              "block": "ground/g27",
+              "objectId": "g27-sofa-02",
+              "name": "Two-seat sofa · G73 / G74",
+              "seats": [
+                "Seat_G71",
+                "Seat_G70"
+              ],
+              "cameras": [
+                "G6",
+                "G14"
+              ]
+            },
             {
               "block": "ground/g28",
               "objectId": "g28-sofa-01",
@@ -4063,6 +4447,95 @@
                 "G11",
                 "G15"
               ]
+            },
+            {
+              "block": "ground/g57",
+              "objectId": "g57-sofa-01",
+              "name": "Pale two-seat sofa · I4 / I3",
+              "seats": [
+                "Seat_I4",
+                "Seat_I3"
+              ],
+              "cameras": [
+                "I17",
+                "I26"
+              ]
+            },
+            {
+              "block": "ground/g58",
+              "objectId": "g58-sofa-01",
+              "name": "Pale two-seat sofa · I5 / I6",
+              "seats": [
+                "Seat_I5",
+                "Seat_I6"
+              ],
+              "cameras": [
+                "I18"
+              ]
+            },
+            {
+              "block": "ground/g59",
+              "objectId": "g59-sofa-01",
+              "name": "Pale two-seat sofa · I12 / I11",
+              "seats": [
+                "Seat_I12",
+                "Seat_I11"
+              ],
+              "cameras": [
+                "I24"
+              ]
+            },
+            {
+              "block": "ground/g9",
+              "objectId": "g9-sofa-01",
+              "name": "Two-seat sofa",
+              "seats": [
+                "Seat_B4",
+                "Seat_B3"
+              ],
+              "cameras": [
+                "B3"
+              ]
+            },
+            {
+              "block": "ground/i-map-extension",
+              "objectId": "i-extension-pair-4-0",
+              "name": "Map pair 4 · pale two-seat sofa",
+              "seats": [
+                "Seat_IExt_TMP_07",
+                "Seat_IExt_TMP_08"
+              ],
+              "cameras": []
+            },
+            {
+              "block": "ground/i-map-extension",
+              "objectId": "i-extension-pair-4-2",
+              "name": "Map pair 4 · pale two-seat sofa",
+              "seats": [
+                "Seat_IExt_TMP_09",
+                "Seat_IExt_TMP_10"
+              ],
+              "cameras": []
+            },
+            {
+              "block": "ground/i-map-extension",
+              "objectId": "i-extension-pair-5-0",
+              "name": "Map pair 5 · pale two-seat sofa",
+              "seats": [
+                "Seat_IExt_TMP_11",
+                "Seat_IExt_TMP_12"
+              ],
+              "cameras": []
+            },
+            {
+              "block": "ground/i-map-extension",
+              "objectId": "i-extension-pair-5-2",
+              "name": "Map pair 5 · pale two-seat sofa",
+              "seats": [
+                "Seat_IExt_TMP_13",
+                "Seat_IExt_TMP_14"
+              ],
+              "cameras": []
             },
             {
               "block": "first/g35",
@@ -4119,7 +4592,119 @@
           ]
         },
         {
-          "id": "3bdb4fb53180",
+          "id": "9e596522fbef",
+          "appearance": {
+            "size": [
+              2.05,
+              0.88,
+              0.9
+            ],
+            "scale": [
+              1.2685121838330213,
+              1.141675035221719,
+              1
+            ],
+            "color": "#aaa59c"
+          },
+          "preview": {
+            "type": "sofa",
+            "variant": "default",
+            "size": [
+              2.05,
+              0.88,
+              0.9
+            ],
+            "scale": [
+              1.2685121838330213,
+              1.141675035221719,
+              1
+            ],
+            "color": "#aaa59c",
+            "id": "g17-sofa-02",
+            "name": "Sofa",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g17",
+              "objectId": "g17-sofa-02",
+              "name": "Rear left sofa · E5 / E6",
+              "seats": [
+                "Seat_E5",
+                "Seat_E6"
+              ],
+              "cameras": [
+                "E1",
+                "E4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5d35a99df801",
+          "appearance": {
+            "size": [
+              2.05,
+              0.88,
+              0.9
+            ],
+            "scale": [
+              1.1987536762199835,
+              1.1467748037859287,
+              1
+            ],
+            "color": "#aaa59c"
+          },
+          "preview": {
+            "type": "sofa",
+            "variant": "default",
+            "size": [
+              2.05,
+              0.88,
+              0.9
+            ],
+            "scale": [
+              1.1987536762199835,
+              1.1467748037859287,
+              1
+            ],
+            "color": "#aaa59c",
+            "id": "g17-sofa-03",
+            "name": "Sofa",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "ground/g17",
+              "objectId": "g17-sofa-03",
+              "name": "Rear right sofa · E7 / E8",
+              "seats": [
+                "Seat_E7",
+                "Seat_E8"
+              ],
+              "cameras": [
+                "E2",
+                "E4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "47d92535f540",
           "appearance": {
             "size": [
               1.9,
@@ -4131,7 +4716,7 @@
               1,
               1.1590547154774382
             ],
-            "color": "#d8d4cb"
+            "color": "#aaa59c"
           },
           "preview": {
             "type": "sofa",
@@ -4146,7 +4731,7 @@
               1,
               1.1590547154774382
             ],
-            "color": "#d8d4cb",
+            "color": "#aaa59c",
             "id": "g29-sofa-01",
             "name": "Sofa",
             "position": [
@@ -4174,7 +4759,7 @@
           ]
         },
         {
-          "id": "f0a7b76e5afc",
+          "id": "51263aebc17e",
           "appearance": {
             "size": [
               2.25,
@@ -4186,7 +4771,7 @@
               1,
               1
             ],
-            "color": "#d8d4cb"
+            "color": "#aaa59c"
           },
           "preview": {
             "type": "sofa",
@@ -4201,7 +4786,7 @@
               1,
               1
             ],
-            "color": "#d8d4cb",
+            "color": "#aaa59c",
             "id": "g29-sofa-02",
             "name": "Sofa",
             "position": [
@@ -4230,7 +4815,7 @@
           ]
         },
         {
-          "id": "2f5a855d79bd",
+          "id": "33f8c3eff91d",
           "appearance": {
             "size": [
               1.9,
@@ -4242,7 +4827,7 @@
               1,
               1.143559060272966
             ],
-            "color": "#d8d4cb"
+            "color": "#aaa59c"
           },
           "preview": {
             "type": "sofa",
@@ -4257,7 +4842,7 @@
               1,
               1.143559060272966
             ],
-            "color": "#d8d4cb",
+            "color": "#aaa59c",
             "id": "g29-sofa-03",
             "name": "Sofa",
             "position": [
@@ -4285,127 +4870,7 @@
           ]
         },
         {
-          "id": "3bbca66b1517",
-          "appearance": {
-            "size": [
-              2.05,
-              0.88,
-              0.9
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#ddd9cf"
-          },
-          "preview": {
-            "type": "sofa",
-            "variant": "default",
-            "size": [
-              2.05,
-              0.88,
-              0.9
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#ddd9cf",
-            "id": "g57-sofa-01",
-            "name": "Sofa",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
-            {
-              "block": "ground/g57",
-              "objectId": "g57-sofa-01",
-              "name": "Pale two-seat sofa · I4 / I3",
-              "seats": [
-                "Seat_I4",
-                "Seat_I3"
-              ],
-              "cameras": [
-                "I17",
-                "I26"
-              ]
-            },
-            {
-              "block": "ground/g58",
-              "objectId": "g58-sofa-01",
-              "name": "Pale two-seat sofa · I5 / I6",
-              "seats": [
-                "Seat_I5",
-                "Seat_I6"
-              ],
-              "cameras": [
-                "I18"
-              ]
-            },
-            {
-              "block": "ground/g59",
-              "objectId": "g59-sofa-01",
-              "name": "Pale two-seat sofa · I12 / I11",
-              "seats": [
-                "Seat_I12",
-                "Seat_I11"
-              ],
-              "cameras": [
-                "I24"
-              ]
-            },
-            {
-              "block": "ground/i-map-extension",
-              "objectId": "i-extension-pair-4-0",
-              "name": "Map pair 4 · pale two-seat sofa",
-              "seats": [
-                "Seat_IExt_TMP_07",
-                "Seat_IExt_TMP_08"
-              ],
-              "cameras": []
-            },
-            {
-              "block": "ground/i-map-extension",
-              "objectId": "i-extension-pair-4-2",
-              "name": "Map pair 4 · pale two-seat sofa",
-              "seats": [
-                "Seat_IExt_TMP_09",
-                "Seat_IExt_TMP_10"
-              ],
-              "cameras": []
-            },
-            {
-              "block": "ground/i-map-extension",
-              "objectId": "i-extension-pair-5-0",
-              "name": "Map pair 5 · pale two-seat sofa",
-              "seats": [
-                "Seat_IExt_TMP_11",
-                "Seat_IExt_TMP_12"
-              ],
-              "cameras": []
-            },
-            {
-              "block": "ground/i-map-extension",
-              "objectId": "i-extension-pair-5-2",
-              "name": "Map pair 5 · pale two-seat sofa",
-              "seats": [
-                "Seat_IExt_TMP_13",
-                "Seat_IExt_TMP_14"
-              ],
-              "cameras": []
-            }
-          ]
-        },
-        {
-          "id": "ab976fb3aca1",
+          "id": "d8354a2eb4f4",
           "appearance": {
             "size": [
               2.05,
@@ -4417,7 +4882,7 @@
               1,
               1
             ],
-            "color": "#dedbd1"
+            "color": "#aaa59c"
           },
           "preview": {
             "type": "sofa",
@@ -4432,7 +4897,7 @@
               1,
               1
             ],
-            "color": "#dedbd1",
+            "color": "#aaa59c",
             "id": "g60-sofa-01",
             "name": "Sofa",
             "position": [
@@ -4458,61 +4923,6 @@
                 "I42"
               ]
             },
-            {
-              "block": "ground/i33-lounge",
-              "objectId": "i33-lounge-sofa-01",
-              "name": "White two-seat sofa",
-              "seats": [
-                "Seat_I33_TMP_02",
-                "Seat_I33_TMP_03"
-              ],
-              "cameras": [
-                "I33"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "47464a2da84b",
-          "appearance": {
-            "size": [
-              2.05,
-              0.95,
-              1
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#d5d0c2"
-          },
-          "preview": {
-            "type": "sofa",
-            "variant": "default",
-            "size": [
-              2.05,
-              0.95,
-              1
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ],
-            "color": "#d5d0c2",
-            "id": "g63-sofa-left-1",
-            "name": "Sofa",
-            "position": [
-              0,
-              0,
-              0
-            ],
-            "yaw": 0,
-            "seats": [],
-            "cameras": []
-          },
-          "usages": [
             {
               "block": "ground/g63",
               "objectId": "g63-sofa-left-1",
@@ -4575,6 +4985,18 @@
                 "I31",
                 "I32",
                 "I34"
+              ]
+            },
+            {
+              "block": "ground/i33-lounge",
+              "objectId": "i33-lounge-sofa-01",
+              "name": "White two-seat sofa",
+              "seats": [
+                "Seat_I33_TMP_02",
+                "Seat_I33_TMP_03"
+              ],
+              "cameras": [
+                "I33"
               ]
             }
           ]
@@ -4663,6 +5085,77 @@
           ]
         },
         {
+          "id": "da7de9565be9",
+          "appearance": {
+            "size": [
+              2.25,
+              0.9,
+              0.96
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c5b8",
+            "pillow": false
+          },
+          "preview": {
+            "type": "sofa",
+            "variant": "default",
+            "size": [
+              2.25,
+              0.9,
+              0.96
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c5b8",
+            "pillow": false,
+            "id": "g46-g47-g49-sofa-50",
+            "name": "Sofa",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-sofa-50",
+              "name": "Ivory two-seat sofa · H50 / H51",
+              "seats": [
+                "Seat_H51",
+                "Seat_H50"
+              ],
+              "cameras": [
+                "H36",
+                "H48",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-sofa-48",
+              "name": "Ivory two-seat sofa · H49 / H48",
+              "seats": [
+                "Seat_H48",
+                "Seat_H49"
+              ],
+              "cameras": [
+                "H50"
+              ]
+            }
+          ]
+        },
+        {
           "id": "59bf59d5da23",
           "appearance": {
             "size": [
@@ -4727,6 +5220,243 @@
               "cameras": [
                 "H56",
                 "H25"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sofa-ea4c0108d95a",
+      "name": "Sofa · Center Curved Sofa",
+      "category": "Seating",
+      "design": {
+        "type": "sofa",
+        "variant": "center-curved-sofa"
+      },
+      "count": 4,
+      "configurations": [
+        {
+          "id": "46f566b47692",
+          "appearance": {
+            "size": [
+              2.8,
+              0.9,
+              1.5
+            ],
+            "scale": [
+              1.1353407025801607,
+              1.4308911215471067,
+              1.120724418308852
+            ],
+            "color": "#24545c"
+          },
+          "preview": {
+            "type": "sofa",
+            "variant": "center-curved-sofa",
+            "size": [
+              2.8,
+              0.9,
+              1.5
+            ],
+            "scale": [
+              1.1353407025801607,
+              1.4308911215471067,
+              1.120724418308852
+            ],
+            "color": "#24545c",
+            "id": "g52-g55-sofa-69",
+            "name": "Sofa · Center Curved Sofa",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-sofa-69",
+              "name": "Curved teal sofa · H69 / H70 / H71",
+              "seats": [
+                "Seat_H75",
+                "Seat_H74",
+                "Seat_H73"
+              ],
+              "cameras": [
+                "H37"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "26954621d1f5",
+          "appearance": {
+            "size": [
+              2.8,
+              0.9,
+              1.5
+            ],
+            "scale": [
+              1.1889248448405951,
+              1.1222973509325709,
+              1.0218121718041608
+            ],
+            "color": "#24545c"
+          },
+          "preview": {
+            "type": "sofa",
+            "variant": "center-curved-sofa",
+            "size": [
+              2.8,
+              0.9,
+              1.5
+            ],
+            "scale": [
+              1.1889248448405951,
+              1.1222973509325709,
+              1.0218121718041608
+            ],
+            "color": "#24545c",
+            "id": "g52-g55-sofa-73",
+            "name": "Sofa · Center Curved Sofa",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-sofa-73",
+              "name": "Curved teal sofa · H73 / H74 / H75",
+              "seats": [
+                "Seat_H71",
+                "Seat_H70",
+                "Seat_H69"
+              ],
+              "cameras": [
+                "H32",
+                "H37"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2c92b820403",
+          "appearance": {
+            "size": [
+              2.8,
+              0.9,
+              1.5
+            ],
+            "scale": [
+              1.167,
+              0.943,
+              0.94
+            ],
+            "color": "#24545c"
+          },
+          "preview": {
+            "type": "sofa",
+            "variant": "center-curved-sofa",
+            "size": [
+              2.8,
+              0.9,
+              1.5
+            ],
+            "scale": [
+              1.167,
+              0.943,
+              0.94
+            ],
+            "color": "#24545c",
+            "id": "g52-g55-sofa-56",
+            "name": "Sofa · Center Curved Sofa",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-sofa-56",
+              "name": "Curved teal sofa · H56 / H57 / H58",
+              "seats": [
+                "Seat_H86",
+                "Seat_H85",
+                "Seat_H84"
+              ],
+              "cameras": [
+                "H41"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5af6f0bba872",
+          "appearance": {
+            "size": [
+              2.8,
+              0.9,
+              1.5
+            ],
+            "scale": [
+              1.271,
+              1.118,
+              1.11
+            ],
+            "color": "#24545c"
+          },
+          "preview": {
+            "type": "sofa",
+            "variant": "center-curved-sofa",
+            "size": [
+              2.8,
+              0.9,
+              1.5
+            ],
+            "scale": [
+              1.271,
+              1.118,
+              1.11
+            ],
+            "color": "#24545c",
+            "id": "g52-g55-sofa-84",
+            "name": "Sofa · Center Curved Sofa",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-sofa-84",
+              "name": "Curved teal sofa · H84 / H85 / H86",
+              "seats": [
+                "Seat_H58",
+                "Seat_H57",
+                "Seat_H56"
+              ],
+              "cameras": [
+                "H41"
               ]
             }
           ]
@@ -5430,6 +6160,71 @@
               "seats": [],
               "cameras": [
                 "A3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "display-console-c12852f792e0",
+      "name": "Display Console · Side Marble Console",
+      "category": "Tables & consoles",
+      "design": {
+        "type": "display-console",
+        "variant": "side-marble-console"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "ef6772cab694",
+          "appearance": {
+            "size": [
+              0.48,
+              1.1,
+              3.2
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b39b6a"
+          },
+          "preview": {
+            "type": "display-console",
+            "variant": "side-marble-console",
+            "size": [
+              0.48,
+              1.1,
+              3.2
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b39b6a",
+            "id": "g46-g47-g49-g46-console",
+            "name": "Display Console · Side Marble Console",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-g46-console",
+              "name": "Long marble-topped brass console",
+              "seats": [],
+              "cameras": [
+                "H46",
+                "H55"
               ]
             }
           ]
@@ -7451,7 +8246,7 @@
         "type": "table",
         "variant": "nested-stone"
       },
-      "count": 5,
+      "count": 6,
       "configurations": [
         {
           "id": "fdee1edf031a",
@@ -7542,6 +8337,59 @@
               "cameras": [
                 "H25",
                 "H56"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d636fa8420d1",
+          "appearance": {
+            "size": [
+              1.5,
+              0.46,
+              0.95
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e5e1d5"
+          },
+          "preview": {
+            "type": "table",
+            "variant": "nested-stone",
+            "size": [
+              1.5,
+              0.46,
+              0.95
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e5e1d5",
+            "id": "g46-g47-g49-table-19",
+            "name": "Table · Nested Stone",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-table-19",
+              "name": "Nested marble set · H19",
+              "seats": [],
+              "cameras": [
+                "H48",
+                "H53"
               ]
             }
           ]
@@ -8076,7 +8924,7 @@
         "type": "table",
         "variant": "round-pedestal"
       },
-      "count": 23,
+      "count": 37,
       "configurations": [
         {
           "id": "6eb7d739fc03",
@@ -8487,6 +9335,90 @@
           ]
         },
         {
+          "id": "09eb964bf105",
+          "appearance": {
+            "size": [
+              0.83,
+              0.53,
+              0.83
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e5e1d5"
+          },
+          "preview": {
+            "type": "table",
+            "variant": "round-pedestal",
+            "size": [
+              0.83,
+              0.53,
+              0.83
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e5e1d5",
+            "id": "g46-g47-g49-table-20",
+            "name": "Table · Round Pedestal",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-table-20",
+              "name": "Round marble / brass table · H20",
+              "seats": [],
+              "cameras": [
+                "H48",
+                "H36",
+                "H53"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-table-17",
+              "name": "Round marble / brass table · H17",
+              "seats": [],
+              "cameras": [
+                "H50",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-table-15",
+              "name": "Round marble / brass table · H15",
+              "seats": [],
+              "cameras": [
+                "H46",
+                "H55"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-table-16",
+              "name": "Round marble / brass table · H16",
+              "seats": [],
+              "cameras": [
+                "H46",
+                "H55"
+              ]
+            }
+          ]
+        },
+        {
           "id": "7ef455c91a68",
           "appearance": {
             "size": [
@@ -8672,6 +9604,150 @@
               "seats": [],
               "cameras": [
                 "H27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a968332c9780",
+          "appearance": {
+            "size": [
+              0.84,
+              0.53,
+              0.84
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e5e1d5"
+          },
+          "preview": {
+            "type": "table",
+            "variant": "round-pedestal",
+            "size": [
+              0.84,
+              0.53,
+              0.84
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e5e1d5",
+            "id": "g52-g55-table-27",
+            "name": "Table · Round Pedestal",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-27",
+              "name": "Round marble / brass table · H27",
+              "seats": [],
+              "cameras": [
+                "H32",
+                "H37"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-28",
+              "name": "Round marble / brass table · H28",
+              "seats": [],
+              "cameras": [
+                "H32",
+                "H37"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-22",
+              "name": "Round marble / brass table · H22",
+              "seats": [],
+              "cameras": [
+                "H41",
+                "H44"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-33",
+              "name": "Round marble / brass table · H33",
+              "seats": [],
+              "cameras": [
+                "H41"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-26",
+              "name": "Round marble / brass table · H26",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H32",
+                "H34"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-29",
+              "name": "Round marble / brass table · H29",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H24"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-23",
+              "name": "Round marble / brass table · H23",
+              "seats": [],
+              "cameras": [
+                "H38",
+                "H44"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-32",
+              "name": "Round marble / brass table · H32",
+              "seats": [],
+              "cameras": [
+                "H39",
+                "H29"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-24",
+              "name": "Round marble / brass table · H24",
+              "seats": [],
+              "cameras": [
+                "H34",
+                "H38"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-table-31",
+              "name": "Round marble / brass table · H31",
+              "seats": [],
+              "cameras": [
+                "H24",
+                "H39",
+                "H29"
               ]
             }
           ]
@@ -8962,6 +10038,70 @@
               "seats": [],
               "cameras": [
                 "E13"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "display-aa3efbaa2a9a",
+      "name": "Display · Center Sculpture",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "display",
+        "variant": "center-sculpture"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "918de98384e6",
+          "appearance": {
+            "size": [
+              0.42,
+              1.45,
+              0.42
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#627278"
+          },
+          "preview": {
+            "type": "display",
+            "variant": "center-sculpture",
+            "size": [
+              0.42,
+              1.45,
+              0.42
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#627278",
+            "id": "g52-g55-wood-end-sculpture",
+            "name": "Display · Center Sculpture",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-wood-end-sculpture",
+              "name": "Twisting sculpture between the end sofas",
+              "seats": [],
+              "cameras": [
+                "H37"
               ]
             }
           ]
@@ -9267,6 +10407,82 @@
                 "ReceptionCam1",
                 "ReceptionCam2",
                 "ReceptionCam3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "display-2ad43454008c",
+      "name": "Display · Fire Extinguisher",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "display",
+        "variant": "fire-extinguisher"
+      },
+      "count": 2,
+      "configurations": [
+        {
+          "id": "dd40e68c9eef",
+          "appearance": {
+            "size": [
+              0.28,
+              0.9,
+              0.26
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b32d2a"
+          },
+          "preview": {
+            "type": "display",
+            "variant": "fire-extinguisher",
+            "size": [
+              0.28,
+              0.9,
+              0.26
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b32d2a",
+            "id": "g46-g47-g49-extinguisher-0",
+            "name": "Display · Fire Extinguisher",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-extinguisher-0",
+              "name": "Fire extinguisher beside wall",
+              "seats": [],
+              "cameras": [
+                "H36",
+                "H52"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-extinguisher-1",
+              "name": "Fire extinguisher beside wall",
+              "seats": [],
+              "cameras": [
+                "H48",
+                "H50",
+                "H54"
               ]
             }
           ]
@@ -9956,6 +11172,127 @@
                 "I29",
                 "I31",
                 "I32"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "display-f89b39e20184",
+      "name": "Display · Side Wall Light",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "display",
+        "variant": "side-wall-light"
+      },
+      "count": 6,
+      "configurations": [
+        {
+          "id": "5ab14d970dbd",
+          "appearance": {
+            "size": [
+              0.12,
+              1.1,
+              0.12
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b99c61"
+          },
+          "preview": {
+            "type": "display",
+            "variant": "side-wall-light",
+            "size": [
+              0.12,
+              1.1,
+              0.12
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#b99c61",
+            "id": "g46-g47-g49-wall-light-0",
+            "name": "Display · Side Wall Light",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-wall-light-0",
+              "name": "Warm sculptural wall light",
+              "seats": [],
+              "cameras": [
+                "H52",
+                "H53",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-wall-light-1",
+              "name": "Warm sculptural wall light",
+              "seats": [],
+              "cameras": [
+                "H52",
+                "H53",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-wall-light-2",
+              "name": "Warm sculptural wall light",
+              "seats": [],
+              "cameras": [
+                "H52",
+                "H53",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-wall-light-3",
+              "name": "Warm sculptural wall light",
+              "seats": [],
+              "cameras": [
+                "H52",
+                "H53",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-wall-light-4",
+              "name": "Warm sculptural wall light",
+              "seats": [],
+              "cameras": [
+                "H52",
+                "H53",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-wall-light-5",
+              "name": "Warm sculptural wall light",
+              "seats": [],
+              "cameras": [
+                "H52",
+                "H53",
+                "H54"
               ]
             }
           ]
@@ -10793,7 +12130,7 @@
         "type": "floor-lamp",
         "variant": "default"
       },
-      "count": 36,
+      "count": 40,
       "configurations": [
         {
           "id": "9eb44e6b0513",
@@ -11455,6 +12792,361 @@
               ]
             }
           ]
+        },
+        {
+          "id": "266a25d056ee",
+          "appearance": {
+            "size": [
+              0.4,
+              1.8,
+              0.4
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e6dfcd"
+          },
+          "preview": {
+            "type": "floor-lamp",
+            "variant": "default",
+            "size": [
+              0.4,
+              1.8,
+              0.4
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#e6dfcd",
+            "id": "g46-g47-g49-shaded-lamp-0",
+            "name": "Floor Lamp",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-shaded-lamp-0",
+              "name": "Brass standing lamp with ivory shade",
+              "seats": [],
+              "cameras": [
+                "H36",
+                "H48",
+                "H50",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-shaded-lamp-1",
+              "name": "Brass standing lamp with ivory shade",
+              "seats": [],
+              "cameras": [
+                "H36",
+                "H48",
+                "H50",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-shaded-lamp-2",
+              "name": "Brass standing lamp with ivory shade",
+              "seats": [],
+              "cameras": [
+                "H36",
+                "H48",
+                "H50",
+                "H54"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "44bdafb7d229",
+          "appearance": {
+            "size": [
+              0.46,
+              1.85,
+              0.46
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ded7c7"
+          },
+          "preview": {
+            "type": "floor-lamp",
+            "variant": "default",
+            "size": [
+              0.46,
+              1.85,
+              0.46
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ded7c7",
+            "id": "g52-g55-wood-end-standing-lamp",
+            "name": "Floor Lamp",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-wood-end-standing-lamp",
+              "name": "Shaded floor lamp beside wood-end sofa",
+              "seats": [],
+              "cameras": [
+                "H37"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "floor-lamp-a930a4ba3e05",
+      "name": "Floor Lamp · Center Light Frame",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "floor-lamp",
+        "variant": "center-light-frame"
+      },
+      "count": 2,
+      "configurations": [
+        {
+          "id": "d5047362ef79",
+          "appearance": {
+            "size": [
+              0.22,
+              3.6,
+              18.8
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ac9362"
+          },
+          "preview": {
+            "type": "floor-lamp",
+            "variant": "center-light-frame",
+            "size": [
+              0.22,
+              3.6,
+              18.8
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ac9362",
+            "id": "g52-g55-light-frame-wood",
+            "name": "Floor Lamp · Center Light Frame",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-light-frame-wood",
+              "name": "Rounded brass lighting frame · wood",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H32",
+                "H34",
+                "H38",
+                "H24",
+                "H29",
+                "H44"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-light-frame-window",
+              "name": "Rounded brass lighting frame · window",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H32",
+                "H34",
+                "H38",
+                "H24",
+                "H29",
+                "H44"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "floor-lamp-a16c3673b4ee",
+      "name": "Floor Lamp · Center Pendant",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "floor-lamp",
+        "variant": "center-pendant"
+      },
+      "count": 6,
+      "configurations": [
+        {
+          "id": "f59efde545ca",
+          "appearance": {
+            "size": [
+              0.68,
+              3.55,
+              0.68
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ecdb9f"
+          },
+          "preview": {
+            "type": "floor-lamp",
+            "variant": "center-pendant",
+            "size": [
+              0.68,
+              3.55,
+              0.68
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ecdb9f",
+            "id": "g52-g55-pendant-wood-0",
+            "name": "Floor Lamp · Center Pendant",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-pendant-wood-0",
+              "name": "Pleated brass pendant · wood",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H34",
+                "H38",
+                "H24",
+                "H39",
+                "H29"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-pendant-wood-1",
+              "name": "Pleated brass pendant · wood",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H34",
+                "H38",
+                "H24",
+                "H39",
+                "H29"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-pendant-wood-2",
+              "name": "Pleated brass pendant · wood",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H34",
+                "H38",
+                "H24",
+                "H39",
+                "H29"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-pendant-window-0",
+              "name": "Pleated brass pendant · window",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H34",
+                "H38",
+                "H24",
+                "H39",
+                "H29"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-pendant-window-1",
+              "name": "Pleated brass pendant · window",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H34",
+                "H38",
+                "H24",
+                "H39",
+                "H29"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-pendant-window-2",
+              "name": "Pleated brass pendant · window",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H34",
+                "H38",
+                "H24",
+                "H39",
+                "H29"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -11554,7 +13246,7 @@
         "type": "plant",
         "variant": "default"
       },
-      "count": 47,
+      "count": 53,
       "configurations": [
         {
           "id": "ef99dae94b5c",
@@ -13398,6 +15090,93 @@
           ]
         },
         {
+          "id": "f25931bac0cf",
+          "appearance": {
+            "size": [
+              0.43,
+              1.85,
+              0.43
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#5b704b"
+          },
+          "preview": {
+            "type": "plant",
+            "variant": "default",
+            "size": [
+              0.43,
+              1.85,
+              0.43
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#5b704b",
+            "id": "g46-g47-g49-plant-0-wall",
+            "name": "Plant",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-plant-0-wall",
+              "name": "Potted plant beside chair bay",
+              "seats": [],
+              "cameras": [
+                "H36",
+                "H52",
+                "H53"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-plant-0-aisle",
+              "name": "Potted plant beside chair bay",
+              "seats": [],
+              "cameras": [
+                "H36",
+                "H52",
+                "H53"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-plant-1-wall",
+              "name": "Potted plant beside chair bay",
+              "seats": [],
+              "cameras": [
+                "H48",
+                "H50",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-plant-1-aisle",
+              "name": "Potted plant beside chair bay",
+              "seats": [],
+              "cameras": [
+                "H48",
+                "H50",
+                "H54"
+              ]
+            }
+          ]
+        },
+        {
           "id": "230fa8466039",
           "appearance": {
             "size": [
@@ -13497,6 +15276,206 @@
               "seats": [],
               "cameras": [
                 "H23"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fe0e3ec4baaf",
+          "appearance": {
+            "size": [
+              0.55,
+              2,
+              0.55
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#56704d"
+          },
+          "preview": {
+            "type": "plant",
+            "variant": "default",
+            "size": [
+              0.55,
+              2,
+              0.55
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#56704d",
+            "id": "g52-g55-wood-corner-plant-0",
+            "name": "Plant",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-wood-corner-plant-0",
+              "name": "Potted tree beside end wall",
+              "seats": [],
+              "cameras": [
+                "H37",
+                "H23"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-wood-corner-plant-1",
+              "name": "Potted tree beside end wall",
+              "seats": [],
+              "cameras": [
+                "H37",
+                "H23"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plant-12150d19f803",
+      "name": "Plant · Center Tree Bed",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "plant",
+        "variant": "center-tree-bed"
+      },
+      "count": 3,
+      "configurations": [
+        {
+          "id": "71f5f75decae",
+          "appearance": {
+            "size": [
+              1.8,
+              3.25,
+              1.8
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#496445"
+          },
+          "preview": {
+            "type": "plant",
+            "variant": "center-tree-bed",
+            "size": [
+              1.8,
+              3.25,
+              1.8
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#496445",
+            "id": "g52-g55-tree-bed-1",
+            "name": "Plant · Center Tree Bed",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-tree-bed-1",
+              "name": "Indoor tree and flush planted gravel bed · 1",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H32",
+                "H34",
+                "H38",
+                "H39",
+                "H29",
+                "H44"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-tree-bed-2",
+              "name": "Indoor tree and flush planted gravel bed · 2",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H32",
+                "H34",
+                "H38",
+                "H39",
+                "H29",
+                "H44"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2c089af2e0fc",
+          "appearance": {
+            "size": [
+              1.6,
+              3.1,
+              1.6
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#496445"
+          },
+          "preview": {
+            "type": "plant",
+            "variant": "center-tree-bed",
+            "size": [
+              1.6,
+              3.1,
+              1.6
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#496445",
+            "id": "g56-island-tree",
+            "name": "Plant · Center Tree Bed",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g56",
+              "objectId": "g56-island-tree",
+              "name": "Living tree through buffet island",
+              "seats": [],
+              "cameras": [
+                "H31"
               ]
             }
           ]
@@ -14117,6 +16096,89 @@
       ]
     },
     {
+      "id": "screen-f10c5bbaab3d",
+      "name": "Screen · Side Curved Divider",
+      "category": "Decor & fixtures",
+      "design": {
+        "type": "screen",
+        "variant": "side-curved-divider"
+      },
+      "count": 2,
+      "configurations": [
+        {
+          "id": "695cbf07decd",
+          "appearance": {
+            "size": [
+              3.8,
+              1.9,
+              0.5
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ac9362"
+          },
+          "preview": {
+            "type": "screen",
+            "variant": "side-curved-divider",
+            "size": [
+              3.8,
+              1.9,
+              0.5
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#ac9362",
+            "id": "g46-g47-g49-divider-g49-sofas",
+            "name": "Screen · Side Curved Divider",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-divider-g49-sofas",
+              "name": "Curved brass divider, stone cap and ring ornament",
+              "seats": [],
+              "cameras": [
+                "H36",
+                "H52",
+                "H53",
+                "H48",
+                "H50",
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-divider-sofas-g47",
+              "name": "Curved brass divider, stone cap and ring ornament",
+              "seats": [],
+              "cameras": [
+                "H36",
+                "H52",
+                "H53",
+                "H48",
+                "H50",
+                "H54"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "screen-3abd262b4a7f",
       "name": "Screen · Teal Gold Panel",
       "category": "Decor & fixtures",
@@ -14453,10 +16515,67 @@
         "type": "wall-panel",
         "variant": "cylindrical-display"
       },
-      "count": 1,
+      "count": 2,
       "configurations": [
         {
-          "id": "38938f3f7be1",
+          "id": "14843c4f7ffa",
+          "appearance": {
+            "size": [
+              0.95,
+              4.1,
+              0.95
+            ],
+            "scale": [
+              1.8925934127327306,
+              1,
+              1.8755718245218334
+            ],
+            "color": "#344a83"
+          },
+          "preview": {
+            "type": "wall-panel",
+            "variant": "cylindrical-display",
+            "size": [
+              0.95,
+              4.1,
+              0.95
+            ],
+            "scale": [
+              1.8925934127327306,
+              1,
+              1.8755718245218334
+            ],
+            "color": "#344a83",
+            "id": "g46-g47-g49-media-column",
+            "name": "Wall Panel · Cylindrical Display",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-media-column",
+              "name": "Cylindrical digital display · matching G50 pillar",
+              "seats": [],
+              "cameras": [
+                "H50",
+                "H54",
+                "H46",
+                "H55",
+                "H43",
+                "H44"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "42a21a2f21e0",
           "appearance": {
             "size": [
               1.35,
@@ -14464,9 +16583,9 @@
               1.35
             ],
             "scale": [
+              1.1395204345919445,
               1,
-              1,
-              1
+              1.1888411219791555
             ],
             "color": "#344a83"
           },
@@ -14479,9 +16598,9 @@
               1.35
             ],
             "scale": [
+              1.1395204345919445,
               1,
-              1,
-              1
+              1.1888411219791555
             ],
             "color": "#344a83",
             "id": "g50-display-column",
@@ -15474,7 +17593,7 @@
         "type": "wall-panel",
         "variant": "timber-office-door"
       },
-      "count": 1,
+      "count": 2,
       "configurations": [
         {
           "id": "96da73fe4ca2",
@@ -15525,6 +17644,58 @@
               "cameras": [
                 "A1",
                 "A3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "53b50c847be9",
+          "appearance": {
+            "size": [
+              1.2,
+              2.7,
+              0.09
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#87715b"
+          },
+          "preview": {
+            "type": "wall-panel",
+            "variant": "timber-office-door",
+            "size": [
+              1.2,
+              2.7,
+              0.09
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#87715b",
+            "id": "g56-service-door",
+            "name": "Wall Panel · Timber Office Door",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g56",
+              "objectId": "g56-service-door",
+              "name": "Timber service door beside rear display",
+              "seats": [],
+              "cameras": [
+                "H31"
               ]
             }
           ]
@@ -16280,6 +18451,70 @@
       ]
     },
     {
+      "id": "cabinet-c9ff7f575561",
+      "name": "Cabinet · Buffet Display Shelves",
+      "category": "Reception & equipment",
+      "design": {
+        "type": "cabinet",
+        "variant": "buffet-display-shelves"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "964921020aed",
+          "appearance": {
+            "size": [
+              5.4,
+              3.5,
+              0.8
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c5b6"
+          },
+          "preview": {
+            "type": "cabinet",
+            "variant": "buffet-display-shelves",
+            "size": [
+              5.4,
+              3.5,
+              0.8
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c5b6",
+            "id": "g56-rear-shelves",
+            "name": "Cabinet · Buffet Display Shelves",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g56",
+              "objectId": "g56-rear-shelves",
+              "name": "Illuminated display shelves and cold-service counter",
+              "seats": [],
+              "cameras": [
+                "H31"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "cabinet-92150dcde5c2",
       "name": "Cabinet · Checkin Kiosk",
       "category": "Reception & equipment",
@@ -16914,8 +19149,96 @@
         "type": "cabinet",
         "variant": "waste-bin"
       },
-      "count": 3,
+      "count": 18,
       "configurations": [
+        {
+          "id": "57d5ab8948e9",
+          "appearance": {
+            "size": [
+              0.24,
+              0.4,
+              0.24
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8b7b59"
+          },
+          "preview": {
+            "type": "cabinet",
+            "variant": "waste-bin",
+            "size": [
+              0.24,
+              0.4,
+              0.24
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8b7b59",
+            "id": "g46-g47-g49-bin-0",
+            "name": "Cabinet · Waste Bin",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-bin-0",
+              "name": "Brass waste bin",
+              "seats": [],
+              "cameras": [
+                "H36"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-bin-1",
+              "name": "Brass waste bin",
+              "seats": [],
+              "cameras": [
+                "H48"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-bin-2",
+              "name": "Brass waste bin",
+              "seats": [],
+              "cameras": [
+                "H54"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-bin-3",
+              "name": "Brass waste bin",
+              "seats": [],
+              "cameras": [
+                "H55"
+              ]
+            },
+            {
+              "block": "first/g46-g47-g49",
+              "objectId": "g46-g47-g49-bin-4",
+              "name": "Brass waste bin",
+              "seats": [],
+              "cameras": [
+                "H46"
+              ]
+            }
+          ]
+        },
         {
           "id": "5dbcf0baa16c",
           "appearance": {
@@ -16982,6 +19305,150 @@
               "seats": [],
               "cameras": [
                 "H27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fc66a7006b47",
+          "appearance": {
+            "size": [
+              0.25,
+              0.42,
+              0.25
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8b7b59"
+          },
+          "preview": {
+            "type": "cabinet",
+            "variant": "waste-bin",
+            "size": [
+              0.25,
+              0.42,
+              0.25
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#8b7b59",
+            "id": "g52-g55-bin-1",
+            "name": "Cabinet · Waste Bin",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-bin-1",
+              "name": "Brass waste bin beside Table_H27",
+              "seats": [],
+              "cameras": [
+                "H32",
+                "H37"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-bin-2",
+              "name": "Brass waste bin beside Table_H28",
+              "seats": [],
+              "cameras": [
+                "H32",
+                "H37"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-bin-3",
+              "name": "Brass waste bin beside Table_H22",
+              "seats": [],
+              "cameras": [
+                "H41",
+                "H44"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-bin-4",
+              "name": "Brass waste bin beside Table_H33",
+              "seats": [],
+              "cameras": [
+                "H41"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-bin-5",
+              "name": "Brass waste bin beside Table_H26",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H32",
+                "H34"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-bin-6",
+              "name": "Brass waste bin beside Table_H29",
+              "seats": [],
+              "cameras": [
+                "H22",
+                "H24"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-bin-7",
+              "name": "Brass waste bin beside Table_H23",
+              "seats": [],
+              "cameras": [
+                "H38",
+                "H44"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-bin-8",
+              "name": "Brass waste bin beside Table_H32",
+              "seats": [],
+              "cameras": [
+                "H39",
+                "H29"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-bin-9",
+              "name": "Brass waste bin beside Table_H24",
+              "seats": [],
+              "cameras": [
+                "H34",
+                "H38"
+              ]
+            },
+            {
+              "block": "first/g52-g55",
+              "objectId": "g52-g55-bin-10",
+              "name": "Brass waste bin beside Table_H31",
+              "seats": [],
+              "cameras": [
+                "H24",
+                "H39",
+                "H29"
               ]
             }
           ]
@@ -17466,6 +19933,198 @@
               "cameras": [
                 "SGSCam1",
                 "SGSCam2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "counter-d99495a41aab",
+      "name": "Counter · Buffet Coffee Station",
+      "category": "Reception & equipment",
+      "design": {
+        "type": "counter",
+        "variant": "buffet-coffee-station"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "71e6a184da79",
+          "appearance": {
+            "size": [
+              3.5,
+              1.65,
+              2.8
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c5b6"
+          },
+          "preview": {
+            "type": "counter",
+            "variant": "buffet-coffee-station",
+            "size": [
+              3.5,
+              1.65,
+              2.8
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c5b6",
+            "id": "g56-coffee-counter",
+            "name": "Counter · Buffet Coffee Station",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g56",
+              "objectId": "g56-coffee-counter",
+              "name": "Curved coffee counter with espresso machine and beverage urns",
+              "seats": [],
+              "cameras": [
+                "H31"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "counter-3b261cc4fbd8",
+      "name": "Counter · Buffet Hot Station",
+      "category": "Reception & equipment",
+      "design": {
+        "type": "counter",
+        "variant": "buffet-hot-station"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "e4a205d90704",
+          "appearance": {
+            "size": [
+              4.8,
+              1.7,
+              1.2
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c5b6"
+          },
+          "preview": {
+            "type": "counter",
+            "variant": "buffet-hot-station",
+            "size": [
+              4.8,
+              1.7,
+              1.2
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c5b6",
+            "id": "g56-hot-counter",
+            "name": "Counter · Buffet Hot Station",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g56",
+              "objectId": "g56-hot-counter",
+              "name": "Rounded hot-food station and heat-lamp rail",
+              "seats": [],
+              "cameras": [
+                "H31"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "counter-033ba6c59726",
+      "name": "Counter · Buffet Tree Island",
+      "category": "Reception & equipment",
+      "design": {
+        "type": "counter",
+        "variant": "buffet-tree-island"
+      },
+      "count": 1,
+      "configurations": [
+        {
+          "id": "dc01300c383a",
+          "appearance": {
+            "size": [
+              4,
+              1.15,
+              2.6
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c5b6"
+          },
+          "preview": {
+            "type": "counter",
+            "variant": "buffet-tree-island",
+            "size": [
+              4,
+              1.15,
+              2.6
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "color": "#c9c5b6",
+            "id": "g56-island",
+            "name": "Counter · Buffet Tree Island",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw": 0,
+            "seats": [],
+            "cameras": []
+          },
+          "usages": [
+            {
+              "block": "first/g56",
+              "objectId": "g56-island",
+              "name": "Rounded stone buffet island with recessed serving trays",
+              "seats": [],
+              "cameras": [
+                "H31"
               ]
             }
           ]
@@ -18620,7 +21279,7 @@
       "count": 1,
       "configurations": [
         {
-          "id": "06c6b995d04a",
+          "id": "24b32c0f4d48",
           "appearance": {
             "size": [
               0.62,
@@ -18630,7 +21289,7 @@
             "scale": [
               1,
               1,
-              1
+              1.104714031852514
             ],
             "color": "#e0dfd5",
             "screenScale": 1.3
@@ -18646,7 +21305,7 @@
             "scale": [
               1,
               1,
-              1
+              1.104714031852514
             ],
             "color": "#e0dfd5",
             "screenScale": 1.3,

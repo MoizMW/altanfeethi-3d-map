@@ -1,0 +1,508 @@
+{
+  "format": "altanfeethi-block-architecture",
+  "version": 1,
+  "blockId": "ground-ef-construction-019",
+  "floorSize": [
+    11.7,
+    12.8
+  ],
+  "floorCenter": [
+    0,
+    0
+  ],
+  "ceilingHeight": 4.1,
+  "placement": {
+    "status": "owner-relative-adjacency-not-survey-calibrated",
+    "map": "evidence/maps/ground-floor.png",
+    "registrationRevision": "2026-11-05T05:37:17.688Z",
+    "registrationSha256": "648d2d7c5c98b0c49e4d0a542dccfe8e639d288ad2dda10ad98f1113d66ff8a3",
+    "anchors": [
+      {
+        "camera": "E5",
+        "pixel": null,
+        "heading": null,
+        "status": "unplaced"
+      },
+      {
+        "camera": "E8",
+        "pixel": null,
+        "heading": null,
+        "status": "unplaced"
+      },
+      {
+        "camera": "F1",
+        "pixel": [
+          8412,
+          6466
+        ],
+        "heading": 60,
+        "status": "verified"
+      },
+      {
+        "camera": "F2",
+        "pixel": [
+          9009,
+          6787
+        ],
+        "heading": 47,
+        "status": "verified"
+      }
+    ],
+    "sourceMapCrop": [
+      7600,
+      5600,
+      9700,
+      7350
+    ],
+    "localAxes": {
+      "x": "From escalator/outer glazed end toward G17 and its front empty room",
+      "z": "From lounge-side glazing toward the cream core wall and escalator approach",
+      "y": "Up"
+    },
+    "mapReview": "F1/F2 registration locates g19 along the Departure Immigration strip after G17; E5/E8 are unplaced. Use map topology, normal camera overlap and owner adjacency; no fitted map-to-world transform or camera world yaw is claimed."
+  },
+  "footprint": [
+    [
+      -5.85,
+      -6.4
+    ],
+    [
+      5.85,
+      -6.4
+    ],
+    [
+      5.85,
+      6.4
+    ],
+    [
+      -5.85,
+      6.4
+    ]
+  ],
+  "floorSections": [
+    {
+      "id": "g19-dark-stone-floor",
+      "center": [
+        0,
+        0
+      ],
+      "size": [
+        11.7,
+        12.8
+      ],
+      "color": "#424747",
+      "yaw": 0
+    }
+  ],
+  "circulation": {
+    "id": "g19-pale-crossing-path",
+    "polygon": [
+      [
+        -5.85,
+        -0.4
+      ],
+      [
+        5.85,
+        -0.4
+      ],
+      [
+        5.85,
+        2.2
+      ],
+      [
+        -5.85,
+        2.2
+      ]
+    ],
+    "surfaceMaterial": "pale-stone",
+    "sources": [
+      "F2",
+      "F1",
+      "E5",
+      "E8"
+    ],
+    "status": "visible-in-normal-F1-F2-width-estimated",
+    "notes": "Matches the saved G17 pale path at global Z=3..5.6; no counters, chairs, barrier posts or decorative objects."
+  },
+  "walls": [
+    {
+      "id": "g19-g17-side-context",
+      "kind": "solid",
+      "start": [
+        5.85,
+        -6.4
+      ],
+      "end": [
+        5.85,
+        -0.4
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "owner": "ground/g17",
+      "sources": [
+        "owner-G17-connection"
+      ],
+      "confidence": "Reference to G17 sign wall; rendered only in standalone G19.",
+      "color": "#e2dfd5"
+    },
+    {
+      "id": "g19-front-room-side-context",
+      "kind": "solid",
+      "start": [
+        5.85,
+        2.2
+      ],
+      "end": [
+        5.85,
+        6.4
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "owner": "ground/g17-front",
+      "sources": [
+        "owner-front-room-connection"
+      ],
+      "confidence": "Reference to g17-front left wall; rendered only in standalone G19.",
+      "color": "#e2dfd5"
+    },
+    {
+      "id": "g19-connecting-glass-gate",
+      "kind": "glass",
+      "start": [
+        5.85,
+        -0.4
+      ],
+      "end": [
+        5.85,
+        2.2
+      ],
+      "height": 4.1,
+      "thickness": 0.045,
+      "owner": "ground/g19",
+      "sources": [
+        "F1",
+        "E5",
+        "E8",
+        "owner-glass-gate"
+      ],
+      "confidence": "Full-height glazed passage at the G17/front-room corridor. Pattern, dimensions and leaf widths estimated.",
+      "color": "#668997",
+      "opacity": 0.22,
+      "frameColor": "#858777",
+      "horizontalSplit": 0.5,
+      "privacyBand": false,
+      "doors": [
+        {
+          "id": "g19-gate-leaf-left",
+          "offset": 0.7,
+          "width": 1.1,
+          "height": 2.8,
+          "handleHeight": 1.15,
+          "handleLength": 0.65,
+          "handleColor": "#535c59"
+        },
+        {
+          "id": "g19-gate-leaf-right",
+          "offset": 1.9,
+          "width": 1.1,
+          "height": 2.8,
+          "handleHeight": 1.15,
+          "handleLength": 0.65,
+          "handleColor": "#535c59"
+        }
+      ]
+    },
+    {
+      "id": "g19-lounge-glazing-context",
+      "kind": "glass",
+      "start": [
+        -1.75,
+        -6.4
+      ],
+      "end": [
+        5.85,
+        -6.4
+      ],
+      "height": 4.1,
+      "thickness": 0.045,
+      "owner": "ground/g28",
+      "sources": [
+        "E5",
+        "E8"
+      ],
+      "confidence": "Lounge-side blue glazing is supported by reverse views. G28 owns the shared span in composition.",
+      "color": "#668997",
+      "opacity": 0.6,
+      "frameColor": "#858777",
+      "horizontalSplit": 0.5,
+      "privacyBand": false
+    },
+    {
+      "id": "g19-lounge-end-context",
+      "kind": "solid",
+      "start": [
+        -5.85,
+        -6.4
+      ],
+      "end": [
+        -1.75,
+        -6.4
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "owner": "ground/g29",
+      "sources": [
+        "ground-floor-map",
+        "owner-neighbor-connection"
+      ],
+      "confidence": "G29 end partition context; physical lengths and end junction remain provisional.",
+      "color": "#e2dfd5"
+    },
+    {
+      "id": "g19-core-wall",
+      "kind": "solid",
+      "start": [
+        5.85,
+        6.4
+      ],
+      "end": [
+        -2.5,
+        6.4
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "owner": "ground/g19",
+      "sources": [
+        "F1",
+        "F2"
+      ],
+      "confidence": "Cream core/service wall opposite the pale path. Stops before the visible escalator approach; no wall closes the passage.",
+      "color": "#e2dfd5"
+    },
+    {
+      "id": "g19-core-return",
+      "kind": "solid",
+      "start": [
+        -2.5,
+        6.4
+      ],
+      "end": [
+        -2.5,
+        5.6
+      ],
+      "height": 4.1,
+      "thickness": 0.16,
+      "owner": "ground/g19",
+      "sources": [
+        "F2"
+      ],
+      "confidence": "Short cream return at the edge of the visible escalator. Depth and alignment are estimated.",
+      "color": "#e2dfd5"
+    },
+    {
+      "id": "g19-outer-glazing",
+      "kind": "glass",
+      "start": [
+        -5.85,
+        -6.4
+      ],
+      "end": [
+        -5.85,
+        6.4
+      ],
+      "height": 4.1,
+      "thickness": 0.045,
+      "owner": "ground/g19",
+      "sources": [
+        "F1",
+        "F2",
+        "E8"
+      ],
+      "confidence": "Outer patterned-glass side; full extent and frame spacing estimated. Adjacent furniture excluded.",
+      "color": "#668997",
+      "opacity": 0.48,
+      "frameColor": "#858777",
+      "horizontalSplit": 0.5,
+      "privacyBand": false
+    },
+    {
+      "id": "g19-escalator-back-glazing",
+      "kind": "glass",
+      "start": [
+        -5.85,
+        6.4
+      ],
+      "end": [
+        -2.5,
+        6.4
+      ],
+      "height": 4.1,
+      "thickness": 0.045,
+      "owner": "ground/g19",
+      "sources": [
+        "F2"
+      ],
+      "confidence": "Glazing behind the visible lower escalator beyond the cream wall end; width estimated.",
+      "color": "#668997",
+      "opacity": 0.48,
+      "frameColor": "#858777",
+      "horizontalSplit": 0.5,
+      "privacyBand": false
+    }
+  ],
+  "openings": [],
+  "sharedBoundaries": [
+    {
+      "id": "g19-g17-side",
+      "kind": "shared-solid-wall",
+      "neighbor": "ground/g17",
+      "owner": "ground/g17",
+      "wallIds": [
+        "g17-sign-wall",
+        "g19-g17-side-context"
+      ],
+      "start": [
+        5.85,
+        -6.4
+      ],
+      "end": [
+        5.85,
+        -0.4
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g19-front-room-side",
+      "kind": "shared-solid-wall",
+      "neighbor": "ground/g17-front",
+      "owner": "ground/g17-front",
+      "wallIds": [
+        "g17-front-left-wall",
+        "g19-front-room-side-context"
+      ],
+      "start": [
+        5.85,
+        2.2
+      ],
+      "end": [
+        5.85,
+        6.4
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g19-g17-corridor-gate",
+      "kind": "glass-gate",
+      "neighbor": "ground/g17",
+      "owner": "ground/g19",
+      "wallIds": [
+        "g19-connecting-glass-gate"
+      ],
+      "start": [
+        5.85,
+        -0.4
+      ],
+      "end": [
+        5.85,
+        2.2
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g19-g28-backing",
+      "kind": "shared-glazing",
+      "neighbor": "ground/g28",
+      "owner": "ground/g28",
+      "wallIds": [
+        "g28-curtained-glazing",
+        "g19-lounge-glazing-context"
+      ],
+      "start": [
+        -1.75,
+        -6.4
+      ],
+      "end": [
+        5.85,
+        -6.4
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g19-g29-backing",
+      "kind": "shared-solid-wall",
+      "neighbor": "ground/g29",
+      "owner": "ground/g29",
+      "wallIds": [
+        "g29-panel-side-solid",
+        "g19-lounge-end-context"
+      ],
+      "start": [
+        -5.85,
+        -6.4
+      ],
+      "end": [
+        -1.75,
+        -6.4
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    }
+  ],
+  "ceiling": {
+    "size": [
+      11.7,
+      12.8
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "height": 4.1,
+    "defaultVisible": false,
+    "status": "estimated-visualization-only"
+  },
+  "structures": [
+    {
+      "id": "g19-visible-escalator-rise",
+      "kind": "stair-escalator-rise",
+      "position": [
+        -3.05,
+        0,
+        4.8
+      ],
+      "yaw": 0,
+      "landingLength": 0.5,
+      "run": 2.417307692307692,
+      "rise": 0.7307692307692307,
+      "steps": 5,
+      "destinationFloor": "first",
+      "extent": "visible-lower-section-only",
+      "sources": [
+        "F2",
+        "F1",
+        "owner-escalator-reference",
+        "owner-180-degree-rotation-and-adjacent-stairs",
+        "layouts/first/bottom-lobby.json"
+      ],
+      "confidence": "Owner confirms a parallel staircase and 180-degree escalator reversal. The paired first-floor profile supplies the tread pattern and slope; local widths and position remain estimated.",
+      "notes": "Owner correction rotates yaw from 180 to 0. Stairs are on the interior side of the escalator, both rising together. Only five lower treads and their shared landing are shown; upper connection remains outside this construction shell.",
+      "stairWidth": 1.7045454545454544,
+      "stairZ": -1.6477272727272725,
+      "escalatorZ": 0,
+      "escalatorWidth": 1.25,
+      "patternReference": {
+        "layout": "first/bottom-lobby",
+        "structureId": "first-lobby-stair-and-escalator",
+        "visibleTreads": 5,
+        "transverseScale": 0.5681818181818181,
+        "notes": "Same tread pitch, slope, stair/escalator width ratio, lane gap and finishes as the first-floor pair. Widths use the existing provisional G19 camera crop; exact inter-floor width/placement calibration remains unresolved."
+      }
+    }
+  ],
+  "notes": [
+    "Construction scope: floor, supported walls/glazing, connecting glass gate and the visible lower stair/escalator pair. All historical chairs, counters, checkpoint barriers, plants, portraits and movable objects are excluded.",
+    "Use F2/F1/E5/E8 normal snapshots only. Wide snapshots are explicitly excluded by owner because they depict a newer condition.",
+    "Main placement [-59.63,0,3.4], yaw 0; right edge X=-53.78 meets G17 and g17-front. Pale path joins at global Z=3..5.6. Extents, wall heights and escalator proportions are provisional.",
+    "Standalone context walls on the G17, front-room and lounge seams are excluded in composition; neighboring blocks own those shared walls once. The G19 gate owns only the connecting corridor span.",
+    "Owner stair/escalator correction: reverse escalator by 180 degrees and add parallel stone stairs, using the first-floor tread pitch, slope, lane proportions, glass guards and handrail finishes. Reposition within the corner for wall clearance; the lower pair shares one landing."
+  ]
+}

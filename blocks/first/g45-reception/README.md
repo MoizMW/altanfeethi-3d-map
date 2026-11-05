@@ -8,6 +8,8 @@ H45 supports one stone reception counter, three visible staff chairs, dark brand
 
 New reusable designs were created in the [shared asset library](../../../shared/assets/library/references/first-reception/README.md) before placement. Existing office chairs, side tables, portrait artwork and structural glazing/wall finishes are reused. All object positions, scale, yaw and IDs remain editable; saving the viewer updates only `objects.json`.
 
-Local +X runs toward the open aisle and +Z toward the reception staff side. Floor and ceiling dimensions, cabinet/storage spacing, stone pattern, slot ordering and global alignment remain provisional. Background buffet, reflected furniture and loose construction tools/cables are excluded. Open `/?layout=first/g48-g45` for a relative connected draft; source blocks remain independent.
+Owner boundary correction: the solid return is on the left when facing reception, at local X=2.2 aligned with G48 patterned glazing. It runs from the G48 join to the reception back wall. The folding louver screen is on the right (local -X), opening toward the first-floor combined lounges. G48/G45 lies left of the H40/H44/H50 backing wall in the supplied combined-lounge view; a global merge transform remains unresolved.
 
-Merge naming: `first/g45` retains the distinct H15/H16 privacy lounge. This H45 reception is preserved at `first/g45-reception`; object IDs, temporary staff seats, artwork and layout pose remain unchanged. Camera registration/group assignments are not rewritten.
+Local +X runs toward the solid return and +Z toward the reception staff side. Floor and ceiling dimensions, cabinet/storage spacing, stone pattern, slot ordering and global alignment remain provisional. Background buffet, reflected furniture and loose construction tools/cables are excluded. Open `/?layout=first/g48-g45` for a relative connected draft; source blocks remain independent.
+
+Merge naming: this H45 reception is distinct from the H15/H16 G45 privacy lounge in `first/g45`. Owner-corrected reception geometry and saved furniture are retained here.

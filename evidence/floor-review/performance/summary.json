@@ -1,0 +1,48 @@
+{
+  "scene": "ground/b-g-lounges",
+  "sourceObjects": 543,
+  "originalMeshes": 7748,
+  "originalSourceTriangles": 8074956,
+  "browserViewport": [
+    1280,
+    720
+  ],
+  "method": "Same local browser session, full-map view and mouse orbit. CPU submission time is a diagnostic, not a guaranteed GPU frame rate. Before capture followed an orbit with continuous rendering; after uses demand rendering, cached shadows and overview furniture detail. Initial loading/shadow frames excluded from the after movement sample.",
+  "before": {
+    "drawCalls": 21441.0,
+    "trianglesPerFrame": 23012520.0,
+    "medianSubmitMs": 529.1,
+    "gpuGeometries": 7754
+  },
+  "after": {
+    "drawCalls": 2391,
+    "trianglesPerFrame": 3016398,
+    "medianSubmitMs": 28,
+    "gpuGeometries": 1158,
+    "liveReflectionPassesDuringMovement": 0
+  },
+  "notes": [
+    "Original detailed geometry is retained and restored in close views.",
+    "Read-only map instances keep original source object IDs for picking and selection.",
+    "Architectural and furniture batches use 8 m spatial cells for culling.",
+    "The editor remains editable without static instancing.",
+    "Camera movement reuses shadows; object edits, visibility changes and texture loads invalidate them.",
+    "Rendering stops after camera damping and the final settled quality frame."
+  ],
+  "verification": {
+    "testsPassed": 99,
+    "allBlocksValidated": 35,
+    "browserChecks": [
+      "Whole-map orbit and wheel zoom",
+      "Distant detail returns to original geometry on zoom",
+      "Seat selection preserves Seat_B1",
+      "Walls can be hidden and restored after batching",
+      "Idle frame counter remains unchanged (195 to 195)",
+      "Close G10 view captures reflections after settling",
+      "No browser warnings or errors"
+    ],
+    "preview": "evidence/floor-review/performance/optimized-map.png"
+  },
+  "supersededBy": "reception-quality-update.json",
+  "historicalNote": "This earlier measurement used distant geometry simplification. That simplification has since been removed at the owner\u2019s request."
+}

@@ -1,5 +1,12 @@
 import * as THREE from 'three';
 
+let receptionBrandTexture;
+function receptionBrand(){
+ if(typeof document==='undefined')return null;
+ if(!receptionBrandTexture){receptionBrandTexture=new THREE.TextureLoader().load('/shared/assets/branding/reception-wall.svg');receptionBrandTexture.colorSpace=THREE.SRGBColorSpace;receptionBrandTexture.anisotropy=8;receptionBrandTexture.userData.shared=true;}
+ return receptionBrandTexture;
+}
+
 // Local +Z is the visitor side of counters and the facing direction of chairs.
 export const receptionSizes = {
   'automatic-glass-gate': [8.4,2.8,.16],
@@ -294,16 +301,9 @@ export function buildReceptionObject(g, o, {box, mesh, rod, mat}) {
       const y=h*(.12+row*.105);points.push(new THREE.Vector3(center,y,d*.55),new THREE.Vector3(center+sign*w*.12,y+h*.1,d*.55));
     }
     g.add(new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(points),new THREE.LineBasicMaterial({color:'#6c9495',transparent:true,opacity:.35})));
-    if(typeof document!=='undefined'){
-      const canvas=document.createElement('canvas');canvas.width=1536;canvas.height=512;
-      const ctx=canvas.getContext('2d');ctx.fillStyle='#f0eee4';ctx.textAlign='center';
-      ctx.font='86px sans-serif';ctx.fillText('التنفيذي',768,225);
-      ctx.font='bold 68px sans-serif';ctx.fillText('ALTANFEETHI',768,335);
-      ctx.strokeStyle='#ba836d';ctx.lineWidth=15;ctx.beginPath();
-      for(const sign of [-1,1]){ctx.moveTo(768,130);ctx.bezierCurveTo(768,60,768+sign*65,25,768+sign*120,25);}ctx.stroke();
-      const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;
-      mesh(g,new THREE.PlaneGeometry(w*.63,h*.38),new THREE.MeshBasicMaterial({map:texture,transparent:true,depthWrite:false}),[0,h*.62,d*.6]);
-    }
+    const identity=mesh(g,new THREE.PlaneGeometry(w*.4,h*.46),new THREE.MeshBasicMaterial({map:receptionBrand(),transparent:true,depthWrite:false}),[0,h*.52,d*.6]);
+    identity.name='Official reception identity · Arabic, English and logo';
+    identity.castShadow=false;identity.receiveShadow=false;
   } else if(o.type==='wall-panel'&&o.variant==='stone-relief') {
     box(g,[w,h,d],[0,h/2,0],body,.004);
     for(let row=0;row<12;row++)for(let col=0;col<3;col++){

@@ -34,11 +34,11 @@
     }
   ],
   "floorSize": [
-    7.2,
+    6,
     13.4
   ],
   "floorCenter": [
-    0,
+    -0.6,
     2.7
   ],
   "walls": [],
@@ -48,6 +48,23 @@
     "G48 remains at origin with the owner's complete X=0 side swap: the sofa/storage bank moves to the left in the supplied top view. G45 translates +6.8 m on Z without furniture changes. Floors meet at Z=4.0 and the clear approach now continues at X=-1.65..-0.65.",
     "G48 keeps four CV seat IDs and two table IDs. G45 uses three explicitly temporary staff-chair slots; H15/H16 historical g45 seating ROIs are outside this camera-defined reconstruction.",
     "Construction objects, wall geometry, relative shell widths, printed portrait matching and all dimensions/global camera calibration require owner/site review. Buffet and wider lobby remain outside this layout.",
+    "Owner boundary correction: the reception wall is on the left in the reception-facing view, at X=2.2 aligned with G48 patterned glazing, continuing to the back wall at Z=9.32. The right side remains open with the folding louver screen toward the combined lounges. Reception floor crop follows the corrected wall. G48/G45 lies outside the H40/H44/H50 backing wall on its left in the supplied combined-lounge view; this preview retains its local coordinate frame.",
     "Merge naming correction: first/g45 now retains the separate H15/H16 privacy lounge. This composition still uses the original H45 service desk through first/g45-reception; every reception object and its transform is preserved."
-  ]
+  ],
+  "integration": {
+    "ownerCorrection": {
+      "source": "Owner reception and combined-lounge screenshots",
+      "wallLineX": 2.2,
+      "wallZ": [
+        4,
+        9.32
+      ],
+      "alignedWith": "g48-patterned-glazing",
+      "openingSide": "local -X; right when facing reception",
+      "openingObject": "g45-folding-screen",
+      "neighborLayout": "first/center-right",
+      "relationship": "G48/G45 lies left of the Seat_H40/Seat_H44/Seat_H50 backing wall in the supplied combined-lounge view. The folding louver side faces that lounge area.",
+      "status": "Owner-confirmed topology; global merge transform not calibrated"
+    }
+  }
 }

@@ -16,8 +16,11 @@ An object's existing `color` field is an editable base-color override. It does n
 
 | Surface | Shared material | Usage |
 | --- | --- | --- |
+| Pale circulation / reception stone | `pale-stone-floor` | Satin-polished ivory stone, softer reflection |
 | Common dark tiled floor | `dark-stone-floor` | Same finish across adjoining areas unless evidence shows a transition |
 | Beige lounge upholstery | `beige-upholstery` | G9 sofa |
+| Updated shared lounge sofa upholstery | `warm-offwhite-sofa` | Owner reference sofa, warm off-white/greige weave; supersedes the beige sofa finish |
+| Plain light-blue sofa pillows | `light-blue-sofa-pillow` | Shared sofa; dark contrast piping, no photographic texture |
 | Blue lounge upholstery | `blue-upholstery` | G9 armchairs |
 | Pale coffee-table stone | `pale-stone-table` | G9 coffee table |
 | Decorative brass | `brass-screen` | G9 screen frame |
@@ -69,3 +72,26 @@ G9 and G32 should share this visual language while retaining their observed loun
 Architectural glass variant `blue-gold-geometric` uses translucent blue glazing, brass edging and a procedural gold twelve-point rosette/lattice approximation from the owner's Zone C reference. Reuse it through `architecture.walls[].variant` for the same observed finish; do not replace clear or smoked glazing elsewhere without evidence. The motif is geometry, not a photographic texture.
 
 Owner lounge-chair standard (3 November 2026): default armchairs use the reference curved back/low arms, shaped seat, dark tapered timber legs, slate-blue upholstery `#3d4a55` and a botanical pillow using a clean generated fabric pattern, replacing the earlier screenshot texture at the owner's request. All matching placements share that builder regardless of saved dimensions. See `shared/assets/library/references/curved-armchair/README.md`. This supersedes the previous G18/G20 blue standard. Egg-swivel and shell-lounge variants retain their designs. The former G27 green overrides remain retired and rejected by shared block validation. Other physical materials and editable colors remain available.
+
+
+## Camera-reviewed floors
+
+See [the floor review](evidence/floor-review/README.md) for the 221 normal/wide image audit across all 35 blocks, finish decisions and exceptions. Shared implementation: `app/floor-materials.js`, `app/floors.js` and `app/floor-reflections.js`.
+
+Dark marble is polished warm charcoal with fine pale calcite veins (roughness .24). Pale stone is restrained ivory/cream with quiet grey-beige veining (roughness .32). Both are nonmetallic, with softened scene reflections; no highlights are baked into the albedo images. Use world-metre UVs at 4.8 m per texture rather than stretching a texture over each room. Ordinary joints are fine, low contrast and fade at map scale. Do not reintroduce LineSegments tile grids.
+
+Preserve the real first-floor small-square inlays and the B dining geometric bands. Keep authored floor transitions and owner finish overrides. The old TV-side grid strips are schematic and are suppressed by the renderer. Generated albedo images and their exact built-in ImageGen prompts are in `shared/materials/textures/`; these approximate the observed stone rather than claiming an exact material scan.
+
+
+## Full-map rendering performance
+
+The shared stone textures and material colors are retained. To keep navigation responsive, the editor renders on demand, caches static shadows and suspends planar floor captures during motion. Live floor reflections are limited to settled close views in scenes below 1,500 visible meshes; large combined maps retain the stone's material response without an additional scene capture. All views keep the original pixel-ratio cap of 2, including during movement. Reflection captures resume only after orbit damping settles in eligible close views.
+
+Read-only layouts reuse furniture templates and exact-match geometry/materials, with spatial instances grouped in 8 m cells for view culling. Original object IDs, selection bounds and picking geometry remain available. Glass and custom shader materials stay separate. Static world matrices are computed once. All views retain the exact original detailed chair/sofa geometry. The former distant-view simplification has been removed at the owner’s request; instancing shares resources without simplifying any object. Seat labels are decluttered in combined views and updated only when a frame is needed.
+
+The opt-in `profile=1` URL parameter exposes render counts and timings through the canvas `data-render-profile` attribute. Local before/after measurements and their limitations are saved in `evidence/floor-review/performance/summary.json`. Repeat on the same device and viewport; CPU submission timing is not a guaranteed frame rate.
+
+
+Reception quality correction (4 November 2026): cached object clones must reset all Euler axes with `rotation.set(0, yaw, 0)`. Replacing Y alone after quaternion cloning can turn a 180° Y rotation into an unintended identity rotation, reversing counters and hiding one-sided branding in combined maps. Saved object poses remain authoritative and unchanged. The reception wall uses the existing official bilingual vector logo paths in `shared/assets/branding/reception-wall.svg` with ivory lettering on teal.
+
+Soft contact shadows beneath floor-standing furniture use one shared draw in `app/contact-shadows.js`. The cached directional shadow camera is fitted to the entire scene, including distant reception rooms, while keeping the established lighting direction. Full maps use a bounded 4096-pixel shadow map; individual blocks use 2048. Both contact and directional shadows stay visible during movement; reflection capture remains paused. The earlier performance report contains historical measurements from before the full-detail restoration; see `evidence/floor-review/performance/reception-quality-update.json` for the current verification.

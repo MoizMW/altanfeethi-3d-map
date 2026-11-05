@@ -342,3 +342,59 @@ Two small I-zone rooms added after G63 (2026-11-03): independent ground/g60 (I37
 Small-room finishes corrected after owner furniture edits: preserve G60/I33 objects.json exactly. Both corridor frontages become full-width non-see-through frosted cream glass door assemblies; no solid entry returns/header. Opaque black glass opposite G60 +Z sofa and I33 −Z sofa is shared at X=-40.28, owned once by G60 in composition. Remaining pale walls carry restrained horizontal panel seams. Source G60 reeded inset is superseded.
 
 Small-room owner refinement: the common partition is now cream with a centered 1.9 × 1.45 m opaque grey window (sill 1.1 m, estimates), superseding full black glazing. Both entries have 0.26 m solid cream side pillars supporting 3.18 m of split frosted glass, dark central stiles/track and a dark automatic-open button with a subdued blue ring. One half slides over the other; closed preview, no pull handles. Saved seating is unchanged.
+
+I-zone/dining shared backing correction (2026-11-04): in the main combined view, exclude the duplicate `g3-g24-g25-screen-wall` at Z=21.2 so G57/G58/G59/G61 paneled walls remain visible. G59 composed wall extends 0.08 m to X=-13.38 to meet the dining end. The standalone dining shell, source I-zone walls, furniture, displays and perpendicular buffet-passage seam stay intact.
+
+
+## First-floor center G52–G55 (2026-11-04)
+
+Owner requests the whole center area from groups G52/G53/G54/G55 and authorizes adjacent camera evidence. Added `first/g52-g55` as one independently editable multi-group block: 32 seats H56–H87 once, ten tables H22/H23/H24/H26/H27/H28/H29/H31/H32/H33. Cross-group ROI overlap is reconciled rather than copied. Adjacent observations H43/H50/H51/H90/H94/H95/H96/H97 and Table_H36 remain outside the center crop.
+
+Reviewed all ten primary normal/wide pairs plus H23/H33/H36/H40/H35/H43 for side passages and neighboring boundaries. H44 remains unplaced; normal image is 3840×2160 and its historical ROI boxes visually align with a 1920×1080 basis. No registration is changed and normal ROI pixels never become metric coordinates. Four curved teal sofas, twelve cream barrel chairs, eight dark leather chairs, two planted gravel tree beds, continuous matte carpet with cutouts, wood end wall/sculpture, low reeded dividers and brass lighting are procedural approximations. Source JSON documents exclusions, evidence and unresolved measurements.
+
+The crop is 10.6 × 22 estimated meters, with +X toward window-side bays and +Z toward the buffet. Side passages and buffet end stay open; adjacent bays, full window shell and buffet furniture are outside these groups. No global placement or merge into the existing stair-lobby layout is claimed. New furniture variants are opt-in; saved existing furniture/placements retain their builders. Tests check unique ROI reconciliation, evidence paths/anchors, finite supported geometry and clear walking routes.
+
+G17 left wall signage added from E1/E4 camera evidence: gold مجلس الدرعية / DIRIYAH MAJLIS, two diamonds and central floral mark, and diriyah.sa. Stored as g17-sign-wall.sign, rendered on the interior face in standalone/main views; low-wall cutaway hides high-mounted signage. Letterforms, relief and dimensions are schematic; furniture and placement preserved.
+
+
+## Right of center: G46/G47/G49 (2026-11-04)
+
+Owner requests the illustrated right portion adjacent to G52–G55. Added `first/g46-g47-g49`: 16 seats H40–H55, five table identities H15/H16/H17/H19/H20, in one editable row. H19 is one nested table set. H50/H51 and H54/H55 observed by multiple groups are reconciled; center chairs H63/H65 remain excluded from this source. All eight primary normal/wide views are reviewed, including unannotated H52. Neighboring H33/H34/H35/H38/H43/H44/H41 support the join and exclusions. Existing camera registration is retained, including unplaced H44.
+
+Four shell-chair positions at either end of the sofa pair, G46's caramel chairs and long console, curved brass/ring dividers, wood/stone backing, rugs, media column and visible fixtures are procedural estimates. New shell-chair and fixture variants are opt-in; no existing center or other room furniture is changed.
+
+Owner screenshot correction (2026-11-04): `first/center-right` holds the center fixed and places the corrected row at [7.8,0,0], yaw 0, on the right (+X). Side-source X positions, walls, rugs and fixtures are reflected, including yaw and sofa slot order, while retaining Z bay order and dimensions. Floors meet at X=5.3; backing is on the outside right at X=10.2 and the center-facing aisle stays open. This supersedes the earlier left-side placement. It contains 48 unique seats and 15 tables, loading source edits live. Both standalone sources and earlier first-floor layouts remain available. Dimensions, orientations, structural interpretation and global alignment remain provisional.
+
+
+## G50/G51 merged left of center + right (2026-11-04)
+
+Owner explicitly requests the saved window row on the left in the supplied plan screenshots. Expanded the existing `first/center-right` layout to four live source blocks and renamed it First-floor combined lounges (left + center + right). G50 translates [-7.7,0,-3.85], G51 [-7.7,0,5.75], both yaw 0, retaining the accepted +9.6 m G51 offset. Existing center/right placements remain fixed. All source objects, dimensions, colors, scales, saved seat labels and slot order are retained, including owner label corrections. The merged view has 64 seats and 20 table identities.
+
+Window floors meet the center's left edge at X=-5.3; glazing stays outside at X=-10.0. Composition-only G50 end-wall endpoints align to Z=-10.6 and extend to the center back-wall start, owning the span once. A dark floor-only 2.25 m approach fills the shorter window-row crop through Z=11.4, with no furniture/glazing/curtain stretching and no new enclosing end wall. Both long aisles remain open. All six window normal/wide pairs were reviewed independently with H22/H24/H29 context; no ROI becomes world geometry or moves to a wide image. Dimensions/global alignment remain estimates. Standalone G50/G51 and their prior combined preview are unchanged.
+
+The merged window ornaments exposed a multi-material mesh crash in floor-reflections: material arrays do not carry material.userData. Reflection filtering now checks each material safely; the regression check includes a multi-material ornament. This restores top/isometric view redraws without changing source geometry.
+
+
+Right display-pillar correction (2026-11-04): owner requests the right column match the left G50 display. `g46-g47-g49-media-column` now uses the existing `cylindrical-display` variant and campaign animation, replacing the partial static-blue stone-clad design. Its physical ID, current saved position/yaw, dimensions and owner scale remain intact. Both standalone and merged scenes load this source change live.
+
+G50/G51 campaign animation merge fix: combined-object caching preserves custom render callbacks, animated screens stay outside static batches, and the demand-driven render loop schedules 15 fps updates only while an animated screen is visible in the camera. Hidden tabs, off-screen displays and reduced-motion preference keep the idle behavior. Idle-media scheduling and clone/batch regressions are covered by render-performance tests. Furniture and campaign timings are unchanged.
+
+First-floor privacy/lobby owner update: G45 remains at [-1.7,0,29.25], yaw -90, touching the empty buffet-width room at Z=26.7. The shared front renders once and the buffet-side wall line remains X=-5.05. In the full merge only, G45 glass entry swaps to X=-5.05 facing the new H88/H89-side lobby; brown end wall swaps to X=1.65 with its cladding facing inside. Two dark floor panels extend the existing window-row/common approach from Z=11.8 to 31.95, meeting neighboring floors without overlap. Standalone G45 and saved furniture are unchanged.
+
+Full first-floor outer glass correction: exclude G56 inset window-side glass in composition. G51 glazing continues from [-10,9.15] along the outer lobby floor edge to [-10,31.8], at the privacy-room end, then joins a solid return to [-5.05,31.8]. This keeps the extended H88/H89 lobby inside the perimeter. Standalone blocks and saved furniture remain unchanged.
+
+First-floor reception/empty-room correction: in the full composition, reception back wall and branded backdrop align with the private-room wall span X=10.15..14.65. The panel is 4.5 m wide; panel and portraits shift +0.6 m, with counter/chairs and source records retained. `components[].objectSizes` provides explicit composition-only size overrides alongside existing offsets. Empty room narrows from 13.8 to 12.4 m (right floor edge X=7.2, wall X=7.05), and a 1.4 m corridor infill joins existing approach flooring. Rear wall endpoints and front return follow the narrower footprint; no duplicate rear-width return remains.
+
+G17 front placeholder: `ground/g17-front` adds an empty 9.6 × 4.2 m floor to the main ground layout at [-48.98,0,7.7], yaw 0. Width matches G17; depth matches adjacent small lounges. The Z=5.6 edge meets G17 without overlap; no furniture or walls are inferred.
+
+G17 front enclosure update: four cream perimeter walls and a centered 1.6 × 2.8 m glass gate now enclose the blank block. Gate faces the white G17 corridor at global Z=5.6. Separate wall returns/header keep the gate clear of solid faces; floor size, placement and lack of furniture remain unchanged.
+
+## G19 construction shell — 5 November 2026
+
+Owner requests an unfurnished G19 from camera angles, the 2D ground map and registered camera positions, explicitly excluding newer wide captures. Normal E5/E8/F1/F2 were reviewed; F1/F2 are registered, E5/E8 remain unplaced. The attached F2 escalator crop is retained as `evidence/references/g19-f2-owner-escalator.png`. No historical chairs, counters, temporary barrier posts, equipment or decorative objects are modeled.
+
+`ground/g19` adds an estimated 11.7 × 12.8 m shell beside G17/front room at [-59.63,0,3.4], yaw 0. Dark stone and a 2.6 m pale crossing join G17's existing Z=3..5.6 path through a glass gate. G17, g17-front and G28/G29 own the other shared partitions; duplicate G19 context walls are excluded in composition. Existing neighboring source poses/objects are preserved. A close review is at `/?layout=ground/g17-g19`; the main B/C/E/G/I layout also includes the shell.
+
+F2's visible escalator foot is a structural `escalator-rise` with rounded handrail returns, landing, glass and treads. Only the lower visible segment is shown; its 1.3 m rise, 2.2 m run and 0.7 m landing are provisional. Upper flight, physical floor elevation and first-floor alignment remain unresolved. Composition now carries source architecture structures through the same rigid transform as the shell, preserving standalone/combined correspondence. Core-return clearance, glass seam, construction exclusions and rotated/elevated structure poses have regression checks.
+
+G19 owner correction: rotate escalator 180° (yaw now 0), add the parallel staircase, and use the existing first-floor stair/escalator design. Both directions now share `buildVerticalCirculation`; five lower treads copy the first-floor pitch and riser height, with matching transverse lane proportions/finishes and one shared lower landing. The pair sits at [-3.05,0,4.8], rising toward local +X, clear of the core return and pale crossing. Exact inter-floor widths and global placement remain provisional. The earlier lone 1.3 m-rise escalator is superseded.

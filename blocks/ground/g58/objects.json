@@ -11,7 +11,7 @@
       "yaw": 180,
       "size": [2.05, 0.88, 0.9],
       "scale": [1, 1, 1],
-      "color": "#ddd9cf",
+      "color": "#aaa59c",
       "seats": ["Seat_I5", "Seat_I6"],
       "cameras": ["I18"],
       "confidence": "I18 ROIs identify image-left I5 and image-right I6 on a single sofa; dimensions, slot order and local placement need owner review."

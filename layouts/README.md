@@ -29,9 +29,11 @@ All 31 objects load live, preserving IDs, saved poses, dimensions and scales. G1
 The composer now carries separate source floor sections and room footprints through the same placement transform as furniture and walls. Existing single-floor layouts retain their original behavior.
 
 ## G9/G10/G11 lounges
-## First-floor stair lobby and G42
+## First-floor stair lobby, private rooms and G42
 
 Open `/?layout=first/bottom-lobby`. The saved `merged-first-floor-bottom-right` row retains G38 → G37 → G36 → G35 and its four placements; G42 loads live from its separate source block. H9 normal and wide views establish two seating rows on opposite sides of the same stair/escalator opening. H18-wide and H19 clarify the checker inlay, lift, console, ornaments, plants, bins and fire/dispenser fixtures. Normal ROIs remain attached to their own normal snapshots. H9 remains a registered supporting camera with no group reassignment; no H19-wide file is invented.
+
+G39 → G40 → G41 now extends behind G38’s H15/H16 sofa. The saved private row translates by [-19.45,0,0] with no rotation or furniture changes. H18/H13 wide views and the first-floor map guide the relative placement. Its entrance corridor joins the existing lobby landing at X=-17.8, Z=2.4..3.8. The G38 sofa backing owns the shared wall with G41; a short pale return completes G41’s entrance side without duplicated walls. Sliding entrances and the two internal room partitions remain intact. The standalone private-room preview remains available.
 
 G42 rotates +90° and translates to [-5,0,10.2]. The relative alignment is provisional: the source seating dimensions/IDs are retained, not stretched to the illustrated map. Owner correction aligns the stair start at G37 (third bay from bottom, X=-10) and its end beside G35 at the outer wall (first bay, X=2.57). The slab opening follows X=-10..2.57, Z=2.4..8.6. The continuous outer wall closes the far end; the earlier inner wall and intervening floor strip are removed. Continuous guarding removes the inferred passage beside G35/G36. Only the left landing connects the blue row and G42/lobby; G42 and its lobby context shift together to match the opening. Static stairs and an escalator descend through that opening. Their 3.8 m drop, tread count, run and widths are visualization estimates; actual floor-to-floor elevation is unresolved. The exterior lower landing is omitted to keep the descent within the completed outer boundary.
 
@@ -39,7 +41,7 @@ Layout-owned context adds a stone/brass console with simplified ornaments, close
 
 Owner perimeter completion extends the wall beside H2 along X=2.65 to the bottom corner at Z=15.35. The lift wall and console return join that edge, with the lift doors and attached corner plant aligned to it. The stair opening now reaches the inner face of this outer wall, removing the duplicate inner wall and gap. Seating placements stay intact.
 
-The combined scene is read-only for furniture. Edit source blocks individually and refresh; layout context and transforms use `layouts/first/bottom-lobby.json`. The floor composer preserves each rug and supports layout-owned fixtures, explicit floor panels and descent structures. Tests cover 20 unique seat IDs, six table IDs, unchanged rigid source transforms, the open left route, closed far end, G37-to-G35 stair alignment, absence of slab over the void, H9 normal/wide access, finite descent geometry and earlier layouts.
+The combined scene is read-only for furniture. Edit source blocks individually and refresh; layout context and transforms use `layouts/first/bottom-lobby.json`. The floor composer preserves each rug and supports layout-owned fixtures, explicit floor panels and descent structures. Tests cover 32 unique seat IDs, nine table IDs, unchanged rigid source transforms, the open left route, closed far end, G37-to-G35 stair alignment, absence of slab over the void, H9 normal/wide access, finite descent geometry and earlier layouts.
 
 Open `/?layout=ground/g9-g10`. The combined view loads source furniture live; edit furniture in each source block and refresh the layout.
 
@@ -176,3 +178,67 @@ G63 floor ownership: the existing G15 floor margin extends 0.2 m beyond its soli
 Small rooms after G63: live `ground/g60` (I37/I42) and `ground/i33-lounge` fill 7.4 m total with two equal 3.7 m frontages. Main placements are [-38.43,0,7.7] and [-42.13,0,7.7], yaw 90; room depth 4.2 m and entry line Z=5.6. G63 owns the first common wall; G60 owns the second. Furniture edits load live, eight seats appear once, and I33 IDs are temporary. Cameras remain unplaced and precise dimensions are provisional.
 
 Small-room owner refinement: the common partition is now cream with a centered 1.9 × 1.45 m opaque grey window (sill 1.1 m, estimates), superseding full black glazing. Both entries have 0.26 m solid cream side pillars supporting 3.18 m of split frosted glass, dark central stiles/track and a dark automatic-open button with a subdued blue ring. One half slides over the other; closed preview, no pull handles. Saved seating is unchanged.
+
+I-zone/dining shared backing correction (2026-11-04): in the main combined view, exclude the duplicate `g3-g24-g25-screen-wall` at Z=21.2 so G57/G58/G59/G61 paneled walls remain visible. G59 composed wall extends 0.08 m to X=-13.38 to meet the dining end. The standalone dining shell, source I-zone walls, furniture, displays and perpendicular buffet-passage seam stay intact.
+
+
+## First-floor center and right-side lounges
+
+`/?layout=first/center-right` loads the saved G52–G55 center and the G46/G47/G49 row live. Owner screenshot correction places the row on the right (+X). Center stays at [0,0,0], yaw 0; the corrected side source shifts [7.8,0,0], yaw 0. Its local X coordinates, walls, rugs and fixtures are reflected, with matching yaw and sofa slot order, retaining the G49-to-G46 Z order. Floor crops meet at X=5.3. The backing wall moves to the outside right edge at X=10.2, and the center-facing aisle stays open. The center owns its reeded screens and brass frame once; the row owns its wood/stone backing, two curved ring dividers and media column. The earlier left-side interpretation is superseded.
+
+There are 48 unique seats H40–H87 and 15 table identities. Sofa H50/H51 and G46 H43 remain side-row objects although center cameras also see them; H63/H65 remain center chairs although G47 cameras see them. Original furniture dimensions, IDs, saved poses and prior first-floor layouts are retained. Edit either source block and refresh the combined view. All dimensions, aisle width and the +7.8 m join are provisional; this is not a globally calibrated floor placement.
+
+
+## Left window-row merge into center + right
+
+The existing `/?layout=first/center-right` now opens **First-floor combined lounges** (left + center + right). Per owner screenshots, saved G50/G51 is on the left (-X), the center remains at the origin, and the corrected G46/G47/G49 row remains on the right at [7.8,0,0]. All four source blocks load live, including owner-edited seat labels. There are 64 unique saved seats and 20 table identities.
+
+G50 uses [-7.7,0,-3.85], yaw 0; G51 uses [-7.7,0,5.75], yaw 0. Their existing 9.6 m relative Z spacing is retained. Source furniture, dividers, display animation, glazing, curtains and decorative objects receive only that rigid assembly translation. Window-floor right edges meet the center at X=-5.3; the glass stays outside left at X=-10.0. The center owns its brass frames/reeded dividers once, and both long aisles stay open.
+
+A composition-only endpoint correction aligns G50's wood end return with the center's Z=-10.6 back wall and extends it through the otherwise missing aisle-width span to X=-5.3. The shorter 19.75 m saved window crop has a 2.25 m dark floor-only approach continuing to Z=11.4; furniture, glazing and curtain lengths are retained. No extra enclosing wall is inferred at that open end. These metric spans remain estimates. The independent `first/g50-g51` preview and all source blocks are unchanged.
+
+The combined lounges also include G48/G45 outside the H40/H44/H50 backing wall (+X, left in the owner screenshot). The saved pair translates by [12.4,0,7.4], retaining the 6.8 m reception offset. The existing lounge backing owns the shared wall; the reception opening connects around its Z=11.4 end, beside the folding louver screen. Outer reception wall and G48 glass align at X=14.6. Total: 71 seat slots, including three temporary reception staff slots, and 22 tables. Furniture remains source-owned; relative spacing is provisional.
+
+H31/G56 food buffet now joins the combined lounges at [1.8,0,18.6]. The central tree island, hot station, rear illuminated shelves, and horseshoe coffee counter follow the normal/wide captures. G48/G45 remains to its left when facing the buffet. A shared front approach and side lobby continue toward the G39–G41 private lounges; those rooms remain in their saved layout pending the next placement step. All previous source transforms and 71 seat slots/22 table IDs stay intact. H31 has an empty table ROI, so buffet counters receive no fabricated occupancy identities. New assets live in `app/buffet-objects.js`; source preview is `/?block=first/g56`.
+
+## Full first-floor join at H32 / reception
+
+`/?layout=first/center-right` now includes the complete saved bottom-lobby assembly. The owner’s “g32” is interpreted as Seat_H32 in G39; the separate ground-floor G32 SGS source is untouched. The G39 end meets reception at the Z=16.8 floor seam. Reception owns the shared back wall; G39’s duplicate outer wall is excluded only in this composition.
+
+The bottom assembly uses yaw -90° and translation [12.4,0,45.25]. Eight source components, layout fixtures, floor panels, checker inlay, walls, guard, stair/escalator and void all receive that rigid transform. Source furniture retains its IDs, dimensions, scales, colors and relative positions. The temporary buffet-side lobby panel is replaced by the actual private-room corridor, which joins the buffet approach and stair landing. G56’s floor is trimmed 0.2 m only alongside that corridor; the reception approach retains full width.
+
+The full scene has 103 unique seat slots and 31 table identities. Existing standalone layouts stay available. The schematic stair drop and all relative building dimensions remain provisional; camera registrations are unchanged.
+
+## G45 privacy lounge between buffet and stair glass
+
+The full first-floor layout now places `first/g45` at [5.7,0,31.65], yaw 0. Its seven saved leather chairs, five tables, two privacy dividers and glazed entrance are unchanged. The room extends X=3..8.4, Z=28.05..35.25, ending beside the stair opening. The separately saved `first/g45-reception` remains at its accepted location.
+
+A small buffet room comes first at X=3..8.4, Z=24..26.85, using a shared compact buffet counter and an open sliding entrance. Existing G56 rear service wall backs this room. A cross-lobby at Z=27.75 separates both room entrances and connects the private-room corridor to the stair lobby along X=1.1. Floor panels are trimmed beneath the lounge to avoid duplicate slabs; no floor enters the stair void. New buffet-room dimensions and finishes are estimates from the owner’s requested arrangement. Full scene: 110 unique seat slots and 36 table identities.
+
+## G45 rotation and empty-room correction
+
+Latest owner correction moves G45 to [-3.05,0,30.75], yaw -90° (anticlockwise), behind the reeded lobby screen beside the checker lobby. Its facing-side solid wall is excluded in composition; the existing screen extends from X=-6.4 to 0.55 at Z=33.3 as the single shared boundary. The console-wall return stops at the glass instead of cutting through the lounge. G45 furniture and standalone data stay unchanged.
+
+The former small buffet room is replaced by an empty closed room at X=-5.2..8.6, Z=23.8..26.85, matching the buffet’s 13.8 m width. Its counter is removed; only a closed structural door is added. The buffet’s floor ends at the shared back wall to prevent overlap. Lobby floors are recut for the rotated lounge, and the private-room/stair routes remain clear. This correction supersedes the previous small-room and G45 placement above.
+
+## Buffet closer to H56 and expanded empty room
+
+The latest owner correction moves G56 toward seating by 1.4 m, from Z=18.6 to Z=17.2. Its image-left edge (+X) trims to X=7.2 while the window-side boundary stays fixed; the working width is now 12.4 m. Hot-station, rear-shelf and service-door offsets fit the smaller footprint without scaling furniture. The empty closed room keeps its 13.8 m width and expands from 3.05 m to 4.45 m deep as the shared rear wall moves to Z=22.4. Side floor strips keep reception and the private corridor connected. All other source component placements remain fixed.
+
+First-floor privacy/lobby owner update: G45 remains at [-1.7,0,29.25], yaw -90, touching the empty buffet-width room at Z=26.7. The shared front renders once and the buffet-side wall line remains X=-5.05. In the full merge only, G45 glass entry swaps to X=-5.05 facing the new H88/H89-side lobby; brown end wall swaps to X=1.65 with its cladding facing inside. Two dark floor panels extend the existing window-row/common approach from Z=11.8 to 31.95, meeting neighboring floors without overlap. Standalone G45 and saved furniture are unchanged.
+
+Full first-floor outer glass correction: exclude G56 inset window-side glass in composition. G51 glazing continues from [-10,9.15] along the outer lobby floor edge to [-10,31.8], at the privacy-room end, then joins a solid return to [-5.05,31.8]. This keeps the extended H88/H89 lobby inside the perimeter. Standalone blocks and saved furniture remain unchanged.
+
+First-floor reception/empty-room correction: in the full composition, reception back wall and branded backdrop align with the private-room wall span X=10.15..14.65. The panel is 4.5 m wide; panel and portraits shift +0.6 m, with counter/chairs and source records retained. `components[].objectSizes` provides explicit composition-only size overrides alongside existing offsets. Empty room narrows from 13.8 to 12.4 m (right floor edge X=7.2, wall X=7.05), and a 1.4 m corridor infill joins existing approach flooring. Rear wall endpoints and front return follow the narrower footprint; no duplicate rear-width return remains.
+
+G17 front placeholder: `ground/g17-front` adds an empty 9.6 × 4.2 m floor to the main ground layout at [-48.98,0,7.7], yaw 0. Width matches G17; depth matches adjacent small lounges. The Z=5.6 edge meets G17 without overlap; no furniture or walls are inferred.
+
+G17 front enclosure update: four cream perimeter walls and a centered 1.6 × 2.8 m glass gate now enclose the blank block. Gate faces the white G17 corridor at global Z=5.6. Separate wall returns/header keep the gate clear of solid faces; floor size, placement and lack of furniture remain unchanged.
+
+## G19 construction connection
+
+`/?layout=ground/g17-g19` is a close review of the existing G17 and front empty room alongside the new unfurnished G19 shell. G19 at [-59.63,0,3.4], yaw 0, meets their X=-53.78 side; the pale path at Z=3..5.6 passes through a structural glass gate. G17/front-room side walls render once. The main `ground/b-g-lounges` includes the same G19 placement and also excludes its duplicate G28/G29 backing context. Saved neighboring furniture and source placements stay intact.
+
+G19 uses normal E5/E8/F1/F2 only; the owner excluded newer wide views. It has no movable objects. The visible lower escalator rises schematically toward the first floor; its unseen flight and exact inter-floor alignment are unresolved. Source `architecture.structures` now compose with their block position/yaw and elevation, so the escalator remains present in all views. All new dimensions remain provisional.
+
+G19 circulation correction: its escalator reverses by 180°, with a parallel stone staircase added on the interior side. The lower pair uses the same shared geometry builder, tread pitch, riser height and lane proportions as the first-floor assembly, with a common lower landing. Source dimensions/upper-floor alignment remain provisional. All G19 views load this corrected source structure live.

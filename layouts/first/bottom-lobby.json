@@ -2,16 +2,16 @@
   "format": "altanfeethi-floor-layout",
   "version": 1,
   "id": "first-bottom-lobby",
-  "displayCode": "G35–G38 + G42",
-  "name": "First-floor bottom lounges + stair lobby",
+  "displayCode": "G35\u2013G42",
+  "name": "First-floor bottom lounges + private rooms + stair lobby",
   "floor": "first",
   "status": "draft-needs-human-review",
   "floorSize": [
-    20.6,
+    31.25,
     17.8
   ],
   "floorCenter": [
-    -7.5,
+    -12.825,
     6.5
   ],
   "components": [
@@ -121,6 +121,85 @@
         10.2
       ],
       "yaw": 90
+    },
+    {
+      "block": "first/g39",
+      "position": [
+        -26.65,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g39-tv-wall"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          3.6,
+          4.8
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g40",
+      "position": [
+        -23.05,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g40-sofa-wall",
+        "g40-tv-wall"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          3.6,
+          4.8
+        ],
+        "floorCenter": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block": "first/g41",
+      "position": [
+        -19.45,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g41-sofa-wall"
+      ],
+      "architectureOverrides": {
+        "floorSize": [
+          3.6,
+          4.8
+        ],
+        "floorCenter": [
+          0,
+          0
+        ],
+        "wallEndpoints": {
+          "g41-tv-wall": {
+            "start": [
+              1.8,
+              1.15
+            ],
+            "end": [
+              1.8,
+              2.25
+            ]
+          }
+        }
+      }
     }
   ],
   "walls": [
@@ -405,6 +484,59 @@
       ],
       "confidence": "Owner-requested continuous right perimeter; dimensions remain provisional.",
       "notes": "Continues the G35/H2 sofa return to the lobby side wall, closing the outer edge."
+    },
+    {
+      "id": "private-row-g39-g40-partition",
+      "kind": "solid",
+      "start": [
+        -24.85,
+        -2.25
+      ],
+      "end": [
+        -24.85,
+        2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "layout/first/bottom-lobby",
+      "sources": [
+        "H13",
+        "H11",
+        "H20"
+      ],
+      "neighborBlocks": [
+        "first/g39",
+        "first/g40"
+      ],
+      "confidence": "Map-guided adjacency; single shared boundary, dimensions estimated."
+    },
+    {
+      "id": "private-row-g40-g41-partition",
+      "kind": "solid",
+      "start": [
+        -21.25,
+        -2.25
+      ],
+      "end": [
+        -21.25,
+        2.25
+      ],
+      "height": 4.1,
+      "thickness": 0.14,
+      "color": "#c5c2b8",
+      "owner": "layout/first/bottom-lobby",
+      "sources": [
+        "H11",
+        "H20",
+        "H12",
+        "H14"
+      ],
+      "neighborBlocks": [
+        "first/g40",
+        "first/g41"
+      ],
+      "confidence": "Map-guided adjacency; single shared boundary, dimensions estimated."
     }
   ],
   "openings": [],
@@ -499,14 +631,15 @@
     "notes": "Continuous dark tile strip connects all four bays. G35 plant occupies part of the right terminal landing; retain source placement. Guard terminates before left landing."
   },
   "notes": [
-    "Owner requests merging saved bottom-right branch with G42 and surrounding artifacts, using H9 and available wide captures. G38 → G37 → G36 → G35 order and original four-block placements are retained.",
+    "Owner requests merging saved bottom-right branch with G42 and surrounding artifacts, using H9 and available wide captures. G38 \u2192 G37 \u2192 G36 \u2192 G35 order and original four-block placements are retained.",
     "H9 normal/wide places G42 across the stair/escalator void from the blue seating row. In this composition G42 rotates +90 at [-5,0,10.2]; its local furniture transforms, IDs and dimensions remain intact.",
     "Owner correction aligns the stair start beside G37 (third bay from bottom) and its end beside G35 (first). The stair opening reaches the continuous H2 outer wall, replacing the earlier inset wall and gap. Only the left landing connects the rows. Drop, widths and tread count remain provisional.",
     "Visible context includes pale lobby walls, checker inlay, stone/brass console with schematic vases/ring ornament, closed lift doors, plants, waste bins, sanitizer and extinguisher. Exact patterns, brands, small props and lower-floor seating remain unresolved rather than assigned invented identities.",
     "The original bottom-right-only URL remains available. This enlarged layout owns the added lobby context and shared void boundaries; furniture can be edited in each source block. Camera registration is unchanged, and H9 keeps its blank group.",
-    "All 20 seat slots and six external table identities load once from the five source blocks. Dimensions, artifact identity, relative alignment, floor elevation and broader building calibration remain review items.",
+    "All 32 seat slots and nine external table identities load once from eight source blocks. Dimensions, artifact identity, relative alignment, floor elevation and broader building calibration remain review items.",
     "Owner perimeter completion: the H2 outer wall continues to the lower lobby corner at X=2.65, Z=15.35. The lift wall/attached fixtures and console return align to that edge; floor infill closes the outer strip beside the stairwell.",
-    "Latest owner correction removes the duplicate inner stair-end wall and gap. The stair/escalator opening ends at X=2.57, the inside face of the outer wall at X=2.65; no lower landing projects beyond the exterior."
+    "Latest owner correction removes the duplicate inner stair-end wall and gap. The stair/escalator opening ends at X=2.57, the inside face of the outer wall at X=2.65; no lower landing projects beyond the exterior.",
+    "G39 \u2192 G40 \u2192 G41 continues beyond the G38 H15/H16 sofa, guided by the first-floor PNG and H18/H13 wide views. The saved private-room row translates by [-19.45,0,0] without furniture scaling or rotation. Its front corridor joins the existing lobby landing; shared partitions and sliding entrances are preserved. The G41 TV boundary uses the G38 wood sofa wall plus a short pale return, without overlapping wall copies. Standalone private-room and bottom-right previews remain available."
   ],
   "floorSections": [
     {
@@ -569,6 +702,18 @@
       "size": [
         0.23,
         6.2
+      ],
+      "color": "#424747"
+    },
+    {
+      "id": "private-row-front-corridor",
+      "center": [
+        -23.125,
+        3.1
+      ],
+      "size": [
+        10.65,
+        1.4
       ],
       "color": "#424747"
     }
@@ -1092,6 +1237,84 @@
         "bottomZ": 15.35,
         "notes": "H2 return joins the aligned lift wall and bottom console wall. Stairwell extends to the outer wall inner face; no separate inner end wall or floor strip remains."
       }
+    },
+    "privateLounges": {
+      "sourceLayout": "first/private-lounges",
+      "translation": [
+        -19.45,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "map": "evidence/maps/first-floor.png",
+      "evidence": [
+        "H18 wide",
+        "H13 wide",
+        "H7",
+        "H12",
+        "H14"
+      ],
+      "order": [
+        "first/g39",
+        "first/g40",
+        "first/g41",
+        "first/g38",
+        "first/g37",
+        "first/g36",
+        "first/g35"
+      ],
+      "sharedBoundary": {
+        "x": -17.65,
+        "blocks": [
+          "first/g41",
+          "first/g38"
+        ],
+        "walls": [
+          "g38-sofa-wood-wall",
+          "g41-tv-wall"
+        ],
+        "segmentsZ": [
+          [
+            -2.25,
+            1.15
+          ],
+          [
+            1.15,
+            2.25
+          ]
+        ],
+        "notes": "G38 owns the existing wood sofa backing; G41 contributes only the pale entrance-side return. No overlapping wall copies."
+      },
+      "access": {
+        "corridorBounds": [
+          -28.45,
+          2.4,
+          -17.8,
+          3.8
+        ],
+        "landingJoinX": -17.8,
+        "route": [
+          [
+            -27,
+            3.1
+          ],
+          [
+            -18.2,
+            3.1
+          ],
+          [
+            -15.1,
+            3.1
+          ],
+          [
+            -15.1,
+            11.3
+          ]
+        ],
+        "notes": "Three independent sliding entrances face the common corridor, which joins the existing landing outside the stair opening."
+      },
+      "status": "map-and-wide-view-guided-relative-placement",
+      "notes": "Private row continues behind the H15/H16 sofa. Room dimensions and corridor width remain provisional; saved furniture transforms and all existing stair/lobby geometry are retained."
     }
   }
 }

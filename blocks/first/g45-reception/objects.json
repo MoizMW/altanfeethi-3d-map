@@ -36,7 +36,7 @@
     {
       "id": "g45-staff-chair-1",
       "type": "office-chair",
-      "name": "Reception staff chair 1 · temporary slot",
+      "name": "Reception staff chair 1 \u00b7 temporary slot",
       "position": [
         -1.75,
         0,
@@ -65,7 +65,7 @@
     {
       "id": "g45-staff-chair-2",
       "type": "office-chair",
-      "name": "Reception staff chair 2 · temporary slot",
+      "name": "Reception staff chair 2 \u00b7 temporary slot",
       "position": [
         -0.6,
         0,
@@ -94,7 +94,7 @@
     {
       "id": "g45-staff-chair-3",
       "type": "office-chair",
-      "name": "Reception staff chair 3 · temporary slot",
+      "name": "Reception staff chair 3 \u00b7 temporary slot",
       "position": [
         0.55,
         0,
@@ -297,11 +297,11 @@
       "type": "screen",
       "name": "Portable folding louver screen",
       "position": [
-        2.65,
+        -2.65,
         0,
         -1.15
       ],
-      "yaw": 30,
+      "yaw": -30,
       "size": [
         1.8,
         1.7,
@@ -317,7 +317,7 @@
       "cameras": [
         "H45"
       ],
-      "confidence": "Photo-supported draft; local dimensions and placement estimated, subject to owner review.",
+      "confidence": "Owner-corrected to screen-right of reception, at the opening toward the combined lounges; dimensions and fold angle estimated.",
       "variant": "folding-louver"
     }
   ]

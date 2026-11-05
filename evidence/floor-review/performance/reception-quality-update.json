@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-04",
+  "request": "Restore reception wall identity and counter orientation; keep full design quality with shadows and smooth movement.",
+  "changes": [
+    "Reset all Euler axes when applying cached object yaw; saved object poses remain unchanged.",
+    "Official existing bilingual vector logo paths reused for the teal reception wall, with ivory Arabic and English lettering.",
+    "Removed all distant geometry simplification and adaptive resolution reduction; full original geometry and original pixel-ratio cap of 2 apply at every zoom.",
+    "Added a single shared draw for soft contact shadows beneath floor-standing furniture.",
+    "Fitted the directional shadow camera to the entire scene, including reception away from the origin.",
+    "Retained instancing, exact geometry/material sharing, spatial culling, cached shadows, demand rendering and reflection suspension during movement."
+  ],
+  "verification": {
+    "allBlocksValidated": 35,
+    "testsPassed": 102,
+    "browserConsoleErrors": 0,
+    "drawingCallsDuringFullMapMovement": 2392.0,
+    "renderedTrianglesDuringFullMapMovement": 8094400.0,
+    "medianCpuSubmissionMs": 22.65,
+    "reflectionPassesDuringMovement": 0,
+    "note": "Local browser diagnostics, not a guaranteed frame rate. Measurements retain full detailed geometry."
+  },
+  "preview": "evidence/floor-review/performance/restored-reception.png"
+}

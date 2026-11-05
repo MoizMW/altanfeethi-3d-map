@@ -1,0 +1,15 @@
+{
+  "tool": "Built-in ImageGen",
+  "date": "2026-11-04",
+  "usage": "Artist reconstructions informed by local camera review, not recovered source scans. Albedo only; illumination and reflections come from the renderer.",
+  "assets": [
+    {
+      "path": "shared/materials/textures/dark-stone-floor/basecolor.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: seamless square marble albedo texture for a realistic architectural 3D floor. Flat orthographic top-down scanned natural warm charcoal grey marble, subtly brown-grey graphite background, fine irregular branching ivory and pale-grey calcite veins, restrained realistic veins of varied thickness with delicate hairline branches, calm cloudy mineral depth. Match a luxurious airport lounge dark grey marble floor; NOT jet black, NOT slate, NOT granite speckles. The square represents about 4.8 meters of natural stone, many subtle small vein networks, no enormous bold white ribbons, no repeated graphic motif. Photographic material realism, seamless tileable edges, uniform neutral illumination. Entire image only stone. NO floor tile layout, NO grout, NO grid, NO checkerboard, NO borders, NO perspective, NO lighting highlights or reflections, NO furniture or objects, NO shadows, NO text or watermark. Generate 1024px square."
+    },
+    {
+      "path": "shared/materials/textures/pale-stone-floor/basecolor.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: seamless square marble albedo texture for a realistic architectural 3D floor. Flat orthographic top-down scanned pale warm ivory limestone-marble, subtle cream-grey background with delicate thin grey-beige veins and quiet cloudy mineral variation. Match the pale ivory stone floor in a premium airport lounge, restrained and elegant, not pure white, no bold Calacatta ribbons, no speckles, no decorative motif. Square represents approximately 4.8 meters of real stone. Photographic material realism, seamless tileable edges, uniform neutral illumination. Entire image only stone. NO floor tile layout, NO grout, NO grid, NO checkerboard, NO borders, NO perspective, NO lighting highlights or reflections, NO furniture or objects, NO shadows, NO text or watermark. Generate square 1024px."
+    }
+  ]
+}

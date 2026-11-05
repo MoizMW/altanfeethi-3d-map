@@ -1,0 +1,33 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "first-h-food-buffet-056",
+  "cameras": [
+    "H31"
+  ],
+  "snapshots": {
+    "H31": "evidence/camera-snapshots/H31.jpg"
+  },
+  "wideSnapshots": {
+    "H31": "evidence/wide capture snapshots/H31.jpg"
+  },
+  "rois": {
+    "H31": {
+      "tables": "evidence/rois/table-rois/g56/H31_to_g56.json"
+    }
+  },
+  "seatMappings": {},
+  "tableMappings": {},
+  "notes": [
+    "H31 normal capture shows stocked serving trays; wide capture shows a less stocked state of the same counters. Stable counter equipment is modeled, without treating food stock as permanent geometry.",
+    "Supplied G56 table ROI is empty. Buffet counters have physical object IDs, no invented Table_H or Seat_H identities.",
+    "First-floor PNG and owner establish buffet next to reception and a side lobby toward G39/G40/G41. Camera pixels are not a metric plan."
+  ],
+  "accuracy": {
+    "identity": "No annotated seats or tables",
+    "position": "estimated-local",
+    "dimensions": "unmeasured",
+    "appearance": "procedural approximation",
+    "globalAlignment": "provisional-relative-layout"
+  }
+}

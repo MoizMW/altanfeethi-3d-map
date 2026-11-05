@@ -1,0 +1,22 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "first-h-right-046-047-049",
+  "slug": "g46-g47-g49",
+  "name": "G46 + G47 + G49 · First-floor right lounges",
+  "floor": "first",
+  "groups": [
+    "g46",
+    "g47",
+    "g49"
+  ],
+  "zone": "H",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

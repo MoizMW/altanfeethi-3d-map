@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {stonePolygon} from './floors.js';
 import {buildVerticalCirculation,buildPatternedSurfaces} from './vertical-circulation.js';
 
 const iZoneWallTextures=new Map();
@@ -25,6 +26,23 @@ function bookmatchedMarbleTexture(length,height){
   bookmatchedMarbleTextures.set(key,texture);return texture;
 }
 const officeSignTextures=new Map();
+const majlisSignTextures=new Map();
+function majlisSignTexture(sign){
+  if(typeof document==='undefined')return null;
+  const key=JSON.stringify(sign);if(majlisSignTextures.has(key))return majlisSignTextures.get(key);
+  const canvas=document.createElement('canvas');canvas.width=1800;canvas.height=1100;
+  const ctx=canvas.getContext('2d');
+  const gold=ctx.createLinearGradient(0,0,0,1100);gold.addColorStop(0,'#d6bc79');gold.addColorStop(.55,'#ac8540');gold.addColorStop(1,'#c6a45c');
+  ctx.fillStyle=gold;ctx.textAlign='center';ctx.textBaseline='middle';
+  ctx.direction='rtl';ctx.font='bold 175px "Noto Sans Arabic", "DejaVu Sans", sans-serif';ctx.fillText(sign.arabic,900,190,1670);
+  ctx.direction='ltr';ctx.font='600 137px sans-serif';ctx.fillText(sign.english,900,405,1680);
+  for(const x of [680,1120]){ctx.beginPath();ctx.moveTo(x,565);ctx.lineTo(x+39,625);ctx.lineTo(x,685);ctx.lineTo(x-39,625);ctx.closePath();ctx.fill();}
+  // Small four-lobed floral mark between the two gold diamonds, as seen in E1/E4.
+  for(const [x,y] of [[900,592],[870,625],[930,625],[900,658]]){ctx.beginPath();ctx.ellipse(x,y,23,28,0,0,Math.PI*2);ctx.fill();}
+  ctx.font='500 151px sans-serif';ctx.fillText(sign.website,900,865,1450);
+  const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=8;
+  majlisSignTextures.set(key,texture);return texture;
+}
 function officeSignTexture(sign){
   if(typeof document==='undefined')return null;
   const key=JSON.stringify(sign);if(officeSignTextures.has(key))return officeSignTextures.get(key);
@@ -81,6 +99,18 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
     if(cutaway&&elevation>=1.05)continue;
     const [ax,az]=wall.start,[bx,bz]=wall.end,length=Math.hypot(bx-ax,bz-az),height=cutaway?Math.min(1.05-elevation,wall.height):wall.height;
     const group=new THREE.Group();group.position.set(ax,elevation,az);group.rotation.y=-Math.atan2(bz-az,bx-ax);group.userData.boundaryId=wall.id;root.add(group);
+    if(wall.sign?.variant==='diriyah-majlis'&&wall.sign.centerHeight+wall.sign.height/2<=height){
+      const sign=wall.sign,side=sign.interiorSide,texture=majlisSignTexture(sign);
+      if(texture){
+        const geometry=new THREE.PlaneGeometry(sign.width,sign.height);
+        const face=new THREE.Mesh(geometry,new THREE.MeshStandardMaterial({map:texture,transparent:true,alphaTest:.04,roughness:.35,metalness:.35,depthWrite:false}));
+        face.name='Diriyah Majlis bilingual gold wall sign';face.userData.sign=sign;
+        face.position.set(sign.offset,sign.centerHeight,side*(wall.thickness/2+.008));face.rotation.y=side<0?Math.PI:0;group.add(face);
+        // A second, darker gold edge gives the thin applied lettering a small relief.
+        const edge=face.clone();edge.material=face.material.clone();edge.material.color.set('#806124');
+        edge.position.x+=.006;edge.position.y-=.006;edge.position.z-=side*.003;edge.name='Raised gold lettering edge';group.add(edge);
+      }
+    }
     if(wall.variant==='cream-grey-window'){
       const window=wall.window,left=(length-window.width)/2,right=left+window.width;
       const cream=material(wall.color||'#dedbd2');
@@ -559,9 +589,10 @@ export function buildArchitecture(data,{cutaway=false,ceiling=false}={}) {
 export function buildFloorInlays(data={}) {
   const group=new THREE.Group();group.name='Floor inlays';
   for(const inlay of data.floorInlays||[]) {
-    const shape=new THREE.Shape();inlay.polygon.forEach(([x,z],i)=>i?shape.lineTo(x,-z):shape.moveTo(x,-z));shape.closePath();
-    const material=new THREE.MeshStandardMaterial({color:inlay.color,roughness:.27,metalness:.05,side:THREE.DoubleSide});
-    const surface=new THREE.Mesh(new THREE.ShapeGeometry(shape),material);surface.rotation.x=-Math.PI/2;surface.position.y=-.009+(inlay.layer||0)*.001;surface.receiveShadow=true;group.add(surface);
+    // These legacy strips drew a schematic tile grid; real border/diamond inlays remain.
+    if (/(^|:)tv-tile-(column|row)-\d+$/.test(inlay.id||'')) continue;
+    const surface=stonePolygon(inlay.polygon,inlay.color,-.009+(inlay.layer||0)*.001,{joints:false});
+    surface.name=inlay.id||'Stone inlay';group.add(surface);
   }
   return group;
 }

@@ -1,0 +1,19 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-g17-front-empty",
+  "cameras": [],
+  "snapshots": {},
+  "wideSnapshots": {},
+  "rois": {},
+  "notes": [
+    "Owner requests a blank block directly in front of G17, with matching width and depth chosen from a nearby block.",
+    "Width 9.6 m derives from the saved G17 source. Depth 4.2 m follows the saved G60/I33 compact lounges. No new camera registration or ROI identity is claimed.",
+    "Owner enclosure update supersedes the floor-only draft: four pale perimeter sides with a centered glass entrance facing the white G17 corridor (local -Z/global Z=5.6). Entry is 1.6 m wide × 2.8 m high, with separate solid returns and header so no wall face covers the glass. Room remains unfurnished; source footprint and placement unchanged."
+  ],
+  "accuracy": {
+    "identity": "no-furniture-or-seat-identities",
+    "dimensions": "owner-relative-width-neighbor-depth",
+    "globalAlignment": "main-layout-relative-placement"
+  }
+}

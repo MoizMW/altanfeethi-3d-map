@@ -1,0 +1,93 @@
+{
+  "format": "altanfeethi-block-evidence",
+  "version": 1,
+  "blockId": "ground-ef-construction-019",
+  "cameras": [
+    "F2",
+    "F1",
+    "E5",
+    "E8"
+  ],
+  "snapshots": {
+    "F2": "evidence/camera-snapshots/F2.jpg",
+    "F1": "evidence/camera-snapshots/F1.jpg",
+    "E5": "evidence/camera-snapshots/E5.jpg",
+    "E8": "evidence/camera-snapshots/E8.jpg"
+  },
+  "wideSnapshots": {},
+  "rois": {},
+  "notes": [
+    "Construction scope: floor, supported walls/glazing, connecting glass gate and the visible lower stair/escalator pair. All historical chairs, counters, checkpoint barriers, plants, portraits and movable objects are excluded.",
+    "Use F2/F1/E5/E8 normal snapshots only. Wide snapshots are explicitly excluded by owner because they depict a newer condition.",
+    "Owner stair/escalator correction: reverse escalator by 180 degrees and add parallel stone stairs, using the first-floor tread pitch, slope, lane proportions, glass guards and handrail finishes. Reposition within the corner for wall clearance; the lower pair shares one landing."
+  ],
+  "sourcePolicy": {
+    "normalSnapshotsOnly": true,
+    "excludedWideReason": "Owner explicitly excludes newer wide-capture condition.",
+    "ownerReference": "evidence/references/g19-f2-owner-escalator.png"
+  },
+  "observations": [
+    {
+      "camera": "F2",
+      "landmarks": [
+        "Dark veined stone foreground and cream transverse path",
+        "Cream wall and projecting return",
+        "Curved black handrail/metal landing beyond the return in upper image",
+        "Outer blue glazing"
+      ],
+      "use": "Floor finishes, supported wall termination, lower escalator context. Counter, chair, portrait and plants excluded."
+    },
+    {
+      "camera": "F1",
+      "landmarks": [
+        "Same pale crossing path",
+        "Glass doorway on image left",
+        "Cream service/core wall opposite the camera",
+        "Same escalator end beyond wall on image right"
+      ],
+      "use": "Confirm gate/core relationship and unobstructed approach; no furniture duplication."
+    },
+    {
+      "camera": "E5",
+      "landmarks": [
+        "Blue patterned lounge-side backing",
+        "Cream wall and glazed doorway on image right",
+        "Dark stone floor"
+      ],
+      "use": "Reverse view confirms backing/glass connection. All temporary checkpoint posts excluded."
+    },
+    {
+      "camera": "E8",
+      "landmarks": [
+        "Same blue glazing and cream pier",
+        "Same dark floor",
+        "Glass doorway at image left edge"
+      ],
+      "use": "Opposite view confirms one space; counter and staff chair excluded."
+    },
+    {
+      "source": "owner-follow-up",
+      "use": "Rotate escalator 180 degrees; add staircase beside it; match first-floor stair/escalator pattern because they are one physical circulation assembly."
+    }
+  ],
+  "accuracy": {
+    "identity": "No seats, tables or furniture identities created",
+    "dimensions": "Provisional span fitted to existing neighboring block edges, not surveyed",
+    "globalAlignment": "Owner-relative main-layout placement",
+    "verticalConnection": "Owner-confirmed paired staircase and reversed escalator, using first-floor tread pitch/slope and transverse proportions. Exact upper landing and global first-floor alignment remain unresolved."
+  },
+  "constructionExclusions": [
+    "Chairs and sofas",
+    "Counters and staff desks",
+    "Checkpoint posts and low glass barrier leaves",
+    "Monitors and equipment",
+    "Portraits, signs, plants, bins and other movable objects"
+  ],
+  "unresolved": [
+    "Exact room extents and wall return depth",
+    "Core service-door location/dimensions not reconstructed",
+    "Decorative frosting pattern and glass leaf mechanism",
+    "Upper escalator flight, exact floor-to-floor elevation and first-floor rigid alignment",
+    "E5/E8 remain unplaced in registration; no positions inferred"
+  ]
+}

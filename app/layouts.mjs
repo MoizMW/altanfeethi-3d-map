@@ -5,7 +5,7 @@ export async function composeLayout(projectRoot,key,loadBlock){
   if(!/^(ground|first)\/[a-z0-9][a-z0-9-]*$/.test(key))throw Error('Invalid layout path');
   const layout=JSON.parse(await readFile(resolve(projectRoot,'layouts',key+'.json'),'utf8'));
   if(layout.format!=='altanfeethi-floor-layout'||layout.version!==1||!layout.components?.length)throw Error('Invalid layout');
-  const floorInlays=[],objects=[],walls=[],openings=[],floorSections=[],rooms=[],circulations=[],groups=new Set(),zones=new Set(),cameras=new Set(layout.evidenceCameras||[]),snapshots={},wideSnapshots={};
+  const floorInlays=[],objects=[],walls=[],openings=[],floorSections=[],rooms=[],circulations=[],structures=[],groups=new Set(),zones=new Set(),cameras=new Set(layout.evidenceCameras||[]),snapshots={},wideSnapshots={};
   for(const part of layout.components){
     if(!/^(ground|first)\/[a-z0-9][a-z0-9-]*$/.test(part.block)||part.block.split('/')[0]!==layout.floor||!Number.isFinite(part.yaw)||!Array.isArray(part.position)||part.position.length!==3||part.position.some(v=>!Number.isFinite(v)))throw Error('Invalid layout component');
     const {block}=await loadBlock(part.block),a=structuredClone(block.architecture),angle=part.yaw*Math.PI/180,c=Math.cos(angle),s=Math.sin(angle);
@@ -21,7 +21,11 @@ export async function composeLayout(projectRoot,key,loadBlock){
     for(const opening of a.openings||[]){const correction=part.architectureOverrides?.openings?.[opening.id];if(correction)Object.assign(opening,correction);}
     if(part.architectureOverrides?.circulationPolygon)a.circulation={...a.circulation,polygon:part.architectureOverrides.circulationPolygon};
     const point=([x,z])=>[c*x+s*z+part.position[0],-s*x+c*z+part.position[2]];
-    for(const source of block.objects){if(part.excludeObjects?.includes(source.id))continue;const o=structuredClone(source),offset=part.objectOffsets?.[o.id]||[0,0,0];if(!Array.isArray(offset)||offset.length!==3||offset.some(v=>!Number.isFinite(v)))throw Error('Invalid layout object offset');const p=point([o.position[0]+offset[0],o.position[2]+offset[2]]);o.position=[p[0],o.position[1]+offset[1]+part.position[1],p[1]];o.yaw+=part.yaw;o.sourceBlock=part.block;objects.push(o);}
+    for(const source of a.structures||[]){
+      const structure=structuredClone(source),position=structure.position||[0,0,0],p=point([position[0],position[2]]);
+      structure.position=[p[0],position[1]+part.position[1],p[1]];structure.yaw=(structure.yaw||0)+part.yaw;structure.sourceBlock=part.block;structures.push(structure);
+    }
+    for(const source of block.objects){if(part.excludeObjects?.includes(source.id))continue;const o=structuredClone(source),offset=part.objectOffsets?.[o.id]||[0,0,0];if(!Array.isArray(offset)||offset.length!==3||offset.some(v=>!Number.isFinite(v)))throw Error('Invalid layout object offset');const size=part.objectSizes?.[o.id];if(size){if(!Array.isArray(size)||size.length!==3||size.some(v=>!Number.isFinite(v)||v<=0))throw Error('Invalid layout object size');o.size=[...size];}const p=point([o.position[0]+offset[0],o.position[2]+offset[2]]);o.position=[p[0],o.position[1]+offset[1]+part.position[1],p[1]];o.yaw+=part.yaw;o.sourceBlock=part.block;objects.push(o);}
     for(const inlay of a.floorInlays||[])floorInlays.push({...inlay,polygon:inlay.polygon.map(point)});
     for(const source of a.walls||[]){if(part.excludeWalls?.includes(source.id))continue;walls.push({...source,start:point(source.start),end:point(source.end)});}
     openings.push(...(a.openings||[]).filter(o=>!part.excludeWalls?.includes(o.wallId)));
@@ -38,7 +42,7 @@ export async function composeLayout(projectRoot,key,loadBlock){
   objects.push(...structuredClone(layout.objects||[]).map(o=>({...o,sourceBlock:'layout:'+key})));
   Object.assign(snapshots,layout.snapshots);Object.assign(wideSnapshots,layout.wideSnapshots);
   for(const id of cameras)snapshots[id]||=`evidence/camera-snapshots/${id}.jpg`;
-  const architecture={floorInlays,floorCenter:layout.floorCenter,floorSections,rooms,circulations,walls,openings,structures:layout.structures||[],voids:layout.voids||[],ceiling:{height:4.1,size:layout.floorSize,center:layout.floorCenter},notes:layout.notes};
+  const architecture={floorInlays,floorCenter:layout.floorCenter,floorSections,rooms,circulations,walls,openings,structures:[...structures,...structuredClone(layout.structures||[])],voids:layout.voids||[],ceiling:{height:4.1,size:layout.floorSize,center:layout.floorCenter},notes:layout.notes};
   const block={format:'altanfeethi-spatial-block',version:1,id:layout.id,name:layout.name,groups:[...groups],zone:[...zones].join(' / '),floor:layout.floor,status:layout.status,units:'provisional-meters',floorSize:layout.floorSize,ceilingHeight:4.1,placement:{map:`evidence/maps/${layout.floor==='ground'?'ground-floor':'first-floor'}.png`,status:'relative-layout-needs-review'},architecture,objects,evidence:{cameras:[...cameras],snapshots,wideSnapshots,notes:layout.notes},readOnly:true,layoutKey:key};
   if(layout.displayCode)block.displayCode=layout.displayCode;
   if(layout.viewer)block.viewer=structuredClone(layout.viewer);

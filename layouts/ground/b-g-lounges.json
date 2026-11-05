@@ -2,7 +2,7 @@
   "format": "altanfeethi-floor-layout",
   "version": 1,
   "id": "ground-b-g-lounges",
-  "name": "B + C + E + G + I · Lounges and checkpoints",
+  "name": "B + C + E + G + I \u00b7 Lounges and checkpoints",
   "floor": "ground",
   "status": "draft-needs-human-review",
   "components": [
@@ -1026,7 +1026,10 @@
             7.4
           ]
         ]
-      }
+      },
+      "excludeWalls": [
+        "g3-g24-g25-screen-wall"
+      ]
     },
     {
       "block": "ground/departure-reception",
@@ -1235,7 +1238,7 @@
             ],
             "end": [
               -1.5,
-              2.02
+              2.1
             ]
           }
         }
@@ -1570,6 +1573,30 @@
       "excludeWalls": [
         "i33-lounge-side-positive-z"
       ]
+    },
+    {
+      "block": "ground/g17-front",
+      "position": [
+        -48.98,
+        0,
+        7.7
+      ],
+      "yaw": 0
+    },
+    {
+      "block": "ground/g19",
+      "position": [
+        -59.63,
+        0,
+        3.4
+      ],
+      "yaw": 0,
+      "excludeWalls": [
+        "g19-g17-side-context",
+        "g19-front-room-side-context",
+        "g19-lounge-glazing-context",
+        "g19-lounge-end-context"
+      ]
     }
   ],
   "floorSize": [
@@ -1825,7 +1852,7 @@
     "G2 rotates 180 degrees so its front automatic gate faces the outer arrival-exit edge Z=-11.4 and its reception back faces Zone C across Z=-3. The reception half-pane is owned by Zone C once; the other half remains open from G2 inward path into Zone C walking area.",
     "G2 depth expands to 8.4 to match G row and gate shifts 0.6 with threshold. Zone C length expands to 8.4 to match this bay; pod/planter strip shifts 0.4 with its side pane without scaling. Source files and previous layouts are unchanged.",
     "Zone C behind-pod smoked pane owns the closed shared boundary with G11; its prior duplicate dark side wall is suppressed only here. G2 owns the single arch into G20. The front corridor continues across Zone C. Opposite G2 arch now connects to G21 through the owner-requested extension.",
-    "G2 reception strip depth matches G18/G20 at 2.8 m (~4½ tiles); rear pillars follow the aligned reception/Zone C seam. Source furniture poses remain unchanged.",
+    "G2 reception strip depth matches G18/G20 at 2.8 m (~4\u00bd tiles); rear pillars follow the aligned reception/Zone C seam. Source furniture poses remain unchanged.",
     "G21 right/local -Z end meets G2 at X=-29.38. G2 has yaw 180, so its source right arch is the composed west/G21 boundary, and its source left arch is the east/G20 boundary. Source camera-view labels do not change. G2 owns each arch once.",
     "G22 positive-Z arch owns the G21/G22 seam once; G21 preview arch remains excluded. G22 negative-Z arch is the far outer end at X=-46.98. Current seat labels, rather than stable object-number suffixes, identify the connecting G57/G49 side.",
     "Owner width-alignment correction is integration-only: G22 floor/arches narrow from 9 to 8.4 m, matching G21/G2 edges Z=-11.4/-3. Glazing aligns at local X=+/-4.15. Each complete furniture bank shifts 0.3 m inward across source X, with matching offsets for raised plants/lamps and their supports. Object sizes/scales and within-bank arrangement are preserved, and standalone source files stay unchanged. Central path remains 2.8 m wide at Z=-7.2. Metric dimensions remain provisional.",
@@ -1844,9 +1871,14 @@
     "Owner 2026-11-03: trim office width from 7.4 m to 6.35 m so its back wall and floor end at exit/glass threshold Z=9.1. Office front, length, door, furniture and exit gate retain their saved positions. This supersedes earlier G9-width match and office-only extension to Z=10.15.",
     "Owner G63 merge 2026-11-03: add live ground/g63 at [-32.88,0,9.9], yaw 180. Front arch sits at Z=5.6, facing G12/G14 across its existing corridor; frontage spans X=-36.58..-29.18 (7.4 m) and rear is Z=14.2. Arch end meets the existing checkpoint/immigration front partition. G15 solid-side owns the shared X=-29.18 boundary once; duplicate G63 left-side walls excluded only here. Source furniture/IDs, dimensions, non-overlapping threshold sections and the standalone block remain intact. Map adjacency and owner instruction guide provisional placement; G13 is farther along the same immigration/checkpoint assembly. G15 already owns the 0.2 m floor margin up to X=-29.38; G63 composition floor crops to that edge so the two surfaces never overlap. Shell width and source floor remain unchanged.",
     "Owner single-arch correction 2026-11-03: G9, G10 and G11 each have one broad access opening; composition overrides follow the wider combined wall spans. No furniture moves.",
-    "Owner small-room extension 2026-11-03: after G63, add G60 I37/I42 then I33 lounge. Two 3.7 m frontages total the remaining 7.4 m half of G12/G14. Centers [-38.43,0,7.7] and [-42.13,0,7.7], yaw 90, keep rectangular entries on corridor Z=5.6 and rear at Z=9.8. Shared walls owned by G63 then G60; neighboring duplicates excluded only here. G60 retains I26–I29 and Table_I4; I33 uses four temporary seats with its hidden chair owner-confirmed. Camera registrations remain unplaced. Source furniture loads live. Depth, precise ordering and shell extents are provisional.",
+    "Owner small-room extension 2026-11-03: after G63, add G60 I37/I42 then I33 lounge. Two 3.7 m frontages total the remaining 7.4 m half of G12/G14. Centers [-38.43,0,7.7] and [-42.13,0,7.7], yaw 90, keep rectangular entries on corridor Z=5.6 and rear at Z=9.8. Shared walls owned by G63 then G60; neighboring duplicates excluded only here. G60 retains I26\u2013I29 and Table_I4; I33 uses four temporary seats with its hidden chair owner-confirmed. Camera registrations remain unplaced. Source furniture loads live. Depth, precise ordering and shell extents are provisional.",
     "Owner small-room finish correction: preserve both saved furniture arrangements. Full-width frosted cream glass replaces solid entry wall returns/header in G60 and I33; opaque black glass opposite both sofas is owned by G60 at the shared X=-40.28 partition. I33 duplicate side remains suppressed. Camera-based pale panel joints replace plain remaining walls. Earlier open-entry/reeded-inset notes are superseded.",
-    "Latest small-room owner refinement supersedes full black glazing: G60 owns the cream shared partition with a centered opaque grey window; duplicate I33 wall stays excluded. Each entrance uses two frosted panels, one sliding over the fixed half, dark center stiles/track, solid cream support pillars and a subdued blue-ringed dark round automatic-open button. Saved furniture is preserved."
+    "Latest small-room owner refinement supersedes full black glazing: G60 owns the cream shared partition with a centered opaque grey window; duplicate I33 wall stays excluded. Each entrance uses two frosted panels, one sliding over the fixed half, dark center stiles/track, solid cream support pillars and a subdued blue-ringed dark round automatic-open button. Saved furniture is preserved.",
+    "I-zone/dining seam correction 2026-11-04: suppress the duplicate plain dining screen-wall only in the main composition. Retain the I-zone patterned walls along Z=21.2 and extend G59 composed endpoint 0.08 m to X=-13.38 so no end gap remains. Furniture, screens/displays, source shells and the perpendicular buffet passage join remain unchanged.",
+    "Owner adds an empty floor-only block directly in front of G17: ground/g17-front at [-48.98,0,7.7], yaw 0. Its 9.6 m width matches G17; its 4.2 m depth follows nearby G60/I33. Floor edges meet at Z=5.6; no walls, objects or seat IDs added. Existing placements stay saved.",
+    "G17 front enclosure: its source now supplies four pale perimeter walls and a centered glass gate facing the white corridor at Z=5.6. Footprint and placement remain fixed; no furniture added. The earlier floor-only note is superseded.",
+    "Main placement [-59.63,0,3.4], yaw 0; right edge X=-53.78 meets G17 and g17-front. Pale path joins at global Z=3..5.6. Extents, wall heights and escalator proportions are provisional.",
+    "G19 is an unfurnished construction shell from normal F2/F1/E5/E8 only, with a glazed corridor gate beside G17/front room and a schematic visible lower escalator rising toward the first floor. Existing neighbor-owned partitions render once; no movable objects or seat IDs added."
   ],
   "displayCode": "B / C / E / G / I + G15 / G13",
   "connections": [
@@ -2146,6 +2178,21 @@
         9.8
       ],
       "status": "owner-relative-adjacency"
+    },
+    {
+      "id": "g17-empty-front-block",
+      "blocks": [
+        "ground/g17",
+        "ground/g17-front"
+      ],
+      "kind": "open-floor-join",
+      "globalSeamZ": 5.6,
+      "globalSpanX": [
+        -53.78,
+        -44.18
+      ],
+      "status": "owner-requested-relative-dimensions",
+      "notes": "New empty block matches G17 width; floors meet without overlap. Depth matches nearby compact lounges."
     }
   ],
   "sharedBoundaries": [
@@ -2171,6 +2218,145 @@
         "owner-B44-connection"
       ],
       "wallOwner": "ground/g3-g24-g25"
+    },
+    {
+      "id": "dining-i-paneled-back-wall",
+      "kind": "shared-solid-wall",
+      "neighbors": [
+        "ground/g3-g24-g25",
+        "ground/g57",
+        "ground/g58",
+        "ground/g59",
+        "ground/g61"
+      ],
+      "wallOwners": [
+        "ground/g57",
+        "ground/g58",
+        "ground/g59",
+        "ground/g61"
+      ],
+      "wallIds": [
+        "g57-paneled-wall",
+        "g58-paneled-wall",
+        "g59-paneled-wall",
+        "g61-corner-side-wall"
+      ],
+      "globalSeamZ": 21.2,
+      "sharedSpanX": [
+        -13.38,
+        1.42
+      ],
+      "excludedDuplicateWall": "g3-g24-g25-screen-wall",
+      "notes": "I-zone patterned backing owns this seam once. G59 composed end extends 0.08 m to the dining edge. Standalone dining shell and all furniture are preserved."
+    },
+    {
+      "id": "g19-g17-side",
+      "kind": "shared-solid-wall",
+      "neighbors": [
+        "ground/g19",
+        "ground/g17"
+      ],
+      "owner": "ground/g17",
+      "wallIds": [
+        "g17-sign-wall",
+        "g19-g17-side-context"
+      ],
+      "start": [
+        -53.78,
+        -3.0000000000000004
+      ],
+      "end": [
+        -53.78,
+        3.0
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g19-front-room-side",
+      "kind": "shared-solid-wall",
+      "neighbors": [
+        "ground/g19",
+        "ground/g17-front"
+      ],
+      "owner": "ground/g17-front",
+      "wallIds": [
+        "g17-front-left-wall",
+        "g19-front-room-side-context"
+      ],
+      "start": [
+        -53.78,
+        5.6
+      ],
+      "end": [
+        -53.78,
+        9.8
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g19-g17-corridor-gate",
+      "kind": "glass-gate",
+      "neighbors": [
+        "ground/g19",
+        "ground/g17"
+      ],
+      "owner": "ground/g19",
+      "wallIds": [
+        "g19-connecting-glass-gate"
+      ],
+      "start": [
+        -53.78,
+        3.0
+      ],
+      "end": [
+        -53.78,
+        5.6
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g19-g28-backing",
+      "kind": "shared-glazing",
+      "neighbors": [
+        "ground/g19",
+        "ground/g28"
+      ],
+      "owner": "ground/g28",
+      "wallIds": [
+        "g28-curtained-glazing",
+        "g19-lounge-glazing-context"
+      ],
+      "start": [
+        -61.38,
+        -3.0000000000000004
+      ],
+      "end": [
+        -53.78,
+        -3.0000000000000004
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
+    },
+    {
+      "id": "g19-g29-backing",
+      "kind": "shared-solid-wall",
+      "neighbors": [
+        "ground/g19",
+        "ground/g29"
+      ],
+      "owner": "ground/g29",
+      "wallIds": [
+        "g29-panel-side-solid",
+        "g19-lounge-end-context"
+      ],
+      "start": [
+        -65.48,
+        -3.0000000000000004
+      ],
+      "end": [
+        -61.38,
+        -3.0000000000000004
+      ],
+      "status": "relative-owner-adjacency-dimensions-estimated"
     }
   ],
   "floorSections": [

@@ -7,11 +7,78 @@ import {composeLayout} from './layouts.mjs';
 import {buildArchitecture} from './architecture.js';
 import {buildPassportObject,passportSizes} from './passport-objects.js';
 import {server} from './server.mjs';
+import {mkdtemp,mkdir,writeFile,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 const load=async key=>{const [m,a,o,e]=await Promise.all(['manifest','architecture','objects','evidence'].map(async f=>JSON.parse(await readFile(new URL(`../blocks/${key}/${f}.json`,import.meta.url)))));return {block:{...m,architecture:a,floorSize:a.floorSize,objects:o.objects,evidence:e}};};
 const sourceFiles=['ground/g15','ground/g13'].flatMap(key=>['manifest','architecture','objects','evidence'].map(f=>new URL(`../blocks/${key}/${f}.json`,import.meta.url)));
 const sourceBytes=()=>Promise.all(sourceFiles.map(file=>readFile(file,'utf8')));
+
+test('G19 construction shell joins G17 and its empty room without furniture or duplicate partitions',async()=>{
+  const source=(await load('ground/g19')).block;
+  assert.deepEqual(source.objects,[]);
+  assert.deepEqual(new Set(source.evidence.cameras),new Set(['F2','F1','E5','E8']));
+  assert.deepEqual(source.evidence.wideSnapshots,{});
+  for(const key of ['ground/g17-g19','ground/b-g-lounges']){
+    const {block}=await composeLayout(root,key,load),a=block.architecture;
+    assert.equal(block.objects.filter(o=>o.sourceBlock==='ground/g19').length,0);
+    assert.equal(a.structures.filter(s=>s.id==='g19-visible-escalator-rise').length,1);
+    assert.ok(!a.walls.some(w=>['g19-g17-side-context','g19-front-room-side-context'].includes(w.id)));
+    for(const id of ['g17-sign-wall','g17-front-left-wall','g19-connecting-glass-gate'])assert.equal(a.walls.filter(w=>w.id===id).length,1);
+    const floor=a.floorSections.find(f=>f.sourceBlock==='ground/g19');
+    assert.ok(Math.abs(floor.center[0]+floor.size[0]/2-(-53.78))<1e-8);
+    const gate=a.walls.find(w=>w.id==='g19-connecting-glass-gate');
+    assert.ok(Math.abs(gate.start[1]-3)<1e-8&&Math.abs(gate.end[1]-5.6)<1e-8);
+    assert.ok(Math.abs(gate.start[0]-(-53.78))<1e-8);
+    const path=a.circulations.find(c=>c.id==='g19-pale-crossing-path');
+    assert.ok(Math.abs(path.polygon[1][0]-gate.start[0])<1e-8);
+    // Solid shared walls end at the glazed passage; no hidden face covers its leaves.
+    const solid=buildArchitecture({walls:a.walls.filter(w=>w.kind==='solid')});solid.updateMatrixWorld(true);
+    assert.equal(new THREE.Raycaster(new THREE.Vector3(-54.2,1.2,4.3),new THREE.Vector3(1,0,0),0,.8).intersectObject(solid,true).length,0);
+  }
+});
+
+test('G19 reversed stair/escalator pair matches the first-floor pattern and clears the core return',async()=>{
+  const a=(await load('ground/g19')).block.architecture;
+  const profile=a.structures[0],first=JSON.parse(await readFile(new URL('../layouts/first/bottom-lobby.json',import.meta.url))).structures[0];
+  assert.equal(profile.kind,'stair-escalator-rise');assert.equal(profile.yaw,0,'Original 180-degree yaw is reversed');
+  assert.ok(Math.abs(profile.run/profile.steps-(first.endX-first.startX)/first.steps)<1e-8,'Both floors share the tread pitch');
+  assert.ok(Math.abs(profile.rise/profile.steps-first.drop/first.steps)<1e-8,'Both floors share the riser height');
+  assert.ok(Math.abs(profile.stairWidth/profile.escalatorWidth-first.stairWidth/first.escalatorWidth)<1e-8,'Keep the first-floor lane proportions');
+  const shell=buildArchitecture(a);shell.updateMatrixWorld(true);
+  const escalator=shell.children.find(c=>c.userData.structureId==='g19-visible-escalator-rise');assert.ok(escalator);
+  const bounds=new THREE.Box3().setFromObject(escalator);
+  assert.ok(bounds.min.y>=-.101&&bounds.max.y>profile.rise+.9,'Lower section rises instead of descending under the slab');
+  assert.ok(bounds.min.x>=-5.85&&bounds.max.x<5.85&&bounds.min.z>=2.2-1e-8&&bounds.max.z<6.4,'Both lanes stay inside the dark approach');
+  assert.equal(escalator.children.filter(m=>m.name==='Shared lower stair and escalator landing').length,1);
+  const floorAt=(x,z)=>new THREE.Raycaster(new THREE.Vector3(x,2,z),new THREE.Vector3(0,-1,0),0,3).intersectObject(escalator,true)[0]?.point.y;
+  for(const z of [profile.position[2],profile.position[2]+profile.stairZ]){
+    const lower=floorAt(profile.position[0]+profile.run*.1,z),upper=floorAt(profile.position[0]+profile.run*.9,z);
+    assert.ok(Number.isFinite(lower)&&Number.isFinite(upper)&&upper>lower,'Stairs and escalator both rise in the reversed direction');
+  }
+  const walls=buildArchitecture({walls:a.walls.filter(w=>w.kind==='solid')});walls.updateMatrixWorld(true);
+  assert.equal(new THREE.Raycaster(new THREE.Vector3(-4.2,.65,2.2),new THREE.Vector3(0,0,1),0,2.6).intersectObject(shell,true).length,0,'Pale path to the shared landing approach remains open');
+  const core=walls.children.find(c=>c.userData.boundaryId==='g19-core-return');
+  assert.equal(new THREE.Box3().setFromObject(core).intersectsBox(bounds),false,'Core return must not cut through the rail or landing');
+  escalator.traverse(m=>{if(m.isMesh)for(const value of m.geometry.attributes.position.array)assert.ok(Number.isFinite(value));});
+});
+
+test('Source architectural escalators retain their rigid pose when a layout rotates and elevates a block',async()=>{
+  const directory=await mkdtemp(join(tmpdir(),'g19-structure-'));
+  try{
+    await mkdir(join(directory,'layouts','ground'),{recursive:true});
+    await writeFile(join(directory,'layouts','ground','rotated.json'),JSON.stringify({format:'altanfeethi-floor-layout',version:1,id:'rotated-g19-test',floor:'ground',name:'Rotated shell',floorSize:[50,50],floorCenter:[0,0],components:[{block:'ground/g19',position:[12,2,-7],yaw:90}],walls:[]}));
+    const source=(await load('ground/g19')).block.architecture.structures[0];
+    const before=structuredClone(source),{block}=await composeLayout(directory,'ground/rotated',load);
+    const mesh=buildArchitecture({structures:[source]}),actual=buildArchitecture({structures:block.architecture.structures});
+    mesh.rotation.y=Math.PI/2;mesh.position.set(12,2,-7);mesh.updateMatrixWorld(true);actual.updateMatrixWorld(true);
+    const expectedBounds=new THREE.Box3().setFromObject(mesh),actualBounds=new THREE.Box3().setFromObject(actual);
+    assert.ok(expectedBounds.min.distanceTo(actualBounds.min)<1e-8&&expectedBounds.max.distanceTo(actualBounds.max)<1e-8);
+    assert.deepEqual(source,before);
+  }finally{await rm(directory,{recursive:true,force:true});}
+});
 
 test('Digital immigration gate opens while adjoining fixed glass closes the bypass',async()=>{
   const source=(await load('ground/g13')).block;
@@ -197,4 +264,21 @@ test('Small I lounges use supported sliding frosted entries and a cream shared w
   const main=(await composeLayout(root,'ground/b-g-lounges',load)).block;
   assert.equal(main.architecture.walls.filter(w=>w.variant==='cream-grey-window').length,1);
   assert.equal(main.architecture.walls.filter(w=>w.variant==='frosted-cream').length,2);
+});
+
+test('I-zone patterned backing owns the dining seam without a plain overlapping wall or end gap',async()=>{
+  const main=(await composeLayout(root,'ground/b-g-lounges',load)).block;
+  assert.ok(!main.architecture.walls.some(w=>w.id==='g3-g24-g25-screen-wall'));
+  const source=(await load('ground/g3-g24-g25')).block;
+  assert.ok(source.architecture.walls.some(w=>w.id==='g3-g24-g25-screen-wall'),'Standalone dining shell remains enclosed');
+  const ids=['g59-paneled-wall','g58-paneled-wall','g57-paneled-wall','g61-corner-side-wall'];
+  const walls=ids.map(id=>main.architecture.walls.find(w=>w.id===id));
+  const spans=walls.map(w=>{
+    assert.equal(w.finish,'i-zone-stone-panels');
+    assert.ok(Math.abs(w.start[1]-21.2)<1e-8&&Math.abs(w.end[1]-21.2)<1e-8);
+    return [Math.min(w.start[0],w.end[0]),Math.max(w.start[0],w.end[0])];
+  }).sort((a,b)=>a[0]-b[0]);
+  assert.ok(Math.abs(spans[0][0]+13.38)<1e-8);
+  for(let i=1;i<spans.length;i++)assert.ok(Math.abs(spans[i][0]-spans[i-1][1])<1e-8,'Patterned wall segments must meet without overlaps or gaps');
+  assert.ok(spans.at(-1)[1]>=1.42);
 });

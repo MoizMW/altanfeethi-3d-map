@@ -470,7 +470,7 @@
       "type": "wall-panel",
       "name": "Cylindrical digital display · shared G50/G51 landmark",
       "position": [
-        -1.02,
+        -0.5304741033717868,
         0,
         6
       ],
@@ -481,9 +481,9 @@
         1.35
       ],
       "scale": [
+        1.1395204345919445,
         1,
-        1,
-        1
+        1.1888411219791555
       ],
       "color": "#344a83",
       "seats": [],

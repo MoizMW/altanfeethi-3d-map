@@ -4,10 +4,12 @@
   "materials": {
     "privacy-lounge-leather": {"color": "#4c4140", "roughness": 0.48, "metalness": 0, "source": "H15/H16 normal and wide G45 lounge evidence", "detail": "Opt-in leather-privacy chair variant; no fabric weave or botanical pillow. Default blue lounge upholstery is unchanged."},
     "charcoal-reception-marble": {"color": "#ffffff", "roughness": 0.32, "metalness": 0.06, "textures": {"baseColor": "shared/materials/textures/reception-marble/charcoal-veined.png"}, "source": "Built-in ImageGen recreation of H45's charcoal marble with irregular fine cream/gold veins; see generation-prompt.txt. Explicitly loaded by app/first-floor-reception.js; not original photographed stone or a measured material."},
+    "warm-offwhite-sofa": {"color": "#aaa59c", "roughness": 0.95, "metalness": 0, "sheen": 0.28, "source": "Owner front, side and room photographs in shared/assets/library/references/lounge-sofa/", "detail": "Shared woven bump at physical scale, soft cloth sheen; app/lounge-sofa.js"},
+    "light-blue-sofa-pillow": {"color": "#708e9b", "roughness": 0.91, "metalness": 0, "sheen": 0.3, "pipingColor": "#293c47", "source": "Owner light-blue pillow references; plain fabric with dark piping"},
     "slate-lounge-upholstery": {"color": "#3d4a55", "roughness": 0.94, "metalness": 0, "sheen": 0.4, "source": "Owner chair-with-pillow and side-angle photographs; shared/assets/library/references/curved-armchair/", "detail": "Fine woven-fabric bump and soft cloth sheen, loaded by app/curved-armchair.js"},
     "botanical-lounge-pillow": {"color": "#ffffff", "roughness": 0.96, "metalness": 0, "textures": {"baseColor": "shared/materials/textures/lounge-pillow/pillow-botanical-clean.png"}, "source": "Built-in ImageGen: clean slate-blue and ivory botanical fabric, generated at the owner's request to replace the distorted photo texture. Direct UV mapping; see generation-prompt.txt in the same directory."},
     "security-blue": {"color": "#294b81", "roughness": 0.45, "metalness": 0},
-    "dark-stone-floor": {"color": "#424747", "roughness": 0.35},
+    "dark-stone-floor": {"color": "#48443f", "roughness": 0.24, "metalness": 0, "clearcoat": 0.18, "clearcoatRoughness": 0.28, "textures": {"baseColor": "shared/materials/textures/dark-stone-floor/basecolor.png"}, "textureSpanMeters": 4.8, "source": "evidence/floor-review/README.md \u2014 normal/wide camera review across all 35 blocks", "detail": "app/floor-materials.js; world-metre UVs, subtle joints and softened planar scene reflections. Color is fallback without texture; map uses a calibration multiplier."},
     "beige-upholstery": {"color": "#bcb6a7", "roughness": 0.65},
     "blue-upholstery": {"color": "#526e78", "roughness": 0.65},
     "pale-stone-table": {"color": "#e5e1d5", "roughness": 0.28},
@@ -17,6 +19,7 @@
     "warm-wood": {"color": "#856746", "roughness": 0.65, "metalness": 0},
     "office-upholstery": {"color": "#292f31", "roughness": 0.8, "metalness": 0},
     "dark-plastic": {"color": "#242a2c", "roughness": 0.65, "metalness": 0},
-    "brushed-metal": {"color": "#a7afb0", "roughness": 0.3, "metalness": 0.65}
+    "brushed-metal": {"color": "#a7afb0", "roughness": 0.3, "metalness": 0.65},
+    "pale-stone-floor": {"color": "#d7d4c9", "roughness": 0.32, "metalness": 0, "clearcoat": 0.18, "clearcoatRoughness": 0.28, "textures": {"baseColor": "shared/materials/textures/pale-stone-floor/basecolor.png"}, "textureSpanMeters": 4.8, "source": "evidence/floor-review/README.md \u2014 normal/wide camera review across all 35 blocks", "detail": "app/floor-materials.js; world-metre UVs, subtle joints and softened planar scene reflections. Color is fallback without texture; map uses a calibration multiplier."}
   }
 }

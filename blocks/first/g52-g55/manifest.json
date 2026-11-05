@@ -1,0 +1,23 @@
+{
+  "format": "altanfeethi-spatial-block",
+  "version": 1,
+  "id": "first-h-center-052-055",
+  "slug": "g52-g55",
+  "name": "G52–G55 · First-floor center lounge",
+  "floor": "first",
+  "groups": [
+    "g52",
+    "g53",
+    "g54",
+    "g55"
+  ],
+  "zone": "H",
+  "status": "draft-needs-human-review",
+  "units": "provisional-meters",
+  "owner": null,
+  "files": {
+    "architecture": "architecture.json",
+    "objects": "objects.json",
+    "evidence": "evidence.json"
+  }
+}

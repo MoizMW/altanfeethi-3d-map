@@ -59,6 +59,7 @@ export function buildLobbyFixture(g,o,{box,mesh,rod,mat,referenceSize,THREE}) {
       const {material,animate}=createCylindricalDisplay();
       const screen=mesh(assembly,new THREE.CylinderGeometry(radius,radius,height-base,96),[material,black,black],[0,(height+base)/2,0]);
       screen.name='Cylindrical display surface';screen.castShadow=false;screen.receiveShadow=false;
+      screen.userData.animated=true;
       screen.onBeforeRender=animate;
       for(const y of [1.51,2.8])mesh(assembly,new THREE.TorusGeometry(radius,.012,8,96),black,[0,y,0]).rotation.x=Math.PI/2;
       assembly.scale.set(w/1.35,h/height,d/1.35);

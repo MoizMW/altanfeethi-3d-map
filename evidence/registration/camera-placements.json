@@ -2,7 +2,7 @@
   "format": "altanfeethi-camera-registration",
   "version": 1,
   "coordinateSpace": "source-image-pixels",
-  "updatedAt": "2026-11-03T07:14:37.307Z",
+  "updatedAt": "2026-11-05T05:37:17.688Z",
   "floors": {
     "ground": {
       "label": "Ground floor",
@@ -154,8 +154,8 @@
       "group_id": "g24",
       "floor": "ground",
       "position": {
-        "x": 5916,
-        "y": 3079
+        "x": 5917,
+        "y": 3060
       },
       "heading": 128,
       "status": "verified",
@@ -652,12 +652,15 @@
       "id": "E6",
       "file": "E6.jpg",
       "zone": "E",
-      "group_id": "",
-      "floor": null,
-      "position": null,
-      "heading": 0,
-      "status": "unplaced",
-      "notes": "",
+      "group_id": "g19",
+      "floor": "ground",
+      "position": {
+        "x": 9138,
+        "y": 6272
+      },
+      "heading": 303,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
       "provenance": null
     },
     {
@@ -761,11 +764,14 @@
       "file": "F1.jpg",
       "zone": "F",
       "group_id": "g19",
-      "floor": null,
-      "position": null,
-      "heading": 0,
-      "status": "unplaced",
-      "notes": "",
+      "floor": "ground",
+      "position": {
+        "x": 8412,
+        "y": 6466
+      },
+      "heading": 60,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
       "provenance": null
     },
     {
@@ -773,11 +779,14 @@
       "file": "F2.jpg",
       "zone": "F",
       "group_id": "g19",
-      "floor": null,
-      "position": null,
-      "heading": 0,
-      "status": "unplaced",
-      "notes": "",
+      "floor": "ground",
+      "position": {
+        "x": 9009,
+        "y": 6787
+      },
+      "heading": 47,
+      "status": "verified",
+      "notes": "Placed manually; verify against the physical camera mount.",
       "provenance": null
     },
     {
@@ -2143,7 +2152,7 @@
       "id": "H52",
       "file": "H52.jpg",
       "zone": "H",
-      "group_id": "",
+      "group_id": "g49",
       "floor": "first",
       "position": {
         "x": 1688,
