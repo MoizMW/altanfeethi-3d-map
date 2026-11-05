@@ -4,9 +4,10 @@
   "type": "module",
   "scripts": {
     "library:refresh": "node scripts/build-object-library.mjs",
-    "install:app": "npm ci --prefix app",
+    "install:app": "npm run hooks:install && npm ci --prefix app",
     "start": "npm start --prefix app",
-    "test": "node scripts/validate-blocks.mjs && npm test --prefix app",
-    "camera-registration": "node tools/camera-registration/server.mjs"
+    "test": "node scripts/pre-push-hook.test.mjs && node scripts/validate-blocks.mjs && npm test --prefix app",
+    "camera-registration": "node tools/camera-registration/server.mjs",
+    "hooks:install": "node scripts/install-git-hooks.mjs"
   }
 }

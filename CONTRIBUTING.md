@@ -2,6 +2,33 @@
 
 The project is designed so each person owns a separate block directory. Normal block work should not require editing the shared editor or another contributor's files.
 
+## Main-branch protection — required for everyone, including Codex
+
+**Only repository owner/admin MoizMW may explicitly authorize bypassing main
+protection for a specific push. No other contributor may bypass it or ask their
+Codex to bypass it.** Read [AGENTS.md](AGENTS.md); it contains the mandatory
+repository-wide agent instructions.
+
+Direct pushes, force pushes and deletion of `main` are blocked by the checked-in
+`.githooks/pre-push`. Work on a feature branch and push that branch for review.
+The destination ref is checked, so pushing another branch into `main` is blocked
+as well. The hook blocks the owner by default too; there is no username-based or
+environment-variable exemption.
+
+Every clone must enable the hook with `npm run hooks:install` before work/pushes.
+`npm run install:app` includes this step. Cloning alone does not activate Git
+hooks. Verify `git config --get core.hooksPath` prints `.githooks`.
+
+Codex must never retry a rejected push using `--no-verify`, altered hook settings,
+removed hooks, another clone/remote, or GitHub API/UI. A normal request to push or
+finish work is not owner permission to bypass. A configured username of MoizMW
+is not authenticated identity. Stop and leave the feature branch for review if
+owner authorization cannot be established. Protection changes also require owner
+authority.
+
+Local hooks can be deliberately disabled, so this is a contributor/agent policy
+and an accidental-push safeguard, not a substitute for server-side enforcement.
+
 ## 1. Set up once
 
 ```bash

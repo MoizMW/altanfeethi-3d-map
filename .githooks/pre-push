@@ -1,0 +1,19 @@
+#!/bin/sh
+# Protect the destination ref, regardless of the current local branch.
+# No environment-variable or Git-username override is supported.
+while read -r local_ref local_oid remote_ref remote_oid; do
+  if [ "$remote_ref" = 'refs/heads/main' ]; then
+    cat >&2 <<'MESSAGE'
+Push blocked: direct updates to main are prohibited.
+This includes ordinary pushes, force pushes, and deletion of main.
+Push a feature branch and use the repository's review workflow.
+
+Codex/contributors: do not bypass, disable, replace, or weaken this hook.
+Only repository owner MoizMW may explicitly authorize an exception for
+one specific push. Git user.name/user.email are not proof of identity.
+Read AGENTS.md and CONTRIBUTING.md. Do not retry with a bypass.
+MESSAGE
+    exit 1
+  fi
+done
+exit 0

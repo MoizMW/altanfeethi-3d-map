@@ -1,5 +1,7 @@
 # Altanfeethi spatial twin
 
+**Contributors and Codex:** enable main protection with `npm run hooks:install` before working or pushing. Direct pushes to `main` are prohibited. **Only owner/admin MoizMW may explicitly authorize an exception for a specific push; nobody else may bypass or disable protection.** Read [AGENTS.md](AGENTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md). Local hooks must be installed in each clone and are not server-side access control.
+
 Editor shortcuts: search the object list by name, seat/table ID or source room (`/` focuses search); use **Reset view** or **Home** to recenter. Apply adjustments, then use **Save block** or **Ctrl/Cmd+S**. **Ctrl/Cmd+Z** undoes applied edits outside text fields. The header shows saved/unsaved/saving state. In a combined view, select an object and use **Edit in source room** to open that exact object for editing.
 
 G45 privacy lounge: `http://127.0.0.1:4209/?block=first/g45` — seven leather chairs, five stone pedestal tables and rounded privacy screens. Lounge-only scope excludes H45 reception; see [G45 evidence and review notes](blocks/first/g45/README.md).
