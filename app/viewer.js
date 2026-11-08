@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {hasVisibleAnimatedScreens} from './building-visibility.js';
 import {placeAvatarOnChair} from './human-avatars.js';
 import {createWalkMode} from './walk-mode.js';
 import {buildObject as build, objectReferenceSize, referenceSize} from './object-builders.js';
@@ -29,15 +30,7 @@ scene.add(new THREE.HemisphereLight('#fff7e6','#66706b',2.3));const light=new TH
 const root=new THREE.Group();scene.add(root);let objects=new Map(),labelNodes=[],staticFurniture,architectureInstances,contactShadows,meshCount=0,sceneChanged=true;const selection=new THREE.BoxHelper(undefined,'#ad8f50');selection.visible=false;scene.add(selection);
 const floorReflections=createFloorReflections(renderer,scene,root,[selection,transformHelper],{size:layoutKey?256:512});
 let renderLoop,animatedScreens=[];
-const animationFrustum=new THREE.Frustum(),animationProjection=new THREE.Matrix4();
-function needsDisplayAnimation(){
- if(document.hidden||!animatedScreens.length||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return false;
- camera.updateMatrixWorld();animationFrustum.setFromProjectionMatrix(animationProjection.multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse));
- return animatedScreens.some(screen=>{
-  for(let node=screen;node;node=node.parent)if(!node.visible)return false;
-  screen.updateWorldMatrix(true,false);return animationFrustum.intersectsObject(screen);
- });
-}
+function needsDisplayAnimation(){return hasVisibleAnimatedScreens(animatedScreens,camera,{hidden:document.hidden,reducedMotion:window.matchMedia('(prefers-reduced-motion: reduce)').matches});}
 function invalidateScene(){sceneChanged=true;floorReflections.invalidate();renderLoop?.invalidate();}
 THREE.DefaultLoadingManager.onLoad=invalidateScene;
 controls.addEventListener('change',()=>renderLoop?.invalidate());

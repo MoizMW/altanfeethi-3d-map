@@ -4,9 +4,10 @@
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
-    "test": "node --test test.mjs layouts.test.mjs library.test.mjs building.test.mjs room-mirror.test.mjs"
+    "test": "node --test test.mjs layouts.test.mjs library.test.mjs building.test.mjs room-mirror.test.mjs g10-splat.test.mjs"
   },
   "dependencies": {
+    "@sparkjsdev/spark": "2.4.0",
     "three": "0.180.0"
   }
 }

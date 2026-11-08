@@ -26,3 +26,15 @@ export function clipBelowUpperFloor(group,elevation){
   });
   return plane;
 }
+
+// Animated screens remain dynamic after static furniture batching. Respect hidden
+// floors and the camera frustum so an idle overview only repaints visible media.
+export function hasVisibleAnimatedScreens(screens,camera,{hidden=false,reducedMotion=false}={}){
+ if(hidden||reducedMotion||!screens.length)return false;
+ camera.updateMatrixWorld();
+ const frustum=new THREE.Frustum().setFromProjectionMatrix(new THREE.Matrix4().multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse));
+ return screens.some(screen=>{
+  for(let node=screen;node;node=node.parent)if(!node.visible)return false;
+  screen.updateWorldMatrix(true,false);return frustum.intersectsObject(screen);
+ });
+}

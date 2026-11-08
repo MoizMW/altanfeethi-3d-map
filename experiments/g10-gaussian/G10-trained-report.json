@@ -1,0 +1,331 @@
+{
+  "method": "Joint GPU Gaussian optimization from calibrated photo depths and soft layout priors",
+  "status": "trained-awaiting-novel-view-validation",
+  "authoredGeometryUsed": false,
+  "photometricallyTrained3DGS": true,
+  "cameras": [
+    "B6",
+    "B4",
+    "B5"
+  ],
+  "sourceHashes": {
+    "B6": "c8112d77aded020be7b0d05259243e4b48462fcb417d815e78b7538da5a42221",
+    "B4": "499136ec0d56be85e7d42a8c7f1977ee00d557eef2bc5363bdb64948d8c65982",
+    "B5": "d6561eb433361024e5def78d61b31ed3ad2591d6b2a869a4e3ff7bca2d61253b"
+  },
+  "alignmentLoss": 0.004861974157392979,
+  "focals": [
+    [
+      415.5950533531155
+    ],
+    [
+      476.22500750077
+    ],
+    [
+      357.57662388977735
+    ]
+  ],
+  "poses": [
+    [
+      [
+        -0.9875755019704514,
+        -0.14004451781312915,
+        -0.07128927646076354,
+        0.42685368849933997
+      ],
+      [
+        0.15574507313768482,
+        -0.8118407568677345,
+        -0.5627237845353272,
+        4.148687337050644
+      ],
+      [
+        0.02093084090876962,
+        -0.5668351775595022,
+        0.8235652866530621,
+        -3.6870182677559535
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.7900302610485294,
+        -0.25434121741846955,
+        0.5578196229514379,
+        -4.44868262352105
+      ],
+      [
+        0.04834898766637276,
+        -0.8812002012711524,
+        -0.47026437316823994,
+        3.7235418574788293
+      ],
+      [
+        0.6111583771979491,
+        0.3984930995660671,
+        -0.6838776846622487,
+        3.689261511707794
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.8195773880831129,
+        0.34069185679459046,
+        -0.46067555139893895,
+        3.796591727964257
+      ],
+      [
+        0.01750000371786045,
+        -0.8185246853882943,
+        -0.5742047450865142,
+        3.6108668395285175
+      ],
+      [
+        -0.5727011915586845,
+        0.4625434013407262,
+        -0.6768064324926402,
+        2.5308416372989435
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "pointsPerCamera": [
+    111393,
+    98811,
+    79894
+  ],
+  "splats": 165770,
+  "units": "provisional G10 model units",
+  "target": [
+    0,
+    0.9,
+    0
+  ],
+  "bounds": [
+    [
+      -3.3,
+      -0.05,
+      -2.7
+    ],
+    [
+      3.3,
+      3.25,
+      2.7
+    ]
+  ],
+  "pointsPerCameraStage": "pre-fusion initialization; all Gaussians then shared across views",
+  "validationNotes": [
+    "Training-image metrics are not independent validation of novel views",
+    "All parameters optimize against all three photos in one shared scene"
+  ],
+  "recoveredSamplesPerCamera": [
+    339482,
+    268328,
+    243274
+  ],
+  "colorResolution": [
+    1024,
+    576
+  ],
+  "depthResolution": [
+    512,
+    288
+  ],
+  "refinementVersion": 4,
+  "refinementNotes": [
+    "Furniture meshes were not sampled or converted",
+    "Authored object positions are soft priors for camera and depth calibration",
+    "Floor and selected glass/mirror pixels are constrained to provisional room planes",
+    "Background beyond the local block envelope is excluded",
+    "Common-volume surface extraction merges the camera depths before Gaussian export"
+  ],
+  "framingBounds": [
+    [
+      -3.3,
+      -0.05,
+      -2.7
+    ],
+    [
+      3.3,
+      3.25,
+      2.7
+    ]
+  ],
+  "authoredPositionPriorsUsed": true,
+  "coordinateFrame": "g10-local",
+  "voxelSize": 0.025,
+  "depthTruncation": 0.1,
+  "cameraFitRmsPixels": {
+    "B6": 8.47579192306294,
+    "B4": 9.290374590768645,
+    "B5": 3.8209955772487993
+  },
+  "trainingSteps": 4500,
+  "gaussianSourceContributions": [
+    111393,
+    98811,
+    79894
+  ],
+  "trainingBefore": {
+    "B6": {
+      "maskedTrainingPSNR": 15.931302070617676,
+      "meanMaskedAlpha": 0.9998412728309631
+    },
+    "B4": {
+      "maskedTrainingPSNR": 13.55150318145752,
+      "meanMaskedAlpha": 0.9998342990875244
+    },
+    "B5": {
+      "maskedTrainingPSNR": 16.293954849243164,
+      "meanMaskedAlpha": 0.9998373985290527
+    }
+  },
+  "trainingAfter": {
+    "B6": {
+      "maskedTrainingPSNR": 41.799957275390625,
+      "meanMaskedAlpha": 0.9978358745574951
+    },
+    "B4": {
+      "maskedTrainingPSNR": 38.734195709228516,
+      "meanMaskedAlpha": 0.9991924166679382
+    },
+    "B5": {
+      "maskedTrainingPSNR": 42.263675689697266,
+      "meanMaskedAlpha": 0.9992217421531677
+    }
+  },
+  "trainingHistory": [
+    {
+      "step": 0,
+      "loss": 0.18724851310253143,
+      "l1": 0.11394506692886353,
+      "elapsedSeconds": 0.7
+    },
+    {
+      "step": 250,
+      "loss": 0.04772802069783211,
+      "l1": 0.027721527963876724,
+      "elapsedSeconds": 2.0
+    },
+    {
+      "step": 500,
+      "loss": 0.01884864829480648,
+      "l1": 0.014455979689955711,
+      "elapsedSeconds": 3.3
+    },
+    {
+      "step": 750,
+      "loss": 0.017809851095080376,
+      "l1": 0.012164030224084854,
+      "elapsedSeconds": 4.7
+    },
+    {
+      "step": 1000,
+      "loss": 0.02284412272274494,
+      "l1": 0.015544545836746693,
+      "elapsedSeconds": 6.1
+    },
+    {
+      "step": 1250,
+      "loss": 0.011444578878581524,
+      "l1": 0.009747538715600967,
+      "elapsedSeconds": 7.4
+    },
+    {
+      "step": 1500,
+      "loss": 0.011582453735172749,
+      "l1": 0.008763769641518593,
+      "elapsedSeconds": 8.8
+    },
+    {
+      "step": 1750,
+      "loss": 0.015150981023907661,
+      "l1": 0.011280989274382591,
+      "elapsedSeconds": 10.2
+    },
+    {
+      "step": 2000,
+      "loss": 0.008439002558588982,
+      "l1": 0.007659414317458868,
+      "elapsedSeconds": 11.6
+    },
+    {
+      "step": 2250,
+      "loss": 0.008744758553802967,
+      "l1": 0.006997326388955116,
+      "elapsedSeconds": 13.0
+    },
+    {
+      "step": 2500,
+      "loss": 0.011756190098822117,
+      "l1": 0.00930660031735897,
+      "elapsedSeconds": 14.5
+    },
+    {
+      "step": 2750,
+      "loss": 0.0069049568846821785,
+      "l1": 0.006492324639111757,
+      "elapsedSeconds": 15.9
+    },
+    {
+      "step": 3000,
+      "loss": 0.0069268555380403996,
+      "l1": 0.005829356610774994,
+      "elapsedSeconds": 17.3
+    },
+    {
+      "step": 3250,
+      "loss": 0.007978854700922966,
+      "l1": 0.006311061326414347,
+      "elapsedSeconds": 18.7
+    },
+    {
+      "step": 3500,
+      "loss": 0.004576889332383871,
+      "l1": 0.004274551756680012,
+      "elapsedSeconds": 20.1
+    },
+    {
+      "step": 3750,
+      "loss": 0.004887924995273352,
+      "l1": 0.004067893605679274,
+      "elapsedSeconds": 21.5
+    },
+    {
+      "step": 4000,
+      "loss": 0.0070983343757689,
+      "l1": 0.005771816708147526,
+      "elapsedSeconds": 22.9
+    },
+    {
+      "step": 4250,
+      "loss": 0.004336325917392969,
+      "l1": 0.004084682557731867,
+      "elapsedSeconds": 24.3
+    },
+    {
+      "step": 4499,
+      "loss": 0.004094061441719532,
+      "l1": 0.003915388602763414,
+      "elapsedSeconds": 25.7
+    }
+  ],
+  "trainingDevice": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "trainingDepthSource": "experiments/g10-gaussian/constrained-depths.npz"
+}

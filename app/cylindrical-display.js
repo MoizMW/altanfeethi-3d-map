@@ -4,10 +4,10 @@ export const campaignAtlasPath='/shared/materials/textures/window-display/campai
 
 // Stills establish two campaign scenes; their playback timing is an approximation.
 export function campaignFrame(seconds,reducedMotion=false){
-  const phase=reducedMotion?0:((seconds%24)+24)%24;
+  const phase=reducedMotion?0:((seconds%16)+16)%16;
   const ease=value=>value*value*(3-2*value);
-  const blend=phase<10?0:phase<12?ease((phase-10)/2):phase<22?1:1-ease((phase-22)/2);
-  return {blend,drift:reducedMotion?0:Math.sin(seconds*.12)*.012};
+  const blend=phase<6.5?0:phase<8?ease((phase-6.5)/1.5):phase<14.5?1:1-ease((phase-14.5)/1.5);
+  return {blend,drift:reducedMotion?0:Math.sin(seconds*.18)*.012};
 }
 
 export function createCylindricalDisplay(){

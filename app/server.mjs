@@ -110,7 +110,7 @@ export const server=createServer(async(req,res)=>{
     }
     if(req.method!=='GET')return send(res,405,{error:'Method not allowed'});
     const relative=decodeURIComponent(url.pathname).slice(1)||'index.html';let target;
-    if(['building.html','building.js','building.css','building-visibility.js','index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','security-objects.js','passport-objects.js','styles.css','editor.css','lounge-tables.js','lobby-fixtures.js','vertical-circulation.js','dining-objects.js','object-builders.js','private-lounge-objects.js','library.html','library.js','library.css'].includes(relative))target=resolve(appRoot,relative);
+    if(['g10-photo.html','g10-photo.js','g10-splat.html','g10-splat.js','g10-splat.css','building.html','building.js','building.css','building-visibility.js','index.html','viewer.js','architecture.js','reception-objects.js','lounge-objects.js','security-objects.js','passport-objects.js','styles.css','editor.css','lounge-tables.js','lobby-fixtures.js','vertical-circulation.js','dining-objects.js','object-builders.js','private-lounge-objects.js','library.html','library.js','library.css'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='cylindrical-display.js'||relative==='editor-ui.js')target=resolve(appRoot,relative);
     else if(['first-floor-reception.js','buffet-objects.js'].includes(relative))target=resolve(appRoot,relative);
     else if(relative==='shared/assets/branding/altanfeethi-reception.svg')target=resolve(projectRoot,relative);
@@ -128,6 +128,8 @@ export const server=createServer(async(req,res)=>{
     else if(relative==='shared/assets/branding/reception-wall.svg')target=resolve(projectRoot,relative);
     else if(/^shared\/assets\/flags\/(saudi|altanfeethi)\.svg$/.test(relative))target=resolve(projectRoot,relative);
     else if(/^shared\/assets\/portraits\/reception-[123]\.png$/.test(relative))target=resolve(projectRoot,relative);
+    else if(relative==='node_modules/@sparkjsdev/spark/dist/spark.module.js')target=resolve(appRoot,relative);
+    else if(/^experiments\/g10-gaussian\/(manifest\.json|joint-report\.json|(B[456]|G10|G10-photo)\.(ply|splat)|B[456]-(source\.jpg|depth\.png))$/.test(relative))target=resolve(projectRoot,relative);
     else if(/^node_modules\/three\/(build|examples\/jsm)\/[\w/.-]+\.js$/.test(relative)&&!relative.includes('..'))target=resolve(appRoot,relative);
     else return send(res,404,{error:'Not found'});
     send(res,200,await readFile(target),types[extname(target)]||'application/octet-stream');
