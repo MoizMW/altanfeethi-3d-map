@@ -90,3 +90,25 @@ test('reception portraits and smaller branding fit below the existing upper slab
  assert.ok(bounds.max.y<Math.min(...portraits.map(o=>o.position[1]))-.1);
  assert.ok(bounds.getSize(new THREE.Vector3()).x<2.1);
 });
+
+test('idle building media visibility follows the current floor and camera, with reduced-motion and hidden-tab opt-outs',async()=>{
+ const {hasVisibleAnimatedScreens}=await import('./building-visibility.js');
+ const scene=new THREE.Group(),floor=new THREE.Group(),screen=new THREE.Mesh(new THREE.CylinderGeometry(.5,.5,2),new THREE.MeshBasicMaterial());scene.add(floor);floor.add(screen);
+ const camera=new THREE.PerspectiveCamera(50,1,.1,100);camera.position.set(0,1,6);camera.lookAt(0,1,0);camera.updateProjectionMatrix();
+ assert.equal(hasVisibleAnimatedScreens([screen],camera),true);
+ floor.visible=false;assert.equal(hasVisibleAnimatedScreens([screen],camera),false);
+ floor.visible=true;assert.equal(hasVisibleAnimatedScreens([screen],camera,{hidden:true}),false);
+ assert.equal(hasVisibleAnimatedScreens([screen],camera,{reducedMotion:true}),false);
+ floor.position.x=100;assert.equal(hasVisibleAnimatedScreens([screen],camera),false);
+ floor.position.x=0;assert.equal(hasVisibleAnimatedScreens([screen],camera),true);
+ screen.geometry.dispose();screen.material.dispose();
+});
+
+test('display campaign changes automatically on a faster continuous sixteen-second cycle',async()=>{
+ const {campaignFrame}=await import('./cylindrical-display.js');
+ assert.equal(campaignFrame(0).blend,0);assert.ok(campaignFrame(7.25).blend>0&&campaignFrame(7.25).blend<1);
+ assert.equal(campaignFrame(8).blend,1);assert.equal(campaignFrame(14).blend,1);
+ assert.ok(campaignFrame(15.25).blend>0&&campaignFrame(15.25).blend<1);
+ assert.equal(campaignFrame(16).blend,0);
+ for(const t of [0,7,8,15,16,32])assert.deepEqual(campaignFrame(t,true),{blend:0,drift:0});
+});

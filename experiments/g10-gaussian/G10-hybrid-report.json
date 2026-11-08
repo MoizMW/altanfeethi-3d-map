@@ -1,0 +1,453 @@
+{
+  "method": "Shape-guided joint photographic Gaussian training",
+  "status": "awaiting-novel-view-review",
+  "authoredGeometryUsed": true,
+  "photometricallyTrained3DGS": true,
+  "cameras": [
+    "B6",
+    "B4",
+    "B5"
+  ],
+  "sourceHashes": {
+    "B6": "c8112d77aded020be7b0d05259243e4b48462fcb417d815e78b7538da5a42221",
+    "B4": "499136ec0d56be85e7d42a8c7f1977ee00d557eef2bc5363bdb64948d8c65982",
+    "B5": "d6561eb433361024e5def78d61b31ed3ad2591d6b2a869a4e3ff7bca2d61253b"
+  },
+  "alignmentLoss": 0.004861974157392979,
+  "focals": [
+    [
+      415.5950533531155
+    ],
+    [
+      476.22500750077
+    ],
+    [
+      357.57662388977735
+    ]
+  ],
+  "poses": [
+    [
+      [
+        -0.9875755019704514,
+        -0.14004451781312915,
+        -0.07128927646076354,
+        0.42685368849933997
+      ],
+      [
+        0.15574507313768482,
+        -0.8118407568677345,
+        -0.5627237845353272,
+        4.148687337050644
+      ],
+      [
+        0.02093084090876962,
+        -0.5668351775595022,
+        0.8235652866530621,
+        -3.6870182677559535
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.7900302610485294,
+        -0.25434121741846955,
+        0.5578196229514379,
+        -4.44868262352105
+      ],
+      [
+        0.04834898766637276,
+        -0.8812002012711524,
+        -0.47026437316823994,
+        3.7235418574788293
+      ],
+      [
+        0.6111583771979491,
+        0.3984930995660671,
+        -0.6838776846622487,
+        3.689261511707794
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.8195773880831129,
+        0.34069185679459046,
+        -0.46067555139893895,
+        3.796591727964257
+      ],
+      [
+        0.01750000371786045,
+        -0.8185246853882943,
+        -0.5742047450865142,
+        3.6108668395285175
+      ],
+      [
+        -0.5727011915586845,
+        0.4625434013407262,
+        -0.6768064324926402,
+        2.5308416372989435
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "pointsPerCamera": [
+    43564,
+    51950,
+    47797
+  ],
+  "splats": 350039,
+  "units": "provisional G10 model units",
+  "target": [
+    0,
+    0.8,
+    0
+  ],
+  "bounds": [
+    [
+      -3.2999863624572754,
+      -0.06506678462028503,
+      -2.6997342109680176
+    ],
+    [
+      3.2999765872955322,
+      2.4547746181488037,
+      2.699796199798584
+    ]
+  ],
+  "pointsPerCameraStage": "visible photo-color initialization; one shared scene jointly trained",
+  "validationNotes": [
+    "Furniture shape priors and photo appearance; not an independent photographic scan",
+    "Hidden surfaces retain estimated material colors",
+    "Training-image metrics do not measure novel-view accuracy"
+  ],
+  "recoveredSamplesPerCamera": [
+    339482,
+    268328,
+    243274
+  ],
+  "colorResolution": [
+    1024,
+    576
+  ],
+  "depthResolution": [
+    512,
+    288
+  ],
+  "refinementVersion": 5,
+  "refinementNotes": [
+    "Furniture meshes were not sampled or converted",
+    "Authored object positions are soft priors for camera and depth calibration",
+    "Floor and selected glass/mirror pixels are constrained to provisional room planes",
+    "Background beyond the local block envelope is excluded",
+    "Common-volume surface extraction merges the camera depths before Gaussian export"
+  ],
+  "framingBounds": [
+    [
+      -3.3,
+      0,
+      -2.7
+    ],
+    [
+      3.3,
+      2.6,
+      2.7
+    ]
+  ],
+  "authoredPositionPriorsUsed": true,
+  "coordinateFrame": "g10-local",
+  "voxelSize": 0.025,
+  "depthTruncation": 0.1,
+  "cameraFitRmsPixels": {
+    "B6": 8.47579192306294,
+    "B4": 9.290374590768645,
+    "B5": 3.8209955772487993
+  },
+  "authoredFurnitureMeshesSampled": true,
+  "trainingSteps": 5000,
+  "trainingBefore": {
+    "B6": {
+      "maskedTrainingPSNR": 19.354001998901367
+    },
+    "B4": {
+      "maskedTrainingPSNR": 18.666290283203125
+    },
+    "B5": {
+      "maskedTrainingPSNR": 19.04640007019043
+    }
+  },
+  "trainingAfter": {
+    "B6": {
+      "maskedTrainingPSNR": 32.99517059326172
+    },
+    "B4": {
+      "maskedTrainingPSNR": 32.19264602661133
+    },
+    "B5": {
+      "maskedTrainingPSNR": 31.723119735717773
+    }
+  },
+  "trainingHistory": [
+    {
+      "step": 0,
+      "loss": 0.09306325018405914,
+      "seconds": 0.1
+    },
+    {
+      "step": 500,
+      "loss": 0.026339910924434662,
+      "seconds": 4.9
+    },
+    {
+      "step": 1000,
+      "loss": 0.018876397982239723,
+      "seconds": 9.8
+    },
+    {
+      "step": 1500,
+      "loss": 0.01586228981614113,
+      "seconds": 14.7
+    },
+    {
+      "step": 2000,
+      "loss": 0.014051323756575584,
+      "seconds": 19.6
+    },
+    {
+      "step": 2500,
+      "loss": 0.012998594902455807,
+      "seconds": 24.5
+    },
+    {
+      "step": 3000,
+      "loss": 0.012024848721921444,
+      "seconds": 29.5
+    },
+    {
+      "step": 3500,
+      "loss": 0.01123401802033186,
+      "seconds": 34.4
+    },
+    {
+      "step": 4000,
+      "loss": 0.011199265718460083,
+      "seconds": 39.3
+    },
+    {
+      "step": 4500,
+      "loss": 0.010915863327682018,
+      "seconds": 44.3
+    },
+    {
+      "step": 4999,
+      "loss": 0.010903946124017239,
+      "seconds": 49.3
+    }
+  ],
+  "shapeAdjustments": {
+    "g10-sofa-01": {
+      "priorCenter": [
+        0.76,
+        0.43,
+        0.0
+      ],
+      "fittedCenter": [
+        0.7526348313160953,
+        0.41522217198880873,
+        0.1730082427466408
+      ],
+      "lengthScale": 1.0
+    },
+    "g10-sofa-02": {
+      "priorCenter": [
+        -0.76,
+        0.43,
+        0.0
+      ],
+      "fittedCenter": [
+        -0.9092112503179699,
+        0.40127598623493793,
+        0.06930480600724702
+      ],
+      "lengthScale": 1.0
+    },
+    "g10-chair-01": {
+      "priorCenter": [
+        2.0,
+        0.47,
+        -1.65
+      ],
+      "fittedCenter": [
+        2.1009255371036977,
+        0.42743986736322676,
+        -1.4129496424397165
+      ],
+      "lengthScale": 1.0
+    },
+    "g10-chair-02": {
+      "priorCenter": [
+        2.0,
+        0.47,
+        1.65
+      ],
+      "fittedCenter": [
+        1.8989148532031328,
+        0.4057038424888678,
+        1.2847894161224422
+      ],
+      "lengthScale": 1.0
+    },
+    "g10-chair-03": {
+      "priorCenter": [
+        -2.0,
+        0.47,
+        -1.65
+      ],
+      "fittedCenter": [
+        -2.052814006095352,
+        0.399262267606575,
+        -1.2898857903071408
+      ],
+      "lengthScale": 1.0
+    },
+    "g10-chair-04": {
+      "priorCenter": [
+        -2.0,
+        0.47,
+        1.65
+      ],
+      "fittedCenter": [
+        -2.03662824234812,
+        0.4270581579081262,
+        1.374420297891702
+      ],
+      "lengthScale": 1.0
+    },
+    "g10-table-01": {
+      "priorCenter": [
+        2.0,
+        0.42,
+        0.0
+      ],
+      "fittedCenter": [
+        1.9815024975839015,
+        0.4612513102955046,
+        0.009355296448475325
+      ],
+      "lengthScale": 0.8338705133157093
+    },
+    "g10-table-02": {
+      "priorCenter": [
+        -2.0,
+        0.42,
+        0.0
+      ],
+      "fittedCenter": [
+        -1.9489923930280935,
+        0.44869183896303844,
+        0.09773156143992667
+      ],
+      "lengthScale": 0.9376407302106434
+    },
+    "g10-divider-01": {
+      "priorCenter": [
+        0.0,
+        2.25,
+        0.0
+      ],
+      "fittedCenter": [
+        0.18568516364029175,
+        2.2993879825905337,
+        -0.04576856895975173
+      ],
+      "lengthScale": 0.7531893169209758
+    },
+    "g10-side-table-01": {
+      "priorCenter": [
+        1.15,
+        0.55,
+        1.7
+      ],
+      "fittedCenter": [
+        0.986823402263041,
+        0.5495453576824527,
+        1.52377806290772
+      ],
+      "lengthScale": 1.0
+    },
+    "g10-side-table-02": {
+      "priorCenter": [
+        -1.15,
+        0.55,
+        1.7
+      ],
+      "fittedCenter": [
+        -1.1659128429381669,
+        0.5593008375919772,
+        1.5433876772944581
+      ],
+      "lengthScale": 1.0
+    }
+  },
+  "shapeSource": {
+    "count": 350039,
+    "columns": [
+      "x",
+      "y",
+      "z",
+      "nx",
+      "ny",
+      "nz",
+      "r",
+      "g",
+      "b",
+      "objectIndex"
+    ],
+    "objects": [
+      "g10-sofa-01",
+      "g10-sofa-02",
+      "g10-chair-01",
+      "g10-chair-02",
+      "g10-chair-03",
+      "g10-chair-04",
+      "g10-table-01",
+      "g10-table-02",
+      "g10-divider-01",
+      "g10-side-table-01",
+      "g10-lamp-01",
+      "g10-side-table-02",
+      "g10-lamp-02",
+      "g10-plant-01",
+      "g10-plant-02",
+      "g10-console-01",
+      "g10-tv-01",
+      "g10-table-01-tissue-box",
+      "g10-table-02-tissue-box",
+      "floor"
+    ],
+    "objectsSha256": "e046138e409172f4dcf185a5ee6657eadb55e25d792c959b26545453e5a80c31",
+    "sigma": 0.013335395499822543,
+    "authoredGeometryUsed": true,
+    "role": "Structural initialization for subsequent joint photographic optimization"
+  },
+  "unseenSurfaceSplats": 206728,
+  "trainingResolution": [
+    768,
+    432
+  ],
+  "trainingDevice": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}

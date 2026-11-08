@@ -21,9 +21,24 @@ test('both cultural avatars build at seated scale with covered attire and remain
   if(avatar.variant==='saudi-thobe-seated'){
    assert.equal(model.getObjectByName('Silver beard curls').count,240);
    assert.ok(model.getObjectByName('Sculpted elderly face'));
+   assert.ok(model.getObjectByName('Groomed silver beard'));
+   assert.ok(model.getObjectByName('Soft ghutra back drape'));
    assert.ok(model.getObjectByName('Continuous seated thobe drape'));
    model.traverse(mesh=>{if(mesh.geometry?.attributes.position)assert.ok([...mesh.geometry.attributes.position.array].every(Number.isFinite),mesh.name);});
-  }else assert.equal(model.getObjectByName('Full grey beard'),undefined);
+  }else {
+   assert.equal(model.getObjectByName('Full grey beard'),undefined);
+   assert.ok(model.getObjectByName('Continuous seated abaya'));
+   assert.ok(model.getObjectByName('Soft hijab shoulder drape'));
+   const cover=model.getObjectByName('Niqab face cover');assert.ok(cover);
+   for(const y of [1.10,1.18,1.24,1.27,1.29]){
+    const hits=new THREE.Raycaster(new THREE.Vector3(0,y,.4),new THREE.Vector3(0,0,-1),0,1).intersectObject(cover);
+    assert.ok(hits.length,'Niqab must cover lower face at '+y);
+   }
+   for(const name of ['Nose','Neutral mouth','Face framed by hijab'])assert.equal(model.getObjectByName(name),undefined);
+   const band=new THREE.Box3().setFromObject(model.getObjectByName('Niqab eye opening'));
+   assert.ok(band.max.y-band.min.y<.04,'Only a narrow eye band is exposed');
+   model.traverse(mesh=>{if(mesh.geometry?.attributes.position)assert.ok([...mesh.geometry.attributes.position.array].every(Number.isFinite),mesh.name);});
+  }
   const moved=placeAvatarOnChair(avatar,{...chair,position:[4,0,5],yaw:90});assert.deepEqual(moved.position,[4,0,5]);assert.notEqual(moved.position,chair.position);
  }
  const before=JSON.stringify(block.objects),library=await collectObjectLibrary();

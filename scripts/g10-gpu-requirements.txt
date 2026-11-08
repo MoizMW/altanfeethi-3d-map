@@ -1,0 +1,14 @@
+# Verified local training environment; use an isolated Python 3.10+ environment.
+# CUDA toolkit / C++ compiler are also required for gsplat's renderer build.
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.9.1+cu126
+torchvision==0.24.1+cu126
+gsplat==1.5.3
+ninja==1.13.2
+numpy==2.2.6
+scipy==1.15.3
+opencv-python==4.12.0.88
+scikit-image==0.25.2
+roma==1.8.0
+einops==0.8.2
+Pillow==12.0.0

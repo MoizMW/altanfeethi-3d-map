@@ -1,0 +1,178 @@
+{
+  "method": "Photo-depth fusion with soft object landmarks, provisional camera calibration and room-plane constraints",
+  "status": "awaiting-novel-view-review",
+  "authoredGeometryUsed": false,
+  "photometricallyTrained3DGS": false,
+  "cameras": [
+    "B6",
+    "B4",
+    "B5"
+  ],
+  "sourceHashes": {
+    "B6": "c8112d77aded020be7b0d05259243e4b48462fcb417d815e78b7538da5a42221",
+    "B4": "499136ec0d56be85e7d42a8c7f1977ee00d557eef2bc5363bdb64948d8c65982",
+    "B5": "d6561eb433361024e5def78d61b31ed3ad2591d6b2a869a4e3ff7bca2d61253b"
+  },
+  "alignmentLoss": 0.004861974157392979,
+  "focals": [
+    [
+      415.5950533531155
+    ],
+    [
+      476.22500750077
+    ],
+    [
+      357.57662388977735
+    ]
+  ],
+  "poses": [
+    [
+      [
+        -0.9875755019704514,
+        -0.14004451781312915,
+        -0.07128927646076354,
+        0.42685368849933997
+      ],
+      [
+        0.15574507313768482,
+        -0.8118407568677345,
+        -0.5627237845353272,
+        4.148687337050644
+      ],
+      [
+        0.02093084090876962,
+        -0.5668351775595022,
+        0.8235652866530621,
+        -3.6870182677559535
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.7900302610485294,
+        -0.25434121741846955,
+        0.5578196229514379,
+        -4.44868262352105
+      ],
+      [
+        0.04834898766637276,
+        -0.8812002012711524,
+        -0.47026437316823994,
+        3.7235418574788293
+      ],
+      [
+        0.6111583771979491,
+        0.3984930995660671,
+        -0.6838776846622487,
+        3.689261511707794
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.8195773880831129,
+        0.34069185679459046,
+        -0.46067555139893895,
+        3.796591727964257
+      ],
+      [
+        0.01750000371786045,
+        -0.8185246853882943,
+        -0.5742047450865142,
+        3.6108668395285175
+      ],
+      [
+        -0.5727011915586845,
+        0.4625434013407262,
+        -0.6768064324926402,
+        2.5308416372989435
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "pointsPerCamera": [
+    49619,
+    44088,
+    53844
+  ],
+  "splats": 147551,
+  "units": "provisional G10 model units",
+  "target": [
+    0,
+    0.9,
+    0
+  ],
+  "bounds": [
+    [
+      -3.3,
+      -0.05,
+      -2.7
+    ],
+    [
+      3.3,
+      3.25,
+      2.7
+    ]
+  ],
+  "pointsPerCameraStage": "final surface color owner; geometry fused from all views",
+  "validationNotes": [
+    "Pending novel-view evaluation; fitted landmarks are not independent validation"
+  ],
+  "recoveredSamplesPerCamera": [
+    339482,
+    268328,
+    243274
+  ],
+  "colorResolution": [
+    1024,
+    576
+  ],
+  "depthResolution": [
+    512,
+    288
+  ],
+  "refinementVersion": 3,
+  "refinementNotes": [
+    "Furniture meshes were not sampled or converted",
+    "Authored object positions are soft priors for camera and depth calibration",
+    "Floor and selected glass/mirror pixels are constrained to provisional room planes",
+    "Background beyond the local block envelope is excluded",
+    "Common-volume surface extraction merges the camera depths before Gaussian export"
+  ],
+  "framingBounds": [
+    [
+      -3.3,
+      -0.05,
+      -2.7
+    ],
+    [
+      3.3,
+      3.25,
+      2.7
+    ]
+  ],
+  "authoredPositionPriorsUsed": true,
+  "coordinateFrame": "g10-local",
+  "voxelSize": 0.025,
+  "depthTruncation": 0.1,
+  "cameraFitRmsPixels": {
+    "B6": 8.47579192306294,
+    "B4": 9.290374590768645,
+    "B5": 3.8209955772487993
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "method": "Joint GPU Gaussian optimization from calibrated photo depths and soft layout priors",
+  "status": "trained-awaiting-novel-view-validation",
+  "authoredGeometryUsed": false,
+  "photometricallyTrained3DGS": true,
+  "cameras": [
+    "B6",
+    "B4",
+    "B5"
+  ],
+  "sourceHashes": {
+    "B6": "c8112d77aded020be7b0d05259243e4b48462fcb417d815e78b7538da5a42221",
+    "B4": "499136ec0d56be85e7d42a8c7f1977ee00d557eef2bc5363bdb64948d8c65982",
+    "B5": "d6561eb433361024e5def78d61b31ed3ad2591d6b2a869a4e3ff7bca2d61253b"
+  },
+  "alignmentLoss": 0.004861974157392979,
+  "focals": [
+    [
+      415.5950533531155
+    ],
+    [
+      476.22500750077
+    ],
+    [
+      357.57662388977735
+    ]
+  ],
+  "poses": [
+    [
+      [
+        -0.9875755019704514,
+        -0.14004451781312915,
+        -0.07128927646076354,
+        0.42685368849933997
+      ],
+      [
+        0.15574507313768482,
+        -0.8118407568677345,
+        -0.5627237845353272,
+        4.148687337050644
+      ],
+      [
+        0.02093084090876962,
+        -0.5668351775595022,
+        0.8235652866530621,
+        -3.6870182677559535
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.7900302610485294,
+        -0.25434121741846955,
+        0.5578196229514379,
+        -4.44868262352105
+      ],
+      [
+        0.04834898766637276,
+        -0.8812002012711524,
+        -0.47026437316823994,
+        3.7235418574788293
+      ],
+      [
+        0.6111583771979491,
+        0.3984930995660671,
+        -0.6838776846622487,
+        3.689261511707794
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.8195773880831129,
+        0.34069185679459046,
+        -0.46067555139893895,
+        3.796591727964257
+      ],
+      [
+        0.01750000371786045,
+        -0.8185246853882943,
+        -0.5742047450865142,
+        3.6108668395285175
+      ],
+      [
+        -0.5727011915586845,
+        0.4625434013407262,
+        -0.6768064324926402,
+        2.5308416372989435
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "pointsPerCamera": [
+    60657,
+    69917,
+    62452
+  ],
+  "splats": 137449,
+  "units": "provisional G10 model units",
+  "target": [
+    0,
+    0.9,
+    0
+  ],
+  "bounds": [
+    [
+      -3.3,
+      -0.05,
+      -2.7
+    ],
+    [
+      3.3,
+      3.25,
+      2.7
+    ]
+  ],
+  "pointsPerCameraStage": "pre-fusion initialization; all Gaussians then shared across views",
+  "validationNotes": [
+    "Training-image metrics are not independent validation of novel views",
+    "All parameters optimize against all three photos in one shared scene"
+  ],
+  "recoveredSamplesPerCamera": [
+    339482,
+    268328,
+    243274
+  ],
+  "colorResolution": [
+    1024,
+    576
+  ],
+  "depthResolution": [
+    512,
+    288
+  ],
+  "refinementVersion": 4,
+  "refinementNotes": [
+    "Furniture meshes were not sampled or converted",
+    "Authored object positions are soft priors for camera and depth calibration",
+    "Floor and selected glass/mirror pixels are constrained to provisional room planes",
+    "Background beyond the local block envelope is excluded",
+    "Common-volume surface extraction merges the camera depths before Gaussian export"
+  ],
+  "framingBounds": [
+    [
+      -3.3,
+      -0.05,
+      -2.7
+    ],
+    [
+      3.3,
+      3.25,
+      2.7
+    ]
+  ],
+  "authoredPositionPriorsUsed": true,
+  "coordinateFrame": "g10-local",
+  "voxelSize": 0.025,
+  "depthTruncation": 0.1,
+  "cameraFitRmsPixels": {
+    "B6": 8.47579192306294,
+    "B4": 9.290374590768645,
+    "B5": 3.8209955772487993
+  },
+  "trainingSteps": 6000,
+  "gaussianSourceContributions": [
+    60657,
+    69917,
+    62452
+  ],
+  "trainingBefore": {
+    "B6": {
+      "maskedTrainingPSNR": 14.952601432800293,
+      "meanMaskedAlpha": 0.9934646487236023
+    },
+    "B4": {
+      "maskedTrainingPSNR": 16.12503433227539,
+      "meanMaskedAlpha": 0.9481427669525146
+    },
+    "B5": {
+      "maskedTrainingPSNR": 14.733439445495605,
+      "meanMaskedAlpha": 0.9470171332359314
+    }
+  },
+  "trainingAfter": {
+    "B6": {
+      "maskedTrainingPSNR": 43.341453552246094,
+      "meanMaskedAlpha": 0.9961040616035461
+    },
+    "B4": {
+      "maskedTrainingPSNR": 26.15361213684082,
+      "meanMaskedAlpha": 0.9686635732650757
+    },
+    "B5": {
+      "maskedTrainingPSNR": 22.90959930419922,
+      "meanMaskedAlpha": 0.9713611006736755
+    }
+  },
+  "trainingHistory": [
+    {
+      "step": 0,
+      "loss": 0.18385249376296997,
+      "l1": 0.1294487714767456,
+      "elapsedSeconds": 0.8
+    },
+    {
+      "step": 250,
+      "loss": 0.046102095395326614,
+      "l1": 0.028832895681262016,
+      "elapsedSeconds": 2.2
+    },
+    {
+      "step": 500,
+      "loss": 0.03781239315867424,
+      "l1": 0.026487838476896286,
+      "elapsedSeconds": 3.6
+    },
+    {
+      "step": 750,
+      "loss": 0.022901440039277077,
+      "l1": 0.013255836442112923,
+      "elapsedSeconds": 5.0
+    },
+    {
+      "step": 1000,
+      "loss": 0.027651092037558556,
+      "l1": 0.019022202119231224,
+      "elapsedSeconds": 6.4
+    },
+    {
+      "step": 1250,
+      "loss": 0.027248701080679893,
+      "l1": 0.02053643763065338,
+      "elapsedSeconds": 7.8
+    },
+    {
+      "step": 1500,
+      "loss": 0.01616373285651207,
+      "l1": 0.009517681784927845,
+      "elapsedSeconds": 9.2
+    },
+    {
+      "step": 1750,
+      "loss": 0.02268136292695999,
+      "l1": 0.016190815716981888,
+      "elapsedSeconds": 10.5
+    },
+    {
+      "step": 2000,
+      "loss": 0.02341969683766365,
+      "l1": 0.018266722559928894,
+      "elapsedSeconds": 11.9
+    },
+    {
+      "step": 2250,
+      "loss": 0.01353601273149252,
+      "l1": 0.00821480993181467,
+      "elapsedSeconds": 13.2
+    },
+    {
+      "step": 2500,
+      "loss": 0.02023577317595482,
+      "l1": 0.014812160283327103,
+      "elapsedSeconds": 14.6
+    },
+    {
+      "step": 2750,
+      "loss": 0.021367745473980904,
+      "l1": 0.017040273174643517,
+      "elapsedSeconds": 16.0
+    },
+    {
+      "step": 3000,
+      "loss": 0.011178620159626007,
+      "l1": 0.006740621756762266,
+      "elapsedSeconds": 17.4
+    },
+    {
+      "step": 3250,
+      "loss": 0.018643410876393318,
+      "l1": 0.013810652308166027,
+      "elapsedSeconds": 18.9
+    },
+    {
+      "step": 3500,
+      "loss": 0.020189179107546806,
+      "l1": 0.016276199370622635,
+      "elapsedSeconds": 20.3
+    },
+    {
+      "step": 3750,
+      "loss": 0.009665374644100666,
+      "l1": 0.0058050905354321,
+      "elapsedSeconds": 21.7
+    },
+    {
+      "step": 4000,
+      "loss": 0.01822248473763466,
+      "l1": 0.013565371744334698,
+      "elapsedSeconds": 23.1
+    },
+    {
+      "step": 4250,
+      "loss": 0.017949143424630165,
+      "l1": 0.01425755675882101,
+      "elapsedSeconds": 24.5
+    },
+    {
+      "step": 4500,
+      "loss": 0.007678681518882513,
+      "l1": 0.003995977807790041,
+      "elapsedSeconds": 26.1
+    },
+    {
+      "step": 4750,
+      "loss": 0.015542264096438885,
+      "l1": 0.011193271726369858,
+      "elapsedSeconds": 27.7
+    },
+    {
+      "step": 5000,
+      "loss": 0.017745207995176315,
+      "l1": 0.014176437631249428,
+      "elapsedSeconds": 29.3
+    },
+    {
+      "step": 5250,
+      "loss": 0.007288585416972637,
+      "l1": 0.00378128862939775,
+      "elapsedSeconds": 31.0
+    },
+    {
+      "step": 5500,
+      "loss": 0.015277164056897163,
+      "l1": 0.011024356819689274,
+      "elapsedSeconds": 32.6
+    },
+    {
+      "step": 5750,
+      "loss": 0.017340969294309616,
+      "l1": 0.013933277688920498,
+      "elapsedSeconds": 34.2
+    },
+    {
+      "step": 5999,
+      "loss": 0.01722608134150505,
+      "l1": 0.01385372132062912,
+      "elapsedSeconds": 35.9
+    }
+  ],
+  "trainingDevice": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "trainingDepthSource": "experiments/g10-gaussian/constrained-depths.npz",
+  "seatingAreaMasks": {
+    "B6": [
+      [
+        35,
+        1080
+      ],
+      [
+        160,
+        705
+      ],
+      [
+        325,
+        590
+      ],
+      [
+        335,
+        385
+      ],
+      [
+        430,
+        320
+      ],
+      [
+        575,
+        350
+      ],
+      [
+        620,
+        465
+      ],
+      [
+        766,
+        438
+      ],
+      [
+        810,
+        220
+      ],
+      [
+        870,
+        150
+      ],
+      [
+        1090,
+        150
+      ],
+      [
+        1180,
+        430
+      ],
+      [
+        1300,
+        460
+      ],
+      [
+        1365,
+        410
+      ],
+      [
+        1515,
+        430
+      ],
+      [
+        1575,
+        695
+      ],
+      [
+        1685,
+        1080
+      ]
+    ],
+    "B4": [
+      [
+        230,
+        1080
+      ],
+      [
+        310,
+        810
+      ],
+      [
+        390,
+        610
+      ],
+      [
+        420,
+        430
+      ],
+      [
+        530,
+        380
+      ],
+      [
+        680,
+        410
+      ],
+      [
+        752,
+        510
+      ],
+      [
+        850,
+        490
+      ],
+      [
+        880,
+        400
+      ],
+      [
+        890,
+        110
+      ],
+      [
+        1040,
+        10
+      ],
+      [
+        1135,
+        90
+      ],
+      [
+        1160,
+        25
+      ],
+      [
+        1630,
+        173
+      ],
+      [
+        1660,
+        290
+      ],
+      [
+        1820,
+        270
+      ],
+      [
+        1919,
+        540
+      ],
+      [
+        1880,
+        1080
+      ]
+    ],
+    "B5": [
+      [
+        0,
+        1080
+      ],
+      [
+        0,
+        280
+      ],
+      [
+        130,
+        175
+      ],
+      [
+        570,
+        0
+      ],
+      [
+        780,
+        0
+      ],
+      [
+        905,
+        315
+      ],
+      [
+        912,
+        435
+      ],
+      [
+        1030,
+        410
+      ],
+      [
+        1090,
+        345
+      ],
+      [
+        1260,
+        345
+      ],
+      [
+        1345,
+        430
+      ],
+      [
+        1360,
+        690
+      ],
+      [
+        1380,
+        1080
+      ]
+    ]
+  },
+  "planarFloorPrior": true
+}

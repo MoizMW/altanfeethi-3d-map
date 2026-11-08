@@ -1,0 +1,41 @@
+{
+  "count": 350039,
+  "columns": [
+    "x",
+    "y",
+    "z",
+    "nx",
+    "ny",
+    "nz",
+    "r",
+    "g",
+    "b",
+    "objectIndex"
+  ],
+  "objects": [
+    "g10-sofa-01",
+    "g10-sofa-02",
+    "g10-chair-01",
+    "g10-chair-02",
+    "g10-chair-03",
+    "g10-chair-04",
+    "g10-table-01",
+    "g10-table-02",
+    "g10-divider-01",
+    "g10-side-table-01",
+    "g10-lamp-01",
+    "g10-side-table-02",
+    "g10-lamp-02",
+    "g10-plant-01",
+    "g10-plant-02",
+    "g10-console-01",
+    "g10-tv-01",
+    "g10-table-01-tissue-box",
+    "g10-table-02-tissue-box",
+    "floor"
+  ],
+  "objectsSha256": "e046138e409172f4dcf185a5ee6657eadb55e25d792c959b26545453e5a80c31",
+  "sigma": 0.013335395499822543,
+  "authoredGeometryUsed": true,
+  "role": "Structural initialization for subsequent joint photographic optimization"
+}
