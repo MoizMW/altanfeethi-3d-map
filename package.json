@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "library:refresh": "node scripts/build-object-library.mjs",
+    "build:map": "node scripts/build-static-building.mjs",
     "install:app": "npm ci && npm ci --prefix app",
     "prepare": "node scripts/install-git-hooks.mjs",
     "start": "npm start --prefix app",

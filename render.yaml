@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: altanfeethi-spatial-map
+    runtime: static
+    buildCommand: npm ci --prefix app && npm run build:map
+    staticPublishPath: ./dist

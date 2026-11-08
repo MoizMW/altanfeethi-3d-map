@@ -2,8 +2,9 @@ import {createServer} from 'node:http';
 import {readFile,writeFile,rename,mkdir,readdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {resolve,extname,basename} from 'node:path';
-import {createHash,randomUUID} from 'node:crypto';
+import {randomUUID} from 'node:crypto';
 import {validateBlock} from '../shared/schema/block-schema.js';
+import {blockKey,createBlockLoader} from './block-loader.mjs';
 import {composeLayout} from './layouts.mjs';
 import {composeBuilding} from './building.mjs';
 import {collectObjectLibrary} from '../scripts/build-object-library.mjs';
@@ -13,24 +14,8 @@ const projectRoot=resolve(appRoot,'..');
 const blocksRoot=resolve(projectRoot,'blocks');
 const evidenceRoot=resolve(projectRoot,'evidence');
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml'};
-const revision=parts=>createHash('sha256').update(parts.join('\n')).digest('hex');
+const loadBlock=createBlockLoader(projectRoot);
 let saveQueue=Promise.resolve();
-
-function blockKey(value='ground/g9'){
-  if(!/^(ground|first)\/[a-z0-9][a-z0-9-]*$/.test(value))throw new Error('Invalid block path');
-  return value;
-}
-
-function pathsFor(key){const directory=resolve(blocksRoot,key);return {directory,manifest:resolve(directory,'manifest.json'),architecture:resolve(directory,'architecture.json'),objects:resolve(directory,'objects.json'),evidence:resolve(directory,'evidence.json')};}
-
-async function loadBlock(key){
-  const paths=pathsFor(key);
-  const raw=await Promise.all([paths.manifest,paths.architecture,paths.objects,paths.evidence].map(path=>readFile(path,'utf8')));
-  const [manifest,architecture,objects,evidence]=raw.map(JSON.parse);
-  const block={...manifest,placement:architecture.placement,floorSize:architecture.floorSize,ceilingHeight:architecture.ceilingHeight,architecture,evidence,objects:objects.objects};
-  validateBlock(block);
-  return {block,revision:revision(raw),raw,paths};
-}
 
 async function listBlocks(){
   const result=[];
